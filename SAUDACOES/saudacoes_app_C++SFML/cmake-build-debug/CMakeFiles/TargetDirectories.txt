@@ -1,0 +1,3 @@
+/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++SFML/cmake-build-debug/CMakeFiles/saudacoes_app_C__SFML.dir
+/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++SFML/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++SFML/cmake-build-debug/CMakeFiles/rebuild_cache.dir
