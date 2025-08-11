@@ -1,5 +1,3 @@
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
-
 ### **Conteúdo do Curso** 📚
 
 O curso está estruturado para levar você do básico da lógica de programação até a implementação em várias linguagens populares.
@@ -37,3 +35,7 @@ O curso segue uma trilha de aprendizado clara, dividida em dois módulos princip
     *   Foco nos fundamentos, usando Portugol para construir a base do pensamento computacional.
 2.  **Módulo 2: Linguagens de Programação** (Capítulos 9 a 14)
     *   Aplicação dos conceitos aprendidos em linguagens de mercado: C ➡️ C++ ➡️ Java ➡️ C# ➡️ Python ➡️ Rust.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

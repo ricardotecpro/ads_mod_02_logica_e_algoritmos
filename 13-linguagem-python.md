@@ -234,3 +234,7 @@ Os conceitos e atalhos são muito parecidos.
 3.  **Controlar a Execução**:
       * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. O atalho costuma ser `F8` no PyCharm e `F10` no VS Code.
 4.  **Inspecionar Variáveis**: A aba "Debugger" no PyCharm ou a janela "VARIABLES" no VS Code mostrarão os valores das variáveis em tempo real.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

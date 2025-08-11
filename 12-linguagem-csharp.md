@@ -320,3 +320,7 @@ Os atalhos e conceitos são muito semelhantes e padronizados.
       * **Step Over (Passar por cima)**: Pressione `F10` para executar a linha atual e parar na próxima.
       * **Stop (Parar)**: Pressione `Shift + F5` para encerrar a sessão de depuração.
 4.  **Inspecionar Variáveis**: Na parte inferior da tela, abas como "Locals" (Variáveis Locais) no Visual Studio ou a janela "VARIABLES" no VS Code exibirão os valores atuais das variáveis, permitindo que você os monitore em tempo real.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

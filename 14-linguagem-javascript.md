@@ -249,3 +249,7 @@ for (let i = 0; i < m; i++) {
 2.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
 3.  Pressione `F5` para iniciar o depurador. Se for a primeira vez, o VS Code pode pedir para você selecionar o ambiente (escolha **Node.js**).
 4.  A execução pausará no breakpoint, e você poderá inspecionar variáveis, controlar a execução (com `F10` para passar por cima) e ver a pilha de chamadas no painel esquerdo.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

@@ -232,3 +232,7 @@ Você pode compilar e executar todos os exemplos de código acima em qualquer um
 2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `SomaLinhasMatriz`).
 3.  **Cole o Código**: Copie e cole o código correspondente na classe criada.
 4.  **Execute**: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione **Run 'NomeDaClasse.main()'**. A saída aparecerá na aba "Run" na parte inferior da IDE.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

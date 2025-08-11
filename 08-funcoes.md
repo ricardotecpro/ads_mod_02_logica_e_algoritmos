@@ -228,3 +228,7 @@ public static void main(String[] args) {
     System.out.println("Menor = " + menor); // Saída: Menor = 3
 }
 ```
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

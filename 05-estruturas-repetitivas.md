@@ -196,3 +196,7 @@ inicio
    ate resp = "n"
 fimalgoritmo
 ```
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

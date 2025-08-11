@@ -327,3 +327,7 @@ Os conceitos são os mesmos, apenas os atalhos podem variar.
       * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. (**F8** no IntelliJ, **F10** no VS Code).
       * **Continue (Continuar)**: Continua a execução até o próximo breakpoint ou o fim do programa. (**F9** no IntelliJ, **F5** no VS Code).
 4.  **Inspecionar Variáveis**: A aba "Debug" em ambas as IDEs mostrará uma janela "Variables" onde você pode ver e monitorar o valor das variáveis em tempo real.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

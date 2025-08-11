@@ -254,3 +254,7 @@ public class Bhaskara {
   - **Entrada:** `a=2`, `b=9`, `c=10` → **Saída:** `X1 = -2.0000`, `X2 = -2.5000`
   - **Entrada:** `a=5`, `b=2`, `c=3` → **Saída:** `Esta equação não possui raízes reais.`
   - **Entrada:** `a=0`, `b=4`, `c=2` → **Saída:** `Esta não é uma equação de segundo grau!`
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

@@ -415,3 +415,7 @@ O processo de depuração em C++ no VS Code é idêntico ao de C.
 2.  **Iniciar Depuração**: Pressione `F5` para iniciar.
 3.  **Controlar Execução**: Use `F10` (Step Over) para executar linha por linha e `F5` para continuar até o próximo breakpoint.
 4.  **Analisar Variáveis**: Inspecione os valores das variáveis na janela `VARIABLES` do painel de depuração.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

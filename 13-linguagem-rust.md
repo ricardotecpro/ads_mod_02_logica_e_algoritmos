@@ -257,3 +257,7 @@ println!("Elemento (1,1): {}", matriz[1][1]); // Acessa o elemento na segunda li
 3.  Vá para o seu arquivo `src/main.rs` e clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
 4.  Pressione `F5`. O VS Code usará o `cargo` para compilar seu programa em modo de depuração e, em seguida, iniciará o depurador.
 5.  A execução pausará no breakpoint, permitindo que você inspecione variáveis, execute o código passo a passo (`F10`) e utilize o console de depuração.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

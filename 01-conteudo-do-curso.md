@@ -41,3 +41,7 @@ O percurso de aprendizado foi desenhado para garantir uma progressão lógica e 
     - **Linguagem Java** (Capítulo 11)
     - **Linguagem C#** (Capítulo 12)
     - **Linguagem Python** (Capítulo 13)
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

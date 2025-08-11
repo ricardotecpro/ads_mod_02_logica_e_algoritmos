@@ -263,3 +263,7 @@ Digite a duracao em segundos: 86399
 Digite a duracao em segundos: 120
 0:2:0
 ```
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

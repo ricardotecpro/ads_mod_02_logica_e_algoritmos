@@ -277,3 +277,7 @@ O processo é o mesmo no VS Code e no Android Studio:
 2.  **Inicie em Modo de Depuração**: Pressione `F5` no VS Code ou clique no ícone de inseto na sua IDE.
 3.  **Controle a Execução**: Use os controles da IDE para avançar (`F10`), entrar em funções, etc., e inspecione as variáveis na aba de depuração.
 4.  **Flutter DevTools**: Uma suíte de ferramentas que rodam no navegador, permitindo inspecionar a árvore de widgets, analisar performance, uso de memória e muito mais.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
