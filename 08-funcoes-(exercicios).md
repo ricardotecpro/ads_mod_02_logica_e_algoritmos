@@ -1,7 +1,3 @@
-Com certeza\! Finalizando o processamento dos materiais, aqui está a conversão do PDF de exercícios sobre Funções, com todas as soluções implementadas em Java, seguindo o padrão de qualidade e adaptação estabelecido.
-
------
-
 # ☕ Exercícios Resolvidos com Funções em Java
 
 Este documento apresenta uma série de problemas práticos e suas soluções em Java, com foco na criação e utilização de funções (métodos). Cada exercício foi projetado para reforçar conceitos como modularidade, reutilização de código e a diferença entre funções que retornam valores e procedimentos (`void`).

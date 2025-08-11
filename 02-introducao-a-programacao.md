@@ -1,7 +1,3 @@
-Claro\! Preparei uma versão atualizada do guia com mais emojis e um novo exemplo prático para cada linguagem, facilitando a comparação entre elas.
-
------
-
 # 🎓 Introdução à Programação
 
 Este guia aborda os conceitos fundamentais da programação, desde a definição de um algoritmo até as ferramentas necessárias para criar seu primeiro programa.
@@ -225,7 +221,7 @@ O código-fonte é pré-compilado para um código intermediário chamado **Bytec
   * **Vantagens**: Portabilidade e bom desempenho.
   * **Linguagens Típicas**: **Java** (com a JVM), **C\#** (com o .NET).
 
-## 🇵🇹 Portugol e Ferramentas de Aprendizagem
+## Portugol e Ferramentas de Aprendizagem
 
 Para focar no aprendizado da **lógica do algoritmo** sem a complexidade de uma linguagem real, utiliza-se o **Portugol**. É uma pseudo-linguagem didática com sintaxe simplificada e em português.
 

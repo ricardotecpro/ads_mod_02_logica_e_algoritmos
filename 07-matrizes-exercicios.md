@@ -1,7 +1,3 @@
-Claro\! Aqui estão todos os exercícios propostos no arquivo PDF, resolvidos e explicados em Java, seguindo o formato solicitado.
-
------
-
 # 💻 Exercícios Resolvidos com Matrizes em Java
 
 Esta seção apresenta uma série de problemas práticos envolvendo matrizes (arrays bidimensionais), com suas respectivas soluções completas em Java. Cada exercício foca em uma operação comum, como travessia, busca, agregação e manipulação de elementos.
