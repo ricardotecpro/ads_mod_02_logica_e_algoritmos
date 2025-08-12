@@ -20,7 +20,7 @@ O ecossistema de Rust é gerenciado pela ferramenta `rustup`, que instala o comp
 
     ### Opção 2: CLion com o plugin Rust
 
-    * Para quem prefere uma IDE mais robusta da JetBrains, o [CLion](https://www.jetbrains.com/clion/) com o plugin oficial do Rust é uma excelente alternativa.
+    * Para quem prefere uma IDE mais robusta da JetBrains, o [RustRover](https://www.jetbrains.com/rust/) ou [CLion](https://www.jetbrains.com/clion/) com o plugin oficial do Rust é uma excelente alternativa.
 
 ### 🚀 Seu Primeiro Programa em Rust
 

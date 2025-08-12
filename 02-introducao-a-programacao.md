@@ -232,9 +232,9 @@ Existem IDEs simples para escrever e testar algoritmos em Portugol:
   * **VisualG**: Uma ferramenta clássica e leve.
   * **Portugol Studio**: Uma alternativa mais moderna e com mais recursos. Você pode encontrá-lo em `portugol.dev`.
 
-### Exemplo em Portugol
+### Exemplo em VisualG
 
-```portugol
+```visualg
 algoritmo "CalculoMedia"
 
 // Área de declaração de variáveis
@@ -259,6 +259,50 @@ inicio
 
 fimalgoritmo
 ```
+
+Claro\! Aqui está o código do exemplo "CalculoMedia" reescrito no padrão do **Portugol Studio**.
+
+As principais diferenças são a estrutura do programa (`programa { ... }`), a declaração de variáveis dentro da função e o operador de atribuição (`=` em vez de `<-`).
+
+### Exemplo em Portugol Studio
+
+```portugol
+programa
+{
+	// A função 'inicio' é o ponto de entrada do programa.
+	funcao inicio()
+	{
+		// Área de declaração de variáveis
+		cadeia nome
+		real nota1, nota2, media
+
+		// Corpo do algoritmo (Entrada, Processamento e Saída de Dados)
+		escreva("Digite o nome do aluno(a): ")
+		leia(nome)
+		
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+		
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+		
+		// Processamento: calcula a média
+		media = (nota1 + nota2) / 2
+		
+		// Saída: exibe o resultado formatado
+		escreva("\nA média do(a) aluno(a) ", nome, " é: ", media)
+	}
+}
+```
+
+**Principais Mudanças e Explicações:**
+
+1.  **Estrutura:** O Portugol Studio usa uma estrutura de blocos com chaves `{}`. O programa inteiro é envolvido por `programa { ... }`.
+2.  **Função Principal:** Todo o código executável deve estar dentro da função `funcao inicio() { ... }`.
+3.  **Declaração de Variáveis:** As variáveis são declaradas no início da função onde serão usadas, não em um bloco `var` separado.
+4.  **Tipos de Dados:** O tipo `caractere` do VisualG corresponde ao tipo `cadeia` no Portugol Studio. O tipo `real` é o mesmo.
+5.  **Atribuição:** O operador para atribuir um valor a uma variável é o sinal de igual (`=`), e não a seta (`<-`).
+6.  **Comandos de Escrita:** O comando `escreval` do VisualG é equivalente ao `escreva` do Portugol Studio. Ambos pulam uma linha ao final da escrita. O `\n` foi adicionado na última linha para dar um espaçamento extra antes da mensagem final, tornando a saída mais legível.
 
 ---
 

@@ -43,9 +43,9 @@ O curso está estruturado para levar você do básico da lógica de programaçã
     * Visual Studio
     * Intellij
     * VisualG
+    * Portugol Studio
     * VSCode
     * VIM
-    * Portugol Studio
     * CLion
     * RustRover
     * WebStorm

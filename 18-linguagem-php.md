@@ -405,3 +405,6 @@ Um módulo dedicado para reforçar a importância da segurança.
       * **Orientação a Objetos (OOP) em PHP:** Como organizar o código de forma ainda mais profissional.
       * **Composer:** O gerenciador de dependências do PHP.
       * **Frameworks:** Uma breve introdução ao que são Laravel e Symfony e por que eles aceleram o desenvolvimento.
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
