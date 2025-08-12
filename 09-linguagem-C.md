@@ -483,3 +483,7 @@ Debugging é o processo de encontrar e corrigir erros no seu código. O VS Code 
     * **Step Into (`F11`)**: Se a linha atual for uma chamada de função, entra na função para depurá-la.
     * **Continue (`F5`)**: Continua a execução normal até o próximo breakpoint ou o fim do programa.
     * **Stop (`Shift+F5`)**: Para a sessão de depuração.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

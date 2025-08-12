@@ -285,3 +285,7 @@ A depuração em Go é feita com a ferramenta **Delve**, que se integra perfeita
 3.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
 4.  Pressione `F5` para iniciar o depurador.
 5.  O VS Code iniciará a sessão de depuração, pausando no breakpoint e permitindo que você inspecione variáveis, execute o código passo a passo (`F10`) e veja a pilha de chamadas.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

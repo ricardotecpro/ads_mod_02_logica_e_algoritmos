@@ -3,23 +3,53 @@
 O curso está estruturado para levar você do básico da lógica de programação até a implementação em várias linguagens populares.
 
 #### **🧠 Módulo 1: Algoritmos e Lógica de Programação (com Portugol e VisualG)**
-* **1. [Apresentação do curso](./01_apresentacao.md)** 🎬
-* **2. [Conceitos de programação](./02_conceitos_programacao.md)** 🤔
-* **3. [Estrutura sequencial](./03_estrutura_sequencial.md)** ➡️
-* **4. [Estrutura condicional](./04_estrutura_condicional.md)** 🔀
-* **5. [Estruturas repetitivas](./05_estruturas_repetitivas.md)** 🔁
+* **1. [Apresentação do Curso](./01-conteudo-do-curso.md)** 🎬
+* **2. [Conceitos de Programação](./02-introducao-a-programacao.md)** 🤔
+* **3. [Estrutura Sequencial](./03-estrutura-sequencial.md)** ➡️
+* **4. [Estrutura Condicional](./04-estrutura-condicional.md)** 🔀
+* **5. [Estruturas Repetitivas](./05-estruturas-repetitivas.md)** 🔁
 * **6. [Vetores](./06_vetores.md)** 📏
 * **7. [Matrizes](./07_matrizes.md)** 🔢
 * **8. [Funções](./08_funcoes.md)** 🧩
 
 #### **⌨️ Módulo 2: Linguagens de Programação**
-* **9. [Instalação das ferramentas](./09_instalacao_ferramentas.md)** 🛠️
-    * (Code::Blocks, PyCharm, Eclipse, Visual Studio)
-* **10. [Linguagem C](./c/)**
-* **11. [Linguagem C++](./cpp/)**
-* **12. [Linguagem Java](./java/)** ☕
-* **13. [Linguagem C#](./csharp/)** 💎
-* **14. [Linguagem Python](./python/)** 🐍
+* **09. [Linguagem C](./09-linguagem-c.md)**
+* **10. [Linguagem C++](./10-linguagem-c++.md)**
+* **11. [Linguagem Java](./11-linguagem-java.md)**
+* **12. [Linguagem C#](./12-linguagem-csharp.md)** ☕
+* **13. [Linguagem Python](./13-linguagem-python.md)** 💎
+* **14. [Linguagem JavaScript](./14-linguagem-javascript.md)** 🐍
+* **15. [Linguagem Rust](15-linguagem-rust.md)
+* **16. [Linguagem Dart](./16-linguagem-dart.md]
+* **17. [Linguagem GO](./17-linguagem-go.md]
+* **18. [Linguagem PHP](./18-linguagem-php.md]
+
+#### **⌨️ Módulo 3: Frameworks**
+* **19. [SpringBoot]
+* **22. [Angular]
+* **21. [React]
+* **19. [Kotlin MP]
+* **20. [Flutter]
+* **21. [Laravel]
+
+#### ⌨️ **Módulo 4: Ferramentas**
+
+[Instalação das ferramentas](./09_instalacao_ferramentas.md)** 🛠️
+    * Code::Blocks
+    * IntelliJ IDEA
+    * Visual Studio Code
+    * PyCharm
+    * Eclipse
+    * Visual Studio
+    * Intellij
+    * VisualG
+    * VSCode
+    * VIM
+    * Portugol Studio
+    * CLion
+    * RustRover
+    * WebStorm
+    * Android Studio
 
 ### **Exemplos Práticos** 💻
 Explore implementações práticas dos conceitos aprendidos em diferentes linguagens.
