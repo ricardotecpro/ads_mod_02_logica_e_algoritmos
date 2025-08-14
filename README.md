@@ -1,8 +1,8 @@
-### **Conteúdo do Curso** 📚
+## **Lógica de Programação e Algoritmos** 📚
 
 O curso está estruturado para levar você do básico da lógica de programação até a implementação em várias linguagens populares.
 
-#### **🧠 Módulo 1: Algoritmos e Lógica de Programação (com Portugol e VisualG)**
+#### **🧠 Módulo 1: Algoritmos e Lógica de Programação (com Portugol Studio VisualG Scratch)**
 * **1. [Apresentação do Curso](./01_conteudo_do_curso.md)** 🎬
 * **2. [Conceitos de Programação](./02_introducao_a_programacao.md)** 🤔
 * **3. [Estrutura Sequencial](./03_estrutura_sequencial.md)** ➡️
@@ -44,6 +44,7 @@ O curso está estruturado para levar você do básico da lógica de programaçã
 * **Intellij**
 * **VisualG**
 * **Portugol Studio**
+* **Scratch**
 * **VSCode**
 * **VIM**
 * **CLion**
