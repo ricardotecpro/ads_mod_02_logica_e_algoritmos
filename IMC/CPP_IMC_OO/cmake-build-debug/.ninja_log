@@ -1,8 +1,0 @@
-# ninja log v6
-16	531	7429411240872210	CMakeFiles/TesteImc.dir/PessoaImc.cpp.obj	74ffb11383e1b6f7
-3	276	7535108197225042	build.ninja	742ec3040e15ab8f
-548	737	7503548109960168	TesteImc.exe	3244c819b2407dfe
-15	547	7503548104641800	CMakeFiles/TesteImc.dir/TesteImc.cpp.obj	3a9b84e1f6aaca0c
-21	362	7535108350562630	CMakeFiles/TesteImc.dir/PessoaImc.cpp.obj	f0f9bfdeef0e2517
-16	392	7535108350512468	CMakeFiles/TesteImc.dir/TesteImc.cpp.obj	66d4059c1b3f1dd8
-392	609	7535108354276219	TesteImc.exe	3244c819b2407dfe

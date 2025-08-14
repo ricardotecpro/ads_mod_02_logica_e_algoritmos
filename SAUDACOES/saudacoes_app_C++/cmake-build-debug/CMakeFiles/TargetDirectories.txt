@@ -1,3 +1,0 @@
-/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++/cmake-build-debug/CMakeFiles/condicional.dir
-/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rlp/Dropbox/Crossover/saudacoes_app/saudacoes_app_C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
