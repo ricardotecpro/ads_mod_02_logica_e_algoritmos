@@ -25,12 +25,15 @@ O curso está estruturado para levar você do básico da lógica de programaçã
 * **18. [Linguagem PHP](topicos/18_linguagem_php.md)**
 
 #### **⌨️ Módulo 3: Frameworks**
+ 
 * **19. [SpringBoot]**
 * **22. [Angular]**
 * **21. [React]**
 * **19. [Kotlin MP]**
 * **20. [Flutter]**
 * **21. [Laravel]**
+* 
+* **Express
 
 #### ⌨️ **Módulo 4: Ferramentas**
 
@@ -66,6 +69,7 @@ O curso segue uma trilha de aprendizado clara, dividida em dois módulos princip
     *   Foco nos fundamentos, usando Portugol para construir a base do pensamento computacional.
 2.  **Módulo 2: Linguagens de Programação** (Capítulos 9 a 14)
     *   Aplicação dos conceitos aprendidos em linguagens de mercado: ➡️C ➡️ C++ ➡️ Java ➡️ C# ➡️ Python ➡️ JavaScript
+
 
 ---
 
