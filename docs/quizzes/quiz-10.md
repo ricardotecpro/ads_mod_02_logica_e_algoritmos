@@ -1,0 +1,22 @@
+# Quiz 10 - Linguagem C++
+
+<link rel="stylesheet" href="../../assets/css/quiz.css">
+<script src="../../assets/js/quiz.js" defer></script>
+
+<div class="quiz-container">
+  <div class="quiz-item" id="q1">
+    <div class="quiz-question">1. Pergunta sobre Linguagem C++?</div>
+    <div class="quiz-options">
+      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
+        <span class="option-letter">A)</span> Resposta Correta.
+      </div>
+      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
+        <span class="option-letter">B)</span> Resposta Incorreta.
+      </div>
+      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
+        <span class="option-letter">C)</span> Outra opção.
+      </div>
+    </div>
+    <div class="quiz-feedback"></div>
+  </div>
+</div>
