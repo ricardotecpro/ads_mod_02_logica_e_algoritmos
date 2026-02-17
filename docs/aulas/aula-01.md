@@ -1,6 +1,12 @@
-# 💻 Curso Completo de Algoritmos e Lógica de Programação
+# Aula 01 - Conteúdo do Curso
 
-Este documento apresenta a estrutura completa do curso de formação em algoritmos e desenvolvimento de software, abordando desde os conceitos fundamentais até a aplicação prática em diversas linguagens de programação.
+Este documento apresenta a estrutura completa do curso de formação em algoritmos e desenvolvimento de software.
+
+```bash
+$ echo "Bem-vindo ao curso de Lógica!"
+Bem-vindo ao curso de Lógica!
+```
+{: .termy }
 
 ## 📚 Conteúdo do Curso
 
