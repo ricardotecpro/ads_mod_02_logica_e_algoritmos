@@ -251,6 +251,11 @@ Existem IDEs simples para escrever e testar algoritmos em Portugol:
 
 ### Exemplo em VisualG
 
+```console
+$ visualg
+Iniciando VisualG...
+```
+
 ```visualg
 algoritmo "CalculoMedia"
 

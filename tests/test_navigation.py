@@ -68,7 +68,8 @@ class TestNavigation:
         page.get_by_role("link", name="Aulas").first.click(force=True)
         
         # Click Fundamentos da Lógica
-        page.get_by_text("Fundamentos da Lógica", exact=False).first.click(force=True)
+        # Material theme uses a label for the checkbox hack
+        page.locator("label.md-nav__link").filter(has_text="Fundamentos da Lógica").click()
         
         # Click Aula 01
         page.get_by_text("Aula 01", exact=False).first.click(force=True)

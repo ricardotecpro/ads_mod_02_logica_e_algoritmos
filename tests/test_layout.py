@@ -48,7 +48,7 @@ def test_lesson_01_page(page: Page, base_url):
     
     # Check main heading
     heading = page.locator("h1")
-    expect(heading).to_contain_text("Aula 01")
+    expect(heading).to_contain_text("Introdução à Programação")
     
     # Check quiz containers exist
     quiz_containers = page.locator(".quiz-container")
