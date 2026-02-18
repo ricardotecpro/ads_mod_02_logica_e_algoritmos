@@ -239,10 +239,15 @@ Java oferece a classe `Math` com diversas funções matemáticas prontas para us
 
 ### Exemplo: Fórmula de Bhaskara
 
-Para calcular as raízes de uma equação de segundo grau ($$ax^2 + bx + c = 0$$), usamos as funções da classe `Math`.
+Para calcular as raízes de uma equação de segundo grau ($ax^2 + bx + c = 0$), usamos as funções da classe `Math`.
 
-$$ \Delta = b^2 - 4ac $$
-$$ x = \frac{-b \pm \sqrt{\Delta}}{2a} $$
+$$
+\Delta = b^2 - 4ac
+$$
+
+$$
+x = \frac{-b \pm \sqrt{\Delta}}{2a}
+$$
 
 ```java
 double a = 1.0, b = -3.0, c = -4.0;

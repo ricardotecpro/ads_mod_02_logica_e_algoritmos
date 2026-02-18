@@ -234,3 +234,7 @@ nav:
           - 'Ambiente Lógica': setups/setup-01.md
           - 'Ambiente Linguagens': setups/setup-02.md
   - Impressão: print_page.md
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
