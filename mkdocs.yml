@@ -118,6 +118,8 @@ extra_javascript:
   - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
   - assets/js/mermaid-init.js
   - assets/js/custom_termynal.js
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
@@ -136,24 +138,30 @@ nav:
   - Início: index.md
   - Plano de Ensino: plano-ensino.md
   - Aulas:
-          - 'Projeto 05': projetos/projeto-05.md
-          - 'Projeto 06': projetos/projeto-06.md
-          - 'Projeto 07': projetos/projeto-07.md
-          - 'Projeto 08': projetos/projeto-08.md
-          - 'Projeto 09': projetos/projeto-09.md
-          - 'Projeto 10': projetos/projeto-10.md
-          - 'Projeto 11': projetos/projeto-11.md
-          - 'Projeto 12': projetos/projeto-12.md
-          - 'Projeto 13': projetos/projeto-13.md
-          - 'Projeto 14': projetos/projeto-14.md
-          - 'Projeto 15': projetos/projeto-15.md
-          - 'Projeto 16': projetos/projeto-16.md
-      - Configuração:
-          - setups/index.md
-          - 'Ambiente Lógica': setups/setup-01.md
-          - 'Ambiente Linguagens': setups/setup-02.md
+      - 'Módulo 1: Fundamentos':
+          - 'Aula 01': aulas/aula-01.md
+          - 'Aula 02': aulas/aula-02.md
+          - 'Aula 03': aulas/aula-03.md
+          - 'Aula 04': aulas/aula-04.md
+          - 'Aula 05': aulas/aula-05.md
+          - 'Aula 06': aulas/aula-06.md
+          - 'Aula 07': aulas/aula-07.md
+          - 'Aula 08': aulas/aula-08.md
+      - 'Módulo 2: O Poliglota':
+          - 'Aula 09 (C/C++)': aulas/aula-09.md
+          - 'Aula 10 (JS/TS)': aulas/aula-10.md
+          - 'Aula 11 (Java)': aulas/aula-11.md
+          - 'Aula 12 (.NET)': aulas/aula-12.md
+          - 'Aula 13 (Python)': aulas/aula-13.md
+          - 'Aula 14 (Rust/Go)': aulas/aula-14.md
+          - 'Aula 15 (Mobile)': aulas/aula-15.md
+          - 'Aula 16 (PHP)': aulas/aula-16.md
+  - Exercícios: exercicios/index.md
+  - Projetos: projetos/index.md
+  - Quizzes: quizzes/index.md
+  - Slides: slides/index.md
+  - Configuração:
+      - setups/index.md
+      - 'Ambiente Lógica': setups/setup-01.md
+      - 'Ambiente Linguagens': setups/setup-02.md
   - Impressão: print_page.md
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

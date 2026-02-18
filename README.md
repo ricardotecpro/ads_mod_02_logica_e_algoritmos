@@ -1,75 +1,75 @@
 # Lógica de Programação e Algoritmos 📚
 
-O curso está estruturado para levar você do básico da lógica de programação até a implementação em várias linguagens populares.
+[![Build Status](https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos/actions/workflows/ci.yml/badge.svg)](https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos/actions)
 
-#### **🧠 Módulo 1: Algoritmos e Lógica de Programação (com Portugol Studio VisualG Scratch)**
-* **00. [Apresentação do Curso](topicos/01_conteudo_do_curso.md)** 🎬
-* **01. [Conceitos de Programação](topicos/02_introducao_a_programacao.md)** 🤔
-* **02. [Estrutura Sequencial](topicos/03_estrutura_sequencial.md)** ➡️
-* **03. [Estrutura Condicional](topicos/04_estrutura_condicional.md)** 🔀
-* **04. [Estruturas Repetitivas](topicos/05_estruturas_repetitivas.md)** 🔁
-* **05. [Vetores](topicos/06_vetores.md)** 📏
-* **06. [Matrizes](topicos/07_matrizes.md)** 🔢
-* **07. [Funções](topicos/08_funcoes.md)** 🧩
+Curso completo de Lógica de Programação, estruturado para levar você do básico (algoritmos e pensamento computacional) até a implementação prática em diversas linguagens de mercado ("O Poliglota").
 
-#### **⌨️ Módulo 2: Linguagens de Programação**
-* **08. [Linguagem C / C++](topicos/09_linguagem_c.md)**
-* **09. [Linguagem Java](topicos/11_linguagem_java.md)**
-* **10. [Linguagem C# / F#](topicos/12_linguagem_csharp.md)** ☕
-* **11. [Linguagem Python](topicos/13_linguagem_python.md)** 💎
-* **12. [Linguagem JavaScript / TypeScript](topicos/14_linguagem_javascript.md)** 🐍
-* **13. [Linguagem Rust](topicos/15_linguagem_rust.md)**
-* **14. [Linguagem Dart / Flutter](topicos/16_linguagem_dart.md)**
-* **15. [Linguagem GO](topicos/17_linguagem_go.md)**
-* **16. [Linguagem PHP](topicos/18_linguagem_php.md)**
-
-#### **⌨️ Módulo 3: Frameworks**
- 
-* **17. [SpringBoot]**
-* **18. [Angular]**
-* **19. [React / React Native]**
-* **20. [Kotlin MP]**
-* **21. [Flutter]**
-* **22. [Laravel]**
-* **23. [Express]**
-
-
-#### ⌨️ **Módulo 4: Ferramentas**
-
-[Instalação das ferramentas](topicos/08_instalacao_ferramentas.md)** 🛠️
-* **Code::Blocks**
-* **IntelliJ IDEA**
-* **Visual Studio Code**
-* **PyCharm**
-* **Eclipse**
-* **Visual Studio**
-* **Intellij**
-* **VisualG**
-* **Portugol Studio**
-* **Scratch**
-* **VSCode**
-* **VIM**
-* **CLion**
-* **RustRover**
-* **WebStorm**
-* **Android Studio**
-
-### **Exemplos Práticos** 💻
-Explore implementações práticas dos conceitos aprendidos em diferentes linguagens.
-
-* **[Calculadora de IMC](./imc/)**: Veja como criar uma calculadora de IMC em C, C++, Java, C# e Python.
-* **[Saudações](./saudacoes/)**: O clássico "Olá, Mundo!" para iniciar em cada linguagem.
-
-### **Percurso de Formação** 👣
-
-O curso segue uma trilha de aprendizado clara, dividida em dois módulos principais:
-
-1.  **Módulo 1: Algoritmos e Lógica de Programação** (Capítulos 1 a 8)
-    *   Foco nos fundamentos, usando Portugol para construir a base do pensamento computacional.
-2.  **Módulo 2: Linguagens de Programação** (Capítulos 9 a 14)
-    *   Aplicação dos conceitos aprendidos em linguagens de mercado: ➡️C ➡️ C++ ➡️ Java ➡️ C# ➡️ Python ➡️ JavaScript
-
+🔗 **Acesse o curso online**: [https://ricardotecpro.github.io/ads_mod_02_logica_e_algoritmos](https://ricardotecpro.github.io/ads_mod_02_logica_e_algoritmos)
 
 ---
 
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+## 🗂️ Estrutura do Curso (16 Aulas)
+
+O curso está dividido em dois grandes módulos:
+
+### 🧠 Módulo 1: Fundamentos da Lógica
+Foco nos conceitos universais, independentes de linguagem.
+*   **Aula 01**: Introdução à Lógica de Programação
+*   **Aula 02**: Ambiente e Ferramentas (VisualG, Scratch, IDEs)
+*   **Aula 03**: Estrutura Sequencial (Variáveis, Entrada/Saída)
+*   **Aula 04**: Estrutura Condicional (Se/Senão, Switch)
+*   **Aula 05**: Estruturas Repetitivas (Para, Enquanto)
+*   **Aula 06**: Estruturas de Dados I (Vetores)
+*   **Aula 07**: Estruturas de Dados II (Matrizes)
+*   **Aula 08**: Modularização (Funções e Procedimentos)
+
+### 🌍 Módulo 2: O Poliglota
+Aplicação da lógica aprendida nas principais linguagens de mercado.
+*   **Aula 09**: Baixo Nível e Performance (C / C++)
+*   **Aula 10**: A Web Moderna (JavaScript / TypeScript)
+*   **Aula 11**: Orientação a Objetos Corporativa (Java)
+*   **Aula 12**: Ecossistema Microsoft (.NET: C# / F#)
+*   **Aula 13**: Data Science e Scripting (Python)
+*   **Aula 14**: Programação de Sistemas Moderna (Rust / Go)
+*   **Aula 15**: Desenvolvimento Mobile (Dart/Flutter e Kotlin)
+*   **Aula 16**: Legado Web e Evolução (PHP) + Projeto Final
+
+---
+
+## 🛠️ Tecnologias e Ferramentas Abordadas
+
+*   **Lógica**: VisualG, Portugol Studio, Scratch.
+*   **Linguagens**: C, C++, Java, C#, Python, JavaScript, TypeScript, Rust, Go, Dart, Kotlin, PHP.
+*   **Frameworks**: Node.js, SpringBoot, Flutter, Laravel.
+*   **IDEs**: VS Code, IntelliJ, PyCharm, Android Studio.
+
+## 🚀 Como Executar Localmente
+
+Este projeto utiliza [MkDocs](https://www.mkdocs.org/) com o tema [Material](https://squidfunk.github.io/mkdocs-material/).
+
+1.  **Clone o repositório**:
+    ```bash
+    git clone https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos.git
+    cd ads_mod_02_logica_e_algoritmos
+    ```
+
+2.  **Instale as dependências** (Requer Python 3.x e Poetry):
+    ```bash
+    poetry install
+    ```
+
+3.  **Rode o servidor local**:
+    ```bash
+    poetry run task serve
+    # ou
+    python -m mkdocs serve
+    ```
+
+4.  Acesse `http://localhost:8000` no seu navegador.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+Feito com ❤️ por [Ricardo Pires](https://ricardotecpro.github.io/)

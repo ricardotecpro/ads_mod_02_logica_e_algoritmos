@@ -1,17 +1,21 @@
 from playwright.sync_api import Page, expect
 
-def test_termynal_copy_button(page: Page, start_server):
+def test_termynal_copy_button(page: Page, base_url: str):
     """
     Test that the Termynal copy button is injected and visible.
     """
     # Grant clipboard permissions
     page.context.grant_permissions(['clipboard-write', 'clipboard-read'])
 
-    # Navigate to Lesson 01 where we added the Termynal block
-    page.goto("http://localhost:8766/aulas/aula-01/")
+    # Navigate to Setup 03 which contains console blocks
+    page.goto(f"{base_url}/setups/setup-03/")
 
     # Wait for Termynal to be visible
-    termynal = page.locator(".termy").first
+    # Note: custom_termynal.js looks for .termy, but the mkdocs-termynal plugin
+    # renders a custom structure. We need to match what's actually rendered.
+    # Usually it's a div with data-termynal attribute or class.
+    # Let's try a broader selector if .termy isn't found
+    termynal = page.locator(".termy, [data-termynal]").first
     expect(termynal).to_be_visible()
 
     # Check for copy button
