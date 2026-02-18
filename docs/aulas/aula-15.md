@@ -18,11 +18,11 @@ Em Flutter, TUDO é um Widget (um pedaço da tela). Eles se organizam como uma �
 
 ```mermaid
 graph TD;
-    App[MaterialApp] --> Home[Scaffold (Tela Principal)];
+    App[MaterialApp] --> Home["Scaffold (Tela Principal)"];
     Home --> AppBar[Barra Superior];
     Home --> Body[Corpo: Coluna];
-    Body --> Text1[Texto 'Olá'];
-    Body --> Button[Botão 'Clique'];
+    Body --> Text1["Texto 'Olá'"];
+    Body --> Button["Botão 'Clique'"];
     
     style App fill:#f9f;
     style Home fill:#bbf;

@@ -15,7 +15,7 @@ As estruturas de repetição permitem executar um bloco de código várias vezes
 ```mermaid
 graph TD;
     Inicio([Início]) --> Cond{Contador < 5?};
-    Cond -- Sim --> Acao[Escrever "Olá"];
+    Cond -- Sim --> Acao["Escrever 'Olá'"];
     Acao --> Inc[Contador + 1];
     Inc --> Cond;
     Cond -- Não --> Fim([Fim]);

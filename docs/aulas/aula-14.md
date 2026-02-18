@@ -14,7 +14,7 @@ O segredo? **Ownership** (Propriedade).
 
 ```mermaid
 graph LR;
-    A["Variável A\n(Dona do Dado)"] -->|Mover (Move)| B["Variável B\n(Nova Dona)"];
+    A["Variável A\n(Dona do Dado)"] -- "Mover (Move)" --> B["Variável B\n(Nova Dona)"];
     style A fill:#f9f,stroke:#333;
     style B fill:#bbf,stroke:#333;
     

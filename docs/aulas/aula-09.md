@@ -27,8 +27,8 @@ Em C, você gerencia onde os dados ficam.
 ```mermaid
 graph TD;
     subgraph RAM
-    Stack[Stack (Pilha)] --- V[Variáveis Locais\nRápidas];
-    Heap[Heap (Monte)] --- D[Dados Dinâmicos\nLentos];
+    Stack["Stack (Pilha)"] --- V["Variáveis Locais\nRápidas"];
+    Heap["Heap (Monte)"] --- D["Dados Dinâmicos\nLentos"];
     end
     style Stack fill:#f9f;
     style Heap fill:#bbf;

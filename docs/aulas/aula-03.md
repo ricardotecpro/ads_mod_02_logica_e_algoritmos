@@ -16,7 +16,7 @@ graph TD;
     Memoria[Memória RAM] --> Var1[Gaveta 'IDADE'];
     Var1 --> Val1[Valor: 25];
     Memoria --> Var2[Gaveta 'NOME'];
-    Var2 --> Val2[Valor: "Maria"];
+    Var2 --> Val2["Valor: 'Maria'"];
     
     style Var1 fill:#f9f,stroke:#333;
     style Var2 fill:#bbf,stroke:#333;
