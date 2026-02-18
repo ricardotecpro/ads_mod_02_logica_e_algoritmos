@@ -50,7 +50,7 @@ O percurso de aprendizado foi desenhado para garantir uma progressão lógica e 
 
 ---
 
-# **📚 Curso de Scratch para Logística/Administração**:
+## **📚 Curso de Scratch para Logística/Administração**:
 
 * 📌 **Emojis** para facilitar leitura e deixar mais leve.
 * 💡 **Exemplos práticos** usando **extensões do Scratch** (sensores, tradutor, texto-para-fala, etc.).
@@ -59,7 +59,7 @@ O percurso de aprendizado foi desenhado para garantir uma progressão lógica e 
 
 ---
 
-# **📚 Curso: Programando com Scratch para Logística e Administração**
+## **📚 Curso: Programando com Scratch para Logística e Administração**
 
 **⏳ Carga horária sugerida:** 20h (5 encontros de 4h ou 10 encontros de 2h)
 **🎯 Objetivo:** Ensinar programação e pensamento computacional com **Scratch**, aplicando em **processos logísticos** e **gestão administrativa**.
@@ -252,7 +252,7 @@ Quer que eu já gere esse pacote completo?
 
 ### 🚀 [ricardotecpro.github.io](https://ricardotecpro.github.io/)
 
-# 🎓 Introdução à Programação
+## 🎓 Introdução à Programação
 
 Este guia aborda os conceitos fundamentais da programação, desde a definição de um algoritmo até as ferramentas necessárias para criar seu primeiro programa.
 

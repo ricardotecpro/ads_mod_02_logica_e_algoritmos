@@ -1,3 +1,5 @@
+# Curso Prático de PHP
+
 ### **Estrutura Proposta: Curso Prático de PHP - Do Zero à Aplicação Dinâmica**
 
 **Projeto Guia:** Construção de um "Mural de Recados" interativo.

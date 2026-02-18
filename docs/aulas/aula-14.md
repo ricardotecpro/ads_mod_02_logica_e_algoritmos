@@ -1,4 +1,4 @@
-## 🐦 Linguagem Dart
+# Linguagem Dart
 
 **Dart** é uma linguagem de programação moderna, flexível e otimizada, desenvolvida pelo Google. É a linguagem utilizada pelo framework Flutter.
 
