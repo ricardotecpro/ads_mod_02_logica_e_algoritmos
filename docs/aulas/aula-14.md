@@ -56,15 +56,14 @@ fmt.Println(msg)
 
 ## 3. Simulando Execução (Termynal)
 
-```console
-$ cargo run
-> Compiling projeto_rust v0.1.0
-> Running `target/debug/projeto_rust`
-Segurança garantida!
-
-$ go run main.go
-Simplicidade e Performance!
-```
+<div data-termynal class="termy">
+    <span data-ty="input">cargo run</span>
+    <span data-ty="progress">Compiling projeto_rust v0.1.0</span>
+    <span data-ty="progress">Running `target/debug/projeto_rust`</span>
+    <span data-ty>Segurança garantida!</span>
+    <span data-ty="input">go run main.go</span>
+    <span data-ty>Simplicidade e Performance!</span>
+</div>
 
 ---
 

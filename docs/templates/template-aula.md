@@ -42,11 +42,11 @@ se (idade >= 18) {
 
 Mostre como seria a saída no terminal.
 
-```console
-$ ./programa_exemplo
-Digite sua idade: 18
-> Maior de idade
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./programa_exemplo</span>
+    <span data-ty>Digite sua idade: 18</span>
+    <span data-ty="progress">Maior de idade</span>
+</div>
 
 ---
 

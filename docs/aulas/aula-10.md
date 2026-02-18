@@ -42,10 +42,10 @@ botao.addEventListener('click', () => {
 ### Node.js: JS fora do Navegador
 Hoje, JS também roda no servidor com o **Node.js**.
 
-```console
-$ node servidor.js
-> Servidor rodando na porta 3000...
-```
+<div data-termynal class="termy">
+    <span data-ty="input">node servidor.js</span>
+    <span data-ty="progress">Servidor rodando na porta 3000...</span>
+</div>
 
 ---
 

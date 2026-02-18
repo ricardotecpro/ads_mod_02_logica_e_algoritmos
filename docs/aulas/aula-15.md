@@ -56,15 +56,14 @@ class MeuApp extends StatelessWidget {
 
 ### Simulando o Build (Termynal)
 
-```console
-$ flutter create meu_app
-> Criando projeto...
-
-$ flutter run
-> Compilando para Android...
-> Instalando no emulador...
-> Aplicativo rodando!
-```
+<div data-termynal class="termy">
+    <span data-ty="input">flutter create meu_app</span>
+    <span data-ty="progress">Criando projeto...</span>
+    <span data-ty="input">flutter run</span>
+    <span data-ty="progress">Compilando para Android...</span>
+    <span data-ty="progress">Instalando no emulador...</span>
+    <span data-ty="progress">Aplicativo rodando!</span>
+</div>
 
 ---
 

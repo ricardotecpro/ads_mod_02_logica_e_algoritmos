@@ -57,15 +57,15 @@ print(pessoa["nome"]) # Ana
 
 Python é interpretado. Você pode testar ideias na hora.
 
-```console
-$ python
->>> 2 + 2
-4
->>> nome = "Ric"
->>> print(nome * 3)
-RicRicRic
->>> exit()
-```
+<div data-termynal class="termy">
+    <span data-ty="input">python</span>
+    <span data-ty>>>> 2 + 2</span>
+    <span data-ty>4</span>
+    <span data-ty>>>> nome = "Ric"</span>
+    <span data-ty>>>> print(nome * 3)</span>
+    <span data-ty>RicRicRic</span>
+    <span data-ty>>>> exit()</span>
+</div>
 
 ---
 

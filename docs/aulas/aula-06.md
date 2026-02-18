@@ -63,13 +63,13 @@ fimpara
 
 ### Simulando (Termynal)
 
-```console
-$ ./lista_nomes
-Digite o nome 0: Ana
-Digite o nome 1: Carlos
-Digite o nome 2: Bia
-...
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./lista_nomes</span>
+    <span data-ty>Digite o nome 0: Ana</span>
+    <span data-ty>Digite o nome 1: Carlos</span>
+    <span data-ty>Digite o nome 2: Bia</span>
+    <span data-ty>...</span>
+</div>
 
 ---
 

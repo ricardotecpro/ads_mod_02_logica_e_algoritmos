@@ -38,13 +38,12 @@ classDiagram
 
 Java usa uma **Máquina Virtual** (JVM).
 
-```console
-$ javac OlaMundo.java
-> Compilando para Bytecode (.class)...
-
-$ java OlaMundo
-Olâ, Mundo Java!
-```
+<div data-termynal class="termy">
+    <span data-ty="input">javac OlaMundo.java</span>
+    <span data-ty="progress">Compilando para Bytecode (.class)...</span>
+    <span data-ty="input">java OlaMundo</span>
+    <span data-ty>Olâ, Mundo Java!</span>
+</div>
 
 ---
 

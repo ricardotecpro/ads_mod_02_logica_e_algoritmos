@@ -69,11 +69,11 @@ Fimalgoritmo
 
 ### Simulando a Execução (Termynal)
 
-```console
-$ ./calcula_dobro
-Digite um número: 5
-> O dobro é: 10
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./calcula_dobro</span>
+    <span data-ty>Digite um número: 5</span>
+    <span data-ty="progress">O dobro é: 10</span>
+</div>
 
 ---
 

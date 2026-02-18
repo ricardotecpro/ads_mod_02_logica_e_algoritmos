@@ -36,13 +36,12 @@ graph TD;
 
 ### Simulando Compilação (Termynal)
 
-```console
-$ gcc ola.c -o ola
-> Compilando...
-
-$ ./ola
-Ola, Mundo C!
-```
+<div data-termynal class="termy">
+    <span data-ty="input">gcc ola.c -o ola</span>
+    <span data-ty="progress">Compilando...</span>
+    <span data-ty="input">./ola</span>
+    <span data-ty>Ola, Mundo C!</span>
+</div>
 
 ---
 

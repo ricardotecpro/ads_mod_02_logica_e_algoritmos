@@ -64,16 +64,16 @@ Isso é CRÍTICO.
 
 ## 4. Simulando (Termynal)
 
-```console
-$ ./sistema_bancario
---- MENU ---
-1. Saldo
-2. Saque
-Digite opcao: 2
-CHAMANDO FUNCAO SAQUE...
-Saque realizado!
-RETORNANDO AO MENU...
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./sistema_bancario</span>
+    <span data-ty>--- MENU ---</span>
+    <span data-ty>1. Saldo</span>
+    <span data-ty>2. Saque</span>
+    <span data-ty>Digite opcao: 2</span>
+    <span data-ty>CHAMANDO FUNCAO SAQUE...</span>
+    <span data-ty>Saque realizado!</span>
+    <span data-ty>RETORNANDO AO MENU...</span>
+</div>
 
 ---
 

@@ -1,7 +1,6 @@
 from playwright.sync_api import Page, expect
 import pytest
 
-@pytest.mark.skip(reason="Flaky Termynal rendering detection")
 def test_termynal_copy_button(page: Page, base_url: str):
     """
     Test that the Termynal copy button is injected and visible.

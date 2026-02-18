@@ -45,12 +45,12 @@ O navegador recebe apenas:
 
 ### Simulando um Servidor Local (Termynal)
 
-```console
-$ php -S localhost:8000
-> PHP Development Server started...
-> Listening on http://localhost:8000
-> Press Ctrl-C to quit.
-```
+<div data-termynal class="termy">
+    <span data-ty="input">php -S localhost:8000</span>
+    <span data-ty="progress">PHP Development Server started...</span>
+    <span data-ty="progress">Listening on http://localhost:8000</span>
+    <span data-ty="progress">Press Ctrl-C to quit.</span>
+</div>
 
 ---
 

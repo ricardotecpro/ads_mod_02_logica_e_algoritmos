@@ -40,14 +40,14 @@ fimenquanto
 
 ### Simulando (Termynal)
 
-```console
-$ ./contagem
-Contagem: 0
-Contagem: 1
-Contagem: 2
-Contagem: 3
-Contagem: 4
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./contagem</span>
+    <span data-ty>Contagem: 0</span>
+    <span data-ty>Contagem: 1</span>
+    <span data-ty>Contagem: 2</span>
+    <span data-ty>Contagem: 3</span>
+    <span data-ty>Contagem: 4</span>
+</div>
 
 ---
 

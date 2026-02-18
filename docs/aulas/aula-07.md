@@ -54,13 +54,13 @@ fimpara
 
 ### Simulando a Execução (Termynal)
 
-```console
-$ ./preenche_matriz
-Digite valor para [0,0]: 10
-Digite valor para [0,1]: 20
-Digite valor para [0,2]: 30
-Digite valor para [1,0]: 40...
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./preenche_matriz</span>
+    <span data-ty>Digite valor para [0,0]: 10</span>
+    <span data-ty>Digite valor para [0,1]: 20</span>
+    <span data-ty>Digite valor para [0,2]: 30</span>
+    <span data-ty>Digite valor para [1,0]: 40...</span>
+</div>
 
 ---
 

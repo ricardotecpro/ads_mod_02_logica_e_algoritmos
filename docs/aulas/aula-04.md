@@ -73,14 +73,14 @@ fimescolha
 
 ### Simulando um Menu (Termynal)
 
-```console
-$ ./menu_sistema
-1. Iniciar
-2. Configurações
-3. Sair
-Digite sua opção: 2
-> Abrindo Configurações...
-```
+<div data-termynal class="termy">
+    <span data-ty="input">./menu_sistema</span>
+    <span data-ty>1. Iniciar</span>
+    <span data-ty>2. Configurações</span>
+    <span data-ty>3. Sair</span>
+    <span data-ty>Digite sua opção: 2</span>
+    <span data-ty="progress">Abrindo Configurações...</span>
+</div>
 
 ---
 
