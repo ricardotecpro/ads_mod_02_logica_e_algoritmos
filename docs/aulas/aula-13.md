@@ -1,69 +1,91 @@
-# Linguagem JavaScript 📜
+# Linguagem Rust 🦀
 
-Bem-vindo ao guia de JavaScript (JS), a linguagem de programação que impulsiona a web. Originalmente criada para adicionar interatividade às páginas da internet, hoje o JavaScript é uma linguagem multifuncional que roda em navegadores, servidores (com Node.js), aplicativos mobile e muito mais, sendo uma das tecnologias mais importantes e demandadas do mercado.
+Bem-vindo ao guia da linguagem Rust, uma linguagem de programação de sistemas focada em três objetivos principais: **segurança, velocidade e concorrência**. Rust alcança segurança de memória sem a necessidade de um *garbage collector* (coletor de lixo), utilizando um sistema inovador de **propriedade (ownership)** e **empréstimo (borrowing)**. Isso permite que Rust seja tão rápido quanto C/C++, mas com garantias de segurança que previnem classes inteiras de bugs.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-Uma das grandes vantagens do JavaScript é que ele não exige uma instalação complexa para começar. Ele possui dois ambientes de execução principais:
+O ecossistema de Rust é gerenciado pela ferramenta `rustup`, que instala o compilador (`rustc`), o gerenciador de pacotes e build (`cargo`) e a documentação.
 
-1.  **Navegador Web (Browser)**:
+1.  **Instale o Rust**:
 
-    * **Instalação**: Nenhuma\! Todo navegador moderno (Chrome, Firefox, Edge) já possui um motor JavaScript integrado.
-    * **Como usar**: Pressione a tecla `F12` em qualquer página da web para abrir as **Ferramentas de Desenvolvedor** e vá para a aba **"Console"**. Você pode escrever e executar código JavaScript diretamente ali.
+    * Visite o [site oficial do Rust](https://www.rust-lang.org/tools/install) e siga as instruções para o seu sistema operacional. O comando fornecido no site baixa e executa o script `rustup-init`, que cuida de toda a instalação.
+    * `rustup` irá configurar automaticamente o `PATH` do sistema. Após a instalação, abra um novo terminal e verifique as versões com `rustc --version` e `cargo --version`.
 
-2.  **Node.js (Fora do Navegador)**:
+2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
 
-    * **Instalação**: Para rodar JavaScript no seu computador (para criar servidores, scripts de automação, etc.), você precisa do **Node.js**. Baixe a versão LTS do [site oficial](https://nodejs.org/). O instalador já inclui o `npm` (Node Package Manager), que é usado para gerenciar bibliotecas.
-    * **Como usar**: Após instalar, você pode criar um arquivo (ex: `meu_programa.js`) e executá-lo no terminal com o comando: `node meu_programa.js`.
+    ### Opção 1: Visual Studio Code (Recomendado)
 
-### IDE (Ambiente de Desenvolvimento Integrado)
+    * Instale o [Visual Studio Code](https://code.visualstudio.com/).
+    * Na aba de extensões, instale a extensão **`rust-analyzer`**. Ela oferece um suporte de primeira linha para Rust, com autocompletar, análise de código em tempo real e integração com o `cargo`.
 
-* **Visual Studio Code (Recomendado)**: O VS Code é a escolha principal para desenvolvimento JavaScript. Ele oferece suporte nativo excelente, além de extensões poderosas como "Prettier" para formatação de código e "ESLint" para encontrar erros e forçar boas práticas.
+    ### Opção 2: CLion com o plugin Rust
 
-### 🚀 Seu Primeiro Programa em JavaScript
+    * Para quem prefere uma IDE mais robusta da JetBrains, o [RustRover](https://www.jetbrains.com/rust/) ou [CLion](https://www.jetbrains.com/clion/) com o plugin oficial do Rust é uma excelente alternativa.
 
-Vamos ver como executar um "Olá, Mundo\!" nos dois ambientes.
+### 🚀 Seu Primeiro Programa em Rust
 
-**No Console do Navegador ou em um arquivo com Node.js:**
+A ferramenta `cargo` facilita a criação e gerenciamento de projetos.
 
-```javascript
-console.log("Ola, Universo JavaScript!");
+1.  **Crie um novo projeto**: No terminal, execute `cargo new ola_rust`.
+2.  **Entre no diretório**: `cd ola_rust`.
+3.  O `cargo` cria um arquivo `src/main.rs` com o seguinte conteúdo:
+
+<!-- end list -->
+
+```rust
+// A função main() é o ponto de entrada de todo programa executável em Rust.
+fn main() {
+    // println! é uma macro (indicado pela '!') que imprime texto no console.
+    println!("Olá, Universo Rust!");
+}
 ```
 
-`console.log()` é a função universal para imprimir informações no console, seja no navegador ou no terminal do Node.js.
+4.  **Compile e execute o projeto**: No terminal, dentro do diretório do projeto, execute `cargo run`.
 
 ## 📊 Tipos de Dados e Variáveis
 
-JavaScript é uma linguagem de **tipagem dinâmica**, assim como Python. O tipo de uma variável é determinado pelo valor que ela recebe. Para declarar variáveis, usamos as palavras-chave `let` (para valores que podem mudar) e `const` (para valores constantes).
+Rust é uma linguagem **estaticamente e fortemente tipada**. Uma de suas características mais importantes é a **imutabilidade por padrão**.
 
-| Significado | Tipo em JavaScript | Observação |
+* **Imutabilidade**: Variáveis declaradas com `let` são imutáveis. Para torná-las mutáveis, você deve usar a palavra-chave `mut`.
+
+| Significado | Tipo em Rust | Observação |
 | :--- | :--- | :--- |
-| Número | `number` | Usado tanto para inteiros quanto para números de ponto flutuante. Não há distinção entre `int` e `float`. |
-| Texto | `string` | Para sequências de caracteres. Pode ser declarado com aspas simples (`'...'`), duplas (`"..."`) ou crases (`` `...` ``). |
-| Valor Lógico | `boolean` | Aceita apenas os valores `true` ou `false`. |
-| Nulo Intencional | `null` | Representa a ausência intencional de um valor de objeto. |
-| Não Definido | `undefined` | Uma variável que foi declarada, mas ainda não teve um valor atribuído. |
-| Objeto | `object` | Usado para coleções de dados mais complexas e é a base para quase tudo em JS. |
+| Número Inteiro | `i32` | Tipo inteiro de 32 bits com sinal. Outros tipos incluem `i8`, `i64`, `u8` (sem sinal), etc. |
+| Número de Ponto Flutuante | `f64` | Padrão para números reais, com precisão dupla de 64 bits. |
+| Texto (String) | `String` | Um tipo de string que pode crescer e ser modificado, alocado na *heap*. `&str` é uma "fatia" de string imutável. |
+| Valor Lógico | `bool` | Aceita apenas os valores `true` ou `false`. |
+| Um Único Caractere | `char` | Representa um único caractere Unicode, declarado com **aspas simples**. |
 
 ## 📝 Declaração e Formatação de Saída
 
-Para construir strings com variáveis, a forma mais moderna e legível é usar **Template Literals**, que são strings declaradas entre crases (`` ` ``) e permitem a interpolação de variáveis com `${...}`.
+A declaração de variáveis com `let` e a formatação com a macro `println!` são centrais em Rust.
 
-```javascript
-// Usamos 'let' para variáveis que podem ser alteradas e 'const' para constantes.
-const nome = "Gabriel Lima"; //
-let idade = 22; //
-let salario = 5500.99; //
-let isEstudante = true; //
+```rust
+fn main() {
+    // 'let' cria uma variável imutável.
+    let nome: &str = "Helena Vargas";
+    // 'let mut' cria uma variável mutável.
+    let mut idade: i32 = 29;
+    let salario: f64 = 14200.50;
+    let is_gerente: bool = false;
 
-// Usando Template Literals para uma saída limpa e formatada.
-console.log(`NOME = ${nome}`); //
-console.log(`IDADE = ${idade}`); //
-console.log(`SALARIO = ${salario.toFixed(2)}`); // O método .toFixed(2) formata o número para 2 casas decimais.
-console.log(`É ESTUDANTE? = ${isEstudante}`); //
+    // A formatação é feita com placeholders {} dentro da string.
+    println!("NOME = {}", nome);
+    println!("IDADE = {}", idade);
+
+    // Para formatar um float com 2 casas decimais, usa-se {:.2}
+    println!("SALÁRIO = {:.2}", salario);
+    println!("É GERENTE? = {}", is_gerente);
+
+    // Modificando uma variável mutável
+    idade = 30;
+    println!("NOVA IDADE = {}", idade);
+}
 ```
 
 ## 🔢 Operadores
+
+Os operadores em Rust são padrão e seguem a convenção da família C.
 
 ### Aritméticos
 
@@ -74,22 +96,17 @@ console.log(`É ESTUDANTE? = ${isEstudante}`); //
 | `*` | Multiplicação |
 | `/` | Divisão |
 | `%` | Resto da divisão (módulo) |
-| `**` | Exponenciação |
 
 ### Comparativos
 
 | Operador | Significado |
 | :---: | :--- |
-| `==` | Igual (compara apenas o valor, pode converter o tipo) |
-| `===` | Estritamente igual (compara o valor E o tipo) |
-| `!=` | Diferente |
-| `!==` | Estritamente diferente |
+| `==` | Igual a |
+| `!=` | Diferente de |
 | `>` | Maior que |
 | `<` | Menor que |
 | `>=` | Maior ou igual a |
 | `<=` | Menor ou igual a |
-
-**Importante**: Em JavaScript, prefira **sempre** usar a comparação estrita (`===` e `!==`). Isso evita bugs inesperados causados pela conversão automática de tipos que o `==` faz (por exemplo, `7 == "7"` é `true`, mas `7 === "7"` é `false`).
 
 ### Lógicos
 
@@ -101,154 +118,145 @@ console.log(`É ESTUDANTE? = ${isEstudante}`); //
 
 ## 📥 Entrada de Dados
 
-A forma de receber dados do usuário varia conforme o ambiente de execução.
+A leitura de dados do usuário em Rust é feita através do módulo `std::io` e exige tratamento de erros explícito. O compilador de Rust ajuda a garantir que você não se esqueça de tratar possíveis falhas.
 
-### No Navegador
+```rust
+use std::io; // Importa o módulo de entrada e saída.
 
-No navegador, a maneira mais simples de pedir uma informação ao usuário é com a função `prompt()`.
+fn main() {
+    println!("Digite seu nome completo:");
+    // Declara uma nova String mutável para armazenar a entrada.
+    let mut nome = String::new();
+    // Lê a linha da entrada padrão.
+    io::stdin()
+        .read_line(&mut nome)
+        .expect("Falha ao ler a linha"); // .expect() para o programa se ocorrer um erro.
+    // Remove espaços em branco e a quebra de linha da entrada.
+    nome = nome.trim().to_string();
 
-```javascript
-// prompt() exibe uma caixa de diálogo e sempre retorna uma string.
-let nome = prompt("Digite seu nome:");
-let idade = parseInt(prompt("Digite sua idade:")); // parseInt() converte a string para um número inteiro.
-let altura = parseFloat(prompt("Digite sua altura:")); // parseFloat() converte para número com decimais.
+    println!("Digite sua idade:");
+    let mut idade_str = String::new();
+    io::stdin()
+        .read_line(&mut idade_str)
+        .expect("Falha ao ler a linha");
+    // Converte a string para um número, tratando o erro.
+    let idade: i32 = idade_str
+        .trim()
+        .parse()
+        .expect("Por favor, digite um número!");
 
-console.log(`Olá, ${nome}! Você tem ${idade} anos e ${altura}m de altura.`);
-```
-
-### No Node.js
-
-Para ler dados de forma síncrona no terminal com Node.js (semelhante a outras linguagens), podemos usar uma biblioteca externa. Uma opção simples para iniciantes é a `readline-sync`.
-
-1.  **Instale a biblioteca**: No seu terminal, execute `npm install readline-sync`.
-2.  **Use no seu código**:
-
-<!-- end list -->
-
-```javascript
-// Importa a biblioteca instalada.
-const readline = require('readline-sync');
-
-// Usa os métodos para fazer perguntas e ler as respostas.
-const nome = readline.question("Digite seu nome: ");
-const idade = readline.questionInt("Digite sua idade: ");
-const salario = readline.questionFloat("Digite seu salario: ");
-
-console.log("\n--- DADOS REGISTRADOS ---");
-console.log(`Nome: ${nome}`);
-console.log(`Idade: ${idade}`);
-console.log(`Salario: ${salario.toFixed(2)}`);
+    println!("\n--- DADOS REGISTRADOS ---");
+    println!("Nome: {}", nome);
+    println!("Idade: {}", idade);
+}
 ```
 
 ## 🔀 Estruturas de Controle
 
-JavaScript usa chaves `{}` para delimitar blocos de código, de forma similar a C, Java e C\#.
+Rust usa chaves `{}` para delimitar blocos de código.
 
 ### Estrutura Condicional (`if/else if/else`)
 
-```javascript
-const hora = new Date().getHours(); // Pega a hora atual do sistema.
+Em Rust, a condição de um `if` não precisa de parênteses. Além disso, `if` é uma expressão, o que significa que pode retornar um valor.
 
-if (hora < 12) {
-    console.log("Bom dia!"); //
-} else if (hora < 18) {
-    console.log("Boa tarde!");
+```rust
+let idade = 29;
+// 'if' pode ser usado para atribuir um valor a uma variável.
+let status = if idade >= 18 {
+    "Adulto"
 } else {
-    console.log("Boa noite!"); //
-}
+    "Menor de idade"
+};
+println!("Status: {}", status); // Status: Adulto
 ```
 
-### Estrutura de Repetição `while`
+### Estruturas de Repetição
 
-```javascript
-let soma = 0;
-// No Node.js com readline-sync
-let numero = require('readline-sync').questionInt("Digite um numero (0 para sair): ");
+Rust oferece três tipos de laços:
 
-while (numero !== 0) {
-    soma = soma + numero;
-    numero = require('readline-sync').questionInt("Digite outro numero (0 para sair): ");
-}
+**1. `loop` (Laço Infinito)**: Executa para sempre, a menos que seja interrompido por um `break`.
 
-console.log(`SOMA FINAL = ${soma}`);
-```
-
-### Estrutura de Repetição `for`
-
-O laço `for` clássico é idêntico ao de C/Java/C\#.
-
-```javascript
-const n = require('readline-sync').questionInt("Quantos numeros voce quer somar? ");
-let soma = 0;
-
-for (let i = 0; i < n; i++) {
-    let valor = require('readline-sync').questionInt(`Digite o valor #${i + 1}: `);
-    soma += valor;
-}
-
-console.log(`SOMA = ${soma}`);
-```
-
-## 📏 Vetores e Matrizes (Arrays)
-
-O `Array` em JavaScript é uma estrutura de dados extremamente versátil e dinâmica, que pode crescer e diminuir de tamanho.
-
-### Vetores (Arrays)
-
-```javascript
-const n = require('readline-sync').questionInt("Quantos numeros voce vai digitar? ");
-const vetor = []; // Declara um array vazio.
-
-for (let i = 0; i < n; i++) {
-    let numero = require('readline-sync').questionFloat(`Digite o numero #${i + 1}: `);
-    vetor.push(numero); // .push() adiciona um elemento ao final do array.
-}
-
-console.log("\nNUMEROS DIGITADOS:");
-for (let i = 0; i < vetor.length; i++) {
-    console.log(vetor[i].toFixed(1));
-}
-```
-
-### Matrizes (Arrays de Arrays)
-
-Uma matriz em JavaScript é um array cujos elementos são outros arrays.
-
-```javascript
-const m = require('readline-sync').questionInt("Quantas linhas tera a matriz? ");
-const n = require('readline-sync').questionInt("Quantas colunas tera a matriz? ");
-
-const matriz = [];
-
-for (let i = 0; i < m; i++) {
-    matriz[i] = []; // Cria uma linha (um array vazio)
-    for (let j = 0; j < n; j++) {
-        matriz[i][j] = require('readline-sync').questionInt(`Elemento [${i},${j}]: `);
+```rust
+let mut contador = 0;
+loop {
+    println!("Repetindo...");
+    contador += 1;
+    if contador == 3 {
+        break; // Para o laço
     }
 }
+```
 
-console.log("\nMATRIZ DIGITADA:");
-for (let i = 0; i < m; i++) {
-    console.log(matriz[i].join(' ')); // .join(' ') une os elementos da linha com um espaço.
+**2. `while` (Laço Condicional)**: Executa enquanto uma condição for verdadeira.
+
+```rust
+let mut numero = 3;
+while numero != 0 {
+    println!("{}!", numero);
+    numero -= 1;
+}
+println!("LANÇAR!");
+```
+
+**3. `for` (Laço de Iteração)**: O mais comum, usado para iterar sobre uma coleção ou um `range`.
+
+```rust
+// Itera de 1 até 4 (o 5 não é incluído).
+for i in 1..5 {
+    println!("O valor é: {}", i);
 }
 ```
 
-## 🐞 Depuração (Debugging) em JavaScript
+## 📏 Vetores (Arrays e Vectors)
 
-### Debugging no Navegador
+Assim como Go, Rust distingue entre coleções de tamanho fixo e dinâmico.
 
-1.  Abra a página e pressione `F12` para abrir as Ferramentas de Desenvolvedor.
-2.  Vá para a aba **Sources** (Fontes).
-3.  Encontre seu arquivo `.js` na lista de arquivos.
-4.  Clique na margem esquerda, ao lado do número da linha, para adicionar um **breakpoint** (ponto de parada).
-5.  Atualize a página ou execute a ação que dispara o código. A execução pausará no seu breakpoint, permitindo que você inspecione variáveis.
+* **Array**: Tamanho fixo, conhecido em tempo de compilação. Ex: `let a: [i32; 3] = [1, 2, 3];`.
+* **Vector (`Vec<T>`)**: Uma "lista" que pode crescer e diminuir de tamanho, similar ao `std::vector` do C++ ou `ArrayList` do Java. É a escolha mais comum.
 
-### Debugging no VS Code (com Node.js)
+### Vectors
 
-1.  Abra seu arquivo `.js`.
-2.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
-3.  Pressione `F5` para iniciar o depurador. Se for a primeira vez, o VS Code pode pedir para você selecionar o ambiente (escolha **Node.js**).
-4.  A execução pausará no breakpoint, e você poderá inspecionar variáveis, controlar a execução (com `F10` para passar por cima) e ver a pilha de chamadas no painel esquerdo.
+```rust
+fn main() {
+    // Cria um novo vetor mutável e vazio.
+    let mut numeros: Vec<i32> = Vec::new();
+
+    // Adiciona elementos ao vetor.
+    numeros.push(10);
+    numeros.push(20);
+    numeros.push(30);
+
+    println!("Vetor: {:?}", numeros); // {:?} é um formatador de debug.
+
+    // Iterando sobre o vetor
+    for numero in &numeros { // & para emprestar o vetor sem mover a propriedade
+        println!("Número: {}", numero);
+    }
+}
+```
+
+### Matrizes (Vetores de Vetores)
+
+Uma matriz em Rust é tipicamente representada por um vetor, onde cada elemento é outro vetor.
+
+```rust
+// Uma matriz 2x3
+let matriz: Vec<Vec<i32>> = vec![
+    vec![1, 2, 3],
+    vec![4, 5, 6],
+];
+println!("Elemento (1,1): {}", matriz[1][1]); // Acessa o elemento na segunda linha, segunda coluna (valor 5)
+```
+
+## 🐞 Depuração (Debugging) em Rust
+
+### Debugging no VS Code
+
+1.  Além do `rust-analyzer`, instale a extensão **`CodeLLDB`** ou **`C/C++`** da Microsoft, que fornecem o depurador.
+2.  Abra seu projeto `cargo` no VS Code.
+3.  Vá para o seu arquivo `src/main.rs` e clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
+4.  Pressione `F5`. O VS Code usará o `cargo` para compilar seu programa em modo de depuração e, em seguida, iniciará o depurador.
+5.  A execução pausará no breakpoint, permitindo que você inspecione variáveis, execute o código passo a passo (`F10`) e utilize o console de depuração.
 
 ---
 

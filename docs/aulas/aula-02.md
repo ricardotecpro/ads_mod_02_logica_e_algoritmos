@@ -88,7 +88,7 @@ Para manter o código legível e funcional, siga estas regras ao nomear variáve
 Estes são os tipos de dados mais comuns que você usará:
 
 | Tipo | Descrição | Exemplo de Valor |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | `int` | Armazena números inteiros. | `35` |
 | `double` | Armazena números com ponto flutuante (decimais). | `1.75` |
 | `char` | Armazena um único caractere. | `'M'` |

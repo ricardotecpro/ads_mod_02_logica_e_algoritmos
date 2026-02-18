@@ -1,101 +1,107 @@
-# Linguagem Java ☕
+# Linguagem C\# 💎
 
-Bem-vindo ao guia da linguagem Java, uma das linguagens de programação mais populares e versáteis do mundo. Famosa por sua filosofia "escreva uma vez, rode em qualquer lugar" (*write once, run anywhere*), o Java é fundamental para o desenvolvimento de aplicações web, mobile (Android), e sistemas de grande escala.
+Bem-vindo ao guia de C\# (pronuncia-se "C Sharp"), uma linguagem de programação moderna, orientada a objetos e desenvolvida pela Microsoft. Ela é a principal linguagem da plataforma **.NET**, sendo amplamente utilizada para criar aplicações web, jogos (com a engine Unity), serviços de backend, aplicações desktop e muito mais.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-Para desenvolver em Java, o primeiro passo é instalar o **JDK (Java Development Kit)**, que é um pacote de software contendo o compilador e outras ferramentas essenciais.
+Para começar a desenvolver em C\#, você precisa do **.NET SDK (Software Development Kit)**, que inclui o compilador, bibliotecas e o runtime.
 
-1.  **Instale o Java JDK**:
+1.  **Instale o .NET SDK**:
 
-      * Faça o download do JDK (versão LTS, como 11, 17 ou 21, é recomendada) a partir do site oficial da Oracle ou de uma distribuição como o OpenJDK.
-      * Siga o instalador.
-      * **Configure as Variáveis de Ambiente**:
-          * Crie uma nova variável de ambiente `JAVA_HOME` apontando para a pasta de instalação do JDK (ex: `C:\Program Files\Java\jdk-17.0.2`).
-          * Adicione o caminho da pasta `bin` do JDK à variável `Path` do sistema (ex: `%JAVA_HOME%\bin`).
-      * Para verificar a instalação, abra um terminal e execute o comando `java -version`.
+      * Faça o download da versão mais recente (ou de uma versão LTS - Long-Term Support) do .NET SDK no [site oficial da Microsoft](https://dotnet.microsoft.com/download).
+      * Execute o instalador, que já configurará o `Path` do sistema automaticamente.
+      * Para verificar a instalação, abra um novo terminal e digite `dotnet --version`.
 
 2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
-    Enquanto o material original foca no Eclipse, as IDEs mais utilizadas atualmente para desenvolvimento Java são o VS Code e o IntelliJ IDEA.
+    O material original focava no Visual Studio 2019, mas vamos abordar as opções mais modernas.
 
-    ### Opção 1: VS Code
+    ### Opção 1: Visual Studio Community (Recomendado)
+
+      * Baixe o [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) (versão gratuita para estudantes e desenvolvedores individuais).
+      * Durante a instalação, na aba "Workloads", selecione a carga de trabalho **".NET desktop development"** para garantir que todas as ferramentas para C\# sejam instaladas.
+
+    ### Opção 2: Visual Studio Code
 
       * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-      * Na aba de extensões, instale o pacote **"Extension Pack for Java"** da Microsoft. Ele inclui tudo o que é necessário para compilar, executar e depurar código Java.
+      * Na aba de extensões, instale o pacote **"C\# Dev Kit"** da Microsoft. Ele fornece um ambiente leve e poderoso para o desenvolvimento .NET.
 
-    ### Opção 2: IntelliJ IDEA
+### 🚀 Seu Primeiro Programa em C\#
 
-      * Baixe a versão **Community** (gratuita) do [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
-      * O IntelliJ IDEA é altamente especializado para Java e oferece uma experiência de desenvolvimento muito produtiva, com ferramentas de análise de código e refatoração de ponta.
+A estrutura de um programa C\# é organizada em `namespaces` e `classes`.
 
-### 🚀 Seu Primeiro Programa em Java
+```csharp
+// Importa o namespace System, que contém funcionalidades essenciais como o Console.
+using System;
 
-Todo programa em Java é contido dentro de uma **classe**. A execução sempre começa no método `main`.
-
-```java
-// É uma boa prática definir um pacote para organizar suas classes.
-package curso;
-
-// Declaração da classe principal.
-public class Programa {
-
-    // Método principal, ponto de entrada do programa.
-    public static void main(String[] args) {
-        // Comando para imprimir uma linha no console.
-       System.out.println("Ola, Universo Java!");
+// Namespace é usado para organizar o código e evitar conflitos de nomes.
+namespace CursoCSharp
+{
+    // A classe é um contêiner para dados e métodos.
+    class Program
+    {
+        // O método Main é o ponto de entrada de qualquer aplicação C#.
+        static void Main(string[] args)
+        {
+            // Imprime uma linha de texto no console.
+            Console.WriteLine("Ola, Universo C#!");
+        }
     }
 }
 ```
 
+**Nota sobre C\# Moderno**: Versões recentes do C\# introduziram "top-level statements", que permitem escrever código simples diretamente em um arquivo, sem a necessidade de declarar explicitamente a classe `Program` e o método `Main`. Isso é ótimo para iniciantes e scripts rápidos.
+
 ## 📊 Tipos de Dados e Variáveis
 
-Java possui tipos de dados primitivos para armazenar valores simples e tipos por referência (classes) para objetos complexos.
+Os tipos de dados em C\# são robustos e bem definidos.
 
-| Significado | Tipo em Java | Valor Padrão | Observação |
+| Significado | Tipo em C\# | Valor Padrão | Observação |
 | :--- | :--- | :--- | :--- |
-| Número Inteiro | `int` | 0 | O tipo padrão para inteiros. Use `long` para valores muito grandes. |
-| Número de Ponto Flutuante | `double` | 0.0 | O tipo padrão para números reais. `float` oferece precisão simples. |
-| Um Único Caractere | `char` | `'\u0000'` | Armazena um caractere Unicode, sempre entre **aspas simples** (ex: `'F'`). |
-| Texto | `String` | `null` | `String` é uma classe, não um tipo primitivo, e por isso começa com 'S' maiúsculo. Textos são declarados entre **aspas duplas** (ex: "Beatriz Costa"). |
-| Valor Lógico | `boolean` | `false` | Aceita apenas os valores `true` ou `false`. |
+| Número Inteiro | `int` | 0 | Tipo padrão para inteiros de 32 bits. Para números maiores, use `long` (64 bits). |
+| Número de Ponto Flutuante | `double` | 0.0 | Tipo padrão para números reais com precisão dupla. |
+| Um Único Caractere | `char` | `'\0'` | Armazena um caractere Unicode, sempre entre **aspas simples**. |
+| Texto | `string` | `null` | Um tipo por referência para sequências de caracteres, declarado com **aspas duplas**. |
+| Valor Lógico | `bool` | `false` | Aceita apenas os valores `true` ou `false`. |
 
 ## 📝 Declaração e Atribuição de Variáveis
 
-A declaração de variáveis em Java exige a especificação de um tipo e um nome. A atribuição pode ser feita na mesma linha ou posteriormente.
+A declaração e atribuição de variáveis em C\# é direta. Para formatação de texto, C\# se destaca com a **interpolação de strings**, que é uma forma mais limpa e legível de construir strings com variáveis.
 
-```java
-package curso;
+```csharp
+using System;
+using System.Globalization; // Necessário para usar o CultureInfo.
 
-import java.util.Locale; // Importa a classe Locale para formatação.
+namespace CursoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Declaração e inicialização de variáveis.
+            int idade = 42;
+            double salario = 9500.75;
+            double altura = 1.78;
+            char genero = 'M';
+            string nome = "Lucas Almeida";
 
-public class Programa {
+            // Usando interpolação de string ($) para uma saída mais limpa.
+            Console.WriteLine($"NOME = {nome}");
+            Console.WriteLine($"IDADE = {idade}");
+            Console.WriteLine($"GENERO = {genero}");
 
-    public static void main(String[] args) {
+            // A formatação de casas decimais é feita com :F2 dentro das chaves.
+            Console.WriteLine($"ALTURA = {altura:F2}");
 
-       // Define o Locale para US para usar o ponto como separador decimal.
-       Locale.setDefault(Locale.US);
-
-       // Declaração e inicialização de variáveis.
-       int idade = 28;
-       double salario = 8200.50;
-       double altura = 1.65;
-       char genero = 'F';
-       String nome = "Beatriz Costa";
-
-       // Saída de dados.
-       System.out.println("NOME = " + nome);
-       System.out.println("IDADE = " + idade);
-       System.out.println("GENERO = " + genero);
-        // Usando String.format para formatar a saída com 2 casas decimais.
-       System.out.println("ALTURA = " + String.format("%.2f", altura));
-       System.out.println("SALARIO = " + String.format("%.2f", salario));
+            // Para garantir o ponto como separador decimal, usa-se CultureInfo.InvariantCulture.
+            Console.WriteLine($"SALARIO = {salario.ToString("F2", CultureInfo.InvariantCulture)}");
+        }
     }
 }
 ```
 
 ## 🔢 Operadores
 
-Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
+Os operadores em C\# são os mesmos encontrados em Java, C e C++, seguindo a mesma precedência e significado.
 
 ### Aritméticos
 
@@ -111,12 +117,12 @@ Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
 
 | Operador | Significado |
 | :---: | :--- |
-| `<` | Menor |
-| `>` | Maior |
-| `<=` | Menor ou igual |
-| `>=` | Maior ou igual |
-| `==` | Igual |
-| `!=` | Diferente |
+| `<` | Menor que |
+| `>` | Maior que |
+| `<=` | Menor ou igual a |
+| `>=` | Maior ou igual a |
+| `==` | Igual a |
+| `!=` | Diferente de |
 
 ### Lógicos
 
@@ -126,60 +132,50 @@ Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
 | `||` | OU |
 | `!` | NÃO |
 
-## 📥 Entrada de Dados com a Classe `Scanner`
+## 📥 Entrada de Dados
 
-Para ler dados do teclado em Java, utilizamos a classe `Scanner`, que deve ser importada da biblioteca `java.util`.
+Em C\#, a entrada de dados pelo console é feita com `Console.ReadLine()`. Este método sempre retorna os dados como uma `string`. Portanto, é necessário **converter (fazer o parse)** essa string para o tipo de dado desejado.
 
-1.  **Importe a classe**: `import java.util.Scanner;`.
-2.  **Crie um objeto Scanner**: `Scanner sc = new Scanner(System.in);`.
-3.  **Use os métodos de leitura**:
-      * `nextInt()`: Lê um número inteiro.
-      * `nextDouble()`: Lê um número double.
-      * `next()`: Lê a próxima palavra (até o espaço).
-      * `nextLine()`: Lê a linha inteira de texto.
-      * `next().charAt(0)`: Lê uma palavra e pega apenas o primeiro caractere.
-4.  **Feche o Scanner**: `sc.close();` para liberar os recursos do sistema.
+  * **Converter para `int`**: `int.Parse(Console.ReadLine())`
+  * **Converter para `double`**: `double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture)`
+  * **Converter para `char`**: `char.Parse(Console.ReadLine())`
 
-**Atenção à Quebra de Linha Pendente:**
-Quando você lê um número (`nextInt` ou `nextDouble`), o cursor de leitura para após o número, deixando o "Enter" (`\n`) no buffer de entrada. Se a próxima leitura for um `nextLine()`, ele lerá essa quebra de linha vazia.
-**Solução**: Consuma a quebra de linha pendente com um `sc.nextLine()` extra antes de ler o texto.
+O uso de `CultureInfo.InvariantCulture` ao converter para `double` é uma boa prática para garantir que o programa interprete o ponto (`.`) como separador decimal, independentemente da configuração regional do sistema operacional.
 
-```java
-package curso;
+```csharp
+using System;
+using System.Globalization;
 
-import java.util.Locale;
-import java.util.Scanner;
+namespace CursoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nomeCompleto;
+            int idade;
+            double salario;
+            char genero;
 
-public class Programa {
+            Console.Write("Digite seu nome completo: ");
+            nomeCompleto = Console.ReadLine(); // Lê a linha inteira como string.
 
-    public static void main(String[] args) {
-       Locale.setDefault(Locale.US);
-       Scanner sc = new Scanner(System.in);
+            Console.Write("Digite sua idade: ");
+            idade = int.Parse(Console.ReadLine()); // Lê a string e converte para int.
 
-       String nomeCompleto;
-       int idade;
-       double salario;
-       char genero;
+            Console.Write("Digite seu salario: ");
+            // Lê a string e converte para double, usando o ponto como separador.
+            salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-       System.out.print("Digite seu nome completo: ");
-       nomeCompleto = sc.nextLine();
+            Console.Write("Digite seu genero (F/M): ");
+            genero = char.Parse(Console.ReadLine()); // Lê a string e converte para char.
 
-       System.out.print("Digite sua idade: ");
-       idade = sc.nextInt();
-
-       System.out.print("Digite seu salario: ");
-       salario = sc.nextDouble();
-
-       System.out.print("Digite seu genero (F/M): ");
-       genero = sc.next().charAt(0);
-
-       System.out.println("\n--- DADOS REGISTRADOS ---");
-       System.out.println("Nome: " + nomeCompleto);
-       System.out.println("Idade: " + idade);
-       System.out.println("Salario: " + String.format("%.2f", salario));
-       System.out.println("Genero: " + genero);
-
-       sc.close();
+            Console.WriteLine("\n--- DADOS REGISTRADOS ---");
+            Console.WriteLine($"Nome: {nomeCompleto}");
+            Console.WriteLine($"Idade: {idade}");
+            Console.WriteLine($"Salario: {salario.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Genero: {genero}");
+        }
     }
 }
 ```
@@ -188,145 +184,314 @@ public class Programa {
 
 ### Estrutura Condicional (`if-else`)
 
-Permite que o programa execute diferentes caminhos com base em condições.
+Permite a execução de código com base em uma ou mais condições.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-System.out.print("Digite a hora atual (0-23): ");
-int hora = sc.nextInt();
+```csharp
+// ... (dentro do método Main)
+Console.Write("Digite a hora atual (0-23): ");
+int hora = int.Parse(Console.ReadLine());
 
-if (hora < 12) {
-    System.out.println("Bom dia!");
-} else if (hora < 18) {
-    System.out.println("Boa tarde!");
-} else {
-    System.out.println("Boa noite!");
+if (hora < 12)
+{
+    Console.WriteLine("Bom dia!");
 }
-sc.close();
+else if (hora < 18)
+{
+    Console.WriteLine("Boa tarde!");
+}
+else
+{
+    Console.WriteLine("Boa noite!");
+}
 ```
 
 ### Estrutura de Repetição `while`
 
-O bloco de código é executado enquanto a condição for verdadeira.
+Executa um bloco de código repetidamente enquanto uma condição for verdadeira.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-int numero;
+```csharp
+// ... (dentro do método Main)
+Console.Write("Digite um numero (0 para sair): ");
+int numero = int.Parse(Console.ReadLine());
 int soma = 0;
-System.out.print("Digite um numero (0 para sair): ");
-numero = sc.nextInt();
 
-while (numero != 0) { 
-    soma += numero;
-    System.out.print("Digite outro numero (0 para sair): ");
-    numero = sc.nextInt();
+while (numero != 0)
+{
+    soma = soma + numero;
+    Console.Write("Digite outro numero (0 para sair): ");
+    numero = int.Parse(Console.ReadLine());
 }
 
-System.out.println("SOMA FINAL = " + soma);
-sc.close();
+Console.WriteLine($"SOMA FINAL = {soma}");
 ```
 
 ### Estrutura de Repetição `for`
 
-Ideal para laços que precisam ser executados um número específico de vezes.
+Ideal para laços com um número de iterações predefinido.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-System.out.print("Quantos numeros serao somados? ");
-int N = sc.nextInt();
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantos numeros voce quer somar? ");
+int N = int.Parse(Console.ReadLine());
 int soma = 0;
 
-for (int i = 0; i < N; i++) { 
-    System.out.print("Digite o valor #" + (i + 1) + ": ");
-    int x = sc.nextInt();
-    soma += x;
+for (int i = 0; i < N; i++)
+{
+    Console.Write($"Digite o valor #{i + 1}: ");
+    int valor = int.Parse(Console.ReadLine());
+    soma = soma + valor;
 }
 
-System.out.println("SOMA = " + soma);
-sc.close();
+Console.WriteLine($"SOMA = {soma}");
 ```
 
 ## 📏 Vetores e Matrizes
 
 ### Vetores (Arrays)
 
-Em Java, vetores são objetos que armazenam uma coleção de tamanho fixo de elementos do mesmo tipo.
+Em C\#, vetores são coleções de tamanho fixo de um mesmo tipo de dado.
 
-```java
-// ... (dentro do método main)
-Locale.setDefault(Locale.US);
-Scanner sc = new Scanner(System.in);
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantos numeros voce vai digitar? ");
+int N = int.Parse(Console.ReadLine());
 
-System.out.print("Quantos numeros voce vai digitar? ");
-int N = sc.nextInt();
-
-// Declaração e instanciação do vetor
+// Declaração e instanciação de um vetor de doubles com N posições.
 double[] vetor = new double[N];
 
-for (int i = 0; i < N; i++) {
-    System.out.print("Digite um numero: ");
-    vetor[i] = sc.nextDouble();
+for (int i = 0; i < N; i++)
+{
+    Console.Write($"Digite o numero #{i + 1}: ");
+    vetor[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 }
 
-System.out.println("\nNUMEROS DIGITADOS:");
-for (int i = 0; i < N; i++) {
-    System.out.println(String.format("%.1f", vetor[i]));
+Console.WriteLine("\nNUMEROS DIGITADOS:");
+for (int i = 0; i < N; i++)
+{
+    Console.WriteLine(vetor[i].ToString("F1", CultureInfo.InvariantCulture));
 }
-sc.close();
 ```
 
 ### Matrizes (Arrays Bidimensionais)
 
-São vetores de vetores, úteis para representar dados em formato de tabela.
+C\# tem uma sintaxe própria e simplificada para matrizes, usando uma vírgula para separar as dimensões.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantas linhas tera a matriz? ");
+int M = int.Parse(Console.ReadLine());
+Console.Write("Quantas colunas tera a matriz? ");
+int N = int.Parse(Console.ReadLine());
 
-System.out.print("Quantas linhas tera a matriz? ");
-int M = sc.nextInt();
-System.out.print("Quantas colunas tera a matriz? ");
-int N = sc.nextInt();
+// Declaração e instanciação de uma matriz M x N.
+int[,] matriz = new int[M, N];
 
-// Declaração e instanciação da matriz
-int[][] matriz = new int[M][N];
-
-for (int i = 0; i < M; i++) {
-    for (int j = 0; j < N; j++) {
-        System.out.print("Elemento [" + i + "," + j + "]: ");
-        matriz[i][j] = sc.nextInt();
+for (int i = 0; i < M; i++)
+{
+    for (int j = 0; j < N; j++)
+    {
+        Console.Write($"Elemento [{i},{j}]: ");
+        matriz[i, j] = int.Parse(Console.ReadLine());
     }
 }
 
-System.out.println("\nMATRIZ DIGITADA:");
-for (int i = 0; i < M; i++) {
-    for (int j = 0; j < N; j++) {
-        System.out.print(matriz[i][j] + " ");
+Console.WriteLine("\nMATRIZ DIGITADA:");
+for (int i = 0; i < M; i++)
+{
+    for (int j = 0; j < N; j++)
+    {
+        Console.Write(matriz[i, j] + " ");
     }
-    System.out.println(); // Pula para a próxima linha
+    Console.WriteLine(); // Pula para a próxima linha.
 }
-sc.close();
 ```
 
-## 🐞 Depuração (Debugging) em Java
+## 🐞 Depuração (Debugging) em C\#
 
-Depurar é o processo de encontrar e corrigir bugs no seu código. Tanto o VS Code quanto o IntelliJ IDEA possuem excelentes ferramentas de depuração visual. Os comandos do material original eram para o Eclipse.
+Depurar código C\# é uma tarefa facilitada pelas excelentes ferramentas disponíveis no Visual Studio e no VS Code.
 
-### Debugging no VS Code e IntelliJ IDEA
+### Debugging no Visual Studio e VS Code
 
-Os conceitos são os mesmos, apenas os atalhos podem variar.
+Os atalhos e conceitos são muito semelhantes e padronizados.
 
-1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde você quer que a execução pause.
-2.  **Iniciar o Debug**:
-      * **IntelliJ**: Pressione `Shift + F9` ou clique no ícone de inseto ao lado da configuração de execução.
-      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug" e inicie a sessão.
+1.  **Habilitar/Desabilitar Breakpoint**: Pressione `F9` na linha desejada para criar um ponto de parada.
+2.  **Iniciar o Debug**: Pressione `F5` para iniciar o programa em modo de depuração. A execução pausará no primeiro breakpoint encontrado.
 3.  **Controlar a Execução**:
-      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. (**F8** no IntelliJ, **F10** no VS Code).
-      * **Continue (Continuar)**: Continua a execução até o próximo breakpoint ou o fim do programa. (**F9** no IntelliJ, **F5** no VS Code).
-4.  **Inspecionar Variáveis**: A aba "Debug" em ambas as IDEs mostrará uma janela "Variables" onde você pode ver e monitorar o valor das variáveis em tempo real.
+      * **Step Over (Passar por cima)**: Pressione `F10` para executar a linha atual e parar na próxima.
+      * **Stop (Parar)**: Pressione `Shift + F5` para encerrar a sessão de depuração.
+4.  **Inspecionar Variáveis**: Na parte inferior da tela, abas como "Locals" (Variáveis Locais) no Visual Studio ou a janela "VARIABLES" no VS Code exibirão os valores atuais das variáveis, permitindo que você os monitore em tempo real.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+
+### **F# – Uma Linguagem Funcional para .NET** 🚀
+
+**F#** é uma linguagem de programação funcional que roda na plataforma **.NET**, desenvolvida pela Microsoft e pela comunidade **open-source**. Ela combina **programação funcional**, **orientação a objetos** e **programação imperativa**, sendo uma excelente escolha para desenvolvimento robusto, seguro e conciso.
+
+---
+
+## **🔹 Características do F#**
+
+### ✅ **Sintaxe concisa e expressiva**
+
+- O código é mais curto e legível, eliminando a necessidade de muitos `return`, `{}` e `;`.
+
+### ✅ **Imutabilidade por padrão**
+
+- As variáveis são imutáveis (`let`), tornando o código mais previsível e seguro.
+
+### ✅ **Inferência de tipos poderosa**
+
+- Não é necessário declarar tipos explicitamente na maioria dos casos.
+
+### ✅ **Suporte a Programação Concorrente**
+
+- Usa o modelo de **Actor (Mailbox Processors)** e **Async Workflows** para concorrência eficiente.
+
+### ✅ **Interoperabilidade com C# e .NET**
+
+- Pode ser usado junto com código C#, aproveitando a vasta biblioteca .NET.
+
+---
+
+## **📌 Primeiros Passos no F#**
+
+Vamos ver exemplos práticos de F# para entender melhor como ele funciona.
+
+---
+
+### **1️⃣ Definição de Variáveis**
+
+```fsharp
+let nome = "Ricardo"
+let idade = 30
+printfn "Nome: %s, Idade: %d" nome idade
+```
+
+📌 As variáveis em F# são **imutáveis** por padrão. Para criar uma mutável, usamos `mutable`:
+
+```fsharp
+let mutable contador = 0
+contador <- contador + 1
+printfn "Contador: %d" contador
+```
+
+---
+
+### **2️⃣ Funções Simples**
+
+```fsharp
+let soma x y = x + y
+printfn "2 + 3 = %d" (soma 2 3)
+```
+
+📌 Não precisa de `return`, pois F# retorna automaticamente o último valor da função.
+
+---
+
+### **3️⃣ Funções de Alta Ordem**
+
+```fsharp
+let aplicarOperacao operacao x y = operacao x y
+
+let resultado = aplicarOperacao (+) 10 5
+printfn "Resultado: %d" resultado  // 15
+```
+
+📌 Aqui, `aplicarOperacao` recebe uma função como parâmetro (`+`, `-`, `*`, etc.).
+
+---
+
+### **4️⃣ Map, Filter e Reduce**
+
+```fsharp
+let numeros = [1; 2; 3; 4; 5]
+
+let dobrados = List.map (fun x -> x * 2) numeros
+printfn "%A" dobrados  // [2; 4; 6; 8; 10]
+
+let pares = List.filter (fun x -> x % 2 = 0) numeros
+printfn "%A" pares  // [2; 4]
+
+let soma = List.fold (+) 0 numeros
+printfn "Soma: %d" soma  // 15
+```
+
+📌 `map` transforma os valores, `filter` filtra elementos e `fold` reduz a lista a um único valor.
+
+---
+
+### **5️⃣ Recursão (sem loops!)**
+
+```fsharp
+let rec fatorial n =
+    if n = 0 then 1
+    else n * fatorial (n - 1)
+
+printfn "Fatorial de 5: %d" (fatorial 5)
+```
+
+📌 **Recursão** é a abordagem funcional para repetição, substituindo `for` e `while`.
+
+---
+
+### **6️⃣ Expressões Lambda**
+
+```fsharp
+let quadrado = fun x -> x * x
+printfn "%d" (quadrado 4)  // 16
+```
+
+📌 O `fun x ->` define uma função anônima (lambda).
+
+---
+
+### **7️⃣ Composição de Funções**
+
+```fsharp
+let dobrar x = x * 2
+let incrementar x = x + 1
+
+let dobrarDepoisIncrementar = dobrar >> incrementar
+
+printfn "%d" (dobrarDepoisIncrementar 3)  // 7
+```
+
+📌 `>>` compõe funções: primeiro `dobrar`, depois `incrementar`.
+
+---
+
+### **8️⃣ Programação Concorrente com Async**
+
+```fsharp
+let tarefaLonga() =
+    async {
+        do! Async.Sleep 2000
+        return "Tarefa concluída!"
+    }
+
+let resultado = Async.RunSynchronously (tarefaLonga())
+printfn "%s" resultado
+```
+
+📌 **`async {}`** cria tarefas assíncronas, otimizando o uso de CPU.
+
+---
+
+## **📍 Aplicações do F#**
+
+✅ **Machine Learning** (com ML.NET e F# Data)  
+✅ **Processamento de dados e ETL**  
+✅ **Desenvolvimento Web** (usando ASP.NET e Giraffe)  
+✅ **Sistemas financeiros e científicos**  
+✅ **Concorrência e computação paralela**
+
+---
+
+## **💡 Conclusão**
+
+O **F#** é uma linguagem poderosa e concisa para programação funcional na plataforma **.NET**, combinando **eficiência, segurança e interoperabilidade com C#**. Ele é ideal para aplicações que exigem **alta confiabilidade**, como sistemas financeiros e científicos.
 
 ---
 

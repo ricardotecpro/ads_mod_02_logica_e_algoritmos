@@ -1,72 +1,66 @@
-# Linguagem Python 🐍
+# Linguagem JavaScript 📜
 
-Bem-vindo ao guia de Python, uma linguagem de programação de alto nível, conhecida por sua sintaxe limpa, legibilidade e vasta gama de aplicações, que vão desde desenvolvimento web e automação de scripts até ciência de dados e inteligência artificial. Sua filosofia incentiva a escrita de código claro e conciso.
+Bem-vindo ao guia de JavaScript (JS), a linguagem de programação que impulsiona a web. Originalmente criada para adicionar interatividade às páginas da internet, hoje o JavaScript é uma linguagem multifuncional que roda em navegadores, servidores (com Node.js), aplicativos mobile e muito mais, sendo uma das tecnologias mais importantes e demandadas do mercado.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-Para programar em Python, você precisa do interpretador da linguagem e de um bom editor de código ou IDE.
+Uma das grandes vantagens do JavaScript é que ele não exige uma instalação complexa para começar. Ele possui dois ambientes de execução principais:
 
-1.  **Instale o Python**:
+1.  **Navegador Web (Browser)**:
 
-      * Faça o download da versão mais recente do Python diretamente do [site oficial](https://www.google.com/search?q=https.www.python.org/downloads/).
-      * **Importante (para Windows)**: Na primeira tela do instalador, marque a caixa de seleção **"Add Python to PATH"**. Isso permite que você execute o Python a partir de qualquer terminal.
-      * Para testar a instalação, abra um terminal e digite `python` ou `python3`. Você deverá ver o prompt do interpretador Python (`>>>`). Para sair, digite `exit()` e pressione Enter.
+    * **Instalação**: Nenhuma\! Todo navegador moderno (Chrome, Firefox, Edge) já possui um motor JavaScript integrado.
+    * **Como usar**: Pressione a tecla `F12` em qualquer página da web para abrir as **Ferramentas de Desenvolvedor** e vá para a aba **"Console"**. Você pode escrever e executar código JavaScript diretamente ali.
 
-2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
-    O material original foca no PyCharm, que é excelente. O VS Code é outra alternativa extremamente popular.
+2.  **Node.js (Fora do Navegador)**:
 
-    ### Opção 1: PyCharm Community Edition
+    * **Instalação**: Para rodar JavaScript no seu computador (para criar servidores, scripts de automação, etc.), você precisa do **Node.js**. Baixe a versão LTS do [site oficial](https://nodejs.org/). O instalador já inclui o `npm` (Node Package Manager), que é usado para gerenciar bibliotecas.
+    * **Como usar**: Após instalar, você pode criar um arquivo (ex: `meu_programa.js`) e executá-lo no terminal com o comando: `node meu_programa.js`.
 
-      * Baixe o [PyCharm Community](https://www.jetbrains.com/pycharm/download/). É uma IDE gratuita e poderosa, desenvolvida pela JetBrains e totalmente dedicada ao desenvolvimento em Python, com ótimas ferramentas de depuração e análise de código.
+### IDE (Ambiente de Desenvolvimento Integrado)
 
-    ### Opção 2: Visual Studio Code
+* **Visual Studio Code (Recomendado)**: O VS Code é a escolha principal para desenvolvimento JavaScript. Ele oferece suporte nativo excelente, além de extensões poderosas como "Prettier" para formatação de código e "ESLint" para encontrar erros e forçar boas práticas.
 
-      * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-      * Na aba de extensões, instale a extensão **"Python"** da Microsoft. Ela transforma o VS Code em um ambiente de desenvolvimento Python completo, com suporte a depuração, linting e notebooks Jupyter.
+### 🚀 Seu Primeiro Programa em JavaScript
 
-### 🚀 Seu Primeiro Programa em Python
+Vamos ver como executar um "Olá, Mundo\!" nos dois ambientes.
 
-A simplicidade do Python brilha desde o início. Um programa "Olá, Mundo" é apenas uma linha de código.
+**No Console do Navegador ou em um arquivo com Node.js:**
 
-```python
-print("Ola, Universo Python!")
+```javascript
+console.log("Ola, Universo JavaScript!");
 ```
 
-Diferente de linguagens como Java ou C\#, Python não exige uma estrutura complexa de classes ou métodos `main` para programas simples.
+`console.log()` é a função universal para imprimir informações no console, seja no navegador ou no terminal do Node.js.
 
 ## 📊 Tipos de Dados e Variáveis
 
-Python é uma linguagem de **tipagem dinâmica**, o que significa que você não precisa declarar o tipo de uma variável. O tipo é inferido automaticamente quando você atribui um valor a ela.
+JavaScript é uma linguagem de **tipagem dinâmica**, assim como Python. O tipo de uma variável é determinado pelo valor que ela recebe. Para declarar variáveis, usamos as palavras-chave `let` (para valores que podem mudar) e `const` (para valores constantes).
 
-| Significado | Tipo em Python | Observação |
+| Significado | Tipo em JavaScript | Observação |
 | :--- | :--- | :--- |
-| Número Inteiro | `int` | Pode armazenar números de tamanho virtualmente ilimitado. |
-| Número de Ponto Flutuante | `float` | Usado para números reais (com casas decimais). |
-| Texto (String) | `str` | Não há um tipo `char` separado; um caractere é uma `str` de tamanho 1. Pode ser declarado com aspas simples (`'...'`) ou duplas (`"..."`). |
-| Valor Lógico | `bool` | Aceita apenas os valores `True` ou `False` (com a primeira letra maiúscula). |
-
-**Nota sobre Type Hints (Dicas de Tipo):**
-Embora a tipagem seja dinâmica, o Python moderno suporta "type hints", que permitem anotar o tipo esperado de uma variável (ex: `idade: int = 31`). Isso não afeta a execução, mas melhora a legibilidade e ajuda ferramentas de análise de código a encontrar erros.
+| Número | `number` | Usado tanto para inteiros quanto para números de ponto flutuante. Não há distinção entre `int` e `float`. |
+| Texto | `string` | Para sequências de caracteres. Pode ser declarado com aspas simples (`'...'`), duplas (`"..."`) ou crases (`` `...` ``). |
+| Valor Lógico | `boolean` | Aceita apenas os valores `true` ou `false`. |
+| Nulo Intencional | `null` | Representa a ausência intencional de um valor de objeto. |
+| Não Definido | `undefined` | Uma variável que foi declarada, mas ainda não teve um valor atribuído. |
+| Objeto | `object` | Usado para coleções de dados mais complexas e é a base para quase tudo em JS. |
 
 ## 📝 Declaração e Formatação de Saída
 
-A atribuição de variáveis é direta. Para exibir dados formatados, a melhor abordagem é usar **f-strings**, que permitem incorporar expressões e variáveis diretamente dentro de uma string.
+Para construir strings com variáveis, a forma mais moderna e legível é usar **Template Literals**, que são strings declaradas entre crases (`` ` ``) e permitem a interpolação de variáveis com `${...}`.
 
-```python
-# A anotação de tipo (ex: : int) é opcional, mas uma boa prática.
-idade: int = 31
-salario: float = 7800.25
-altura: float = 1.72
-genero: str = 'F'
-nome: str = "Sofia Oliveira"
+```javascript
+// Usamos 'let' para variáveis que podem ser alteradas e 'const' para constantes.
+const nome = "Gabriel Lima"; //
+let idade = 22; //
+let salario = 5500.99; //
+let isEstudante = true; //
 
-# f-strings (formatted string literals) são a forma moderna de formatar saídas.
-print(f"NOME = {nome}")
-print(f"IDADE = {idade}")
-print(f"GENERO = {genero}")
-# Para formatar um float com 2 casas decimais, usa-se :.2f
-print(f"SALARIO = {salario:.2f}")
-print(f"ALTURA = {altura:.2f}")
+// Usando Template Literals para uma saída limpa e formatada.
+console.log(`NOME = ${nome}`); //
+console.log(`IDADE = ${idade}`); //
+console.log(`SALARIO = ${salario.toFixed(2)}`); // O método .toFixed(2) formata o número para 2 casas decimais.
+console.log(`É ESTUDANTE? = ${isEstudante}`); //
 ```
 
 ## 🔢 Operadores
@@ -78,8 +72,7 @@ print(f"ALTURA = {altura:.2f}")
 | `+` | Adição |
 | `-` | Subtração |
 | `*` | Multiplicação |
-| `/` | Divisão (resulta em float) |
-| `//` | Divisão inteira (resulta em int, descarta o resto) |
+| `/` | Divisão |
 | `%` | Resto da divisão (módulo) |
 | `**` | Exponenciação |
 
@@ -87,153 +80,175 @@ print(f"ALTURA = {altura:.2f}")
 
 | Operador | Significado |
 | :---: | :--- |
-| `==` | Igual a |
-| `!=` | Diferente de |
+| `==` | Igual (compara apenas o valor, pode converter o tipo) |
+| `===` | Estritamente igual (compara o valor E o tipo) |
+| `!=` | Diferente |
+| `!==` | Estritamente diferente |
 | `>` | Maior que |
 | `<` | Menor que |
 | `>=` | Maior ou igual a |
 | `<=` | Menor ou igual a |
 
+**Importante**: Em JavaScript, prefira **sempre** usar a comparação estrita (`===` e `!==`). Isso evita bugs inesperados causados pela conversão automática de tipos que o `==` faz (por exemplo, `7 == "7"` é `true`, mas `7 === "7"` é `false`).
+
 ### Lógicos
 
-Em Python, os operadores lógicos são palavras em inglês, o que torna o código muito legível.
 | Operador | Significado |
 | :---: | :--- |
-| `and` | E |
-| `or` | OU |
-| `not` | NÃO |
+| `&&` | E |
+| `||` | OU |
+| `!` | NÃO |
 
 ## 📥 Entrada de Dados
 
-A entrada de dados em Python é feita com a função `input()`.
+A forma de receber dados do usuário varia conforme o ambiente de execução.
 
-  * A função `input()` **sempre retorna uma string**.
-  * Você deve converter explicitamente o valor para o tipo numérico desejado usando `int()` ou `float()`.
-  * A função pode receber uma string como argumento, que será exibida ao usuário como um prompt.
+### No Navegador
+
+No navegador, a maneira mais simples de pedir uma informação ao usuário é com a função `prompt()`.
+
+```javascript
+// prompt() exibe uma caixa de diálogo e sempre retorna uma string.
+let nome = prompt("Digite seu nome:");
+let idade = parseInt(prompt("Digite sua idade:")); // parseInt() converte a string para um número inteiro.
+let altura = parseFloat(prompt("Digite sua altura:")); // parseFloat() converte para número com decimais.
+
+console.log(`Olá, ${nome}! Você tem ${idade} anos e ${altura}m de altura.`);
+```
+
+### No Node.js
+
+Para ler dados de forma síncrona no terminal com Node.js (semelhante a outras linguagens), podemos usar uma biblioteca externa. Uma opção simples para iniciantes é a `readline-sync`.
+
+1.  **Instale a biblioteca**: No seu terminal, execute `npm install readline-sync`.
+2.  **Use no seu código**:
 
 <!-- end list -->
 
-```python
-# O prompt é passado diretamente para a função input().
-nome_completo = input("Digite seu nome completo: ")
-idade = int(input("Digite sua idade: ")) # Converte a entrada para inteiro.
-salario = float(input("Digite seu salario: ")) # Converte a entrada para float.
+```javascript
+// Importa a biblioteca instalada.
+const readline = require('readline-sync');
 
-print("\n--- DADOS REGISTRADOS ---")
-print(f"Nome: {nome_completo}")
-print(f"Idade: {idade}")
-print(f"Salario: {salario:.2f}")
+// Usa os métodos para fazer perguntas e ler as respostas.
+const nome = readline.question("Digite seu nome: ");
+const idade = readline.questionInt("Digite sua idade: ");
+const salario = readline.questionFloat("Digite seu salario: ");
+
+console.log("\n--- DADOS REGISTRADOS ---");
+console.log(`Nome: ${nome}`);
+console.log(`Idade: ${idade}`);
+console.log(`Salario: ${salario.toFixed(2)}`);
 ```
 
-## 🔀 Estruturas de Controle e a Importância da Indentação
+## 🔀 Estruturas de Controle
 
-Em Python, os blocos de código (corpo de um `if`, `for`, `while`, etc.) não são definidos por chaves `{}`. Em vez disso, eles são definidos pela **indentação** (geralmente 4 espaços). Isso força um estilo de código limpo e organizado.
+JavaScript usa chaves `{}` para delimitar blocos de código, de forma similar a C, Java e C\#.
 
-### Estrutura Condicional (`if/elif/else`)
+### Estrutura Condicional (`if/else if/else`)
 
-A estrutura `if` avalia uma condição. `elif` (contração de "else if") permite testar múltiplas condições, e `else` captura todos os outros casos.
+```javascript
+const hora = new Date().getHours(); // Pega a hora atual do sistema.
 
-```python
-hora = int(input("Digite uma hora do dia (0-23): "))
-
-if hora < 12:
-    print("Bom dia!")
-elif hora < 18:
-    print("Boa tarde!")
-else:
-    print("Boa noite!")
+if (hora < 12) {
+    console.log("Bom dia!"); //
+} else if (hora < 18) {
+    console.log("Boa tarde!");
+} else {
+    console.log("Boa noite!"); //
+}
 ```
 
 ### Estrutura de Repetição `while`
 
-O laço `while` executa um bloco de código enquanto uma condição for verdadeira.
+```javascript
+let soma = 0;
+// No Node.js com readline-sync
+let numero = require('readline-sync').questionInt("Digite um numero (0 para sair): ");
 
-```python
-soma = 0
-numero = int(input("Digite um numero (0 para sair): "))
+while (numero !== 0) {
+    soma = soma + numero;
+    numero = require('readline-sync').questionInt("Digite outro numero (0 para sair): ");
+}
 
-while numero != 0:
-    soma = soma + numero
-    numero = int(input("Digite outro numero (0 para sair): "))
-
-print(f"SOMA FINAL = {soma}")
+console.log(`SOMA FINAL = ${soma}`);
 ```
 
 ### Estrutura de Repetição `for`
 
-O laço `for` em Python é usado para iterar sobre uma sequência (como uma lista, uma string ou um `range`). A função `range(start, stop)` gera uma sequência de números, que é ideal para laços com contagem.
+O laço `for` clássico é idêntico ao de C/Java/C\#.
 
-```python
-n = int(input("Quantos numeros voce quer somar? "))
-soma = 0
+```javascript
+const n = require('readline-sync').questionInt("Quantos numeros voce quer somar? ");
+let soma = 0;
 
-for i in range(0, n):
-    valor = int(input(f"Digite o valor #{i + 1}: "))
-    soma = soma + valor
+for (let i = 0; i < n; i++) {
+    let valor = require('readline-sync').questionInt(`Digite o valor #${i + 1}: `);
+    soma += valor;
+}
 
-print(f"SOMA = {soma}")
+console.log(`SOMA = ${soma}`);
 ```
 
-## 📏 Vetores e Matrizes (Listas)
+## 📏 Vetores e Matrizes (Arrays)
 
-O tipo de dado em Python que mais se assemelha a um vetor ou array é a **lista** (`list`). Listas são coleções ordenadas e mutáveis de itens.
+O `Array` em JavaScript é uma estrutura de dados extremamente versátil e dinâmica, que pode crescer e diminuir de tamanho.
 
-### Vetores (Listas)
+### Vetores (Arrays)
 
-Uma forma "pythônica" de inicializar uma lista com valores padrão é usando *list comprehension*.
+```javascript
+const n = require('readline-sync').questionInt("Quantos numeros voce vai digitar? ");
+const vetor = []; // Declara um array vazio.
 
-```python
-n = int(input("Quantos numeros voce vai digitar? "))
+for (let i = 0; i < n; i++) {
+    let numero = require('readline-sync').questionFloat(`Digite o numero #${i + 1}: `);
+    vetor.push(numero); // .push() adiciona um elemento ao final do array.
+}
 
-# Inicializa uma lista com N posições, todas contendo 0.0
-# Esta sintaxe é chamada de "list comprehension".
-vetor: [float] = [0.0 for x in range(n)]
-
-for i in range(0, n):
-    vetor[i] = float(input(f"Digite o numero #{i + 1}: "))
-
-print("\nNUMEROS DIGITADOS:")
-for numero in vetor:
-    print(f"{numero:.1f}")
+console.log("\nNUMEROS DIGITADOS:");
+for (let i = 0; i < vetor.length; i++) {
+    console.log(vetor[i].toFixed(1));
+}
 ```
 
-### Matrizes (Listas de Listas)
+### Matrizes (Arrays de Arrays)
 
-Uma matriz em Python é implementada como uma lista onde cada elemento é, por sua vez, outra lista.
+Uma matriz em JavaScript é um array cujos elementos são outros arrays.
 
-```python
-m = int(input("Quantas linhas tera a matriz? "))
-n = int(input("Quantas colunas tera a matriz? "))
+```javascript
+const m = require('readline-sync').questionInt("Quantas linhas tera a matriz? ");
+const n = require('readline-sync').questionInt("Quantas colunas tera a matriz? ");
 
-# Inicializa uma matriz M x N com zeros usando "nested list comprehension".
-matriz: [[int]] = [[0 for x in range(n)] for x in range(m)]
+const matriz = [];
 
-for i in range(0, m):
-    for j in range(0, n):
-        matriz[i][j] = int(input(f"Elemento [{i},{j}]: "))
+for (let i = 0; i < m; i++) {
+    matriz[i] = []; // Cria uma linha (um array vazio)
+    for (let j = 0; j < n; j++) {
+        matriz[i][j] = require('readline-sync').questionInt(`Elemento [${i},${j}]: `);
+    }
+}
 
-print("\nMATRIZ DIGITADA:")
-for i in range(0, m):
-    for j in range(0, n):
-        print(f"{matriz[i][j]} ", end="")
-    print() # Pula para a próxima linha
+console.log("\nMATRIZ DIGITADA:");
+for (let i = 0; i < m; i++) {
+    console.log(matriz[i].join(' ')); // .join(' ') une os elementos da linha com um espaço.
+}
 ```
 
-## 🐞 Depuração (Debugging) em Python
+## 🐞 Depuração (Debugging) em JavaScript
 
-Tanto o PyCharm quanto o VS Code oferecem depuradores visuais excelentes.
+### Debugging no Navegador
 
-### Debugging no PyCharm e VS Code
+1.  Abra a página e pressione `F12` para abrir as Ferramentas de Desenvolvedor.
+2.  Vá para a aba **Sources** (Fontes).
+3.  Encontre seu arquivo `.js` na lista de arquivos.
+4.  Clique na margem esquerda, ao lado do número da linha, para adicionar um **breakpoint** (ponto de parada).
+5.  Atualize a página ou execute a ação que dispara o código. A execução pausará no seu breakpoint, permitindo que você inspecione variáveis.
 
-Os conceitos e atalhos são muito parecidos.
+### Debugging no VS Code (com Node.js)
 
-1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde quer que a execução pause. No PyCharm, o atalho é `Ctrl + F8`.
-2.  **Iniciar o Debug**:
-      * **PyCharm**: Pressione `Shift + F9` ou clique no ícone de inseto.
-      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug".
-3.  **Controlar a Execução**:
-      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. O atalho costuma ser `F8` no PyCharm e `F10` no VS Code.
-4.  **Inspecionar Variáveis**: A aba "Debugger" no PyCharm ou a janela "VARIABLES" no VS Code mostrarão os valores das variáveis em tempo real.
+1.  Abra seu arquivo `.js`.
+2.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
+3.  Pressione `F5` para iniciar o depurador. Se for a primeira vez, o VS Code pode pedir para você selecionar o ambiente (escolha **Node.js**).
+4.  A execução pausará no breakpoint, e você poderá inspecionar variáveis, controlar a execução (com `F10` para passar por cima) e ver a pilha de chamadas no painel esquerdo.
 
 ---
 
