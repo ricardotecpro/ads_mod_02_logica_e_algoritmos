@@ -1,45 +1,46 @@
-# Roteiro de Slides - Aula 10
+# Aula 10 - Web Moderna (JS/TS) 🌐
 
 ---
 
-## O Caos da Comunicação
+## 1. O Navegador é o SO 🖥️
 
-- Email, WhatsApp, Slack... Onde está a tarefa?
-- **Issues** centralizam tudo no lugar onde o código vive.
-- Regra: "Se não tem Issue, não existe demanda".
-
----
-
-## Componentes de uma Issue
-
-1. **Título**: Explicativo.
-2. **Assignee**: O Dono da Bola.
-3. **Labels**: `bug` 🔴, `feature` 🟢, `good first issue` 🟣.
-4. **Milestone**: O prazo / entrega.
+- Chrome/Firefox são plataformas.
+- **JavaScript**: A única linguagem que eles entendem.
+- **DOM**: O JS manipula o HTML (Muda cor, texto, esconde coisas).
 
 ---
 
-## GitHub Projects (Kanban)
+## 2. Eventos e Interatividade ⚡
 
-- Visualização em Colunas (Board).
-- Inspirado no método Kanban (Toyota).
-- **To Do**: Fila de espera.
-- **In Progress**: O que estou focando AGORA.
-- **Done**: Sucesso.
-- Ajuda a evitar "multitarefa" excessiva.
+- `onClick`, `onHover`, `onKey`.
+- O site deixa de ser um "PDF" e vira um **App**.
 
 ---
 
-## Automação de Fechamento
+## 3. Node.js: JS no Servidor 🔙
 
-- `Closes #12`
-- `Fixes #45`
-- `Resolves #99`
-- Coloque isso na descrição do PR e o GitHub faz a faxina para você.
+- Antes: JS só no Front.
+- Agora: JS no Back (Banco de dados, arquivos).
+- **NPM**: A maior loja de bibliotecas do mundo.
 
 ---
 
-## Organização é Poder
+## 4. Express.js 🚂
 
-- Recrutadores olham se você sabe se organizar.
-- Um repositório cheio de Issues e um Projeto montado impressionam tanto quanto um código complexo.
+- Framework para criar APIs.
+- Simples, Rápido, Minimalista.
+
+---
+
+## 5. TypeScript 🛡️
+
+- JS é caótico (Tipagem Fraca).
+- TS traz **Ordem** (Tipagem Forte).
+- TS -> (Transpila) -> JS.
+
+---
+
+## Próximos Passos
+
+- Conectar Front e Back.
+- Aprender **JAVA** (O mundo corporativo).

@@ -1,42 +1,47 @@
-# Roteiro de Slides - Aula 09
+# Aula 09 - C e C++: Baixo Nível 🧱
 
 ---
 
-## Workflows: O Acordo de Cavalheiros
+## 1. O Pai das Linguagens 👴
 
-- Git é flexível demais. Isso pode ser perigoso.
-- Um Workflow define **COMO** a equipe usa o Git.
-- O mais popular hoje: **GitHub Flow**.
-
----
-
-## As 6 Regras do GitHub Flow
-
-1. **Main é Sagrada**: Nada quebrado entra lá.
-2. **Branches**: Tudo acontece em branches novas.
-3. **Commits**: Faça commits frequentes na sua branch.
-4. **Pull Request**: Abra cedo para feedback.
-5. **Review**: Alguém valida seu código.
-6. **Deploy**: Mergear na main = Ir para o Ar.
+- **C (1972)**: Criou Windows, Linux, Mac, Android.
+- **Compilada**: Código Fonte -> Binário -> Máquina.
+- **Controle Total**: Você manda na memória (para o bem e para o mal).
 
 ---
 
-## Git Flow (O "Antigo")
+## 2. Anatomia Básica 🦴
 
-- Branches: `master`, `develop`, `feature/*`, `release/*`, `hotfix/*`.
-- Complexo demais para a maioria dos projetos web modernos e CI/CD.
-- Útil se você lança versões de software (v1.0, v2.0).
-
----
-
-## Por que GitHub Flow?
-
-- **Simplicidade**: Fácil de entender e ensinar.
-- **Velocidade**: Favorece entregas rápidas e contínuas.
-- **Foco**: Uma coisa de cada vez.
+- `#include`: Pega ferramentas.
+- `int main()`: Onde tudo começa.
+- `;`: Não esqueça, senão não compila!
 
 ---
 
-## Ciclo de Vida da Branch
+## 3. Stack vs Heap 🧠
 
-Nasce da `main` -> Cresce com Commits -> Vira PR -> Volta para `main` (Merge) -> Morre (Delete).
+- **Stack (Pilha)**: Rápida, organizada, automática. (Variáveis locais).
+- **Heap (Monte)**: Gigante, bagunçada, manual. (Dados dinâmicos).
+
+---
+
+## 4. Ponteiros: O Superpoder ⚡
+
+- Variável normal: `int a = 10`.
+- Ponteiro: `int *p = &a`.
+- Guarda o **ENDEREÇO** (Onde o 10 mora).
+- Perigo: *Segmentation Fault*.
+
+---
+
+## 5. C++ e Objetos 🚀
+
+- C com Classes.
+- Base de quase todos os jogos modernos (Unreal Engine).
+
+---
+
+## Próximos Passos
+
+- Chega de tela preta!
+- Vamos para a WEB.

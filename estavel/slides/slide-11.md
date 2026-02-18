@@ -1,47 +1,46 @@
-# Roteiro de Slides - Aula 11
+# Aula 11 - Java e Orientação a Objetos ☕
 
 ---
 
-## O Histórico é para Humanos
+## 1. O Gigante Corporativo 🏢
 
-- O Git não liga para sua mensagem.
-- Mas seus colegas (e seu chefe) ligam.
-- Mensagens ruins = "Dívida Técnica".
-
----
-
-## Regra do Imperativo
-
-- O Git usa imperativo automaticamente nos merges (`Merge branch...`).
-- Siga o padrão:
-  - `Adiciona` (Isso aplica a adição).
-  - `Remove` (Isso aplica a remoção).
-  - `Corrige` (Isso aplica a correção).
+- Bancos, Seguradoras, Android.
+- Robusto, Seguro, Escalável.
+- **Verbozinho**: O código é longo, mas legível.
 
 ---
 
-## Atomicidade
+## 2. JVM: A Máquina Virtual ⚙️
 
-- 1 Commit = 1 Ideia Lógica.
-- Se você demorou 3 dias para commitar, provavelmente tem coisas demais misturadas.
-- Commite cedo, commite sempre, commite pouco.
-
----
-
-## Conventional Commits
-
-- Um padrão global.
-- `feat`: Feature nova.
-- `fix`: Bug fix.
-- `docs`: Documentação.
-- `chore`: Tarefas chatas (configuração, build).
-- Ferramentas automáticas podem gerar Changelogs (notas de versão) lendo esses prefixos!
+- Código Java -> Bytecode (.class) -> JVM -> Processador.
+- Roda no Windows, Linux, Mac igualzinho.
 
 ---
 
-## O comando Amend
+## 3. Pilares da OO 🏛️
 
-- Errou a mensagem? Esqueceu um arquivo?
-- `git commit --amend`
-- Refaz o último commit.
-- **PERIGO**: Nunca faça isso em commits que já foram para o GitHub (Push).
+1.  **Encapsulamento**: `private`, `get/set`. (Segurança).
+2.  **Herança**: `extends`. (Reuso).
+3.  **Polimorfismo**: `Animal` que late ou mia. (Flexibilidade).
+
+---
+
+## 4. Spring Boot 🍃
+
+- Java moderno não é chato.
+- Servidor Web rodando em minutos.
+- `@RestController`, `@GetMapping`.
+
+---
+
+## 5. Ecossistema
+
+- **Maven/Gradle**: Gerenciam as bibliotecas.
+- **IntelliJ / Eclipse**: IDEs poderosas.
+
+---
+
+## Próximos Passos
+
+- Vamos ver o concorrente direto do Java?
+- **C# e Microsoft .NET**.

@@ -1,53 +1,44 @@
-# Roteiro de Slides - Aula 02
+# Aula 02 - Ambiente e Ferramentas
 
 ---
 
-## Onde baixar o Git?
+## 1. Ciclo de Vida do Código 🔄
 
-- **Site Oficial**: [git-scm.com](https://git-scm.com)
-- É gratuito e Open Source.
-- Versões para:
-  - Windows
-  - macOS
-  - Linux / Unix
+1.  **Código Fonte**: O que você escreve.
+2.  **Compilador**: O Tradutor.
+3.  **Binário**: O que a máquina roda (010101).
 
 ---
 
-## Processo de Instalação
+## 2. Ferramentas de Aprendizado 🧩
 
-- **Windows**:
-  - Baixar `.exe`
-  - Instalar (Next, Next, Next...)
-  - **Atenção**: Escolher o editor padrão (Vim é difícil, VS Code é recomendado).
-- **Mac/Linux**:
-  - Geralmente via linha de comando (`brew install git` ou `apt install git`).
+- **VisualG**: Portugol. Foco total em lógica.
+- **Scratch**: Blocos. Lógica visual.
+- **Objetivo**: Perder o medo da sintaxe.
 
 ---
 
-## O Git Bash (Windows)
+## 3. VS Code: O Canivete Suíço 💻
 
-- O Windows não tinha um terminal "estilo Linux" nativo antigamente.
-- O Git Bash traz comandos poderosos (`ls`, `cd`, `mkdir`) para o Windows.
-- Recomendamos usar o Git Bash para este curso.
-
----
-
-## Configurando sua Identidade
-
-- O Git exige saber **QUEM** está fazendo as mudanças.
-- Comandos obrigatórios:
-  ```bash
-  git config --global user.name "Seu Nome"
-  git config --global user.email "seu@email.com"
-  ```
-- Isso ficará gravado para sempre no histórico do projeto.
+- Editor mais usado do mundo.
+- **Extensões**: Transformam o editor.
+  - C/C++
+  - Python
+  - Live Server
+  - Draw.io
 
 ---
 
-## Verificando
+## 4. O Terminal (Tela Preta) 🖥️
 
-- Para conferir se está tudo certo:
-  ```bash
-  git config --list
-  ```
-- Se aparecer seu nome e email, você está pronto para começar!
+- Não tenha medo!
+- É onde conversamos direto com o Sistema Operacional.
+- Comandos básicos: `cd` (mudar pasta), `ls`/`dir` (listar), `mkdir` (criar pasta).
+
+---
+
+## Próximos Passos
+
+- Instalar VisualG e VS Code.
+- Testar o "Olá Mundo".
+- Preparar a mente para Variáveis!

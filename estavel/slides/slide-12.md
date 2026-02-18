@@ -1,60 +1,47 @@
-# Roteiro de Slides - Aula 12
+# Aula 12 - C# e .NET 🔷
 
 ---
 
-## README.md
+## 1. O Ecossistema Microsoft 🏗️
 
-- A "capa do livro" do seu projeto.
-- É a primeira (e as vezes única) coisa que recrutadores veem.
-- Sem README = "Projeto abandonado".
-
----
-
-## Markdown: O que é?
-
-- Criado por John Gruber em 2004.
-- Foco: "Ser legível como texto puro, mas convertível para HTML".
-- Usado no GitHub, Slack, Discord, Reddit, Trello...
+- Não é mais só Windows!
+- **.NET**: Roda no Linux, Mac, Cloud, Android.
+- **C#**: A linguagem principal. Elegante e poderosa.
 
 ---
 
-## Sintaxe Essencial 1
+## 2. LINQ: A Mágica 🪄
 
-`# Título 1`
-`## Título 2`
-`### Título 3`
-
-`**Negrito**` e `*Itálico*`.
-
-`[Texto do Link](https://google.com)`
+- Tratar listas como Banco de Dados.
+- `lista.Where(x => x > 10).OrderBy(x => x)`
+- Adeus loops `for` complexos!
 
 ---
 
-## Sintaxe Essencial 2
+## 3. Ferramentas 🛠️
 
-Imagens:
-`![Descrição para Cegos](url-da-imagem.png)`
-
-Listas:
-- Item 1
-- Item 2
-  - Subitem
+- **Visual Studio**: A "Nave Espacial". Faz tudo.
+- **VS Code**: O "Jato Leve". Rápido e flexível.
+- **CLI (dotnet)**: `dotnet new console`, `dotnet run`.
 
 ---
 
-## Code Blocks
+## 4. F# (Bônus) 🟣
 
-Para mostrar código, use três crases:
-
-```python
-def ola():
-    print("Mundo")
-```
+- O primo matemático.
+- Foco em funções, imutabilidade.
+- Influenciou muito o C# moderno.
 
 ---
 
-## Badges (Escudos)
+## 5. C# vs Java 🥊
 
-- Aquelas medalhas coloridas: `build passing`, `wip`, `version 1.0`.
-- Dão ar de "projeto sério".
-- Use `Shields.io`.
+- Irmãos separados no nascimento.
+- Se sabe um, aprende o outro em 1 semana.
+
+---
+
+## Próximos Passos
+
+- Sair do mundo corporativo "estrito".
+- Ir para a agilidade do **PYTHON**.

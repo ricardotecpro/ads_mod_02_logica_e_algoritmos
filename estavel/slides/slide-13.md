@@ -1,47 +1,38 @@
-# Roteiro de Slides - Aula 13
+# Aula 13 - Python e Dados 🐍
 
 ---
 
-## Git é Multijogador
+## 1. Simples e Poderoso 🚀
 
-- Um jogo cooperativo, não competitivo.
-- Objetivo: Construir o software juntos sem quebrar nada.
-
----
-
-## Papéis no GitHub
-
-- **Owner**: O Deus do repo. Pode deletar, arquivar, transferir.
-- **Admin**: Gerencia acessos.
-- **Write (Colaborador)**: O desenvolvedor padrão. Lê, escreve, cria branches.
-- **Read**: Só pode ver (repos privados).
-- **Sem acesso (Público)**: Qualquer um na internet (pode ver e fazer fork).
+- Lê-se como inglês.
+- Sem `;`, sem `{}`.
+- **Indentação** define o bloco. (Organização forçada!).
 
 ---
 
-## O Fluxo de Trabalho (Revisão)
+## 2. Estruturas de Dados 🧱
 
-1. `git pull` (Café da manhã dos campeões).
-2. `git switch -c feature`.
-3. Code, Code, Code.
-4. `git push`.
-5. PR & Review.
+- **Listas**: `frutas = ["Maçã", "Uva"]`. (Arrays turbinados).
+- **Dicionários**: `carro = {"marca": "Fiat", "ano": 2020}`. (Chave-Valor).
 
 ---
 
-## O Pesadelo "Rejected"
+## 3. Scripts e Automação 🤖
 
-`! [rejected] main -> main (fetch first)`
-- Significa: "Alguém chegou na sua frente".
-- O servidor tem commits que você não tem.
-- Você não pode sobrescrever o histórico deles.
-- Solução: Baixe (`pull`), misture (`merge/rebase`), depois suba (`push`).
+- Automatizar tarefas chatas (renomear arquivos, enviar email).
+- `python script.py`.
 
 ---
 
-## Branch Protection
+## 4. O Rei dos Dados 📊
 
-- Trava de segurança no gatilho.
-- Impede `git push origin main`.
-- Obriga Code Review.
-- Essencial em empresas sérias.
+- **Pandas**: Manipula tabelas gigantes.
+- **Matplotlib**: Cria gráficos.
+- **IA**: PyTorch, TensorFlow.
+
+---
+
+## Próximos Passos
+
+- Já vimos o "Fácil e Lento" (Python).
+- Vamos ver o "Novo e Rápido" (Rust/Go).

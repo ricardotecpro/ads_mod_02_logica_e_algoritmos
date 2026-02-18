@@ -1,60 +1,56 @@
-# Roteiro de Slides - Aula 01
+# Aula 01 - Lógica de Programação
 
 ---
 
-## O Caos dos Arquivos Manuais
+## 1. O Que é Lógica? 🧠
 
-- Quem nunca?
-  - `trabalho.doc`
-  - `trabalho_final.doc`
-  - `trabalho_agora_vai.doc`
-- **Problemas**:
-  - Qual é a versão real?
-  - O que mudou entre a v1 e a v2?
-  - E se eu apagar algo importante por engano?
+- **Definição**: A arte de pensar corretamente.
+- Na programação: É a capacidade de ensinar o computador a resolver problemas.
+- O computador é **BURRO**. Ele só faz o que você manda.
 
 ---
 
-## O que é VCS?
+## 2. O Algoritmo 💡
 
-- **V**ersion **C**ontrol **S**ystem
-- "Uma máquina do tempo para seus arquivos"
-- Registra quem mudou, o que mudou e quando mudou.
-- Permite voltar ao passado a qualquer momento.
-
----
-
-## Por que usar Git?
-
-- **Padrão de Mercado**: Usado por 90%+ das empresas.
-- **Velocidade**: Extremamente rápido.
-- **Segurança**: Criptografia para garantir integridade.
-- **Distribuído**: Você não depende de um servidor central para trabalhar.
+- **Conceito**: Sequência de passos finitos e precisos.
+- **Exemplo**: Receita de Bolo, Trocar Pneu, Ir ao Trabalho.
+- **Ingredientes**:
+  - Entrada (Insumos)
+  - Processamento (Ação)
+  - Saída (Resultado)
 
 ---
 
-## Git vs GitHub
+## 3. Pensamento Computacional 🧩
 
-| Git | GitHub |
-| :--- | :--- |
-| Software (Ferramenta) | Plataforma (Site) |
-| Instalado no seu PC | Na Nuvem (Internet) |
-| Linha de Comando (CLI) | Interface Gráfica (Web) |
-| Uso Local | Uso Compartilhado |
+Os 4 Superpoderes:
+1.  **Decomposição**: Quebrar o problema.
+2.  **Reconhecimento de Padrão**: Achar similaridades.
+3.  **Abstração**: Focar no útil.
+4.  **Algoritmo**: O passo a passo final.
 
 ---
 
-## Estrutura do Curso
+## 4. Fluxogramas 🗺️
 
-- **Módulo 1**: Fundamentos (Aulas 1-4)
-- **Módulo 2**: GitHub Essencial (Aulas 5-8)
-- **Módulo 3**: Fluxos de Trabalho (Aulas 9-12)
-- **Módulo 4**: Profissionalização (Aulas 13-16)
+A linguagem universal dos símbolos:
+- **Ovalo**: Início/Fim
+- **Retângulo**: Ação/Processo
+- **Paralelogramo**: Entrada/Saída
+- **Losango**: Decisão (Sim/Não)
+
+---
+
+## 5. VisualG e Portugol 💻
+
+- **Portugol**: Português Estruturado.
+- **VisualG**: O programa onde vamos treinar.
+- **Vantagem**: Foco na lógica, sem se preocupar com inglês ou ponto-e-vírgula agora.
 
 ---
 
 ## Próximos Passos
 
-- Instalar o Git.
-- Configurar usuário e email.
-- Dar os primeiros comandos!
+- Instalar o VisualG.
+- Criar o primeiro "Olá Mundo".
+- Entender Variáveis.

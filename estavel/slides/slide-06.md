@@ -1,47 +1,48 @@
-# Roteiro de Slides - Aula 06
+# Aula 06 - Vetores (Arrays) 🗄️
 
 ---
 
-## O GitHub Social
+## 1. O Problema das Variáveis Soltas 😫
 
-- **Git** é técnico. **GitHub** é social.
-- É onde você:
-  - Mostra seu trabalho (Portfólio).
-  - Interage com a comunidade (Open Source).
-  - Gerencia projetos (Issues/Projects).
+- Imagine criar: `nota1, nota2, nota3 ... nota50`.
+- E para calcular a média? `(n1+n2+...)/50`.
+- Inviável!
 
 ---
 
-## O Perfil (Seu Currículo Vivo)
+## 2. A Solução: Vetores 📦
 
-- **Foto**: Profissional (ou pelo menos decente). Evite anime/memes se busca emprego sério.
-- **Bio**: Quem é você em 140 caracteres?
-- **Pinned Repos**: Seus melhores projetos em destaque.
-- **Contribution Graph**: A prova de que você programa.
-
----
-
-## Interações Mágicas
-
-- **Star ⭐**: Favorito. Mostra apreço e salva para depois.
-- **Watch 👁️**: Notificações. "Quero saber tudo o que acontece aqui".
-- **Fork 🍴**: Bifurcação. "Quero uma cópia disso para eu mexer".
+- Uma variável, muitos valores.
+- `notas: vetor [1..50] de real`.
+- Acesso fácil: `notas[1]`, `notas[10]`.
 
 ---
 
-## Issues (Não são só problemas)
+## 3. Índices e Posições 📍
 
-- Uma **Issue** é um ticket de discussão.
-- Pode ser:
-  - 🐛 Bug report (Algo quebrou).
-  - 💡 Feature request (Ideia nova).
-  - ❓ Dúvida.
-- Todo grande projeto Open Source é gerenciado via Issues.
+- O índice é o **Endereço**.
+- VisualG: Começa no 1.
+- Java/C/Py: Começa no 0 (Cuidado!).
+- **Erro Clássico**: Acessar posição que não existe.
 
 ---
 
-## Próxima Aula
+## 4. Varredura com Loop 🔄
 
-- Vamos tirar o projeto do seu computador (Local).
-- E enviá-lo para os servidores do GitHub (Remoto).
-- O comando mágico: `git push`.
+- O casamento perfeito: **Vetor + Para**.
+- `Para i de 1 ate 50 faca ... processa vet[i]`.
+
+---
+
+## 5. Algoritmos Clássicos 📜
+
+- **Maior/Menor**: Quem é o recordista?
+- **Busca**: O valor X está aqui?
+- **Ordenação**: Colocar em ordem (Bubble Sort).
+
+---
+
+## Próximos Passos
+
+- E se eu precisar de linhas E colunas?
+- Bem-vindo às **MATRIZES**.

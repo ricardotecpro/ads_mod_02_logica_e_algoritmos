@@ -1,47 +1,43 @@
-# Roteiro de Slides - Aula 16
+# Aula 16 - PHP e o Legado 🐘
 
 ---
 
-## Parabéns!
+## 1. O Motor da Web Dinâmica ⚙️
 
-- Você sobreviveu a 16 aulas.
-- De "O que é Git?" a "Merge Conflict" e "CI/CD".
-- Você não é mais um iniciante.
-
----
-
-## O Mercado de Trabalho
-
-- Git é **obrigatório**. Não é "diferencial".
-- O que é diferencial?
-  - Saber resolver conflitos sem pânico.
-  - Escrever commits limpos.
-  - Saber trabalhar com PRs e Code Review.
+- HTML é estático (sempre igual).
+- PHP cria HTML na hora (dinâmico).
+- **Request/Response**: O garçom (Servidor) traz o prato (HTML) que você pediu.
 
 ---
 
-## Open Source
+## 2. Sintaxe Básica 🐘
 
-- Milhares de projetos precisam de ajuda.
-- Comece corrigindo documentação (typos).
-- Traduza READMEs.
-- Pegue `good first issues`.
-- Networking poderoso.
-
----
-
-## Próximos Passos (Tech Tree)
-
-- **GitHub Actions**: Automatize seus testes.
-- **Git Avançado**: `rebase`, `cherry-pick`, `bisect`.
-- **Outras ferramentas**: GitLab, Bitbucket, Azure DevOps (os conceitos são os mesmos).
+- `<?php ... ?>`.
+- `$variavel`.
+- Integração nativa com HTML.
+- Fácil de implantar (Qualquer hospedagem barata tem PHP).
 
 ---
 
-## Dica Final
+## 3. Laravel: O Moderno 🚀
 
-> "Code is read much more often than it is written." (Guido van Rossum)
->
-> Escreva código (e commits) pensando em quem vai ler depois.
+- Esqueça o "código espaguete" antigo.
+- Framework elegante, seguro e robusto.
+- **MVC**: Organização profissional.
 
-**Sucesso na jornada!**
+---
+
+## 4. O Legado 🏛️
+
+- WordPress (40% da web).
+- Wikipedia.
+- Facebook (hack/hhvm).
+- O PHP não vai morrer tão cedo.
+
+---
+
+## Conclusão do Curso 🎓
+
+- Vimos de **Lógica** a **Mobile**.
+- De **Baixo Nível** a **Web**.
+- Agora é com você: **PROJETOS FINAIS!**
