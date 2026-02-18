@@ -1,101 +1,132 @@
-# Linguagem Java ☕
+# Linguagens C e C++: Baixo Nível e Performance 🚀
 
-Bem-vindo ao guia da linguagem Java, uma das linguagens de programação mais populares e versáteis do mundo. Famosa por sua filosofia "escreva uma vez, rode em qualquer lugar" (*write once, run anywhere*), o Java é fundamental para o desenvolvimento de aplicações web, mobile (Android), e sistemas de grande escala.
+Nesta aula, entramos no **Módulo 2: O Poliglota**, onde aplicaremos nossa lógica nas principais linguagens do mercado. Começamos com os "pais" das linguagens modernas: **C** e **C++**.
 
-## 🛠️ Instalação e Configuração do Ambiente
+## Por que aprender C/C++?
 
-Para desenvolver em Java, o primeiro passo é instalar o **JDK (Java Development Kit)**, que é um pacote de software contendo o compilador e outras ferramentas essenciais.
+Embora sejam linguagens mais antigas, elas são a base de tudo.
+*   **C (1972)**: Criou a sintaxe que Java, C#, JS e PHP usam hoje. É a linguagem dos sistemas operacionais (Windows, Linux, Android).
+*   **C++ (1985)**: Adicionou **Orientação a Objetos** ao C. É usada em jogos (Unreal Engine), navegadores e sistemas de alta performance.
 
-1.  **Instale o Java JDK**:
+---
 
-      * Faça o download do JDK (versão LTS, como 11, 17 ou 21, é recomendada) a partir do site oficial da Oracle ou de uma distribuição como o OpenJDK.
-      * Siga o instalador.
-      * **Configure as Variáveis de Ambiente**:
-          * Crie uma nova variável de ambiente `JAVA_HOME` apontando para a pasta de instalação do JDK (ex: `C:\Program Files\Java\jdk-17.0.2`).
-          * Adicione o caminho da pasta `bin` do JDK à variável `Path` do sistema (ex: `%JAVA_HOME%\bin`).
-      * Para verificar a instalação, abra um terminal e execute o comando `java -version`.
+## Parte 1: Linguagem C (Estruturada) 📖
 
-2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
-    Enquanto o material original foca no Eclipse, as IDEs mais utilizadas atualmente para desenvolvimento Java são o VS Code e o IntelliJ IDEA.
+C é uma linguagem **procedural**. O foco é em funções e controle direto da memória.
 
-    ### Opção 1: VS Code
+### 🛠️ Configuração Rápida (Code::Blocks)
+Para programar em C/C++, precisamos de um **compilador**. A IDE **Code::Blocks** já vem com o compilador MinGW configurado.
+*   [Guia de Instalação](../setups/setup-02.md)
 
-      * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-      * Na aba de extensões, instale o pacote **"Extension Pack for Java"** da Microsoft. Ele inclui tudo o que é necessário para compilar, executar e depurar código Java.
+### Estrutura Básica
 
-    ### Opção 2: IntelliJ IDEA
 
-      * Baixe a versão **Community** (gratuita) do [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
-      * O IntelliJ IDEA é altamente especializado para Java e oferece uma experiência de desenvolvimento muito produtiva, com ferramentas de análise de código e refatoração de ponta.
+Para programar em C, você precisará de duas ferramentas principais: um **compilador** e um **Editor de Código/IDE**.
 
-### 🚀 Seu Primeiro Programa em Java
+* **Compilador**: É o programa que traduz seu código C (legível por humanos) para código de máquina (executável pelo computador). Usaremos o **GCC**, que faz parte do pacote **MinGW** para Windows.
+* **IDE (Ambiente de Desenvolvimento Integrado)**: É um editor de texto com superpoderes para programadores. Usaremos o **Visual Studio Code (VS Code)**, que é moderno, gratuito e altamente customizável.
 
-Todo programa em Java é contido dentro de uma **classe**. A execução sempre começa no método `main`.
+### Passos para Configuração:
 
-```java
-// É uma boa prática definir um pacote para organizar suas classes.
-package curso;
+1.  **Instale o Compilador (MinGW-w64)**:
 
-// Declaração da classe principal.
-public class Programa {
+    * Acesse o site oficial do [MinGW-w64](https://www.mingw-w64.org/downloads/) e faça o download do instalador.
+    * Durante a instalação, na tela de "Settings", certifique-se de que a arquitetura (`Architecture`) está definida como `x86_64` e clique em `Next`.
+    * **Adicione o MinGW ao Path do Windows**: É crucial que o sistema operacional saiba onde encontrar o compilador. Adicione o caminho da pasta `bin` do MinGW (ex: `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin`) à variável de ambiente `Path`.
 
-    // Método principal, ponto de entrada do programa.
-    public static void main(String[] args) {
-        // Comando para imprimir uma linha no console.
-       System.out.println("Ola, Universo Java!");
-    }
+2.  **Instale o VS Code**:
+
+    * Baixe e instale o [Visual Studio Code](https://code.visualstudio.com/).
+
+3.  **Instale a Extensão C/C++ no VS Code**:
+
+    * Abra o VS Code, vá para a aba de `Extensions` (ícone de blocos no menu lateral).
+    * Procure por "C/C++" da Microsoft e clique em `Install`.
+
+### 🚀 Seu Primeiro Programa em C
+
+Vamos criar um programa clássico que exibe uma mensagem na tela.
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Ola, Universo C!\n");
+
+    return 0;
 }
 ```
+
+**Análise do Código:**
+
+* `#include <stdio.h>`: Importa a biblioteca padrão de entrada e saída de dados (`Standard Input/Output`), que nos dá acesso a funções como `printf`.
+* `int main()`: É a função principal, o ponto de partida de todo programa em C.
+* `printf("Ola, Universo C!\n");`: A função `printf` é usada para "imprimir" texto no console. O `\n` é um caractere especial que significa "nova linha".
+* `return 0;`: Indica que o programa foi executado com sucesso e terminou sem erros.
 
 ## 📊 Tipos de Dados e Variáveis
 
-Java possui tipos de dados primitivos para armazenar valores simples e tipos por referência (classes) para objetos complexos.
+Variáveis são espaços na memória que reservamos para armazenar dados. Em C, toda variável precisa ter um tipo definido.
 
-| Significado | Tipo em Java | Valor Padrão | Observação |
+| Significado | Tipo em C | Exemplo de Declaração | Observações |
 | :--- | :--- | :--- | :--- |
-| Número Inteiro | `int` | 0 | O tipo padrão para inteiros. Use `long` para valores muito grandes. |
-| Número de Ponto Flutuante | `double` | 0.0 | O tipo padrão para números reais. `float` oferece precisão simples. |
-| Um Único Caractere | `char` | `'\u0000'` | Armazena um caractere Unicode, sempre entre **aspas simples** (ex: `'F'`). |
-| Texto | `String` | `null` | `String` é uma classe, não um tipo primitivo, e por isso começa com 'S' maiúsculo. Textos são declarados entre **aspas duplas** (ex: "Beatriz Costa"). |
-| Valor Lógico | `boolean` | `false` | Aceita apenas os valores `true` ou `false`. |
+| Número Inteiro | `int` | `int idade;` | Armazena números inteiros. O intervalo pode ser estendido com `long int` ou `long long int`. |
+| Número com Ponto Flutuante | `double` | `double salario;` | Armazena números reais com alta precisão. Para precisão menor (e menos uso de memória), pode-se usar `float`. |
+| Um Único Caractere | `char` | `char genero;` | Armazena um único caractere, que deve ser envolvido por **aspas simples**. Ex: `'F'`. |
+| Texto (String) | `char[]` | `char nome[50];` | Em C, um texto é um **vetor (array) de caracteres**. O valor deve ser envolvido por **aspas duplas**. Ex: `"Ana Souza"`. |
+| Valor Lógico (Booleano) | `int` (tradicional) ou `bool` | `int temFilhos;` | C tradicionalmente usa `int`: **0** representa `falso` e qualquer outro número representa `verdadeiro`. |
+
+**Nota:** Em C moderno (padrão C99 em diante), você pode incluir a biblioteca `<stdbool.h>` para usar os tipos `bool`, `true` e `false`, o que torna o código mais legível.
 
 ## 📝 Declaração e Atribuição de Variáveis
 
-A declaração de variáveis em Java exige a especificação de um tipo e um nome. A atribuição pode ser feita na mesma linha ou posteriormente.
+Você pode declarar uma variável e atribuir um valor a ela na mesma linha ou em momentos diferentes.
 
-```java
-package curso;
+```c
+#include <stdio.h>
+#include <string.h> // Necessário para a função strcpy
 
-import java.util.Locale; // Importa a classe Locale para formatação.
+int main() {
+    // Declaração de variáveis
+    int idade;
+    double salario, altura;
+    char genero;
+    char nome[50];
 
-public class Programa {
+    // Atribuição de valores
+    idade = 25;
+    salario = 6200.75;
+    altura = 1.70;
+    genero = 'F';
+    strcpy(nome, "Ana Souza"); // Função para copiar um texto para uma variável string
 
-    public static void main(String[] args) {
+    // Saída de dados
+    printf("IDADE = %d\n", idade);
+    printf("SALARIO = %.2f\n", salario); // %.2f formata para 2 casas decimais
+    printf("ALTURA = %.2f\n", altura);
+    printf("GENERO = %c\n", genero);
+    printf("NOME = %s\n", nome);
 
-       // Define o Locale para US para usar o ponto como separador decimal.
-       Locale.setDefault(Locale.US);
-
-       // Declaração e inicialização de variáveis.
-       int idade = 28;
-       double salario = 8200.50;
-       double altura = 1.65;
-       char genero = 'F';
-       String nome = "Beatriz Costa";
-
-       // Saída de dados.
-       System.out.println("NOME = " + nome);
-       System.out.println("IDADE = " + idade);
-       System.out.println("GENERO = " + genero);
-        // Usando String.format para formatar a saída com 2 casas decimais.
-       System.out.println("ALTURA = " + String.format("%.2f", altura));
-       System.out.println("SALARIO = " + String.format("%.2f", salario));
-    }
+    return 0;
 }
 ```
 
-## 🔢 Operadores
+**Saída Esperada:**
 
-Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
+```
+IDADE = 25
+SALARIO = 6200.75
+ALTURA = 1.70
+GENERO = F
+NOME = Ana Souza
+```
+
+**Importante:**
+
+* A atribuição de texto a um vetor `char` após sua declaração deve ser feita com a função `strcpy` (string copy).
+* Você também pode inicializar a variável na mesma linha da declaração, o que é mais comum: `int idade = 25;` ou `char nome[50] = "Ana Souza";`.
+
+## 🔢 Operadores
 
 ### Aritméticos
 
@@ -105,228 +136,791 @@ Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
 | `-` | Subtração |
 | `*` | Multiplicação |
 | `/` | Divisão |
-| `%` | Resto da divisão ("mod") |
+| `%` | Resto da divisão (módulo) |
 
 ### Comparativos
 
 | Operador | Significado |
 | :---: | :--- |
-| `<` | Menor |
-| `>` | Maior |
-| `<=` | Menor ou igual |
-| `>=` | Maior ou igual |
-| `==` | Igual |
-| `!=` | Diferente |
+| `<` | Menor que |
+| `>` | Maior que |
+| `<=` | Menor ou igual a |
+| `>=` | Maior ou igual a |
+| `==` | Igual a |
+| `!=` | Diferente de |
 
 ### Lógicos
 
 | Operador | Significado |
 | :---: | :--- |
-| `&&` | E |
-| `||` | OU |
-| `!` | NÃO |
+| `&&` | E (AND) |
+| `||` | OU (OR) |
+| `!` | NÃO (NOT) |
 
-## 📥 Entrada de Dados com a Classe `Scanner`
+## 📤 Saída de Dados (`printf`)
 
-Para ler dados do teclado em Java, utilizamos a classe `Scanner`, que deve ser importada da biblioteca `java.util`.
+A função `printf` usa "placeholders" (marcadores de posição) para exibir o conteúdo de variáveis.
 
-1.  **Importe a classe**: `import java.util.Scanner;`.
-2.  **Crie um objeto Scanner**: `Scanner sc = new Scanner(System.in);`.
-3.  **Use os métodos de leitura**:
-      * `nextInt()`: Lê um número inteiro.
-      * `nextDouble()`: Lê um número double.
-      * `next()`: Lê a próxima palavra (até o espaço).
-      * `nextLine()`: Lê a linha inteira de texto.
-      * `next().charAt(0)`: Lê uma palavra e pega apenas o primeiro caractere.
-4.  **Feche o Scanner**: `sc.close();` para liberar os recursos do sistema.
+| Tipo | Placeholder |
+| :--- | :--- |
+| `int` | `%d` ou `%i` |
+| `long int` | `%li` |
+| `long long int` | `%lli` |
+| `float` | `%f` |
+| `double` | `%lf` (com `scanf`), mas `%f` é comum para `printf` |
+| `char` (um caractere) | `%c` |
+| `char[]` (texto) | `%s` |
 
-**Atenção à Quebra de Linha Pendente:**
-Quando você lê um número (`nextInt` ou `nextDouble`), o cursor de leitura para após o número, deixando o "Enter" (`\n`) no buffer de entrada. Se a próxima leitura for um `nextLine()`, ele lerá essa quebra de linha vazia.
-**Solução**: Consuma a quebra de linha pendente com um `sc.nextLine()` extra antes de ler o texto.
+**Exemplo Prático:**
 
-```java
-package curso;
+```c
+#include <stdio.h>
+#include <string.h>
 
-import java.util.Locale;
-import java.util.Scanner;
+int main() {
+    int idade = 25;
+    double salario = 6200.75;
+    char nome[50] = "Ana Souza";
+    char genero = 'F';
 
-public class Programa {
+    // Imprimindo uma frase formatada
+    printf("A funcionaria %s, do sexo %c, tem %d anos e recebe R$ %.2f.\n", nome, genero, idade, salario);
 
-    public static void main(String[] args) {
-       Locale.setDefault(Locale.US);
-       Scanner sc = new Scanner(System.in);
+    return 0;
+}
+```
 
-       String nomeCompleto;
-       int idade;
-       double salario;
-       char genero;
+**Saída Esperada:**
 
-       System.out.print("Digite seu nome completo: ");
-       nomeCompleto = sc.nextLine();
+```
+A funcionaria Ana Souza, do sexo F, tem 25 anos e recebe R$ 6200.75.
+```
 
-       System.out.print("Digite sua idade: ");
-       idade = sc.nextInt();
+## 🔄 Processamento de Dados e Casting
 
-       System.out.print("Digite seu salario: ");
-       salario = sc.nextDouble();
+O *casting* é uma conversão explícita de um tipo de dado para outro. É útil em situações como a divisão de inteiros, onde o resultado pode ser truncado.
 
-       System.out.print("Digite seu genero (F/M): ");
-       genero = sc.next().charAt(0);
+**Exemplo 1: Divisão de Inteiros**
 
-       System.out.println("\n--- DADOS REGISTRADOS ---");
-       System.out.println("Nome: " + nomeCompleto);
-       System.out.println("Idade: " + idade);
-       System.out.println("Salario: " + String.format("%.2f", salario));
-       System.out.println("Genero: " + genero);
+```c
+#include <stdio.h>
 
-       sc.close();
+int main() {
+    int a = 10;
+    int b = 3;
+    int resultado;
+
+    resultado = a / b;
+
+    printf("Resultado: %d\n", resultado); // Saída será 3, a parte decimal é perdida
+
+    return 0;
+}
+```
+
+**Saída Esperada:**
+
+```
+Resultado: 3
+```
+
+**Exemplo 2: Casting para Divisão Correta**
+Para obter um resultado com casas decimais, precisamos converter um dos operandos para `double` ou `float`.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    int b = 3;
+    double resultado;
+
+    resultado = (double) a / b; // Casting de 'a' para double antes da divisão
+
+    printf("Resultado: %.2f\n", resultado); // Saída será 3.33
+
+    return 0;
+}
+```
+
+**Saída Esperada:**
+
+```
+Resultado: 3.33
+```
+
+## 📥 Entrada de Dados (`scanf`)
+
+Para ler dados digitados pelo usuário, usamos a função `scanf`. Ela utiliza os mesmos placeholders que o `printf`.
+
+**O Desafio do Buffer de Entrada**
+
+Um problema comum em C é o "lixo" deixado no buffer de entrada (uma área de memória temporária). Quando você lê um número com `scanf("%d", &idade);`, o número é lido, mas a tecla `Enter` (`\n`) que você pressionou continua no buffer. Se a próxima leitura for de um caractere ou de um texto, ela pode capturar esse `\n` indesejado.
+
+**Solução: Funções de Limpeza**
+Para evitar problemas, podemos criar uma função para limpar o buffer antes de ler um texto ou um caractere que venha depois de uma leitura de número.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+// Função para limpar o buffer de entrada
+void limpar_entrada() {
+    char c;
+    while ((c = getchar()) != '\n' && c != EOF) {}
+}
+
+// Função para ler texto de forma segura
+void ler_texto(char *buffer, int length) {
+    fgets(buffer, length, stdin);
+    strtok(buffer, "\n"); // Remove a quebra de linha que o fgets captura
+}
+
+int main() {
+    int idade;
+    double salario;
+    char nome[50];
+    char genero;
+
+    printf("Digite seu nome completo: ");
+    ler_texto(nome, 50);
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+    
+    // Limpa o buffer antes de ler o próximo caractere
+    limpar_entrada();
+
+    printf("Digite seu genero (M/F): ");
+    scanf("%c", &genero);
+    
+    printf("Digite seu salario: ");
+    scanf("%lf", &salario);
+
+    printf("\n--- DADOS CADASTRADOS ---\n");
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d\n", idade);
+    printf("Genero: %c\n", genero);
+    printf("Salario: %.2f\n", salario);
+
+    return 0;
+}
+```
+
+## 🔀 Estrutura Condicional (`if-else`)
+
+Permite que o programa tome decisões com base em condições.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int hora;
+
+    printf("Digite uma hora do dia (0-23): ");
+    scanf("%d", &hora);
+
+    if (hora < 12) {
+        printf("Bom dia!\n");
     }
+    else if (hora < 18) {
+        printf("Boa tarde!\n");
+    }
+    else {
+        printf("Boa noite!\n");
+    }
+
+    return 0;
 }
 ```
 
-## 🔀 Estruturas de Controle
+## 🔁 Estruturas de Repetição
 
-### Estrutura Condicional (`if-else`)
+### `while` (Enquanto)
 
-Permite que o programa execute diferentes caminhos com base em condições.
+Executa um bloco de código **enquanto** uma condição for verdadeira. A condição é testada **antes** da primeira execução.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-System.out.print("Digite a hora atual (0-23): ");
-int hora = sc.nextInt();
+```c
+#include <stdio.h>
 
-if (hora < 12) {
-    System.out.println("Bom dia!");
-} else if (hora < 18) {
-    System.out.println("Boa tarde!");
-} else {
-    System.out.println("Boa noite!");
+int main() {
+    int numero, soma = 0;
+
+    printf("Digite um numero (0 para sair): ");
+    scanf("%d", &numero);
+
+    while (numero != 0) {
+        soma = soma + numero;
+        printf("Digite outro numero (0 para sair): ");
+        scanf("%d", &numero);
+    }
+
+    printf("SOMA FINAL = %d\n", soma);
+
+    return 0;
 }
-sc.close();
 ```
 
-### Estrutura de Repetição `while`
+### `for` (Para)
 
-O bloco de código é executado enquanto a condição for verdadeira.
+Ideal para repetir um bloco de código um número definido de vezes.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-int numero;
-int soma = 0;
-System.out.print("Digite um numero (0 para sair): ");
-numero = sc.nextInt();
+```c
+#include <stdio.h>
 
-while (numero != 0) { 
-    soma += numero;
-    System.out.print("Digite outro numero (0 para sair): ");
-    numero = sc.nextInt();
+int main() {
+    int N, i, valor, soma;
+
+    printf("Quantos numeros serao digitados? ");
+    scanf("%d", &N);
+
+    soma = 0;
+    for (i = 0; i < N; i++) {
+        printf("Digite o valor #%d: ", i + 1);
+        scanf("%d", &valor);
+        soma += valor; // Forma abreviada de soma = soma + valor
+    }
+
+    printf("SOMA FINAL = %d\n", soma);
+
+    return 0;
 }
-
-System.out.println("SOMA FINAL = " + soma);
-sc.close();
 ```
 
-### Estrutura de Repetição `for`
+### `do-while` (Faça-Enquanto)
 
-Ideal para laços que precisam ser executados um número específico de vezes.
+Similar ao `while`, mas garante que o bloco de código seja executado **pelo menos uma vez**, pois a condição é testada no **final**.
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
-System.out.print("Quantos numeros serao somados? ");
-int N = sc.nextInt();
-int soma = 0;
+```c
+#include <stdio.h>
 
-for (int i = 0; i < N; i++) { 
-    System.out.print("Digite o valor #" + (i + 1) + ": ");
-    int x = sc.nextInt();
-    soma += x;
+void limpar_entrada() {
+    char c;
+    while ((c = getchar()) != '\n' && c != EOF) {}
 }
 
-System.out.println("SOMA = " + soma);
-sc.close();
+int main() {
+    double C, F;
+    char resposta;
+
+    do {
+        printf("Digite a temperatura em Celsius: ");
+        scanf("%lf", &C);
+        
+        F = C * 9.0 / 5.0 + 32.0;
+        
+        printf("Equivalente em Fahrenheit: %.1f\n", F);
+        
+        printf("Deseja repetir (s/n)? ");
+        limpar_entrada();
+        scanf("%c", &resposta);
+
+    } while (resposta == 's');
+
+    return 0;
+}
+```
+
+## 📏 Vetores (Arrays)
+
+Vetores são coleções de dados do mesmo tipo, acessados por um índice. Em C, o primeiro índice é sempre **0**.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int N, i;
+
+    printf("Quantos numeros voce vai digitar? ");
+    scanf("%d", &N);
+
+    double numeros[N]; // Declara um vetor de 'N' posições
+
+    for (i = 0; i < N; i++) {
+        printf("Digite o numero %d: ", i + 1);
+        scanf("%lf", &numeros[i]);
+    }
+
+    printf("\nNUMEROS DIGITADOS:\n");
+    for (i = 0; i < N; i++) {
+        printf("%.1f\n", numeros[i]);
+    }
+
+    return 0;
+}
+```
+
+## ▦ Matrizes (Arrays 2D)
+
+Matrizes são vetores de vetores, usados para representar tabelas ou grades.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int M, N, i, j;
+
+    printf("Quantas linhas tera a matriz? ");
+    scanf("%d", &M);
+    printf("Quantas colunas tera a matriz? ");
+    scanf("%d", &N);
+
+    int matriz[M][N];
+
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            printf("Elemento [%d,%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("\nMATRIZ DIGITADA:\n");
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n"); // Pula para a próxima linha
+    }
+
+    return 0;
+}
+```
+
+## 🐞 Depuração (Debugging) no VS Code
+
+Debugging é o processo de encontrar e corrigir erros no seu código. O VS Code oferece uma ferramenta de depuração poderosa.
+
+**Passos Básicos:**
+
+1.  **Marcar um Breakpoint**: Clique na margem esquerda do editor, ao lado do número da linha. Uma bola vermelha aparecerá. O *breakpoint* é um ponto de parada onde a execução do programa será pausada.
+2.  **Iniciar a Depuração**: Pressione `F5` ou vá para a aba `Run and Debug` e clique no botão verde `Start Debugging`.
+3.  **Analisar Variáveis**: Com a execução pausada, a janela `VARIABLES` no painel esquerdo mostrará o valor atual de todas as variáveis locais.
+4.  **Controlar a Execução**:
+    * **Step Over (`F10`)**: Executa a linha atual e para na próxima.
+    * **Step Into (`F11`)**: Se a linha atual for uma chamada de função, entra na função para depurá-la.
+    * **Continue (`F5`)**: Continua a execução normal até o próximo breakpoint ou o fim do programa.
+    * **Stop (`Shift+F5`)**: Para a sessão de depuração.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+# Linguagem C++ 💻
+
+Bem-vindo ao guia de C++, uma evolução da linguagem C com recursos poderosos como orientação a objetos, strings nativas e um sistema de entrada e saída mais robusto. Este material é ideal para quem já tem noções de lógica e busca dominar os fundamentos do C++.
+
+## 🛠️ Instalação e Configuração do Ambiente (VS Code)
+
+Assim como em C, para programar em C++ você precisa de um **compilador** e de um **IDE**. O compilador para C++ que usaremos é o **g++**, que também faz parte do pacote **MinGW**.
+
+O processo de instalação é o mesmo do guia de C:
+
+1.  **Instale o Compilador (MinGW-w64)**: Siga as instruções para instalar o MinGW e adicionar sua pasta `bin` à variável de ambiente `Path` do Windows. Isso dará ao sistema acesso tanto ao `gcc` (para C) quanto ao `g++` (para C++).
+2.  **Instale o VS Code**: Baixe e instale o [Visual Studio Code](https://code.visualstudio.com/).
+3.  **Instale a Extensão C/C++**: No VS Code, instale a extensão "C/C++" da Microsoft para habilitar o suporte completo à linguagem.
+
+### 🚀 Seu Primeiro Programa em C++
+
+Vamos criar o programa "Olá, Mundo\!" na versão C++.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Ola, Universo C++!" << endl;
+
+    return 0;
+}
+```
+
+**Saída Esperada:**
+
+```
+Ola, Universo C++!
+```
+
+**Análise do Código:**
+
+  * `#include <iostream>`: Importa a biblioteca de *stream* (fluxo) de entrada e saída, essencial para usar `cout` e `cin`.
+  * `using namespace std;`: Indica que usaremos elementos do *namespace* (espaço de nomes) `std` (standard/padrão). Isso nos permite escrever `cout` em vez de `std::cout`.
+  * `int main()`: A função principal onde a execução do programa começa.
+  * `cout << "..." << endl;`: `cout` é o objeto de saída padrão (o console). O operador `<<` "insere" dados no fluxo de saída. `endl` insere uma nova linha e limpa o buffer.
+  * `return 0;`: Informa ao sistema operacional que o programa terminou com sucesso.
+
+## 📊 Tipos de Dados e Variáveis
+
+C++ herda os tipos de dados de C, mas adiciona tipos nativos que facilitam muito a programação, como `string` e `bool`.
+
+| Significado | Tipo em C++ | Exemplo de Declaração | Observações |
+| :--- | :--- | :--- | :--- |
+| Número Inteiro | `int` | `int quantidade;` | Armazena números inteiros. Use `long long` para números muito grandes. |
+| Número com Ponto Flutuante | `double` | `double preco;` | Armazena números reais com alta precisão. `float` pode ser usado para precisão simples. |
+| Um Único Caractere | `char` | `char categoria;` | Armazena um caractere entre **aspas simples**. Ex: `'A'`. |
+| Texto (String) | `string` | `string nomeProduto;` | Um tipo nativo poderoso e flexível para textos. Requer a biblioteca `<string>` e usa **aspas duplas**. |
+| Valor Lógico (Booleano) | `bool` | `bool emEstoque;` | Armazena os valores `true` (verdadeiro) ou `false` (falso). |
+
+## 📝 Declaração e Atribuição de Variáveis
+
+A declaração e atribuição em C++ são diretas e intuitivas, especialmente com o tipo `string`.
+
+```cpp
+#include <iostream>
+#include <string>
+#include <iomanip> // Para formatar a saída de dados
+
+using namespace std;
+
+int main() {
+    // Declaração e inicialização de variáveis
+    int idade = 35;
+    double salario = 7500.90;
+    double altura = 1.82;
+    char genero = 'M';
+    string nome = "Carlos Pereira"; // Atribuição direta e simples
+
+    // Configura a saída para exibir 2 casas decimais em números double
+    cout << fixed << setprecision(2);
+
+    // Saída de dados
+    cout << "NOME = " << nome << endl;
+    cout << "IDADE = " << idade << endl;
+    cout << "GENERO = " << genero << endl;
+    cout << "ALTURA = " << altura << endl;
+    cout << "SALARIO = R$ " << salario << endl;
+
+    return 0;
+}
+```
+
+**Saída Esperada:**
+
+```
+NOME = Carlos Pereira
+IDADE = 35
+GENERO = M
+ALTURA = 1.82
+SALARIO = R$ 7500.90
+```
+
+## 🔢 Operadores
+
+Os operadores em C++ são, em sua maioria, idênticos aos da linguagem C.
+
+### Aritméticos
+
+| Operador | Significado |
+| :---: | :--- |
+| `+` | Adição |
+| `-` | Subtração |
+| `*` | Multiplicação |
+| `/` | Divisão |
+| `%` | Resto da divisão (módulo) |
+
+### Comparativos
+
+| Operador | Significado |
+| :---: | :--- |
+| `<` | Menor que |
+| `>` | Maior que |
+| `<=` | Menor ou igual a |
+| `>=` | Maior ou igual a |
+| `==` | Igual a |
+| `!=` | Diferente de |
+
+### Lógicos
+
+| Operador | Significado |
+| :---: | :--- |
+| `&&` | E (AND) |
+| `||` | OU (OR) |
+| `!` | NÃO (NOT) |
+
+## 📤 Saída de Dados com `cout`
+
+O `cout` é o principal meio de exibir informações no console em C++. Para formatar números, usamos manipuladores da biblioteca `<iomanip>`.
+
+  * `cout << fixed << setprecision(N);`: Define que a saída de números de ponto flutuante terá um número fixo de `N` casas decimais.
+
+**Nota sobre `#include <bits/stdc++.h>`**:
+Você pode encontrar este comando em alguns códigos. Ele é um atalho (não padrão do C++) que inclui todas as bibliotecas padrão de uma vez. Embora seja prático para competições de programação, **não é recomendado** em projetos profissionais, pois aumenta o tempo de compilação e pode não ser compatível com todos os compiladores.
+
+## 🔄 Processamento de Dados e Casting
+
+O *casting* (conversão de tipo) em C++ funciona de forma similar ao C e é crucial para operações matemáticas precisas.
+
+```cpp
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    int a = 11;
+    int b = 4;
+    double resultado;
+
+    // A divisão de dois inteiros resulta em um inteiro (a parte decimal é truncada)
+    cout << "Divisao de inteiros: " << a / b << endl; // Saída: 2
+
+    // Fazendo o casting de 'a' para double para obter um resultado preciso
+    resultado = (double) a / b;
+
+    cout << fixed << setprecision(2);
+    cout << "Divisao com casting: " << resultado << endl; // Saída: 2.75
+
+    return 0;
+}
+```
+
+## 📥 Entrada de Dados com `cin`
+
+Para receber dados do usuário, usamos o objeto `cin` com o operador de extração `>>`.
+
+**Lendo Textos com Espaços (`getline`)**
+O `cin >>` lê a entrada até encontrar um espaço em branco. Para ler uma linha inteira de texto (com espaços), usamos a função `getline(cin, variavel_string);`.
+
+**Limpando o Buffer de Entrada**
+Assim como em C, ler um número com `cin >>` deixa uma quebra de linha (`\n`) no buffer. Isso pode atrapalhar uma chamada subsequente a `getline`. Para resolver isso, limpamos o buffer.
+
+  * `cin.ignore(INT_MAX, '\n');`: Ignora todos os caracteres no buffer até encontrar e descartar a próxima quebra de linha.
+
+<!-- end list -->
+
+```cpp
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <climits> // Para usar INT_MAX
+
+using namespace std;
+
+int main() {
+    int idade;
+    double salario;
+    string nome;
+
+    cout << "Digite sua idade: ";
+    cin >> idade;
+
+    cout << "Digite seu nome completo: ";
+    cin.ignore(INT_MAX, '\n'); // Limpeza de buffer obrigatória aqui!
+    getline(cin, nome);
+
+    cout << "Digite seu salario: ";
+    cin >> salario;
+
+    cout << fixed << setprecision(2);
+    cout << "\n--- DADOS DIGITADOS ---\n";
+    cout << "Nome: " << nome << endl;
+    cout << "Idade: " << idade << " anos" << endl;
+    cout << "Salario: R$ " << salario << endl;
+
+    return 0;
+}
+```
+
+## 🔀 Estrutura Condicional (`if-else`)
+
+Permite executar blocos de código diferentes com base em uma condição.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int hora;
+
+    cout << "Digite uma hora do dia (0-23): ";
+    cin >> hora;
+
+    if (hora < 12) {
+        cout << "Bom dia!" << endl;
+    }
+    else if (hora < 18) {
+        cout << "Boa tarde!" << endl;
+    }
+    else {
+        cout << "Boa noite!" << endl;
+    }
+
+    return 0;
+}
+```
+
+## 🔁 Estruturas de Repetição
+
+### `while` (Enquanto)
+
+Executa um bloco de código repetidamente enquanto uma condição for verdadeira. A condição é verificada **antes** de cada iteração.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero, soma = 0;
+
+    cout << "Digite um numero (0 para parar): ";
+    cin >> numero;
+
+    while (numero != 0) {
+        soma += numero;
+        cout << "Digite outro numero (0 para parar): ";
+        cin >> numero;
+    }
+
+    cout << "SOMA FINAL = " << soma << endl;
+
+    return 0;
+}
+```
+
+### `for` (Para)
+
+É a estrutura ideal para laços com um número conhecido de repetições.
+
+Sintaxe: `for (inicialização; condição; incremento) { ... }`
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N, valor, soma;
+
+    cout << "Quantos numeros voce quer somar? ";
+    cin >> N;
+
+    soma = 0;
+    for (int i = 0; i < N; i++) {
+        cout << "Digite o valor #" << i + 1 << ": ";
+        cin >> valor;
+        soma += valor;
+    }
+
+    cout << "SOMA = " << soma << endl;
+
+    return 0;
+}
+```
+
+### `do-while` (Faça-Enquanto)
+
+Garante que o bloco de código seja executado **pelo menos uma vez**, pois a condição é verificada **ao final** da iteração.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double C, F;
+    char resposta;
+
+    do {
+        cout << "Digite a temperatura em Celsius: ";
+        cin >> C;
+
+        F = 9.0 * C / 5.0 + 32.0;
+        cout << "Equivalente em Fahrenheit: " << F << endl;
+
+        cout << "Deseja repetir (s/n)? ";
+        cin >> resposta;
+
+    } while (resposta == 's');
+
+    return 0;
+}
 ```
 
 ## 📏 Vetores e Matrizes
 
-### Vetores (Arrays)
+### Vetores (Arrays C-style)
 
-Em Java, vetores são objetos que armazenam uma coleção de tamanho fixo de elementos do mesmo tipo.
+Vetores são coleções de tamanho fixo de elementos do mesmo tipo.
 
-```java
-// ... (dentro do método main)
-Locale.setDefault(Locale.US);
-Scanner sc = new Scanner(System.in);
+```cpp
+#include <iostream>
+#include <iomanip>
 
-System.out.print("Quantos numeros voce vai digitar? ");
-int N = sc.nextInt();
+using namespace std;
 
-// Declaração e instanciação do vetor
-double[] vetor = new double[N];
+int main() {
+    int N;
 
-for (int i = 0; i < N; i++) {
-    System.out.print("Digite um numero: ");
-    vetor[i] = sc.nextDouble();
+    cout << "Quantos numeros voce vai digitar? ";
+    cin >> N;
+
+    double vet[N]; // Vetor C-style de tamanho N
+
+    for (int i = 0; i < N; i++) {
+        cout << "Digite um numero: ";
+        cin >> vet[i];
+    }
+
+    cout << fixed << setprecision(1);
+    cout << "\nNUMEROS DIGITADOS:\n";
+    for (int i = 0; i < N; i++) {
+        cout << vet[i] << endl;
+    }
+    return 0;
 }
-
-System.out.println("\nNUMEROS DIGITADOS:");
-for (int i = 0; i < N; i++) {
-    System.out.println(String.format("%.1f", vetor[i]));
-}
-sc.close();
 ```
 
-### Matrizes (Arrays Bidimensionais)
+**Nota Moderna**: Em C++ moderno, prefira usar `std::vector` (da biblioteca `<vector>`), que é um contêiner dinâmico e mais seguro.
 
-São vetores de vetores, úteis para representar dados em formato de tabela.
+### Matrizes (Arrays 2D C-style)
 
-```java
-// ... (dentro do método main)
-Scanner sc = new Scanner(System.in);
+Matrizes são estruturas bidimensionais, basicamente um vetor de vetores.
 
-System.out.print("Quantas linhas tera a matriz? ");
-int M = sc.nextInt();
-System.out.print("Quantas colunas tera a matriz? ");
-int N = sc.nextInt();
+```cpp
+#include <iostream>
 
-// Declaração e instanciação da matriz
-int[][] matriz = new int[M][N];
+using namespace std;
 
-for (int i = 0; i < M; i++) {
-    for (int j = 0; j < N; j++) {
-        System.out.print("Elemento [" + i + "," + j + "]: ");
-        matriz[i][j] = sc.nextInt();
+int main() {
+    int M, N;
+
+    cout << "Quantas linhas tera a matriz? ";
+    cin >> M;
+    cout << "Quantas colunas tera a matriz? ";
+    cin >> N;
+
+    int mat[M][N];
+
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < N; j++) {
+            cout << "Elemento [" << i << "," << j << "]: ";
+            cin >> mat[i][j];
+        }
     }
-}
 
-System.out.println("\nMATRIZ DIGITADA:");
-for (int i = 0; i < M; i++) {
-    for (int j = 0; j < N; j++) {
-        System.out.print(matriz[i][j] + " ");
+    cout << "\nMATRIZ DIGITADA:\n";
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < N; j++) {
+            cout << mat[i][j] << " ";
+        }
+        cout << endl;
     }
-    System.out.println(); // Pula para a próxima linha
+
+    return 0;
 }
-sc.close();
 ```
 
-## 🐞 Depuração (Debugging) em Java
+**Nota Moderna**: Para matrizes dinâmicas em C++, a abordagem recomendada é `std::vector<std::vector<int>>`.
 
-Depurar é o processo de encontrar e corrigir bugs no seu código. Tanto o VS Code quanto o IntelliJ IDEA possuem excelentes ferramentas de depuração visual. Os comandos do material original eram para o Eclipse.
+## 🐞 Depuração (Debugging) no VS Code
 
-### Debugging no VS Code e IntelliJ IDEA
+O processo de depuração em C++ no VS Code é idêntico ao de C.
 
-Os conceitos são os mesmos, apenas os atalhos podem variar.
-
-1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde você quer que a execução pause.
-2.  **Iniciar o Debug**:
-      * **IntelliJ**: Pressione `Shift + F9` ou clique no ícone de inseto ao lado da configuração de execução.
-      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug" e inicie a sessão.
-3.  **Controlar a Execução**:
-      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. (**F8** no IntelliJ, **F10** no VS Code).
-      * **Continue (Continuar)**: Continua a execução até o próximo breakpoint ou o fim do programa. (**F9** no IntelliJ, **F5** no VS Code).
-4.  **Inspecionar Variáveis**: A aba "Debug" em ambas as IDEs mostrará uma janela "Variables" onde você pode ver e monitorar o valor das variáveis em tempo real.
+1.  **Marcar Breakpoints**: Clique na margem à esquerda do número da linha para criar um ponto de parada.
+2.  **Iniciar Depuração**: Pressione `F5` para iniciar.
+3.  **Controlar Execução**: Use `F10` (Step Over) para executar linha por linha e `F5` para continuar até o próximo breakpoint.
+4.  **Analisar Variáveis**: Inspecione os valores das variáveis na janela `VARIABLES` do painel de depuração.
 
 ---
 

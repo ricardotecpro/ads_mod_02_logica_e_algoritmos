@@ -1,201 +1,259 @@
-# 🔄 Capítulo: Estruturas Repetitivas
+# ⚖️ Estrutura Condicional em Programação
 
-As estruturas repetitivas, também conhecidas como laços ou *loops*, são um pilar da programação. Elas permitem que um bloco de comandos seja executado várias vezes, seja por um número definido de vezes ou enquanto uma determinada condição for atendida. Vamos explorar as três estruturas principais: "enquanto", "para" e "repita-até".
+Após entendermos como os programas executam comandos em sequência, vamos explorar a **estrutura condicional**. Ela permite que um programa tome decisões, alterando seu fluxo de execução com base em condições específicas. É o que torna os programas "inteligentes" e dinâmicos.
 
-## 🔁 Estrutura "Enquanto" (*while*)
+## 🔍 Expressões Lógicas e Comparativas
 
-### O que é?
+Para que uma estrutura condicional funcione, ela precisa avaliar uma condição. O resultado dessa avaliação é sempre um valor lógico: **verdadeiro** ou **falso**. Essas condições são construídas com expressões comparativas e lógicas.
 
-[cite\_start]A estrutura "enquanto" é um laço de repetição que executa um bloco de comandos continuamente **enquanto uma condição específica for verdadeira**[cite: 616].
+### Expressões Comparativas
 
-### Quando Usar?
+Comparam dois valores e o resultado é sempre um `boolean` (`true` ou `false`).
 
-[cite\_start]É a escolha ideal quando **não se sabe previamente a quantidade exata de repetições** que o programa precisará executar[cite: 617]. A repetição depende de um evento externo, como a digitação de um valor específico pelo usuário (conhecido como **valor de sentinela**).
+**Operadores Comparativos em Java:**
 
-### Problema Exemplo
+| Operador VisualG | Operador Java | Significado |
+| :--- | :--- | :--- |
+| `>` | `>` | Maior que |
+| `<` | `<` | Menor que |
+| `>=` | `>=` | Maior ou igual a |
+| `<=` | `<=` | Menor ou igual a |
+| `=` | `==` | **Igual a** (Note a diferença\!) |
+| `<>` | `!=` | Diferente de |
 
-> Fazer um programa que lê números inteiros até que um zero seja lido. Ao final, o programa deve mostrar a soma de todos os números digitados (exceto o zero).
+**Exemplos (supondo `int x = 10;`):**
 
-#### Exemplo (Novo)
+  - `x > 0` → Resultado: `true`
+  - `x == 10` → Resultado: `true`
+  - `x != 10` → Resultado: `false`
+  - `20 <= 15` → Resultado: `false`
 
-```
-Digite um numero: 10
-Digite outro numero: 7
-Digite outro numero: 3
-Digite outro numero: 0
-SOMA = 20
-```
+### Expressões Lógicas
 
-### Sintaxe e Regras
+Combinam duas ou mais expressões comparativas, permitindo criar condições mais complexas.
 
-```portugol
-enquanto <condição> faca
-   // bloco de comandos
-fimenquanto
-```
+**Operadores Lógicos em Java:**
 
-* **Regra**: Antes de cada repetição, a `<condição>` é testada.
-    * [cite\_start]Se for **verdadeira (V)**, o bloco de comandos executa, e o fluxo volta para o teste da condição[cite: 626].
-    * [cite\_start]Se for **falsa (F)**, o laço é encerrado, e o programa continua na linha seguinte ao `fimenquanto`[cite: 626].
+| Operador VisualG | Operador Java | Descrição |
+| :--- | :--- | :--- |
+| `E` | `&&` | **E (AND)**: Verdadeiro somente se **todas** as condições forem verdadeiras. |
+| `OU` | `||` | **OU (OR)**: Verdadeiro se **pelo menos uma** condição for verdadeira. |
+| `NAO` | `!` | **NÃO (NOT)**: **Inverte** o valor da condição (de `true` para `false` e vice-versa). |
 
-### Código em Portugol
+#### Operador `&&` (E)
 
-```portugol
-algoritmo "SomaComEnquanto"
-var
-   x, soma: inteiro
-inicio
-   soma <- 0
+Pense na regra para obter uma habilitação de motorista: você precisa ser aprovado no exame psicotécnico **E** no exame de legislação **E** no exame de direção. Se falhar em qualquer um deles, o resultado final é "reprovado". Todas as condições devem ser verdadeiras.
 
-   escreva("Digite um numero: ")
-   leia(x)
+**Tabela Verdade (E):**
 
-   enquanto x <> 0 faca
-      soma <- soma + x
-      escreva("Digite outro numero: ")
-      leia(x)
-   fimenquanto
+| A | B | A && B |
+| :--- | :--- | :--- |
+| `false` | `false` | `false` |
+| `false` | `true` | `false` |
+| `true` | `false` | `false` |
+| `true` | `true` | `true` |
 
-   escreval("SOMA = ", soma)
-fimalgoritmo
-```
+#### Operador `||` (OU)
 
-## 🔢 Estrutura "Para" (*for*)
+Pense nas vagas de estacionamento preferenciais: você pode usá-las se for idoso(a), **OU** pessoa com deficiência, **OU** gestante. Basta atender a uma das condições para ter o direito.
 
-### O que é?
+**Tabela Verdade (OU):**
 
-[cite\_start]A estrutura "para" é um laço de repetição projetado para executar um bloco de comandos por um **intervalo de valores predefinido** ou um número específico de vezes[cite: 744].
+| A | B | A || B |
+| :--- | :--- | :--- |
+| `false` | `false` | `false` |
+| `false` | `true` | `true` |
+| `true` | `false` | `true` |
+| `true` | `true` | `true` |
 
-### Quando Usar?
+#### Operador `!` (NÃO)
 
-[cite\_start]É recomendada quando **se sabe de antemão a quantidade de repetições necessárias**[cite: 745]. É perfeita para tarefas baseadas em contagem.
+Pense na regra para uma bolsa de estudos: você tem direito se **NÃO** possuir renda maior que R$ 3.000,00. Este operador inverte o resultado da condição. Se a condição `renda > 3000` for verdadeira, `!(renda > 3000)` será falsa.
 
-### Problema Exemplo
+**Tabela Verdade (NÃO):**
 
-> Fazer um programa que primeiro lê um valor inteiro N e, depois, lê N números inteiros. Ao final, mostra a soma dos N números lidos.
+| A | \!A |
+| :--- | :--- |
+| `false` | `true` |
+| `true` | `false` |
 
-#### Exemplo (Novo)
+## 🔀 A Estrutura `if-else`
 
-```
-Quantos numeros serao digitados? 4
-Digite um numero: 10
-Digite um numero: 8
-Digite um numero: -3
-Digite um numero: 5
-SOMA = 20
-```
+É a principal estrutura de controle condicional. Ela permite que um bloco de comandos seja executado somente se uma determinada condição for atendida.
 
-### Sintaxe e Regras
+### `if` Simples
 
-```portugol
-para <variável> de <valor_inicial> ate <valor_final> [passo <incremento>] faca
-   // bloco de comandos
-fimpara
-```
+Executa um bloco de código se a condição for verdadeira. Se for falsa, o bloco é simplesmente ignorado.
 
-* **Regras**:
-    1.  [cite\_start]**Inicialização**: A `<variável>` de controle recebe o `<valor_inicial>` na primeira vez[cite: 756].
-    2.  [cite\_start]**Condição**: Se o valor da `<variável>` não ultrapassou o `<valor_final>`, o bloco executa[cite: 758]. Caso contrário, o laço termina.
-    3.  [cite\_start]**Incremento**: Ao final de cada repetição, a `<variável>` é incrementada em 1 (ou pelo valor definido em `passo`)[cite: 759].
+**Sintaxe em Java:**
 
-### Exemplos de Contagem
-
-**Contagem Progressiva**
-
-```portugol
-para i de 1 ate 3 faca
-   escreval("Valor de i: ", i)
-fimpara
+```java
+if (condicao) {
+    // Bloco de comandos a ser executado
+    // se a condição for verdadeira.
+}
 ```
 
-*Saída:*
+### `if-else` Composta
 
-```
-Valor de i: 1
-Valor de i: 2
-Valor de i: 3
-```
+Oferece um caminho alternativo. Se a condição for verdadeira, o bloco `if` é executado. Caso contrário (`else`), o bloco `else` é executado.
 
------
+**Sintaxe em Java:**
 
-**Contagem Regressiva**
-
-```portugol
-para i de 3 ate 1 passo -1 faca
-   escreval("Valor de i: ", i)
-fimpara
+```java
+if (condicao) {
+    // Bloco de comandos a ser executado
+    // se a condição for verdadeira.
+} else {
+    // Bloco de comandos a ser executado
+    // se a condição for falsa.
+}
 ```
 
-*Saída:*
+### Encadeamento com `else if`
 
-```
-Valor de i: 3
-Valor de i: 2
-Valor de i: 1
-```
+Para cenários com múltiplas condições (mais de duas possibilidades), podemos encadear várias estruturas `if-else`.
 
-## 🎬 Estrutura "Repita-Até" (*do-while*)
+**Exemplo: Saudação baseada na hora do dia**
 
-### O que é?
+```java
+import java.util.Scanner;
 
-[cite\_start]A estrutura "repita-até" é um laço de repetição que **executa o bloco de comandos pelo menos uma vez**, pois a condição de parada só é verificada no final[cite: 879].
+public class Saudacao {
 
-### Quando Usar?
-
-É menos comum, mas muito útil em situações onde a ação deve ocorrer ao menos uma vez, como em menus interativos onde se pergunta ao usuário se ele deseja realizar a operação novamente.
-
-### Problema Exemplo
-
-> Fazer um programa para ler uma temperatura em Celsius e mostrar o equivalente em Fahrenheit. Ao final, perguntar se o usuário deseja repetir (s/n). Caso digite "s", o programa repete.
-
-### Fórmula de Conversão
-
-$$F = \frac{9 \times C}{5} + 32$$
-
-#### Exemplo (Novo)
-
-```
-Digite a temperatura em Celsius: 25.0
-Equivalente em Fahrenheit: 77.0
-Deseja repetir (s/n)? s
-Digite a temperatura em Celsius: 0.0
-Equivalente em Fahrenheit: 32.0
-Deseja repetir (s/n)? s
-Digite a temperatura em Celsius: -5.0
-Equivalente em Fahrenheit: 23.0
-Deseja repetir (s/n)? n
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite a hora atual (0-23): ");
+        int hora = sc.nextInt();
+        
+        if (hora < 12) { // se a hora for menor que 12
+            System.out.println("Bom dia!"); // imprime Bom dia!
+        } else if (hora < 18) { // senão, se a hora for menor que 18
+            System.out.println("Boa tarde!"); // imprime Boa tarde!
+        } else { // senão (para qualquer outra hora >= 18)
+            System.out.println("Boa noite!"); // imprime Boa noite!
+        }
+        
+        sc.close();
+    }
+}
 ```
 
-### Sintaxe e Regras
+> **Boa Prática**: Repare na **indentação** (o recuo dos blocos de código). Ela não afeta o funcionamento em Java, mas é fundamental para a legibilidade do código\!
 
-```portugol
-repita
-   // bloco de comandos
-ate <condição>
+## 🔢 A Estrutura `switch-case`
+
+Quando temos várias opções de fluxo que dependem do valor de uma **única variável**, podemos usar a estrutura `switch-case` como uma alternativa mais limpa e organizada a um longo encadeamento de `if-else if`.
+
+**Problema Exemplo:** Ler um número inteiro de 1 a 7 e escrever o dia da semana correspondente.
+
+**Solução com `switch-case` em Java:**
+
+```java
+import java.util.Scanner;
+
+public class DiaDaSemana {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número para o dia da semana (1-7): ");
+        int x = sc.nextInt();
+        String dia;
+
+        switch (x) { // A variável a ser avaliada
+            case 1: // Se o valor for 1
+                dia = "Domingo";
+                break; // Interrompe a execução do switch
+            case 2: // Se o valor for 2
+                dia = "Segunda-feira";
+                break;
+            case 3:
+                dia = "Terça-feira";
+                break;
+            case 4:
+                dia = "Quarta-feira";
+                break;
+            case 5:
+                dia = "Quinta-feira";
+                break;
+            case 6:
+                dia = "Sexta-feira";
+                break;
+            case 7:
+                dia = "Sábado";
+                break;
+            default: // Equivalente ao "outrocaso", se nenhum caso corresponder
+                dia = "Valor inválido";
+                break;
+        }
+
+        System.out.println("Dia da semana: " + dia);
+        sc.close();
+    }
+}
 ```
 
-* **Regra**: O bloco de comandos é executado, e somente depois a `<condição>` é testada.
-    * [cite\_start]Se for **falsa (F)**, o laço executa novamente[cite: 885].
-    * [cite\_start]Se for **verdadeira (V)**, o laço é encerrado[cite: 885]. (Note que a lógica é o inverso da estrutura `enquanto`).
+> **Importante:** O comando `break` é essencial. Sem ele, o código continuaria a executar os `case` seguintes ("fall-through"), o que geralmente não é o comportamento desejado. O bloco `default` é opcional e lida com todos os valores não cobertos pelos `case`.
 
-### Código em Portugol
+## ✍️ Exercícios Práticos Resolvidos em Java
 
-```portugol
-algoritmo "ConversorDeTemperatura"
-var
-   C, F: real
-   resp: caractere
-inicio
-   repita
-      escreva("Digite a temperatura em Celsius: ")
-      leia(C)
-      F <- 9.0 * C / 5.0 + 32.0
-      escreval("Equivalente em Fahrenheit: ", F:4:1)
-      escreva("Deseja repetir (s/n)? ")
-      leia(resp)
-   ate resp = "n"
-fimalgoritmo
+### Exercício 1: Fórmula de Bhaskara com Validação
+
+**Problema:** Relembrando a fórmula de Bhaskara ($$ax^2 + bx + c = 0$$), precisamos criar um programa que calcule as raízes, mas com duas validações importantes:
+
+1.  O coeficiente `a` não pode ser zero, pois senão não é uma equação do segundo grau.
+2.  O valor de delta ($$\Delta = b^2 - 4ac$$) não pode ser negativo, pois não existe raiz quadrada real de número negativo.
+
+O programa deve tratar essas condições antes de tentar calcular as raízes.
+
+**Solução em Java:**
+
+```java
+package curso;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Bhaskara {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Coeficiente a: ");
+        double a = sc.nextDouble();
+        System.out.print("Coeficiente b: ");
+        double b = sc.nextDouble();
+        System.out.print("Coeficiente c: ");
+        double c = sc.nextDouble();
+
+        if (a == 0) {
+            System.out.println("Esta não é uma equação de segundo grau!");
+        } else {
+            double delta = Math.pow(b, 2.0) - 4.0 * a * c;
+
+            if (delta < 0) {
+                System.out.println("Esta equação não possui raízes reais.");
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
+                double x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
+                System.out.printf("X1 = %.4f\n", x1);
+                System.out.printf("X2 = %.4f\n", x2);
+            }
+        }
+        sc.close();
+    }
+}
 ```
+
+**Exemplos de Execução:**
+
+  - **Entrada:** `a=1`, `b=0`, `c=-9` → **Saída:** `X1 = 3.0000`, `X2 = -3.0000`
+  - **Entrada:** `a=2`, `b=9`, `c=10` → **Saída:** `X1 = -2.0000`, `X2 = -2.5000`
+  - **Entrada:** `a=5`, `b=2`, `c=3` → **Saída:** `Esta equação não possui raízes reais.`
+  - **Entrada:** `a=0`, `b=4`, `c=2` → **Saída:** `Esta não é uma equação de segundo grau!`
 
 ---
 

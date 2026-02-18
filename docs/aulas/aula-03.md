@@ -1,260 +1,134 @@
-# ⚖️ Estrutura Condicional em Programação
+# Estrutura Sequencial: O Começo de Tudo ➡️
 
-Após entendermos como os programas executam comandos em sequência, vamos explorar a **estrutura condicional**. Ela permite que um programa tome decisões, alterando seu fluxo de execução com base em condições específicas. É o que torna os programas "inteligentes" e dinâmicos.
+Bem-vindo à sua primeira "aula de verdade" de lógica com código! Até agora, preparamos o terreno. Hoje, vamos aprender como um programa "pensa" da forma mais básica: um passo depois do outro.
 
-## 🔍 Expressões Lógicas e Comparativas
+## 1. O que é Estrutura Sequencial?
 
-Para que uma estrutura condicional funcione, ela precisa avaliar uma condição. O resultado dessa avaliação é sempre um valor lógico: **verdadeiro** ou **falso**. Essas condições são construídas com expressões comparativas e lógicas.
+Imagine uma receita de bolo:
+1.  Quebre os ovos.
+2.  Bata a massa.
+3.  Coloque no forno.
 
-### Expressões Comparativas
-
-Comparam dois valores e o resultado é sempre um `boolean` (`true` ou `false`).
-
-**Operadores Comparativos em Java:**
-
-| Operador VisualG | Operador Java | Significado |
-| :--- | :--- | :--- |
-| `>` | `>` | Maior que |
-| `<` | `<` | Menor que |
-| `>=` | `>=` | Maior ou igual a |
-| `<=` | `<=` | Menor ou igual a |
-| `=` | `==` | **Igual a** (Note a diferença\!) |
-| `<>` | `!=` | Diferente de |
-
-**Exemplos (supondo `int x = 10;`):**
-
-  - `x > 0` → Resultado: `true`
-  - `x == 10` → Resultado: `true`
-  - `x != 10` → Resultado: `false`
-  - `20 <= 15` → Resultado: `false`
-
-### Expressões Lógicas
-
-Combinam duas ou mais expressões comparativas, permitindo criar condições mais complexas.
-
-**Operadores Lógicos em Java:**
-
-| Operador VisualG | Operador Java | Descrição |
-| :--- | :--- | :--- |
-| `E` | `&&` | **E (AND)**: Verdadeiro somente se **todas** as condições forem verdadeiras. |
-| `OU` | `||` | **OU (OR)**: Verdadeiro se **pelo menos uma** condição for verdadeira. |
-| `NAO` | `!` | **NÃO (NOT)**: **Inverte** o valor da condição (de `true` para `false` e vice-versa). |
-
-#### Operador `&&` (E)
-
-Pense na regra para obter uma habilitação de motorista: você precisa ser aprovado no exame psicotécnico **E** no exame de legislação **E** no exame de direção. Se falhar em qualquer um deles, o resultado final é "reprovado". Todas as condições devem ser verdadeiras.
-
-**Tabela Verdade (E):**
-
-| A | B | A && B |
-| :--- | :--- | :--- |
-| `false` | `false` | `false` |
-| `false` | `true` | `false` |
-| `true` | `false` | `false` |
-| `true` | `true` | `true` |
-
-#### Operador `||` (OU)
-
-Pense nas vagas de estacionamento preferenciais: você pode usá-las se for idoso(a), **OU** pessoa com deficiência, **OU** gestante. Basta atender a uma das condições para ter o direito.
-
-**Tabela Verdade (OU):**
-
-| A | B | A || B |
-| :--- | :--- | :--- |
-| `false` | `false` | `false` |
-| `false` | `true` | `true` |
-| `true` | `false` | `true` |
-| `true` | `true` | `true` |
-
-#### Operador `!` (NÃO)
-
-Pense na regra para uma bolsa de estudos: você tem direito se **NÃO** possuir renda maior que R$ 3.000,00. Este operador inverte o resultado da condição. Se a condição `renda > 3000` for verdadeira, `!(renda > 3000)` será falsa.
-
-**Tabela Verdade (NÃO):**
-
-| A | \!A |
-| :--- | :--- |
-| `false` | `true` |
-| `true` | `false` |
-
-## 🔀 A Estrutura `if-else`
-
-É a principal estrutura de controle condicional. Ela permite que um bloco de comandos seja executado somente se uma determinada condição for atendida.
-
-### `if` Simples
-
-Executa um bloco de código se a condição for verdadeira. Se for falsa, o bloco é simplesmente ignorado.
-
-**Sintaxe em Java:**
-
-```java
-if (condicao) {
-    // Bloco de comandos a ser executado
-    // se a condição for verdadeira.
-}
-```
-
-### `if-else` Composta
-
-Oferece um caminho alternativo. Se a condição for verdadeira, o bloco `if` é executado. Caso contrário (`else`), o bloco `else` é executado.
-
-**Sintaxe em Java:**
-
-```java
-if (condicao) {
-    // Bloco de comandos a ser executado
-    // se a condição for verdadeira.
-} else {
-    // Bloco de comandos a ser executado
-    // se a condição for falsa.
-}
-```
-
-### Encadeamento com `else if`
-
-Para cenários com múltiplas condições (mais de duas possibilidades), podemos encadear várias estruturas `if-else`.
-
-**Exemplo: Saudação baseada na hora do dia**
-
-```java
-import java.util.Scanner;
-
-public class Saudacao {
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Digite a hora atual (0-23): ");
-        int hora = sc.nextInt();
-        
-        if (hora < 12) { // se a hora for menor que 12
-            System.out.println("Bom dia!"); // imprime Bom dia!
-        } else if (hora < 18) { // senão, se a hora for menor que 18
-            System.out.println("Boa tarde!"); // imprime Boa tarde!
-        } else { // senão (para qualquer outra hora >= 18)
-            System.out.println("Boa noite!"); // imprime Boa noite!
-        }
-        
-        sc.close();
-    }
-}
-```
-
-> **Boa Prática**: Repare na **indentação** (o recuo dos blocos de código). Ela não afeta o funcionamento em Java, mas é fundamental para a legibilidade do código\!
-
-## 🔢 A Estrutura `switch-case`
-
-Quando temos várias opções de fluxo que dependem do valor de uma **única variável**, podemos usar a estrutura `switch-case` como uma alternativa mais limpa e organizada a um longo encadeamento de `if-else if`.
-
-**Problema Exemplo:** Ler um número inteiro de 1 a 7 e escrever o dia da semana correspondente.
-
-**Solução com `switch-case` em Java:**
-
-```java
-import java.util.Scanner;
-
-public class DiaDaSemana {
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Digite um número para o dia da semana (1-7): ");
-        int x = sc.nextInt();
-        String dia;
-
-        switch (x) { // A variável a ser avaliada
-            case 1: // Se o valor for 1
-                dia = "Domingo";
-                break; // Interrompe a execução do switch
-            case 2: // Se o valor for 2
-                dia = "Segunda-feira";
-                break;
-            case 3:
-                dia = "Terça-feira";
-                break;
-            case 4:
-                dia = "Quarta-feira";
-                break;
-            case 5:
-                dia = "Quinta-feira";
-                break;
-            case 6:
-                dia = "Sexta-feira";
-                break;
-            case 7:
-                dia = "Sábado";
-                break;
-            default: // Equivalente ao "outrocaso", se nenhum caso corresponder
-                dia = "Valor inválido";
-                break;
-        }
-
-        System.out.println("Dia da semana: " + dia);
-        sc.close();
-    }
-}
-```
-
-> **Importante:** O comando `break` é essencial. Sem ele, o código continuaria a executar os `case` seguintes ("fall-through"), o que geralmente não é o comportamento desejado. O bloco `default` é opcional e lida com todos os valores não cobertos pelos `case`.
-
-## ✍️ Exercícios Práticos Resolvidos em Java
-
-### Exercício 1: Fórmula de Bhaskara com Validação
-
-**Problema:** Relembrando a fórmula de Bhaskara ($$ax^2 + bx + c = 0$$), precisamos criar um programa que calcule as raízes, mas com duas validações importantes:
-
-1.  O coeficiente `a` não pode ser zero, pois senão não é uma equação do segundo grau.
-2.  O valor de delta ($$\Delta = b^2 - 4ac$$) não pode ser negativo, pois não existe raiz quadrada real de número negativo.
-
-O programa deve tratar essas condições antes de tentar calcular as raízes.
-
-**Solução em Java:**
-
-```java
-package curso;
-
-import java.util.Locale;
-import java.util.Scanner;
-
-public class Bhaskara {
-
-    public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Coeficiente a: ");
-        double a = sc.nextDouble();
-        System.out.print("Coeficiente b: ");
-        double b = sc.nextDouble();
-        System.out.print("Coeficiente c: ");
-        double c = sc.nextDouble();
-
-        if (a == 0) {
-            System.out.println("Esta não é uma equação de segundo grau!");
-        } else {
-            double delta = Math.pow(b, 2.0) - 4.0 * a * c;
-
-            if (delta < 0) {
-                System.out.println("Esta equação não possui raízes reais.");
-            } else {
-                double x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
-                double x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
-                System.out.printf("X1 = %.4f\n", x1);
-                System.out.printf("X2 = %.4f\n", x2);
-            }
-        }
-        sc.close();
-    }
-}
-```
-
-**Exemplos de Execução:**
-
-  - **Entrada:** `a=1`, `b=0`, `c=-9` → **Saída:** `X1 = 3.0000`, `X2 = -3.0000`
-  - **Entrada:** `a=2`, `b=9`, `c=10` → **Saída:** `X1 = -2.0000`, `X2 = -2.5000`
-  - **Entrada:** `a=5`, `b=2`, `c=3` → **Saída:** `Esta equação não possui raízes reais.`
-  - **Entrada:** `a=0`, `b=4`, `c=2` → **Saída:** `Esta não é uma equação de segundo grau!`
+A ordem importa. Você não pode assar o bolo antes de quebrar os ovos. Na programação, a **Estrutura Sequencial** é isso: comandos executados **de cima para baixo**, uma linha de cada vez, sem pular nada.
 
 ---
 
-### 🚀 [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+## 2. Variáveis: As Caixas da Memória 📦
+
+Para processar dados, o computador precisa guardá-los na memória RAM. Chamamos esses espaços de **Variáveis**.
+Imagine uma variável como uma caixa etiquetada onde você guarda **UM** valor.
+
+### Tipos de Dados Primitivos
+Em Java (e na maioria das linguagens), as caixas têm tamanhos e formatos diferentes:
+
+| Tipo | O que guarda? | Exemplo | Tamanho |
+| :--- | :--- | :--- | :--- |
+| **int** | Números inteiros | `10`, `-5`, `0` | Pequeno |
+| **double** | Números com vírgula (Reais) | `10.5`, `3.1415` | Grande |
+| **char** | Um único caractere | `'A'`, `'@'`, `'9'` | Minúsculo |
+| **boolean** | Verdadeiro ou Falso | `true`, `false` | Mínimo |
+| **String** | Texto (Palavras/Frases) | `"Olá Mundo"`, `"Mariana"` | Variável |
+
+> **Nota**: `String` em Java é uma Classe especial, por isso começa com maiúscula.
+
+### Declarando Variáveis
+
+Sintaxe básica: `TIPO NOME_DA_VARIAVEL = VALOR;`
+
+```java
+int idade = 25;
+double altura = 1.75;
+char genero = 'F';
+String nome = "Maria";
+boolean estuda = true;
+```
+
+---
+
+## 3. Entrada e Saída (Input/Output) 📤📥
+
+Como o programa conversa com o usuário?
+
+### Saída de Dados (Output)
+É o que o programa mostra na tela.
+
+```java
+System.out.println("Olá, mundo!"); // Pula linha no final
+System.out.print("Sem pular linha");
+System.out.printf("Formatado: %.2f", 10.50); // %.2f = 2 casas decimais
+```
+
+### Entrada de Dados (Input)
+É o que o usuário digita. Em Java, usamos um "scanner" para ler o teclado.
+
+```java
+import java.util.Scanner; // Importa a ferramenta Scanner
+
+public class ExemploEntrada {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Cria o leitor
+
+        System.out.print("Digite seu nome: ");
+        String nome = sc.next(); // Lê uma palavra
+
+        System.out.print("Digite sua idade: ");
+        int idade = sc.nextInt(); // Lê um inteiro
+
+        System.out.println("Olá, " + nome + "! Você tem " + idade + " anos.");
+
+        sc.close(); // Encerra o leitor
+    }
+}
+```
+
+---
+
+## 4. Processamento de Dados (Cálculos) ➗
+
+O processamento acontece através de **atribuições** e **expressões matemáticas**.
+
+**Regra de Ouro**: O processamento (cálculo) deve acontecer **DA DIREITA PARA A ESQUERDA**.
+*   `x = 10 + 5` -> Primeiro resolve `10 + 5`, depois guarda o `15` na caixa `x`.
+
+### Operadores Aritméticos
+*   `+` (Soma)
+*   `-` (Subtração)
+*   `*` (Multiplicação)
+*   `/` (Divisão)
+*   `%` (Módulo/Resto da Divisão) -> Útil para saber se um número é par ou ímpar (`x % 2 == 0`).
+
+### Exemplo Completo: Soma de Dois Números
+
+```java
+import java.util.Scanner;
+
+public class Soma {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x, y, soma; // Declarando múltiplas variáveis
+
+        System.out.print("Digite o primeiro número: ");
+        x = sc.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        y = sc.nextInt();
+
+        soma = x + y; // Processamento
+
+        System.out.println("SOMA = " + soma); // Saída
+
+        sc.close();
+    }
+}
+```
+
+---
+
+## 🧠 Exercícios de Fixação
+
+1.  **Terreno**: Ler a largura e comprimento de um terreno, calcular a área (`largura * comprimento`) e o preço (`area * valor_metro`).
+2.  **Média**: Ler 3 notas e calcular a média aritmética.
+
+---
+**Próxima Aula**: E se precisarmos tomar uma decisão? Aprenderemos a **Estrutura Condicional**.

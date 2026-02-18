@@ -1,75 +1,101 @@
-# Linguagem Python 🐍
+# Linguagem Java ☕
 
-Bem-vindo ao guia de Python, uma linguagem de programação de alto nível, conhecida por sua sintaxe limpa, legibilidade e vasta gama de aplicações, que vão desde desenvolvimento web e automação de scripts até ciência de dados e inteligência artificial. Sua filosofia incentiva a escrita de código claro e conciso.
+Bem-vindo ao guia da linguagem Java, uma das linguagens de programação mais populares e versáteis do mundo. Famosa por sua filosofia "escreva uma vez, rode em qualquer lugar" (*write once, run anywhere*), o Java é fundamental para o desenvolvimento de aplicações web, mobile (Android), e sistemas de grande escala.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-Para programar em Python, você precisa do interpretador da linguagem e de um bom editor de código ou IDE.
+Para desenvolver em Java, o primeiro passo é instalar o **JDK (Java Development Kit)**, que é um pacote de software contendo o compilador e outras ferramentas essenciais.
 
-1.  **Instale o Python**:
+1.  **Instale o Java JDK**:
 
-      * Faça o download da versão mais recente do Python diretamente do [site oficial](https://www.google.com/search?q=https.www.python.org/downloads/).
-      * **Importante (para Windows)**: Na primeira tela do instalador, marque a caixa de seleção **"Add Python to PATH"**. Isso permite que você execute o Python a partir de qualquer terminal.
-      * Para testar a instalação, abra um terminal e digite `python` ou `python3`. Você deverá ver o prompt do interpretador Python (`>>>`). Para sair, digite `exit()` e pressione Enter.
+      * Faça o download do JDK (versão LTS, como 11, 17 ou 21, é recomendada) a partir do site oficial da Oracle ou de uma distribuição como o OpenJDK.
+      * Siga o instalador.
+      * **Configure as Variáveis de Ambiente**:
+          * Crie uma nova variável de ambiente `JAVA_HOME` apontando para a pasta de instalação do JDK (ex: `C:\Program Files\Java\jdk-17.0.2`).
+          * Adicione o caminho da pasta `bin` do JDK à variável `Path` do sistema (ex: `%JAVA_HOME%\bin`).
+      * Para verificar a instalação, abra um terminal e execute o comando `java -version`.
 
 2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
-    O material original foca no PyCharm, que é excelente. O VS Code é outra alternativa extremamente popular.
+    Enquanto o material original foca no Eclipse, as IDEs mais utilizadas atualmente para desenvolvimento Java são o VS Code e o IntelliJ IDEA.
 
-    ### Opção 1: PyCharm Community Edition
-
-      * Baixe o [PyCharm Community](https://www.jetbrains.com/pycharm/download/). É uma IDE gratuita e poderosa, desenvolvida pela JetBrains e totalmente dedicada ao desenvolvimento em Python, com ótimas ferramentas de depuração e análise de código.
-
-    ### Opção 2: Visual Studio Code
+    ### Opção 1: VS Code
 
       * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-      * Na aba de extensões, instale a extensão **"Python"** da Microsoft. Ela transforma o VS Code em um ambiente de desenvolvimento Python completo, com suporte a depuração, linting e notebooks Jupyter.
+      * Na aba de extensões, instale o pacote **"Extension Pack for Java"** da Microsoft. Ele inclui tudo o que é necessário para compilar, executar e depurar código Java.
 
-### 🚀 Seu Primeiro Programa em Python
+    ### Opção 2: IntelliJ IDEA
 
-A simplicidade do Python brilha desde o início. Um programa "Olá, Mundo" é apenas uma linha de código.
+      * Baixe a versão **Community** (gratuita) do [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
+      * O IntelliJ IDEA é altamente especializado para Java e oferece uma experiência de desenvolvimento muito produtiva, com ferramentas de análise de código e refatoração de ponta.
 
-```python
-print("Ola, Universo Python!")
+### 🚀 Seu Primeiro Programa em Java
+
+Todo programa em Java é contido dentro de uma **classe**. A execução sempre começa no método `main`.
+
+```java
+// É uma boa prática definir um pacote para organizar suas classes.
+package curso;
+
+// Declaração da classe principal.
+public class Programa {
+
+    // Método principal, ponto de entrada do programa.
+    public static void main(String[] args) {
+        // Comando para imprimir uma linha no console.
+       System.out.println("Ola, Universo Java!");
+    }
+}
 ```
-
-Diferente de linguagens como Java ou C\#, Python não exige uma estrutura complexa de classes ou métodos `main` para programas simples.
 
 ## 📊 Tipos de Dados e Variáveis
 
-Python é uma linguagem de **tipagem dinâmica**, o que significa que você não precisa declarar o tipo de uma variável. O tipo é inferido automaticamente quando você atribui um valor a ela.
+Java possui tipos de dados primitivos para armazenar valores simples e tipos por referência (classes) para objetos complexos.
 
-| Significado | Tipo em Python | Observação |
-| :--- | :--- | :--- |
-| Número Inteiro | `int` | Pode armazenar números de tamanho virtualmente ilimitado. |
-| Número de Ponto Flutuante | `float` | Usado para números reais (com casas decimais). |
-| Texto (String) | `str` | Não há um tipo `char` separado; um caractere é uma `str` de tamanho 1. Pode ser declarado com aspas simples (`'...'`) ou duplas (`"..."`). |
-| Valor Lógico | `bool` | Aceita apenas os valores `True` ou `False` (com a primeira letra maiúscula). |
+| Significado | Tipo em Java | Valor Padrão | Observação |
+| :--- | :--- | :--- | :--- |
+| Número Inteiro | `int` | 0 | O tipo padrão para inteiros. Use `long` para valores muito grandes. |
+| Número de Ponto Flutuante | `double` | 0.0 | O tipo padrão para números reais. `float` oferece precisão simples. |
+| Um Único Caractere | `char` | `'\u0000'` | Armazena um caractere Unicode, sempre entre **aspas simples** (ex: `'F'`). |
+| Texto | `String` | `null` | `String` é uma classe, não um tipo primitivo, e por isso começa com 'S' maiúsculo. Textos são declarados entre **aspas duplas** (ex: "Beatriz Costa"). |
+| Valor Lógico | `boolean` | `false` | Aceita apenas os valores `true` ou `false`. |
 
-**Nota sobre Type Hints (Dicas de Tipo):**
-Embora a tipagem seja dinâmica, o Python moderno suporta "type hints", que permitem anotar o tipo esperado de uma variável (ex: `idade: int = 31`). Isso não afeta a execução, mas melhora a legibilidade e ajuda ferramentas de análise de código a encontrar erros.
+## 📝 Declaração e Atribuição de Variáveis
 
-## 📝 Declaração e Formatação de Saída
+A declaração de variáveis em Java exige a especificação de um tipo e um nome. A atribuição pode ser feita na mesma linha ou posteriormente.
 
-A atribuição de variáveis é direta. Para exibir dados formatados, a melhor abordagem é usar **f-strings**, que permitem incorporar expressões e variáveis diretamente dentro de uma string.
+```java
+package curso;
 
-```python
-# A anotação de tipo (ex: : int) é opcional, mas uma boa prática.
-idade: int = 31
-salario: float = 7800.25
-altura: float = 1.72
-genero: str = 'F'
-nome: str = "Sofia Oliveira"
+import java.util.Locale; // Importa a classe Locale para formatação.
 
-# f-strings (formatted string literals) são a forma moderna de formatar saídas.
-print(f"NOME = {nome}")
-print(f"IDADE = {idade}")
-print(f"GENERO = {genero}")
-# Para formatar um float com 2 casas decimais, usa-se :.2f
-print(f"SALARIO = {salario:.2f}")
-print(f"ALTURA = {altura:.2f}")
+public class Programa {
+
+    public static void main(String[] args) {
+
+       // Define o Locale para US para usar o ponto como separador decimal.
+       Locale.setDefault(Locale.US);
+
+       // Declaração e inicialização de variáveis.
+       int idade = 28;
+       double salario = 8200.50;
+       double altura = 1.65;
+       char genero = 'F';
+       String nome = "Beatriz Costa";
+
+       // Saída de dados.
+       System.out.println("NOME = " + nome);
+       System.out.println("IDADE = " + idade);
+       System.out.println("GENERO = " + genero);
+        // Usando String.format para formatar a saída com 2 casas decimais.
+       System.out.println("ALTURA = " + String.format("%.2f", altura));
+       System.out.println("SALARIO = " + String.format("%.2f", salario));
+    }
+}
 ```
 
 ## 🔢 Operadores
+
+Os operadores em Java são herdados de C/C++ e seguem a mesma lógica.
 
 ### Aritméticos
 
@@ -78,162 +104,229 @@ print(f"ALTURA = {altura:.2f}")
 | `+` | Adição |
 | `-` | Subtração |
 | `*` | Multiplicação |
-| `/` | Divisão (resulta em float) |
-| `//` | Divisão inteira (resulta em int, descarta o resto) |
-| `%` | Resto da divisão (módulo) |
-| `**` | Exponenciação |
+| `/` | Divisão |
+| `%` | Resto da divisão ("mod") |
 
 ### Comparativos
 
 | Operador | Significado |
 | :---: | :--- |
-| `==` | Igual a |
-| `!=` | Diferente de |
-| `>` | Maior que |
-| `<` | Menor que |
-| `>=` | Maior ou igual a |
-| `<=` | Menor ou igual a |
+| `<` | Menor |
+| `>` | Maior |
+| `<=` | Menor ou igual |
+| `>=` | Maior ou igual |
+| `==` | Igual |
+| `!=` | Diferente |
 
 ### Lógicos
 
-Em Python, os operadores lógicos são palavras em inglês, o que torna o código muito legível.
 | Operador | Significado |
 | :---: | :--- |
-| `and` | E |
-| `or` | OU |
-| `not` | NÃO |
+| `&&` | E |
+| `||` | OU |
+| `!` | NÃO |
 
-## 📥 Entrada de Dados
+## 📥 Entrada de Dados com a Classe `Scanner`
 
-A entrada de dados em Python é feita com a função `input()`.
+Para ler dados do teclado em Java, utilizamos a classe `Scanner`, que deve ser importada da biblioteca `java.util`.
 
-  * A função `input()` **sempre retorna uma string**.
-  * Você deve converter explicitamente o valor para o tipo numérico desejado usando `int()` ou `float()`.
-  * A função pode receber uma string como argumento, que será exibida ao usuário como um prompt.
+1.  **Importe a classe**: `import java.util.Scanner;`.
+2.  **Crie um objeto Scanner**: `Scanner sc = new Scanner(System.in);`.
+3.  **Use os métodos de leitura**:
+      * `nextInt()`: Lê um número inteiro.
+      * `nextDouble()`: Lê um número double.
+      * `next()`: Lê a próxima palavra (até o espaço).
+      * `nextLine()`: Lê a linha inteira de texto.
+      * `next().charAt(0)`: Lê uma palavra e pega apenas o primeiro caractere.
+4.  **Feche o Scanner**: `sc.close();` para liberar os recursos do sistema.
 
-<!-- end list -->
+**Atenção à Quebra de Linha Pendente:**
+Quando você lê um número (`nextInt` ou `nextDouble`), o cursor de leitura para após o número, deixando o "Enter" (`\n`) no buffer de entrada. Se a próxima leitura for um `nextLine()`, ele lerá essa quebra de linha vazia.
+**Solução**: Consuma a quebra de linha pendente com um `sc.nextLine()` extra antes de ler o texto.
 
-```python
-# O prompt é passado diretamente para a função input().
-nome_completo = input("Digite seu nome completo: ")
-idade = int(input("Digite sua idade: ")) # Converte a entrada para inteiro.
-salario = float(input("Digite seu salario: ")) # Converte a entrada para float.
+```java
+package curso;
 
-print("\n--- DADOS REGISTRADOS ---")
-print(f"Nome: {nome_completo}")
-print(f"Idade: {idade}")
-print(f"Salario: {salario:.2f}")
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Programa {
+
+    public static void main(String[] args) {
+       Locale.setDefault(Locale.US);
+       Scanner sc = new Scanner(System.in);
+
+       String nomeCompleto;
+       int idade;
+       double salario;
+       char genero;
+
+       System.out.print("Digite seu nome completo: ");
+       nomeCompleto = sc.nextLine();
+
+       System.out.print("Digite sua idade: ");
+       idade = sc.nextInt();
+
+       System.out.print("Digite seu salario: ");
+       salario = sc.nextDouble();
+
+       System.out.print("Digite seu genero (F/M): ");
+       genero = sc.next().charAt(0);
+
+       System.out.println("\n--- DADOS REGISTRADOS ---");
+       System.out.println("Nome: " + nomeCompleto);
+       System.out.println("Idade: " + idade);
+       System.out.println("Salario: " + String.format("%.2f", salario));
+       System.out.println("Genero: " + genero);
+
+       sc.close();
+    }
+}
 ```
 
-## 🔀 Estruturas de Controle e a Importância da Indentação
+## 🔀 Estruturas de Controle
 
-Em Python, os blocos de código (corpo de um `if`, `for`, `while`, etc.) não são definidos por chaves `{}`. Em vez disso, eles são definidos pela **indentação** (geralmente 4 espaços). Isso força um estilo de código limpo e organizado.
+### Estrutura Condicional (`if-else`)
 
-### Estrutura Condicional (`if/elif/else`)
+Permite que o programa execute diferentes caminhos com base em condições.
 
-A estrutura `if` avalia uma condição. `elif` (contração de "else if") permite testar múltiplas condições, e `else` captura todos os outros casos.
+```java
+// ... (dentro do método main)
+Scanner sc = new Scanner(System.in);
+System.out.print("Digite a hora atual (0-23): ");
+int hora = sc.nextInt();
 
-```python
-hora = int(input("Digite uma hora do dia (0-23): "))
-
-if hora < 12:
-    print("Bom dia!")
-elif hora < 18:
-    print("Boa tarde!")
-else:
-    print("Boa noite!")
+if (hora < 12) {
+    System.out.println("Bom dia!");
+} else if (hora < 18) {
+    System.out.println("Boa tarde!");
+} else {
+    System.out.println("Boa noite!");
+}
+sc.close();
 ```
 
 ### Estrutura de Repetição `while`
 
-O laço `while` executa um bloco de código enquanto uma condição for verdadeira.
+O bloco de código é executado enquanto a condição for verdadeira.
 
-```python
-soma = 0
-numero = int(input("Digite um numero (0 para sair): "))
+```java
+// ... (dentro do método main)
+Scanner sc = new Scanner(System.in);
+int numero;
+int soma = 0;
+System.out.print("Digite um numero (0 para sair): ");
+numero = sc.nextInt();
 
-while numero != 0:
-    soma = soma + numero
-    numero = int(input("Digite outro numero (0 para sair): "))
+while (numero != 0) { 
+    soma += numero;
+    System.out.print("Digite outro numero (0 para sair): ");
+    numero = sc.nextInt();
+}
 
-print(f"SOMA FINAL = {soma}")
+System.out.println("SOMA FINAL = " + soma);
+sc.close();
 ```
 
 ### Estrutura de Repetição `for`
 
-O laço `for` em Python é usado para iterar sobre uma sequência (como uma lista, uma string ou um `range`). A função `range(start, stop)` gera uma sequência de números, que é ideal para laços com contagem.
+Ideal para laços que precisam ser executados um número específico de vezes.
 
-```python
-n = int(input("Quantos numeros voce quer somar? "))
-soma = 0
+```java
+// ... (dentro do método main)
+Scanner sc = new Scanner(System.in);
+System.out.print("Quantos numeros serao somados? ");
+int N = sc.nextInt();
+int soma = 0;
 
-for i in range(0, n):
-    valor = int(input(f"Digite o valor #{i + 1}: "))
-    soma = soma + valor
+for (int i = 0; i < N; i++) { 
+    System.out.print("Digite o valor #" + (i + 1) + ": ");
+    int x = sc.nextInt();
+    soma += x;
+}
 
-print(f"SOMA = {soma}")
+System.out.println("SOMA = " + soma);
+sc.close();
 ```
 
-## 📏 Vetores e Matrizes (Listas)
+## 📏 Vetores e Matrizes
 
-O tipo de dado em Python que mais se assemelha a um vetor ou array é a **lista** (`list`). Listas são coleções ordenadas e mutáveis de itens.
+### Vetores (Arrays)
 
-### Vetores (Listas)
+Em Java, vetores são objetos que armazenam uma coleção de tamanho fixo de elementos do mesmo tipo.
 
-Uma forma "pythônica" de inicializar uma lista com valores padrão é usando *list comprehension*.
+```java
+// ... (dentro do método main)
+Locale.setDefault(Locale.US);
+Scanner sc = new Scanner(System.in);
 
-```python
-n = int(input("Quantos numeros voce vai digitar? "))
+System.out.print("Quantos numeros voce vai digitar? ");
+int N = sc.nextInt();
 
-# Inicializa uma lista com N posições, todas contendo 0.0
-# Esta sintaxe é chamada de "list comprehension".
-vetor: [float] = [0.0 for x in range(n)]
+// Declaração e instanciação do vetor
+double[] vetor = new double[N];
 
-for i in range(0, n):
-    vetor[i] = float(input(f"Digite o numero #{i + 1}: "))
+for (int i = 0; i < N; i++) {
+    System.out.print("Digite um numero: ");
+    vetor[i] = sc.nextDouble();
+}
 
-print("\nNUMEROS DIGITADOS:")
-for numero in vetor:
-    print(f"{numero:.1f}")
+System.out.println("\nNUMEROS DIGITADOS:");
+for (int i = 0; i < N; i++) {
+    System.out.println(String.format("%.1f", vetor[i]));
+}
+sc.close();
 ```
 
-### Matrizes (Listas de Listas)
+### Matrizes (Arrays Bidimensionais)
 
-Uma matriz em Python é implementada como uma lista onde cada elemento é, por sua vez, outra lista.
+São vetores de vetores, úteis para representar dados em formato de tabela.
 
-```python
-m = int(input("Quantas linhas tera a matriz? "))
-n = int(input("Quantas colunas tera a matriz? "))
+```java
+// ... (dentro do método main)
+Scanner sc = new Scanner(System.in);
 
-# Inicializa uma matriz M x N com zeros usando "nested list comprehension".
-matriz: [[int]] = [[0 for x in range(n)] for x in range(m)]
+System.out.print("Quantas linhas tera a matriz? ");
+int M = sc.nextInt();
+System.out.print("Quantas colunas tera a matriz? ");
+int N = sc.nextInt();
 
-for i in range(0, m):
-    for j in range(0, n):
-        matriz[i][j] = int(input(f"Elemento [{i},{j}]: "))
+// Declaração e instanciação da matriz
+int[][] matriz = new int[M][N];
 
-print("\nMATRIZ DIGITADA:")
-for i in range(0, m):
-    for j in range(0, n):
-        print(f"{matriz[i][j]} ", end="")
-    print() # Pula para a próxima linha
+for (int i = 0; i < M; i++) {
+    for (int j = 0; j < N; j++) {
+        System.out.print("Elemento [" + i + "," + j + "]: ");
+        matriz[i][j] = sc.nextInt();
+    }
+}
+
+System.out.println("\nMATRIZ DIGITADA:");
+for (int i = 0; i < M; i++) {
+    for (int j = 0; j < N; j++) {
+        System.out.print(matriz[i][j] + " ");
+    }
+    System.out.println(); // Pula para a próxima linha
+}
+sc.close();
 ```
 
-## 🐞 Depuração (Debugging) em Python
+## 🐞 Depuração (Debugging) em Java
 
-Tanto o PyCharm quanto o VS Code oferecem depuradores visuais excelentes.
+Depurar é o processo de encontrar e corrigir bugs no seu código. Tanto o VS Code quanto o IntelliJ IDEA possuem excelentes ferramentas de depuração visual. Os comandos do material original eram para o Eclipse.
 
-### Debugging no PyCharm e VS Code
+### Debugging no VS Code e IntelliJ IDEA
 
-Os conceitos e atalhos são muito parecidos.
+Os conceitos são os mesmos, apenas os atalhos podem variar.
 
-1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde quer que a execução pause. No PyCharm, o atalho é `Ctrl + F8`.
+1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde você quer que a execução pause.
 2.  **Iniciar o Debug**:
-      * **PyCharm**: Pressione `Shift + F9` ou clique no ícone de inseto.
-      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug".
+      * **IntelliJ**: Pressione `Shift + F9` ou clique no ícone de inseto ao lado da configuração de execução.
+      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug" e inicie a sessão.
 3.  **Controlar a Execução**:
-      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. O atalho costuma ser `F8` no PyCharm e `F10` no VS Code.
-4.  **Inspecionar Variáveis**: A aba "Debugger" no PyCharm ou a janela "VARIABLES" no VS Code mostrarão os valores das variáveis em tempo real.
+      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. (**F8** no IntelliJ, **F10** no VS Code).
+      * **Continue (Continuar)**: Continua a execução até o próximo breakpoint ou o fim do programa. (**F9** no IntelliJ, **F5** no VS Code).
+4.  **Inspecionar Variáveis**: A aba "Debug" em ambas as IDEs mostrará uma janela "Variables" onde você pode ver e monitorar o valor das variáveis em tempo real.
 
 ---
 

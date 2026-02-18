@@ -1,106 +1,22 @@
-# Makefile C/C++: Compilando Projetos Profissionalmente
+# Setup 03: Web Moderno (JS/TS) 🌐
 
-Usar `Makefile` é o jeito profissional de compilar projetos em C (e outras linguagens).
+## 1. Node.js
+O motor que roda JavaScript fora do navegador.
+1.  Baixe a versão **LTS** em [nodejs.org](https://nodejs.org/).
+2.  Instale (Next, Next, Finish).
+3.  Teste no terminal: `node -v` e `npm -v`.
 
-### Vantagens de usar Makefile:
+## 2. Visual Studio Code
+O editor padrão da indústria.
+1.  Baixe em [code.visualstudio.com](https://code.visualstudio.com/).
+2.  Instale extensões úteis:
+    *   **Live Server**: Para rodar HTML localmente.
+    *   **Prettier**: Para formatar código.
+    *   **ESLint**: Para encontrar erros.
 
-- Automatiza o build
-    
-- Facilita compilar projetos grandes
-    
-- Fica padrão pra qualquer dev C/C++
-    
-
----
-
-## Exemplo simples de Makefile
-
-Suponha que você tem um arquivo `main.c`:
-
-### Estrutura dos arquivos:
-
-```
-meu_projeto/
-├── main.c
-└── Makefile
-```
-
----
-
-### Exemplo de conteúdo do `Makefile`:
-
-```Makefile
-# Nome do executável
-PROG = programa
-
-# Compilador
-CC = gcc
-
-# Flags de compilação (avisos extras)
-CFLAGS = -Wall -Wextra -g
-
-# Alvo padrão
-all: $(PROG)
-
-# Como compilar
-$(PROG): main.c
-	$(CC) $(CFLAGS) main.c -o $(PROG)
-
-# Limpar arquivos gerados
-clean:
-	rm -f $(PROG)
-```
-
----
-
-## Como usar:
-
-Dentro da pasta do projeto:
-
-### Compilar:
-
+## 3. TypeScript
+Após instalar o Node.js, instale o compilador TS globalmente:
 ```bash
-make
+npm install -g typescript
 ```
-
-Ele vai criar o executável `programa`.
-
-### Rodar:
-
-```bash
-./programa
-```
-
-### Limpar arquivos gerados:
-
-```bash
-make clean
-```
-
----
-
-## Automatizando dentro do Vim
-
-Dentro do Vim:
-
-```vim
-:!make && ./programa
-```
-
-Ou cria no `~/.vimrc` um atalho:
-
-```vim
-nnoremap <F5> :w<CR>:!make && ./programa<CR>
-```
-
-Agora dentro do Vim:
-
-- `F5` → Salva, compila com Makefile e executa.
-    
-
----
-
-Montar um Makefile mais avançado
-
-Tipo separando arquivos `.h` e `.c` em pastas diferentes (src/, include/)
-
+Teste com `tsc -v`.

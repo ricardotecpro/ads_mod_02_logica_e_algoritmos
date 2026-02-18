@@ -1,209 +1,201 @@
-# ➡️ Vetores (Arrays Unidimensionais) em Programação
+# 🔄 Capítulo: Estruturas Repetitivas
 
-Vetores, também conhecidos como **arrays unidimensionais**, são uma das estruturas de dados mais fundamentais na programação. Eles nos permitem armazenar múltiplos valores em uma única variável, de forma organizada e eficiente.
+As estruturas repetitivas, também conhecidas como laços ou *loops*, são um pilar da programação. Elas permitem que um bloco de comandos seja executado várias vezes, seja por um número definido de vezes ou enquanto uma determinada condição for atendida. Vamos explorar as três estruturas principais: "enquanto", "para" e "repita-até".
 
-## 🤔 O que são Vetores?
+## 🔁 Estrutura "Enquanto" (*while*)
 
-Um vetor é uma coleção de dados que possui quatro características principais:
+### O que é?
 
-  - **Indexada**: Cada elemento no vetor possui uma posição única, chamada de índice, que é usada para acessá-lo. Os índices são sempre números inteiros, começando em zero.
-  - **Unidimensional**: É uma estrutura de dados linear, como uma lista ou uma fila, possuindo apenas uma dimensão (comprimento).
-  - **Homogênea**: Todos os elementos armazenados em um vetor devem ser, obrigatoriamente, do mesmo tipo de dado (todos `int`, todos `double`, todos `String`, etc.).
-  - **Tamanho Fixo**: Uma vez que um vetor é criado na memória, seu tamanho (a quantidade de elementos que ele pode conter) é fixo e não pode ser alterado.
+[cite\_start]A estrutura "enquanto" é um laço de repetição que executa um bloco de comandos continuamente **enquanto uma condição específica for verdadeira**[cite: 616].
 
-## 🛠️ Trabalhando com Vetores em Java
+### Quando Usar?
 
-Vamos ver como declarar, instanciar (criar) e manipular vetores na linguagem Java.
+[cite\_start]É a escolha ideal quando **não se sabe previamente a quantidade exata de repetições** que o programa precisará executar[cite: 617]. A repetição depende de um evento externo, como a digitação de um valor específico pelo usuário (conhecido como **valor de sentinela**).
 
-### Declaração e Instanciação
+### Problema Exemplo
 
-Para usar um vetor, você primeiro o declara e depois o instancia, especificando seu tipo e tamanho.
+> Fazer um programa que lê números inteiros até que um zero seja lido. Ao final, o programa deve mostrar a soma de todos os números digitados (exceto o zero).
 
-```java
-// Sintaxe: tipo[] nomeDoVetor = new tipo[tamanho];
-
-// Exemplo: Criando um vetor de 10 posições para números de ponto flutuante.
-// Isso corresponde a "vet: vetor [0..9] de real" do pseudocódigo.
-double[] numeros = new double[10];
-
-// Exemplo: Criando um vetor de 5 posições para armazenar nomes.
-String[] nomes = new String[5];
-```
-
-### Acessando Elementos
-
-O acesso aos elementos é feito através de seus índices. Lembre-se sempre que **o primeiro elemento está no índice 0**.
-
-```java
-// Atribuindo o valor 25.4 à primeira posição (índice 0) do vetor.
-numeros[0] = 25.4;
-
-// Atribuindo o valor "Ana" à terceira posição (índice 2) do vetor.
-nomes[2] = "Ana";
-
-// Lendo e imprimindo o valor da terceira posição de 'nomes'.
-System.out.println(nomes[2]); // Saída: Ana
-```
-
-Frequentemente, usamos laços de repetição, como o `for`, para percorrer e manipular todos os elementos de um vetor de forma eficiente.
-
-```java
-// Exemplo: Preenchendo um vetor com os números de 10 a 14.
-// Equivalente à lógica B[i] <- i + 10.
-int[] vetorB = new int[5];
-for (int i = 0; i < vetorB.length; i++) {
-    vetorB[i] = i + 10;
-    System.out.println("Posição " + i + " recebeu o valor " + vetorB[i]);
-}
-```
-
-## ✍️ Exemplo Prático: Lendo e Imprimindo um Vetor
-
-**Problema:** Fazer um programa para ler um número inteiro `N`, depois ler `N` números `double` e armazená-los em um vetor. Em seguida, mostrar na tela todos os elementos do vetor.
-
-**Solução em Java:**
-
-```java
-package curso;
-
-import java.util.Locale;
-import java.util.Scanner;
-
-public class LerVetor {
-
-    public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Quantos números você vai digitar? ");
-        int N = sc.nextInt();
-
-        // Instanciando o vetor com o tamanho N informado pelo usuário
-        double[] vet = new double[N];
-
-        // Laço para ler e armazenar cada número no vetor
-        for (int i = 0; i < N; i++) {
-            System.out.print("Digite um número: ");
-            vet[i] = sc.nextDouble();
-        }
-
-        // Laço para imprimir os elementos do vetor
-        System.out.println("\nNÚMEROS DIGITADOS:");
-        for (int i = 0; i < N; i++) {
-            System.out.printf("%.1f\n", vet[i]);
-        }
-
-        sc.close();
-    }
-}
-```
-
-**Exemplo de Execução:**
+#### Exemplo (Novo)
 
 ```
-Quantos números você vai digitar? 4
-Digite um número: 10.5
-Digite um número: 4.2
-Digite um número: -7.1
-Digite um número: 15.0
-
-NÚMEROS DIGITADOS:
-10.5
-4.2
--7.1
-15.0
+Digite um numero: 10
+Digite outro numero: 7
+Digite outro numero: 3
+Digite outro numero: 0
+SOMA = 20
 ```
 
-## 📈 Exercício Completo: Análise de Alturas
+### Sintaxe e Regras
 
-Vamos resolver um problema mais elaborado que utiliza **vetores paralelos** (vários vetores cujos índices se correspondem).
-
-**Problema:** Fazer um programa para ler nome, idade e altura de `N` pessoas. Depois, o programa deve mostrar a altura média das pessoas e a porcentagem de pessoas com menos de 16 anos, listando o nome delas.
-
-**Solução em Java:**
-
-```java
-package curso;
-
-import java.util.Locale;
-import java.util.Scanner;
-
-public class AnaliseAlturas {
-
-    public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Quantas pessoas serão digitadas? ");
-        int N = sc.nextInt();
-
-        // Declarando os vetores paralelos
-        String[] nomes = new String[N];
-        int[] idades = new int[N];
-        double[] alturas = new double[N];
-
-        // Lendo os dados de cada pessoa
-        for (int i = 0; i < N; i++) {
-            System.out.println("Dados da " + (i + 1) + "ª pessoa:");
-            System.out.print("Nome: ");
-            sc.nextLine(); // Consome a quebra de linha pendente
-            nomes[i] = sc.nextLine();
-            System.out.print("Idade: ");
-            idades[i] = sc.nextInt();
-            System.out.print("Altura: ");
-            alturas[i] = sc.nextDouble();
-        }
-
-        // Processando os dados: calculando a soma das alturas e contando menores de 16
-        double somaAlturas = 0.0;
-        int contMenores = 0;
-        for (int i = 0; i < N; i++) {
-            somaAlturas += alturas[i];
-            if (idades[i] < 16) {
-                contMenores++;
-            }
-        }
-
-        // Calculando a média de altura
-        double alturaMedia = somaAlturas / N;
-
-        // Calculando o percentual de menores de 16 anos
-        // A fórmula é x = cont * 100 / N
-        double percentualMenores = ((double) contMenores * 100.0) / N;
-
-        // Apresentando os resultados
-        System.out.printf("\nAltura média: %.2f\n", alturaMedia);
-        System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", percentualMenores);
-
-        // Imprimindo o nome dos menores de 16
-        for (int i = 0; i < N; i++) {
-            if (idades[i] < 16) {
-                System.out.println(nomes[i]);
-            }
-        }
-
-        sc.close();
-    }
-}
+```portugol
+enquanto <condição> faca
+   // bloco de comandos
+fimenquanto
 ```
 
-### 🛠️ Como Executar no VS Code e IntelliJ IDEA
+* **Regra**: Antes de cada repetição, a `<condição>` é testada.
+    * [cite\_start]Se for **verdadeira (V)**, o bloco de comandos executa, e o fluxo volta para o teste da condição[cite: 626].
+    * [cite\_start]Se for **falsa (F)**, o laço é encerrado, e o programa continua na linha seguinte ao `fimenquanto`[cite: 626].
 
-Você pode compilar e executar todos os exemplos de código acima em qualquer uma das IDEs modernas.
+### Código em Portugol
 
-#### No Visual Studio Code
+```portugol
+algoritmo "SomaComEnquanto"
+var
+   x, soma: inteiro
+inicio
+   soma <- 0
 
-1.  **Instale o Pacote de Extensões para Java**: Na aba de Extensões (`Ctrl+Shift+X`), procure por `Extension Pack for Java` da Microsoft e instale-o.
-2.  **Crie o Arquivo**: Crie um novo arquivo com a extensão `.java` (ex: `LerVetor.java`).
-3.  **Cole o Código**: Copie e cole um dos exemplos no arquivo.
-4.  **Execute**: Um botão **"Run"** aparecerá acima do método `main`. Clique nele para compilar e executar o código. A saída aparecerá no terminal integrado.
+   escreva("Digite um numero: ")
+   leia(x)
 
-#### Na IntelliJ IDEA
+   enquanto x <> 0 faca
+      soma <- soma + x
+      escreva("Digite outro numero: ")
+      leia(x)
+   fimenquanto
 
-1.  **Crie um Novo Projeto**: Vá em `File > New > Project`. Escolha `Java` e a versão do JDK.
-2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `AnaliseAlturas`).
-3.  **Cole o Código**: Copie e cole o código correspondente na classe criada.
-4.  **Execute**: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione **Run 'NomeDaClasse.main()'**. A saída aparecerá na aba "Run" na parte inferior da IDE.
+   escreval("SOMA = ", soma)
+fimalgoritmo
+```
+
+## 🔢 Estrutura "Para" (*for*)
+
+### O que é?
+
+[cite\_start]A estrutura "para" é um laço de repetição projetado para executar um bloco de comandos por um **intervalo de valores predefinido** ou um número específico de vezes[cite: 744].
+
+### Quando Usar?
+
+[cite\_start]É recomendada quando **se sabe de antemão a quantidade de repetições necessárias**[cite: 745]. É perfeita para tarefas baseadas em contagem.
+
+### Problema Exemplo
+
+> Fazer um programa que primeiro lê um valor inteiro N e, depois, lê N números inteiros. Ao final, mostra a soma dos N números lidos.
+
+#### Exemplo (Novo)
+
+```
+Quantos numeros serao digitados? 4
+Digite um numero: 10
+Digite um numero: 8
+Digite um numero: -3
+Digite um numero: 5
+SOMA = 20
+```
+
+### Sintaxe e Regras
+
+```portugol
+para <variável> de <valor_inicial> ate <valor_final> [passo <incremento>] faca
+   // bloco de comandos
+fimpara
+```
+
+* **Regras**:
+    1.  [cite\_start]**Inicialização**: A `<variável>` de controle recebe o `<valor_inicial>` na primeira vez[cite: 756].
+    2.  [cite\_start]**Condição**: Se o valor da `<variável>` não ultrapassou o `<valor_final>`, o bloco executa[cite: 758]. Caso contrário, o laço termina.
+    3.  [cite\_start]**Incremento**: Ao final de cada repetição, a `<variável>` é incrementada em 1 (ou pelo valor definido em `passo`)[cite: 759].
+
+### Exemplos de Contagem
+
+**Contagem Progressiva**
+
+```portugol
+para i de 1 ate 3 faca
+   escreval("Valor de i: ", i)
+fimpara
+```
+
+*Saída:*
+
+```
+Valor de i: 1
+Valor de i: 2
+Valor de i: 3
+```
+
+-----
+
+**Contagem Regressiva**
+
+```portugol
+para i de 3 ate 1 passo -1 faca
+   escreval("Valor de i: ", i)
+fimpara
+```
+
+*Saída:*
+
+```
+Valor de i: 3
+Valor de i: 2
+Valor de i: 1
+```
+
+## 🎬 Estrutura "Repita-Até" (*do-while*)
+
+### O que é?
+
+[cite\_start]A estrutura "repita-até" é um laço de repetição que **executa o bloco de comandos pelo menos uma vez**, pois a condição de parada só é verificada no final[cite: 879].
+
+### Quando Usar?
+
+É menos comum, mas muito útil em situações onde a ação deve ocorrer ao menos uma vez, como em menus interativos onde se pergunta ao usuário se ele deseja realizar a operação novamente.
+
+### Problema Exemplo
+
+> Fazer um programa para ler uma temperatura em Celsius e mostrar o equivalente em Fahrenheit. Ao final, perguntar se o usuário deseja repetir (s/n). Caso digite "s", o programa repete.
+
+### Fórmula de Conversão
+
+$$F = \frac{9 \times C}{5} + 32$$
+
+#### Exemplo (Novo)
+
+```
+Digite a temperatura em Celsius: 25.0
+Equivalente em Fahrenheit: 77.0
+Deseja repetir (s/n)? s
+Digite a temperatura em Celsius: 0.0
+Equivalente em Fahrenheit: 32.0
+Deseja repetir (s/n)? s
+Digite a temperatura em Celsius: -5.0
+Equivalente em Fahrenheit: 23.0
+Deseja repetir (s/n)? n
+```
+
+### Sintaxe e Regras
+
+```portugol
+repita
+   // bloco de comandos
+ate <condição>
+```
+
+* **Regra**: O bloco de comandos é executado, e somente depois a `<condição>` é testada.
+    * [cite\_start]Se for **falsa (F)**, o laço executa novamente[cite: 885].
+    * [cite\_start]Se for **verdadeira (V)**, o laço é encerrado[cite: 885]. (Note que a lógica é o inverso da estrutura `enquanto`).
+
+### Código em Portugol
+
+```portugol
+algoritmo "ConversorDeTemperatura"
+var
+   C, F: real
+   resp: caractere
+inicio
+   repita
+      escreva("Digite a temperatura em Celsius: ")
+      leia(C)
+      F <- 9.0 * C / 5.0 + 32.0
+      escreval("Equivalente em Fahrenheit: ", F:4:1)
+      escreva("Deseja repetir (s/n)? ")
+      leia(resp)
+   ate resp = "n"
+fimalgoritmo
+```
 
 ---
 

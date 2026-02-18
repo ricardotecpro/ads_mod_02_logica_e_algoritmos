@@ -1,108 +1,48 @@
-# Linguagem Go (Golang) 🐹
+# Linguagem Dart
 
-Bem-vindo ao guia da linguagem Go, uma linguagem de programação de código aberto criada pelo Google. O Go foi projetado para ser simples, eficiente, legível e altamente performático, com um foco especial em programação concorrente (execução de múltiplas tarefas simultaneamente). É amplamente utilizado na construção de microsserviços, ferramentas de linha de comando, processamento de dados e infraestrutura de backend.
+**Dart** é uma linguagem de programação moderna, flexível e otimizada, desenvolvida pelo Google. É a linguagem utilizada pelo framework Flutter.
 
-## 🛠️ Instalação e Configuração do Ambiente
+### 📊 Tipos de Dados e Variáveis em Dart
 
-Para começar a programar em Go, você precisa do conjunto de ferramentas oficial da linguagem.
+Dart é uma linguagem **estaticamente tipada**, mas possui um poderoso sistema de **inferência de tipo** com a palavra-chave `var`.
 
-1.  **Instale o Go**:
+  * `var`: Declara uma variável cujo tipo é inferido pelo compilador. Uma vez inferido, o tipo não pode mudar.
+  * `final`: Declara uma variável que só pode ser definida uma vez (constante em tempo de execução).
+  * `const`: Declara uma variável que é uma constante em tempo de compilação.
 
-    * Faça o download do instalador apropriado para o seu sistema operacional a partir do [site oficial do Go](https://go.dev/dl/).
-    * Execute o instalador. Ele cuidará da configuração das variáveis de ambiente necessárias, como `GOPATH` e a adição do Go ao `PATH` do sistema.
-    * Para verificar se a instalação foi bem-sucedida, abra um novo terminal e execute o comando `go version`.
-
-2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
-
-    ### Opção 1: Visual Studio Code (Recomendado)
-
-    * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-    * Na aba de extensões, instale a extensão **"Go"** oficial, publicada pela equipe do Go no Google. Ela oferece um suporte excelente, incluindo preenchimento automático, formatação e depuração.
-
-    ### Opção 2: GoLand
-
-    * Baixe o [GoLand](https://www.jetbrains.com/go/), uma IDE da JetBrains totalmente dedicada ao desenvolvimento em Go. É uma ferramenta extremamente poderosa, com recursos avançados de análise de código e refatoração (similar ao PyCharm para Python ou IntelliJ para Java).
-
-### 🚀 Seu Primeiro Programa em Go
-
-A estrutura de um programa Go é simples e organizada em pacotes. Todo programa executável deve ter um pacote `main` e uma função `main`.
-
-```go
-// Todo arquivo Go pertence a um pacote. O pacote 'main' é especial: ele define um programa executável.
-package main
-
-// A declaração 'import' lista os pacotes que o programa usará. "fmt" é o pacote para formatação de I/O.
-import "fmt"
-
-// A função 'main' é o ponto de entrada do programa.
-func main() {
-	// A função Println do pacote fmt imprime uma linha no console.
-	fmt.Println("Ola, Universo Go!")
-}
-```
-
-## 📊 Tipos de Dados e Variáveis
-
-Go é uma linguagem **estaticamente tipada**, o que significa que o tipo de uma variável é conhecido em tempo de compilação.
-
-| Significado | Tipo em Go | Observação |
+| Significado | Tipo em Dart | Observação |
 | :--- | :--- | :--- |
-| Número Inteiro | `int` | O tamanho (32 ou 64 bits) depende da arquitetura do sistema. |
-| Número de Ponto Flutuante | `float64` | O tipo padrão para números reais, oferecendo precisão dupla. |
-| Texto | `string` | Representa uma sequência de caracteres. Strings em Go são imutáveis. |
+| Número Inteiro | `int` | Números inteiros sem parte decimal. |
+| Número de Ponto Flutuante | `double` | Números com casas decimais. |
+| Texto | `String` | Uma sequência de caracteres, declarada com aspas simples ou duplas. |
 | Valor Lógico | `bool` | Aceita apenas os valores `true` ou `false`. |
+| Listas (Arrays) | `List` | Uma coleção ordenada de itens. Ex: `List<int>`. |
+| Mapas | `Map` | Uma coleção de pares chave-valor. Ex: `Map<String, int>`. |
 
-### Formas de Declaração
+### 📝 Declaração e Saída de Dados
 
-Go oferece duas maneiras principais de declarar variáveis:
+Em Dart, a interpolação de strings é a maneira mais comum de formatar texto. A função `print()` é usada para depuração e imprime no console.
 
-1.  **Declaração com `var`**: `var nome string = "Mariana"`
-2.  **Declaração Curta (`:=`)**: `idade := 33`
+```dart
+// A função print() é usada para depuração e imprime no console de depuração.
+void VariaveisExemplo() {
+  final String nome = "Rafael Mendes"; // 'final' porque o nome não mudará.
+  var idade = 25; // O tipo 'int' é inferido.
+  var altura = 1.80; // O tipo 'double' é inferido.
+  var isDesenvolvedor = true; // O tipo 'bool' é inferido.
 
-A declaração curta é mais comum e idiomática em Go. Ela infere o tipo da variável a partir do valor atribuído e só pode ser usada dentro de funções.
-
-## 📝 Declaração e Formatação de Saída
-
-Para exibir dados formatados, o pacote `fmt` oferece funções semelhantes às da linguagem C.
-
-* `fmt.Println()`: Imprime os itens e adiciona uma nova linha.
-* `fmt.Printf()`: Imprime uma string formatada usando "verbos" de formatação.
-
-**Verbos de formatação comuns:**
-
-* `%s` para strings
-* `%d` para inteiros
-* `%.2f` para floats com 2 casas decimais
-* `%t` para booleanos
-* `%v` para o valor em um formato padrão
-
-<!-- end list -->
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-	// Usando a declaração curta (:=)
-	nome := "Mariana Rocha"
-	idade := 33
-	salario := 12500.00
-	isRemoto := true
-
-	// Usando Printf para formatação controlada
-	fmt.Printf("NOME = %s\n", nome)
-	fmt.Printf("IDADE = %d\n", idade)
-	fmt.Printf("SALARIO = %.2f\n", salario)
-	fmt.Printf("TRABALHO REMOTO? = %t\n", isRemoto)
+  // Usando interpolação de string ($) para formatar a saída.
+  print('NOME = $nome');
+  print('IDADE = $idade');
+  // Para formatar um double, podemos usar o método .toStringAsFixed().
+  print('ALTURA = ${altura.toStringAsFixed(2)}');
+  print('É DESENVOLVEDOR? = $isDesenvolvedor');
 }
 ```
 
-## 🔢 Operadores
+### 🔢 Operadores
 
-Os operadores em Go são diretos e seguem o padrão da família de linguagens C.
-
-### Aritméticos
+#### Operadores Aritméticos
 
 | Operador | Significado |
 | :---: | :--- |
@@ -110,9 +50,10 @@ Os operadores em Go são diretos e seguem o padrão da família de linguagens C.
 | `-` | Subtração |
 | `*` | Multiplicação |
 | `/` | Divisão |
+| `~/` | Divisão inteira |
 | `%` | Resto da divisão (módulo) |
 
-### Comparativos
+#### Operadores de Igualdade e Relacionais
 
 | Operador | Significado |
 | :---: | :--- |
@@ -123,7 +64,7 @@ Os operadores em Go são diretos e seguem o padrão da família de linguagens C.
 | `>=` | Maior ou igual a |
 | `<=` | Menor ou igual a |
 
-### Lógicos
+#### Operadores Lógicos
 
 | Operador | Significado |
 | :---: | :--- |
@@ -131,161 +72,235 @@ Os operadores em Go são diretos e seguem o padrão da família de linguagens C.
 | `||` | OU |
 | `!` | NÃO |
 
-## 📥 Entrada de Dados
+#### Operadores Especiais de Dart
 
-A entrada de dados em Go é mais verbosa, pois exige o tratamento explícito de erros. A abordagem padrão usa os pacotes `bufio` para ler a entrada e `strconv` para converter a string para outros tipos.
+  * `??` (Null Coalescing): `var nome = nomeDoUsuario ?? "Convidado";` (Se `nomeDoUsuario` for nulo, use "Convidado").
+  * `?.` (Null-aware access): `print(usuario?.email);` (Acesse `email` somente se `usuario` não for nulo, senão retorne `null`).
 
-```go
-package main
+### 🔀 Estruturas de Controle
 
-import (
-	"bufio" // Para leitura de buffer
-	"fmt"
-	"os"      // Para acessar a entrada padrão (teclado)
-	"strconv" // Para conversão de strings
-	"strings" // Para manipulação de strings
-)
+#### Estrutura Condicional (`if/else`)
 
-func main() {
-	// Cria um leitor para a entrada padrão (stdin).
-	reader := bufio.NewReader(os.Stdin)
-
-	fmt.Print("Digite seu nome completo: ")
-	nome, _ := reader.ReadString('\n') // Lê até a quebra de linha
-	nome = strings.TrimSpace(nome)     // Remove espaços em branco e a quebra de linha
-
-	fmt.Print("Digite sua idade: ")
-	idadeStr, _ := reader.ReadString('\n')
-	idade, _ := strconv.Atoi(strings.TrimSpace(idadeStr)) // Converte string para int
-
-	fmt.Print("Digite seu salario: ")
-	salarioStr, _ := reader.ReadString('\n')
-	salario, _ := strconv.ParseFloat(strings.TrimSpace(salarioStr), 64) // Converte para float64
-
-	fmt.Println("\n--- DADOS REGISTRADOS ---")
-	fmt.Printf("Nome: %s\n", nome)
-	fmt.Printf("Idade: %d\n", idade)
-	fmt.Printf("Salario: %.2f\n", salario)
-}
-```
-
-**Nota sobre Erros**: O `_` nos exemplos acima está ignorando o valor de erro que as funções de leitura e conversão retornam. Em código de produção, é crucial tratar esses erros.
-
-## 🔀 Estruturas de Controle
-
-Go usa chaves `{}` para delimitar blocos.
-
-### Estrutura Condicional (`if/else if/else`)
-
-```go
-//...
-if idade < 18 {
-	fmt.Println("Menor de idade")
-} else if idade >= 18 && idade < 60 {
-	fmt.Println("Adulto")
+```dart
+var idade = 25;
+if (idade >= 18) {
+  print("É maior de idade.");
 } else {
-	fmt.Println("Idoso")
+  print("É menor de idade.");
 }
 ```
 
-### Estrutura de Repetição `for`
+#### Estruturas de Repetição
 
-Go possui apenas uma estrutura de laço: o `for`, que pode ser usado de três maneiras diferentes.
+**`for` (Laço Clássico):**
 
-**1. Laço `for` no estilo C:**
-
-```go
-soma := 0
-for i := 0; i < 5; i++ {
-	soma += i
-}
-fmt.Printf("Soma (estilo C): %d\n", soma)
-```
-
-**2. Laço `for` no estilo `while`:**
-
-```go
-n := 5
-for n > 0 {
-	fmt.Printf("n = %d\n", n)
-	n--
+```dart
+for (int i = 1; i <= 5; i++) {
+  print('Número: $i');
 }
 ```
 
-**3. Laço `for` para iteração (estilo `for-each`):**
+**`for-in` (Para Coleções):**
 
-```go
-nomes := []string{"Ana", "Carlos", "Beatriz"}
-for indice, nome := range nomes {
-	fmt.Printf("Indice: %d, Nome: %s\n", indice, nome)
+```dart
+var nomes = ['Rafael', 'Helena', 'Gabriel'];
+for (var nome in nomes) {
+  print(nome);
 }
 ```
 
-## 📏 Vetores (Arrays e Slices)
+### 📏 Estruturas de Dados (Listas e Mapas)
 
-Go faz uma distinção importante entre Arrays e Slices.
+#### Listas
 
-* **Array**: Uma coleção de tamanho **fixo**. Ex: `var meuArray [5]int`. É raramente usado diretamente.
-* **Slice**: Uma visão dinâmica e flexível de um array subjacente. É a estrutura de dados mais comum em Go para listas.
+As listas em Dart são o equivalente a arrays ou vetores.
 
-### Slices
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-	var n int
-	fmt.Print("Quantos numeros voce vai digitar? ")
-	fmt.Scanln(&n) // fmt.Scanln é outra forma de ler entrada simples.
-
-	// Cria um slice de floats com tamanho e capacidade n.
-	vetor := make([]float64, n)
-
-	for i := 0; i < n; i++ {
-		fmt.Printf("Digite o numero #%d: ", i+1)
-		fmt.Scanln(&vetor[i])
-	}
-
-	fmt.Println("\nNUMEROS DIGITADOS:")
-	for _, numero := range vetor { // _ ignora o índice
-		fmt.Printf("%.1f\n", numero)
-	}
-}
+```dart
+// Cria uma lista de inteiros.
+var numeros = <int>[10, 20, 30];
+// Adiciona um novo elemento.
+numeros.add(40);
+// Acessa um elemento pelo índice.
+print(numeros[1]); // Imprime 20
 ```
 
-### Matrizes (Slices de Slices)
+#### Mapas
 
-Uma matriz em Go é implementada como um slice, onde cada elemento é outro slice.
+Mapas são coleções de pares chave-valor.
 
-```go
-//...
-m := 2
-n := 3
-matriz := make([][]int, m) // Cria um slice com m "linhas"
-
-for i := 0; i < m; i++ {
-	matriz[i] = make([]int, n) // Cria a "coluna" (um slice de n inteiros) para cada linha
-	for j := 0; j < n; j++ {
-		matriz[i][j] = i + j
-	}
-}
-fmt.Println("Matriz:", matriz) // Saída: [[0 1 2] [1 2 3]]
+```dart
+var pontuacoes = <String, int>{
+  'Rafael': 100,
+  'Helena': 95,
+};
+// Adiciona um novo par.
+pontuacoes['Gabriel'] = 98;
+// Acessa um valor pela chave.
+print(pontuacoes['Rafael']); // Imprime 100
 ```
-
-## 🐞 Depuração (Debugging) em Go
-
-A depuração em Go é feita com a ferramenta **Delve**, que se integra perfeitamente com as IDEs.
-
-### Debugging no VS Code
-
-1.  A extensão "Go" do VS Code pedirá para instalar o Delve na primeira vez que você tentar depurar. Aceite a instalação.
-2.  Abra seu arquivo `.go`.
-3.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
-4.  Pressione `F5` para iniciar o depurador.
-5.  O VS Code iniciará a sessão de depuração, pausando no breakpoint e permitindo que você inspecione variáveis, execute o código passo a passo (`F10`) e veja a pilha de chamadas.
 
 ---
 
 ### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+## 🐦 Framework Flutter
+
+**Flutter** é um toolkit de UI (Interface de Usuário) de código aberto, também do Google, que utiliza a linguagem Dart para construir aplicativos compilados de forma nativa para mobile, web, desktop e sistemas embarcados a partir de um único código-base. Em resumo: **Dart é a linguagem, Flutter é o framework** para construir a interface.
+
+### 🛠️ Instalação e Configuração do Ambiente
+
+Para desenvolver com Flutter, você precisa instalar o **Flutter SDK (Software Development Kit)**, que já inclui o Dart SDK.
+
+1.  **Instale o Flutter SDK**: Acesse o [site oficial do Flutter](https://flutter.dev/docs/get-started/install) e siga o guia de instalação para o seu sistema operacional. O processo envolve baixar um arquivo, descompactá-lo e adicionar a pasta `bin` do Flutter ao `PATH` do seu sistema. Execute `flutter doctor` para verificar se há dependências faltando.
+
+2.  **Configure uma IDE**:
+
+      * **Visual Studio Code (Recomendado)**: Instale a extensão **"Flutter"**.
+      * **Android Studio**: Instale o plugin **"Flutter"** através do menu de configurações.
+
+### 🚀 Seu Primeiro Aplicativo Flutter
+
+1.  **Crie um novo projeto**: No terminal, execute `flutter create meu_app`.
+2.  **Entre no diretório**: `cd meu_app`.
+3.  **Abra o projeto na IDE**. O arquivo principal é o `lib/main.dart`.
+4.  Substitua o conteúdo de `lib/main.dart` pelo código de "Olá, Mundo":
+
+<!-- end list -->
+
+```dart
+// Importa o pacote principal do Flutter para widgets do Material Design.
+import 'package:flutter/material.dart';
+
+// A função main() é o ponto de entrada de todo aplicativo Flutter.
+void main() {
+  // runApp() infla o widget principal e o anexa à tela.
+  runApp(const MeuApp());
+}
+
+// Em Flutter, "tudo é um widget". Este é o widget raiz do seu aplicativo.
+class MeuApp extends StatelessWidget {
+  const MeuApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // MaterialApp é um widget que fornece funcionalidades básicas de um app.
+    return MaterialApp(
+      // Scaffold é um layout básico para uma tela de app Material.
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Meu Primeiro App'),
+        ),
+        // Center centraliza seu widget filho.
+        body: const Center(
+          // Text é o widget para exibir texto.
+          child: Text('Olá, Universo Flutter!'),
+        ),
+      ),
+    );
+  }
+}
+```
+
+5.  **Execute o aplicativo**: Pressione `F5` no VS Code ou clique no botão "Run" no Android Studio.
+
+### 📥 Entrada de Dados em Flutter (Widgets Interativos)
+
+A entrada de dados em Flutter é recebida através da interação do usuário com widgets como o `TextField`. Este processo geralmente envolve o uso de um **`StatefulWidget`** para gerenciar o estado da interface.
+
+```dart
+class TelaDeEntrada extends StatefulWidget {
+  const TelaDeEntrada({super.key});
+
+  @override
+  State<TelaDeEntrada> createState() => _TelaDeEntradaState();
+}
+
+class _TelaDeEntradaState extends State<TelaDeEntrada> {
+  // Um controller para ler e manipular o texto do TextField.
+  final _controller = TextEditingController();
+  String _nomeDigitado = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            // Widget para entrada de texto.
+            TextField(
+              controller: _controller,
+              decoration: const InputDecoration(labelText: 'Digite seu nome'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                // Atualiza o estado da tela para exibir o nome digitado.
+                setState(() {
+                  _nomeDigitado = _controller.text;
+                });
+              },
+              child: const Text('Saudação'),
+            ),
+            const SizedBox(height: 20),
+            Text('Olá, $_nomeDigitado!'),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+### 🐞 Depuração (Debugging) em Flutter
+
+As ferramentas de depuração do Flutter são um de seus pontos mais fortes.
+
+  * **Hot Reload (Recarga Rápida)**: Aplica as mudanças no código da UI em seu aplicativo **em menos de um segundo**, sem perder o estado atual do app.
+  * **Hot Restart (Reinício Rápido)**: Reinicia o aplicativo do zero, limpando o estado.
+  * **Depuração com Breakpoints**: Adicione breakpoints no seu código clicando na margem da IDE e inicie em modo de depuração (`F5` no VS Code).
+  * **Flutter DevTools**: Uma suíte de ferramentas que rodam no navegador, permitindo inspecionar a árvore de widgets, analisar performance, uso de memória e muito mais.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+
+---
+
+## Parte 2: Linguagem Kotlin (Android Nativo) 🤖
+
+Enquanto o Flutter (Dart) é multiplataforma, **Kotlin** é a linguagem oficial do Google para Android Nativo.
+
+### Por que Kotlin?
+Kotlin foi criada pela JetBrains (mesma criadora da IDE IntelliJ) para ser um "Java melhorado". Ela roda na JVM (Máquina Virtual Java), mas é muito mais concisa e segura.
+
+### Olá Mundo
+```kotlin
+fun main() {
+    println("Olá, Universo Kotlin!")
+}
+```
+
+### Null Safety (Segurança contra Nulos)
+O erro mais comum em Java (`NullPointerException`) é quase impossível em Kotlin.
+
+```kotlin
+var nome: String = "Ana"
+// nome = null // ERRO DE COMPILAÇÃO! Kotlin não deixa.
+
+var sobrenome: String? = "Silva" // A '?' permite nulo
+sobrenome = null // Ok
+```
+
+### Android: Jetpack Compose
+Hoje, apps Android não usam mais XML para telas. Usam **Compose**, que é muito parecido com Flutter.
+
+```kotlin
+@Composable
+fun MinhaTela() {
+    Text("Olá, Android!")
+}
+```
+
+---
+**Próxima Aula**: Fecharemos o curso com o **Legado e Evolução da Web (PHP)**.
+

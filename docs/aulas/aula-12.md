@@ -1,69 +1,107 @@
-# Linguagem JavaScript 📜
+# Linguagem C\# 💎
 
-Bem-vindo ao guia de JavaScript (JS), a linguagem de programação que impulsiona a web. Originalmente criada para adicionar interatividade às páginas da internet, hoje o JavaScript é uma linguagem multifuncional que roda em navegadores, servidores (com Node.js), aplicativos mobile e muito mais, sendo uma das tecnologias mais importantes e demandadas do mercado.
+Bem-vindo ao guia de C\# (pronuncia-se "C Sharp"), uma linguagem de programação moderna, orientada a objetos e desenvolvida pela Microsoft. Ela é a principal linguagem da plataforma **.NET**, sendo amplamente utilizada para criar aplicações web, jogos (com a engine Unity), serviços de backend, aplicações desktop e muito mais.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-Uma das grandes vantagens do JavaScript é que ele não exige uma instalação complexa para começar. Ele possui dois ambientes de execução principais:
+Para começar a desenvolver em C\#, você precisa do **.NET SDK (Software Development Kit)**, que inclui o compilador, bibliotecas e o runtime.
 
-1.  **Navegador Web (Browser)**:
+1.  **Instale o .NET SDK**:
 
-    * **Instalação**: Nenhuma\! Todo navegador moderno (Chrome, Firefox, Edge) já possui um motor JavaScript integrado.
-    * **Como usar**: Pressione a tecla `F12` em qualquer página da web para abrir as **Ferramentas de Desenvolvedor** e vá para a aba **"Console"**. Você pode escrever e executar código JavaScript diretamente ali.
+      * Faça o download da versão mais recente (ou de uma versão LTS - Long-Term Support) do .NET SDK no [site oficial da Microsoft](https://dotnet.microsoft.com/download).
+      * Execute o instalador, que já configurará o `Path` do sistema automaticamente.
+      * Para verificar a instalação, abra um novo terminal e digite `dotnet --version`.
 
-2.  **Node.js (Fora do Navegador)**:
+2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
+    O material original focava no Visual Studio 2019, mas vamos abordar as opções mais modernas.
 
-    * **Instalação**: Para rodar JavaScript no seu computador (para criar servidores, scripts de automação, etc.), você precisa do **Node.js**. Baixe a versão LTS do [site oficial](https://nodejs.org/). O instalador já inclui o `npm` (Node Package Manager), que é usado para gerenciar bibliotecas.
-    * **Como usar**: Após instalar, você pode criar um arquivo (ex: `meu_programa.js`) e executá-lo no terminal com o comando: `node meu_programa.js`.
+    ### Opção 1: Visual Studio Community (Recomendado)
 
-### IDE (Ambiente de Desenvolvimento Integrado)
+      * Baixe o [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) (versão gratuita para estudantes e desenvolvedores individuais).
+      * Durante a instalação, na aba "Workloads", selecione a carga de trabalho **".NET desktop development"** para garantir que todas as ferramentas para C\# sejam instaladas.
 
-* **Visual Studio Code (Recomendado)**: O VS Code é a escolha principal para desenvolvimento JavaScript. Ele oferece suporte nativo excelente, além de extensões poderosas como "Prettier" para formatação de código e "ESLint" para encontrar erros e forçar boas práticas.
+    ### Opção 2: Visual Studio Code
 
-### 🚀 Seu Primeiro Programa em JavaScript
+      * Instale o [Visual Studio Code](https://code.visualstudio.com/).
+      * Na aba de extensões, instale o pacote **"C\# Dev Kit"** da Microsoft. Ele fornece um ambiente leve e poderoso para o desenvolvimento .NET.
 
-Vamos ver como executar um "Olá, Mundo\!" nos dois ambientes.
+### 🚀 Seu Primeiro Programa em C\#
 
-**No Console do Navegador ou em um arquivo com Node.js:**
+A estrutura de um programa C\# é organizada em `namespaces` e `classes`.
 
-```javascript
-console.log("Ola, Universo JavaScript!");
+```csharp
+// Importa o namespace System, que contém funcionalidades essenciais como o Console.
+using System;
+
+// Namespace é usado para organizar o código e evitar conflitos de nomes.
+namespace CursoCSharp
+{
+    // A classe é um contêiner para dados e métodos.
+    class Program
+    {
+        // O método Main é o ponto de entrada de qualquer aplicação C#.
+        static void Main(string[] args)
+        {
+            // Imprime uma linha de texto no console.
+            Console.WriteLine("Ola, Universo C#!");
+        }
+    }
+}
 ```
 
-`console.log()` é a função universal para imprimir informações no console, seja no navegador ou no terminal do Node.js.
+**Nota sobre C\# Moderno**: Versões recentes do C\# introduziram "top-level statements", que permitem escrever código simples diretamente em um arquivo, sem a necessidade de declarar explicitamente a classe `Program` e o método `Main`. Isso é ótimo para iniciantes e scripts rápidos.
 
 ## 📊 Tipos de Dados e Variáveis
 
-JavaScript é uma linguagem de **tipagem dinâmica**, assim como Python. O tipo de uma variável é determinado pelo valor que ela recebe. Para declarar variáveis, usamos as palavras-chave `let` (para valores que podem mudar) e `const` (para valores constantes).
+Os tipos de dados em C\# são robustos e bem definidos.
 
-| Significado | Tipo em JavaScript | Observação |
-| :--- | :--- | :--- |
-| Número | `number` | Usado tanto para inteiros quanto para números de ponto flutuante. Não há distinção entre `int` e `float`. |
-| Texto | `string` | Para sequências de caracteres. Pode ser declarado com aspas simples (`'...'`), duplas (`"..."`) ou crases (`` `...` ``). |
-| Valor Lógico | `boolean` | Aceita apenas os valores `true` ou `false`. |
-| Nulo Intencional | `null` | Representa a ausência intencional de um valor de objeto. |
-| Não Definido | `undefined` | Uma variável que foi declarada, mas ainda não teve um valor atribuído. |
-| Objeto | `object` | Usado para coleções de dados mais complexas e é a base para quase tudo em JS. |
+| Significado | Tipo em C\# | Valor Padrão | Observação |
+| :--- | :--- | :--- | :--- |
+| Número Inteiro | `int` | 0 | Tipo padrão para inteiros de 32 bits. Para números maiores, use `long` (64 bits). |
+| Número de Ponto Flutuante | `double` | 0.0 | Tipo padrão para números reais com precisão dupla. |
+| Um Único Caractere | `char` | `'\0'` | Armazena um caractere Unicode, sempre entre **aspas simples**. |
+| Texto | `string` | `null` | Um tipo por referência para sequências de caracteres, declarado com **aspas duplas**. |
+| Valor Lógico | `bool` | `false` | Aceita apenas os valores `true` ou `false`. |
 
-## 📝 Declaração e Formatação de Saída
+## 📝 Declaração e Atribuição de Variáveis
 
-Para construir strings com variáveis, a forma mais moderna e legível é usar **Template Literals**, que são strings declaradas entre crases (`` ` ``) e permitem a interpolação de variáveis com `${...}`.
+A declaração e atribuição de variáveis em C\# é direta. Para formatação de texto, C\# se destaca com a **interpolação de strings**, que é uma forma mais limpa e legível de construir strings com variáveis.
 
-```javascript
-// Usamos 'let' para variáveis que podem ser alteradas e 'const' para constantes.
-const nome = "Gabriel Lima"; //
-let idade = 22; //
-let salario = 5500.99; //
-let isEstudante = true; //
+```csharp
+using System;
+using System.Globalization; // Necessário para usar o CultureInfo.
 
-// Usando Template Literals para uma saída limpa e formatada.
-console.log(`NOME = ${nome}`); //
-console.log(`IDADE = ${idade}`); //
-console.log(`SALARIO = ${salario.toFixed(2)}`); // O método .toFixed(2) formata o número para 2 casas decimais.
-console.log(`É ESTUDANTE? = ${isEstudante}`); //
+namespace CursoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Declaração e inicialização de variáveis.
+            int idade = 42;
+            double salario = 9500.75;
+            double altura = 1.78;
+            char genero = 'M';
+            string nome = "Lucas Almeida";
+
+            // Usando interpolação de string ($) para uma saída mais limpa.
+            Console.WriteLine($"NOME = {nome}");
+            Console.WriteLine($"IDADE = {idade}");
+            Console.WriteLine($"GENERO = {genero}");
+
+            // A formatação de casas decimais é feita com :F2 dentro das chaves.
+            Console.WriteLine($"ALTURA = {altura:F2}");
+
+            // Para garantir o ponto como separador decimal, usa-se CultureInfo.InvariantCulture.
+            Console.WriteLine($"SALARIO = {salario.ToString("F2", CultureInfo.InvariantCulture)}");
+        }
+    }
+}
 ```
 
 ## 🔢 Operadores
+
+Os operadores em C\# são os mesmos encontrados em Java, C e C++, seguindo a mesma precedência e significado.
 
 ### Aritméticos
 
@@ -73,23 +111,18 @@ console.log(`É ESTUDANTE? = ${isEstudante}`); //
 | `-` | Subtração |
 | `*` | Multiplicação |
 | `/` | Divisão |
-| `%` | Resto da divisão (módulo) |
-| `**` | Exponenciação |
+| `%` | Resto da divisão ("mod") |
 
 ### Comparativos
 
 | Operador | Significado |
 | :---: | :--- |
-| `==` | Igual (compara apenas o valor, pode converter o tipo) |
-| `===` | Estritamente igual (compara o valor E o tipo) |
-| `!=` | Diferente |
-| `!==` | Estritamente diferente |
-| `>` | Maior que |
 | `<` | Menor que |
-| `>=` | Maior ou igual a |
+| `>` | Maior que |
 | `<=` | Menor ou igual a |
-
-**Importante**: Em JavaScript, prefira **sempre** usar a comparação estrita (`===` e `!==`). Isso evita bugs inesperados causados pela conversão automática de tipos que o `==` faz (por exemplo, `7 == "7"` é `true`, mas `7 === "7"` é `false`).
+| `>=` | Maior ou igual a |
+| `==` | Igual a |
+| `!=` | Diferente de |
 
 ### Lógicos
 
@@ -101,155 +134,404 @@ console.log(`É ESTUDANTE? = ${isEstudante}`); //
 
 ## 📥 Entrada de Dados
 
-A forma de receber dados do usuário varia conforme o ambiente de execução.
+Em C\#, a entrada de dados pelo console é feita com `Console.ReadLine()`. Este método sempre retorna os dados como uma `string`. Portanto, é necessário **converter (fazer o parse)** essa string para o tipo de dado desejado.
 
-### No Navegador
+  * **Converter para `int`**: `int.Parse(Console.ReadLine())`
+  * **Converter para `double`**: `double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture)`
+  * **Converter para `char`**: `char.Parse(Console.ReadLine())`
 
-No navegador, a maneira mais simples de pedir uma informação ao usuário é com a função `prompt()`.
+O uso de `CultureInfo.InvariantCulture` ao converter para `double` é uma boa prática para garantir que o programa interprete o ponto (`.`) como separador decimal, independentemente da configuração regional do sistema operacional.
 
-```javascript
-// prompt() exibe uma caixa de diálogo e sempre retorna uma string.
-let nome = prompt("Digite seu nome:");
-let idade = parseInt(prompt("Digite sua idade:")); // parseInt() converte a string para um número inteiro.
-let altura = parseFloat(prompt("Digite sua altura:")); // parseFloat() converte para número com decimais.
+```csharp
+using System;
+using System.Globalization;
 
-console.log(`Olá, ${nome}! Você tem ${idade} anos e ${altura}m de altura.`);
-```
+namespace CursoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nomeCompleto;
+            int idade;
+            double salario;
+            char genero;
 
-### No Node.js
+            Console.Write("Digite seu nome completo: ");
+            nomeCompleto = Console.ReadLine(); // Lê a linha inteira como string.
 
-Para ler dados de forma síncrona no terminal com Node.js (semelhante a outras linguagens), podemos usar uma biblioteca externa. Uma opção simples para iniciantes é a `readline-sync`.
+            Console.Write("Digite sua idade: ");
+            idade = int.Parse(Console.ReadLine()); // Lê a string e converte para int.
 
-1.  **Instale a biblioteca**: No seu terminal, execute `npm install readline-sync`.
-2.  **Use no seu código**:
+            Console.Write("Digite seu salario: ");
+            // Lê a string e converte para double, usando o ponto como separador.
+            salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-<!-- end list -->
+            Console.Write("Digite seu genero (F/M): ");
+            genero = char.Parse(Console.ReadLine()); // Lê a string e converte para char.
 
-```javascript
-// Importa a biblioteca instalada.
-const readline = require('readline-sync');
-
-// Usa os métodos para fazer perguntas e ler as respostas.
-const nome = readline.question("Digite seu nome: ");
-const idade = readline.questionInt("Digite sua idade: ");
-const salario = readline.questionFloat("Digite seu salario: ");
-
-console.log("\n--- DADOS REGISTRADOS ---");
-console.log(`Nome: ${nome}`);
-console.log(`Idade: ${idade}`);
-console.log(`Salario: ${salario.toFixed(2)}`);
+            Console.WriteLine("\n--- DADOS REGISTRADOS ---");
+            Console.WriteLine($"Nome: {nomeCompleto}");
+            Console.WriteLine($"Idade: {idade}");
+            Console.WriteLine($"Salario: {salario.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Genero: {genero}");
+        }
+    }
+}
 ```
 
 ## 🔀 Estruturas de Controle
 
-JavaScript usa chaves `{}` para delimitar blocos de código, de forma similar a C, Java e C\#.
+### Estrutura Condicional (`if-else`)
 
-### Estrutura Condicional (`if/else if/else`)
+Permite a execução de código com base em uma ou mais condições.
 
-```javascript
-const hora = new Date().getHours(); // Pega a hora atual do sistema.
+```csharp
+// ... (dentro do método Main)
+Console.Write("Digite a hora atual (0-23): ");
+int hora = int.Parse(Console.ReadLine());
 
-if (hora < 12) {
-    console.log("Bom dia!"); //
-} else if (hora < 18) {
-    console.log("Boa tarde!");
-} else {
-    console.log("Boa noite!"); //
+if (hora < 12)
+{
+    Console.WriteLine("Bom dia!");
+}
+else if (hora < 18)
+{
+    Console.WriteLine("Boa tarde!");
+}
+else
+{
+    Console.WriteLine("Boa noite!");
 }
 ```
 
 ### Estrutura de Repetição `while`
 
-```javascript
-let soma = 0;
-// No Node.js com readline-sync
-let numero = require('readline-sync').questionInt("Digite um numero (0 para sair): ");
+Executa um bloco de código repetidamente enquanto uma condição for verdadeira.
 
-while (numero !== 0) {
+```csharp
+// ... (dentro do método Main)
+Console.Write("Digite um numero (0 para sair): ");
+int numero = int.Parse(Console.ReadLine());
+int soma = 0;
+
+while (numero != 0)
+{
     soma = soma + numero;
-    numero = require('readline-sync').questionInt("Digite outro numero (0 para sair): ");
+    Console.Write("Digite outro numero (0 para sair): ");
+    numero = int.Parse(Console.ReadLine());
 }
 
-console.log(`SOMA FINAL = ${soma}`);
+Console.WriteLine($"SOMA FINAL = {soma}");
 ```
 
 ### Estrutura de Repetição `for`
 
-O laço `for` clássico é idêntico ao de C/Java/C\#.
+Ideal para laços com um número de iterações predefinido.
 
-```javascript
-const n = require('readline-sync').questionInt("Quantos numeros voce quer somar? ");
-let soma = 0;
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantos numeros voce quer somar? ");
+int N = int.Parse(Console.ReadLine());
+int soma = 0;
 
-for (let i = 0; i < n; i++) {
-    let valor = require('readline-sync').questionInt(`Digite o valor #${i + 1}: `);
-    soma += valor;
+for (int i = 0; i < N; i++)
+{
+    Console.Write($"Digite o valor #{i + 1}: ");
+    int valor = int.Parse(Console.ReadLine());
+    soma = soma + valor;
 }
 
-console.log(`SOMA = ${soma}`);
+Console.WriteLine($"SOMA = {soma}");
 ```
 
-## 📏 Vetores e Matrizes (Arrays)
-
-O `Array` em JavaScript é uma estrutura de dados extremamente versátil e dinâmica, que pode crescer e diminuir de tamanho.
+## 📏 Vetores e Matrizes
 
 ### Vetores (Arrays)
 
-```javascript
-const n = require('readline-sync').questionInt("Quantos numeros voce vai digitar? ");
-const vetor = []; // Declara um array vazio.
+Em C\#, vetores são coleções de tamanho fixo de um mesmo tipo de dado.
 
-for (let i = 0; i < n; i++) {
-    let numero = require('readline-sync').questionFloat(`Digite o numero #${i + 1}: `);
-    vetor.push(numero); // .push() adiciona um elemento ao final do array.
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantos numeros voce vai digitar? ");
+int N = int.Parse(Console.ReadLine());
+
+// Declaração e instanciação de um vetor de doubles com N posições.
+double[] vetor = new double[N];
+
+for (int i = 0; i < N; i++)
+{
+    Console.Write($"Digite o numero #{i + 1}: ");
+    vetor[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 }
 
-console.log("\nNUMEROS DIGITADOS:");
-for (let i = 0; i < vetor.length; i++) {
-    console.log(vetor[i].toFixed(1));
+Console.WriteLine("\nNUMEROS DIGITADOS:");
+for (int i = 0; i < N; i++)
+{
+    Console.WriteLine(vetor[i].ToString("F1", CultureInfo.InvariantCulture));
 }
 ```
 
-### Matrizes (Arrays de Arrays)
+### Matrizes (Arrays Bidimensionais)
 
-Uma matriz em JavaScript é um array cujos elementos são outros arrays.
+C\# tem uma sintaxe própria e simplificada para matrizes, usando uma vírgula para separar as dimensões.
 
-```javascript
-const m = require('readline-sync').questionInt("Quantas linhas tera a matriz? ");
-const n = require('readline-sync').questionInt("Quantas colunas tera a matriz? ");
+```csharp
+// ... (dentro do método Main)
+Console.Write("Quantas linhas tera a matriz? ");
+int M = int.Parse(Console.ReadLine());
+Console.Write("Quantas colunas tera a matriz? ");
+int N = int.Parse(Console.ReadLine());
 
-const matriz = [];
+// Declaração e instanciação de uma matriz M x N.
+int[,] matriz = new int[M, N];
 
-for (let i = 0; i < m; i++) {
-    matriz[i] = []; // Cria uma linha (um array vazio)
-    for (let j = 0; j < n; j++) {
-        matriz[i][j] = require('readline-sync').questionInt(`Elemento [${i},${j}]: `);
+for (int i = 0; i < M; i++)
+{
+    for (int j = 0; j < N; j++)
+    {
+        Console.Write($"Elemento [{i},{j}]: ");
+        matriz[i, j] = int.Parse(Console.ReadLine());
     }
 }
 
-console.log("\nMATRIZ DIGITADA:");
-for (let i = 0; i < m; i++) {
-    console.log(matriz[i].join(' ')); // .join(' ') une os elementos da linha com um espaço.
+Console.WriteLine("\nMATRIZ DIGITADA:");
+for (int i = 0; i < M; i++)
+{
+    for (int j = 0; j < N; j++)
+    {
+        Console.Write(matriz[i, j] + " ");
+    }
+    Console.WriteLine(); // Pula para a próxima linha.
 }
 ```
 
-## 🐞 Depuração (Debugging) em JavaScript
+## 🐞 Depuração (Debugging) em C\#
 
-### Debugging no Navegador
+Depurar código C\# é uma tarefa facilitada pelas excelentes ferramentas disponíveis no Visual Studio e no VS Code.
 
-1.  Abra a página e pressione `F12` para abrir as Ferramentas de Desenvolvedor.
-2.  Vá para a aba **Sources** (Fontes).
-3.  Encontre seu arquivo `.js` na lista de arquivos.
-4.  Clique na margem esquerda, ao lado do número da linha, para adicionar um **breakpoint** (ponto de parada).
-5.  Atualize a página ou execute a ação que dispara o código. A execução pausará no seu breakpoint, permitindo que você inspecione variáveis.
+### Debugging no Visual Studio e VS Code
 
-### Debugging no VS Code (com Node.js)
+Os atalhos e conceitos são muito semelhantes e padronizados.
 
-1.  Abra seu arquivo `.js`.
-2.  Clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
-3.  Pressione `F5` para iniciar o depurador. Se for a primeira vez, o VS Code pode pedir para você selecionar o ambiente (escolha **Node.js**).
-4.  A execução pausará no breakpoint, e você poderá inspecionar variáveis, controlar a execução (com `F10` para passar por cima) e ver a pilha de chamadas no painel esquerdo.
+1.  **Habilitar/Desabilitar Breakpoint**: Pressione `F9` na linha desejada para criar um ponto de parada.
+2.  **Iniciar o Debug**: Pressione `F5` para iniciar o programa em modo de depuração. A execução pausará no primeiro breakpoint encontrado.
+3.  **Controlar a Execução**:
+      * **Step Over (Passar por cima)**: Pressione `F10` para executar a linha atual e parar na próxima.
+      * **Stop (Parar)**: Pressione `Shift + F5` para encerrar a sessão de depuração.
+4.  **Inspecionar Variáveis**: Na parte inferior da tela, abas como "Locals" (Variáveis Locais) no Visual Studio ou a janela "VARIABLES" no VS Code exibirão os valores atuais das variáveis, permitindo que você os monitore em tempo real.
 
 ---
 
 ### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+
+### **F# – Uma Linguagem Funcional para .NET** 🚀
+
+**F#** é uma linguagem de programação funcional que roda na plataforma **.NET**, desenvolvida pela Microsoft e pela comunidade **open-source**. Ela combina **programação funcional**, **orientação a objetos** e **programação imperativa**, sendo uma excelente escolha para desenvolvimento robusto, seguro e conciso.
+
+---
+
+## **🔹 Características do F#**
+
+### ✅ **Sintaxe concisa e expressiva**
+
+- O código é mais curto e legível, eliminando a necessidade de muitos `return`, `{}` e `;`.
+
+### ✅ **Imutabilidade por padrão**
+
+- As variáveis são imutáveis (`let`), tornando o código mais previsível e seguro.
+
+### ✅ **Inferência de tipos poderosa**
+
+- Não é necessário declarar tipos explicitamente na maioria dos casos.
+
+### ✅ **Suporte a Programação Concorrente**
+
+- Usa o modelo de **Actor (Mailbox Processors)** e **Async Workflows** para concorrência eficiente.
+
+### ✅ **Interoperabilidade com C# e .NET**
+
+- Pode ser usado junto com código C#, aproveitando a vasta biblioteca .NET.
+
+---
+
+## **📌 Primeiros Passos no F#**
+
+Vamos ver exemplos práticos de F# para entender melhor como ele funciona.
+
+---
+
+### **1️⃣ Definição de Variáveis**
+
+```fsharp
+let nome = "Ricardo"
+let idade = 30
+printfn "Nome: %s, Idade: %d" nome idade
+```
+
+📌 As variáveis em F# são **imutáveis** por padrão. Para criar uma mutável, usamos `mutable`:
+
+```fsharp
+let mutable contador = 0
+contador <- contador + 1
+printfn "Contador: %d" contador
+```
+
+---
+
+### **2️⃣ Funções Simples**
+
+```fsharp
+let soma x y = x + y
+printfn "2 + 3 = %d" (soma 2 3)
+```
+
+📌 Não precisa de `return`, pois F# retorna automaticamente o último valor da função.
+
+---
+
+### **3️⃣ Funções de Alta Ordem**
+
+```fsharp
+let aplicarOperacao operacao x y = operacao x y
+
+let resultado = aplicarOperacao (+) 10 5
+printfn "Resultado: %d" resultado  // 15
+```
+
+📌 Aqui, `aplicarOperacao` recebe uma função como parâmetro (`+`, `-`, `*`, etc.).
+
+---
+
+### **4️⃣ Map, Filter e Reduce**
+
+```fsharp
+let numeros = [1; 2; 3; 4; 5]
+
+let dobrados = List.map (fun x -> x * 2) numeros
+printfn "%A" dobrados  // [2; 4; 6; 8; 10]
+
+let pares = List.filter (fun x -> x % 2 = 0) numeros
+printfn "%A" pares  // [2; 4]
+
+let soma = List.fold (+) 0 numeros
+printfn "Soma: %d" soma  // 15
+```
+
+📌 `map` transforma os valores, `filter` filtra elementos e `fold` reduz a lista a um único valor.
+
+---
+
+### **5️⃣ Recursão (sem loops!)**
+
+```fsharp
+let rec fatorial n =
+    if n = 0 then 1
+    else n * fatorial (n - 1)
+
+printfn "Fatorial de 5: %d" (fatorial 5)
+```
+
+📌 **Recursão** é a abordagem funcional para repetição, substituindo `for` e `while`.
+
+---
+
+### **6️⃣ Expressões Lambda**
+
+```fsharp
+let quadrado = fun x -> x * x
+printfn "%d" (quadrado 4)  // 16
+```
+
+📌 O `fun x ->` define uma função anônima (lambda).
+
+---
+
+### **7️⃣ Composição de Funções**
+
+```fsharp
+let dobrar x = x * 2
+let incrementar x = x + 1
+
+let dobrarDepoisIncrementar = dobrar >> incrementar
+
+printfn "%d" (dobrarDepoisIncrementar 3)  // 7
+```
+
+📌 `>>` compõe funções: primeiro `dobrar`, depois `incrementar`.
+
+---
+
+### **8️⃣ Programação Concorrente com Async**
+
+```fsharp
+let tarefaLonga() =
+    async {
+        do! Async.Sleep 2000
+        return "Tarefa concluída!"
+    }
+
+let resultado = Async.RunSynchronously (tarefaLonga())
+printfn "%s" resultado
+```
+
+📌 **`async {}`** cria tarefas assíncronas, otimizando o uso de CPU.
+
+---
+
+## **📍 Aplicações do F#**
+
+✅ **Machine Learning** (com ML.NET e F# Data)  
+✅ **Processamento de dados e ETL**  
+✅ **Desenvolvimento Web** (usando ASP.NET e Giraffe)  
+✅ **Sistemas financeiros e científicos**  
+✅ **Concorrência e computação paralela**
+
+---
+
+## **💡 Conclusão**
+
+O **F#** é uma linguagem poderosa e concisa para programação funcional na plataforma **.NET**, combinando **eficiência, segurança e interoperabilidade com C#**. Ele é ideal para aplicações que exigem **alta confiabilidade**, como sistemas financeiros e científicos.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+
+---
+
+## Parte 2: Linguagem F# (Funcional) 🧪
+
+O .NET não é só Orientação a Objetos. **F#** é a linguagem funcional da plataforma, focada em resolver problemas complexos com menos código.
+
+### O que é Programação Funcional?
+Em vez de mudar o estado das variáveis (como `x = x + 1`), nós transformamos dados através de funções, como em uma linha de montagem.
+
+### Olá Mundo em F#
+```fsharp
+// A função 'printfn' imprime formatado com uma nova linha
+printfn "Olá, Universo F#!"
+```
+
+### Imutabilidade
+Por padrão, tudo é constante.
+```fsharp
+let x = 10
+// x <- 20 // Isso daria erro! Não pode mudar.
+let mutable y = 10 // 'mutable' permite mudança
+y <- 20
+```
+
+### Pipe Operator (`|>`)
+A característica mais famosa do F#. Passa o resultado de uma função para a próxima.
+
+```fsharp
+// Estilo Imperativo (C#, Java)
+Imprimir(Filtrar(Dados));
+
+// Estilo F# (Pipeline)
+Dados |> Filtrar |> Imprimir
+```
+
+---
+**Próxima Aula**: Vamos para a área de **Data Science e IA com Python**.
+

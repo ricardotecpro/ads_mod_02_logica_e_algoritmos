@@ -1,233 +1,237 @@
-# 📦 Funções (Métodos) em Programação
+# 🎛️ Matrizes (Arrays Bidimensionais) em Programação
 
-Funções, que em Java e em outras linguagens orientadas a objetos são mais comumente chamadas de **métodos**, são um dos pilares da programação estruturada. Elas nos permitem organizar e reutilizar código, tornando nossos programas mais modulares, legíveis e fáceis de manter.
+Dando um passo além dos vetores (arrays de uma dimensão), as **matrizes** nos permitem trabalhar com dados estruturados em duas dimensões, como tabelas, planilhas ou tabuleiros.
 
-## 🤔 O que são Funções (ou Métodos)?
+## 🤔 O que são Matrizes?
 
-De maneira informal, uma função (ou método) é uma unidade de código autônoma que realiza uma tarefa específica. Ela também pode ser chamada de subprograma ou sub-rotina. Suas principais características são:
+[cite\_start]Uma matriz é uma coleção de dados que pode ser entendida como um **array bidimensional**[cite: 27]. Ela possui um conjunto de características fundamentais:
 
-  * **Pode receber parâmetros** (ou argumentos) de entrada.
-  * **Pode executar uma lógica** interna.
-  * **Pode retornar um valor** de saída.
+- [cite\_start]**Indexada**: Os elementos são acessados por meio de um par de índices: um para a linha e outro para a coluna[cite: 18]. Em Java, a sintaxe é `matriz[linha][coluna]`.
+- [cite\_start]**Bidimensional**: Organiza os dados em uma estrutura de duas dimensões, composta por linhas e colunas[cite: 21].
+- [cite\_start]**Homogênea**: Todos os dados armazenados na matriz devem ser do mesmo tipo (`int`, `double`, `String`, etc.)[cite: 24].
+- [cite\_start]**Tamanho Fixo**: Uma vez que a matriz é criada (alocada na memória), seu tamanho (número de linhas e colunas) não pode ser alterado[cite: 26].
 
-### Qual a importância de usar funções?
+Visualmente, podemos imaginar uma matriz como uma grade:
 
-Utilizar funções traz enormes benefícios para o desenvolvimento de software:
-
-  * **Dividir para conquistar**: Permite quebrar um problema complexo em problemas menores e mais gerenciáveis.
-  * **Organização e Legibilidade**: O código fica mais limpo e mais fácil de entender.
-  * **Reaproveitamento de código**: Uma função escrita uma vez pode ser chamada (usada) várias vezes em diferentes partes do programa.
-  * **Delegação**: Facilita a atribuição de responsabilidades em projetos de equipe.
-
-## Dissecando um Método em Java
-
-Vamos analisar a estrutura de um método em Java, traduzindo o exemplo `media` do material de estudo.
-
-```java
-//      (1)     (2)     (3)            (4)
-public static double calcularMedia(double a, double b) {
-    // (5) Corpo do método
-    double soma = a + b; // Variável local do método
-    
-    // (6) Retorno do método
-    return soma / 2.0;
-}
+```
+      Col 0  Col 1  Col 2
+Linha 0 [  ]   [  ]   [  ]
+Linha 1 [  ]   [  ]   [  ]
+Linha 2 [  ]   [  ]   [  ]
+Linha 3 [  ]   [  ]   [  ]
 ```
 
-1.  **Modificadores de Acesso e `static`**: `public` significa que o método pode ser chamado de qualquer lugar. `static` indica que o método pertence à classe, e não a um objeto específico (essencial para chamá-lo diretamente do `main`).
-2.  **Tipo de Retorno**: `double` indica o tipo de dado que o método irá retornar ao final de sua execução.
-3.  **Nome do Método**: `calcularMedia` é o identificador que usamos para chamar o método.
-4.  **Parâmetros de Entrada**: `(double a, double b)` é a lista de parâmetros que o método espera receber.
-5.  **Corpo do Método**: O bloco de código entre chaves `{}` onde a lógica é executada.
-6.  **Comando `return`**: Envia o resultado do cálculo de volta para quem chamou o método.
+## 🛠️ Trabalhando com Matrizes em Java
 
-### Chamando um Método
+Vamos ver como declarar, instanciar e manipular matrizes na linguagem Java.
 
-Para usar um método, você o "chama" pelo nome, passando os valores esperados para os parâmetros.
+### Declaração e Instanciação
+
+Para criar uma matriz, você precisa declarar seu tipo e, em seguida, instanciá-la, definindo seu número de linhas e colunas.
 
 ```java
-public static void main(String[] args) {
-    // Chamando o método e armazenando o resultado
-    double mediaFinal = calcularMedia(8.0, 7.5);
+// Sintaxe: tipo[][] nomeDaMatriz = new tipo[numeroDeLinhas][numeroDeColunas];
 
-    System.out.println("A média é: " + mediaFinal); // Saída: A média é: 7.75
-}
+// Exemplo: Criando uma matriz de inteiros com 3 linhas e 4 colunas.
+int[][] matriz = new int[3][4];
 ```
 
-## 🔐 Escopo de Variáveis
+Isso aloca um espaço na memória para 12 números inteiros (3 linhas x 4 colunas).
 
-O **escopo** de uma variável define onde ela é "visível" e pode ser utilizada.
+### Acessando Elementos
 
-Em Java, as variáveis declaradas dentro de um método, incluindo seus parâmetros, são **locais**. Isso significa que elas só existem e só podem ser acessadas dentro daquele método.
-
-  * Uma função não "enxerga" as variáveis locais de outra função.
-  * Se duas funções diferentes tiverem variáveis com o mesmo nome, elas são completamente independentes uma da outra.
-
-**Exemplo:**
+Para atribuir ou ler um valor, você utiliza os índices da linha e da coluna. Lembre-se que em Java, **os índices sempre começam em zero**.
 
 ```java
-public static void funcaoF() {
-    int x = 10; // 'x' só existe aqui dentro
-    System.out.println("Dentro da funcaoF, x = " + x);
-}
+// Atribuindo o valor 10 à segunda linha (índice 1), terceira coluna (índice 2)
+matriz[1][2] = 10; [cite_start]// Equivalente ao A[1, 2] <- 10 do pseudocódigo [cite: 41]
 
-public static void funcaoG() {
-    int x = 99; // Este é outro 'x', totalmente diferente do anterior
-    System.out.println("Dentro da funcaoG, x = " + x);
-    // System.out.println(funcaoF.x); // ERRO! Não é possível acessar o 'x' da funcaoF
-}
+// Lendo e imprimindo o valor
+System.out.println(matriz[1][2]); // Saída: 10
 ```
 
-> **Boas Práticas**: Para que uma função seja previsível e reutilizável, ela deve, idealmente, ser uma **função pura**. Isso significa que seu resultado deve depender *apenas* de seus parâmetros de entrada, sem acessar ou modificar variáveis de fora de seu escopo (evitando "efeitos colaterais").
+## ✍️ Exemplo Prático: Lendo e Imprimindo uma Matriz
 
-## 📝 Documentando Métodos com Javadoc
+Vamos criar um programa que pergunta ao usuário as dimensões de uma matriz, lê cada um de seus elementos e, ao final, a imprime na tela de forma organizada.
 
-Documentar seu código é crucial. Em Java, o padrão para isso é o **Javadoc**. A documentação é feita em um bloco de comentário especial (`/** ... */`) logo acima da assinatura do método.
+**Problema:** Fazer um programa para ler dois números inteiros `M` e `N` e depois ler uma matriz de `M` linhas por `N` colunas contendo números inteiros. [cite\_start]Em seguida, mostrar a matriz lida[cite: 66, 67].
 
-  * **Assinatura**: A primeira linha da definição do método.
-  * **Descrição dos Parâmetros**: O que cada parâmetro de entrada representa (usando a tag `@param`).
-  * **Efeito da Função**: O que a função faz e o que ela retorna (usando a tag `@return`).
-
-**Exemplo com a fórmula de Heron:**
+**Solução em Java:**
 
 ```java
-/**
- * Calcula a área de um triângulo usando a fórmula de Heron.
- *
- * @param a Primeiro lado do triângulo
- * @param b Segundo lado do triângulo
- * @param c Terceiro lado do triângulo
- * @return A área calculada do triângulo
- */
-public static double areaTriangulo(double a, double b, double c) {
-    double p = (a + b + c) / 2.0;
-    return Math.sqrt(p * (p - a) * (p - b) * (p - c));
-}
-```
+package curso;
 
-## 📢 Métodos que Não Retornam Valor (`void`)
-
-Às vezes, uma função precisa executar uma ação (como imprimir algo na tela) em vez de calcular e retornar um valor. Esses métodos são chamados de **procedimentos** em algumas linguagens.
-
-Em Java, eles são declarados com o tipo de retorno `void`.
-
-**Exemplo: Gerar um Relatório**
-
-**Problema:** Ler os dados de um contrato e mostrar um relatório formatado na tela.
-
-**Solução em Java com `void`:**
-
-```java
-import java.util.Locale;
 import java.util.Scanner;
 
-public class RelatorioFinanceiro {
-
-    /**
-     * Exibe um relatório de financiamento formatado no console.
-     * @param nome O nome do cliente
-     * @param total O valor total do financiamento
-     * @param entrada O valor da entrada
-     */
-    public static void mostrarRelatorio(String nome, double total, double entrada) {
-        double restante = total - entrada;
-        System.out.println("\n--- RELATÓRIO ---");
-        System.out.println("NOME: " + nome);
-        System.out.printf("VALOR TOTAL: R$ %.2f\n", total);
-        System.out.printf("VALOR DE ENTRADA: R$ %.2f\n", entrada);
-        System.out.printf("VALOR PARCELADO: R$ %.2f\n", restante);
-        System.out.println("-----------------");
-    }
+public class LerMatriz {
 
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Nome do cliente: ");
-        String nomeCliente = sc.nextLine();
-        System.out.print("Valor total financiado: ");
-        double valorTotal = sc.nextDouble();
-        System.out.print("Valor de entrada: ");
-        double valorEntrada = sc.nextDouble();
 
-        // A chamada de um método void é uma instrução "solta"
-        mostrarRelatorio(nomeCliente, valorTotal, valorEntrada);
+        System.out.print("Quantas linhas vai ter a matriz? ");
+        int M = sc.nextInt();
+        System.out.print("Quantas colunas vai ter a matriz? ");
+        int N = sc.nextInt();
+
+        // Instanciando a matriz com as dimensões informadas
+        int[][] mat = new int[M][N];
+
+        // Usando laços aninhados para ler os dados
+        System.out.println("Digite os elementos da matriz:");
+        for (int i = 0; i < M; i++) { // Laço para percorrer as linhas
+            for (int j = 0; j < N; j++) { // Laço para percorrer as colunas
+                System.out.printf("Elemento [%d,%d]: ", i, j);
+                mat[i][j] = sc.nextInt();
+            }
+        }
+
+        // Usando laços aninhados para imprimir a matriz
+        System.out.println("\nMATRIZ DIGITADA:");
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(mat[i][j] + " "); // Imprime o elemento e um espaço
+            }
+            System.out.println(); // Pula para a próxima linha ao final de cada linha da matriz
+        }
 
         sc.close();
     }
 }
 ```
 
-## ✍️ Exercícios Práticos Resolvidos
+**Exemplo de Execução:**
 
-### Exercício 1: Área de Triângulos
+```
+Quantas linhas vai ter a matriz? 2
+Quantas colunas vai ter a matriz? 3
+Digite os elementos da matriz:
+Elemento [0,0]: 5
+Elemento [0,1]: 8
+Elemento [0,2]: 10
+Elemento [1,0]: -2
+Elemento [1,1]: 9
+Elemento [1,2]: 7
 
-**Problema:** Ler as medidas dos lados de dois triângulos, X e Y. Em seguida, mostrar o valor da área de cada um, reutilizando a lógica de cálculo.
+MATRIZ DIGITADA:
+5 8 10 
+-2 9 7 
+```
+
+## 🧠 Exercícios de Lógica com Matrizes
+
+Vamos transformar alguns dos "testes de mesa" do material de estudo em programas Java funcionais para ver a lógica em ação.
+
+### Exercício 1: Populando com uma Regra
+
+**Problema:** Crie um programa que preenche uma matriz 3x3 onde o valor de cada elemento é a soma de seus índices (`linha + coluna`).
 
 **Solução em Java:**
 
 ```java
-// O método areaTriangulo() já foi definido e documentado acima.
+package curso;
 
-public static void main(String[] args) {
-    Locale.setDefault(Locale.US);
-    
-    // Medidas do triângulo X
-    double areaX = areaTriangulo(3.00, 4.00, 5.00);
-    
-    // Medidas do triângulo Y
-    double areaY = areaTriangulo(7.50, 4.50, 4.02);
+public class PopularMatrizRegra {
 
-    System.out.printf("Área de X = %.4f\n", areaX);
-    System.out.printf("Área de Y = %.4f\n", areaY);
+    public static void main(String[] args) {
+        int N = 3;
+        int[][] matriz = new int[N][N];
+
+        // Populando a matriz com a regra mat[i][j] = i + j
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                matriz[i][j] = i + j; // Regra de população
+            }
+        }
+
+        // Imprimindo a matriz resultante
+        System.out.println("Matriz gerada:");
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }
 ```
 
 **Saída Esperada:**
 
 ```
-Área de X = 6.0000
-Área de Y = 7.5638
+Matriz gerada:
+0 1 2 
+1 2 3 
+2 3 4 
 ```
 
-### Exercício 2: Funções que Chamam Funções
+### Exercício 2: Soma dos Elementos de Cada Linha
 
-**Problema:** Fazer um programa para ler cinco números inteiros e mostrar o menor dentre eles, reaproveitando a lógica ao máximo.
+**Problema:** Faça um programa que crie uma matriz 3x4, popule-a com valores, e em seguida, crie um **vetor** onde cada posição armazena a soma dos elementos da linha correspondente da matriz.
 
 **Solução em Java:**
 
 ```java
-/**
- * Encontra o menor valor entre três números inteiros.
- * @return O menor dos três números
- */
-public static int menorDeTres(int x, int y, int z) {
-    if (x < y && x < z) {
-        return x;
-    } else if (y < z) {
-        return y;
-    } else {
-        return z;
+package curso;
+
+public class SomaLinhasMatriz {
+
+    public static void main(String[] args) {
+        int M = 3; // Linhas
+        int N = 4; // Colunas
+
+        int[][] matriz = {
+            {5, 10, 2, 8},
+            {4, 3, 9, 1},
+            {7, 6, 5, 2}
+        };
+
+        // Vetor para armazenar a soma de cada linha
+        int[] vetorSomas = new int[M];
+
+        // Calculando a soma de cada linha
+        for (int i = 0; i < M; i++) {
+            int soma = 0;
+            for (int j = 0; j < N; j++) {
+                soma += matriz[i][j];
+            }
+            vetorSomas[i] = soma;
+        }
+
+        // Imprimindo o vetor com as somas
+        System.out.println("Soma de cada linha:");
+        for (int i = 0; i < M; i++) {
+            System.out.printf("Linha %d: %d\n", i, vetorSomas[i]);
+        }
     }
 }
-
-/**
- * Encontra o menor valor entre cinco números inteiros,
- * reutilizando a função menorDeTres.
- * @return O menor dos cinco números
- */
-public static int menorDeCinco(int n1, int n2, int n3, int n4, int n5) {
-    // Encontra o menor dos três primeiros
-    int aux = menorDeTres(n1, n2, n3);
-    // Compara o resultado anterior com os dois últimos números
-    return menorDeTres(aux, n4, n5);
-}
-
-public static void main(String[] args) {
-    int menor = menorDeCinco(9, 5, 3, 12, 7);
-    System.out.println("Menor = " + menor); // Saída: Menor = 3
-}
 ```
+
+**Saída Esperada:**
+
+```
+Soma de cada linha:
+Linha 0: 25
+Linha 1: 17
+Linha 2: 20
+```
+
+### 🛠️ Como Executar no VS Code e IntelliJ IDEA
+
+Você pode compilar e executar todos os exemplos de código acima em qualquer uma das IDEs modernas.
+
+#### No Visual Studio Code
+
+1.  **Instale o Pacote de Extensões para Java**: Na aba de Extensões (`Ctrl+Shift+X`), procure por `Extension Pack for Java` da Microsoft e instale-o.
+2.  **Crie o Arquivo**: Crie um novo arquivo com a extensão `.java` (ex: `LerMatriz.java`).
+3.  **Cole o Código**: Copie e cole um dos exemplos no arquivo.
+4.  **Execute**: Um botão **"Run"** aparecerá acima do método `main`. Clique nele para compilar e executar o código. A saída aparecerá no terminal integrado.
+
+#### Na IntelliJ IDEA
+
+1.  **Crie um Novo Projeto**: Vá em `File > New > Project`. Escolha `Java` e a versão do JDK.
+2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `SomaLinhasMatriz`).
+3.  **Cole o Código**: Copie e cole o código correspondente na classe criada.
+4.  **Execute**: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione **Run 'NomeDaClasse.main()'**. A saída aparecerá na aba "Run" na parte inferior da IDE.
 
 ---
 

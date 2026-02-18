@@ -1,91 +1,75 @@
-# Linguagem Rust 🦀
+# Linguagem Python 🐍
 
-Bem-vindo ao guia da linguagem Rust, uma linguagem de programação de sistemas focada em três objetivos principais: **segurança, velocidade e concorrência**. Rust alcança segurança de memória sem a necessidade de um *garbage collector* (coletor de lixo), utilizando um sistema inovador de **propriedade (ownership)** e **empréstimo (borrowing)**. Isso permite que Rust seja tão rápido quanto C/C++, mas com garantias de segurança que previnem classes inteiras de bugs.
+Bem-vindo ao guia de Python, uma linguagem de programação de alto nível, conhecida por sua sintaxe limpa, legibilidade e vasta gama de aplicações, que vão desde desenvolvimento web e automação de scripts até ciência de dados e inteligência artificial. Sua filosofia incentiva a escrita de código claro e conciso.
 
 ## 🛠️ Instalação e Configuração do Ambiente
 
-O ecossistema de Rust é gerenciado pela ferramenta `rustup`, que instala o compilador (`rustc`), o gerenciador de pacotes e build (`cargo`) e a documentação.
+Para programar em Python, você precisa do interpretador da linguagem e de um bom editor de código ou IDE.
 
-1.  **Instale o Rust**:
+1.  **Instale o Python**:
 
-    * Visite o [site oficial do Rust](https://www.rust-lang.org/tools/install) e siga as instruções para o seu sistema operacional. O comando fornecido no site baixa e executa o script `rustup-init`, que cuida de toda a instalação.
-    * `rustup` irá configurar automaticamente o `PATH` do sistema. Após a instalação, abra um novo terminal e verifique as versões com `rustc --version` e `cargo --version`.
+      * Faça o download da versão mais recente do Python diretamente do [site oficial](https://www.google.com/search?q=https.www.python.org/downloads/).
+      * **Importante (para Windows)**: Na primeira tela do instalador, marque a caixa de seleção **"Add Python to PATH"**. Isso permite que você execute o Python a partir de qualquer terminal.
+      * Para testar a instalação, abra um terminal e digite `python` ou `python3`. Você deverá ver o prompt do interpretador Python (`>>>`). Para sair, digite `exit()` e pressione Enter.
 
 2.  **Escolha uma IDE (Ambiente de Desenvolvimento Integrado)**:
+    O material original foca no PyCharm, que é excelente. O VS Code é outra alternativa extremamente popular.
 
-    ### Opção 1: Visual Studio Code (Recomendado)
+    ### Opção 1: PyCharm Community Edition
 
-    * Instale o [Visual Studio Code](https://code.visualstudio.com/).
-    * Na aba de extensões, instale a extensão **`rust-analyzer`**. Ela oferece um suporte de primeira linha para Rust, com autocompletar, análise de código em tempo real e integração com o `cargo`.
+      * Baixe o [PyCharm Community](https://www.jetbrains.com/pycharm/download/). É uma IDE gratuita e poderosa, desenvolvida pela JetBrains e totalmente dedicada ao desenvolvimento em Python, com ótimas ferramentas de depuração e análise de código.
 
-    ### Opção 2: CLion com o plugin Rust
+    ### Opção 2: Visual Studio Code
 
-    * Para quem prefere uma IDE mais robusta da JetBrains, o [RustRover](https://www.jetbrains.com/rust/) ou [CLion](https://www.jetbrains.com/clion/) com o plugin oficial do Rust é uma excelente alternativa.
+      * Instale o [Visual Studio Code](https://code.visualstudio.com/).
+      * Na aba de extensões, instale a extensão **"Python"** da Microsoft. Ela transforma o VS Code em um ambiente de desenvolvimento Python completo, com suporte a depuração, linting e notebooks Jupyter.
 
-### 🚀 Seu Primeiro Programa em Rust
+### 🚀 Seu Primeiro Programa em Python
 
-A ferramenta `cargo` facilita a criação e gerenciamento de projetos.
+A simplicidade do Python brilha desde o início. Um programa "Olá, Mundo" é apenas uma linha de código.
 
-1.  **Crie um novo projeto**: No terminal, execute `cargo new ola_rust`.
-2.  **Entre no diretório**: `cd ola_rust`.
-3.  O `cargo` cria um arquivo `src/main.rs` com o seguinte conteúdo:
-
-<!-- end list -->
-
-```rust
-// A função main() é o ponto de entrada de todo programa executável em Rust.
-fn main() {
-    // println! é uma macro (indicado pela '!') que imprime texto no console.
-    println!("Olá, Universo Rust!");
-}
+```python
+print("Ola, Universo Python!")
 ```
 
-4.  **Compile e execute o projeto**: No terminal, dentro do diretório do projeto, execute `cargo run`.
+Diferente de linguagens como Java ou C\#, Python não exige uma estrutura complexa de classes ou métodos `main` para programas simples.
 
 ## 📊 Tipos de Dados e Variáveis
 
-Rust é uma linguagem **estaticamente e fortemente tipada**. Uma de suas características mais importantes é a **imutabilidade por padrão**.
+Python é uma linguagem de **tipagem dinâmica**, o que significa que você não precisa declarar o tipo de uma variável. O tipo é inferido automaticamente quando você atribui um valor a ela.
 
-* **Imutabilidade**: Variáveis declaradas com `let` são imutáveis. Para torná-las mutáveis, você deve usar a palavra-chave `mut`.
-
-| Significado | Tipo em Rust | Observação |
+| Significado | Tipo em Python | Observação |
 | :--- | :--- | :--- |
-| Número Inteiro | `i32` | Tipo inteiro de 32 bits com sinal. Outros tipos incluem `i8`, `i64`, `u8` (sem sinal), etc. |
-| Número de Ponto Flutuante | `f64` | Padrão para números reais, com precisão dupla de 64 bits. |
-| Texto (String) | `String` | Um tipo de string que pode crescer e ser modificado, alocado na *heap*. `&str` é uma "fatia" de string imutável. |
-| Valor Lógico | `bool` | Aceita apenas os valores `true` ou `false`. |
-| Um Único Caractere | `char` | Representa um único caractere Unicode, declarado com **aspas simples**. |
+| Número Inteiro | `int` | Pode armazenar números de tamanho virtualmente ilimitado. |
+| Número de Ponto Flutuante | `float` | Usado para números reais (com casas decimais). |
+| Texto (String) | `str` | Não há um tipo `char` separado; um caractere é uma `str` de tamanho 1. Pode ser declarado com aspas simples (`'...'`) ou duplas (`"..."`). |
+| Valor Lógico | `bool` | Aceita apenas os valores `True` ou `False` (com a primeira letra maiúscula). |
+
+**Nota sobre Type Hints (Dicas de Tipo):**
+Embora a tipagem seja dinâmica, o Python moderno suporta "type hints", que permitem anotar o tipo esperado de uma variável (ex: `idade: int = 31`). Isso não afeta a execução, mas melhora a legibilidade e ajuda ferramentas de análise de código a encontrar erros.
 
 ## 📝 Declaração e Formatação de Saída
 
-A declaração de variáveis com `let` e a formatação com a macro `println!` são centrais em Rust.
+A atribuição de variáveis é direta. Para exibir dados formatados, a melhor abordagem é usar **f-strings**, que permitem incorporar expressões e variáveis diretamente dentro de uma string.
 
-```rust
-fn main() {
-    // 'let' cria uma variável imutável.
-    let nome: &str = "Helena Vargas";
-    // 'let mut' cria uma variável mutável.
-    let mut idade: i32 = 29;
-    let salario: f64 = 14200.50;
-    let is_gerente: bool = false;
+```python
+# A anotação de tipo (ex: : int) é opcional, mas uma boa prática.
+idade: int = 31
+salario: float = 7800.25
+altura: float = 1.72
+genero: str = 'F'
+nome: str = "Sofia Oliveira"
 
-    // A formatação é feita com placeholders {} dentro da string.
-    println!("NOME = {}", nome);
-    println!("IDADE = {}", idade);
-
-    // Para formatar um float com 2 casas decimais, usa-se {:.2}
-    println!("SALÁRIO = {:.2}", salario);
-    println!("É GERENTE? = {}", is_gerente);
-
-    // Modificando uma variável mutável
-    idade = 30;
-    println!("NOVA IDADE = {}", idade);
-}
+# f-strings (formatted string literals) são a forma moderna de formatar saídas.
+print(f"NOME = {nome}")
+print(f"IDADE = {idade}")
+print(f"GENERO = {genero}")
+# Para formatar um float com 2 casas decimais, usa-se :.2f
+print(f"SALARIO = {salario:.2f}")
+print(f"ALTURA = {altura:.2f}")
 ```
 
 ## 🔢 Operadores
-
-Os operadores em Rust são padrão e seguem a convenção da família C.
 
 ### Aritméticos
 
@@ -94,8 +78,10 @@ Os operadores em Rust são padrão e seguem a convenção da família C.
 | `+` | Adição |
 | `-` | Subtração |
 | `*` | Multiplicação |
-| `/` | Divisão |
+| `/` | Divisão (resulta em float) |
+| `//` | Divisão inteira (resulta em int, descarta o resto) |
 | `%` | Resto da divisão (módulo) |
+| `**` | Exponenciação |
 
 ### Comparativos
 
@@ -110,153 +96,144 @@ Os operadores em Rust são padrão e seguem a convenção da família C.
 
 ### Lógicos
 
+Em Python, os operadores lógicos são palavras em inglês, o que torna o código muito legível.
 | Operador | Significado |
 | :---: | :--- |
-| `&&` | E |
-| `||` | OU |
-| `!` | NÃO |
+| `and` | E |
+| `or` | OU |
+| `not` | NÃO |
 
 ## 📥 Entrada de Dados
 
-A leitura de dados do usuário em Rust é feita através do módulo `std::io` e exige tratamento de erros explícito. O compilador de Rust ajuda a garantir que você não se esqueça de tratar possíveis falhas.
+A entrada de dados em Python é feita com a função `input()`.
 
-```rust
-use std::io; // Importa o módulo de entrada e saída.
+  * A função `input()` **sempre retorna uma string**.
+  * Você deve converter explicitamente o valor para o tipo numérico desejado usando `int()` ou `float()`.
+  * A função pode receber uma string como argumento, que será exibida ao usuário como um prompt.
 
-fn main() {
-    println!("Digite seu nome completo:");
-    // Declara uma nova String mutável para armazenar a entrada.
-    let mut nome = String::new();
-    // Lê a linha da entrada padrão.
-    io::stdin()
-        .read_line(&mut nome)
-        .expect("Falha ao ler a linha"); // .expect() para o programa se ocorrer um erro.
-    // Remove espaços em branco e a quebra de linha da entrada.
-    nome = nome.trim().to_string();
+<!-- end list -->
 
-    println!("Digite sua idade:");
-    let mut idade_str = String::new();
-    io::stdin()
-        .read_line(&mut idade_str)
-        .expect("Falha ao ler a linha");
-    // Converte a string para um número, tratando o erro.
-    let idade: i32 = idade_str
-        .trim()
-        .parse()
-        .expect("Por favor, digite um número!");
+```python
+# O prompt é passado diretamente para a função input().
+nome_completo = input("Digite seu nome completo: ")
+idade = int(input("Digite sua idade: ")) # Converte a entrada para inteiro.
+salario = float(input("Digite seu salario: ")) # Converte a entrada para float.
 
-    println!("\n--- DADOS REGISTRADOS ---");
-    println!("Nome: {}", nome);
-    println!("Idade: {}", idade);
-}
+print("\n--- DADOS REGISTRADOS ---")
+print(f"Nome: {nome_completo}")
+print(f"Idade: {idade}")
+print(f"Salario: {salario:.2f}")
 ```
 
-## 🔀 Estruturas de Controle
+## 🔀 Estruturas de Controle e a Importância da Indentação
 
-Rust usa chaves `{}` para delimitar blocos de código.
+Em Python, os blocos de código (corpo de um `if`, `for`, `while`, etc.) não são definidos por chaves `{}`. Em vez disso, eles são definidos pela **indentação** (geralmente 4 espaços). Isso força um estilo de código limpo e organizado.
 
-### Estrutura Condicional (`if/else if/else`)
+### Estrutura Condicional (`if/elif/else`)
 
-Em Rust, a condição de um `if` não precisa de parênteses. Além disso, `if` é uma expressão, o que significa que pode retornar um valor.
+A estrutura `if` avalia uma condição. `elif` (contração de "else if") permite testar múltiplas condições, e `else` captura todos os outros casos.
 
-```rust
-let idade = 29;
-// 'if' pode ser usado para atribuir um valor a uma variável.
-let status = if idade >= 18 {
-    "Adulto"
-} else {
-    "Menor de idade"
-};
-println!("Status: {}", status); // Status: Adulto
+```python
+hora = int(input("Digite uma hora do dia (0-23): "))
+
+if hora < 12:
+    print("Bom dia!")
+elif hora < 18:
+    print("Boa tarde!")
+else:
+    print("Boa noite!")
 ```
 
-### Estruturas de Repetição
+### Estrutura de Repetição `while`
 
-Rust oferece três tipos de laços:
+O laço `while` executa um bloco de código enquanto uma condição for verdadeira.
 
-**1. `loop` (Laço Infinito)**: Executa para sempre, a menos que seja interrompido por um `break`.
+```python
+soma = 0
+numero = int(input("Digite um numero (0 para sair): "))
 
-```rust
-let mut contador = 0;
-loop {
-    println!("Repetindo...");
-    contador += 1;
-    if contador == 3 {
-        break; // Para o laço
-    }
-}
+while numero != 0:
+    soma = soma + numero
+    numero = int(input("Digite outro numero (0 para sair): "))
+
+print(f"SOMA FINAL = {soma}")
 ```
 
-**2. `while` (Laço Condicional)**: Executa enquanto uma condição for verdadeira.
+### Estrutura de Repetição `for`
 
-```rust
-let mut numero = 3;
-while numero != 0 {
-    println!("{}!", numero);
-    numero -= 1;
-}
-println!("LANÇAR!");
+O laço `for` em Python é usado para iterar sobre uma sequência (como uma lista, uma string ou um `range`). A função `range(start, stop)` gera uma sequência de números, que é ideal para laços com contagem.
+
+```python
+n = int(input("Quantos numeros voce quer somar? "))
+soma = 0
+
+for i in range(0, n):
+    valor = int(input(f"Digite o valor #{i + 1}: "))
+    soma = soma + valor
+
+print(f"SOMA = {soma}")
 ```
 
-**3. `for` (Laço de Iteração)**: O mais comum, usado para iterar sobre uma coleção ou um `range`.
+## 📏 Vetores e Matrizes (Listas)
 
-```rust
-// Itera de 1 até 4 (o 5 não é incluído).
-for i in 1..5 {
-    println!("O valor é: {}", i);
-}
+O tipo de dado em Python que mais se assemelha a um vetor ou array é a **lista** (`list`). Listas são coleções ordenadas e mutáveis de itens.
+
+### Vetores (Listas)
+
+Uma forma "pythônica" de inicializar uma lista com valores padrão é usando *list comprehension*.
+
+```python
+n = int(input("Quantos numeros voce vai digitar? "))
+
+# Inicializa uma lista com N posições, todas contendo 0.0
+# Esta sintaxe é chamada de "list comprehension".
+vetor: [float] = [0.0 for x in range(n)]
+
+for i in range(0, n):
+    vetor[i] = float(input(f"Digite o numero #{i + 1}: "))
+
+print("\nNUMEROS DIGITADOS:")
+for numero in vetor:
+    print(f"{numero:.1f}")
 ```
 
-## 📏 Vetores (Arrays e Vectors)
+### Matrizes (Listas de Listas)
 
-Assim como Go, Rust distingue entre coleções de tamanho fixo e dinâmico.
+Uma matriz em Python é implementada como uma lista onde cada elemento é, por sua vez, outra lista.
 
-* **Array**: Tamanho fixo, conhecido em tempo de compilação. Ex: `let a: [i32; 3] = [1, 2, 3];`.
-* **Vector (`Vec<T>`)**: Uma "lista" que pode crescer e diminuir de tamanho, similar ao `std::vector` do C++ ou `ArrayList` do Java. É a escolha mais comum.
+```python
+m = int(input("Quantas linhas tera a matriz? "))
+n = int(input("Quantas colunas tera a matriz? "))
 
-### Vectors
+# Inicializa uma matriz M x N com zeros usando "nested list comprehension".
+matriz: [[int]] = [[0 for x in range(n)] for x in range(m)]
 
-```rust
-fn main() {
-    // Cria um novo vetor mutável e vazio.
-    let mut numeros: Vec<i32> = Vec::new();
+for i in range(0, m):
+    for j in range(0, n):
+        matriz[i][j] = int(input(f"Elemento [{i},{j}]: "))
 
-    // Adiciona elementos ao vetor.
-    numeros.push(10);
-    numeros.push(20);
-    numeros.push(30);
-
-    println!("Vetor: {:?}", numeros); // {:?} é um formatador de debug.
-
-    // Iterando sobre o vetor
-    for numero in &numeros { // & para emprestar o vetor sem mover a propriedade
-        println!("Número: {}", numero);
-    }
-}
+print("\nMATRIZ DIGITADA:")
+for i in range(0, m):
+    for j in range(0, n):
+        print(f"{matriz[i][j]} ", end="")
+    print() # Pula para a próxima linha
 ```
 
-### Matrizes (Vetores de Vetores)
+## 🐞 Depuração (Debugging) em Python
 
-Uma matriz em Rust é tipicamente representada por um vetor, onde cada elemento é outro vetor.
+Tanto o PyCharm quanto o VS Code oferecem depuradores visuais excelentes.
 
-```rust
-// Uma matriz 2x3
-let matriz: Vec<Vec<i32>> = vec![
-    vec![1, 2, 3],
-    vec![4, 5, 6],
-];
-println!("Elemento (1,1): {}", matriz[1][1]); // Acessa o elemento na segunda linha, segunda coluna (valor 5)
-```
+### Debugging no PyCharm e VS Code
 
-## 🐞 Depuração (Debugging) em Rust
+Os conceitos e atalhos são muito parecidos.
 
-### Debugging no VS Code
-
-1.  Além do `rust-analyzer`, instale a extensão **`CodeLLDB`** ou **`C/C++`** da Microsoft, que fornecem o depurador.
-2.  Abra seu projeto `cargo` no VS Code.
-3.  Vá para o seu arquivo `src/main.rs` e clique na margem à esquerda de uma linha para adicionar um **breakpoint**.
-4.  Pressione `F5`. O VS Code usará o `cargo` para compilar seu programa em modo de depuração e, em seguida, iniciará o depurador.
-5.  A execução pausará no breakpoint, permitindo que você inspecione variáveis, execute o código passo a passo (`F10`) e utilize o console de depuração.
+1.  **Habilitar/Desabilitar Breakpoint**: Clique na margem à esquerda do número da linha onde quer que a execução pause. No PyCharm, o atalho é `Ctrl + F8`.
+2.  **Iniciar o Debug**:
+      * **PyCharm**: Pressione `Shift + F9` ou clique no ícone de inseto.
+      * **VS Code**: Pressione `F5` ou vá para a aba "Run and Debug".
+3.  **Controlar a Execução**:
+      * **Step Over (Passar por cima)**: Executa a linha atual e para na próxima. O atalho costuma ser `F8` no PyCharm e `F10` no VS Code.
+4.  **Inspecionar Variáveis**: A aba "Debugger" no PyCharm ou a janela "VARIABLES" no VS Code mostrarão os valores das variáveis em tempo real.
 
 ---
 
