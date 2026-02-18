@@ -1,7 +1,7 @@
 # Aula 04 - Estrutura Condicional 🔀
 
-> [!TIP]
-> **Objetivo**: Ensinar o computador a tomar decisões baseadas em perguntas (Se/Então).
+!!! tip "Objetivo"
+    **Objetivo**: Ensinar o computador a tomar decisões baseadas em perguntas (Se/Então).
 
 ---
 

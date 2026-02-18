@@ -1,7 +1,7 @@
 # Exercícios 07 - Matrizes 📈
 
-> [!TIP]
-> **Objetivo**: Trabalhar com tabelas e grids.
+!!! tip "Objetivo"
+    **Objetivo**: Trabalhar com tabelas e grids.
 
 ---
 

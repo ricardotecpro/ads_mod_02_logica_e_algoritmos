@@ -1,7 +1,7 @@
 # Aula 07 - Estruturas de Dados II: Matrizes 📈
 
-> [!TIP]
-> **Objetivo**: Expandir o conceito de vetor para duas dimensões. Pense em uma planilha do Excel ou um tabuleiro de Xadrez.
+!!! tip "Objetivo"
+    **Objetivo**: Expandir o conceito de vetor para duas dimensões. Pense em uma planilha do Excel ou um tabuleiro de Xadrez.
 
 ---
 

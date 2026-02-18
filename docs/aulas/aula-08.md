@@ -1,7 +1,7 @@
 # Aula 08 - Modularização: Funções e Procedimentos 🧩
 
-> [!TIP]
-> **Objetivo**: Aprender a dividir um problema grande em pequenos pedaços reutilizáveis. "Dividir para conquistar".
+!!! tip "Objetivo"
+    **Objetivo**: Aprender a dividir um problema grande em pequenos pedaços reutilizáveis. "Dividir para conquistar".
 
 ---
 
@@ -57,8 +57,8 @@ Isso é CRÍTICO.
 *   **Variável Global**: Todo mundo vê. (Perigoso!)
 *   **Variável Local**: Só existe dentro da função. (Seguro)
 
-> [!WARNING]
-> Se você criar uma variável `x` dentro da função `somar`, o programa principal **NÃO** enxerga ela.
+!!! warning
+    Se você criar uma variável `x` dentro da função `somar`, o programa principal **NÃO** enxerga ela.
 
 ---
 

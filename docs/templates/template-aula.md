@@ -1,7 +1,7 @@
 # Título da Aula (Ex: Aula 01 - Introdução) 🧩
 
-> [!TIP]
-> **Objetivo**: Uma frase curta explicando o que o aluno vai aprender hoje.
+!!! tip "Objetivo"
+    **Objetivo**: Uma frase curta explicando o que o aluno vai aprender hoje.
 
 ---
 
@@ -9,8 +9,8 @@
 
 Explicação teórica curta e direta. Use negrito para **palavras-chave**.
 
-> [!NOTE]
-> **Conceito Chave**: Definição formal se necessário.
+!!! note "Conceito Chave"
+    **Conceito Chave**: Definição formal se necessário.
 
 ### Visualizando o Conceito (Mermaid)
 Toda aula deve ter pelo menos um diagrama.
@@ -58,8 +58,8 @@ Detalhes técnicos, memória, ou variações.
 *   Ponto 2
 *   Ponto 3
 
-> [!WARNING]
-> **Erro Comum**: O que o aluno costuma errar aqui?
+!!! warning "Erro Comum"
+    **Erro Comum**: O que o aluno costuma errar aqui?
 
 ---
 
@@ -69,8 +69,8 @@ Detalhes técnicos, memória, ou variações.
 2.  **Médio**: Enunciado.
 3.  **Desafio**: Algo para pensar.
 
-> [!SUCCESS]
-> **Mini-Projeto**: Uma ideia rápida de aplicação prática.
+!!! success "Mini-Projeto"
+    **Mini-Projeto**: Uma ideia rápida de aplicação prática.
 
 ---
 **Próxima Aula**: [Link para a próxima aula](./aula-XX.md)

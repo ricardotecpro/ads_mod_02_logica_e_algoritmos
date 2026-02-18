@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Abre uma janela pop-up</div>
   <div class="quiz-feedback"></div>
 </div>
-

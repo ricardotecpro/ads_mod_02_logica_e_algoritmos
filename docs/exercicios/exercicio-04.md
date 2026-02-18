@@ -1,7 +1,7 @@
 # Exercícios 04 - Estrutura Condicional 🔀
 
-> [!TIP]
-> **Objetivo**: Ensinar o programa a tomar decisões.
+!!! tip "Objetivo"
+    **Objetivo**: Ensinar o programa a tomar decisões.
 
 ---
 

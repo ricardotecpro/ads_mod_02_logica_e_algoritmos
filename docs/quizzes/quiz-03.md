@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">3</div>
   <div class="quiz-feedback"></div>
 </div>
-

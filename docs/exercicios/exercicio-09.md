@@ -1,7 +1,7 @@
 # Exercícios 09 - C e C++ 🧱
 
-> [!TIP]
-> **Objetivo**: Dominar a memória e a performance.
+!!! tip "Objetivo"
+    **Objetivo**: Dominar a memória e a performance.
 
 ---
 

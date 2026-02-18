@@ -1,7 +1,7 @@
 # Exercícios 08 - Modularização 🧩
 
-> [!TIP]
-> **Objetivo**: Criar suas próprias ferramentas (funções).
+!!! tip "Objetivo"
+    **Objetivo**: Criar suas próprias ferramentas (funções).
 
 ---
 

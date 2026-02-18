@@ -1,7 +1,7 @@
 # Exercícios 05 - Estruturas Repetitivas 🔁
 
-> [!TIP]
-> **Objetivo**: Automatizar tarefas chatas.
+!!! tip "Objetivo"
+    **Objetivo**: Automatizar tarefas chatas.
 
 ---
 

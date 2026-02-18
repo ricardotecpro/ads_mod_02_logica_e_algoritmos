@@ -1,7 +1,7 @@
 # Exercícios 13 - Python 🐍
 
-> [!TIP]
-> **Objetivo**: Dados e Automação.
+!!! tip "Objetivo"
+    **Objetivo**: Dados e Automação.
 
 ---
 

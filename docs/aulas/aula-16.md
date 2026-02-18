@@ -1,7 +1,7 @@
 # Aula 16 - PHP e o Legado Web 🐘
 
-> [!TIP]
-> **Objetivo**: Entender como a Web funciona de verdade. O ciclo Cliente-Servidor e por que o PHP ainda domina 77% da internet.
+!!! tip "Objetivo"
+    **Objetivo**: Entender como a Web funciona de verdade. O ciclo Cliente-Servidor e por que o PHP ainda domina 77% da internet.
 
 ---
 

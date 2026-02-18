@@ -1,7 +1,7 @@
 # Aula 11 - Java e Orientação a Objetos ☕
 
-> [!TIP]
-> **Objetivo**: Entender como organizar sistemas grandes e complexos usando Classes, Objetos e Herança.
+!!! tip "Objetivo"
+    **Objetivo**: Entender como organizar sistemas grandes e complexos usando Classes, Objetos e Herança.
 
 ---
 

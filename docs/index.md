@@ -2,8 +2,8 @@
 
 Bem-vindo ao curso definitivo para quem quer começar na programação com o pé direito. Aqui você aprende **Lógica Pura** e aplica em **12 Linguagens de Mercado**.
 
-> [!TIP]
-> **Metodologia**: Foco em prática, visualização (diagramas) e português claro. Sem "tech nês" desnecessário.
+!!! tip "Metodologia"
+    **Metodologia**: Foco em prática, visualização (diagramas) e português claro. Sem "tech nês" desnecessário.
 
 ---
 
@@ -75,8 +75,8 @@ Veja a mágica acontecer nas linguagens reais.
 
 ---
 
-> [!SUCCESS]
-> **Pronto para começar?** 
-> Clique no botão abaixo e inicie sua jornada!
+!!! success
+    **Pronto para começar?** 
+    Clique no botão abaixo e inicie sua jornada!
 
 [:material-play: Começar Agora](aulas/aula-01.md){ .md-button .md-button--primary .md-button--large }

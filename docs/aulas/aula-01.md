@@ -1,7 +1,7 @@
 # Aula 01 - Introdução à Lógica de Programação 🧠
 
-> [!TIP]
-> **Objetivo**: Aprender a "pensar como um computador", entender o que é um algoritmo e como quebrar problemas complexos em passos simples.
+!!! tip "Objetivo"
+    **Objetivo**: Aprender a "pensar como um computador", entender o que é um algoritmo e como quebrar problemas complexos em passos simples.
 
 ---
 
@@ -9,8 +9,8 @@
 
 A palavra pode assustar, mas você usa algoritmos o tempo todo. Um **Algoritmo** nada mais é do que uma **sequência de passos finitos e precisos para resolver um problema**.
 
-> [!NOTE]
-> **Conceito Chave**: Um algoritmo precisa ter um **início**, um **fim**, e cada passo não pode gerar dúvidas (ambiguidade).
+!!! note "Conceito Chave"
+    **Conceito Chave**: Um algoritmo precisa ter um **início**, um **fim**, e cada passo não pode gerar dúvidas (ambiguidade).
 
 ### Visualizando um Algoritmo (Mermaid)
 Vamos imaginar o algoritmo para "Trocar uma Lâmpada".

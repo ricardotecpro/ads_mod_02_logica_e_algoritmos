@@ -1,7 +1,7 @@
 # Aula 14 - Sistemas Modernos: Rust e Go 🦀🐹
 
-> [!TIP]
-> **Objetivo**: Conhecer as linguagens que estão substituindo o C/C++ na infraestrutura da computação moderna.
+!!! tip "Objetivo"
+    **Objetivo**: Conhecer as linguagens que estão substituindo o C/C++ na infraestrutura da computação moderna.
 
 ---
 

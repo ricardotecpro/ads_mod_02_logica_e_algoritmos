@@ -1,7 +1,7 @@
 # Aula 12 - Ecossistema Microsoft: C# e .NET 🔷
 
-> [!TIP]
-> **Objetivo**: Produtividade máxima. Aprender a linguagem C# e a plataforma .NET, muito usadas em empresas.
+!!! tip "Objetivo"
+    **Objetivo**: Produtividade máxima. Aprender a linguagem C# e a plataforma .NET, muito usadas em empresas.
 
 ---
 

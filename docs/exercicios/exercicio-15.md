@@ -1,7 +1,7 @@
 # Exercícios 15 - Mobile (Dart/Kotlin) 📱
 
-> [!TIP]
-> **Objetivo**: Lógica para Apps.
+!!! tip "Objetivo"
+    **Objetivo**: Lógica para Apps.
 
 ---
 

@@ -1,7 +1,7 @@
 # Aula 05 - Estruturas Repetitivas 🔁
 
-> [!TIP]
-> **Objetivo**: Aprender a automatizar tarefas repetitivas. Se você precisa fazer algo mais de uma vez, use um laço (loop).
+!!! tip "Objetivo"
+    **Objetivo**: Aprender a automatizar tarefas repetitivas. Se você precisa fazer algo mais de uma vez, use um laço (loop).
 
 ---
 

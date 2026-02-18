@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if x == 10</div>
   <div class="quiz-feedback"></div>
 </div>
-

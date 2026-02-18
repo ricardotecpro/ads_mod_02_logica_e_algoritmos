@@ -1,7 +1,7 @@
 # Aula 03 - Estrutura Sequencial ➡️
 
-> [!TIP]
-> **Objetivo**: Entender como o computador guarda informações (Variáveis) e executa comandos um após o outro.
+!!! tip "Objetivo"
+    **Objetivo**: Entender como o computador guarda informações (Variáveis) e executa comandos um após o outro.
 
 ---
 
@@ -35,8 +35,8 @@ Nem tudo cabe na mesma gaveta. Precisamos definir o **TIPO** da variável.
 | **Caractere** | Texto (Letras/Palavras) | `"Olá"`, `'A'` | Var |
 | **Lógico** | Verdadeiro ou Falso | `VERDADEIRO` | 1 |
 
-> [!WARNING]
-> **Erro Comum**: Tentar guardar texto numa variável numérica gera erro! `inteiro x = "texto"` ❌
+!!! warning "Erro Comum"
+    **Erro Comum**: Tentar guardar texto numa variável numérica gera erro! `inteiro x = "texto"` ❌
 
 ---
 

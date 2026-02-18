@@ -1,7 +1,7 @@
 # Aula 13 - Python e Ciência de Dados 🐍
 
-> [!TIP]
-> **Objetivo**: Programar rápido, com poucas linhas e muita clareza. A linguagem favorita da IA e Data Science.
+!!! tip "Objetivo"
+    **Objetivo**: Programar rápido, com poucas linhas e muita clareza. A linguagem favorita da IA e Data Science.
 
 ---
 

@@ -1,7 +1,7 @@
 # Exercícios 01 - Lógica de Programação 🧠
 
-> [!TIP]
-> **Objetivo**: Treinar o pensamento computacional antes de escrever código.
+!!! tip "Objetivo"
+    **Objetivo**: Treinar o pensamento computacional antes de escrever código.
 
 ---
 

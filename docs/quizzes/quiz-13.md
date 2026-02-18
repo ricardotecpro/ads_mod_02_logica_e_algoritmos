@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Depende da memória RAM</div>
   <div class="quiz-feedback"></div>
 </div>
-

@@ -1,7 +1,7 @@
 # Exercícios 06 - Vetores 📊
 
-> [!TIP]
-> **Objetivo**: Guardar listas de coisas.
+!!! tip "Objetivo"
+    **Objetivo**: Guardar listas de coisas.
 
 ---
 

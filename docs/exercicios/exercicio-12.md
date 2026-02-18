@@ -1,7 +1,7 @@
 # Exercícios 12 - C# e .NET 🔷
 
-> [!TIP]
-> **Objetivo**: Produtividade e LINQ.
+!!! tip "Objetivo"
+    **Objetivo**: Produtividade e LINQ.
 
 ---
 

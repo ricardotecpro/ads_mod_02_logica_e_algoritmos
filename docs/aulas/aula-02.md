@@ -1,7 +1,7 @@
 # Aula 02 - Ambiente e Ferramentas 🛠️
 
-> [!TIP]
-> **Objetivo**: Configurar sua "bancada de trabalho". Vamos conhecer onde os códigos são escritos, compilados e executados.
+!!! tip "Objetivo"
+    **Objetivo**: Configurar sua "bancada de trabalho". Vamos conhecer onde os códigos são escritos, compilados e executados.
 
 ---
 
@@ -45,8 +45,8 @@ Fimalgoritmo
 
 ### Scratch
 Lógica em blocos. Perfeito para entender estruturas sem erro de sintaxe.
-> [!NOTE]
-> Acesse [scratch.mit.edu](https://scratch.mit.edu) para criar conta.
+!!! note
+    Acesse [scratch.mit.edu](https://scratch.mit.edu) para criar conta.
 
 ---
 

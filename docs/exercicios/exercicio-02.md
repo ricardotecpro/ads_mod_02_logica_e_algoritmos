@@ -1,7 +1,7 @@
 # Exercícios 02 - Ambiente e Ferramentas 🛠️
 
-> [!TIP]
-> **Objetivo**: Garantir que suas ferramentas estão prontas para a ação.
+!!! tip "Objetivo"
+    **Objetivo**: Garantir que suas ferramentas estão prontas para a ação.
 
 ---
 

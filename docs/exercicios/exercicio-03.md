@@ -1,7 +1,7 @@
 # Exercícios 03 - Estrutura Sequencial ➡️
 
-> [!TIP]
-> **Objetivo**: Manipular variáveis, entrada e saída de dados.
+!!! tip "Objetivo"
+    **Objetivo**: Manipular variáveis, entrada e saída de dados.
 
 ---
 

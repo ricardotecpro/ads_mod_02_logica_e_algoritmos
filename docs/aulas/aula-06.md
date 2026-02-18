@@ -1,7 +1,7 @@
 # Aula 06 - Estruturas de Dados I: Vetores 📊
 
-> [!TIP]
-> **Objetivo**: Aprender a guardar múltiplos dados do mesmo tipo em uma única variável "comprida".
+!!! tip "Objetivo"
+    **Objetivo**: Aprender a guardar múltiplos dados do mesmo tipo em uma única variável "comprida".
 
 ---
 
@@ -31,8 +31,8 @@ graph LR;
     style B fill:#bbf;
 ```
 
-> [!WARNING]
-> **Atenção**: Na maioria das linguagens (C, Java, Python), o primeiro índice é **0**, não 1!
+!!! warning "Atenção"
+    **Atenção**: Na maioria das linguagens (C, Java, Python), o primeiro índice é **0**, não 1!
 
 ---
 

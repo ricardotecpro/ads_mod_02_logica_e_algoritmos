@@ -1,7 +1,7 @@
 # Exercícios 10 - JavaScript e TypeScript 🌐
 
-> [!TIP]
-> **Objetivo**: Manipular a Web e o Console.
+!!! tip "Objetivo"
+    **Objetivo**: Manipular a Web e o Console.
 
 ---
 

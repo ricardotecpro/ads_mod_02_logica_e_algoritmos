@@ -1,7 +1,7 @@
 # Aula 15 - Desenvolvimento Mobile: Dart e Kotlin 📱
 
-> [!TIP]
-> **Objetivo**: Criar aplicativos que rodam no seu bolso. Entenda a diferença entre **Nativo** e **Multiplataforma**.
+!!! tip "Objetivo"
+    **Objetivo**: Criar aplicativos que rodam no seu bolso. Entenda a diferença entre **Nativo** e **Multiplataforma**.
 
 ---
 

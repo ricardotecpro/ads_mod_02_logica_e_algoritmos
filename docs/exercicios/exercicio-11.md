@@ -1,7 +1,7 @@
 # Exercícios 11 - Java e POO ☕
 
-> [!TIP]
-> **Objetivo**: Criar sistemas robustos com Classes.
+!!! tip "Objetivo"
+    **Objetivo**: Criar sistemas robustos com Classes.
 
 ---
 

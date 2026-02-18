@@ -1,7 +1,7 @@
 # Aula 10 - Web Moderna: JavaScript e TypeScript 🌐
 
-> [!TIP]
-> **Objetivo**: Dar vida às páginas web e construir aplicações completas (Frontend e Backend).
+!!! tip "Objetivo"
+    **Objetivo**: Dar vida às páginas web e construir aplicações completas (Frontend e Backend).
 
 ---
 
@@ -57,8 +57,8 @@ O JS é "fracamente tipado" (você pode somar texto com número e ele deixa). O 
 | :--- | :--- |
 | `function soma(a, b) { return a + b; }` | `function soma(a: number, b: number): number { return a + b; }` |
 
-> [!NOTE]
-> O navegador não entende TS. Ele precisa ser **transpilado** para JS.
+!!! note
+    O navegador não entende TS. Ele precisa ser **transpilado** para JS.
 
 ---
 

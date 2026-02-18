@@ -1,7 +1,7 @@
 # Aula 09 - C e C++: Baixo Nível e Performance 🧱
 
-> [!TIP]
-> **Objetivo**: Entender o que acontece "por baixo do capô". C e C++ te dão controle total sobre a memória do computador.
+!!! tip "Objetivo"
+    **Objetivo**: Entender o que acontece "por baixo do capô". C e C++ te dão controle total sobre a memória do computador.
 
 ---
 
@@ -55,8 +55,8 @@ int numero = 10;
 int *ponteiro = &numero; // Guarda o endereço de 'numero'
 ```
 
-> [!WARNING]
-> Ponteiros errados podem travar o sistema (o famoso "Segmentation Fault").
+!!! warning
+    Ponteiros errados podem travar o sistema (o famoso "Segmentation Fault").
 
 ---
 

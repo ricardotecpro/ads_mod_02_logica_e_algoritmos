@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Lê o nome do arquivo</div>
   <div class="quiz-feedback"></div>
 </div>
-

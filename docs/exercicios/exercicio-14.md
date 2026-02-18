@@ -1,7 +1,7 @@
 # Exercícios 14 - Rust e Go 🦀🐹
 
-> [!TIP]
-> **Objetivo**: Sistemas e Concorrência.
+!!! tip "Objetivo"
+    **Objetivo**: Sistemas e Concorrência.
 
 ---
 

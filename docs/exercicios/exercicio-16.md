@@ -1,7 +1,7 @@
 # Exercícios 16 - PHP e Web 🐘
 
-> [!TIP]
-> **Objetivo**: Backend e Dados.
+!!! tip "Objetivo"
+    **Objetivo**: Backend e Dados.
 
 ---
 

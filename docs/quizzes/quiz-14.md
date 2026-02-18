@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A precisa ser instanciada dentro de B</div>
   <div class="quiz-feedback"></div>
 </div>
-

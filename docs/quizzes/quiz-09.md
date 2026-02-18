@@ -46,4 +46,3 @@
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O print executa a função duas vezes</div>
   <div class="quiz-feedback"></div>
 </div>
-
