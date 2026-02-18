@@ -1,11 +1,11 @@
-# Exercícios - Aula 08: Funções
+# Exercícios - Aula 08: Linguagem C
 
 ## 🛠 Prática
 
 1. **Exercício Teórico**:
-   - Explique com suas palavras o conceito de Funções.
+   - Explique com suas palavras o conceito de Linguagem C.
 
 2. **Exercício Prático**:
-   - Implemente um algoritmo simples relacionado a Funções.
+   - Implemente um algoritmo simples relacionado a Linguagem C.
    - Teste com diferentes entradas.
 

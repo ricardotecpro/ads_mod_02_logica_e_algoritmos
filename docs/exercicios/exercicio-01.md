@@ -1,11 +1,11 @@
-# Exercícios - Aula 01: Conteúdo do Curso
+# Exercícios - Aula 01: Introdução à Programação
 
 ## 🛠 Prática
 
 1. **Exercício Teórico**:
-   - Explique com suas palavras o conceito de Conteúdo do Curso.
+   - Explique com suas palavras o conceito de Introdução à Programação.
 
 2. **Exercício Prático**:
-   - Implemente um algoritmo simples relacionado a Conteúdo do Curso.
+   - Implemente um algoritmo simples relacionado a Introdução à Programação.
    - Teste com diferentes entradas.
 

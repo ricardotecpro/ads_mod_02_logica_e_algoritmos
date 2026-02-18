@@ -1,11 +1,11 @@
-# Exercícios - Aula 15: Linguagem Rust
+# Exercícios - Aula 15: Linguagem Dart
 
 ## 🛠 Prática
 
 1. **Exercício Teórico**:
-   - Explique com suas palavras o conceito de Linguagem Rust.
+   - Explique com suas palavras o conceito de Linguagem Dart.
 
 2. **Exercício Prático**:
-   - Implemente um algoritmo simples relacionado a Linguagem Rust.
+   - Implemente um algoritmo simples relacionado a Linguagem Dart.
    - Teste com diferentes entradas.
 

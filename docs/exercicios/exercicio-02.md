@@ -1,11 +1,11 @@
-# Exercícios - Aula 02: Introdução à Programação
+# Exercícios - Aula 02: Estrutura Sequencial
 
 ## 🛠 Prática
 
 1. **Exercício Teórico**:
-   - Explique com suas palavras o conceito de Introdução à Programação.
+   - Explique com suas palavras o conceito de Estrutura Sequencial.
 
 2. **Exercício Prático**:
-   - Implemente um algoritmo simples relacionado a Introdução à Programação.
+   - Implemente um algoritmo simples relacionado a Estrutura Sequencial.
    - Teste com diferentes entradas.
 

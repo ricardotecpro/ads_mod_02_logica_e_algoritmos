@@ -1,96 +1,97 @@
-# ➡️ Vetores (Arrays Unidimensionais) em Programação
+# 🎛️ Matrizes (Arrays Bidimensionais) em Programação
 
-Vetores, também conhecidos como **arrays unidimensionais**, são uma das estruturas de dados mais fundamentais na programação. Eles nos permitem armazenar múltiplos valores em uma única variável, de forma organizada e eficiente.
+Dando um passo além dos vetores (arrays de uma dimensão), as **matrizes** nos permitem trabalhar com dados estruturados em duas dimensões, como tabelas, planilhas ou tabuleiros.
 
-## 🤔 O que são Vetores?
+## 🤔 O que são Matrizes?
 
-Um vetor é uma coleção de dados que possui quatro características principais:
+[cite\_start]Uma matriz é uma coleção de dados que pode ser entendida como um **array bidimensional**[cite: 27]. Ela possui um conjunto de características fundamentais:
 
-  - **Indexada**: Cada elemento no vetor possui uma posição única, chamada de índice, que é usada para acessá-lo. Os índices são sempre números inteiros, começando em zero.
-  - **Unidimensional**: É uma estrutura de dados linear, como uma lista ou uma fila, possuindo apenas uma dimensão (comprimento).
-  - **Homogênea**: Todos os elementos armazenados em um vetor devem ser, obrigatoriamente, do mesmo tipo de dado (todos `int`, todos `double`, todos `String`, etc.).
-  - **Tamanho Fixo**: Uma vez que um vetor é criado na memória, seu tamanho (a quantidade de elementos que ele pode conter) é fixo e não pode ser alterado.
+- [cite\_start]**Indexada**: Os elementos são acessados por meio de um par de índices: um para a linha e outro para a coluna[cite: 18]. Em Java, a sintaxe é `matriz[linha][coluna]`.
+- [cite\_start]**Bidimensional**: Organiza os dados em uma estrutura de duas dimensões, composta por linhas e colunas[cite: 21].
+- [cite\_start]**Homogênea**: Todos os dados armazenados na matriz devem ser do mesmo tipo (`int`, `double`, `String`, etc.)[cite: 24].
+- [cite\_start]**Tamanho Fixo**: Uma vez que a matriz é criada (alocada na memória), seu tamanho (número de linhas e colunas) não pode ser alterado[cite: 26].
 
-## 🛠️ Trabalhando com Vetores em Java
+Visualmente, podemos imaginar uma matriz como uma grade:
 
-Vamos ver como declarar, instanciar (criar) e manipular vetores na linguagem Java.
+```
+      Col 0  Col 1  Col 2
+Linha 0 [  ]   [  ]   [  ]
+Linha 1 [  ]   [  ]   [  ]
+Linha 2 [  ]   [  ]   [  ]
+Linha 3 [  ]   [  ]   [  ]
+```
+
+## 🛠️ Trabalhando com Matrizes em Java
+
+Vamos ver como declarar, instanciar e manipular matrizes na linguagem Java.
 
 ### Declaração e Instanciação
 
-Para usar um vetor, você primeiro o declara e depois o instancia, especificando seu tipo e tamanho.
+Para criar uma matriz, você precisa declarar seu tipo e, em seguida, instanciá-la, definindo seu número de linhas e colunas.
 
 ```java
-// Sintaxe: tipo[] nomeDoVetor = new tipo[tamanho];
+// Sintaxe: tipo[][] nomeDaMatriz = new tipo[numeroDeLinhas][numeroDeColunas];
 
-// Exemplo: Criando um vetor de 10 posições para números de ponto flutuante.
-// Isso corresponde a "vet: vetor [0..9] de real" do pseudocódigo.
-double[] numeros = new double[10];
-
-// Exemplo: Criando um vetor de 5 posições para armazenar nomes.
-String[] nomes = new String[5];
+// Exemplo: Criando uma matriz de inteiros com 3 linhas e 4 colunas.
+int[][] matriz = new int[3][4];
 ```
+
+Isso aloca um espaço na memória para 12 números inteiros (3 linhas x 4 colunas).
 
 ### Acessando Elementos
 
-O acesso aos elementos é feito através de seus índices. Lembre-se sempre que **o primeiro elemento está no índice 0**.
+Para atribuir ou ler um valor, você utiliza os índices da linha e da coluna. Lembre-se que em Java, **os índices sempre começam em zero**.
 
 ```java
-// Atribuindo o valor 25.4 à primeira posição (índice 0) do vetor.
-numeros[0] = 25.4;
+// Atribuindo o valor 10 à segunda linha (índice 1), terceira coluna (índice 2)
+matriz[1][2] = 10; [cite_start]// Equivalente ao A[1, 2] <- 10 do pseudocódigo [cite: 41]
 
-// Atribuindo o valor "Ana" à terceira posição (índice 2) do vetor.
-nomes[2] = "Ana";
-
-// Lendo e imprimindo o valor da terceira posição de 'nomes'.
-System.out.println(nomes[2]); // Saída: Ana
+// Lendo e imprimindo o valor
+System.out.println(matriz[1][2]); // Saída: 10
 ```
 
-Frequentemente, usamos laços de repetição, como o `for`, para percorrer e manipular todos os elementos de um vetor de forma eficiente.
+## ✍️ Exemplo Prático: Lendo e Imprimindo uma Matriz
 
-```java
-// Exemplo: Preenchendo um vetor com os números de 10 a 14.
-// Equivalente à lógica B[i] <- i + 10.
-int[] vetorB = new int[5];
-for (int i = 0; i < vetorB.length; i++) {
-    vetorB[i] = i + 10;
-    System.out.println("Posição " + i + " recebeu o valor " + vetorB[i]);
-}
-```
+Vamos criar um programa que pergunta ao usuário as dimensões de uma matriz, lê cada um de seus elementos e, ao final, a imprime na tela de forma organizada.
 
-## ✍️ Exemplo Prático: Lendo e Imprimindo um Vetor
-
-**Problema:** Fazer um programa para ler um número inteiro `N`, depois ler `N` números `double` e armazená-los em um vetor. Em seguida, mostrar na tela todos os elementos do vetor.
+**Problema:** Fazer um programa para ler dois números inteiros `M` e `N` e depois ler uma matriz de `M` linhas por `N` colunas contendo números inteiros. [cite\_start]Em seguida, mostrar a matriz lida[cite: 66, 67].
 
 **Solução em Java:**
 
 ```java
 package curso;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-public class LerVetor {
+public class LerMatriz {
 
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Quantos números você vai digitar? ");
+        System.out.print("Quantas linhas vai ter a matriz? ");
+        int M = sc.nextInt();
+        System.out.print("Quantas colunas vai ter a matriz? ");
         int N = sc.nextInt();
 
-        // Instanciando o vetor com o tamanho N informado pelo usuário
-        double[] vet = new double[N];
+        // Instanciando a matriz com as dimensões informadas
+        int[][] mat = new int[M][N];
 
-        // Laço para ler e armazenar cada número no vetor
-        for (int i = 0; i < N; i++) {
-            System.out.print("Digite um número: ");
-            vet[i] = sc.nextDouble();
+        // Usando laços aninhados para ler os dados
+        System.out.println("Digite os elementos da matriz:");
+        for (int i = 0; i < M; i++) { // Laço para percorrer as linhas
+            for (int j = 0; j < N; j++) { // Laço para percorrer as colunas
+                System.out.printf("Elemento [%d,%d]: ", i, j);
+                mat[i][j] = sc.nextInt();
+            }
         }
 
-        // Laço para imprimir os elementos do vetor
-        System.out.println("\nNÚMEROS DIGITADOS:");
-        for (int i = 0; i < N; i++) {
-            System.out.printf("%.1f\n", vet[i]);
+        // Usando laços aninhados para imprimir a matriz
+        System.out.println("\nMATRIZ DIGITADA:");
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(mat[i][j] + " "); // Imprime o elemento e um espaço
+            }
+            System.out.println(); // Pula para a próxima linha ao final de cada linha da matriz
         }
 
         sc.close();
@@ -101,90 +102,117 @@ public class LerVetor {
 **Exemplo de Execução:**
 
 ```
-Quantos números você vai digitar? 4
-Digite um número: 10.5
-Digite um número: 4.2
-Digite um número: -7.1
-Digite um número: 15.0
+Quantas linhas vai ter a matriz? 2
+Quantas colunas vai ter a matriz? 3
+Digite os elementos da matriz:
+Elemento [0,0]: 5
+Elemento [0,1]: 8
+Elemento [0,2]: 10
+Elemento [1,0]: -2
+Elemento [1,1]: 9
+Elemento [1,2]: 7
 
-NÚMEROS DIGITADOS:
-10.5
-4.2
--7.1
-15.0
+MATRIZ DIGITADA:
+5 8 10 
+-2 9 7 
 ```
 
-## 📈 Exercício Completo: Análise de Alturas
+## 🧠 Exercícios de Lógica com Matrizes
 
-Vamos resolver um problema mais elaborado que utiliza **vetores paralelos** (vários vetores cujos índices se correspondem).
+Vamos transformar alguns dos "testes de mesa" do material de estudo em programas Java funcionais para ver a lógica em ação.
 
-**Problema:** Fazer um programa para ler nome, idade e altura de `N` pessoas. Depois, o programa deve mostrar a altura média das pessoas e a porcentagem de pessoas com menos de 16 anos, listando o nome delas.
+### Exercício 1: Populando com uma Regra
+
+**Problema:** Crie um programa que preenche uma matriz 3x3 onde o valor de cada elemento é a soma de seus índices (`linha + coluna`).
 
 **Solução em Java:**
 
 ```java
 package curso;
 
-import java.util.Locale;
-import java.util.Scanner;
-
-public class AnaliseAlturas {
+public class PopularMatrizRegra {
 
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+        int N = 3;
+        int[][] matriz = new int[N][N];
 
-        System.out.print("Quantas pessoas serão digitadas? ");
-        int N = sc.nextInt();
-
-        // Declarando os vetores paralelos
-        String[] nomes = new String[N];
-        int[] idades = new int[N];
-        double[] alturas = new double[N];
-
-        // Lendo os dados de cada pessoa
+        // Populando a matriz com a regra mat[i][j] = i + j
         for (int i = 0; i < N; i++) {
-            System.out.println("Dados da " + (i + 1) + "ª pessoa:");
-            System.out.print("Nome: ");
-            sc.nextLine(); // Consome a quebra de linha pendente
-            nomes[i] = sc.nextLine();
-            System.out.print("Idade: ");
-            idades[i] = sc.nextInt();
-            System.out.print("Altura: ");
-            alturas[i] = sc.nextDouble();
-        }
-
-        // Processando os dados: calculando a soma das alturas e contando menores de 16
-        double somaAlturas = 0.0;
-        int contMenores = 0;
-        for (int i = 0; i < N; i++) {
-            somaAlturas += alturas[i];
-            if (idades[i] < 16) {
-                contMenores++;
+            for (int j = 0; j < N; j++) {
+                matriz[i][j] = i + j; // Regra de população
             }
         }
 
-        // Calculando a média de altura
-        double alturaMedia = somaAlturas / N;
-
-        // Calculando o percentual de menores de 16 anos
-        // A fórmula é x = cont * 100 / N
-        double percentualMenores = ((double) contMenores * 100.0) / N;
-
-        // Apresentando os resultados
-        System.out.printf("\nAltura média: %.2f\n", alturaMedia);
-        System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", percentualMenores);
-
-        // Imprimindo o nome dos menores de 16
+        // Imprimindo a matriz resultante
+        System.out.println("Matriz gerada:");
         for (int i = 0; i < N; i++) {
-            if (idades[i] < 16) {
-                System.out.println(nomes[i]);
+            for (int j = 0; j < N; j++) {
+                System.out.print(matriz[i][j] + " ");
             }
+            System.out.println();
         }
-
-        sc.close();
     }
 }
+```
+
+**Saída Esperada:**
+
+```
+Matriz gerada:
+0 1 2 
+1 2 3 
+2 3 4 
+```
+
+### Exercício 2: Soma dos Elementos de Cada Linha
+
+**Problema:** Faça um programa que crie uma matriz 3x4, popule-a com valores, e em seguida, crie um **vetor** onde cada posição armazena a soma dos elementos da linha correspondente da matriz.
+
+**Solução em Java:**
+
+```java
+package curso;
+
+public class SomaLinhasMatriz {
+
+    public static void main(String[] args) {
+        int M = 3; // Linhas
+        int N = 4; // Colunas
+
+        int[][] matriz = {
+            {5, 10, 2, 8},
+            {4, 3, 9, 1},
+            {7, 6, 5, 2}
+        };
+
+        // Vetor para armazenar a soma de cada linha
+        int[] vetorSomas = new int[M];
+
+        // Calculando a soma de cada linha
+        for (int i = 0; i < M; i++) {
+            int soma = 0;
+            for (int j = 0; j < N; j++) {
+                soma += matriz[i][j];
+            }
+            vetorSomas[i] = soma;
+        }
+
+        // Imprimindo o vetor com as somas
+        System.out.println("Soma de cada linha:");
+        for (int i = 0; i < M; i++) {
+            System.out.printf("Linha %d: %d\n", i, vetorSomas[i]);
+        }
+    }
+}
+```
+
+**Saída Esperada:**
+
+```
+Soma de cada linha:
+Linha 0: 25
+Linha 1: 17
+Linha 2: 20
 ```
 
 ### 🛠️ Como Executar no VS Code e IntelliJ IDEA
@@ -194,14 +222,14 @@ Você pode compilar e executar todos os exemplos de código acima em qualquer um
 #### No Visual Studio Code
 
 1.  **Instale o Pacote de Extensões para Java**: Na aba de Extensões (`Ctrl+Shift+X`), procure por `Extension Pack for Java` da Microsoft e instale-o.
-2.  **Crie o Arquivo**: Crie um novo arquivo com a extensão `.java` (ex: `LerVetor.java`).
+2.  **Crie o Arquivo**: Crie um novo arquivo com a extensão `.java` (ex: `LerMatriz.java`).
 3.  **Cole o Código**: Copie e cole um dos exemplos no arquivo.
 4.  **Execute**: Um botão **"Run"** aparecerá acima do método `main`. Clique nele para compilar e executar o código. A saída aparecerá no terminal integrado.
 
 #### Na IntelliJ IDEA
 
 1.  **Crie um Novo Projeto**: Vá em `File > New > Project`. Escolha `Java` e a versão do JDK.
-2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `AnaliseAlturas`).
+2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `SomaLinhasMatriz`).
 3.  **Cole o Código**: Copie e cole o código correspondente na classe criada.
 4.  **Execute**: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione **Run 'NomeDaClasse.main()'**. A saída aparecerá na aba "Run" na parte inferior da IDE.
 

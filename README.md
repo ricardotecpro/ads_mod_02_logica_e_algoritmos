@@ -3,37 +3,36 @@
 O curso está estruturado para levar você do básico da lógica de programação até a implementação em várias linguagens populares.
 
 #### **🧠 Módulo 1: Algoritmos e Lógica de Programação (com Portugol Studio VisualG Scratch)**
-* **1. [Apresentação do Curso](topicos/01_conteudo_do_curso.md)** 🎬
-* **2. [Conceitos de Programação](topicos/02_introducao_a_programacao.md)** 🤔
-* **3. [Estrutura Sequencial](topicos/03_estrutura_sequencial.md)** ➡️
-* **4. [Estrutura Condicional](topicos/04_estrutura_condicional.md)** 🔀
-* **5. [Estruturas Repetitivas](topicos/05_estruturas_repetitivas.md)** 🔁
-* **6. [Vetores](topicos/06_vetores.md)** 📏
-* **7. [Matrizes](topicos/07_matrizes.md)** 🔢
-* **8. [Funções](topicos/08_funcoes.md)** 🧩
+* **00. [Apresentação do Curso](topicos/01_conteudo_do_curso.md)** 🎬
+* **01. [Conceitos de Programação](topicos/02_introducao_a_programacao.md)** 🤔
+* **02. [Estrutura Sequencial](topicos/03_estrutura_sequencial.md)** ➡️
+* **03. [Estrutura Condicional](topicos/04_estrutura_condicional.md)** 🔀
+* **04. [Estruturas Repetitivas](topicos/05_estruturas_repetitivas.md)** 🔁
+* **05. [Vetores](topicos/06_vetores.md)** 📏
+* **06. [Matrizes](topicos/07_matrizes.md)** 🔢
+* **07. [Funções](topicos/08_funcoes.md)** 🧩
 
 #### **⌨️ Módulo 2: Linguagens de Programação**
-* **09. [Linguagem C](topicos/09_linguagem_c.md)**
-* **10. [Linguagem C++](topicos/10_linguagem_cpp.md)**
-* **11. [Linguagem Java](topicos/11_linguagem_java.md)**
-* **12. [Linguagem C#](topicos/12_linguagem_csharp.md)** ☕
-* **13. [Linguagem Python](topicos/13_linguagem_python.md)** 💎
-* **14. [Linguagem JavaScript](topicos/14_linguagem_javascript.md)** 🐍
-* **15. [Linguagem Rust](topicos/15_linguagem_rust.md)**
-* **16. [Linguagem Dart](topicos/16_linguagem_dart.md)**
-* **17. [Linguagem GO](topicos/17_linguagem_go.md)**
-* **18. [Linguagem PHP](topicos/18_linguagem_php.md)**
+* **08. [Linguagem C / C++](topicos/09_linguagem_c.md)**
+* **09. [Linguagem Java](topicos/11_linguagem_java.md)**
+* **10. [Linguagem C# / F#](topicos/12_linguagem_csharp.md)** ☕
+* **11. [Linguagem Python](topicos/13_linguagem_python.md)** 💎
+* **12. [Linguagem JavaScript / TypeScript](topicos/14_linguagem_javascript.md)** 🐍
+* **13. [Linguagem Rust](topicos/15_linguagem_rust.md)**
+* **14. [Linguagem Dart / Flutter](topicos/16_linguagem_dart.md)**
+* **15. [Linguagem GO](topicos/17_linguagem_go.md)**
+* **16. [Linguagem PHP](topicos/18_linguagem_php.md)**
 
 #### **⌨️ Módulo 3: Frameworks**
  
-* **19. [SpringBoot]**
-* **22. [Angular]**
-* **21. [React]**
-* **19. [Kotlin MP]**
-* **20. [Flutter]**
-* **21. [Laravel]**
-* 
-* **Express
+* **17. [SpringBoot]**
+* **18. [Angular]**
+* **19. [React / React Native]**
+* **20. [Kotlin MP]**
+* **21. [Flutter]**
+* **22. [Laravel]**
+* **23. [Express]**
+
 
 #### ⌨️ **Módulo 4: Ferramentas**
 

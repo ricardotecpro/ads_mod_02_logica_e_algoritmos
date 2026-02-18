@@ -1,323 +1,388 @@
-# 🎓 Introdução à Programação
+# 🚀 Estrutura Sequencial em Programação
 
-Este guia aborda os conceitos fundamentais da programação, desde a definição de um algoritmo até as ferramentas necessárias para criar seu primeiro programa.
+Este capítulo aborda os conceitos fundamentais da **estrutura sequencial**, a base para a construção de qualquer algoritmo. Nela, os comandos são executados em uma sequência lógica, um após o outro, de cima para baixo.
 
-## 🤖 Algoritmo, Automação e Programas
+## 🤔 O que é a Estrutura Sequencial?
 
-### O que é um Algoritmo? 🤔
+A "estrutura sequencial" recebe esse nome para destacar que as instruções de um algoritmo são executadas em uma ordem predefinida, passo a passo. Um algoritmo só funciona corretamente se seus comandos seguirem uma sequência lógica.
 
-Um **algoritmo** é uma **sequência finita e lógica de instruções** para resolver um problema específico. Embora o termo seja muito comum em computação, ele se aplica a diversas outras áreas do conhecimento.
+Imagine que você precisa calcular a soma de dois números. Primeiro, você precisa conhecer esses números e, só depois, realizar a soma.
 
-Pense em uma receita de bolo 🎂: ela é um algoritmo. Você segue passos definidos (`misturar ingredientes`, `assar por 30 minutos`) para chegar a um resultado esperado.
-
-**Exemplo prático: Lavar roupa 🧺**
-
-Para o problema "lavar roupa suja", um algoritmo simples seria:
-
-1.  Colocar a roupa em um recipiente (como uma máquina de lavar).
-2.  Adicionar sabão e amaciante.
-3.  Encher com água.
-4.  Deixar de molho por 20 minutos.
-5.  Esfregar a roupa (ou deixar a máquina fazer isso).
-6.  Enxaguar para remover o sabão.
-7.  Torcer para retirar o excesso de água.
-
-
-```mermaid
-graph TD
-    A[Início: Roupa Suja] --> B{Colocar na Máquina};
-    B --> C[Adicionar Sabão/Amaciante];
-    C --> D[Encher com Água];
-    
-    D --> E["Deixar de Molho (20 min)"];
-    E --> F["Esfregar/Lavar (Máquina)"];
-    F --> G[Enxaguar];
-    G --> H[Torcer];
-    H --> I[Estender no Varal];
-    I --> J[Recolher Roupa Seca];
-    J --> K[Dobrar e Guardar];
-    K --> L[Fim: Roupa Limpa];
-```    
-
-### O que é Automação? ⚙️
-
-**Automação** é o processo de usar máquinas para executar as tarefas de um algoritmo de forma automática ou semiautomática. Usar uma máquina de lavar, por exemplo, automatiza quase todo o algoritmo de lavar roupas.
-
-### A Relação com Computadores 💻
-
-O computador é a principal ferramenta de automação para o processamento de informações. Ele é composto por duas partes:
-
-  * **Hardware**: A parte física, ou seja, a máquina em si (processador, memória, tela, teclado).
-  * **Software**: A parte lógica, que são os programas e dados, incluindo o Sistema Operacional e os aplicativos.
-
-> **Um programa de computador é um algoritmo escrito de forma que o computador consiga entender e executar, automatizando a solução de um problema.**
-
-Contudo, computadores são especializados em **algoritmos computacionais**, que envolvem principalmente o **processamento de dados** e **cálculos matemáticos**.
-
-## 🛠️ Ferramentas Essenciais para Programar
-
-Para criar um programa de computador, você precisará de algumas ferramentas básicas:
-
-1.  **Linguagem de Programação**: Um conjunto de regras para escrever as instruções que o computador seguirá.
-2.  **IDE (Ambiente de Desenvolvimento Integrado)**: Um software que facilita a escrita, o teste e a depuração do código.
-3.  **Compilador ou Interpretador**: Um programa que "traduz" seu código para a linguagem que a máquina entende.
-
------
-
-## 📜 Linguagens de Programação
-
-Uma linguagem de programação possui regras **léxicas** (ortografia das palavras) e **sintáticas** (gramática das frases).
-
-  * **Léxica**: Refere-se à grafia correta das palavras. Exemplo: `main` está correto, `maim` está incorreto.
-  * **Sintática**: Refere-se à organização correta das palavras. Exemplo: `x = 10 + y;` está correto, `x = + 10 y;` está incorreto.
-
-Existem muitas linguagens populares, como: **C, C++, Java, C\#, Python, Ruby, PHP e JavaScript**.
-
-### 📝 Exemplo 1: Média de Notas
-
-Este programa solicita o nome e duas notas de um aluno e, em seguida, calcula e exibe a média.
-
-#### Solução em Linguagem C
-
-```c
-#include <stdio.h>
-
-int main() {
-    char nome[50];
-    double nota1, nota2, media;
-
-    printf("Digite o nome do aluno: ");
-    scanf("%s", nome);
-
-    printf("Digite a primeira nota: ");
-    scanf("%lf", &nota1);
-
-    printf("Digite a segunda nota: ");
-    scanf("%lf", &nota2);
-
-    media = (nota1 + nota2) / 2.0;
-
-    printf("A média do(a) aluno(a) %s é: %.2f\n", nome, media);
-
-    return 0;
-}
-```
-
-#### Solução em Linguagem Java ☕
+**Exemplo da ordem correta:**
 
 ```java
-import java.util.Locale;
-import java.util.Scanner;
+// 1. Atribui o valor 15 à variável x
+int x = 15;
+
+// 2. Atribui o valor 25 à variável y
+int y = 25;
+
+// 3. Soma x e y e guarda o resultado
+int soma = x + y; // Correto!
+```
+
+Se a ordem for invertida, o programa tentará somar variáveis que ainda não têm valor, resultando em um erro.
+
+**Exemplo da ordem incorreta:**
+
+```java
+// 1. Tenta somar x e y, que ainda não foram definidos
+int soma = x + y; // Errado!
+
+// 2. Só depois define os valores
+int x = 15;
+int y = 25;
+```
+
+## 💻 As Três Operações Fundamentais
+
+Um programa de computador, em sua essência, realiza três operações básicas:
+
+- **Entrada de dados**: Receber informações do usuário ou de outra fonte.
+- **Processamento de dados**: Realizar cálculos e manipular as informações recebidas.
+- **Saída de dados**: Apresentar os resultados para o usuário.
+
+## 📦 Variáveis e Tipos de Dados
+
+Para um programa funcionar, ele precisa armazenar e manipular dados. Esses dados são guardados em **variáveis**.
+
+De forma simplificada, uma variável é um "espaço" na memória RAM do computador reservado para armazenar um dado durante a execução do programa.
+
+### 📜 Declaração de Variáveis
+
+Cada variável possui:
+
+- **Nome** (ou identificador): Para que possamos nos referir a ela.
+- **Tipo**: Define que tipo de dado ela pode armazenar (número, texto, etc.).
+- **Valor**: O dado que está armazenado nela.
+- **Endereço**: Sua localização na memória.
+
+Em Java, a sintaxe de declaração é:
+
+```java
+<tipo> <nome>;
+
+// Exemplos
+int idade;
+double altura;
+String nome;
+```
+
+### 🏷️ Nomenclatura de Variáveis (Boas Práticas)
+
+Para manter o código legível e funcional, siga estas regras ao nomear variáveis:
+
+- **Não pode começar com dígito**: Use uma letra ou o caractere `_`.
+- **Não pode ter espaços em branco**.
+- **Não use acentos ou caracteres especiais** (como `ç` ou `~`).
+- **Use o padrão "Camel Case"**: A primeira palavra começa com letra minúscula e as palavras seguintes começam com maiúscula.
+
+| Errado | Correto |
+| :--- | :--- |
+| `int 5minutos;` | `int cincoMinutos;` |
+| `double salário;` | `double salario;` |
+| `String nome do funcionario;` | `String nomeDoFuncionario;` |
+
+### 📊 Tipos de Dados Primitivos em Java
+
+Estes são os tipos de dados mais comuns que você usará:
+
+| Tipo | Descrição | Exemplo de Valor |
+| :--- | :--- |
+| `int` | Armazena números inteiros. | `35` |
+| `double` | Armazena números com ponto flutuante (decimais). | `1.75` |
+| `char` | Armazena um único caractere. | `'M'` |
+| `String`| Armazena sequências de caracteres (texto). | `"Maria da Silva"` |
+| `boolean`| Armazena um valor lógico de verdade. | `true` ou `false` |
+
+## ⚙️ Processamento de Dados
+
+O processamento ocorre quando o programa realiza cálculos ou manipula dados. A principal ferramenta para isso é o **comando de atribuição**, representado pelo sinal de igual (`=`) em Java.
+
+**Sintaxe:** `<variável> = <expressão>;`
+
+A regra é simples:
+
+1.  A expressão à direita do `=` é totalmente calculada.
+2.  O resultado final é armazenado na variável à esquerda.
+
+### ➕ Expressões Aritméticas
+
+São combinações de números, variáveis e operadores que resultam em um valor numérico.
+
+**Operadores Aritméticos em Java:**
+
+| Operador | Significado |
+| :--- | :--- |
+| `+` | Adição |
+| `-` | Subtração |
+| `*` | Multiplicação |
+| `/` | Divisão |
+| `%` | Módulo (resto da divisão inteira) |
+
+**Ordem de Precedência:**
+
+1.  `*`, `/`, `%` (são avaliados primeiro, da esquerda para a direita)
+2.  `+`, `-` (são avaliados por último, da esquerda para a direita)
+
+*Use parênteses `()` para forçar uma ordem de cálculo diferente.*
+
+**Exemplos de Expressões:**
+
+- `5 + 3 * 2` → `5 + 6` → **Resultado: 11**
+- `(5 + 3) * 2` → `8 * 2` → **Resultado: 16**
+- `70 / (5 + 2) * 4` → `70 / 7 * 4` → `10 * 4` → **Resultado: 40**
+- `15 % 4` (15 dividido por 4 dá 3 e sobra 3) → **Resultado: 3**
+
+## 🖥️ Saída de Dados
+
+A saída de dados é como o programa apresenta informações e resultados ao usuário, geralmente na tela (console). Em Java, usamos os seguintes comandos:
+
+- `System.out.println()`: Escreve o conteúdo na tela e **salta para a próxima linha**.
+- `System.out.print()`: Escreve o conteúdo na tela e **permanece na mesma linha**.
+
+### Exemplo Prático: Ficha de Cadastro
+
+Vamos criar variáveis, atribuir valores e exibi-las de forma organizada.
+
+```java
+// Declarando e inicializando as variáveis
+String produto1 = "Smartphone";
+String produto2 = "Notebook";
+
+double preco1 = 2500.99;
+double preco2 = 4250.00;
+
+int idade = 25;
+int codigo = 1024;
+char genero = 'M';
+
+// Exibindo os dados na tela
+System.out.println("Produtos:");
+System.out.printf("O produto %s custa R$ %.2f\n", produto1, preco1);
+System.out.printf("O produto %s custa R$ %.2f\n", produto2, preco2);
+System.out.println(); // Pula uma linha em branco
+System.out.println("Código = " + codigo);
+System.out.println(); // Pula uma linha em branco
+System.out.println("Dados da pessoa: gênero " + genero + " e idade " + idade);
+```
+
+**Saída Esperada:**
+
+```
+Produtos:
+O produto Smartphone custa R$ 2500,99
+O produto Notebook custa R$ 4250,00
+
+Código = 1024
+
+Dados da pessoa: gênero M e idade 25
+```
+
+> **Nota:** Usamos `System.out.printf()` para formatar os preços com duas casas decimais. `%.2f` é um especificador que formata um número de ponto flutuante (`f`) com duas casas decimais (`.2`), e `\n` quebra a linha.
+
+## ⌨️ Entrada de Dados
+
+A entrada de dados permite que o programa se torne interativo, lendo informações digitadas pelo usuário no teclado. Em Java, a forma mais comum de fazer isso é usando a classe `Scanner`.
+
+Primeiro, você precisa importar a classe e criar um objeto `Scanner`:
+
+```java
+import java.util.Scanner; // Importação necessária
 
 public class Programa {
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in); // Cria o objeto Scanner
+
+        // Agora você pode ler os dados
+        // ...
+
+        sc.close(); // Boa prática: fechar o scanner ao final
+    }
+}
+```
+
+### Lendo Diferentes Tipos de Dados
+
+```java
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Digite seu nome: ");
+String nome = sc.nextLine(); // Lê uma linha de texto
+
+System.out.print("Digite sua idade: ");
+int idade = sc.nextInt(); // Lê um número inteiro
+
+System.out.print("Digite seu salário: ");
+double salario = sc.nextDouble(); // Lê um número double
+
+System.out.println("DADOS DIGITADOS:");
+System.out.println("Nome: " + nome);
+System.out.println("Idade: " + idade);
+System.out.printf("Salário: R$ %.2f\n", salario);
+
+sc.close();
+```
+
+> **Atenção:** Ao ler um número (`nextInt` ou `nextDouble`) e depois um texto com `nextLine`, uma quebra de linha "invisível" pode ser consumida pelo `nextLine`, causando um pulo indesejado. Para corrigir, consuma essa quebra de linha extra com um `sc.nextLine()` adicional antes de ler o texto.
+
+## 🧮 Funções Matemáticas em Java
+
+Java oferece a classe `Math` com diversas funções matemáticas prontas para uso.
+
+| Exemplo em Java | Significado |
+| :--- | :--- |
+| `A = Math.sqrt(x);` | A variável `A` recebe a raiz quadrada de `x`. |
+| `A = Math.pow(x, y);` | A variável `A` recebe o resultado de `x` elevado a `y`. |
+| `A = Math.abs(x);` | A variável `A` recebe o valor absoluto (positivo) de `x`. |
+| `A = Math.PI;` | A variável `A` recebe o valor de Pi (3.14159...). |
+
+### Exemplo: Fórmula de Bhaskara
+
+Para calcular as raízes de uma equação de segundo grau ($$ax^2 + bx + c = 0$$), usamos as funções da classe `Math`.
+
+$$ \Delta = b^2 - 4ac $$
+$$ x = \frac{-b \pm \sqrt{\Delta}}{2a} $$
+
+```java
+double a = 1.0, b = -3.0, c = -4.0;
+
+double delta = Math.pow(b, 2.0) - 4 * a * c;
+double x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
+double x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
+
+System.out.println("Delta = " + delta);   // Saída: Delta = 25.0
+System.out.println("x1 = " + x1);       // Saída: x1 = 4.0
+System.out.println("x2 = " + x2);       // Saída: x2 = -1.0
+```
+
+## ✍️ Exercícios Práticos Resolvidos em Java
+
+Vamos aplicar tudo o que aprendemos em alguns problemas práticos.
+
+### Exercício 1: Cálculo de Área de Terreno
+
+**Problema:** Fazer um programa que leia a largura e o comprimento de um terreno retangular, e também o valor do metro quadrado. Em seguida, o programa deve mostrar o valor da área do terreno e o valor do preço do terreno, ambos com duas casas decimais.
+
+**Fórmulas:**
+
+- `área = largura × comprimento`
+- `preço = área × preço do metro quadrado`
+
+**Solução em Java:**
+
+```java
+package curso;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Terreno {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US); // Para usar o ponto como separador decimal
         Scanner sc = new Scanner(System.in);
 
-        String nome;
-        double nota1, nota2, media;
+        System.out.print("Digite a largura do terreno: ");
+        double largura = sc.nextDouble();
 
-        System.out.print("Digite o nome do aluno: ");
-        nome = sc.nextLine();
+        System.out.print("Digite o comprimento do terreno: ");
+        double comprimento = sc.nextDouble();
 
-        System.out.print("Digite a primeira nota: ");
-        nota1 = sc.nextDouble();
+        System.out.print("Digite o valor do metro quadrado: ");
+        double valorMetroQuadrado = sc.nextDouble();
 
-        System.out.print("Digite a segunda nota: ");
-        nota2 = sc.nextDouble();
+        double area = largura * comprimento;
+        double preco = area * valorMetroQuadrado;
 
-        media = (nota1 + nota2) / 2.0;
-
-        System.out.printf("A média do(a) aluno(a) %s é: %.2f\n", nome, media);
+        System.out.printf("Área do terreno = %.2f\n", area);
+        System.out.printf("Preço do terreno = %.2f\n", preco);
 
         sc.close();
     }
 }
 ```
 
-### 📝 Exemplo 2: Área de um Retângulo
-
-Este programa calcula a área de um retângulo com base nos valores de base e altura fornecidos.
-
-#### Solução em Linguagem C++
-
-```cpp
-#include <iostream>
-#include <iomanip>
-
-int main() {
-    double base, altura, area;
-
-    std::cout << "Digite o valor da base: ";
-    std::cin >> base;
-
-    std::cout << "Digite o valor da altura: ";
-    std::cin >> altura;
-
-    area = base * altura;
-
-    std::cout << "A área do retângulo é: " << std::fixed << std::setprecision(2) << area << std::endl;
-
-    return 0;
-}
-```
-
-**Saída Esperada:**
+**Exemplo de Execução:**
 
 ```
-Digite o valor da base: 10.0
-Digite o valor da altura: 5.0
-A área do retângulo é: 50.00
+Digite a largura do terreno: 15.0
+Digite o comprimento do terreno: 40.0
+Digite o valor do metro quadrado: 500.0
+Área do terreno = 600.00
+Preço do terreno = 300000.00
 ```
 
-#### Solução em Linguagem C\# 💎
+### Exercício 2: Medidas de um Retângulo
 
-```csharp
-using System;
-using System.Globalization;
+**Problema:** Fazer um programa para ler as medidas da base e da altura de um retângulo. Em seguida, mostrar o valor da área, do perímetro e da diagonal deste retângulo, com quatro casas decimais.
 
-namespace Curso {
-    class Programa {
-        static void Main(string[] args) {
-            double baseRet, altura, area;
+**Fórmulas:**
 
-            Console.Write("Digite o valor da base: ");
-            baseRet = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+- `área = base × altura`
+- `perímetro = 2 × (base + altura)`
+- `diagonal = √(base² + altura²)`
 
-            Console.Write("Digite o valor da altura: ");
-            altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+**Solução em Java:**
 
-            area = baseRet * altura;
+```java
+package curso;
 
-            Console.WriteLine("A área do retângulo é: " + area.ToString("F2", CultureInfo.InvariantCulture));
-        }
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Retangulo {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a base do retângulo: ");
+        double base = sc.nextDouble();
+
+        System.out.print("Digite a altura do retângulo: ");
+        double altura = sc.nextDouble();
+
+        double area = base * altura;
+        double perimetro = 2 * (base + altura);
+        double diagonal = Math.sqrt(Math.pow(base, 2.0) + Math.pow(altura, 2.0));
+
+        System.out.printf("ÁREA = %.4f\n", area);
+        System.out.printf("PERÍMETRO = %.4f\n", perimetro);
+        System.out.printf("DIAGONAL = %.4f\n", diagonal);
+
+        sc.close();
     }
 }
 ```
 
-**Saída Esperada:**
+**Exemplo de Execução:**
 
 ```
-Digite o valor da base: 10.0
-Digite o valor da altura: 5.0
-A área do retângulo é: 50.00
+Digite a base do retângulo: 6.0
+Digite a altura do retângulo: 8.0
+ÁREA = 48.0000
+PERÍMETRO = 28.0000
+DIAGONAL = 10.0000
 ```
 
-## 💻 IDEs (Ambientes de Desenvolvimento Integrado)
+### 🛠️ Como Executar no VS Code e IntelliJ IDEA
 
-Uma **IDE** é um programa que reúne diversas ferramentas para facilitar a vida do desenvolvedor. Funcionalidades comuns incluem edição de código avançada, depuração (`debugging`) e automação de compilação.
+Você pode compilar e executar todos os exemplos de código acima em qualquer uma das IDEs modernas.
 
-**IDEs Populares por Linguagem:**
+#### No Visual Studio Code
 
-  * **Java**: **IntelliJ IDEA** e **VS Code** (com o *Extension Pack for Java*).
-  * **C\#**: **Microsoft Visual Studio** e **VS Code** (com a extensão C\#).
-  * **C/C++**: **VS Code** (com extensões C/C++) e **CLion**.
+1.  **Instale o Pacote de Extensões para Java**: Na aba de Extensões (`Ctrl+Shift+X`), procure por `Extension Pack for Java` da Microsoft e instale-o.
+2.  **Crie o Arquivo**: Crie um novo arquivo com a extensão `.java` (ex: `Terreno.java`).
+3.  **Cole o Código**: Copie e cole um dos exemplos no arquivo.
+4.  **Execute**: Um botão **"Run"** aparecerá acima do método `main`. Clique nele para compilar e executar o código. A saída aparecerá no terminal integrado.
 
-## ⚙️ Compilação vs. Interpretação
+#### Na IntelliJ IDEA
 
-Para que um computador execute um programa, o **código-fonte** (o que você escreve) precisa ser traduzido. Existem três abordagens principais:
-
-### 1\. Compilação
-
-Um **Compilador** traduz todo o código-fonte de uma vez, gerando um **código executável**.
-
-  * **Vantagens**: Execução muito rápida 🚀.
-  * **Linguagens Típicas**: **C**, **C++**.
-
-### 2\. Interpretação
-
-Um **Interpretador** lê e executa o código-fonte linha por linha.
-
-  * **Vantagens**: Mais flexível, o mesmo código roda em qualquer plataforma 🌐.
-  * **Linguagens Típicas**: **PHP**, **JavaScript**, **Python**, **Ruby**.
-
-### 3\. Abordagem Híbrida
-
-O código-fonte é pré-compilado para um código intermediário chamado **Bytecode**, que é então interpretado por uma **Máquina Virtual (VM)**.
-
-  * **Vantagens**: Portabilidade e bom desempenho.
-  * **Linguagens Típicas**: **Java** (com a JVM), **C\#** (com o .NET).
-
-## Portugol e Ferramentas de Aprendizagem
-
-Para focar no aprendizado da **lógica do algoritmo** sem a complexidade de uma linguagem real, utiliza-se o **Portugol**. É uma pseudo-linguagem didática com sintaxe simplificada e em português.
-
-**Atenção**: Portugol é uma linguagem para aprender, não para criar programas comerciais.
-
-Existem IDEs simples para escrever e testar algoritmos em Portugol:
-
-  * **VisualG**: Uma ferramenta clássica e leve.
-  * **Portugol Studio**: Uma alternativa mais moderna e com mais recursos. Você pode encontrá-lo em `portugol.dev`.
-
-### Exemplo em VisualG
-
-```visualg
-algoritmo "CalculoMedia"
-
-// Área de declaração de variáveis
-var
-   nome: caractere
-   nota1, nota2, media: real
-
-// Corpo do algoritmo
-inicio
-   escreval("Digite o nome do aluno: ")
-   leia(nome)
-   
-   escreval("Digite a primeira nota: ")
-   leia(nota1)
-   
-   escreval("Digite a segunda nota: ")
-   leia(nota2)
-   
-   media <- (nota1 + nota2) / 2
-   
-   escreval("A média do(a) aluno(a) ", nome, " é: ", media)
-
-fimalgoritmo
-```
-
-As principais diferenças são a estrutura do programa (`programa { ... }`), a declaração de variáveis dentro da função e o operador de atribuição (`=` em vez de `<-`).
-
-### Exemplo em Portugol Studio
-
-```portugol
-programa
-{
-	// A função 'inicio' é o ponto de entrada do programa.
-	funcao inicio()
-	{
-		// Área de declaração de variáveis
-		cadeia nome
-		real nota1, nota2, media
-
-		// Corpo do algoritmo (Entrada, Processamento e Saída de Dados)
-		escreva("Digite o nome do aluno(a): ")
-		leia(nome)
-		
-		escreva("Digite a primeira nota: ")
-		leia(nota1)
-		
-		escreva("Digite a segunda nota: ")
-		leia(nota2)
-		
-		// Processamento: calcula a média
-		media = (nota1 + nota2) / 2
-		
-		// Saída: exibe o resultado formatado
-		escreva("\nA média do(a) aluno(a) ", nome, " é: ", media)
-	}
-}
-```
-
-**Principais Mudanças e Explicações:**
-
-1.  **Estrutura:** O Portugol Studio usa uma estrutura de blocos com chaves `{}`. O programa inteiro é envolvido por `programa { ... }`.
-2.  **Função Principal:** Todo o código executável deve estar dentro da função `funcao inicio() { ... }`.
-3.  **Declaração de Variáveis:** As variáveis são declaradas no início da função onde serão usadas, não em um bloco `var` separado.
-4.  **Tipos de Dados:** O tipo `caractere` do VisualG corresponde ao tipo `cadeia` no Portugol Studio. O tipo `real` é o mesmo.
-5.  **Atribuição:** O operador para atribuir um valor a uma variável é o sinal de igual (`=`), e não a seta (`<-`).
-6.  **Comandos de Escrita:** O comando `escreval` do VisualG é equivalente ao `escreva` do Portugol Studio. Ambos pulam uma linha ao final da escrita. O `\n` foi adicionado na última linha para dar um espaçamento extra antes da mensagem final, tornando a saída mais legível.
+1.  **Crie um Novo Projeto**: Vá em `File > New > Project`. Escolha `Java` e a versão do JDK.
+2.  **Crie uma Nova Classe**: Na janela de projeto, clique com o botão direito na pasta `src`, vá em `New > Java Class` e dê um nome à classe (ex: `Retangulo`).
+3.  **Cole o Código**: Copie e cole o código correspondente na classe criada.
+4.  **Execute**: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione **Run 'NomeDaClasse.main()'**. A saída aparecerá na aba "Run" na parte inferior da IDE.
 
 ---
 
