@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check answer
         const isCorrect = option.getAttribute('data-correct') === 'true';
         const feedbackText = option.getAttribute('data-feedback');
-        const quizItem = option.closest('.quiz-item');
-        console.log('Quiz Item found:', quizItem);
+        const quizItem = option.closest('.quiz-item') || option.closest('.quiz-container');
+        console.log('Quiz Container found:', quizItem);
         const feedbackEl = quizItem ? quizItem.querySelector('.quiz-feedback') : null;
         console.log('Feedback El found:', feedbackEl);
 
