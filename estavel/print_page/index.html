@@ -2168,7 +2168,7 @@ Acesse <a href="https://scratch.mit.edu">scratch.mit.edu</a> para criar conta.</
     Memoria[Memória RAM] --&gt; Var1[Gaveta 'IDADE'];
     Var1 --&gt; Val1[Valor: 25];
     Memoria --&gt; Var2[Gaveta 'NOME'];
-    Var2 --&gt; Val2[Valor: "Maria"];
+    Var2 --&gt; Val2["Valor: 'Maria'"];
 
     style Var1 fill:#f9f,stroke:#333;
     style Var2 fill:#bbf,stroke:#333;</code></pre>
@@ -2274,8 +2274,8 @@ Acesse <a href="https://scratch.mit.edu">scratch.mit.edu</a> para criar conta.</
     Ler --&gt; Decisão{Idade &gt;= 18?};
     Decisão -- "Sim (Verdadeiro)" --&gt; Aprov[Liberar Acesso];
     Decisão -- "Não (Falso)" --&gt; Bloq[Bloquear Acesso];
-    Aprov --&gt; Mensagem[/Mostrar "Bem-vindo"/];
-    Bloq --&gt; MensagemBloq[/Mostrar "Sai daqui"/];
+    Aprov --&gt; Mensagem[/Mostrar 'Bem-vindo'/];
+    Bloq --&gt; MensagemBloq[/Mostrar 'Sai daqui'/];
     Mensagem --&gt; Fim([Fim]);
     MensagemBloq --&gt; Fim;
 
@@ -2390,7 +2390,7 @@ As estruturas de repetição permitem executar um bloco de código várias vezes
 <h3 id="aulas-aula-05-visualizando-o-loop-mermaid">Visualizando o Loop (Mermaid)</h3>
 <pre class="mermaid"><code>graph TD;
     Inicio([Início]) --&gt; Cond{Contador &lt; 5?};
-    Cond -- Sim --&gt; Acao[Escrever "Olá"];
+    Cond -- Sim --&gt; Acao["Escrever 'Olá'"];
     Acao --&gt; Inc[Contador + 1];
     Inc --&gt; Cond;
     Cond -- Não --&gt; Fim([Fim]);
@@ -2663,8 +2663,8 @@ Se você criar uma variável <code>x</code> dentro da função <code>somar</code
 <p>Em C, você gerencia onde os dados ficam.</p>
 <pre class="mermaid"><code>graph TD;
     subgraph RAM
-    Stack[Stack (Pilha)] --- V[Variáveis Locais\nRápidas];
-    Heap[Heap (Monte)] --- D[Dados Dinâmicos\nLentos];
+    Stack["Stack (Pilha)"] --- V["Variáveis Locais\nRápidas"];
+    Heap["Heap (Monte)"] --- D["Dados Dinâmicos\nLentos"];
     end
     style Stack fill:#f9f;
     style Heap fill:#bbf;</code></pre>
@@ -2989,7 +2989,7 @@ Na Orientação a Objetos (OO), focamos em <strong>coisas</strong> (objetos).</p
 O segredo? <strong>Ownership</strong> (Propriedade).</p>
 <h3 id="aulas-aula-14-visualizando-ownership-mermaid">Visualizando Ownership (Mermaid)</h3>
 <pre class="mermaid"><code>graph LR;
-    A["Variável A\n(Dona do Dado)"] --&gt;|Mover (Move)| B["Variável B\n(Nova Dona)"];
+    A["Variável A\n(Dona do Dado)"] -- "Mover (Move)" --&gt; B["Variável B\n(Nova Dona)"];
     style A fill:#f9f,stroke:#333;
     style B fill:#bbf,stroke:#333;
 
@@ -3054,11 +3054,11 @@ Para criar apps, temos dois caminhos:</p>
 <h3 id="aulas-aula-15-visualizando-a-arvore-de-widgets-fluttermermaid">Visualizando a Árvore de Widgets (Flutter/Mermaid)</h3>
 <p>Em Flutter, TUDO é um Widget (um pedaço da tela). Eles se organizam como uma árvore.</p>
 <pre class="mermaid"><code>graph TD;
-    App[MaterialApp] --&gt; Home[Scaffold (Tela Principal)];
+    App[MaterialApp] --&gt; Home["Scaffold (Tela Principal)"];
     Home --&gt; AppBar[Barra Superior];
     Home --&gt; Body[Corpo: Coluna];
-    Body --&gt; Text1[Texto 'Olá'];
-    Body --&gt; Button[Botão 'Clique'];
+    Body --&gt; Text1["Texto 'Olá'"];
+    Body --&gt; Button["Botão 'Clique'"];
 
     style App fill:#f9f;
     style Home fill:#bbf;</code></pre>
