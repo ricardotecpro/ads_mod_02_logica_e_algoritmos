@@ -19,8 +19,8 @@ graph TD;
     Ler --> Decisão{Idade >= 18?};
     Decisão -- "Sim (Verdadeiro)" --> Aprov[Liberar Acesso];
     Decisão -- "Não (Falso)" --> Bloq[Bloquear Acesso];
-    Aprov --> Mensagem[/Mostrar "Bem-vindo"/];
-    Bloq --> MensagemBloq[/Mostrar "Sai daqui"/];
+    Aprov --> Mensagem[/Mostrar 'Bem-vindo'/];
+    Bloq --> MensagemBloq[/Mostrar 'Sai daqui'/];
     Mensagem --> Fim([Fim]);
     MensagemBloq --> Fim;
     
