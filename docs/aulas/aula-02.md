@@ -11,8 +11,8 @@ Você escreve texto, mas o computador entende energia (0 e 1). Como essa mágica
 
 ```mermaid
 graph LR;
-    A[Código Fonte\n(Humano)] -->|Compilador/Interpretador| B[Código de Máquina\n(Binário)];
-    B -->|CPU| C[Execução\n(Ação)];
+    A["Código Fonte\n(Humano)"] -->|Compilador/Interpretador| B["Código de Máquina\n(Binário)"];
+    B -->|CPU| C["Execução\n(Ação)"];
     style A fill:#f9f,stroke:#333;
     style B fill:#bbf,stroke:#333;
     style C fill:#bfb,stroke:#333;

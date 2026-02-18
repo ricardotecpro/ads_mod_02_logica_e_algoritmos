@@ -17,8 +17,8 @@ Até agora, nossos programas eram uma linha reta. Mas a vida é cheia de "Se":
 graph TD;
     Início([Início]) --> Ler[/Ler Idade/];
     Ler --> Decisão{Idade >= 18?};
-    Decisão -- Sim (Verdadeiro) --> Aprov[Liberar Acesso];
-    Decisão -- Não (Falso) --> Bloq[Bloquear Acesso];
+    Decisão -- "Sim (Verdadeiro)" --> Aprov[Liberar Acesso];
+    Decisão -- "Não (Falso)" --> Bloq[Bloquear Acesso];
     Aprov --> Mensagem[/Mostrar "Bem-vindo"/];
     Bloq --> MensagemBloq[/Mostrar "Sai daqui"/];
     Mensagem --> Fim([Fim]);
