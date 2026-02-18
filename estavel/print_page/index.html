@@ -2088,8 +2088,8 @@ Clique no botão abaixo e inicie sua jornada!</p>
 <h2 id="aulas-aula-02-1-o-ciclo-de-vida-do-codigo">1. O Ciclo de Vida do Código 🔄</h2>
 <p>Você escreve texto, mas o computador entende energia (0 e 1). Como essa mágica acontece?</p>
 <pre class="mermaid"><code>graph LR;
-    A[Código Fonte\n(Humano)] --&gt;|Compilador/Interpretador| B[Código de Máquina\n(Binário)];
-    B --&gt;|CPU| C[Execução\n(Ação)];
+    A["Código Fonte\n(Humano)"] --&gt;|Compilador/Interpretador| B["Código de Máquina\n(Binário)"];
+    B --&gt;|CPU| C["Execução\n(Ação)"];
     style A fill:#f9f,stroke:#333;
     style B fill:#bbf,stroke:#333;
     style C fill:#bfb,stroke:#333;</code></pre>
@@ -2272,8 +2272,8 @@ Acesse <a href="https://scratch.mit.edu">scratch.mit.edu</a> para criar conta.</
 <pre class="mermaid"><code>graph TD;
     Início([Início]) --&gt; Ler[/Ler Idade/];
     Ler --&gt; Decisão{Idade &gt;= 18?};
-    Decisão -- Sim (Verdadeiro) --&gt; Aprov[Liberar Acesso];
-    Decisão -- Não (Falso) --&gt; Bloq[Bloquear Acesso];
+    Decisão -- "Sim (Verdadeiro)" --&gt; Aprov[Liberar Acesso];
+    Decisão -- "Não (Falso)" --&gt; Bloq[Bloquear Acesso];
     Aprov --&gt; Mensagem[/Mostrar "Bem-vindo"/];
     Bloq --&gt; MensagemBloq[/Mostrar "Sai daqui"/];
     Mensagem --&gt; Fim([Fim]);
@@ -2989,11 +2989,11 @@ Na Orientação a Objetos (OO), focamos em <strong>coisas</strong> (objetos).</p
 O segredo? <strong>Ownership</strong> (Propriedade).</p>
 <h3 id="aulas-aula-14-visualizando-ownership-mermaid">Visualizando Ownership (Mermaid)</h3>
 <pre class="mermaid"><code>graph LR;
-    A[Variável A\n(Dona do Dado)] --&gt;|Mover (Move)| B[Variável B\n(Nova Dona)];
+    A["Variável A\n(Dona do Dado)"] --&gt;|Mover (Move)| B["Variável B\n(Nova Dona)"];
     style A fill:#f9f,stroke:#333;
     style B fill:#bbf,stroke:#333;
 
-    NoteA[A não pode mais\nusar o dado!] --- A</code></pre>
+    NoteA["A não pode mais\nusar o dado!"] --- A</code></pre>
 <div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#aulas-aula-14-__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">::</span><span class="n">from</span><span class="p">(</span><span class="s">"Olá"</span><span class="p">);</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#aulas-aula-14-__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 'a' moveu para 'b'</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#aulas-aula-14-__codelineno-0-3"></a><span class="c1">// println!("{}", a); // ERRO! 'a' não existe mais.</span>
