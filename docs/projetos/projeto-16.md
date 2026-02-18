@@ -1,19 +1,37 @@
-# Projeto 16 - Mural de Recados (Milestone 4) 🐘
+# Projeto 16 - Mural Fullstack (Milestone Final) 🏆
 
-**Objetivo**: O Projeto Final - Fullstack Básico.
+## O Desafio 🎯
+Você chegou ao topo. É hora de conectar tudo. O projeto final é um "Mural de Recados Anônimos" (estilo Twitter antigo/Orkut).
 
-## O Desafio
-Criar um sistema onde qualquer pessoa pode deixar um recado anônimo.
+**Objetivo**: Criar uma aplicação Web completa (Banco -> Back -> Front).
 
-### Requisitos Técnicos
-1.  **Frontend**: HTML5 + CSS (Bootstrap/Tailwind opcional).
-2.  **Backend**: PHP (ou Node/Python).
-3.  **Banco de Dados**: MySQL ou SQLite (Tabela `recados`: id, texto, data).
+## Arquitetura (MVC)
 
-### Funcionalidades
-1.  **Formulário**: Campo de texto e botão "Postar".
-2.  **Listagem**: Ao carregar a página, mostrar todos os recados do banco, do mais novo para o mais antigo.
-3.  **Segurança Básica**: Impedir injeção de HTML/Script (`htmlspecialchars`).
+```mermaid
+graph LR;
+    Navegador -->|POST /salvar| ControllerPHP;
+    ControllerPHP -->|INSERT| MySQL[(Banco Recados)];
+    MySQL -->|SELECT| ControllerPHP;
+    ControllerPHP -->|HTML| Navegador;
+```
 
-### Bônus
-*   Permitir "Curtir" um recado (update no banco).
+## Requisitos Técnicos
+1.  **Banco de Dados (MySQL)**:
+    - Tabela `recados` (`id` INT AI, `texto` VARCHAR, `data_hora` DATETIME).
+2.  **Backend (PHP/Laravel/Node)**:
+    - Rota `GET /`: Lista recados.
+    - Rota `POST /recado`: Salva novo recado.
+3.  **Frontend (HTML/CSS)**:
+    - Bootstrap para ficar bonito rápido.
+    - Design responsivo (Mobile First - Aula 15!).
+
+## Funcionalidades
+1.  **Postar**: Escrever mensagem e enviar.
+2.  **Feed**: Ver mensagens (Mais recentes no topo).
+3.  **Sanitização**: Proteger contra XSS (não deixar usuário postar `<script>`).
+
+## Dica de Ouro 🌟
+Comece pelo Banco de Dados. Se o banco estiver errado, tudo dá errado.
+
+## Entrega 📦
+- Link do Repositório GitHub com código fonte e script SQL.

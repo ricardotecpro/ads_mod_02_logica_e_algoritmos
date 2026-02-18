@@ -1,51 +1,46 @@
-# Roteiro de Slides - Aula 03
+# Aula 03 - Estrutura Sequencial
 
 ---
 
-## O Fluxo de Trabalho do Git
+## 1. Variáveis 📦
 
-- O Git não salva tudo automaticamente (como o Google Drive).
-- Você precisa ser **Intencional**.
-- Existem 3 "lugares" onde seu arquivo pode estar.
-
----
-
-## As 3 Áreas Mágicas
-
-1. **Working Directory**: Onde você trabalha. (Seus arquivos na pasta).
-2. **Staging Area**: Onde você prepara. (O palco antes do show).
-3. **Repository**: Onde você grava. (O álbum de fotos definitivo).
+- **Definição**: Caixinhas na memória RAM.
+- **Regra**: Cada caixa tem um TIPO e um NOME.
+- **Exemplo**: `idade: inteiro`, `preco: real`.
 
 ---
 
-## Comandos: init e status
+## 2. Tipos de Dados 📐
 
-- `git init`: "Git, comece a olhar para esta pasta agora."
-- `git status`: "Git, como estão as coisas?"
-  - Vermelho: Modificado/Novo (não preparado).
-  - Verde: Preparado (pronto para commit).
-
----
-
-## Comandos: add e commit
-
-- `git add arquivo.txt`: "Git, põe esse arquivo no palco." (Leva para Staging).
-- `git commit -m "mensagem"`: "Git, tira a foto agora!" (Grava no Repositório).
-- **Regra de Ouro**: A mensagem deve explicar O QUE foi feito e POR QUE.
+| Tipo | O que guarda? | Exemplo |
+| :--- | :--- | :--- |
+| **Inteiro** | Números cheios | 10, -5 |
+| **Real** | Números com vírgula | 9.99, 3.14 |
+| **Caractere** | Letras/Palavras | "João", "A" |
+| **Lógico** | Verdade/Falso | VERDADEIRO |
 
 ---
 
-## O Histórico: git log
+## 3. Fluxo de Dados ⚙️
 
-- Uma lista cronológica de tudo o que aconteceu.
-- Contém:
-  - Hash (ID único).
-  - Autor.
-  - Data.
-  - Mensagem.
+1.  **Entrada**: Usuário digita (`leia`).
+2.  **Processamento**: CPU calcula (`soma <- a + b`).
+3.  **Saída**: Tela mostra (`escreva`).
 
 ---
 
-## Resumo Visual
+## 4. Operadores Aritméticos 🧮
 
-`Arquivo Novo` -> `Git Add` -> `Staging` -> `Git Commit` -> `Repositório`
+- Soma `+`
+- Subtração `-`
+- Multiplicação `*`
+- Divisão `/`
+- Resto (Módulo) `%` (Crucial para par/ímpar!)
+
+---
+
+## Próximos Passos
+
+- Criar algoritmos que "conversam" (perguntam nome, idade).
+- Fazer cálculos matemáticos.
+- Se preparar para **DECISÕES**.

@@ -1,36 +1,61 @@
-# Quiz 08
+# Quiz 08 - Modularização 🧩
 
-1. Como se acessa o valor associado à chave "nome" no dicionário `d`?
+1. O que é Modularização?
+    - [ ] Deixar o computador mudo
+    - [x] Dividir um programa grande em partes menores e organizadas
+    - [ ] Usar o operador Módulo (%)
+    - [ ] Comprar móveis modulados
 
-    - [ ] d.nome
-    - [x] d["nome"]
-    - [ ] d(nome)
-    - [ ] d -> nome
+2. Qual a diferença principal entre Procedimento e Função?
+    - [ ] Procedimento é mais rápido
+    - [x] Função retorna um valor, Procedimento apenas executa
+    - [ ] Função não aceita parâmetros
+    - [ ] Nenhuma
 
-2. O que acontece se fizermos `d["chave"] = valor` e a chave já existir?
+3. O que são Parâmetros (ou Argumentos)?
+    - [ ] São erros de código
+    - [x] Dados que enviamos para dentro do módulo (Input)
+    - [ ] O resultado final
+    - [ ] Variáveis globais
 
-    - [ ] Cria uma chave duplicada
-    - [ ] Gera um erro
-    - [x] Atualiza o valor existente
-    - [ ] Ignora o comando
+4. O que é o "Retorno" de uma função?
+    - [ ] Quando o código volta para o início
+    - [x] O valor final que a função devolve para quem chamou
+    - [ ] Um comando de repetição
+    - [ ] O botão Enter
 
-3. Qual método retorna uma lista de tuplas (chave, valor)?
+5. O que é uma Variável Local?
+    - [x] Uma variável que só existe DENTRO do módulo onde foi criada
+    - [ ] Uma variável que todo o programa vê
+    - [ ] Uma variável brasileira
+    - [ ] Uma constante
 
-    - [ ] .all()
-    - [ ] .list()
-    - [x] .items()
-    - [ ] .pairs()
+6. O que é uma Variável Global?
+    - [ ] Uma variável que viaja o mundo
+    - [x] Uma variável acessível por todos os módulos do programa
+    - [ ] Uma variável perigosa (deve ser evitada quando possível)
+    - [ ] B e C estão corretas
 
-4. Qual a saída de `d.get("chave_inexistente")`?
+7. O que é Passagem por Valor?
+    - [x] Envia uma CÓPIA do dado. Se mudar dentro, não altera fora.
+    - [ ] Envia o endereço da memória
+    - [ ] Cobra um valor para executar
+    - [ ] Não existe
 
-    - [ ] KeyError
-    - [x] None
-    - [ ] False
-    - [ ] 0
+8. O que é Passagem por Referência?
+    - [ ] Envia uma cópia
+    - [x] Envia o ENDEREÇO (Link). Se mudar dentro, altera a original fora.
+    - [ ] Cita uma referência bibliográfica
+    - [ ] Usa Wikipedia
 
-5. As chaves de um dicionário devem ser:
+9. Qual a vantagem de modularizar?
+    - [ ] Reutilização de código
+    - [ ] Facilidade de leitura e manutenção
+    - [ ] Redução de erros
+    - [x] Todas as anteriores
 
-    - [ ] Strings apenas
-    - [ ] Objetos mutáveis (como listas)
-    - [x] Objetos imutáveis (strings, números, tuplas) e únicas
-    - [ ] Ordenadas alfabeticamente
+10. A função `RaizQ(x)` (Raiz Quadrada) é um exemplo de:
+    - [x] Função (Retorna o valor da raiz)
+    - [ ] Procedimento
+    - [ ] Variável
+    - [ ] Constante

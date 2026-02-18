@@ -1,36 +1,61 @@
-# Quiz 03
+# Quiz 03 - Estrutura Sequencial ➡️
 
-1. Qual o resultado de `10 % 3`?
+1. O que é uma Variável?
+    - [ ] Um comando que varia
+    - [x] Um espaço na memória para guardar dados
+    - [ ] Um erro de lógica
+    - [ ] Um cabo de rede
 
+2. Qual tipo de dado guarda números "quebrados" (com vírgula)?
+    - [ ] Inteiro
+    - [ ] Caractere
+    - [x] Real
+    - [ ] Lógico
+
+3. Qual tipo de dado guarda texto?
+    - [ ] Inteiro
+    - [x] Caractere (String)
+    - [ ] Real
+    - [ ] Booleano
+
+4. O comando `leia(x)` serve para quê?
+    - [ ] Ler um livro
+    - [x] Capturar dados digitados pelo usuário e guardar em x
+    - [ ] Escrever x na tela
+    - [ ] Apagar x
+
+5. Qual o resultado de `10 % 3` (Resto)?
+    - [ ] 3.33
     - [ ] 3
     - [x] 1
     - [ ] 0
-    - [ ] 3.33
 
-2. Qual o resultado de `5 == "5"`?
+6. O que acontece se eu tentar guardar "Olá" numa variável Inteira?
+    - [ ] Funciona normal
+    - [x] Erro de Tipo (Type Mismatch)
+    - [ ] O computador converte para 0
+    - [ ] O texto fica azul
 
-    - [ ] True
-    - [x] False
-    - [ ] Erro
-    - [ ] 5
+7. Para que serve o operador `<-` no VisualG?
+    - [ ] Menor que menos
+    - [x] Atribuição (Recebe)
+    - [ ] Seta para esquerda
+    - [ ] Comparação
 
-3. Avalie a expressão: `True and False or True`.
+8. Qual a ordem correta?
+    - [x] Entrada -> Processamento -> Saída
+    - [ ] Saída -> Entrada -> Processamento
+    - [ ] Processamento -> Saída -> Entrada
+    - [ ] Entrada -> Saída -> Processamento
 
-    - [x] True
-    - [ ] False
-    - [ ] Depende da ordem
-    - [ ] None
+9. Quantos bits tem um Byte (geralmente)?
+    - [ ] 1
+    - [ ] 4
+    - [x] 8
+    - [ ] 100
 
-4. Qual operador inverte um valor booleano?
-
-    - [ ] invert
-    - [ ] !
-    - [x] not
-    - [ ] reverse
-
-5. Se `x = 5`, quanto vale `x` após `x *= 3`?
-
-    - [ ] 5
-    - [ ] 8
-    - [x] 15
-    - [ ] 3
+10. Se `A = 10` e `B = 20`, como troco os valores?
+    - [ ] A = B; B = A
+    - [ ] A = B
+    - [ ] B = A
+    - [x] Aux = A; A = B; B = Aux

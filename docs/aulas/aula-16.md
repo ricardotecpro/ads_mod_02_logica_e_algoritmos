@@ -62,6 +62,28 @@ Ninguém escreve PHP "puro" em grandes sistemas. Usamos frameworks como **Larave
 *   **View**: Cuida do HTML (Telas).
 *   **Controller**: O cérebro que liga os dois.
 
+### Visualizando MVC (Mermaid)
+
+```mermaid
+graph LR;
+    User[Usuário] -->|Acessa URL| Route[Rotas];
+    Route -->|Chama| Controller[Controlador];
+    Controller -->|Busca Dados| Model[Modelo (Banco)];
+    Model -->|Retorna| Controller;
+    Controller -->|Envia para Tela| View[Visualização];
+    View -->|HTML Final| User;
+    
+    style Controller fill:#f9f;
+```
+
+```php
+// Exemplo Laravel (Rotas web.php)
+Route::get('/recados', function () {
+    $recados = Recado::all(); // Model
+    return view('lista_recados', ['recados' => $recados]); // View
+});
+```
+
 ---
 
 ## 4. Projeto Final: Mural de Recados 📌

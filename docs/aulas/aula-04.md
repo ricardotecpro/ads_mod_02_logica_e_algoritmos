@@ -54,7 +54,27 @@ Para fazer a pergunta dentro do `se`, usamos comparadores:
 
 ---
 
-## 3. Múltiplas Escolhas (Switch/Caso) 🚦
+---
+
+## 3. Operadores Lógicos (Combinando Perguntas) 🔗
+
+Às vezes, uma única condição não basta.
+
+| Operador | Significado | Exemplo | Regra |
+| :---: | :--- | :--- | :--- |
+| `E` | E (And) | `x > 5 E x < 10` | Verdadeiro só se **AMBOS** forem verdadeiros. |
+| `OU` | OU (Or) | `dia == "Sábado" OU dia == "Domingo"` | Verdadeiro se **PELO MENOS UM** for verdadeiro. |
+| `NÃO` | NÃO (Not) | `NÃO (x > 0)` | Inverte o resultado (Vira Falso). |
+
+!!! info "Tabela Verdade (Resumida)"
+    *   **V e V = V**
+    *   **V e F = F**
+    *   **V ou F = V**
+    *   **F ou F = F**
+
+---
+
+## 4. Múltiplas Escolhas (Switch/Caso) 🚦
 
 Quando temos muitas opções fixas (Menu), usar vários `se` fica feio. Usamos a estrutura **Escolha-Caso**.
 
@@ -94,6 +114,9 @@ fimescolha
 3.  **Desafio (Bhaskara)**: Leia A, B e C. Calcule o Delta (`B*B - 4*A*C`).
     *   Se Delta < 0: Não existe raiz real.
     *   Se Delta >= 0: Calcule e mostre X1 e X2.
+    
+    ??? tip "Dica: Raiz Quadrada"
+        No VisualG, use a função `RaizQ(Delta)` para calcular $\sqrt{\Delta}$.
 
 ---
 **Próxima Aula**: Como repetir uma tarefa 1000 vezes sem escrever 1000 linhas? [Estruturas Repetitivas](./aula-05.md).

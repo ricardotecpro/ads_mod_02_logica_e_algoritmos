@@ -1,36 +1,61 @@
-# Quiz 04
+# Quiz 04 - Estrutura Condicional 🔀
 
-1. O que acontece se você não indentar o código dentro de um `if`?
+1. Para que serva a estrutura `Se...Entao`?
+    - [ ] Para repetir código
+    - [x] Para tomar decisões baseadas em condições
+    - [ ] Para declarar variáveis
+    - [ ] Para imprimir na tela
 
-    - [ ] O código executa normalmente
-    - [x] O Python gera um erro (IndentationError)
-    - [ ] O bloco `if` é ignorado
-    - [ ] O código vira um comentário
+2. Qual operador verifica se dois valores são IGUAIS?
+    - [ ] =
+    - [x] == (ou = no VisualG dependendo da versão, mas == é padrão universal)
+    - [ ] ===
+    - [ ] <>
 
-2. Qual estrutura executa apenas se todas as condições anteriores forem falsas?
+3. O que o `Senao` faz?
+    - [ ] Executa se a condição do Se for Verdadeira
+    - [x] Executa se a condição do Se for Falsa
+    - [ ] Executa sempre
+    - [ ] Cancela o programa
 
-    - [ ] if
-    - [ ] elif
-    - [x] else
-    - [ ] then
+4. Qual o resultado de `10 > 5 E 5 > 2`?
+    - [x] Verdadeiro
+    - [ ] Falso
+    - [ ] Erro
+    - [ ] 10
 
-3. Quantos blocos `else` posso ter em uma única estrutura condicional?
+5. Qual o resultado de `10 > 5 E 2 > 5`?
+    - [ ] Verdadeiro
+    - [x] Falso
+    - [ ] Talvez
+    - [ ] 5
 
-    - [ ] Quantos quiser
-    - [x] No máximo um
-    - [ ] Pelo menos dois
-    - [ ] Depende da memória RAM
+6. O operador `OU` retorna Verdadeiro quando:
+    - [ ] Todas as condições são verdadeiras
+    - [ ] Nenhuma condição é verdadeira
+    - [x] Pelo menos uma condição é verdadeira
+    - [ ] A primeira é falsa
 
-4. O `elif` é obrigatório sempre que tem um `if`?
+7. O que é "Indentação"?
+    - [ ] Espaço em disco usado
+    - [x] Recuo do código para indicar hierarquia/bloco
+    - [ ] Nome de variável inválido
+    - [ ] erro de digitação
 
-    - [ ] Sim
-    - [x] Não, é opcional
-    - [ ] Apenas se tiver `else` junto
-    - [ ] Apenas em loops
+8. Para menus com muitas opções (1, 2, 3...), qual estrutura é melhor?
+    - [ ] Muitos SEs encadeados
+    - [x] Escolha/Caso (Switch/Case)
+    - [ ] Repita
+    - [ ] Vetor
 
-5. Qual a sintaxe correta?
+9. Como verificar se um número `x` é PAR?
+    - [ ] `x / 2 == 0`
+    - [x] `x % 2 == 0` (Resto da divisão é 0)
+    - [ ] `x % 2 == 1`
+    - [ ] `x * 2`
 
-    - [ ] if x = 10 then:
-    - [ ] if (x == 10) {
-    - [x] if x == 10:
-    - [ ] if x == 10
+10. A condição `SE (media >= 6)` inclui o 6?
+    - [x] Sim (Maior ou Igual)
+    - [ ] Não (Apenas maior que 6)
+    - [ ] Apenas se for inteiro
+    - [ ] Não sei

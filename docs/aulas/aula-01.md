@@ -40,7 +40,14 @@ Para escrever bons programas, usamos dois superpoderes:
 2.  **Abstração**: Focar no que importa e ignorar os detalhes irrelevantes.
     *   *Ex: Ao dirigir, você foca no volante e pedais, ignorando como o motor queima o combustível.*
 
-### Exemplo Prático: Média Escolar
+### 3. Reconhecimento de Padrões 🔍
+Identificar similaridades entre problemas diferentes para aplicar soluções conhecidas.
+
+*   *Ex: Se você sabe dirigir um carro, é mais fácil aprender a dirigir um caminhão, porque o **padrão** (volante, pedais, marchas) é similar.*
+
+---
+
+## 3. Fluxogramas: A Linguagem Universal 🗺️
 Se quisermos calcular a média de um aluno, não precisamos saber o nome dele ou o que ele comeu. Precisamos apenas das **NOTAS**.
 
 ```txt
@@ -81,7 +88,22 @@ graph TD;
 
 ---
 
-## 4. Exercícios de Fixação 📝
+## 4. O Próximo Passo: VisualG 💻
+
+Para sair do papel e ver o algoritmo "rodar", usaremos o **VisualG**. Ele é um interpretador de algoritmos em português (Portugol).
+
+!!! example "Exemplo de Código VisualG"
+    ```visualg
+    Algoritmo "OlaMundo"
+    Inicio
+       Escreval("Olá, Mundo!")
+    FimAlgoritmo
+    ```
+    Não se preocupe em entender agora, veremos isso na **Aula 02**!
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Escreva um algoritmo (em português) para fazer um café. Lembre-se de verificar se tem pó e água!
 2.  **Médio**: Desenhe (no papel ou mentalmente) um fluxograma para atravessar a rua com segurança.
@@ -89,6 +111,9 @@ graph TD;
     *   Se o lobo ficar sozinho com a ovelha, ele a come.
     *   Se a ovelha ficar sozinha com a alface, ela a come.
     *   **Algoritmo**: Qual a sequência de viagens para levar todos pro outro lado?
+    
+    ??? tip "Dica do Desafio"
+        O fazendeiro pode *trazer* algo de volta também! Tente levar a ovelha primeiro.
 
 ---
 **Próxima Aula**: Vamos preparar nosso [Ambiente e Ferramentas](./aula-02.md) para começar a programar de verdade!

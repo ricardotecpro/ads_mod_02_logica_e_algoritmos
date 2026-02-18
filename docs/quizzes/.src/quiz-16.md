@@ -1,36 +1,61 @@
-# Quiz 16
+# Quiz 16 - PHP e Legado Web 🐘
 
-1. O que significa TDD?
+1. O que significa PHP (Atualmente)?
+    - [ ] Personal Home Page
+    - [x] PHP: Hypertext Preprocessor (Sigla Recursiva)
+    - [ ] Program High Performance
+    - [ ] Python HTML Processor
 
-    - [ ] Test During Development
-    - [x] Test Driven Development
-    - [ ] Technical Design Document
-    - [ ] The Developer Dream
+2. O código PHP é executado onde?
+    - [ ] No Navegador do Cliente
+    - [x] No Servidor (Server-Side)
+    - [ ] No Banco de Dados
+    - [ ] No Roteador
 
-2. Qual a ordem correta do ciclo TDD?
+3. O que é o modelo Request/Response?
+    - [ ] Um modelo de carro
+    - [x] O ciclo onde o Cliente Pede (Request) e o Servidor Responde (Response)
+    - [ ] Um erro de PHP
+    - [ ] Uma função matemática
 
-    - [ ] Code, Test, Refactor
-    - [ ] Refactor, Code, Test
-    - [x] Red, Green, Refactor
-    - [ ] Green, Red, Refactor
+4. Para iniciar um bloco de código PHP, usamos:
+    - [ ] <script>
+    - [x] <?php
+    - [ ] #php
+    - [ ] {{ php }}
 
-3. Qual palavra-chave do Python é usada para verificar se uma condição é verdadeira nos testes?
+5. Todas as variáveis em PHP começam com qual símbolo?
+    - [ ] @
+    - [ ] %
+    - [x] $
+    - [ ] #
 
-    - [ ] check
-    - [ ] verify
-    - [x] assert
-    - [ ] test
+6. O que é Laravel?
+    - [ ] Um tipo de queijo
+    - [ ] Uma versão antiga do PHP
+    - [x] Um Framework PHP moderno e popular (MVC)
+    - [ ] Um servidor web
 
-4. O padrão AAA em testes significa:
+7. O que significa MVC?
+    - [ ] Most Valuable Code
+    - [x] Model - View - Controller (Arquitetura de Software)
+    - [ ] Make View Code
+    - [ ] Model Version Control
 
-    - [ ] Authentication, Authorization, Accounting
-    - [x] Arrange, Act, Assert
-    - [ ] Analysis, Action, Approval
-    - [ ] Apply, Accept, Avoid
+8. O comando `echo` serve para:
+    - [ ] Repetir o som
+    - [x] Imprimir texto ou HTML na resposta para o cliente
+    - [ ] Apagar arquivos
+    - [ ] Conectar no banco
 
-5. Para que serve a fase "Refactor" no TDD?
+9. O PHP é famoso pela sua integração fácil com qual banco de dados?
+    - [ ] Oracle
+    - [x] MySQL / MariaDB
+    - [ ] MongoDB
+    - [ ] SQLite
 
-    - [ ] Para escrever novos testes
-    - [ ] Para corrigir bugs encontrados
-    - [x] Para melhorar a qualidade do código sem alterar seu comportamento (mantendo os testes passando)
-    - [ ] Para adicionar novas funcionalidades
+10. O usuário (navegador) consegue ver o código fonte PHP original?
+    - [ ] Sim, clicando em "Ver Código Fonte"
+    - [x] Não, ele só vê o HTML gerado pelo servidor
+    - [ ] Às vezes
+    - [ ] Se usar Linux, sim

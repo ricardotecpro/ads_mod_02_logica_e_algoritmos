@@ -1,36 +1,61 @@
-# Quiz 11
+# Quiz 11 - Java ☕
 
-1. Qual a função usada para abrir arquivos em Python?
+1. O slogan do Java é "Write Once, Run Anywhere". O que permite isso?
+    - [ ] O código fonte ASCII
+    - [x] A JVM (Java Virtual Machine)
+    - [ ] O Windows
+    - [ ] A internet
 
-    - [ ] file()
-    - [x] open()
-    - [ ] read()
-    - [ ] load()
+2. Um Objeto é uma instância de uma:
+    - [ ] Função
+    - [x] Classe
+    - [ ] Variável
+    - [ ] Matriz
 
-2. O que acontece se abrirmos um arquivo existente no modo `'w'`?
+3. Qual pilar da OO protege os dados sensíveis de uma classe?
+    - [ ] Herança
+    - [ ] Polimorfismo
+    - [x] Encapsulamento
+    - [ ] Abstração
 
-    - [ ] Ele adiciona conteúdo ao final
-    - [x] Ele apaga todo o conteúdo existente e começa do zero
-    - [ ] Ele gera um erro
-    - [ ] Ele abre em modo de leitura
+4. Para herdar de uma classe em Java, usamos:
+    - [ ] implements
+    - [x] extends
+    - [ ] inherits
+    - [ ] clone
 
-3. Para adicionar conteúdo ao final de um arquivo sem apagar o que já existe, qual modo usamos?
+5. O que faz o Spring Boot?
+    - [ ] Limpa o PC
+    - [x] Facilita a criação de aplicações Java (Web/Microserviços) com configuração mínima
+    - [ ] Compila o código mais rápido
+    - [ ] É um jogo
 
-    - [ ] 'r'
-    - [ ] 'w'
-    - [x] 'a'
-    - [ ] 'x'
+6. O métódo `public static void main(String[] args)` serve para:
+    - [ ] Declarar variáveis
+    - [x] Ser o ponto de entrada (Início) da aplicação
+    - [ ] Imprimir na tela
+    - [ ] Conectar no banco
 
-4. Qual a vantagem de usar o bloco `with`?
+7. O Garbage Collector do Java serve para:
+    - [ ] Coletar lixo eletrônico
+    - [x] Limpar automaticamente memória RAM não utilizada
+    - [ ] Organizar arquivos
+    - [ ] Deletar vírus
 
-    - [ ] O código fica mais rápido
-    - [x] Ele fecha o arquivo automaticamente, evitando vazamento de memória
-    - [ ] Ele criptografa o arquivo
-    - [ ] Ele permite ler arquivos PDF
+8. O que é o Maven?
+    - [ ] Um tipo de café
+    - [x] Um gerenciador de dependências e construção de projetos
+    - [ ] Um editor de texto
+    - [ ] Um banco de dados
 
-5. O que o método `.read()` faz?
+9. Se eu tenho `Animal a = new Cachorro()`, isso é um exemplo de:
+    - [x] Polimorfismo
+    - [ ] Encapsulamento
+    - [ ] Erro
+    - [ ] Recursão
 
-    - [ ] Lê apenas a primeira linha
-    - [x] Lê todo o conteúdo do arquivo como uma única string
-    - [ ] Lê o arquivo como uma lista de linhas
-    - [ ] Lê o nome do arquivo
+10. Tipagem do Java é:
+    - [ ] Fraca e Dinâmica
+    - [x] Forte e Estática
+    - [ ] Opcional
+    - [ ] Inexistente

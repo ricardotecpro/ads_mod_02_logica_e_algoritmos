@@ -73,6 +73,21 @@ public class Cachorro extends Animal {
 }
 ```
 
+### 3.5 O Poder do Spring Boot (Web Moderno) 🍃
+
+Java não é só "tela preta". Com **Spring Boot**, criamos APIs em segundos.
+
+```java
+@RestController
+public class OlaController {
+    
+    @GetMapping("/ola")
+    public String dizerOla() {
+        return "Olá, Mundo Spring Boot!";
+    }
+}
+```
+
 ---
 
 ## 4. Exercícios de Fixação 📝

@@ -67,9 +67,38 @@ Python é interpretado. Você pode testar ideias na hora.
     <span data-ty>>>> exit()</span>
 </div>
 
+</div>
+
+### Executando Arquivos (.py)
+Para programas grandes, não usamos o REPL. Criamos um arquivo `app.py`:
+
+```python
+# app.py
+print("Iniciando sistema...")
+nome = input("Digite seu nome: ")
+print(f"Bem-vindo, {nome}!")
+```
+
+E rodamos no terminal:
+`<span class="termy">python app.py</span>`
+
 ---
 
-## 4. Exercícios de Fixação 📝
+## 4. O Poder das Bibliotecas (Data Science) 📊
+
+Python tem bibliotecas para tudo.
+*   **Pandas**: Excel com esteroides.
+*   **Matplotlib**: Gráficos.
+
+```python
+import pandas as pd
+# dados = pd.read_csv("vendas.csv")
+# print(dados.describe())
+```
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie uma lista com 5 frutas e imprima a terceira.
 2.  **Médio**: Crie um dicionário para um `Carro` (marca, modelo, ano). Imprima "Meu carro é um [Modelo] de [Ano]".

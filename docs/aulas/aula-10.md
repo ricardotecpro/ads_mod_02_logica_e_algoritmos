@@ -1,8 +1,5 @@
 # Aula 10 - Web Moderna: JavaScript e TypeScript 🌐
 
-!!! tip "Objetivo"
-    **Objetivo**: Dar vida às páginas web e construir aplicações completas (Frontend e Backend).
-
 ---
 
 ## 1. O Navegador é o Sistema Operacional 🖥️
@@ -47,9 +44,25 @@ Hoje, JS também roda no servidor com o **Node.js**.
     <span data-ty="progress">Servidor rodando na porta 3000...</span>
 </div>
 
+</div>
+
+### A Revolução do Express.js
+Para criar sites complexos, usamos *frameworks*. O **Express** é o padrão da indústria.
+
+```javascript
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Olá do Backend!');
+});
+
+app.listen(3000);
+```
+
 ---
 
-## 3. TypeScript: O JavaScript com Superpoderes 🛡️
+## 3. Variáveis Modernas (Esqueça o `var`) 🆕
 
 O JS é "fracamente tipado" (você pode somar texto com número e ele deixa). O TypeScript (TS) adiciona **Tipagem Estática** para evitar erros bobos.
 

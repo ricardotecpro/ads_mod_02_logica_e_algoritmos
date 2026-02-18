@@ -1,41 +1,40 @@
-# Roteiro de Slides - Aula 15
+# Aula 15 - Mobile (Flutter/Kotlin) 📱
 
 ---
 
-## Todo mundo erra
+## 1. O Dilema Mobile ⚖️
 
-- Commitar na branch errada? ✅
-- Apagar arquivo errado? ✅
-- Perder o histórico? ✅
-- O Git tem ferramentas para consertar tudo isso.
+- **Nativo (Kotlin/Swift)**: Performance máxima. Acesso total ao hardware. (Caro, 2 times).
+- **Multiplataforma (Flutter/React Native)**: 1 Código, 2 Sistemas. Performance ótima (quase nativa). (Rápido).
 
 ---
 
-## O Comando Reset
+## 2. Flutter e Dart 💙
 
-Imagine uma fita cassete rebobinada.
-- `--soft`: Rebobina a fita (Commit), mas deixa as roupas no chão (Arquivos modificados).
-- `--hard`: Rebobina a fita E limpa o quarto (Apaga modificações). **CUIDADO**.
-
----
-
-## O Comando Restore
-
-- "Desfazer (CTRL+Z)" do arquivo.
-- Se você não deu `add` ainda, `git restore arquivo` traz a versão do último commit.
+- **Widgets**: Lego digital. Tudo é um widget (Botão, Texto, Layout).
+- **Hot Reload**: Mudou código -> Mudou tela (em ms).
+- Desenha a própria tela (skia engine).
 
 ---
 
-## O Comando Stash
+## 3. Gerenciamento de Estado ⚡
 
-- "Esconder na gaveta".
-- Limpa sua mesa (Working Directory) para você atender uma urgência em outra branch.
-- Depois `git stash pop` traz tudo da gaveta de volta.
+- O App reage ao usuário.
+- `setState()`: Avisa o App que algo mudou.
+- Tela redesenha para mostrar o novo dado.
 
 ---
 
-## Reflog
+## 4. Kotlin (Android Nativo) 🤖
 
-- O Diário Secreto do Git.
-- Registra cada movimento do HEAD.
-- Se você deletou um commit e quer ele de volta, o hash dele estará no `git reflog`.
+- Moderno, conciso.
+- Interoperável com Java (usa bibliotecas antigas).
+- Google recomenda.
+
+---
+
+## Próximos Passos
+
+- Última parada.
+- Onde a maioria dos sites vive.
+- **PHP e o Legado**.

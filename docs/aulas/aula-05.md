@@ -79,11 +79,44 @@ fimpara
 
 ---
 
-## 5. Exercícios de Fixação 📝
+## 5. Controle de Fluxo (Interrompa) 🛑
+
+Às vezes, precisamos sair do loop antes da hora (ex: achamos o que procurávamos).
+No VisualG, usamos o comando `interrompa`.
+
+```portugol
+enquanto (verdadeiro) faca
+   escreva("Digite 0 para sair: ")
+   leia(num)
+   se (num == 0) entao
+       interrompa
+   fimse
+fimenquanto
+```
+
+---
+
+## 6. O Teste de Mesa (Debug Mental) 🧠
+
+Como saber se o loop está certo? Fazemos uma tabela simulando as variáveis passo a passo.
+Exemplo: Contador de 1 a 3.
+
+| Passo | Variável `i` | Condição `i <= 3`? | Ação |
+| :---: | :---: | :---: | :--- |
+| 1 | 1 | Sim (Verdadeiro) | Escreve "1" |
+| 2 | 2 | Sim (Verdadeiro) | Escreve "2" |
+| 3 | 3 | Sim (Verdadeiro) | Escreve "3" |
+| 4 | 4 | **Não (Falso)** | **Para!** |
+
+---
+
+## 7. Exercícios de Fixação 📝
 
 1.  **Fácil (Contagem Regressiva)**: Faça um algoritmo que conte de 10 até 0 e escreva "FOGO!".
 2.  **Médio (Tabuada)**: Leia um número (ex: 7) e mostre sua tabuada do 1 ao 10.
 3.  **Desafio (Números Primos)**: Leia um número e diga se ele é primo (divisível apenas por 1 e por ele mesmo).
+    ??? tip "Dica: Primos"
+        Um número Primo só tem 2 divisores. Use um laço de 1 até Ele Mesmo e conte quantos divisores existem. Se o contador for 2, é Primo!
 
 ---
 **Próxima Aula**: Como guardar 100 nomes sem criar 100 variáveis? [Vetores (Arrays)](./aula-06.md).

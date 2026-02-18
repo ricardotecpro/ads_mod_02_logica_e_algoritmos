@@ -66,6 +66,19 @@ Quando programamos ferramentas "reais" (C, Python, Java), usamos muito o termina
     <span data-ty>Olá, Mundo!</span>
 </div>
 
+### Verificando Instalações
+Podemos perguntar ao terminal "Quem é você?":
+
+<div data-termynal class="termy">
+    <span data-ty="input">java -version</span>
+    <span data-ty>java version "17.0.1" 2021-10-19 LTS</span>
+    <span data-ty="input">python --version</span>
+    <span data-ty>Python 3.10.2</span>
+    <span data-ty="input">code --version</span>
+    <span data-ty>1.64.2</span>
+</div>
+
+
 ---
 
 ## 4. Guia de Instalação Rápida ⚡

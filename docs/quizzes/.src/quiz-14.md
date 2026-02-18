@@ -1,36 +1,61 @@
-# Quiz 14
+# Quiz 14 - Rust e Go 🦀🐹
 
-1. Qual a sintaxe para criar uma classe `Carro` que herda de `Veiculo`?
+1. Qual o foco principal da linguagem Rust?
+    - [ ] Facilidade de aprendizado
+    - [x] Segurança de Memória e Performance (sem Garbage Collector)
+    - [ ] Desenvolvimento Web Frontend
+    - [ ] Scripts simples
 
-    - [ ] class Carro extends Veiculo:
-    - [x] class Carro(Veiculo):
-    - [ ] class Carro inherits Veiculo:
-    - [ ] def Carro(Veiculo):
+2. O que é o "Borrow Checker" (Verificador de Empréstimo) do Rust?
+    - [ ] Um sistema de empréstimo bancário
+    - [x] O compilador garantindo que ninguém acesse memória inválida
+    - [ ] Uma biblioteca de matemática
+    - [ ] Um erro comum
 
-2. O que é Polimorfismo?
+3. Go (Golang) foi criado por qual empresa?
+    - [ ] Facebook
+    - [x] Google
+    - [ ] Amazon
+    - [ ] Microsoft
 
-    - [ ] A capacidade de um objeto mudar de classe
-    - [x] A capacidade de objetos diferentes responderem ao mesmo método de formas diferentes
-    - [ ] A capacidade de herdar múltiplos pais
-    - [ ] A capacidade de criptografar dados
+4. O que são Goroutines em Go?
+    - [ ] Rotinas de dança
+    - [x] Threads ultra-leves para concorrência
+    - [ ] Funções matemáticas
+    - [ ] Erros de compilação
 
-3. Qual a função do `super()`?
+5. A ferramenta oficial de gerenciamento de pacotes do Rust é:
+    - [ ] npm
+    - [x] cargo
+    - [ ] pip
+    - [ ] maven
 
-    - [ ] Cancelar a herança
-    - [x] Chamar métodos da classe pai (superclasse)
-    - [ ] Acessar variáveis globais
-    - [ ] Criar um super usuário
+6. Go usa ponto-e-vírgula `;` obrigatório no final da linha?
+    - [ ] Sim
+    - [x] Não (o compilador insere se omitido)
+    - [ ] Apenas em loops
+    - [ ] Depende do editor
 
-4. Como definimos um atributo "privado" em Python (por convenção forte)?
+7. Qual linguagem está sendo introduzida no Kernel do Linux?
+    - [ ] Java
+    - [ ] Python
+    - [x] Rust
+    - [ ] C#
 
-    - [ ] private variavel
-    - [ ] _variavel
-    - [x] __variavel (dois underlines)
-    - [ ] (variavel)
+8. Rust permite usar valores "NULL" livremente?
+    - [ ] Sim
+    - [x] Não, usa o tipo Option<T> para segurança
+    - [ ] Sim, mas avisa
+    - [ ] Depende da versão
 
-5. Se tenho `class A` e `class B(A)`, qual afirmação é verdadeira?
+9. Para comunicação entre Goroutines, Go utiliza:
+    - [ ] Emails
+    - [x] Channels (Canais)
+    - [ ] Variáveis globais inseguras
+    - [ ] Arquivos de texto
 
-    - [ ] A é subclasse de B
-    - [ ] B herda apenas os atributos de A, não os métodos
-    - [x] B é subclasse de A e herda atributos e métodos
-    - [ ] A precisa ser instanciada dentro de B
+10. Ambas as linguagens (Rust e Go) são:
+    - [ ] Interpretadas
+    - [x] Compiladas (Geram binário nativo)
+    - [ ] Apenas para Windows
+    - [ ] Lentas

@@ -1,36 +1,61 @@
-# Quiz 05
+# Quiz 05 - Estruturas Repetitivas 🔄
 
-1. Qual a saída de `list(range(3))`?
+1. Qual o principal objetivo de uma estrutura repetitiva (Loop)?
+    - [ ] Deixar o código mais lento
+    - [ ] Criar variáveis infinitas
+    - [x] Executar um bloco de códigos várias vezes sem repetir escrita
+    - [ ] Tomar uma única decisão
 
-    - [ ] [1, 2, 3]
-    - [ ] [0, 1, 2, 3]
-    - [x] [0, 1, 2]
-    - [ ] [1, 2]
+2. O que caracteriza um "Loop Infinito"?
+    - [ ] Ele roda 1000 vezes e para
+    - [x] Ele nunca atinge a condição de parada
+    - [ ] Ele é muito rápido
+    - [ ] Ele ocupa 0 bytes de memória
 
-2. O que acontece se a condição do `while` nunca for False?
+3. A estrutura `Enquanto...Faca` testa a condição quando?
+    - [x] No Início (antes de entrar)
+    - [ ] No Fim (depois de rodar uma vez)
+    - [ ] No meio
+    - [ ] Nunca
 
-    - [ ] O programa para sozinho
-    - [x] Loop infinito
-    - [ ] O Python corrige
-    - [ ] Nada
+4. A estrutura `Repita...Ate` garante que o bloco execute pelo menos quantas vezes?
+    - [ ] 0
+    - [x] 1
+    - [ ] 10
+    - [ ] Infinito
 
-3. Qual comando **interrompe** totalmente um loop?
+5. Para loops onde sabemos o número exato de repetições (ex: 10 vezes), qual é a melhor estrutura?
+    - [ ] Enquanto
+    - [ ] Repita
+    - [x] Para (For)
+    - [ ] Se
 
-    - [ ] stop
-    - [ ] continue
-    - [x] break
-    - [ ] exit
+6. O que é um "Contador" em um loop?
+    - [ ] Uma variável que soma valores (total = total + valor)
+    - [x] Uma variável que conta passadas (i = i + 1)
+    - [ ] Um cronômetro do Windows
+    - [ ] Um erro de hardware
 
-4. Qual comando **pula** a iteração atual e volta ao início do loop?
+7. O que é um "Acumulador" (ou Somador)?
+    - [ ] Uma variável que conta de 1 em 1
+    - [x] Uma variável que guarda a soma de valores (saldo = saldo + deposito)
+    - [ ] Uma bateria
+    - [ ] Um vetor
 
-    - [ ] skip
-    - [ ] next
-    - [ ] break
-    - [x] continue
+8. O comando `interrompa` (break) serve para:
+    - [ ] Pausar o programa para o café
+    - [x] Sair imediatamente do loop
+    - [ ] Reiniciar o Windows
+    - [ ] Pular uma iteração
 
-5. Para repetir um código exatamente 10 vezes, qual a melhor opção?
+9. O que é "Teste de Mesa"?
+    - [ ] Testar se a mesa está firme
+    - [x] Simular o código manualmente (no papel) para ver os valores das variáveis
+    - [ ] Rodar o código no servidor de produção
+    - [ ] Limpar o computador
 
-    - [ ] while i < 10
-    - [x] for i in range(10)
-    - [ ] if i == 10
-    - [ ] print(10)
+10. No loop `Para i de 1 ate 10 faca`, qual o valor final de `i` ao sair do loop?
+    - [ ] 9
+    - [ ] 10
+    - [x] 11 (Geralmente ele incrementa, falha no teste 11 <= 10 e sai) - *Depende da linguagem, mas em lógica costuma ser o valor de 'estouro'*
+    - [ ] 0

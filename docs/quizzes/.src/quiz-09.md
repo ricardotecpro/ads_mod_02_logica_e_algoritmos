@@ -1,36 +1,61 @@
-# Quiz 09
+# Quiz 09 - C e C++ 🧱
 
-1. Qual palavra-chave é usada para definir uma função em Python?
+1. A Linguagem C é conhecida como:
+    - [ ] A linguagem mais fácil do mundo
+    - [x] O Pai das Linguagens Modernas (Baixo Nível)
+    - [ ] Uma linguagem apenas para Web
+    - [ ] Uma linguagem morta
 
-    - [ ] function
-    - [ ] fun
-    - [x] def
-    - [ ] define
+2. O que é a memória Stack (Pilha)?
+    - [ ] Memória lenta e gigante
+    - [x] Memória rápida para variáveis locais e funções
+    - [ ] O HD do computador
+    - [ ] A nuvem
 
-2. Para que serve o `return`?
+3. O que é a memória Heap (Monte)?
+    - [ ] Memória organizada automaticamente
+    - [x] Memória dinâmica, gerenciada manualmente (malloc/free)
+    - [ ] A memória da placa de vídeo
+    - [ ] O cache do processador
 
-    - [ ] Para imprimir algo na tela
-    - [x] Para devolver um valor e encerrar a função
-    - [ ] Para voltar ao início do loop
-    - [ ] Para repetir a função
+4. O que guarda um Ponteiro?
+    - [ ] Um valor inteiro
+    - [x] O Endereço de Memória de outra variável
+    - [ ] Um texto
+    - [ ] Uma imagem
 
-3. Onde deve ficar a Docstring de uma função?
+5. Qual comando usamos para COMPILAR um código C no terminal (geralmente)?
+    - [ ] run c
+    - [x] gcc arquivo.c -o saida
+    - [ ] python arquivo.c
+    - [ ] compile c
 
-    - [ ] Fora da função, antes do def
-    - [x] Logo abaixo da linha do def, indentada
-    - [ ] No final da função
-    - [ ] Em um arquivo separado
+6. Qual a principal diferença do C++ em relação ao C?
+    - [ ] É mais lento
+    - [x] Suporte a Orientação a Objetos (Classes)
+    - [ ] Não usa ponteiros
+    - [ ] Não precisa compilar
 
-4. Se uma função não tem `return`, o que ela retorna por padrão?
+7. O que acontece se acessarmos um ponteiro inválido (NULL)?
+    - [ ] Nada
+    - [x] Segmentation Fault (O programa trava)
+    - [ ] O computador reinicia
+    - [ ] O compilador corrige
 
-    - [ ] 0
-    - [ ] False
-    - [x] None
-    - [ ] Erro
+8. O que faz `#include <stdio.h>`?
+    - [ ] Inclui a biblioteca de gráficos
+    - [x] Inclui a biblioteca padrão de Entrada e Saída (IO)
+    - [ ] Inclui o Studio Code
+    - [ ] Inclui a internet
 
-5. Qual a diferença entre `print(funcao())` e `funcao()`?
+9. `int main()` deve retornar o que ao final com sucesso?
+    - [ ] 1
+    - [x] 0
+    - [ ] -1
+    - [ ] "Fim"
 
-    - [ ] Nenhuma
-    - [x] O print exibe o valor retornado pela função; a chamada direta apenas executa o código
-    - [ ] A chamada direta é mais rápida
-    - [ ] O print executa a função duas vezes
+10. Por que aprender C/C++ hoje em dia?
+    - [ ] Para fazer sites simples
+    - [x] Para entender como o computador funciona e performance (Jogos, SO)
+    - [ ] Porque é modinha
+    - [ ] Para scripts rápidos

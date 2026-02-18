@@ -21,6 +21,15 @@ int main() {
 }
 ```
 
+### Anatomia do Código 🦴
+
+| Parte | O que faz? |
+| :--- | :--- |
+| `#include <stdio.h>` | Traz ferramentas de **Entrada/Saída** (printf). É como pegar a caixa de ferramentas. |
+| `int main() { ... }` | O **Ponto de Partida**. Todo programa C começa aqui. |
+| `printf(...)` | Imprime na tela. (Print Formatted). |
+| `return 0;` | Diz ao sistema operacional: "Terminei sem erros!". |
+
 ### Visualizando a Memória (Stack vs Heap)
 Em C, você gerencia onde os dados ficam.
 
@@ -85,6 +94,15 @@ int main() {
 }
 ```
 
+### Compilando C++ (Termynal)
+
+<div data-termynal class="termy">
+    <span data-ty="input">g++ carro.cpp -o carro</span>
+    <span data-ty="progress">Compilando C++...</span>
+    <span data-ty="input">./carro</span>
+    <span data-ty>Bi Bi!</span>
+</div>
+
 ---
 
 ## 4. Exercícios de Fixação 📝
@@ -92,6 +110,9 @@ int main() {
 1.  **Fácil**: Escreva um programa em C que leia a idade e mostre se é maior de idade.
 2.  **Médio (C++)**: Crie uma classe `Retangulo` com atributos `largura` e `altura` e um método `calcularArea()`.
 3.  **Desafio (Ponteiros)**: Crie duas variáveis `a` e `b`. Use uma função `trocar(&a, &b)` que receba ponteiros e troque os valores das variáveis originais.
+    ??? tip "Dica: Operador *"
+        Use `*p` para acessar o **VALOR** que o ponteiro aponta.
+        `temp = *p1;`
 
 ---
 **Próxima Aula**: Vamos sair da "tela preta" e ir para a Web! [JavaScript e TypeScript](./aula-10.md).

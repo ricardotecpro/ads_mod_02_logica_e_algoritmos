@@ -73,11 +73,33 @@ fimpara
 
 ---
 
-## 4. Exercícios de Fixação 📝
+## 4. Ordenação de Vetores (Bubble Sort) 🫧
+
+E se quisermos colocar os números em ordem crescente? (1, 2, 3...).
+O método mais famoso é a "Ordenação Bolha". A ideia é simples: **O maior valor "flutua" para o topo**.
+
+1.  Compare o vizinho da esquerda com o da direita.
+2.  Se o da esquerda for maior, **TROQUE**.
+3.  Repita até tudo estar ordenado.
+
+```portugol
+// Exemplo Simples: Troca
+se (vet[0] > vet[1]) entao
+   temp <- vet[0]
+   vet[0] <- vet[1]
+   vet[1] <- temp
+fimse
+```
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um vetor de 5 números inteiros. Preencha-o e depois mostre a soma de todos eles.
 2.  **Médio (Inverso)**: Leia 10 números e mostre-os na ordem inversa (do último para o primeiro).
 3.  **Desafio (Maior/Menor)**: Leia 10 números. No final, diga qual foi o **Maior** valor digitado e em qual **posição** ele está.
+    ??? tip "Dica: Rei da Montanha"
+        Crie uma variável `maior` com um valor bem pequeno. A cada número lido, pergunte: "Esse número é maior que o meu atual `maior`?". Se sim, atualize!
 
 ---
 **Próxima Aula**: E se precisarmos de linhas E colunas? [Matrizes](./aula-07.md).

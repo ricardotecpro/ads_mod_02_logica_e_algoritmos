@@ -62,6 +62,22 @@ Isso é CRÍTICO.
 
 ---
 
+## 3.5 Passagem de Parâmetros (Valor vs Referência) 🚚
+
+Como a função recebe os dados?
+
+1.  **Por Valor (Padrão)**: A função recebe uma **CÓPIA**. Se mudar lá dentro, não afeta fora.
+2.  **Por Referência (`var`)**: A função recebe o **ENDEREÇO** da variável original. Se mudar lá dentro, muda fora também!
+
+```portugol
+// Exemplo: Trocar valor (Precisa ser referência!)
+procedimento trocar(var a, var b : inteiro)
+   // ... código de troca ...
+fimprocedimento
+```
+
+---
+
 ## 4. Simulando (Termynal)
 
 <div data-termynal class="termy">
@@ -82,6 +98,11 @@ Isso é CRÍTICO.
 1.  **Fácil**: Crie um procedimento `DesenharLinha()` que escreva "----------" na tela. Use-o para separar títulos.
 2.  **Médio**: Crie uma função `ConverterParaFahrenheit(celsius)` que recebe o valor em C e retorna em F.
 3.  **Desafio (Calculadora)**: Crie funções para `Somar`, `Subtrair`, `Multiplicar` e `Dividir`. No programa principal, peça dois números e a operação desejada, chamando a função correta.
+4.  **🏆 PROJETO FINAL MÓDULO 1**: Crie um "Sistema de Notas" que use tudo que aprendeu:
+    *   Um vetor para nomes e um vetor para médias.
+    *   Um procedimento `LerDados()` para preencher os vetores.
+    *   Uma função `VerificarAprovacao(media)` que retorna "Aprovado" ou "Reprovado".
+    *   Um loop para mostrar o boletim final de 5 alunos.
 
 ---
 **Próxima Aula**: Fim dos Fundamentos! Agora vamos aplicar tudo isso em linguagens reais, começando pelos pais da programação: [C e C++](./aula-09.md).

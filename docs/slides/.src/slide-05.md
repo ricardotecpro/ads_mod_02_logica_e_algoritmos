@@ -1,51 +1,46 @@
-# Roteiro de Slides - Aula 05
+# Aula 05 - Estruturas Repetitivas 🔄
 
 ---
 
-## O Temido "Conflict"
+## 1. O Poder da Automação 🤖
 
-- Acontece nas melhores famílias (e equipes).
-- Não é um erro grave, é apenas uma **pergunta do Git**:
-  - "Ei, vocês dois mexeram na mesma linha. Qual eu devo manter?"
-
----
-
-## Anatomia do Conflito
-
-```text
-<<<<<<< HEAD
-Eu gosto de café.
-=======
-Eu gosto de chá.
->>>>>>> nova-branch
-```
-- **HEAD (Topo)**: Onde você estava (branch atual).
-- **Separator (===)**: A fronteira.
-- **Botton (>>>)**: O que está chegando (branch vindo do merge).
+- E se eu precisar escrever "Olá" 1000 vezes?
+- Copiar e Colar? **NÃO!**
+- Usamos **Loops** (Laços de Repetição).
 
 ---
 
-## Como Resolver?
+## 2. Enquanto (While) vs Repita (Do-While) ⚖️
 
-1. **Mantenha a Calma**.
-2. Abra o arquivo em um editor de texto.
-3. Escolha: Cafe? Chá? Ou "Eu gosto de café e chá"?
-4. **Apague os marcadores**. O arquivo final deve ser código limpo.
-5. Salve.
-6. `git add arquivo` (Diz que está pronto).
-7. `git commit` (Finaliza).
+- **Enquanto**: Testa **ANTES**. Pode nunca rodar. (Ex: "Enquanto tiver dinheiro, gaste").
+- **Repita**: Testa **DEPOIS**. Roda pelo menos 1 vez. (Ex: "Atire, depois pergunte").
 
 ---
 
-## Como Evitar?
+## 3. Para (For) 🎯
 
-- Commits pequenos e frequentes.
-- Puxe as mudanças dos colegas (`git pull`) com frequência.
-- Evite arquivos gigantes ("God Classes").
-- Comunique-se: "Ei, vou mexer no Header, ok?"
+- A estrutura mais amada.
+- Controle total em uma linha: **Início, Fim, Passo**.
+- `Para i de 1 ate 10 faca`
 
 ---
 
-## Resumo
+## 4. Variáveis de Controle 🕹️
 
-Conflito não é bug. É o Git protegendo seu código de ser sobrescrito sem querer.
+- **Contador**: `conta = conta + 1` (Passos)
+- **Acumulador**: `soma = soma + valor` (Cofrinho)
+
+---
+
+## 5. Loop Infinito e Break ♾️
+
+- **Cuidado**: Se a condição nunca for falsa, o programa trava!
+- **Break (Interrompa)**: O botão de emergência para sair do loop.
+
+---
+
+## Próximos Passos
+
+- Tabuadas Automáticas.
+- Somar vários números.
+- Preparar para guardar muitos dados (**VETORES**).

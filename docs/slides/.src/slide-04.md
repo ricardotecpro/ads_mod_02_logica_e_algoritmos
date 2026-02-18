@@ -1,50 +1,56 @@
-# Roteiro de Slides - Aula 04
+# Aula 04 - Estrutura Condicional 🔀
 
 ---
 
-## O Poder do "E se?"
+## 1. Tomando Decisões 🤔
 
-- E se eu quiser adicionar um botão, mas ele quebrar o site todo?
-- E se eu quiser testar uma cor nova sem perder a antiga?
-- Solução: **Branches** (Ramificações).
-
----
-
-## O Conceito de Branches
-
-- Branches são linhas do tempo paralelas.
-- `main` (ou `master`): É a linha do tempo oficial, "sagrada". Onde o código sempre funciona.
-- `feature`: Linhas do tempo alternativas para experimentos.
-- Você pode criar, destruir e fundir essas linhas do tempo.
+- O código deixa de ser uma reta.
+- Ele **bifurca** (vira à esquerda ou direita).
+- Baseado em uma **PERGUNTA** (Condição).
 
 ---
 
-## Comandos Essenciais
+## 2. Operadores Relacionais 📏
 
-1. **Listar**: `git branch` (Onde estou?).
-2. **Criar**: `git branch nome-da-branch`.
-3. **Trocar**: `git switch nome-da-branch`.
-4. **Fundir**: `git merge nome-da-branch`.
-
----
-
-## Demonstração Visual
-
-1. Estou na `main`. Tenho 2 arquivos.
-2. Crio a branch `teste`.
-3. Mudo para `teste`. Crio mais 10 arquivos.
-4. Volto para `main`.
-5. **Mágica**: Os 10 arquivos somem da pasta (mas estão salvos no Git).
-6. Faço `merge`.
-7. **Mágica 2**: Os 10 arquivos aparecem na `main`.
+- `>` Maior
+- `<` Menor
+- `>=` Maior ou Igual
+- `<=` Menor ou Igual
+- `==` Igual (Comparação)
+- `!=` Diferente
 
 ---
 
-## Boas Práticas
+## 3. Operadores Lógicos 🔗
 
-- **Nunca** commite direto na `main` se estiver trabalhando em equipe.
-- Crie branches com nomes descritivos:
-  - `feature-login`
-  - `fix-botao-quebrado`
-  - `update-readme`
-- Terminou? Faça Merge e apague a branch antiga.
+- **E (AND)**: Exigente. "Preciso de Carteira E Carro". (V e V = V).
+- **OU (OR)**: Flexível. "Aceito Dinheiro OU Cartão". (V ou F = V).
+- **NÃO (NOT)**: Do Contra. (Inverte).
+
+---
+
+## 4. Estrutura Se-Senao 📝
+
+```portugol
+se (idade >= 18) entao
+   escreva("Pode entrar")
+senao
+   escreva("Barrado")
+fimse
+```
+
+---
+
+## 5. Switch-Case (Escolha) 🚦
+
+- Ideal para **Menus**.
+- Evita "tripa" de `se...senao...se...senao`.
+- Testa valores exatos (Caso 1, Caso 2...).
+
+---
+
+## Próximos Passos
+
+- Criar menus interativos.
+- Resolver problemas de lógica (Par/Ímpar, Média).
+- Preparar para REPETIÇÃO.

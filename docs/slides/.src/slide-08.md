@@ -1,47 +1,46 @@
-# Roteiro de Slides - Aula 08
+# Aula 08 - Modularização 🧩
 
 ---
 
-## Chega de trabalhar sozinho!
+## 1. Dividir para Conquistar ⚔️
 
-- Git brilha mesmo em equipes.
-- O problema: Se 10 pessoas derem `git push` na `main` ao mesmo tempo, vira o caos.
-- A solução: **Pull Requests**.
-
----
-
-## O Fluxo de Ouro (GitHub Flow)
-
-1. **Branch**: Crie um espaço seguro.
-2. **Commit**: Faça suas mudanças.
-3. **Push**: Envie para a nuvem.
-4. **Pull Request**: "Ei time, vejam o que eu fiz!"
-5. **Review**: Discussão, correções, elogios.
-6. **Merge**: O Grande Momento. Entra na base oficial.
+- Programas grandes viram um caos.
+- Solução: Quebrar em blocos menores.
+- **Módulos**, Sub-rotinas, Métodos.
 
 ---
 
-## Code Review: Por que fazer?
+## 2. Procedimento vs Função 🔄
 
-- **Qualidade**: 4 olhos veem mais que 2.
-- **Conhecimento**: Juniors aprendem com Seniors (e vice-versa).
-- **Consistência**: O código fica com "a cara do time", não de uma pessoa só.
-
----
-
-## O Merge no GitHub
-
-- Não é via linha de comando.
-- É um botão verde "Merge pull request".
-- Opções:
-  - **Merge Commit**: Mantém toda a história (recomendado).
-  - **Squash**: Resume tudo em 1 commit (bom para limpeza).
-  - **Rebase**: Lineariza a história (avançado).
+- **Procedimento**: Faz uma tarefa e pronto. (Ex: `LimparTela()`). Sem retorno.
+- **Função**: Faz uma tarefa e **DEVOLVE** um valor. (Ex: `Somar(2, 2)` -> Retorna 4).
 
 ---
 
-## E depois?
+## 3. Parâmetros e Retorno 📥 📤
 
-- O GitHub está atualizado.
-- Mas seu computador NÂO!
-- Sempre lembre de: `git checkout main` e `git pull`.
+- **Parâmetros**: Ingredientes que entram na máquina.
+- **Retorno**: O produto final que sai.
+- `Funcao FazerBolo(farinha, ovo)` -> Retorna `Bolo`.
+
+---
+
+## 4. Escopo de Variáveis 🔭
+
+- **Local**: Nasce e morre dentro da função. (O segredo de Vegas).
+- **Global**: Visível para todos (Cuidado com efeitos colaterais!).
+
+---
+
+## 5. Valor vs Referência 🏷️
+
+- **Valor**: Tira xerox. Se riscar a xerox, original não muda.
+- **Referência**: Entrega a chave do cofre. Se mexer, muda o original.
+
+---
+
+## Próximos Passos
+
+- Fim dos Fundamentos de Lógica! 🎓
+- Agora vamos aplicar isso em **LINGUAGENS REAIS**.
+- Próxima parada: **C e C++**.

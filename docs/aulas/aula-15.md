@@ -65,9 +65,21 @@ class MeuApp extends StatelessWidget {
     <span data-ty="progress">Aplicativo rodando!</span>
 </div>
 
+### 3. Gerenciando Estado (O Interativo) ⚡
+
+Aplicativos não são estáticos. Se você clica num botão e a tela muda, o **Estado** mudou.
+
+```mermaid
+graph LR;
+    User[Usuário Clica] --> State[Estado Muda\n(Contador + 1)];
+    State --> UI[Tela Redesenha\n(build)];
+    
+    style State fill:#bfb;
+```
+
 ---
 
-## 3. Kotlin: O Poder do Android Nativo 🤖
+## 4. Kotlin: O Poder do Android Nativo 🤖
 
 Kotlin é moderno, conciso e 100% compatível com Java. É a linguagem oficial do Google para Android.
 

@@ -1,36 +1,61 @@
-# Quiz 02
+# Quiz 02 - Ambiente e Ferramentas 🛠️
 
-1. Qual o tipo de dado da variável `x` em `x = 10.5`?
+1. O que é um Compilador?
+    - [x] Um tradutor que converte código fonte em código de máquina
+    - [ ] Um programa que corrige erros de português
+    - [ ] Um hardware que resfria a CPU
+    - [ ] Um editor de texto
 
-    - [ ] int
-    - [x] float
-    - [ ] str
-    - [ ] bool
+2. O que é Código Fonte?
+    - [ ] O arquivo final .exe
+    - [x] O texto que o programador escreve (instruções)
+    - [ ] A fonte de energia do PC
+    - [ ] O manual do usuário
 
-2. Qual a saída do código `print(type("10"))`?
+3. O que é Código de Máquina (Binário)?
+    - [ ] Código escrito em inglês
+    - [ ] Desenhos de fluxograma
+    - [x] Sequência de 0s e 1s que o processador entende
+    - [ ] A senha do Wi-Fi
 
-    - [ ] <class 'int'>
-    - [ ] <class 'float'>
-    - [x] "><class 'str'>
-    - [ ] <class 'bool'>
+4. Para que serve o VS Code?
+    - [ ] Apenas para desenhar
+    - [x] Editar código de várias linguagens (IDE/Editor)
+    - [ ] Rodar jogos pesados
+    - [ ] Acessar redes sociais
 
-3. O que a função `input()` retorna por padrão?
+5. O que faz a extensão "Termynal" que usamos no curso?
+    - [ ] Hackea satélites
+    - [x] Simula comandos de terminal de forma visual
+    - [ ] Traduz código para português
+    - [ ] Cria vírus
 
-    - [ ] Um número inteiro (int)
-    - [ ] Um número decimal (float)
-    - [x] Um texto (str)
-    - [ ] O tipo que o usuário escolher
+6. No VisualG, qual comando escreve na tela?
+    - [ ] print()
+    - [ ] echo
+    - [x] escreva() ou escreval()
+    - [ ] cout
 
-4. Qual variável segue as boas práticas (snake_case) do Python?
+7. O que é "Low Code" (como Scratch)?
+    - [ ] Code baixo (volume baixo)
+    - [x] Programação com pouco código (blocos visuais)
+    - [ ] Código de má qualidade
+    - [ ] Programação para robôs pequenos
 
-    - [ ] NomeUsuario
-    - [x] nome_usuario
-    - [ ] nome-usuario
-    - [ ] NOMEUSUARIO
+8. Qual a extensão de um arquivo C?
+    - [ ] .py
+    - [ ] .java
+    - [x] .c
+    - [ ] .txt
 
-5. Qual o resultado de `10 // 3` (divisão inteira)?
+9. O computador entende português nativamente?
+    - [ ] Sim, ele é inteligente
+    - [x] Não, precisa ser traduzido (compilado/interpretado)
+    - [ ] Apenas se tiver IA
+    - [ ] Sim, o Windows fala português
 
-    - [ ] 3.3333...
-    - [x] 3
-    - [ ] 1
-    - [ ] 10
+10. O que significa "IDE"?
+    - [ ] Internet de Elite
+    - [ ] Interface de Dados Externa
+    - [x] Ambiente de Desenvolvimento Integrado
+    - [ ]  Ideia de Experimento

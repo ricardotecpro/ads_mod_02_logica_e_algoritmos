@@ -39,6 +39,16 @@ matriz[1][1] <- 50
 
 ---
 
+## 2.5 Aplicações Práticas (Onde usam isso?) 🌍
+
+Matrizes estão em todos os lugares:
+*   **Imagens Digitais**: Cada pixel é uma célula de uma matriz gigante de cores.
+*   **Planilhas (Excel)**: Linhas e colunas de dados.
+*   **Jogos de Tabuleiro**: Xadrez, Dama, Batalha Naval.
+*   **Mapas**: Coordenadas de Latitude e Longitude (GPS).
+
+---
+
 ## 3. Percorrendo uma Matriz 🔄🔄
 
 Se um vetor precisa de 1 loop, uma matriz precisa de **2 loops aninhados** (um dentro do outro).
@@ -69,6 +79,8 @@ fimpara
 1.  **Fácil (Identidade)**: Crie uma matriz 3x3 onde a diagonal principal (0,0 | 1,1 | 2,2) seja preenchida com 1 e o resto com 0.
 2.  **Médio (Soma)**: Leia uma matriz 2x2 e mostre a soma de todos os seus elementos.
 3.  **Desafio (Batalha Naval)**: Crie um tabuleiro 5x5 zerado. Esconda um "Navio" (valor 1) em uma posição aleatória. Peça para o usuário "atirar" (digitar linha e coluna). Se acertar, escreva "FOGO!", senão, "ÁGUA".
+    ??? tip "Dica: Aleatoriedade"
+        Para gerar números aleatórios no VisualG, use `randi(5)`. Ele gera um número entre 0 e 4.
 
 ---
 **Próxima Aula**: Como organizar códigos gigantes sem perder a cabeça? [Modularização e Funções](./aula-08.md).

@@ -77,10 +77,32 @@ Fimalgoritmo
 
 ---
 
-## 4. Exercícios de Fixação 📝
+## 4. Operadores Aritméticos 🧮
+
+O computador é uma calculadora gigante.
+
+| Operador | Nome | Exemplo | Resultado |
+| :---: | :--- | :--- | :--- |
+| `+` | Soma | `5 + 3` | `8` |
+| `-` | Subtração | `10 - 2` | `8` |
+| `*` | Multiplicação | `4 * 2` | `8` |
+| `/` | Divisão | `16 / 2` | `8` |
+| `%` | Módulo (Resto) | `5 % 2` | `1` (Sobrou 1) |
+| `^` | Potência | `2 ^ 3` | `8` |
+
+!!! tip "Dica: Resto da Divisão"
+    O operador `%` é muito útil para saber se um número é **Par** ou **Ímpar**.
+    *   `x % 2 = 0` -> Par
+    *   `x % 2 = 1` -> Ímpar
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um algoritmo que leia o **Nome** e **Idade** de, pessoa e mostre: "Olá [Nome], você tem [Idade] anos".
-2.  **Médio**: Leia dois números (A e B) e troque seus valores (A vira B, B vira A). *Dica: Use uma variável auxiliar.*
+2.  **Médio**: Leia dois números (A e B) e troque seus valores (A vira B, B vira A).
+    ??? tip "Dica da Troca"
+        Imagine dois copos (um com suco, outro com água). Para trocar o conteúdo, você precisa de um **terceiro copo vazio** (variável auxiliar)!
 3.  **Desafio**: Um motorista deseja encher o tanque. Leia o preço da gasolina e o valor que ele tem em dinheiro. Calcule quantos litros ele consegue colocar.
 
 ---

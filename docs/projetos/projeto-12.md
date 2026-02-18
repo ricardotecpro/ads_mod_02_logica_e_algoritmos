@@ -1,12 +1,32 @@
-# Projeto 12 - API de Dados Climáticos (Milestone 3) 🔷
+# Projeto 12 - API Climática (Milestone 3) 🌦️
 
-**Objetivo**: C# .NET, LINQ e Dados.
+## O Desafio 🎯
+Você trabalha em uma StartUp de Agricultura. Os fazendeiros precisam saber a previsão do tempo para planejar a colheita.
 
-## O Desafio
-1.  Crie uma classe `RegistroClima`: Cidade, Data, Temperatura, Umidade.
-2.  Gere uma lista "Mock" (Falsa) com 100 registros aleatórios para cidades variadas.
-3.  Crie um menu de consulta usando LINQ:
-    *   1. Média de temperatura de uma cidade.
-    *   2. Cidades mais quentes que 30 graus.
-    *   3. Dia mais frio do histórico.
-4.  **Extra**: Exporte os dados filtrados para um arquivo `.csv`.
+**Objetivo**: Consumir dados reais da internet (JSON) e processar com C# e LINQ.
+
+## Requisitos Técnicos
+1.  **Linguagem**: C# (.NET Core).
+2.  **Dados**: Simule uma resposta JSON de API (ou use uma real se souber `HttpClient`).
+    - Lista de objetos `Previsao` (Dia, Temperatura, Chuva?).
+3.  **Funcionalidades (LINQ)**:
+    - `Filtro`: Mostrar dias com Chuva = true.
+    - `Ordenação`: Mostrar dias mais quentes primeiro.
+    - `Média`: Qual a temperatura média da semana?
+
+## Exemplo de Dados (Mock)
+```csharp
+var previsoes = new List<Previsao> {
+    new Previsao { Dia = "Seg", Temp = 30, Chuva = true },
+    new Previsao { Dia = "Ter", Temp = 28, Chuva = false },
+    new Previsao { Dia = "Qua", Temp = 35, Chuva = false }
+};
+```
+
+## Consultas Esperadas
+- "Dias de Chuva: Seg"
+- "Temp Máxima: 35 (Qua)"
+- "Média: 31.0"
+
+## Entrega 📦
+- Código Fonte `.cs` (Console Application).

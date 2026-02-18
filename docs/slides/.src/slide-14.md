@@ -1,43 +1,41 @@
-# Roteiro de Slides - Aula 14
+# Aula 14 - Sistemas Modernos (Rust/Go) 🦀🐹
 
 ---
 
-## Do Código para a Internet
+## 1. O Desafio do C/C++ 🚧
 
-- Ver código é chato para clientes/recrutadores.
-- Ver um **Site no ar** é incrível.
-- GitHub Pages permite isso em segundos.
-
----
-
-## O que roda no Pages?
-
-- **HTML** (Estrutura).
-- **CSS** (Estilo).
-- **JavaScript** (Interatividade).
-- Imagens / Fontes.
-- **NÃO RODA**: PHP, Java, Python, SQL (Backend).
+- C/C++ são rápidos, mas perigosos (Memory Leaks, SegFault).
+- O mundo precisava de algo novo.
 
 ---
 
-## Como ativar?
+## 2. Rust: O Guardião 🦀
 
-- Settings -> Pages.
-- Source: `Deploy from a branch`.
-- Branch: `main` / `root`.
-- Save.
-
----
-
-## Endereço Personalizado
-
-- Padrão: `usuario.github.io/repo`.
-- Exemplo: `joaosilva.github.io/portfolio`.
-- Profissionalismo instantâneo.
+- **Ownership**: Cada dado tem um dono.
+- Sem Garbage Collector, mas sem gerenciamento manual.
+- **Segurança**: O compilador não deixa passar erro de memória.
+- Curva de aprendizado íngreme.
 
 ---
 
-## Jekyll (Bônus)
+## 3. Go: A Simplicidade 🐹
 
-- O GitHub tem um motor que transforma Markdown em Site Blog automaticamente.
-- Se você não sabe HTML, pode usar um tema Jekyll e criar um site lindo apenas editando arquivos `.md`.
+- Criada pelo Google. 
+- Sintaxe limpa. Compilação instantânea.
+- **Goroutines**: Rode 100 mil tarefas ao mesmo tempo.
+- Perfeita para Servidores e Cloud (Docker é feito em Go).
+
+---
+
+## 4. Ferramentas 🛠️
+
+- **Cargo (Rust)**: O melhor gerenciador de pacotes existente.
+- **Go CLI**: Simplicidade (`go run`, `go fmt`).
+
+---
+
+## Próximos Passos
+
+- Vimos Backend e Sistemas.
+- E o celular no seu bolso?
+- **Desenvolvimento Mobile**.

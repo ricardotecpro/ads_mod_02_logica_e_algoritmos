@@ -12,7 +12,24 @@ Não confunda: **C#** é a linguagem. **.NET** é a plataforma (bibliotecas, run
 
 ---
 
-## 2. LINQ: A Mágica do C# 🪄
+## 2. Ferramentas: Onde programar? 🛠️
+
+*   **Visual Studio (Roxo)**: A IDE completa. Pesada, mas quase programa por você.
+*   **VS Code (Azul)**: Leve, rápido e funciona em qualquer lugar.
+
+### Criando um Projeto (Termynal)
+
+<div data-termynal class="termy">
+    <span data-ty="input">dotnet new console -o MeuApp</span>
+    <span data-ty="progress">Restoring packages...</span>
+    <span data-ty="input">cd MeuApp</span>
+    <span data-ty="input">dotnet run</span>
+    <span data-ty>Hello, World!</span>
+</div>
+
+---
+
+## 3. LINQ: A Mágica do C# 🪄
 
 O recurso mais amado do C#. Permite tratar listas como se fossem banco de dados.
 
@@ -43,7 +60,7 @@ var resultado = numeros
 
 ---
 
-## 3. F# : O Lado Funcional (Bônus) 🟣
+## 4. F# : O Lado Funcional (Bônus) 🟣
 
 O .NET também tem uma linguagem chamada **F#**, focada em matemática e funções puras. O C# pegou muitas ideias dela (como o LINQ e as expressões lambda).
 
@@ -55,10 +72,12 @@ let resultado = dobrar 5 // 10
 
 ---
 
-## 4. Exercícios de Fixação 📝
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um programa C# "Olá Mundo" no Console.
 2.  **Médio (LINQ)**: Dada uma lista de nomes `["Ana", "Bruno", "Carlos", "Amanda"]`, use LINQ para filtrar apenas os que começam com "A".
+    ??? tip "Dica: StartsWith"
+        Use `.Where(nome => nome.StartsWith("A"))`.
 3.  **Desafio (Mini-Sistema)**: Crie uma classe `Produto` (Nome, Preço). Crie uma lista de produtos. Use LINQ para achar o produto mais caro e a média de preços.
 
 ---
