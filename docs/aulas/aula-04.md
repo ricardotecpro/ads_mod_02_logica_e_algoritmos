@@ -73,7 +73,7 @@ fimescolha
 
 ### Simulando um Menu (Termynal)
 
-```termynal
+```console
 $ ./menu_sistema
 1. Iniciar
 2. Configurações

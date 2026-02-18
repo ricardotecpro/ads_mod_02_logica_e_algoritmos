@@ -69,7 +69,7 @@ class TestNavigation:
         page.get_by_role("link", name="Aulas").first.click(force=True)
         
         # Click Módulo 1: Fundamentos
-        page.get_by_text("Módulo 1: Fundamentos").click()
+        page.get_by_text("Módulo 1: Fundamentos").first.click()
         
         # Click Aula 01
         page.get_by_role("link", name="Aula 01", exact=True).first.click()
