@@ -55,6 +55,10 @@ def test_mermaid_syntax_safety(file_path, start_line, block):
         matches = re.findall(r'\[(.*?)\]', line)
         for content in matches:
             if '(' in content or ')' in content:
+                # Ignore Database shape [()] usage
+                if content.strip().startswith('(') and content.strip().endswith(')'):
+                    continue
+                
                 # Check if it is NOT quoted
                 stripped = content.strip()
                 if not (stripped.startswith('"') and stripped.endswith('"')) and \
