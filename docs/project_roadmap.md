@@ -1,6 +1,6 @@
-# Roadmap do Projeto: Curso de Git e GitHub
+# Roadmap do Projeto: Curso de Lógica e Algoritmos
 
-Este documento rastreia o progresso do desenvolvimento do curso de Git e GitHub para Iniciantes.
+Este documento rastreia o progresso do desenvolvimento do curso de Lógica e Algoritmos.
 
 ## ✅ Fase 1: Estruturação e Conteúdo Base (Concluído)
 - [x] Definição da ementa (16 aulas)

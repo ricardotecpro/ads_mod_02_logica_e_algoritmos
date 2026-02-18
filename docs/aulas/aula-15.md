@@ -71,8 +71,8 @@ Aplicativos não são estáticos. Se você clica num botão e a tela muda, o **E
 
 ```mermaid
 graph LR;
-    User[Usuário Clica] --> State[Estado Muda\n(Contador + 1)];
-    State --> UI[Tela Redesenha\n(build)];
+    User["Usuário Clica"] --> State["Estado Muda<br/>(Contador + 1)"];
+    State --> UI["Tela Redesenha<br/>(build)"];
     
     style State fill:#bfb;
 ```

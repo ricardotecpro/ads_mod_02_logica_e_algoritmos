@@ -66,11 +66,11 @@ Ninguém escreve PHP "puro" em grandes sistemas. Usamos frameworks como **Larave
 
 ```mermaid
 graph LR;
-    User[Usuário] -->|Acessa URL| Route[Rotas];
-    Route -->|Chama| Controller[Controlador];
-    Controller -->|Busca Dados| Model[Modelo (Banco)];
+    User["Usuário"] -->|Acessa URL| Route["Rotas"];
+    Route -->|Chama| Controller["Controlador"];
+    Controller -->|Busca Dados| Model["Modelo (Banco)"];
     Model -->|Retorna| Controller;
-    Controller -->|Envia para Tela| View[Visualização];
+    Controller -->|Envia para Tela| View["Visualização"];
     View -->|HTML Final| User;
     
     style Controller fill:#f9f;
