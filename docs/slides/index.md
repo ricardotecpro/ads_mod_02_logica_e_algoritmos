@@ -1,4 +1,4 @@
-# Slides das Aulas 📽️
+# Slides
 
 Material de apoio visual para acompanhamento das aulas.
 

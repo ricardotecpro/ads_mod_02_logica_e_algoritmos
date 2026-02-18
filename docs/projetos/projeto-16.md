@@ -10,7 +10,7 @@ Você chegou ao topo. É hora de conectar tudo. O projeto final é um "Mural de 
 ```mermaid
 graph LR;
     Navegador -->|POST /salvar| ControllerPHP;
-    ControllerPHP -->|INSERT| MySQL[(Banco Recados)];
+    ControllerPHP -->|INSERT| MySQL[("Banco Recados")];
     MySQL -->|SELECT| ControllerPHP;
     ControllerPHP -->|HTML| Navegador;
 ```
