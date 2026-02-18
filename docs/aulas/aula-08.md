@@ -64,7 +64,7 @@ Isso é CRÍTICO.
 
 ## 4. Simulando (Termynal)
 
-```termynal
+```console
 $ ./sistema_bancario
 --- MENU ---
 1. Saldo

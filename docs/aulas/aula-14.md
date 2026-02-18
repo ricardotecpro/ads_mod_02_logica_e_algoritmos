@@ -56,7 +56,7 @@ fmt.Println(msg)
 
 ## 3. Simulando Execução (Termynal)
 
-```termynal
+```console
 $ cargo run
 > Compiling projeto_rust v0.1.0
 > Running `target/debug/projeto_rust`

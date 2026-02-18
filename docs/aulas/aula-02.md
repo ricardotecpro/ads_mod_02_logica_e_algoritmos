@@ -57,7 +57,7 @@ O editor profissional mais usado do mundo. Ele não faz nada sozinho, mas com **
 ### Simulando o Terminal (Termynal)
 Quando programamos ferramentas "reais" (C, Python, Java), usamos muito o terminal (tela preta).
 
-```termynal
+```console
 $ code .
 > Abrindo VS Code...
 

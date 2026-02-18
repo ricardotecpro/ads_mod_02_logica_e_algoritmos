@@ -63,7 +63,7 @@ fimpara
 
 ### Simulando (Termynal)
 
-```termynal
+```console
 $ ./lista_nomes
 Digite o nome 0: Ana
 Digite o nome 1: Carlos

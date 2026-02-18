@@ -69,7 +69,7 @@ Fimalgoritmo
 
 ### Simulando a Execução (Termynal)
 
-```termynal
+```console
 $ ./calcula_dobro
 Digite um número: 5
 > O dobro é: 10

@@ -42,7 +42,7 @@ se (idade >= 18) {
 
 Mostre como seria a saída no terminal.
 
-```termynal
+```console
 $ ./programa_exemplo
 Digite sua idade: 18
 > Maior de idade

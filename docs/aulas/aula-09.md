@@ -36,7 +36,7 @@ graph TD;
 
 ### Simulando Compilação (Termynal)
 
-```termynal
+```console
 $ gcc ola.c -o ola
 > Compilando...
 

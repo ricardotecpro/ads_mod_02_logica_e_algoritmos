@@ -45,7 +45,7 @@ O navegador recebe apenas:
 
 ### Simulando um Servidor Local (Termynal)
 
-```termynal
+```console
 $ php -S localhost:8000
 > PHP Development Server started...
 > Listening on http://localhost:8000

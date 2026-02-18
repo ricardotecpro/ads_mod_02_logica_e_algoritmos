@@ -40,7 +40,7 @@ fimenquanto
 
 ### Simulando (Termynal)
 
-```termynal
+```console
 $ ./contagem
 Contagem: 0
 Contagem: 1

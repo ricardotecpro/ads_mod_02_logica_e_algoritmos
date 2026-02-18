@@ -57,7 +57,7 @@ print(pessoa["nome"]) # Ana
 
 Python é interpretado. Você pode testar ideias na hora.
 
-```termynal
+```console
 $ python
 >>> 2 + 2
 4

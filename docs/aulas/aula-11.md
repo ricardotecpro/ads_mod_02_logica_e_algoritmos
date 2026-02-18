@@ -38,7 +38,7 @@ classDiagram
 
 Java usa uma **Máquina Virtual** (JVM).
 
-```termynal
+```console
 $ javac OlaMundo.java
 > Compilando para Bytecode (.class)...
 

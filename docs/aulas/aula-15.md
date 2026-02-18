@@ -56,7 +56,7 @@ class MeuApp extends StatelessWidget {
 
 ### Simulando o Build (Termynal)
 
-```termynal
+```console
 $ flutter create meu_app
 > Criando projeto...
 

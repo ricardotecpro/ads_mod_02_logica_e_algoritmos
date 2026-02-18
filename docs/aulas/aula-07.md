@@ -54,7 +54,7 @@ fimpara
 
 ### Simulando a Execução (Termynal)
 
-```termynal
+```console
 $ ./preenche_matriz
 Digite valor para [0,0]: 10
 Digite valor para [0,1]: 20
