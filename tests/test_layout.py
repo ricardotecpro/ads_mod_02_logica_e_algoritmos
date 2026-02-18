@@ -31,7 +31,7 @@ def test_homepage_structure(page: Page, base_url):
     
     # Check main heading
     heading = page.locator("h1")
-    expect(heading).to_contain_text("Lógica e Algoritmos")
+    expect(heading).to_contain_text("Curso de Algoritmos")
     
     # Check navigation cards exist
     # Material uses .md-typeset .grid.cards
@@ -50,7 +50,7 @@ def test_lesson_01_page(page: Page, base_url):
     
     # Check main heading
     heading = page.locator("h1")
-    expect(heading).to_contain_text("Conteúdo do Curso")
+    expect(heading).to_contain_text("Introdução")
     
     # Check quiz containers exist
     quiz_containers = page.locator(".quiz-container")

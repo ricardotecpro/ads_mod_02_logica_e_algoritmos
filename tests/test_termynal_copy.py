@@ -7,8 +7,8 @@ def test_termynal_copy_button(page: Page, base_url: str):
     # Grant clipboard permissions
     page.context.grant_permissions(['clipboard-write', 'clipboard-read'])
 
-    # Navigate to Setup 03 which contains console blocks
-    page.goto(f"{base_url}/setups/setup-03/")
+    # Navigate to Lesson 04 which contains console blocks (Termynal)
+    page.goto(f"{base_url}/aulas/aula-04/")
 
     # Wait for Termynal to be visible
     # Note: custom_termynal.js looks for .termy, but the mkdocs-termynal plugin
