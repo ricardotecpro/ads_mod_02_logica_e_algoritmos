@@ -1,13 +1,11 @@
-# Projeto - Aula 01: Conteúdo do Curso
+# Projeto 01 - Fluxograma da Vida Real 🧬
 
-## 🚀 Desafio
+**Objetivo**: Mapear um processo complexo do seu dia a dia.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Conteúdo do Curso.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Conteúdo do Curso.
+## O Desafio
+1.  Escolha uma tarefa manual (ex: Fazer um bolo, Ir ao trabalho, Trocar pneu).
+2.  Use uma ferramenta (Draw.io, Mermaid ou Papel).
+3.  Crie o **Início** e **Fim**.
+4.  Adicione pelo menos **3 Decisões** (Losangos).
+5.  Adicione pelo menos **1 Loop** (Seta voltando).
+6.  Salve a imagem como `fluxograma_vida.png`.

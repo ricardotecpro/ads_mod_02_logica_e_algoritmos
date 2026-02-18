@@ -25,3 +25,9 @@ Para desenhar fluxogramas e UML.
 ## 5. Excel (Lógica de Tabela)
 O Excel é excelente para entender tabelas (Matrizes) e fórmulas (Funções).
 *   **Alternativa Gratuita**: Google Sheets ou LibreOffice Calc.
+
+## 6. Solução de Problemas Comuns ⚠️
+
+*   **VisualG travando**: Execute como Administrador (botão direito -> Executar como admin).
+*   **Antivírus bloqueou**: O VisualG é antigo e alguns antivírus acham que é ameaça. Adicione nas exceções.
+*   **Portugol Studio não abre**: Verifique se você tem o Java instalado (ele depende do Java).

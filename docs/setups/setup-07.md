@@ -13,3 +13,9 @@ O Rust usa o gerenciador `rustup`.
 2.  Instale (Next, Next, Finish).
 3.  Teste: `go version`.
 4.  **VS Code**: Instale a extensão "Go" oficial.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **'cargo' não encontrado**: Reinicie o terminal. Se não funcionar, adicione `~/.cargo/bin` (Linux/Mac) ou `%USERPROFILE%\.cargo\bin` (Windows) ao PATH.
+*   **Go Path**: Certifique-se de que a variável `GOPATH` está configurada corretamente (geralmente `C:\Users\SeuUsuario\go`).
+*   **Erro de Linker (Rust)**: No Windows, pode faltar as ferramentas de build do C++. Baixe o "Build Tools for Visual Studio".

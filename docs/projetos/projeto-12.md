@@ -1,13 +1,12 @@
-# Projeto - Aula 12: Linguagem C#
+# Projeto 12 - API de Dados Climáticos (Milestone 3) 🔷
 
-## 🚀 Desafio
+**Objetivo**: C# .NET, LINQ e Dados.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem C#.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem C#.
+## O Desafio
+1.  Crie uma classe `RegistroClima`: Cidade, Data, Temperatura, Umidade.
+2.  Gere uma lista "Mock" (Falsa) com 100 registros aleatórios para cidades variadas.
+3.  Crie um menu de consulta usando LINQ:
+    *   1. Média de temperatura de uma cidade.
+    *   2. Cidades mais quentes que 30 graus.
+    *   3. Dia mais frio do histórico.
+4.  **Extra**: Exporte os dados filtrados para um arquivo `.csv`.

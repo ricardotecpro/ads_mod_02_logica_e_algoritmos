@@ -17,3 +17,9 @@ Para desenvolvimento Dart multiplataforma.
 ## 3. VS Code
 O editor preferido para Flutter.
 1.  Instale a extensão "Flutter" (ela instala a do Dart automaticamente).
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **flutter doctor com erros**: É normal. Siga o que ele diz. Geralmente é aceitar licenças (`flutter doctor --android-licenses`).
+*   **Emulador não abre (HAXM/Hyper-V)**: Seu processador precisa ter virtualização ativada na BIOS.
+*   **Gradle demorando**: A primeira vez demora MUITO (baixa a internet inteira). Tenha paciência.

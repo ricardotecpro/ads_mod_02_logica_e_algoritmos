@@ -1,13 +1,10 @@
-# Projeto - Aula 07: Matrizes
+# Projeto 07 - Jogo da Velha (Tic-Tac-Toe) ⭕❌
 
-## 🚀 Desafio
+**Objetivo**: Dominar Matrizes.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Matrizes.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Matrizes.
+## O Desafio
+1.  Crie uma matriz 3x3 de caracteres, iniciando vazia.
+2.  Dois jogadores (X e O) jogam alternadamente.
+3.  A cada jogada, mostre o tabuleiro desenhado na tela.
+4.  Verifique se alguém ganhou (linha completa, coluna completa ou diagonal).
+5.  Verifique se deu "Velha" (tabuleiro cheio sem ganhador).

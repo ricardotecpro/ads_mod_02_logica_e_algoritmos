@@ -1,13 +1,13 @@
-# Projeto - Aula 14: Linguagem JavaScript
+# Projeto 14 - Chat via Terminal (Go/Rust) 🦀🐹
 
-## 🚀 Desafio
+**Objetivo**: Concorrência e Canais.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem JavaScript.
+## O Desafio (Go)
+1.  Crie uma função `servidor(canal)` que recebe mensagens e imprime "Servidor recebeu: X".
+2.  Crie 3 Goroutines `clientes`, cada uma enviando 5 mensagens para o canal.
+3.  Faça o servidor processar todas concorrentemente.
 
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem JavaScript.
+## O Desafio (Rust - Alternativo)
+1.  Crie um programa que use Threads para contar até 10 milhões.
+2.  Divida o trabalho em 4 threads.
+3.  Use um `Mutex` ou canais para somar o total final com segurança.

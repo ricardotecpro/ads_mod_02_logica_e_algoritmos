@@ -14,3 +14,9 @@ A melhor IDE para Java/Kotlin.
 ## 3. VS Code
 Se preferir o VS Code:
 1.  Instale o "Extension Pack for Java" da Microsoft.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **'javac' não reconhecido**: A variável de ambiente `JAVA_HOME` ou o `Path` estão errados. Verifique se apontam para a pasta `bin` do JDK.
+*   **Erro: "Class names are only accepted..."**: O nome do arquivo DEVE ser igual ao nome da classe (ex: `Ola.java` tem que ter `public class Ola`).
+*   **Versão antiga do Java**: Digite `java -version` para conferir se está usando a versão que acabou de instalar.

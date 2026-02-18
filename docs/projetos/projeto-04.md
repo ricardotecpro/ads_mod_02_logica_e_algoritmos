@@ -1,13 +1,13 @@
-# Projeto - Aula 04: Estrutura Condicional
+# Projeto 04 - Calculadora de IMC (Milestone 1) ⚖️
 
-## 🚀 Desafio
+**Objetivo**: Seu primeiro programa útil com decisões.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Estrutura Condicional.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Estrutura Condicional.
+## O Desafio
+1.  Leia o **Peso** (kg) e a **Altura** (m).
+2.  Calcule o IMC: `Peso / (Altura * Altura)`.
+3.  Mostre a classificação:
+    *   < 18.5: Abaixo do peso.
+    *   18.5 - 24.9: Peso normal.
+    *   25 - 29.9: Sobrepeso.
+    *   30+: Obesidade.
+4.  **Bônus**: Pergunte o nome e mostre "Olá [Nome], seu IMC é..."

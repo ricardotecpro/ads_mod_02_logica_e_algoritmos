@@ -13,3 +13,9 @@ Ideal para iniciantes, pois já vem com tudo configurado.
     *   Pesquise "Variáveis de Ambiente" no Windows.
     *   Edite o `Path` e adicione `C:\mingw64\bin`.
 4.  **VS Code**: Instale a extensão "C/C++" da Microsoft.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **'gcc' não é reconhecido**: Você esqueceu de adicionar a pasta `bin` do MinGW ao PATH do Windows. Revise o passo 1.
+*   **Erro ao compilar**: Certifique-se de que salvou o arquivo com a extensão `.c` (para C) ou `.cpp` (para C++).
+*   **Terminal fecha rápido**: Adicione `getchar();` ou `system("pause");` antes do `return 0;` para segurar a tela.

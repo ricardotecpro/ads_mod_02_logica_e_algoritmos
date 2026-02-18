@@ -1,13 +1,11 @@
-# Projeto - Aula 10: Linguagem C++
+# Projeto 10 - To-Do List Interativa (JS/TS) 🌐
 
-## 🚀 Desafio
+**Objetivo**: Manipular o DOM e Eventos.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem C++.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem C++.
+## O Desafio
+1.  Crie um HTML com: Input de texto, Botão "Adicionar", Lista `<ul>`.
+2.  Use JavaScript para:
+    *   Ao clicar no botão, adicionar o texto do input como um `<li>` na lista.
+    *   O item deve ter um botão "X" que, ao ser clicado, remove o item da lista.
+    *   O item deve ter um checkbox que, ao marcado, risca o texto (concluído).
+3.  **Extra**: Salve os dados no `localStorage` para não perder ao recarregar.

@@ -1,13 +1,12 @@
-# Projeto - Aula 06: Vetores
+# Projeto 06 - Lista de Tarefas (To-Do) ✅
 
-## 🚀 Desafio
+**Objetivo**: Usar Vetores para guardar dados.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Vetores.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Vetores.
+## O Desafio
+1.  Crie um vetor para armazenar 10 tarefas (Strings).
+2.  Mostre um menu repetitivo:
+    *   1. Adicionar Tarefa.
+    *   2. Listar Tarefas.
+    *   3. Sair.
+3.  Se escolher 1: Leia o texto e guarde na primeira posição livre.
+4.  Se escolher 2: Mostre todas as tarefas cadastradas (ignore as vazias).

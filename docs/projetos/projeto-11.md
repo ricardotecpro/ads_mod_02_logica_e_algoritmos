@@ -1,13 +1,14 @@
-# Projeto - Aula 11: Linguagem Java
+# Projeto 11 - Banco Imobiliário Simplificado (Java) ☕
 
-## 🚀 Desafio
+**Objetivo**: Orientação a Objetos na prática.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem Java.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem Java.
+## O Desafio
+1.  Classe `Jogador`: nome, saldo, posicao.
+2.  Classe `Propriedade`: nome, preco, aluguel, dono (Jogador).
+3.  No `main`:
+    *   Crie 2 jogadores.
+    *   Crie uma lista de propriedades.
+    *   Simule 10 rodadas de dados.
+    *   Se cair em propriedade sem dono -> Pode comprar.
+    *   Se cair em propriedade com dono -> Paga aluguel.
+4.  Mostre quem tem mais dinheiro no final.

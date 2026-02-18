@@ -20,3 +20,9 @@ Após instalar o Node.js, instale o compilador TS globalmente:
 npm install -g typescript
 ```
 Teste com `tsc -v`.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **cmd 'node' não encontrado**: Reinicie seu terminal ou computador após instalar o Node.js.
+*   **Erro de Permissão no npm**: Tente executar o terminal como Administrador ou use o `nvm` para gerenciar versões.
+*   **Code Runner não funciona**: Verifique se o Node está no PATH. Tente rodar manualmente no terminal: `node arquivo.js`.

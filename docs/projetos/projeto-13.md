@@ -1,13 +1,12 @@
-# Projeto - Aula 13: Linguagem Python
+# Projeto 13 - Analisador de CSV (Python) 🐍
 
-## 🚀 Desafio
+**Objetivo**: Data Science "raiz".
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem Python.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem Python.
+## O Desafio
+1.  Baixe (ou crie) um arquivo `.csv` simples (ex: lista de produtos com preço).
+2.  Use Python (sem Pandas, apenas `open` e `split`) para ler o arquivo.
+3.  Converta os dados para uma lista de Dicionários.
+4.  Calcule:
+    *   Total de vendas.
+    *   Item mais vendido.
+5.  Gere um novo arquivo `relatorio.txt` com as conclusões.

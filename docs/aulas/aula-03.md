@@ -1,134 +1,87 @@
-# Estrutura Sequencial: O Começo de Tudo ➡️
+# Aula 03 - Estrutura Sequencial ➡️
 
-Bem-vindo à sua primeira "aula de verdade" de lógica com código! Até agora, preparamos o terreno. Hoje, vamos aprender como um programa "pensa" da forma mais básica: um passo depois do outro.
-
-## 1. O que é Estrutura Sequencial?
-
-Imagine uma receita de bolo:
-1.  Quebre os ovos.
-2.  Bata a massa.
-3.  Coloque no forno.
-
-A ordem importa. Você não pode assar o bolo antes de quebrar os ovos. Na programação, a **Estrutura Sequencial** é isso: comandos executados **de cima para baixo**, uma linha de cada vez, sem pular nada.
+> [!TIP]
+> **Objetivo**: Entender como o computador guarda informações (Variáveis) e executa comandos um após o outro.
 
 ---
 
-## 2. Variáveis: As Caixas da Memória 📦
+## 1. Variáveis: As Caixas da Memória 📦
 
-Para processar dados, o computador precisa guardá-los na memória RAM. Chamamos esses espaços de **Variáveis**.
-Imagine uma variável como uma caixa etiquetada onde você guarda **UM** valor.
+Imagine que a memória RAM do computador é um grande **armário cheio de gavetas**. Cada gaveta tem um endereço e guarda **uma coisa** por vez.
 
-### Tipos de Dados Primitivos
-Em Java (e na maioria das linguagens), as caixas têm tamanhos e formatos diferentes:
+### Visualizando a Memória (Mermaid)
 
-| Tipo | O que guarda? | Exemplo | Tamanho |
-| :--- | :--- | :--- | :--- |
-| **int** | Números inteiros | `10`, `-5`, `0` | Pequeno |
-| **double** | Números com vírgula (Reais) | `10.5`, `3.1415` | Grande |
-| **char** | Um único caractere | `'A'`, `'@'`, `'9'` | Minúsculo |
-| **boolean** | Verdadeiro ou Falso | `true`, `false` | Mínimo |
-| **String** | Texto (Palavras/Frases) | `"Olá Mundo"`, `"Mariana"` | Variável |
-
-> **Nota**: `String` em Java é uma Classe especial, por isso começa com maiúscula.
-
-### Declarando Variáveis
-
-Sintaxe básica: `TIPO NOME_DA_VARIAVEL = VALOR;`
-
-```java
-int idade = 25;
-double altura = 1.75;
-char genero = 'F';
-String nome = "Maria";
-boolean estuda = true;
+```mermaid
+graph TD;
+    Memoria[Memória RAM] --> Var1[Gaveta 'IDADE'];
+    Var1 --> Val1[Valor: 25];
+    Memoria --> Var2[Gaveta 'NOME'];
+    Var2 --> Val2[Valor: "Maria"];
+    
+    style Var1 fill:#f9f,stroke:#333;
+    style Var2 fill:#bbf,stroke:#333;
 ```
 
 ---
 
-## 3. Entrada e Saída (Input/Output) 📤📥
+## 2. Tipos de Dados (O Formato da Caixa) 📐
 
-Como o programa conversa com o usuário?
+Nem tudo cabe na mesma gaveta. Precisamos definir o **TIPO** da variável.
 
-### Saída de Dados (Output)
-É o que o programa mostra na tela.
+| Tipo (Pseudocódigo) | O que guarda? | Exemplo | Tamanho (Bytes) |
+| :--- | :--- | :--- | :---: |
+| **Inteiro** | Números sem vírgula | `10`, `-5`, `0` | 4 |
+| **Real** | Números com vírgula | `10.5`, `3.14` | 8 |
+| **Caractere** | Texto (Letras/Palavras) | `"Olá"`, `'A'` | Var |
+| **Lógico** | Verdadeiro ou Falso | `VERDADEIRO` | 1 |
 
-```java
-System.out.println("Olá, mundo!"); // Pula linha no final
-System.out.print("Sem pular linha");
-System.out.printf("Formatado: %.2f", 10.50); // %.2f = 2 casas decimais
-```
-
-### Entrada de Dados (Input)
-É o que o usuário digita. Em Java, usamos um "scanner" para ler o teclado.
-
-```java
-import java.util.Scanner; // Importa a ferramenta Scanner
-
-public class ExemploEntrada {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // Cria o leitor
-
-        System.out.print("Digite seu nome: ");
-        String nome = sc.next(); // Lê uma palavra
-
-        System.out.print("Digite sua idade: ");
-        int idade = sc.nextInt(); // Lê um inteiro
-
-        System.out.println("Olá, " + nome + "! Você tem " + idade + " anos.");
-
-        sc.close(); // Encerra o leitor
-    }
-}
-```
+> [!WARNING]
+> **Erro Comum**: Tentar guardar texto numa variável numérica gera erro! `inteiro x = "texto"` ❌
 
 ---
 
-## 4. Processamento de Dados (Cálculos) ➗
+## 3. Entrada, Processamento e Saída ⚙️
 
-O processamento acontece através de **atribuições** e **expressões matemáticas**.
+Todo algoritmo segue esse fluxo:
 
-**Regra de Ouro**: O processamento (cálculo) deve acontecer **DA DIREITA PARA A ESQUERDA**.
-*   `x = 10 + 5` -> Primeiro resolve `10 + 5`, depois guarda o `15` na caixa `x`.
+1.  **Entrada (Input)**: Dados que chegam (Teclado, Arquivo).
+2.  **Processamento**: Cálculos (`soma = a + b`).
+3.  **Saída (Output)**: Resultado (Tela).
 
-### Operadores Aritméticos
-*   `+` (Soma)
-*   `-` (Subtração)
-*   `*` (Multiplicação)
-*   `/` (Divisão)
-*   `%` (Módulo/Resto da Divisão) -> Útil para saber se um número é par ou ímpar (`x % 2 == 0`).
+### Exemplo: Calculadora de Dobro (VisualG)
 
-### Exemplo Completo: Soma de Dois Números
+```portugol
+Algoritmo "Dobro"
+Var
+   num, resultado : inteiro
+Inicio
+   // Entrada
+   escreva("Digite um número: ")
+   leia(num)
+   
+   // Processamento
+   resultado <- num * 2
+   
+   // Saída
+   escreva("O dobro é: ", resultado)
+Fimalgoritmo
+```
 
-```java
-import java.util.Scanner;
+### Simulando a Execução (Termynal)
 
-public class Soma {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int x, y, soma; // Declarando múltiplas variáveis
-
-        System.out.print("Digite o primeiro número: ");
-        x = sc.nextInt();
-
-        System.out.print("Digite o segundo número: ");
-        y = sc.nextInt();
-
-        soma = x + y; // Processamento
-
-        System.out.println("SOMA = " + soma); // Saída
-
-        sc.close();
-    }
-}
+```termynal
+$ ./calcula_dobro
+Digite um número: 5
+> O dobro é: 10
 ```
 
 ---
 
-## 🧠 Exercícios de Fixação
+## 4. Exercícios de Fixação 📝
 
-1.  **Terreno**: Ler a largura e comprimento de um terreno, calcular a área (`largura * comprimento`) e o preço (`area * valor_metro`).
-2.  **Média**: Ler 3 notas e calcular a média aritmética.
+1.  **Fácil**: Crie um algoritmo que leia o **Nome** e **Idade** de, pessoa e mostre: "Olá [Nome], você tem [Idade] anos".
+2.  **Médio**: Leia dois números (A e B) e troque seus valores (A vira B, B vira A). *Dica: Use uma variável auxiliar.*
+3.  **Desafio**: Um motorista deseja encher o tanque. Leia o preço da gasolina e o valor que ele tem em dinheiro. Calcule quantos litros ele consegue colocar.
 
 ---
-**Próxima Aula**: E se precisarmos tomar uma decisão? Aprenderemos a **Estrutura Condicional**.
+**Próxima Aula**: E se precisarmos tomar decisões? [Estrutura Condicional](./aula-04.md).

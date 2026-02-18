@@ -1,62 +1,83 @@
-# Aula 16: O Legado Web e a Evolução (PHP) 🐘
+# Aula 16 - PHP e o Legado Web 🐘
 
-Chegamos ao final do nosso "Tour Poliglota". Para fechar, vamos falar da linguagem que domina 77% da web: **PHP**. E não, o PHP não morreu. Ele evoluiu.
-
-## 1. O Gigante da Web
-
-Criado em 1994, o PHP (Hypertext Preprocessor) nasceu para dar vida ao HTML.
-*   **Wordpress**: O sistema de blogs mais usado do mundo é feito em PHP.
-*   **Facebook**: Começou em PHP (e ainda usa uma versão modificada chamada Hack).
-*   **Laravel**: O framework PHP moderno que trouxe elegância e estrutura para a linguagem.
-
-### Comparação: PHP Antigo vs Moderno
-
-| PHP 5 (O "Feio") | PHP 8+ (O Moderno) |
-| :--- | :--- |
-| Mistura de HTML e lógica | Separação clara (MVC) |
-| Lento | JIT Compiler (Muito rápido) |
-| Tipagem fraca | Tipagem forte e segura |
-
-## 2. Olá Mundo em PHP
-
-O PHP roda no servidor. Você precisa de um servidor local (como XAMPP ou o servidor embutido do PHP) para ver o resultado.
-
-Arquivo `index.php`:
-```php
-<?php
-    $nome = "Mundo";
-    echo "Olá, $nome!";
-?>
-```
-
-## 3. Projeto Final: O Mural de Recados 📝
-
-Para consolidar tudo o que aprendemos (Lógica, Dados, Web), vamos propor um desafio final.
-
-### O Desafio
-Criar um sistema simples para **Postar** e **Ler** recados.
-
-#### Requisitos
-1.  **Frontend**: HTML + CSS (pode usar um framework CSS).
-2.  **Backend**: Uma linguagem à sua escolha (PHP, Node.js, Python, Java...).
-3.  **Dados**: Salvar os recados (pode ser em um arquivo de texto, JSON ou banco de dados SQLite).
-
-### Exemplo de Estrutura (Pseudocódigo)
-
-1.  **Receber Dados**: O usuário digita o recado no formulário.
-2.  **Processar**: O Backend recebe o texto.
-3.  **Armazenar**: O sistema guarda o texto com a data de hoje.
-4.  **Listar**: O sistema lê todos os recados salvos e mostra na tela.
+> [!TIP]
+> **Objetivo**: Entender como a Web funciona de verdade. O ciclo Cliente-Servidor e por que o PHP ainda domina 77% da internet.
 
 ---
 
-## Parabéns! 🎓
+## 1. O Ciclo da Web (Request/Response) 🌍
 
-Você completou o curso de **Lógica e Algoritmos com Visão Poliglota**.
-Você agora tem a base para escolher sua especialização:
-*   Gosta de visual? **Frontend (JS, React)**.
-*   Gosta de servidores? **Backend (Java, C#, Go)**.
-*   Gosta de dados? **Data Science (Python)**.
-*   Gosta de celular? **Mobile (Kotlin, Swift, Dart)**.
+Toda vez que você acessa um site, uma conversa acontece.
 
-O mundo da programação é gigantesco. Continue estudando!
+### Visualizando a Requisição (Mermaid)
+
+```mermaid
+sequenceDiagram
+    participant Chrome as Navegador (Cliente)
+    participant Server as Servidor (PHP/Apache)
+    participant DB as Banco de Dados (MySQL)
+    
+    Chrome->>Server: 1. Acessa site.com
+    Note right of Chrome: GET /index.php
+    Server->>DB: 2. Pede dados do usuário
+    DB-->>Server: 3. Retorna dados
+    Server->>Server: 4. Monta o HTML
+    Server-->>Chrome: 5. Devolve página HTML
+```
+
+---
+
+## 2. PHP: O Motor da Web Dinâmica ⚙️
+
+O PHP roda no **Servidor**. O usuário nunca vê o código PHP, só o HTML que ele gera.
+
+```php
+<?php
+$nome = "Maria";
+echo "<h1>Olá, $nome!</h1>";
+?>
+```
+
+O navegador recebe apenas:
+```html
+<h1>Olá, Maria!</h1>
+```
+
+### Simulando um Servidor Local (Termynal)
+
+```termynal
+$ php -S localhost:8000
+> PHP Development Server started...
+> Listening on http://localhost:8000
+> Press Ctrl-C to quit.
+```
+
+---
+
+## 3. Laravel: PHP Moderno 🚀
+
+Ninguém escreve PHP "puro" em grandes sistemas. Usamos frameworks como **Laravel**. Ele organiza tudo em **MVC** (Model, View, Controller).
+
+*   **Model**: Cuida do Banco de Dados.
+*   **View**: Cuida do HTML (Telas).
+*   **Controller**: O cérebro que liga os dois.
+
+---
+
+## 4. Projeto Final: Mural de Recados 📌
+
+Vamos fechar o curso conectando tudo.
+1.  **Banco**: Tabela `recados` (id, texto).
+2.  **PHP**: Conecta e busca os recados.
+3.  **HTML**: Mostra na tela.
+
+---
+
+## 5. Exercícios de Fixação 📝
+
+1.  **Fácil**: Crie um script PHP que mostre a data e hora atual.
+2.  **Médio**: Crie um formulário HTML que envie nome e idade para um script PHP, que deve responder "Pode entrar" ou "Barrado".
+3.  **Desafio (SQL + PHP)**: Desenhe o diagrama de como seria o sistema de login do Facebook (Cliente -> Servidor -> Banco).
+
+---
+**Parabéns!** 🎓 Você completou o módulo teórico/prático. Agora é hora de botar a mão na massa nos [Projetos Finais](../projetos/index.md)!

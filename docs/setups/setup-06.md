@@ -12,3 +12,9 @@ A IDE mais poderosa para Python.
 ## 3. VS Code + Python
 1.  Instale a extensão "Python" da Microsoft.
 2.  Instale a extensão "Jupyter" se quiser usar Notebooks.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **'python' não encontrado**: É o erro mais comum. Reinstale e marque a caixa "Add Python to PATH".
+*   **Comando 'python' abre a Microsoft Store**: Vá nas configurações do Windows ("Gerenciar Aliases de Execução de Aplicativo") e DESATIVE os itens do "Instalador de Aplicativo" para Python.
+*   **Pip não funciona**: Tente `python -m pip install pacote`.

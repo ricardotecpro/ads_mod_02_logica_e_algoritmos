@@ -1,88 +1,82 @@
-# Bem-vindo ao Curso de Lógica e Algoritmos
+# Curso de Algoritmos e Lógica de Programação 🚀
 
-Desenvolva o pensamento computacional e domine as bases da programação!
+Bem-vindo ao curso definitivo para quem quer começar na programação com o pé direito. Aqui você aprende **Lógica Pura** e aplica em **12 Linguagens de Mercado**.
 
-## 🎯 Sobre o Curso
-
-Este curso foi desenvolvido para quem deseja iniciar na área de desenvolvimento de software. Você aprenderá desde a lógica de programação, construção de algoritmos, até a implementação em diversas linguagens de mercado.
-
-**O que você vai aprender:**
-- Fundamentos da Lógica de Programação
-- Estruturas de Controle (Sequencial, Condicional, Repetição)
-- Estruturas de Dados (Vetores e Matrizes)
-- Modularização com Funções
-- Introdução Prática a 8 Linguagens (C, C++, Java, C#, Python, JS, Rust, Dart)
-
-## 🚀 Comece Agora
-
-<div class="grid cards" markdown>
-
--   :material-book-open-page-variant: **Aulas**
-    
-    ---
-    
-    16 aulas completas organizadas em fundamentos e linguagens.
-    
-    [:octicons-arrow-right-24: Ver todas as aulas](aulas/index.md)
-
--   :material-presentation: **Slides**
-    
-    ---
-    
-    Slides interativos para acompanhar cada aula.
-    
-    [:octicons-arrow-right-24: Acessar slides](slides/index.md)
-
--   :material-dumbbell: **Exercícios**
-    
-    ---
-    
-    Pratique com exercícios focados em cada tópico.
-    
-    [:octicons-arrow-right-24: Ver exercícios](exercicios/index.md)
-
--   :material-school: **Quizzes**
-    
-    ---
-    
-    Teste seus conhecimentos com quizzes rápidos.
-    
-    [:octicons-arrow-right-24: Fazer quizzes](quizzes/index.md)
-
--   :material-rocket: **Projetos**
-    
-    ---
-    
-    Projetos práticos para consolidar o aprendizado.
-    
-    [:octicons-arrow-right-24: Ver projetos](projetos/index.md)
-
--   :material-cog: **Configuração**
-    
-    ---
-    
-    Guias de instalação das ferramentas (VisualG, Portugol Studio, Compiladores).
-    
-    [:octicons-arrow-right-24: Configurar ambiente](setups/index.md)
-
-</div>
-
-## 📚 Estrutura do Curso
-
-O curso está organizado em **2 módulos principais**:
-
-1. **Fundamentos da Lógica** (Aulas 01-08)
-   - Conceitos, Algoritmos, Estruturas de Controle e Dados.
-2. **Introdução às Linguagens** (Aulas 09-16)
-   - Aplicação da lógica em C, C++, Java, C#, Python, JavaScript, Rust e Dart.
-
-## 🎓 Como Usar Este Curso
-
-1. **Configure seu ambiente** - Siga os guias de [configuração](setups/index.md)
-2. **Siga a ordem** - Comece pela Aula 01 e avance progressivamente
-3. **Pratique muito** - A prática leva à perfeição!
-4. **Implemente os Projetos** - Aplique o que aprendeu em cenários reais
+> [!TIP]
+> **Metodologia**: Foco em prática, visualização (diagramas) e português claro. Sem "tech nês" desnecessário.
 
 ---
 
-**Pronto para começar?** [:material-rocket: Ir para Aula 01](aulas/aula-01.md){ .md-button .md-button--primary }
+## 🎯 O Que Você Vai Aprender
+
+<div class="grid cards" markdown>
+
+-   :material-brain: **Lógica Sólida**
+    
+    ---
+    
+    Domine algoritmos, fluxogramas, variáveis, condicionais e laços de repetição. A base de tudo.
+    
+    [:octicons-arrow-right-24: Ir para Fundamentos](aulas/aula-01.md)
+
+-   :material-translate: **O Poliglota**
+    
+    ---
+    
+    Aplique o que aprendeu em **C, Java, Python, JS, Go** e mais. Entenda os paradigmas.
+    
+    [:octicons-code-24: Ver Linguagens](aulas/aula-09.md)
+
+-   :material-tools: **Ferramentas Reais**
+    
+    ---
+    
+    Aprenda a configurar VS Code, Git, Compiladores e Ambientes Cloud.
+    
+    [:octicons-download-24: Configurar Ambiente](setups/index.md)
+
+-   :material-rocket: **Projetos Práticos**
+    
+    ---
+    
+    Saia da teoria com projetos reais: Calculadoras, Jogos, Sistemas Web e Apps.
+    
+    [:octicons-repo-24: Ver Projetos](projetos/index.md)
+
+</div>
+
+---
+
+## 📚 Estrutura do Curso (16 Aulas)
+
+O curso é dividido em dois módulos estratégicos.
+
+### Módulo 1: Fundamentos (Aulas 01-08)
+Construa seu **modelo mental** de programador.
+*   [Aula 01 - Introdução e Algoritmos](aulas/aula-01.md) 🧠
+*   [Aula 02 - Ambiente e Ferramentas](aulas/aula-02.md) 🛠️
+*   [Aula 03 - Estrutura Sequencial](aulas/aula-03.md) ➡️
+*   [Aula 04 - Estrutura Condicional](aulas/aula-04.md) 🔀
+*   [Aula 05 - Estruturas Repetitivas](aulas/aula-05.md) 🔁
+*   [Aula 06 - Vetores (Arrays)](aulas/aula-06.md) 📊
+*   [Aula 07 - Matrizes](aulas/aula-07.md) 📈
+*   [Aula 08 - Funções e Modularização](aulas/aula-08.md) 🧩
+
+### Módulo 2: O Poliglota (Aulas 09-16)
+Veja a mágica acontecer nas linguagens reais.
+*   [Aula 09 - Baixo Nível (C / C++)](aulas/aula-09.md) 🧱
+*   [Aula 10 - Web Moderna (JS / TS)](aulas/aula-10.md) 🌐
+*   [Aula 11 - Corporativo (Java)](aulas/aula-11.md) ☕
+*   [Aula 12 - Microsoft (.NET / C# / F#)](aulas/aula-12.md) 🔷
+*   [Aula 13 - Data Science (Python)](aulas/aula-13.md) 🐍
+*   [Aula 14 - Sistemas (Rust / Go)](aulas/aula-14.md) ⚙️
+*   [Aula 15 - Mobile (Dart / Kotlin)](aulas/aula-15.md) 📱
+*   [Aula 16 - Legado e Web (PHP)](aulas/aula-16.md) 🐘
+
+---
+
+> [!SUCCESS]
+> **Pronto para começar?** 
+> Clique no botão abaixo e inicie sua jornada!
+
+[:material-play: Começar Agora](aulas/aula-01.md){ .md-button .md-button--primary .md-button--large }

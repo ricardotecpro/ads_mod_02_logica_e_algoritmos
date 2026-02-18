@@ -1,13 +1,37 @@
-# Configuração do Ambiente
+# Guias de Instalação 🛠️
 
-Guias para preparar seu computador para o curso.
+Prepare seu ambiente de desenvolvimento.
 
-## 🛠️ O que você vai precisar?
+<div class="grid cards" markdown>
 
-### Módulo 1: Lógica de Programação
-Para aprender algoritmos, usamos ferramentas didáticas:
-- **[VisualG ou Portugol Studio](setup-01.md)**: Ambientes leves para praticar lógica em português.
+-   :material-laptop: **Ferramentas Iniciais**
 
-### Módulo 2: Linguagens de Programação
-Para programar profissionalmente, você precisará de compiladores e IDEs:
-- **[Compiladores e IDEs](setup-02.md)**: Instalação de C, C++, Java, Python, VS Code, etc.
+    ---
+
+    Comece por aqui.
+
+    - [Setup 01 - Lógica (VisualG)](setup-01.md)
+    - [Setup 02 - C / C++ (MinGW)](setup-02.md)
+    - [Setup 03 - Web (Node/VS Code)](setup-03.md)
+
+-   :material-coffee: **Linguagens Corporativas**
+
+    ---
+
+    Para grandes sistemas.
+
+    - [Setup 04 - Java (JDK)](setup-04.md)
+    - [Setup 05 - .NET (SDK)](setup-05.md)
+    - [Setup 09 - PHP (XAMPP)](setup-09.md)
+
+-   :material-rocket: **Sistemas e Mobile**
+
+    ---
+
+    Performance e Apps.
+
+    - [Setup 06 - Python](setup-06.md)
+    - [Setup 07 - Rust e Go](setup-07.md)
+    - [Setup 08 - Mobile (Flutter)](setup-08.md)
+
+</div>

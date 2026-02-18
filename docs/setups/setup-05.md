@@ -14,3 +14,9 @@ A IDE mais completa para Windows.
 ## 3. VS Code + C# Dev Kit
 Para uma experiência mais leve:
 1.  Instale a extensão "C# Dev Kit" da Microsoft.
+
+## 4. Solução de Problemas Comuns ⚠️
+
+*   **'dotnet' não encontrado**: Reinicie o computador após instalar o SDK.
+*   **Erro de Certificado HTTPS**: Na primeira execução, rode `dotnet dev-certs https --trust` para confiar no certificado local.
+*   **OmniSharp Error**: Se o VS Code reclamar, verifique se instalou o **C# Dev Kit** e se o SDK é compatível.

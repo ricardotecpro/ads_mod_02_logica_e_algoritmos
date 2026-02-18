@@ -1,13 +1,12 @@
-# Projeto - Aula 08: Funções
+# Projeto 08 - Sistema de Alunos (Milestone 2) 🎓
 
-## 🚀 Desafio
+**Objetivo**: Modularização e Estruturas Complexas.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Funções.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Funções.
+## O Desafio
+1.  Crie uma estrutura `Aluno` (Nome, Nota1, Nota2, Media).
+2.  Crie um vetor para armazenar 5 alunos.
+3.  Crie funções:
+    *   `CadastrarAluno()`: Lê dados e retorna o Aluno.
+    *   `CalcularMedia(Aluno)`: Atualiza a média do aluno ((N1+N2)/2).
+    *   `MostrarSituacao(Aluno)`: Imprime "Nome: X | Média: Y | Situação: Aprovado/Reprovado".
+4.  No `main`, faça um loop para cadastrar 3 alunos e depois mostre o boletim de todos.

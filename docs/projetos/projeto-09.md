@@ -1,13 +1,11 @@
-# Projeto - Aula 09: Linguagem C
+# Projeto 09 - Gerenciador de Memória (C/C++) 🧱
 
-## 🚀 Desafio
+**Objetivo**: Entender manipulação direta de memória.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem C.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem C.
+## O Desafio
+1.  Crie um programa em C.
+2.  Aloque dinamicamente (`malloc`) um vetor de inteiros com tamanho definido pelo usuário.
+3.  Preencha esse vetor com números aleatórios.
+4.  Crie uma função que receba o ponteiro desse vetor e inverta a ordem dos elementos **sem criar um segundo vetor**.
+5.  Libere a memória (`free`) no final.
+6.  **Extra (C++)**: Faça o mesmo usando uma Classe `VetorDinamico` e Destrutores.

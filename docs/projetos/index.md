@@ -1,39 +1,33 @@
-# Projetos Práticos
+# Projetos Práticos 🚀
 
-Aprenda Git criando um projeto real do zero até a publicação!
+Construa portfólio com projetos reais e milestones importantes.
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – O Início**
-    
-    - [Projeto 01 - Criando o Portfólio](projeto-01.md)
-    - [Projeto 02 - Instalando Git](projeto-02.md)
-    - [Projeto 03 - Primeiro Commit](projeto-03.md)
-    - [Projeto 04 - Criando Branches](projeto-04.md)
+-   :material-star: **Módulo 1: Fundamentos**
 
--   :material-numeric-2-box: **Módulo 2 – GitHub**
-    
-    - [Projeto 05 - Resolvendo Conflitos](projeto-05.md)
-    - [Projeto 06 - Criando Conta GitHub](projeto-06.md)
-    - [Projeto 07 - Subindo Repositório](projeto-07.md)
-    - [Projeto 08 - Primeiro PR](projeto-08.md)
+    ---
 
--   :material-numeric-3-box: **Módulo 3 – Organização**
-    
-    - [Projeto 09 - Fluxo Profissional](projeto-09.md)
-    - [Projeto 10 - Criando Issues](projeto-10.md)
-    - [Projeto 11 - Histórico Limpo](projeto-11.md)
-    - [Projeto 12 - README Incrível](projeto-12.md)
+    - [Projeto 01 - Fluxograma da Vida](projeto-01.md)
+    - [Projeto 02 - Setup Perfeito](projeto-02.md)
+    - [Projeto 03 - Conversor](projeto-03.md)
+    - [**Projeto 04 - Calculadora IMC**](projeto-04.md) 🏆
+    - [Projeto 05 - Jogo Adivinhação](projeto-05.md)
+    - [Projeto 06 - To-Do List (Vetor)](projeto-06.md)
+    - [Projeto 07 - Jogo da Velha](projeto-07.md)
+    - [**Projeto 08 - Sistema Alunos**](projeto-08.md) 🏆
 
--   :material-numeric-4-box: **Módulo 4 – Publicação**
-    
-    - [Projeto 13 - Simulando Equipe](projeto-13.md)
-    - [Projeto 14 - Publicando Site](projeto-14.md)
-    - [Projeto 15 - Corrigindo Erros](projeto-15.md)
-    - [Projeto 16 - Finalizando Portfólio](projeto-16.md)
+-   :material-trophy: **Módulo 2: O Poliglota**
+
+    ---
+
+    - [Projeto 09 - Memória C/C++](projeto-09.md)
+    - [Projeto 10 - To-Do JS/DOM](projeto-10.md)
+    - [Projeto 11 - Banco Imobiliário](projeto-11.md)
+    - [**Projeto 12 - API Climática**](projeto-12.md) 🏆
+    - [Projeto 13 - CSV Science](projeto-13.md)
+    - [Projeto 14 - Chat Terminal](projeto-14.md)
+    - [Projeto 15 - Login Mobile](projeto-15.md)
+    - [**Projeto 16 - Mural Fullstack**](projeto-16.md) 🏆
 
 </div>
-
-## 🚀 Sobre o Projeto do Curso
-
-Neste curso, você não fará projetos aleatórios. Você construirá, passo a passo, seu **Portfólio Profissional** hospedado no GitHub Pages. Cada aula adiciona uma nova camada de conhecimento e funcionalidade ao seu portfólio.

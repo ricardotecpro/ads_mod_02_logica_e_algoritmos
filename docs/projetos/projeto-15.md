@@ -1,13 +1,11 @@
-# Projeto - Aula 15: Linguagem Rust
+# Projeto 15 - Interface de Login (Mobile) 📱
 
-## 🚀 Desafio
+**Objetivo**: UI/UX e Validação.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem Rust.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem Rust.
+## O Desafio (Flutter)
+1.  Crie uma tela bonita com: Logo, Email, Senha, Botão.
+2.  Validação:
+    *   Email deve ter "@".
+    *   Senha deve ter 6+ caracteres.
+3.  Se validar OK -> Navegue para uma "Home Page" simples.
+4.  Se erro -> Mostre Snackbar ou Texto vermelho.

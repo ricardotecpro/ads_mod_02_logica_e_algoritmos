@@ -1,13 +1,12 @@
-# Projeto - Aula 02: Introdução à Programação
+# Projeto 02 - O Setup Perfeito 🖥️
 
-## 🚀 Desafio
+**Objetivo**: Preparar sua máquina para programar.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Introdução à Programação.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Introdução à Programação.
+## O Desafio
+1.  Instale o **VS Code**.
+2.  Instale extensões essenciais:
+    *   Portuguese (Brazil) Language Pack.
+    *   Material Icon Theme (ou outro de ícones).
+    *   One Dark Pro (ou outro tema).
+3.  Crie uma pasta `meus_projetos`.
+4.  Tire um **Printscreen** do seu VS Code aberto mostrando a pasta e o tema.

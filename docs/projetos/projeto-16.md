@@ -1,13 +1,19 @@
-# Projeto - Aula 16: Linguagem Dart
+# Projeto 16 - Mural de Recados (Milestone 4) 🐘
 
-## 🚀 Desafio
+**Objetivo**: O Projeto Final - Fullstack Básico.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Linguagem Dart.
+## O Desafio
+Criar um sistema onde qualquer pessoa pode deixar um recado anônimo.
 
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
+### Requisitos Técnicos
+1.  **Frontend**: HTML5 + CSS (Bootstrap/Tailwind opcional).
+2.  **Backend**: PHP (ou Node/Python).
+3.  **Banco de Dados**: MySQL ou SQLite (Tabela `recados`: id, texto, data).
 
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Linguagem Dart.
+### Funcionalidades
+1.  **Formulário**: Campo de texto e botão "Postar".
+2.  **Listagem**: Ao carregar a página, mostrar todos os recados do banco, do mais novo para o mais antigo.
+3.  **Segurança Básica**: Impedir injeção de HTML/Script (`htmlspecialchars`).
+
+### Bônus
+*   Permitir "Curtir" um recado (update no banco).

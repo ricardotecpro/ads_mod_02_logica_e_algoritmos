@@ -1,13 +1,10 @@
-# Projeto - Aula 05: Estruturas Repetitivas
+# Projeto 05 - Jogo de Adivinhação 🎲
 
-## 🚀 Desafio
+**Objetivo**: Usar Loops e Aleatoriedade.
 
-Desenvolva um pequeno projeto aplicando os conceitos de Estruturas Repetitivas.
-
-### Requisitos:
-1. Deve utilizar o conceito principal da aula.
-2. Deve ser funcional e compilável/executável.
-3. Documente seu código.
-
-### Sugestão:
-Crie um programa que resolva um problema do cotidiano usando Estruturas Repetitivas.
+## O Desafio
+1.  O computador "pensa" em um número de 1 a 100 (use função Random).
+2.  O usuário tenta adivinhar digitando um número.
+3.  O computador diz "O número secreto é MAIOR" ou "O número secreto é MENOR".
+4.  O jogo só acaba quando o usuário acertar.
+5.  No final, mostre: "Parabéns! Você acertou em X tentativas".
