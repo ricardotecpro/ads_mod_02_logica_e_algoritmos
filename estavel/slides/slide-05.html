@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 05 - Estruturas Repetitivas</title>
+    <title>Aula 05 - Python Backend</title>
     
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/reveal.css">
@@ -21,6 +21,7 @@
         </div>
     </div>
     
+    <!-- Dicas de Atalhos -->
     <div class="reveal-shortcuts">
         Atalhos: F (Tela Cheia) | S (Speaker View)
     </div>
@@ -39,14 +40,21 @@
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
         });
 
+        // Ocultar atalhos em tela cheia
         function updateShortcutsVisibility() {
+            console.log('fullscreenchange event detected');
             const isFullscreen = document.fullscreenElement || 
                                  document.webkitFullscreenElement || 
                                  document.mozFullScreenElement || 
                                  document.msFullscreenElement;
+            console.log('isFullscreen:', !!isFullscreen);
+            
             const shortcuts = document.querySelector('.reveal-shortcuts');
             if (shortcuts) {
                 shortcuts.style.display = isFullscreen ? 'none' : 'block';
+                console.log('Set display to:', shortcuts.style.display);
+            } else {
+                console.log('Shortcuts element not found');
             }
         }
 

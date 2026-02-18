@@ -21,7 +21,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed de conteúdo atualizado" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../assets/images/python-logo-notext.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#estrutura-sequencial-em-programacao" class="md-skip">
+        <a href="#estrutura-condicional-em-programacao" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -235,30 +235,6 @@
     <div class="md-container" data-md-component="container">
       
       
-  
-  <nav id="quiz-progress-mobile" class="quiz-progress-mobile md-nav" aria-label="Quiz Progress" style="display: none;">
-    <!-- mkdocs-quiz progress sidebar (mobile) -->
-    <div class="quiz-progress-bar">
-      <div class="quiz-progress-bar-incorrect" style="width: 0%"></div>
-      <div class="quiz-progress-bar-correct" style="width: 0%"></div>
-    </div>
-    <div data-md-component="quiz-progress">
-        <div class="quiz-correct-reset">
-          <span class="md-ellipsis">
-            <span data-quiz-translate="Answered:">Answered:</span> <span class="quiz-progress-answered">0</span> / <span class="quiz-progress-total">0</span>
-          </span>
-          <span class="md-ellipsis">
-            <span data-quiz-translate="Correct:">Correct:</span> <span class="quiz-progress-score">0</span> / <span class="quiz-progress-score-total">0</span>
-          </span>
-          <a href="#" class="quiz-reset-all-link" style="color: var(--md-primary-fg-color); text-decoration: none;">
-            <span data-quiz-translate="Reset">Reset</span>
-          </a>
-        </div>
-    </div>
-  </nav>
-
-  
-  
         
           
             
@@ -375,12 +351,9 @@
           
         
       
-
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
-  
-  
             
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
@@ -737,44 +710,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#o-que-e-a-estrutura-sequencial" class="md-nav__link">
+  <a href="#expressoes-logicas-e-comparativas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🤔 O que é a Estrutura Sequencial?
+        🔍 Expressões Lógicas e Comparativas
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#as-tres-operacoes-fundamentais" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💻 As Três Operações Fundamentais
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variaveis-e-tipos-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Variáveis e Tipos de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📦 Variáveis e Tipos de Dados">
+    <nav class="md-nav" aria-label="🔍 Expressões Lógicas e Comparativas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#declaracao-de-variaveis" class="md-nav__link">
+  <a href="#expressoes-comparativas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📜 Declaração de Variáveis
+        Expressões Comparativas
       
     </span>
   </a>
@@ -782,10 +733,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#nomenclatura-de-variaveis-boas-praticas" class="md-nav__link">
+  <a href="#expressoes-logicas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏷️ Nomenclatura de Variáveis (Boas Práticas)
+        Expressões Lógicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expressões Lógicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operador-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador &amp;&amp; (E)
       
     </span>
   </a>
@@ -793,10 +756,76 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tipos-de-dados-primitivos-em-java" class="md-nav__link">
+  <a href="#operador-ou" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 Tipos de Dados Primitivos em Java
+        Operador || (OU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operador-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador ! (NÃO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-estrutura-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 A Estrutura if-else
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔀 A Estrutura if-else">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if Simples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-composta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if-else Composta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encadeamento-com-else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encadeamento com else if
       
     </span>
   </a>
@@ -809,114 +838,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processamento-de-dados" class="md-nav__link">
+  <a href="#a-estrutura-switch-case" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚙️ Processamento de Dados
+        🔢 A Estrutura switch-case
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="⚙️ Processamento de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#expressoes-aritmeticas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ➕ Expressões Aritméticas
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#saida-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🖥️ Saída de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🖥️ Saída de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-pratico-ficha-de-cadastro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo Prático: Ficha de Cadastro
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrada-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⌨️ Entrada de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⌨️ Entrada de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lendo-diferentes-tipos-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lendo Diferentes Tipos de Dados
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#funcoes-matematicas-em-java" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧮 Funções Matemáticas em Java
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧮 Funções Matemáticas em Java">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-formula-de-bhaskara" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo: Fórmula de Bhaskara
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -933,63 +861,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exercicio-1-calculo-de-area-de-terreno" class="md-nav__link">
+  <a href="#exercicio-1-formula-de-bhaskara-com-validacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercício 1: Cálculo de Área de Terreno
+        Exercício 1: Fórmula de Bhaskara com Validação
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exercicio-2-medidas-de-um-retangulo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercício 2: Medidas de um Retângulo
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-executar-no-vs-code-e-intellij-idea" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Como Executar no VS Code e IntelliJ IDEA
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Como Executar no VS Code e IntelliJ IDEA">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-visual-studio-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        No Visual Studio Code
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#na-intellij-idea" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Na IntelliJ IDEA
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -3985,44 +3863,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#o-que-e-a-estrutura-sequencial" class="md-nav__link">
+  <a href="#expressoes-logicas-e-comparativas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🤔 O que é a Estrutura Sequencial?
+        🔍 Expressões Lógicas e Comparativas
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#as-tres-operacoes-fundamentais" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💻 As Três Operações Fundamentais
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variaveis-e-tipos-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Variáveis e Tipos de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📦 Variáveis e Tipos de Dados">
+    <nav class="md-nav" aria-label="🔍 Expressões Lógicas e Comparativas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#declaracao-de-variaveis" class="md-nav__link">
+  <a href="#expressoes-comparativas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📜 Declaração de Variáveis
+        Expressões Comparativas
       
     </span>
   </a>
@@ -4030,10 +3886,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#nomenclatura-de-variaveis-boas-praticas" class="md-nav__link">
+  <a href="#expressoes-logicas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏷️ Nomenclatura de Variáveis (Boas Práticas)
+        Expressões Lógicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expressões Lógicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operador-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador &amp;&amp; (E)
       
     </span>
   </a>
@@ -4041,10 +3909,76 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tipos-de-dados-primitivos-em-java" class="md-nav__link">
+  <a href="#operador-ou" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 Tipos de Dados Primitivos em Java
+        Operador || (OU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operador-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador ! (NÃO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-estrutura-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 A Estrutura if-else
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔀 A Estrutura if-else">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if Simples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-composta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if-else Composta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encadeamento-com-else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encadeamento com else if
       
     </span>
   </a>
@@ -4057,114 +3991,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processamento-de-dados" class="md-nav__link">
+  <a href="#a-estrutura-switch-case" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚙️ Processamento de Dados
+        🔢 A Estrutura switch-case
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="⚙️ Processamento de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#expressoes-aritmeticas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ➕ Expressões Aritméticas
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#saida-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🖥️ Saída de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🖥️ Saída de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-pratico-ficha-de-cadastro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo Prático: Ficha de Cadastro
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrada-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⌨️ Entrada de Dados
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⌨️ Entrada de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lendo-diferentes-tipos-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lendo Diferentes Tipos de Dados
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#funcoes-matematicas-em-java" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧮 Funções Matemáticas em Java
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧮 Funções Matemáticas em Java">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-formula-de-bhaskara" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo: Fórmula de Bhaskara
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4181,63 +4014,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exercicio-1-calculo-de-area-de-terreno" class="md-nav__link">
+  <a href="#exercicio-1-formula-de-bhaskara-com-validacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercício 1: Cálculo de Área de Terreno
+        Exercício 1: Fórmula de Bhaskara com Validação
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exercicio-2-medidas-de-um-retangulo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercício 2: Medidas de um Retângulo
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-executar-no-vs-code-e-intellij-idea" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Como Executar no VS Code e IntelliJ IDEA
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Como Executar no VS Code e IntelliJ IDEA">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-visual-studio-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        No Visual Studio Code
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#na-intellij-idea" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Na IntelliJ IDEA
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -4265,43 +4048,6 @@
               </div>
             
           
-
-  
-  <div id="quiz-progress-sidebar" aria-label="Quiz Progress" style="display: none;">
-    <!-- mkdocs-quiz progress sidebar (desktop) -->
-    <label class="md-nav__title">
-      <span class="md-nav__icon md-icon"></span>
-      <span data-quiz-translate="Quiz Progress">Quiz Progress</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="quiz-progress">
-      <li class="md-nav__item">
-        <div class="md-nav__link">
-          <span class="md-ellipsis">
-            <span data-quiz-translate="Answered:">Answered:</span> <span class="quiz-progress-answered">0</span> / <span class="quiz-progress-total">0</span> (<span class="quiz-progress-answered-percentage">0%</span>)
-          </span>
-        </div>
-      </li>
-      <li class="md-nav__item">
-        <div class="md-nav__link">
-          <div class="quiz-progress-bar">
-            <div class="quiz-progress-bar-incorrect" style="width: 0%"></div>
-            <div class="quiz-progress-bar-correct" style="width: 0%"></div>
-          </div>
-        </div>
-      </li>
-      <li class="md-nav__item">
-        <div class="md-nav__link quiz-correct-reset">
-          <span class="md-ellipsis">
-            <span data-quiz-translate="Correct:">Correct:</span> <span class="quiz-progress-score">0</span> / <span class="quiz-progress-score-total">0</span> (<span class="quiz-progress-score-percentage">0%</span>)
-          </span>
-          <a href="#" class="quiz-reset-all-link" style="color: var(--md-primary-fg-color); text-decoration: none;">
-            <span data-quiz-translate="Reset">Reset</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-
           
             <div class="md-content" data-md-component="content">
               
@@ -4314,1888 +4060,307 @@
   
 
 
-<h1 id="estrutura-sequencial-em-programacao">🚀 Estrutura Sequencial em Programação</h1>
-<p>Este capítulo aborda os conceitos fundamentais da <strong>estrutura sequencial</strong>, a base para a construção de qualquer algoritmo. Nela, os comandos são executados em uma sequência lógica, um após o outro, de cima para baixo.</p>
-<h2 id="o-que-e-a-estrutura-sequencial">🤔 O que é a Estrutura Sequencial?</h2>
-<p>A "estrutura sequencial" recebe esse nome para destacar que as instruções de um algoritmo são executadas em uma ordem predefinida, passo a passo. Um algoritmo só funciona corretamente se seus comandos seguirem uma sequência lógica.</p>
-<p>Imagine que você precisa calcular a soma de dois números. Primeiro, você precisa conhecer esses números e, só depois, realizar a soma.</p>
-<p><strong>Exemplo da ordem correta:</strong></p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// 1. Atribui o valor 15 à variável x</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// 2. Atribui o valor 25 à variável y</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// 3. Soma x e y e guarda o resultado</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kt">int</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"> </span><span class="c1">// Correto!</span>
-</span></code></pre></div>
-<p>Se a ordem for invertida, o programa tentará somar variáveis que ainda não têm valor, resultando em um erro.</p>
-<p><strong>Exemplo da ordem incorreta:</strong></p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// 1. Tenta somar x e y, que ainda não foram definidos</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"> </span><span class="c1">// Errado!</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// 2. Só depois define os valores</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span></code></pre></div>
-<h2 id="as-tres-operacoes-fundamentais">💻 As Três Operações Fundamentais</h2>
-<p>Um programa de computador, em sua essência, realiza três operações básicas:</p>
+<h1 id="estrutura-condicional-em-programacao">⚖️ Estrutura Condicional em Programação</h1>
+<p>Após entendermos como os programas executam comandos em sequência, vamos explorar a <strong>estrutura condicional</strong>. Ela permite que um programa tome decisões, alterando seu fluxo de execução com base em condições específicas. É o que torna os programas "inteligentes" e dinâmicos.</p>
+<h2 id="expressoes-logicas-e-comparativas">🔍 Expressões Lógicas e Comparativas</h2>
+<p>Para que uma estrutura condicional funcione, ela precisa avaliar uma condição. O resultado dessa avaliação é sempre um valor lógico: <strong>verdadeiro</strong> ou <strong>falso</strong>. Essas condições são construídas com expressões comparativas e lógicas.</p>
+<h3 id="expressoes-comparativas">Expressões Comparativas</h3>
+<p>Comparam dois valores e o resultado é sempre um <code>boolean</code> (<code>true</code> ou <code>false</code>).</p>
+<p><strong>Operadores Comparativos em Java:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operador VisualG</th>
+<th style="text-align: left;">Operador Java</th>
+<th style="text-align: left;">Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>&gt;</code></td>
+<td style="text-align: left;"><code>&gt;</code></td>
+<td style="text-align: left;">Maior que</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;</code></td>
+<td style="text-align: left;"><code>&lt;</code></td>
+<td style="text-align: left;">Menor que</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&gt;=</code></td>
+<td style="text-align: left;"><code>&gt;=</code></td>
+<td style="text-align: left;">Maior ou igual a</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;=</code></td>
+<td style="text-align: left;"><code>&lt;=</code></td>
+<td style="text-align: left;">Menor ou igual a</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>=</code></td>
+<td style="text-align: left;"><code>==</code></td>
+<td style="text-align: left;"><strong>Igual a</strong> (Note a diferença!)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;&gt;</code></td>
+<td style="text-align: left;"><code>!=</code></td>
+<td style="text-align: left;">Diferente de</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos (supondo <code>int x = 10;</code>):</strong></p>
 <ul>
-<li><strong>Entrada de dados</strong>: Receber informações do usuário ou de outra fonte.</li>
-<li><strong>Processamento de dados</strong>: Realizar cálculos e manipular as informações recebidas.</li>
-<li><strong>Saída de dados</strong>: Apresentar os resultados para o usuário.</li>
+<li><code>x &gt; 0</code> → Resultado: <code>true</code></li>
+<li><code>x == 10</code> → Resultado: <code>true</code></li>
+<li><code>x != 10</code> → Resultado: <code>false</code></li>
+<li><code>20 &lt;= 15</code> → Resultado: <code>false</code></li>
 </ul>
-<h2 id="variaveis-e-tipos-de-dados">📦 Variáveis e Tipos de Dados</h2>
-<p>Para um programa funcionar, ele precisa armazenar e manipular dados. Esses dados são guardados em <strong>variáveis</strong>.</p>
-<p>De forma simplificada, uma variável é um "espaço" na memória RAM do computador reservado para armazenar um dado durante a execução do programa.</p>
-<h3 id="declaracao-de-variaveis">📜 Declaração de Variáveis</h3>
-<p>Cada variável possui:</p>
-<ul>
-<li><strong>Nome</strong> (ou identificador): Para que possamos nos referir a ela.</li>
-<li><strong>Tipo</strong>: Define que tipo de dado ela pode armazenar (número, texto, etc.).</li>
-<li><strong>Valor</strong>: O dado que está armazenado nela.</li>
-<li><strong>Endereço</strong>: Sua localização na memória.</li>
-</ul>
-<p>Em Java, a sintaxe de declaração é:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&lt;</span><span class="n">tipo</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="n">nome</span><span class="o">&gt;</span><span class="p">;</span>
+<h3 id="expressoes-logicas">Expressões Lógicas</h3>
+<p>Combinam duas ou mais expressões comparativas, permitindo criar condições mais complexas.</p>
+<p><strong>Operadores Lógicos em Java:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operador VisualG</th>
+<th style="text-align: left;">Operador Java</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>E</code></td>
+<td style="text-align: left;"><code>&amp;&amp;</code></td>
+<td style="text-align: left;"><strong>E (AND)</strong>: Verdadeiro somente se <strong>todas</strong> as condições forem verdadeiras.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OU</code></td>
+<td style="text-align: left;"><code>||</code></td>
+<td style="text-align: left;"><strong>OU (OR)</strong>: Verdadeiro se <strong>pelo menos uma</strong> condição for verdadeira.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NAO</code></td>
+<td style="text-align: left;"><code>!</code></td>
+<td style="text-align: left;"><strong>NÃO (NOT)</strong>: <strong>Inverte</strong> o valor da condição (de <code>true</code> para <code>false</code> e vice-versa).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="operador-e">Operador <code>&amp;&amp;</code> (E)</h4>
+<p>Pense na regra para obter uma habilitação de motorista: você precisa ser aprovado no exame psicotécnico <strong>E</strong> no exame de legislação <strong>E</strong> no exame de direção. Se falhar em qualquer um deles, o resultado final é "reprovado". Todas as condições devem ser verdadeiras.</p>
+<p><strong>Tabela Verdade (E):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">A</th>
+<th style="text-align: left;">B</th>
+<th style="text-align: left;">A &amp;&amp; B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="operador-ou">Operador <code>||</code> (OU)</h4>
+<p>Pense nas vagas de estacionamento preferenciais: você pode usá-las se for idoso(a), <strong>OU</strong> pessoa com deficiência, <strong>OU</strong> gestante. Basta atender a uma das condições para ter o direito.</p>
+<p><strong>Tabela Verdade (OU):</strong></p>
+<p>| A | B | A || B |
+| :--- | :--- | :--- |
+| <code>false</code> | <code>false</code> | <code>false</code> |
+| <code>false</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>true</code> |
+| <code>true</code> | <code>true</code> | <code>true</code> |</p>
+<h4 id="operador-nao">Operador <code>!</code> (NÃO)</h4>
+<p>Pense na regra para uma bolsa de estudos: você tem direito se <strong>NÃO</strong> possuir renda maior que R$ 3.000,00. Este operador inverte o resultado da condição. Se a condição <code>renda &gt; 3000</code> for verdadeira, <code>!(renda &gt; 3000)</code> será falsa.</p>
+<p><strong>Tabela Verdade (NÃO):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">A</th>
+<th style="text-align: left;">!A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>true</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-estrutura-if-else">🔀 A Estrutura <code>if-else</code></h2>
+<p>É a principal estrutura de controle condicional. Ela permite que um bloco de comandos seja executado somente se uma determinada condição for atendida.</p>
+<h3 id="if-simples"><code>if</code> Simples</h3>
+<p>Executa um bloco de código se a condição for verdadeira. Se for falsa, o bloco é simplesmente ignorado.</p>
+<p><strong>Sintaxe em Java:</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicao</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// Bloco de comandos a ser executado</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="c1">// se a condição for verdadeira.</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="if-else-composta"><code>if-else</code> Composta</h3>
+<p>Oferece um caminho alternativo. Se a condição for verdadeira, o bloco <code>if</code> é executado. Caso contrário (<code>else</code>), o bloco <code>else</code> é executado.</p>
+<p><strong>Sintaxe em Java:</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicao</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// Bloco de comandos a ser executado</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="c1">// se a condição for verdadeira.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="c1">// Bloco de comandos a ser executado</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="c1">// se a condição for falsa.</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="encadeamento-com-else-if">Encadeamento com <code>else if</code></h3>
+<p>Para cenários com múltiplas condições (mais de duas possibilidades), podemos encadear várias estruturas <code>if-else</code>.</p>
+<p><strong>Exemplo: Saudação baseada na hora do dia</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// Exemplos</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="p">;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">altura</span><span class="p">;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">String</span><span class="w"> </span><span class="n">nome</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Saudacao</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite a hora atual (0-23): "</span><span class="p">);</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">hora</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hora</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// se a hora for menor que 12</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Bom dia!"</span><span class="p">);</span><span class="w"> </span><span class="c1">// imprime Bom dia!</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hora</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// senão, se a hora for menor que 18</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Boa tarde!"</span><span class="p">);</span><span class="w"> </span><span class="c1">// imprime Boa tarde!</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// senão (para qualquer outra hora &gt;= 18)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Boa noite!"</span><span class="p">);</span><span class="w"> </span><span class="c1">// imprime Boa noite!</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="nomenclatura-de-variaveis-boas-praticas">🏷️ Nomenclatura de Variáveis (Boas Práticas)</h3>
-<p>Para manter o código legível e funcional, siga estas regras ao nomear variáveis:</p>
-<ul>
-<li><strong>Não pode começar com dígito</strong>: Use uma letra ou o caractere <code>_</code>.</li>
-<li><strong>Não pode ter espaços em branco</strong>.</li>
-<li><strong>Não use acentos ou caracteres especiais</strong> (como <code>ç</code> ou <code>~</code>).</li>
-<li><strong>Use o padrão "Camel Case"</strong>: A primeira palavra começa com letra minúscula e as palavras seguintes começam com maiúscula.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Errado</th>
-<th style="text-align: left;">Correto</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>int 5minutos;</code></td>
-<td style="text-align: left;"><code>int cincoMinutos;</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>double salário;</code></td>
-<td style="text-align: left;"><code>double salario;</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>String nome do funcionario;</code></td>
-<td style="text-align: left;"><code>String nomeDoFuncionario;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="tipos-de-dados-primitivos-em-java">📊 Tipos de Dados Primitivos em Java</h3>
-<p>Estes são os tipos de dados mais comuns que você usará:</p>
-<p>| Tipo | Descrição | Exemplo de Valor |
-| :--- | :--- |
-| <code>int</code> | Armazena números inteiros. | <code>35</code> |
-| <code>double</code> | Armazena números com ponto flutuante (decimais). | <code>1.75</code> |
-| <code>char</code> | Armazena um único caractere. | <code>'M'</code> |
-| <code>String</code>| Armazena sequências de caracteres (texto). | <code>"Maria da Silva"</code> |
-| <code>boolean</code>| Armazena um valor lógico de verdade. | <code>true</code> ou <code>false</code> |</p>
-<h2 id="processamento-de-dados">⚙️ Processamento de Dados</h2>
-<p>O processamento ocorre quando o programa realiza cálculos ou manipula dados. A principal ferramenta para isso é o <strong>comando de atribuição</strong>, representado pelo sinal de igual (<code>=</code>) em Java.</p>
-<p><strong>Sintaxe:</strong> <code>&lt;variável&gt; = &lt;expressão&gt;;</code></p>
-<p>A regra é simples:</p>
-<ol>
-<li>A expressão à direita do <code>=</code> é totalmente calculada.</li>
-<li>O resultado final é armazenado na variável à esquerda.</li>
-</ol>
-<h3 id="expressoes-aritmeticas">➕ Expressões Aritméticas</h3>
-<p>São combinações de números, variáveis e operadores que resultam em um valor numérico.</p>
-<p><strong>Operadores Aritméticos em Java:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>+</code></td>
-<td style="text-align: left;">Adição</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>-</code></td>
-<td style="text-align: left;">Subtração</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>*</code></td>
-<td style="text-align: left;">Multiplicação</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>/</code></td>
-<td style="text-align: left;">Divisão</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>%</code></td>
-<td style="text-align: left;">Módulo (resto da divisão inteira)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Ordem de Precedência:</strong></p>
-<ol>
-<li><code>*</code>, <code>/</code>, <code>%</code> (são avaliados primeiro, da esquerda para a direita)</li>
-<li><code>+</code>, <code>-</code> (são avaliados por último, da esquerda para a direita)</li>
-</ol>
-<p><em>Use parênteses <code>()</code> para forçar uma ordem de cálculo diferente.</em></p>
-<p><strong>Exemplos de Expressões:</strong></p>
-<ul>
-<li><code>5 + 3 * 2</code> → <code>5 + 6</code> → <strong>Resultado: 11</strong></li>
-<li><code>(5 + 3) * 2</code> → <code>8 * 2</code> → <strong>Resultado: 16</strong></li>
-<li><code>70 / (5 + 2) * 4</code> → <code>70 / 7 * 4</code> → <code>10 * 4</code> → <strong>Resultado: 40</strong></li>
-<li><code>15 % 4</code> (15 dividido por 4 dá 3 e sobra 3) → <strong>Resultado: 3</strong></li>
-</ul>
-<h2 id="saida-de-dados">🖥️ Saída de Dados</h2>
-<p>A saída de dados é como o programa apresenta informações e resultados ao usuário, geralmente na tela (console). Em Java, usamos os seguintes comandos:</p>
-<ul>
-<li><code>System.out.println()</code>: Escreve o conteúdo na tela e <strong>salta para a próxima linha</strong>.</li>
-<li><code>System.out.print()</code>: Escreve o conteúdo na tela e <strong>permanece na mesma linha</strong>.</li>
-</ul>
-<h3 id="exemplo-pratico-ficha-de-cadastro">Exemplo Prático: Ficha de Cadastro</h3>
-<p>Vamos criar variáveis, atribuir valores e exibi-las de forma organizada.</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Declarando e inicializando as variáveis</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">String</span><span class="w"> </span><span class="n">produto1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Smartphone"</span><span class="p">;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">String</span><span class="w"> </span><span class="n">produto2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Notebook"</span><span class="p">;</span>
+<blockquote>
+<p><strong>Boa Prática</strong>: Repare na <strong>indentação</strong> (o recuo dos blocos de código). Ela não afeta o funcionamento em Java, mas é fundamental para a legibilidade do código!</p>
+</blockquote>
+<h2 id="a-estrutura-switch-case">🔢 A Estrutura <code>switch-case</code></h2>
+<p>Quando temos várias opções de fluxo que dependem do valor de uma <strong>única variável</strong>, podemos usar a estrutura <code>switch-case</code> como uma alternativa mais limpa e organizada a um longo encadeamento de <code>if-else if</code>.</p>
+<p><strong>Problema Exemplo:</strong> Ler um número inteiro de 1 a 7 e escrever o dia da semana correspondente.</p>
+<p><strong>Solução com <code>switch-case</code> em Java:</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">DiaDaSemana</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">preco1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2500.99</span><span class="p">;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">double</span><span class="w"> </span><span class="n">preco2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4250.00</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">int</span><span class="w"> </span><span class="n">codigo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kt">char</span><span class="w"> </span><span class="n">genero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'M'</span><span class="p">;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite um número para o dia da semana (1-7): "</span><span class="p">);</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">dia</span><span class="p">;</span>
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1">// Exibindo os dados na tela</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Produtos:"</span><span class="p">);</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"O produto %s custa R$ %.2f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">produto1</span><span class="p">,</span><span class="w"> </span><span class="n">preco1</span><span class="p">);</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"O produto %s custa R$ %.2f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">produto2</span><span class="p">,</span><span class="w"> </span><span class="n">preco2</span><span class="p">);</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// Pula uma linha em branco</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Código = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">codigo</span><span class="p">);</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// Pula uma linha em branco</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Dados da pessoa: gênero "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">genero</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" e idade "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">idade</span><span class="p">);</span>
-</span></code></pre></div>
-<p><strong>Saída Esperada:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Produtos:
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>O produto Smartphone custa R$ 2500,99
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>O produto Notebook custa R$ 4250,00
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Código = 1024
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>Dados da pessoa: gênero M e idade 25
-</span></code></pre></div>
-<blockquote>
-<p><strong>Nota:</strong> Usamos <code>System.out.printf()</code> para formatar os preços com duas casas decimais. <code>%.2f</code> é um especificador que formata um número de ponto flutuante (<code>f</code>) com duas casas decimais (<code>.2</code>), e <code>\n</code> quebra a linha.</p>
-</blockquote>
-<h2 id="entrada-de-dados">⌨️ Entrada de Dados</h2>
-<p>A entrada de dados permite que o programa se torne interativo, lendo informações digitadas pelo usuário no teclado. Em Java, a forma mais comum de fazer isso é usando a classe <code>Scanner</code>.</p>
-<p>Primeiro, você precisa importar a classe e criar um objeto <code>Scanner</code>:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w"> </span><span class="c1">// Importação necessária</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Programa</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span><span class="w"> </span><span class="c1">// Cria o objeto Scanner</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">        </span><span class="c1">// Agora você pode ler os dados</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="c1">// ...</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w"> </span><span class="c1">// Boa prática: fechar o scanner ao final</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="lendo-diferentes-tipos-de-dados">Lendo Diferentes Tipos de Dados</h3>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite seu nome: "</span><span class="p">);</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">String</span><span class="w"> </span><span class="n">nome</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// Lê uma linha de texto</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite sua idade: "</span><span class="p">);</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span><span class="w"> </span><span class="c1">// Lê um número inteiro</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite seu salário: "</span><span class="p">);</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="kt">double</span><span class="w"> </span><span class="n">salario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span><span class="w"> </span><span class="c1">// Lê um número double</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"DADOS DIGITADOS:"</span><span class="p">);</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Nome: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nome</span><span class="p">);</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Idade: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">idade</span><span class="p">);</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"Salário: R$ %.2f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">salario</span><span class="p">);</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
-</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// A variável a ser avaliada</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="c1">// Se o valor for 1</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Domingo"</span><span class="p">;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span><span class="w"> </span><span class="c1">// Interrompe a execução do switch</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="c1">// Se o valor for 2</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Segunda-feira"</span><span class="p">;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Terça-feira"</span><span class="p">;</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Quarta-feira"</span><span class="p">;</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Quinta-feira"</span><span class="p">;</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Sexta-feira"</span><span class="p">;</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Sábado"</span><span class="p">;</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">            </span><span class="k">default</span><span class="p">:</span><span class="w"> </span><span class="c1">// Equivalente ao "outrocaso", se nenhum caso corresponder</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">                </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Valor inválido"</span><span class="p">;</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Dia da semana: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dia</span><span class="p">);</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="p">}</span>
 </span></code></pre></div>
 <blockquote>
-<p><strong>Atenção:</strong> Ao ler um número (<code>nextInt</code> ou <code>nextDouble</code>) e depois um texto com <code>nextLine</code>, uma quebra de linha "invisível" pode ser consumida pelo <code>nextLine</code>, causando um pulo indesejado. Para corrigir, consuma essa quebra de linha extra com um <code>sc.nextLine()</code> adicional antes de ler o texto.</p>
+<p><strong>Importante:</strong> O comando <code>break</code> é essencial. Sem ele, o código continuaria a executar os <code>case</code> seguintes ("fall-through"), o que geralmente não é o comportamento desejado. O bloco <code>default</code> é opcional e lida com todos os valores não cobertos pelos <code>case</code>.</p>
 </blockquote>
-<h2 id="funcoes-matematicas-em-java">🧮 Funções Matemáticas em Java</h2>
-<p>Java oferece a classe <code>Math</code> com diversas funções matemáticas prontas para uso.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Exemplo em Java</th>
-<th style="text-align: left;">Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>A = Math.sqrt(x);</code></td>
-<td style="text-align: left;">A variável <code>A</code> recebe a raiz quadrada de <code>x</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>A = Math.pow(x, y);</code></td>
-<td style="text-align: left;">A variável <code>A</code> recebe o resultado de <code>x</code> elevado a <code>y</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>A = Math.abs(x);</code></td>
-<td style="text-align: left;">A variável <code>A</code> recebe o valor absoluto (positivo) de <code>x</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>A = Math.PI;</code></td>
-<td style="text-align: left;">A variável <code>A</code> recebe o valor de Pi (3.14159...).</td>
-</tr>
-</tbody>
-</table>
-<h3 id="exemplo-formula-de-bhaskara">Exemplo: Fórmula de Bhaskara</h3>
-<p>Para calcular as raízes de uma equação de segundo grau ($$ax^2 + bx + c = 0$$), usamos as funções da classe <code>Math</code>.</p>
-<p>$$ \Delta = b^2 - 4ac $$
-$$ x = \frac{-b \pm \sqrt{\Delta}}{2a} $$</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mf">3.0</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mf">4.0</span><span class="p">;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="kt">double</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">2.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">2.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Delta = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">delta</span><span class="p">);</span><span class="w">   </span><span class="c1">// Saída: Delta = 25.0</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"x1 = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x1</span><span class="p">);</span><span class="w">       </span><span class="c1">// Saída: x1 = 4.0</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"x2 = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x2</span><span class="p">);</span><span class="w">       </span><span class="c1">// Saída: x2 = -1.0</span>
-</span></code></pre></div>
 <h2 id="exercicios-praticos-resolvidos-em-java">✍️ Exercícios Práticos Resolvidos em Java</h2>
-<p>Vamos aplicar tudo o que aprendemos em alguns problemas práticos.</p>
-<h3 id="exercicio-1-calculo-de-area-de-terreno">Exercício 1: Cálculo de Área de Terreno</h3>
-<p><strong>Problema:</strong> Fazer um programa que leia a largura e o comprimento de um terreno retangular, e também o valor do metro quadrado. Em seguida, o programa deve mostrar o valor da área do terreno e o valor do preço do terreno, ambos com duas casas decimais.</p>
-<p><strong>Fórmulas:</strong></p>
-<ul>
-<li><code>área = largura × comprimento</code></li>
-<li><code>preço = área × preço do metro quadrado</code></li>
-</ul>
-<p><strong>Solução em Java:</strong></p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">curso</span><span class="p">;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Locale</span><span class="p">;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Terreno</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="n">Locale</span><span class="p">.</span><span class="na">setDefault</span><span class="p">(</span><span class="n">Locale</span><span class="p">.</span><span class="na">US</span><span class="p">);</span><span class="w"> </span><span class="c1">// Para usar o ponto como separador decimal</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite a largura do terreno: "</span><span class="p">);</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">largura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite o comprimento do terreno: "</span><span class="p">);</span>
-</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">comprimento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
-</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite o valor do metro quadrado: "</span><span class="p">);</span>
-</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">valorMetroQuadrado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
-</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">largura</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">comprimento</span><span class="p">;</span>
-</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">preco</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">valorMetroQuadrado</span><span class="p">;</span>
-</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
-</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"Área do terreno = %.2f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
-</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"Preço do terreno = %.2f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">preco</span><span class="p">);</span>
-</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>
-</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Exemplo de Execução:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Digite a largura do terreno: 15.0
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Digite o comprimento do terreno: 40.0
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Digite o valor do metro quadrado: 500.0
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>Área do terreno = 600.00
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>Preço do terreno = 300000.00
-</span></code></pre></div>
-<h3 id="exercicio-2-medidas-de-um-retangulo">Exercício 2: Medidas de um Retângulo</h3>
-<p><strong>Problema:</strong> Fazer um programa para ler as medidas da base e da altura de um retângulo. Em seguida, mostrar o valor da área, do perímetro e da diagonal deste retângulo, com quatro casas decimais.</p>
-<p><strong>Fórmulas:</strong></p>
-<ul>
-<li><code>área = base × altura</code></li>
-<li><code>perímetro = 2 × (base + altura)</code></li>
-<li><code>diagonal = √(base² + altura²)</code></li>
-</ul>
-<p><strong>Solução em Java:</strong></p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">curso</span><span class="p">;</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Locale</span><span class="p">;</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Retangulo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">        </span><span class="n">Locale</span><span class="p">.</span><span class="na">setDefault</span><span class="p">(</span><span class="n">Locale</span><span class="p">.</span><span class="na">US</span><span class="p">);</span>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite a base do retângulo: "</span><span class="p">);</span>
-</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
-</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Digite a altura do retângulo: "</span><span class="p">);</span>
-</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
-</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">altura</span><span class="p">;</span>
-</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">perimetro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">base</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">altura</span><span class="p">);</span>
-</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">diagonal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">altura</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">));</span>
-</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>
-</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"ÁREA = %.4f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
-</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"PERÍMETRO = %.4f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">perimetro</span><span class="p">);</span>
-</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"DIAGONAL = %.4f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">diagonal</span><span class="p">);</span>
-</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>
-</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Exemplo de Execução:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Digite a base do retângulo: 6.0
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>Digite a altura do retângulo: 8.0
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>ÁREA = 48.0000
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>PERÍMETRO = 28.0000
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>DIAGONAL = 10.0000
-</span></code></pre></div>
-<h3 id="como-executar-no-vs-code-e-intellij-idea">🛠️ Como Executar no VS Code e IntelliJ IDEA</h3>
-<p>Você pode compilar e executar todos os exemplos de código acima em qualquer uma das IDEs modernas.</p>
-<h4 id="no-visual-studio-code">No Visual Studio Code</h4>
+<h3 id="exercicio-1-formula-de-bhaskara-com-validacao">Exercício 1: Fórmula de Bhaskara com Validação</h3>
+<p><strong>Problema:</strong> Relembrando a fórmula de Bhaskara ($<span class="arithmatex">\(ax^2 + bx + c = 0\)</span>$), precisamos criar um programa que calcule as raízes, mas com duas validações importantes:</p>
 <ol>
-<li><strong>Instale o Pacote de Extensões para Java</strong>: Na aba de Extensões (<code>Ctrl+Shift+X</code>), procure por <code>Extension Pack for Java</code> da Microsoft e instale-o.</li>
-<li><strong>Crie o Arquivo</strong>: Crie um novo arquivo com a extensão <code>.java</code> (ex: <code>Terreno.java</code>).</li>
-<li><strong>Cole o Código</strong>: Copie e cole um dos exemplos no arquivo.</li>
-<li><strong>Execute</strong>: Um botão <strong>"Run"</strong> aparecerá acima do método <code>main</code>. Clique nele para compilar e executar o código. A saída aparecerá no terminal integrado.</li>
+<li>O coeficiente <code>a</code> não pode ser zero, pois senão não é uma equação do segundo grau.</li>
+<li>O valor de delta ($<span class="arithmatex">\(\Delta = b^2 - 4ac\)</span>$) não pode ser negativo, pois não existe raiz quadrada real de número negativo.</li>
 </ol>
-<h4 id="na-intellij-idea">Na IntelliJ IDEA</h4>
-<ol>
-<li><strong>Crie um Novo Projeto</strong>: Vá em <code>File &gt; New &gt; Project</code>. Escolha <code>Java</code> e a versão do JDK.</li>
-<li><strong>Crie uma Nova Classe</strong>: Na janela de projeto, clique com o botão direito na pasta <code>src</code>, vá em <code>New &gt; Java Class</code> e dê um nome à classe (ex: <code>Retangulo</code>).</li>
-<li><strong>Cole o Código</strong>: Copie e cole o código correspondente na classe criada.</li>
-<li><strong>Execute</strong>: Clique com o botão direito do mouse em qualquer lugar dentro do editor de código e selecione <strong>Run 'NomeDaClasse.main()'</strong>. A saída aparecerá na aba "Run" na parte inferior da IDE.</li>
-</ol>
+<p>O programa deve tratar essas condições antes de tentar calcular as raízes.</p>
+<p><strong>Solução em Java:</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">curso</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Locale</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Bhaskara</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="n">Locale</span><span class="p">.</span><span class="na">setDefault</span><span class="p">(</span><span class="n">Locale</span><span class="p">.</span><span class="na">US</span><span class="p">);</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Coeficiente a: "</span><span class="p">);</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Coeficiente b: "</span><span class="p">);</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Coeficiente c: "</span><span class="p">);</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Esta não é uma equação de segundo grau!"</span><span class="p">);</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">4.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">delta</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Esta equação não possui raízes reais."</span><span class="p">);</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">2.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">2.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"X1 = %.4f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">x1</span><span class="p">);</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"X2 = %.4f\n"</span><span class="p">,</span><span class="w"> </span><span class="n">x2</span><span class="p">);</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Exemplos de Execução:</strong></p>
+<ul>
+<li><strong>Entrada:</strong> <code>a=1</code>, <code>b=0</code>, <code>c=-9</code> → <strong>Saída:</strong> <code>X1 = 3.0000</code>, <code>X2 = -3.0000</code></li>
+<li><strong>Entrada:</strong> <code>a=2</code>, <code>b=9</code>, <code>c=10</code> → <strong>Saída:</strong> <code>X1 = -2.0000</code>, <code>X2 = -2.5000</code></li>
+<li><strong>Entrada:</strong> <code>a=5</code>, <code>b=2</code>, <code>c=3</code> → <strong>Saída:</strong> <code>Esta equação não possui raízes reais.</code></li>
+<li><strong>Entrada:</strong> <code>a=0</code>, <code>b=4</code>, <code>c=2</code> → <strong>Saída:</strong> <code>Esta não é uma equação de segundo grau!</code></li>
+</ul>
 <hr>
-<h3 id="ricardotecprogithubio">🚀 <a href="https://ricardotecpro.github.io/">ricardotecpro.github.io</a></h3><style type="text/css">.quiz {
-  border: 1px solid black;
-  padding: 1rem;
-  margin: 1rem 0;
-  position: relative;
-}
-/* Set margin-top of first quiz child (skip the header link) */
-.quiz > .quiz-question:first-of-type {
-  margin-top: 0;
-}
-/* Remove top margin from first element inside quiz-question */
-.quiz-question > *:first-child {
-  margin-top: 0;
-}
-.hidden {
-  display: none;
-}
-
-form button {
-  background-color: var(--md-primary-fg-color);
-  border: none;
-  color: var(--md-primary-bg-color);
-  padding: 0.5rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition:
-    opacity 0.2s,
-    background-color 0.2s;
-}
-
-form button:hover:not(:disabled) {
-  opacity: 0.9;
-}
-
-form button:disabled {
-  background-color: var(--md-default-fg-color--lighter, #ccc);
-  color: var(--md-default-fg-color--light, #666);
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.wrong label,
-.wrong label * {
-  color: #dc3545;
-}
-.correct label,
-.correct label * {
-  color: #198754;
-}
-
-fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-fieldset input {
-  margin: 0 10px;
-}
-fieldset label {
-  margin: 0 10px;
-}
-
-input[type="radio"].correct {
-  accent-color: #198754;
-}
-input[type="radio"].wrong {
-  accent-color: #dc3545;
-}
-.content {
-  margin: 10px;
-}
-
-/* Quiz feedback message */
-.quiz-feedback {
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-.quiz-feedback.correct {
-  background-color: #d1e7dd;
-  border: 1px solid #a3cfbb;
-  color: #198754;
-}
-
-.quiz-feedback.incorrect {
-  background-color: #f8d7da;
-  border: 1px solid #f1aeb5;
-  color: #dc3545;
-}
-
-[data-md-color-scheme="slate"] .quiz-feedback.correct {
-  background-color: #051b11;
-  border: 1px solid #0f5132;
-}
-
-[data-md-color-scheme="slate"] .quiz-feedback.incorrect {
-  background-color: #2c0b0e;
-  border: 1px solid #842029;
-}
-
-/* Quiz header link styling - positioned in top right corner */
-.quiz-header-link {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  opacity: 0;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--md-default-fg-color--light, #888);
-  transition: opacity 0.2s;
-  padding: 0.25rem 0.5rem;
-}
-.quiz:hover .quiz-header-link {
-  opacity: 1;
-}
-
-/* Quiz number header styling */
-.quiz-number {
-  margin-top: 0 !important;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-/* Quiz Progress Sidebar - Progress bar styling */
-/* Most styling comes from Material's .md-nav classes */
-#quiz-progress-sidebar {
-  margin-top: 1.5rem;
-}
-/* if config progress_sidebar_position is top, need top padding instead of bottom */
-.md-nav--secondary > #quiz-progress-sidebar:first-child {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 59.9375em) {
-  #quiz-progress-sidebar .md-nav__list {
-    border-left: 3px solid var(--md-default-fg-color--lightest);
-  }
-}
-
-.quiz-progress-bar {
-  width: 100%;
-  height: 6px;
-  background: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.07));
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0.2rem 0;
-  display: flex;
-}
-
-.quiz-progress-bar-incorrect {
-  height: 100%;
-  background: rgba(244, 67, 54, 0.8);
-  transition: width 0.3s ease;
-}
-
-.quiz-progress-bar-correct {
-  height: 100%;
-  background: #4caf50;
-  transition: width 0.3s ease;
-}
-
-.quiz-correct-reset {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Mobile Quiz Progress Tracker */
-/* Shows under navbar on mobile, hidden on desktop */
-.quiz-progress-mobile {
-  display: none; /* Hidden by default on desktop */
-  background-color: var(--md-default-bg-color);
-  border-bottom: 1px solid var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.07));
-  padding: 0.8rem;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  position: sticky;
-  top: 48px;
-  z-index: 3; /* Below Material header (z-index: 4) but above page content */
-}
-
-/* Show mobile tracker only on small screens (mobile/tablet) */
-/* Material breakpoint: up to 76.1875em (1219px) */
-@media screen and (max-width: 76.1875em) {
-  .quiz-progress-mobile {
-    display: block;
-  }
-}
-
-/* Mobile tracker styling adjustments */
-.quiz-progress-mobile .md-nav__list {
-  padding: 0;
-  margin: 0;
-  max-width: 61rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-}
-
-.quiz-progress-mobile .md-nav__item {
-  margin: 0.3rem 0;
-}
-
-.quiz-progress-mobile .md-nav__link {
-  padding: 0.2rem 0;
-  font-size: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.quiz-progress-mobile .quiz-progress-bar {
-  margin: 0.3rem 0;
-}
-
-.quiz-progress-mobile .md-ellipsis {
-  flex: 1;
-}
-
-/* Quiz Intro */
-.quiz-intro {
-  margin: 1rem 0;
-}
-
-.quiz-intro p {
-  margin: 0 0 0.5rem 0;
-}
-
-/* Quiz Results End Screen */
-.quiz-results {
-  border: 1px solid black;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  background-color: var(--md-default-bg-color);
-  transition: all 0.3s ease;
-}
-
-/* Progress state - subtle styling */
-.quiz-results-progress {
-  text-align: center;
-  color: var(--md-default-fg-color--light);
-}
-
-.quiz-results-progress h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--md-default-fg-color);
-}
-
-.quiz-results-stats,
-.quiz-results-correct-stats {
-  font-size: 0.95rem;
-  margin: 0.5rem 0;
-}
-
-.quiz-results-answered,
-.quiz-results-correct,
-.quiz-results-total,
-.quiz-results-percentage {
-  font-weight: 600;
-  color: var(--md-default-fg-color);
-}
-
-/* Complete state - bold and prominent styling */
-.quiz-results-complete {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.quiz-results-complete.hidden {
-  display: none;
-}
-
-.quiz-results-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 1.5rem 0;
-  color: var(--md-default-fg-color);
-}
-
-.quiz-results-score-display {
-  margin: 1.5rem 0;
-}
-
-.quiz-results-score-value {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-/* Score color coding */
-.quiz-results-score-excellent {
-  color: #198754;
-  background-color: rgba(25, 135, 84, 0.1);
-}
-
-.quiz-results-score-good {
-  color: #28a745;
-  background-color: rgba(40, 167, 69, 0.1);
-}
-
-.quiz-results-score-average {
-  color: #ffc107;
-  background-color: rgba(255, 193, 7, 0.1);
-}
-
-.quiz-results-score-poor {
-  color: #fd7e14;
-  background-color: rgba(253, 126, 20, 0.1);
-}
-
-.quiz-results-score-fail {
-  color: #dc3545;
-  background-color: rgba(220, 53, 69, 0.1);
-}
-
-.quiz-results-message {
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin: 1rem 0 2rem 0;
-  color: var(--md-default-fg-color);
-}
-
-/* Dark mode adjustments */
-[data-md-color-scheme="slate"] .quiz-results-score-excellent {
-  color: #4caf50;
-  background-color: rgba(76, 175, 80, 0.15);
-}
-
-[data-md-color-scheme="slate"] .quiz-results-score-good {
-  color: #66bb6a;
-  background-color: rgba(102, 187, 106, 0.15);
-}
-
-[data-md-color-scheme="slate"] .quiz-results-score-average {
-  color: #ffeb3b;
-  background-color: rgba(255, 235, 59, 0.15);
-}
-
-[data-md-color-scheme="slate"] .quiz-results-score-poor {
-  color: #ff9800;
-  background-color: rgba(255, 152, 0, 0.15);
-}
-
-[data-md-color-scheme="slate"] .quiz-results-score-fail {
-  color: #f44336;
-  background-color: rgba(244, 67, 54, 0.15);
-}
-
-/* Fill-in-the-blank quiz styles */
-.quiz-blank-input {
-  border: none;
-  border-bottom: 2px solid var(--md-default-fg-color--light, #999);
-  background-color: transparent;
-  padding: 0.2rem 0.5rem;
-  font-size: inherit;
-  font-family: inherit;
-  color: var(--md-default-fg-color);
-  transition:
-    border-color 0.2s,
-    background-color 0.2s;
-  /* min-width is set via inline style based on answer length */
-  outline: none;
-}
-
-.quiz-blank-input:focus {
-  border-bottom-color: var(--md-primary-fg-color, #1976d2);
-  background-color: var(--md-default-bg-color--light, rgba(0, 0, 0, 0.02));
-}
-
-.quiz-blank-input.correct {
-  border-bottom-color: #198754;
-  background-color: rgba(25, 135, 84, 0.1);
-  color: #198754;
-}
-
-.quiz-blank-input.wrong {
-  border-bottom-color: #dc3545;
-  background-color: rgba(220, 53, 69, 0.1);
-  color: #dc3545;
-}
-
-.quiz-blank-input:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-/* Dark mode adjustments for fill-in-the-blank */
-[data-md-color-scheme="slate"] .quiz-blank-input {
-  border-bottom-color: rgba(255, 255, 255, 0.3);
-}
-
-[data-md-color-scheme="slate"] .quiz-blank-input:focus {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-[data-md-color-scheme="slate"] .quiz-blank-input.correct {
-  border-bottom-color: #4caf50;
-  background-color: rgba(76, 175, 80, 0.15);
-  color: #4caf50;
-}
-
-[data-md-color-scheme="slate"] .quiz-blank-input.wrong {
-  border-bottom-color: #f44336;
-  background-color: rgba(244, 67, 54, 0.15);
-  color: #f44336;
-}
-</style><script type="text/javascript">var JSConfetti=function(){"use strict";function t(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function e(t,e){for(var i=0;i<e.length;i++){var n=e[i];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function i(t,i,n){return i&&e(t.prototype,i),n&&e(t,n),t}function n(t){return+t.replace(/px/,"")}function s(t,e){var i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,n=Math.random()*(e-t)+t;return Math.floor(n*Math.pow(10,i))/Math.pow(10,i)}function o(t){return t[s(0,t.length)]}var a=["#fcf403","#62fc03","#f4fc03","#03e7fc","#03fca5","#a503fc","#fc03ad","#fc03c2"];function r(t){return Math.log(t)/Math.log(1920)}var h=function(){function e(i){t(this,e);var n=i.initialPosition,a=i.direction,h=i.confettiRadius,c=i.confettiColors,u=i.emojis,l=i.emojiSize,d=i.canvasWidth,f=s(.9,1.7,3)*r(d);this.confettiSpeed={x:f,y:f},this.finalConfettiSpeedX=s(.2,.6,3),this.rotationSpeed=u.length?.01:s(.03,.07,3)*r(d),this.dragForceCoefficient=s(5e-4,9e-4,6),this.radius={x:h,y:h},this.initialRadius=h,this.rotationAngle="left"===a?s(0,.2,3):s(-.2,0,3),this.emojiSize=l,this.emojiRotationAngle=s(0,2*Math.PI),this.radiusYUpdateDirection="down";var m="left"===a?s(82,15)*Math.PI/180:s(-15,-82)*Math.PI/180;this.absCos=Math.abs(Math.cos(m)),this.absSin=Math.abs(Math.sin(m));var v=s(-150,0),p={x:n.x+("left"===a?-v:v)*this.absCos,y:n.y-v*this.absSin};this.currentPosition=Object.assign({},p),this.initialPosition=Object.assign({},p),this.color=u.length?null:o(c),this.emoji=u.length?o(u):null,this.createdAt=(new Date).getTime(),this.direction=a}return i(e,[{key:"draw",value:function(t){var e=this.currentPosition,i=this.radius,n=this.color,s=this.emoji,o=this.rotationAngle,a=this.emojiRotationAngle,r=this.emojiSize,h=window.devicePixelRatio;n?(t.fillStyle=n,t.beginPath(),t.ellipse(e.x*h,e.y*h,i.x*h,i.y*h,o,0,2*Math.PI),t.fill()):s&&(t.font="".concat(r,"px serif"),t.save(),t.translate(h*e.x,h*e.y),t.rotate(a),t.textAlign="center",t.fillText(s,0,0),t.restore())}},{key:"updatePosition",value:function(t,e){var i=this.confettiSpeed,n=this.dragForceCoefficient,s=this.finalConfettiSpeedX,o=this.radiusYUpdateDirection,a=this.rotationSpeed,r=this.createdAt,h=this.direction,c=e-r;i.x>s&&(this.confettiSpeed.x-=n*t),this.currentPosition.x+=i.x*("left"===h?-this.absCos:this.absCos)*t,this.currentPosition.y=this.initialPosition.y-i.y*this.absSin*c+.00125*Math.pow(c,2)/2,this.rotationSpeed-=this.emoji?1e-4:1e-5*t,this.rotationSpeed<0&&(this.rotationSpeed=0),this.emoji?this.emojiRotationAngle+=this.rotationSpeed*t%(2*Math.PI):"down"===o?(this.radius.y-=t*a,this.radius.y<=0&&(this.radius.y=0,this.radiusYUpdateDirection="up")):(this.radius.y+=t*a,this.radius.y>=this.initialRadius&&(this.radius.y=this.initialRadius,this.radiusYUpdateDirection="down"))}},{key:"getIsVisibleOnCanvas",value:function(t){return this.currentPosition.y<t+100}}]),e}();function c(){var t=document.createElement("canvas");return t.style.position="fixed",t.style.width="100%",t.style.height="100%",t.style.top="0",t.style.left="0",t.style.zIndex="1000",t.style.pointerEvents="none",document.body.appendChild(t),t}function u(t){var e=t.confettiRadius,i=void 0===e?6:e,n=t.confettiNumber,s=void 0===n?t.confettiesNumber||(t.emojis?40:250):n,o=t.confettiColors,r=void 0===o?a:o,h=t.emojis,c=void 0===h?t.emojies||[]:h,u=t.emojiSize,l=void 0===u?80:u;return t.emojies&&console.error("emojies argument is deprecated, please use emojis instead"),t.confettiesNumber&&console.error("confettiesNumber argument is deprecated, please use confettiNumber instead"),{confettiRadius:i,confettiNumber:s,confettiColors:r,emojis:c,emojiSize:l}}var l=function(){function e(i){var n=this;t(this,e),this.canvasContext=i,this.shapes=[],this.promise=new Promise((function(t){return n.resolvePromise=t}))}return i(e,[{key:"getBatchCompletePromise",value:function(){return this.promise}},{key:"addShapes",value:function(){var t;(t=this.shapes).push.apply(t,arguments)}},{key:"complete",value:function(){var t;return!this.shapes.length&&(null===(t=this.resolvePromise)||void 0===t||t.call(this),!0)}},{key:"processShapes",value:function(t,e,i){var n=this,s=t.timeDelta,o=t.currentTime;this.shapes=this.shapes.filter((function(t){return t.updatePosition(s,o),t.draw(n.canvasContext),!i||t.getIsVisibleOnCanvas(e)}))}}]),e}();return function(){function e(){var i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};t(this,e),this.activeConfettiBatches=[],this.canvas=i.canvas||c(),this.canvasContext=this.canvas.getContext("2d"),this.requestAnimationFrameRequested=!1,this.lastUpdated=(new Date).getTime(),this.iterationIndex=0,this.loop=this.loop.bind(this),requestAnimationFrame(this.loop)}return i(e,[{key:"loop",value:function(){var t,e,i,s,o;this.requestAnimationFrameRequested=!1,t=this.canvas,e=window.devicePixelRatio,i=getComputedStyle(t),s=n(i.getPropertyValue("width")),o=n(i.getPropertyValue("height")),t.setAttribute("width",(s*e).toString()),t.setAttribute("height",(o*e).toString());var a=(new Date).getTime(),r=a-this.lastUpdated,h=this.canvas.offsetHeight,c=this.iterationIndex%10==0;this.activeConfettiBatches=this.activeConfettiBatches.filter((function(t){return t.processShapes({timeDelta:r,currentTime:a},h,c),!c||!t.complete()})),this.iterationIndex++,this.queueAnimationFrameIfNeeded(a)}},{key:"queueAnimationFrameIfNeeded",value:function(t){this.requestAnimationFrameRequested||this.activeConfettiBatches.length<1||(this.requestAnimationFrameRequested=!0,this.lastUpdated=t||(new Date).getTime(),requestAnimationFrame(this.loop))}},{key:"addConfetti",value:function(){for(var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=u(t),i=e.confettiRadius,n=e.confettiNumber,s=e.confettiColors,o=e.emojis,a=e.emojiSize,r=this.canvas.getBoundingClientRect(),c=r.width,d=r.height,f=5*d/7,m={x:0,y:f},v={x:c,y:f},p=new l(this.canvasContext),y=0;y<n/2;y++){var g=new h({initialPosition:m,direction:"right",confettiRadius:i,confettiColors:s,confettiNumber:n,emojis:o,emojiSize:a,canvasWidth:c}),C=new h({initialPosition:v,direction:"left",confettiRadius:i,confettiColors:s,confettiNumber:n,emojis:o,emojiSize:a,canvasWidth:c});p.addShapes(g,C)}return this.activeConfettiBatches.push(p),this.queueAnimationFrameIfNeeded(),p.getBatchCompletePromise()}},{key:"clearCanvas",value:function(){this.activeConfettiBatches=[]}},{key:"destroyCanvas",value:function(){this.canvas.remove()}}]),e}()}();
-</script><script type="text/javascript">
-window.mkdocsQuizTranslations = {"Submit": "Enviar", "Question {n}": "Questão {n}", "Quiz Progress": "Progresso do quiz", "questions answered": "questões respondidas", "correct": "correto", "Quiz Complete!": "Quiz completo!", "Reset quiz": "Reiniciar quiz", "Quiz results are saved to your browser's local storage and will persist between sessions.": "Os resultados do quiz são salvos no local storage do seu browser e serão persistidos entre as sessões.", "Outstanding! You aced it!": "Excelente! Você arrasou!", "Great job! You really know your stuff!": "Excelente trabalho! Você realmente entende do assunto!", "Good effort! Keep learning!": "Bom trabalho! Continue aprendendo!", "Not bad, but there's room for improvement!": "Nada mal, mas há espaço para melhorias!", "Better luck next time! Keep trying!": "Boa sorte na próxima vez! Continue tentando!", "Are you sure you want to reset the quiz? This will clear your progress.": "Tem certeza de que deseja reiniciar o teste? Isso apagará seu progresso.", "Try Again": "Tente novamente", "Correct answer!": "Resposta correta!", "Incorrect answer. Please try again.": "Resposta incorreta. Tente de novo.", "Incorrect answer.": "Resposta incorreta.", "Answered:": "Respondido:", "Correct:": "Correto:", "Reset": "Reiniciar", "(empty)": "(vazio)"};
-</script><script type="text/javascript">
-window.mkdocsQuizConfig = {
-  confetti: true,
-  showProgress: true,
-  progressSidebarPosition: "top"
-};
-</script><script type="text/javascript" defer>// Wrap everything in an IIFE to avoid variable redeclaration issues
-// when Material for MkDocs instant navigation reloads the page
-(function () {
-  // Constants
-  const STORAGE_KEY_PREFIX = "quiz_progress_";
-
-  // Translation helper function
-  function t(key, params = {}) {
-    let text = window.mkdocsQuizTranslations?.[key] || key;
-    // Simple template replacement for {n} and {key} style placeholders
-    return text.replace(/{(\w+)}/g, (_, k) => (params[k] !== undefined ? params[k] : `{${k}}`));
-  }
-
-  // Confetti instance (will be initialized if enabled)
-  let jsConfetti = null;
-
-  // Store event listeners for cleanup
-  let eventListeners = [];
-
-  // Initialize confetti if enabled
-  if (window.mkdocsQuizConfig && window.mkdocsQuizConfig.confetti) {
-    if (typeof JSConfetti !== "undefined") {
-      jsConfetti = new JSConfetti();
-    }
-  }
-
-  // Function to move quiz progress sidebar into TOC sidebar
-  // This needs to run on every page load for Material instant navigation
-  function repositionSidebar() {
-    // Use requestAnimationFrame to ensure DOM is ready
-    requestAnimationFrame(() => {
-      const sidebar = document.getElementById("quiz-progress-sidebar");
-      const tocSidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner .md-nav--secondary");
-
-      if (sidebar && tocSidebar) {
-        // Check if sidebar is already in the correct position
-        // by seeing if it's already a child of tocSidebar
-        if (!tocSidebar.contains(sidebar)) {
-          // Get position from config (default: "top")
-          const position =
-            window.mkdocsQuizConfig && window.mkdocsQuizConfig.progressSidebarPosition
-              ? window.mkdocsQuizConfig.progressSidebarPosition
-              : "top";
-
-          // Move sidebar based on configured position
-          if (position === "bottom") {
-            // Append to the end (below TOC)
-            tocSidebar.appendChild(sidebar);
-          } else {
-            // Default: insert at the top (above TOC)
-            if (tocSidebar.firstChild) {
-              tocSidebar.insertBefore(sidebar, tocSidebar.firstChild);
-            } else {
-              tocSidebar.appendChild(sidebar);
-            }
-          }
-        }
-      }
-    });
-  }
-
-  // Cleanup function to remove event listeners and prevent memory leaks
-  function cleanup() {
-    eventListeners.forEach(({ element, event, handler }) => {
-      element.removeEventListener(event, handler);
-    });
-    eventListeners = [];
-  }
-
-  // Helper function to add tracked event listeners
-  function addTrackedEventListener(element, event, handler) {
-    element.addEventListener(event, handler);
-    eventListeners.push({ element, event, handler });
-  }
-
-  // Global quiz tracker
-  const quizTracker = {
-    quizzes: {},
-    totalQuizzes: 0,
-    answeredQuizzes: 0,
-    correctQuizzes: 0,
-
-    init: function () {
-      this.totalQuizzes = document.querySelectorAll(".quiz").length;
-      this.loadFromStorage();
-      // Initialize wasCompleted based on restored state to prevent confetti on page load
-      // Only fire confetti when completing quizzes in the current session, not from localStorage
-      const progress = this.getProgress();
-      this.wasCompleted = progress.answered === progress.total && progress.total > 0;
-      this.updateDisplay();
-    },
-
-    markQuiz: function (quizId, isCorrect, selectedValues = []) {
-      const wasAnswered = !!this.quizzes[quizId];
-      const wasCorrect = this.wasPreviouslyCorrect(quizId);
-
-      if (!wasAnswered) {
-        this.answeredQuizzes++;
-      }
-
-      this.quizzes[quizId] = {
-        answered: true,
-        correct: isCorrect,
-        selectedValues: selectedValues,
-      };
-
-      if (isCorrect && !wasCorrect) {
-        this.correctQuizzes++;
-      } else if (!isCorrect && wasCorrect) {
-        this.correctQuizzes--;
-      }
-
-      this.saveToStorage();
-      this.updateDisplay();
-    },
-
-    wasPreviouslyCorrect: function (quizId) {
-      return this.quizzes[quizId] && this.quizzes[quizId].correct;
-    },
-
-    resetQuiz: function (quizId) {
-      if (this.quizzes[quizId]) {
-        if (this.quizzes[quizId].correct) {
-          this.correctQuizzes--;
-        }
-        this.answeredQuizzes--;
-        delete this.quizzes[quizId];
-        this.saveToStorage();
-        this.updateDisplay();
-      }
-    },
-
-    resetAllQuiz: function () {
-      this.quizzes = {};
-      this.answeredQuizzes = 0;
-      this.correctQuizzes = 0;
-      this.saveToStorage();
-      this.updateDisplay();
-
-      // Reset all quiz forms on the page
-      document.querySelectorAll(".quiz").forEach((quiz) => {
-        const form = quiz.querySelector("form");
-        const fieldset = form.querySelector("fieldset");
-        const submitButton = form.querySelector('button[type="submit"]');
-        const resetButton = form.querySelector(".quiz-reset-button");
-        const feedbackDiv = form.querySelector(".quiz-feedback");
-        const section = quiz.querySelector("section");
-
-        // Clear all selections
-        const allInputs = fieldset.querySelectorAll('input[name="answer"]');
-        allInputs.forEach((input) => {
-          input.checked = false;
-          input.disabled = false;
-        });
-
-        // Reset colors
-        resetFieldset(fieldset);
-
-        // Hide content section
-        if (section) {
-          section.classList.add("hidden");
-        }
-
-        // Hide feedback message
-        feedbackDiv.classList.add("hidden");
-        feedbackDiv.classList.remove("correct", "incorrect");
-        feedbackDiv.textContent = "";
-        feedbackDiv.innerHTML = "";
-
-        // Show submit button, hide reset button
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.classList.remove("hidden");
-        }
-        if (resetButton) {
-          resetButton.classList.add("hidden");
-        }
-      });
-    },
-
-    getProgress: function () {
-      return {
-        total: this.totalQuizzes,
-        answered: this.answeredQuizzes,
-        correct: this.correctQuizzes,
-        percentage: this.totalQuizzes > 0 ? Math.round((this.answeredQuizzes / this.totalQuizzes) * 100) : 0,
-        score: this.totalQuizzes > 0 ? Math.round((this.correctQuizzes / this.totalQuizzes) * 100) : 0,
-      };
-    },
-
-    saveToStorage: function () {
-      try {
-        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
-        const data = JSON.stringify(this.quizzes);
-
-        // Check size limit (50KB max to prevent quota issues)
-        if (data.length > 50000) {
-          console.warn("Quiz progress data exceeds size limit, not saving to localStorage");
-          this.showStorageWarning("Quiz progress is too large to save");
-          return;
-        }
-
-        localStorage.setItem(pageKey, data);
-      } catch (e) {
-        // Handle quota exceeded or localStorage disabled
-        console.error("Failed to save quiz progress:", e);
-        this.showStorageWarning(
-          "Unable to save quiz progress. Your browser may have storage disabled or quota exceeded.",
-        );
-      }
-    },
-
-    loadFromStorage: function () {
-      try {
-        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
-        const stored = localStorage.getItem(pageKey);
-
-        if (stored) {
-          // Validate size before parsing (50KB max)
-          if (stored.length > 50000) {
-            console.warn("Stored quiz data exceeds size limit, clearing corrupted data");
-            localStorage.removeItem(pageKey);
-            return;
-          }
-
-          const parsed = JSON.parse(stored);
-
-          // Validate structure: should be an object
-          if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
-            console.warn("Invalid quiz data structure, clearing corrupted data");
-            localStorage.removeItem(pageKey);
-            return;
-          }
-
-          this.quizzes = parsed;
-
-          // Recalculate counts and validate quiz data structure
-          this.answeredQuizzes = 0;
-          this.correctQuizzes = 0;
-          for (let key in this.quizzes) {
-            const quiz = this.quizzes[key];
-            // Validate each quiz entry has expected structure
-            if (typeof quiz !== "object" || typeof quiz.answered !== "boolean" || typeof quiz.correct !== "boolean") {
-              console.warn("Invalid quiz entry structure, clearing corrupted data");
-              this.quizzes = {};
-              localStorage.removeItem(pageKey);
-              return;
-            }
-
-            if (quiz.answered) {
-              this.answeredQuizzes++;
-            }
-            if (quiz.correct) {
-              this.correctQuizzes++;
-            }
-          }
-        }
-      } catch (e) {
-        // Handle parsing errors or localStorage unavailable
-        console.error("Failed to load quiz progress:", e);
-        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
-        try {
-          localStorage.removeItem(pageKey); // Clear corrupted data
-        } catch (cleanupError) {
-          // localStorage might be completely unavailable
-        }
-      }
-    },
-
-    updateDisplay: function () {
-      const progress = this.getProgress();
-      const wasComplete = this.wasCompleted;
-      const isComplete = progress.answered === progress.total && progress.total > 0;
-
-      // Dispatch custom event for sidebar/other UI components
-      window.dispatchEvent(
-        new CustomEvent("quizProgressUpdate", {
-          detail: progress,
-        }),
-      );
-      // Update sidebar if it exists
-      this.updateSidebar();
-      // Update results div if it exists
-      this.updateResultsDiv(progress, isComplete, wasComplete);
-
-      // Track completion state
-      this.wasCompleted = isComplete;
-    },
-
-    updateResultsDiv: function (progress, isComplete, wasComplete) {
-      const resultsDiv = document.getElementById("quiz-results");
-      if (!resultsDiv) return;
-
-      // Update progress section
-      const answeredEl = resultsDiv.querySelector(".quiz-results-answered");
-      const totalEl = resultsDiv.querySelector(".quiz-results-total");
-      const percentageEl = resultsDiv.querySelector(".quiz-results-percentage");
-      const correctEl = resultsDiv.querySelector(".quiz-results-correct");
-
-      if (answeredEl) answeredEl.textContent = progress.answered;
-      if (totalEl) totalEl.textContent = progress.total;
-      if (percentageEl) percentageEl.textContent = progress.percentage + "%";
-      if (correctEl) correctEl.textContent = progress.correct;
-
-      // Handle completion state
-      const progressSection = resultsDiv.querySelector(".quiz-results-progress");
-      const completeSection = resultsDiv.querySelector(".quiz-results-complete");
-
-      if (isComplete) {
-        // Hide progress, show complete
-        if (progressSection) progressSection.classList.add("hidden");
-        if (completeSection) {
-          completeSection.classList.remove("hidden");
-
-          // Update score display
-          const scoreValue = resultsDiv.querySelector(".quiz-results-score-value");
-          const scoreMessage = resultsDiv.querySelector(".quiz-results-message");
-
-          if (scoreValue) {
-            scoreValue.textContent = progress.score + "%";
-
-            // Remove all score classes
-            scoreValue.classList.remove(
-              "quiz-results-score-excellent",
-              "quiz-results-score-good",
-              "quiz-results-score-average",
-              "quiz-results-score-poor",
-              "quiz-results-score-fail",
-            );
-
-            // Add appropriate score class and message
-            let message = "";
-            if (progress.score >= 90) {
-              scoreValue.classList.add("quiz-results-score-excellent");
-              message = t("Outstanding! You aced it!");
-            } else if (progress.score >= 75) {
-              scoreValue.classList.add("quiz-results-score-good");
-              message = t("Great job! You really know your stuff!");
-            } else if (progress.score >= 60) {
-              scoreValue.classList.add("quiz-results-score-average");
-              message = t("Good effort! Keep learning!");
-            } else if (progress.score >= 40) {
-              scoreValue.classList.add("quiz-results-score-poor");
-              message = t("Not bad, but there's room for improvement!");
-            } else {
-              scoreValue.classList.add("quiz-results-score-fail");
-              message = t("Better luck next time! Keep trying!");
-            }
-
-            if (scoreMessage) scoreMessage.textContent = message;
-          }
-
-          // Trigger confetti and scroll on first completion
-          if (!wasComplete) {
-            // Scroll to results div
-            resultsDiv.scrollIntoView({ behavior: "smooth", block: "center" });
-
-            // Fire confetti if enabled and score is good
-            if (jsConfetti && progress.score >= 10) {
-              setTimeout(() => {
-                jsConfetti.addConfetti();
-              }, 500);
-            }
-          }
-        }
-      } else {
-        // Show progress, hide complete
-        if (progressSection) progressSection.classList.remove("hidden");
-        if (completeSection) completeSection.classList.add("hidden");
-      }
-    },
-
-    updateSidebar: function () {
-      // Update both desktop and mobile sidebars
-      const sidebars = [
-        document.getElementById("quiz-progress-sidebar"),
-        document.getElementById("quiz-progress-mobile"),
-      ];
-
-      sidebars.forEach((sidebar) => {
-        if (sidebar) {
-          const progress = this.getProgress();
-
-          // Update answered count
-          const answeredEl = sidebar.querySelector(".quiz-progress-answered");
-          if (answeredEl) {
-            answeredEl.textContent = progress.answered;
-          }
-
-          // Update answered percentage - desktop only
-          const answeredPercentageEl = sidebar.querySelector(".quiz-progress-answered-percentage");
-          if (answeredPercentageEl && sidebar.id == "quiz-progress-sidebar") {
-            answeredPercentageEl.textContent = progress.percentage + "%";
-          }
-
-          // Update all .quiz-progress-total elements
-          const totalElements = sidebar.querySelectorAll(".quiz-progress-total");
-          totalElements.forEach((el) => {
-            el.textContent = progress.total;
-          });
-
-          // Update correct count
-          const scoreEl = sidebar.querySelector(".quiz-progress-score");
-          if (scoreEl) {
-            scoreEl.textContent = progress.correct;
-          }
-
-          // Update correct denominator (answered count)
-          const scoreTotalEl = sidebar.querySelector(".quiz-progress-score-total");
-          if (scoreTotalEl) {
-            scoreTotalEl.textContent = progress.answered;
-          }
-
-          // Update correct percentage (based on answered quizzes, not total) - desktop only
-          const scorePercentageEl = sidebar.querySelector(".quiz-progress-score-percentage");
-          if (scorePercentageEl && sidebar.id == "quiz-progress-sidebar") {
-            const scorePercentage =
-              progress.answered > 0 ? Math.round((progress.correct / progress.answered) * 100) : 0;
-            scorePercentageEl.textContent = scorePercentage + "%";
-          }
-
-          // Update progress bars (incorrect and correct)
-          const correctBar = sidebar.querySelector(".quiz-progress-bar-correct");
-          const incorrectBar = sidebar.querySelector(".quiz-progress-bar-incorrect");
-
-          if (correctBar && incorrectBar) {
-            const incorrectCount = progress.answered - progress.correct;
-            const correctPercentage = progress.total > 0 ? (progress.correct / progress.total) * 100 : 0;
-            const incorrectPercentage = progress.total > 0 ? (incorrectCount / progress.total) * 100 : 0;
-
-            incorrectBar.style.width = incorrectPercentage + "%";
-            correctBar.style.width = correctPercentage + "%";
-          }
-        }
-      });
-    },
-
-    createSidebar: function () {
-      // Check if progress tracking is enabled
-      const showProgress = window.mkdocsQuizConfig && window.mkdocsQuizConfig.showProgress !== false;
-
-      // Only show sidebar if progress tracking is enabled and there are quizzes
-      if (!showProgress || this.totalQuizzes === 0) {
-        return;
-      }
-
-      // Show both desktop and mobile sidebars
-      const desktopSidebar = document.getElementById("quiz-progress-sidebar");
-      const mobileSidebar = document.getElementById("quiz-progress-mobile");
-
-      if (desktopSidebar) {
-        desktopSidebar.style.display = "";
-      }
-      if (mobileSidebar) {
-        mobileSidebar.style.display = "";
-      }
-
-      // Initialize reset button event listeners
-      const resetLinks = document.querySelectorAll(".quiz-reset-all-link");
-      resetLinks.forEach((resetLink) => {
-        const handler = (e) => {
-          e.preventDefault();
-          if (confirm(t("Are you sure you want to reset the quiz? This will clear your progress."))) {
-            quizTracker.resetAllQuiz();
-          }
-        };
-        addTrackedEventListener(resetLink, "click", handler);
-      });
-
-      // Update the sidebar with initial values
-      this.updateSidebar();
-    },
-
-    showStorageWarning: function (message) {
-      // Show a warning banner in the progress tracker if it exists
-      const progressSidebar = document.getElementById("quiz-progress-sidebar");
-      if (progressSidebar) {
-        // Check if warning already exists
-        let warningEl = progressSidebar.querySelector(".quiz-storage-warning");
-        if (!warningEl) {
-          warningEl = document.createElement("div");
-          warningEl.className = "quiz-storage-warning";
-          warningEl.style.cssText =
-            "background: #fff3cd; color: #856404; padding: 8px; margin: 8px 0; border-radius: 4px; font-size: 12px; border: 1px solid #ffeaa7;";
-          progressSidebar.insertBefore(warningEl, progressSidebar.firstChild);
-        }
-        warningEl.textContent = message;
-      }
-    },
-  };
-
-  // Translate template elements with data-quiz-translate attributes
-  function translateTemplateElements() {
-    document.querySelectorAll("[data-quiz-translate]").forEach((element) => {
-      const key = element.getAttribute("data-quiz-translate");
-      if (key) {
-        element.textContent = t(key);
-      }
-    });
-  }
-
-  // Initialize results div reset button
-  function initializeResultsDiv() {
-    const resultsDiv = document.getElementById("quiz-results");
-    if (!resultsDiv) return;
-
-    const resetButton = resultsDiv.querySelector(".quiz-results-reset");
-    if (resetButton) {
-      const handler = () => {
-        if (confirm(t("Are you sure you want to reset the quiz? This will clear your progress."))) {
-          quizTracker.resetAllQuiz();
-        }
-      };
-      addTrackedEventListener(resetButton, "click", handler);
-    }
-  }
-
-  // Initialize intro reset buttons
-  function initializeIntroResetButtons() {
-    const introResetButtons = document.querySelectorAll(".quiz-intro-reset");
-    introResetButtons.forEach((button) => {
-      const handler = () => {
-        if (confirm(t("Are you sure you want to reset the quiz? This will clear your progress."))) {
-          quizTracker.resetAllQuiz();
-        }
-      };
-      addTrackedEventListener(button, "click", handler);
-    });
-  }
-
-  // Shuffle an array using Fisher-Yates algorithm
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
-
-  // Shuffle the answer elements in a fieldset
-  function shuffleAnswers(fieldset) {
-    const answerDivs = Array.from(fieldset.querySelectorAll(":scope > div"));
-    if (answerDivs.length <= 1) return;
-
-    // Shuffle the array of elements
-    shuffleArray(answerDivs);
-
-    // Re-append elements in shuffled order
-    answerDivs.forEach((div) => fieldset.appendChild(div));
-  }
-
-  // Initialize all quiz elements on the page
-  function initializeQuizzes() {
-    document.querySelectorAll(".quiz").forEach((quiz) => {
-      let form = quiz.querySelector("form");
-      let fieldset = form.querySelector("fieldset");
-      let submitButton = form.querySelector('button[type="submit"]');
-      let feedbackDiv = form.querySelector(".quiz-feedback");
-
-      // Shuffle answers if enabled (before any state restoration)
-      if (quiz.hasAttribute("data-shuffle-answers")) {
-        shuffleAnswers(fieldset);
-      }
-
-      // Get quiz ID from the quiz div itself
-      const quizId = quiz.id;
-
-      // Check if this is a fill-in-the-blank quiz
-      const isFillBlank = quiz.hasAttribute("data-quiz-type") && quiz.getAttribute("data-quiz-type") === "fill-blank";
-
-      // Prevent anchor link from triggering page navigation/reload
-      const headerLink = quiz.querySelector(".quiz-header-link");
-      if (headerLink) {
-        const handler = (e) => {
-          // Let the browser handle the anchor navigation normally
-          // This prevents Material for MkDocs from intercepting it as a page navigation
-          e.stopPropagation();
-        };
-        addTrackedEventListener(headerLink, "click", handler);
-      }
-
-      // Create reset button (initially hidden)
-      let resetButton = document.createElement("button");
-      resetButton.type = "button";
-      resetButton.className = "quiz-button quiz-reset-button hidden";
-      resetButton.textContent = t("Try Again");
-      if (submitButton) {
-        submitButton.parentNode.insertBefore(resetButton, submitButton.nextSibling);
-      } else {
-        form.appendChild(resetButton);
-      }
-
-      // Helper function to normalize answers (trim whitespace, case-insensitive)
-      function normalizeAnswer(answer) {
-        return answer.trim().toLowerCase();
-      }
-
-      // Restore quiz state from localStorage if available
-      if (quizId && quizTracker.quizzes[quizId]) {
-        const savedState = quizTracker.quizzes[quizId];
-        const section = quiz.querySelector("section");
-
-        if (isFillBlank) {
-          // Restore fill-in-the-blank quiz state
-          const blankInputs = quiz.querySelectorAll(".quiz-blank-input");
-
-          if (savedState.answered) {
-            // Restore input values based on saved values
-            if (savedState.selectedValues && savedState.selectedValues.length > 0) {
-              blankInputs.forEach((input, index) => {
-                if (savedState.selectedValues[index] !== undefined) {
-                  input.value = savedState.selectedValues[index];
-                }
-              });
-            }
-
-            if (savedState.correct) {
-              // Show correct feedback
-              if (section) {
-                section.classList.remove("hidden");
-              }
-              feedbackDiv.classList.remove("hidden", "incorrect");
-              feedbackDiv.classList.add("correct");
-              feedbackDiv.textContent = t("Correct answer!");
-
-              // Mark all inputs as correct
-              blankInputs.forEach((input) => {
-                input.classList.add("correct");
-              });
-
-              // Disable inputs if disable-after-submit is enabled
-              if (quiz.hasAttribute("data-disable-after-submit")) {
-                blankInputs.forEach((input) => {
-                  input.disabled = true;
-                });
-                if (submitButton) {
-                  submitButton.disabled = true;
-                }
-                resetButton.classList.add("hidden");
-              } else {
-                resetButton.classList.remove("hidden");
-                if (submitButton) {
-                  submitButton.classList.add("hidden");
-                }
-              }
-            } else {
-              // Restore incorrect answer state
-              if (section) {
-                section.classList.remove("hidden");
-              }
-
-              // Mark wrong/correct inputs
-              blankInputs.forEach((input) => {
-                const userAnswer = normalizeAnswer(input.value);
-                const correctAnswer = normalizeAnswer(input.getAttribute("data-answer"));
-
-                if (userAnswer === correctAnswer) {
-                  input.classList.add("correct");
-                } else {
-                  input.classList.add("wrong");
-                }
-              });
-
-              // Show incorrect feedback with detailed list
-              feedbackDiv.classList.remove("hidden", "correct");
-              feedbackDiv.classList.add("incorrect");
-              const canRetry = !quiz.hasAttribute("data-disable-after-submit");
-              const feedbackText = canRetry ? t("Incorrect answer. Please try again.") : t("Incorrect answer.");
-
-              // Show correct answers if show-correct is enabled
-              if (quiz.hasAttribute("data-show-correct")) {
-                let feedbackHTML = feedbackText + "<ul>";
-                blankInputs.forEach((input) => {
-                  if (!input.classList.contains("correct")) {
-                    const userAnswer = input.value.trim();
-                    const correctAnswer = input.getAttribute("data-answer");
-                    feedbackHTML += `<li><del>${userAnswer || t("(empty)")}</del> â†’ ${correctAnswer}</li>`;
-                    // Also show in placeholder
-                    input.placeholder = correctAnswer;
-                  }
-                });
-                feedbackHTML += "</ul>";
-                feedbackDiv.innerHTML = feedbackHTML;
-              } else {
-                feedbackDiv.textContent = feedbackText;
-              }
-
-              // Disable inputs if disable-after-submit is enabled
-              if (quiz.hasAttribute("data-disable-after-submit")) {
-                blankInputs.forEach((input) => {
-                  input.disabled = true;
-                });
-                if (submitButton) {
-                  submitButton.disabled = true;
-                }
-                resetButton.classList.add("hidden");
-              } else {
-                // Keep submit button visible for editing and resubmission
-                resetButton.classList.remove("hidden");
-              }
-            }
-          }
-        } else {
-          // Restore multiple-choice quiz state (existing code)
-          const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
-          const correctAnswers = fieldset.querySelectorAll('input[name="answer"][correct]');
-
-          if (savedState.answered) {
-            // Restore selected answers based on saved values
-            if (savedState.selectedValues && savedState.selectedValues.length > 0) {
-              allAnswers.forEach((input) => {
-                if (savedState.selectedValues.includes(input.value)) {
-                  input.checked = true;
-                }
-              });
-            }
-
-            if (savedState.correct) {
-              // Show the content section
-              if (section) {
-                section.classList.remove("hidden");
-              }
-
-              // Only mark the correct answers in green (don't highlight wrong answers)
-              allAnswers.forEach((input) => {
-                if (input.hasAttribute("correct")) {
-                  input.parentElement.classList.add("correct");
-                }
-              });
-
-              // Show correct feedback
-              feedbackDiv.classList.remove("hidden", "incorrect");
-              feedbackDiv.classList.add("correct");
-              feedbackDiv.textContent = t("Correct answer!");
-
-              // Disable inputs if disable-after-submit is enabled
-              if (quiz.hasAttribute("data-disable-after-submit")) {
-                allAnswers.forEach((input) => {
-                  input.disabled = true;
-                });
-                if (submitButton) {
-                  submitButton.disabled = true;
-                }
-                resetButton.classList.add("hidden");
-              } else {
-                // Show reset button, hide submit button
-                resetButton.classList.remove("hidden");
-                if (submitButton) {
-                  submitButton.classList.add("hidden");
-                }
-              }
-            } else {
-              // Restore incorrect answer state
-              const selectedInputs = Array.from(allAnswers).filter((input) =>
-                savedState.selectedValues.includes(input.value),
-              );
-
-              // Show the content section for incorrect answers too
-              if (section) {
-                section.classList.remove("hidden");
-              }
-
-              // Mark selected answers
-              selectedInputs.forEach((input) => {
-                if (input.hasAttribute("correct")) {
-                  input.parentElement.classList.add("correct");
-                } else {
-                  input.parentElement.classList.add("wrong");
-                }
-              });
-
-              // Show correct answers if show-correct is enabled
-              if (quiz.hasAttribute("data-show-correct")) {
-                correctAnswers.forEach((input) => {
-                  input.parentElement.classList.add("correct");
-                });
-              }
-
-              // Show incorrect feedback
-              feedbackDiv.classList.remove("hidden", "correct");
-              feedbackDiv.classList.add("incorrect");
-              const canRetry = !quiz.hasAttribute("data-disable-after-submit");
-              feedbackDiv.textContent = canRetry ? t("Incorrect answer. Please try again.") : t("Incorrect answer.");
-
-              // Disable inputs if disable-after-submit is enabled
-              if (quiz.hasAttribute("data-disable-after-submit")) {
-                allAnswers.forEach((input) => {
-                  input.disabled = true;
-                });
-                if (submitButton) {
-                  submitButton.disabled = true;
-                }
-                resetButton.classList.add("hidden");
-              } else {
-                // Show reset button, hide submit button
-                resetButton.classList.remove("hidden");
-                if (submitButton) {
-                  submitButton.classList.add("hidden");
-                }
-              }
-            }
-          }
-        }
-      }
-
-      // Auto-submit on radio button change if enabled (not for fill-in-blank)
-      if (!isFillBlank && quiz.hasAttribute("data-auto-submit")) {
-        let radioButtons = fieldset.querySelectorAll('input[type="radio"]');
-        radioButtons.forEach((radio) => {
-          const handler = (e) => {
-            e.preventDefault(); // Prevent page scroll to top
-            // Trigger form submission with proper event options
-            form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
-          };
-          addTrackedEventListener(radio, "change", handler);
-        });
-      }
-
-      // Reset button handler
-      const resetHandler = () => {
-        if (isFillBlank) {
-          // Clear fill-in-the-blank inputs
-          const blankInputs = quiz.querySelectorAll(".quiz-blank-input");
-          blankInputs.forEach((input) => {
-            input.value = "";
-            input.disabled = false;
-            input.classList.remove("correct", "wrong");
-            input.placeholder = "";
-          });
-        } else {
-          // Clear all selections
-          const allInputs = fieldset.querySelectorAll('input[name="answer"]');
-          allInputs.forEach((input) => {
-            input.checked = false;
-            input.disabled = false;
-          });
-          // Reset colors
-          resetFieldset(fieldset);
-        }
-        // Hide content section
-        let section = quiz.querySelector("section");
-        if (section) {
-          section.classList.add("hidden");
-        }
-        // Hide feedback message
-        feedbackDiv.classList.add("hidden");
-        feedbackDiv.classList.remove("correct", "incorrect");
-        feedbackDiv.textContent = "";
-        feedbackDiv.innerHTML = "";
-        // Show submit button, hide reset button
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.classList.remove("hidden");
-        }
-        resetButton.classList.add("hidden");
-        // Update tracker
-        if (quizId) {
-          quizTracker.resetQuiz(quizId);
-        }
-      };
-      addTrackedEventListener(resetButton, "click", resetHandler);
-
-      const submitHandler = (event) => {
-        event.preventDefault();
-        event.stopPropagation(); // Prevent Material theme from intercepting form submission
-        let is_correct = false;
-        let selectedValues = [];
-        let section = quiz.querySelector("section");
-
-        if (isFillBlank) {
-          // Handle fill-in-the-blank quiz
-          const blankInputs = quiz.querySelectorAll(".quiz-blank-input");
-          is_correct = true;
-
-          // Collect user answers and validate
-          blankInputs.forEach((input) => {
-            const userAnswer = normalizeAnswer(input.value);
-            const correctAnswer = normalizeAnswer(input.getAttribute("data-answer"));
-            selectedValues.push(input.value); // Save original value, not normalized
-
-            // Remove previous classes
-            input.classList.remove("correct", "wrong");
-
-            if (userAnswer === correctAnswer) {
-              input.classList.add("correct");
-            } else {
-              input.classList.add("wrong");
-              is_correct = false;
-            }
-          });
-
-          // Always show the content section after submission
-          if (section) {
-            section.classList.remove("hidden");
-          }
-
-          if (is_correct) {
-            // Show correct feedback
-            feedbackDiv.classList.remove("hidden", "incorrect");
-            feedbackDiv.classList.add("correct");
-            feedbackDiv.textContent = t("Correct answer!");
-          } else {
-            // Show incorrect feedback with detailed list
-            feedbackDiv.classList.remove("hidden", "correct");
-            feedbackDiv.classList.add("incorrect");
-            const canRetry = !quiz.hasAttribute("data-disable-after-submit");
-
-            // Build detailed feedback with bullet list
-            const feedbackText = canRetry ? t("Incorrect answer. Please try again.") : t("Incorrect answer.");
-
-            // Show correct answers if show-correct is enabled
-            if (quiz.hasAttribute("data-show-correct")) {
-              let feedbackHTML = feedbackText + "<ul>";
-              blankInputs.forEach((input) => {
-                if (!input.classList.contains("correct")) {
-                  const userAnswer = input.value.trim();
-                  const correctAnswer = input.getAttribute("data-answer");
-                  feedbackHTML += `<li><del>${userAnswer || "(empty)"}</del> â†’ ${correctAnswer}</li>`;
-                  // Also show in placeholder
-                  input.placeholder = correctAnswer;
-                }
-              });
-              feedbackHTML += "</ul>";
-              feedbackDiv.innerHTML = feedbackHTML;
-            } else {
-              feedbackDiv.textContent = feedbackText;
-            }
-          }
-
-          // Disable quiz after submission if option is enabled
-          if (quiz.hasAttribute("data-disable-after-submit")) {
-            blankInputs.forEach((input) => {
-              input.disabled = true;
-            });
-            if (submitButton) {
-              submitButton.disabled = true;
-            }
-            resetButton.classList.add("hidden");
-          } else {
-            // For fill-in-blank, keep submit button visible so users can edit and resubmit
-            // Only show reset button as an alternative
-            resetButton.classList.remove("hidden");
-          }
-        } else {
-          // Handle multiple-choice quiz (existing code)
-          let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
-          let correctAnswers = fieldset.querySelectorAll('input[name="answer"][correct]');
-          // Check if all correct answers are selected
-          is_correct = selectedAnswers.length === correctAnswers.length;
-          Array.from(selectedAnswers).forEach((answer) => {
-            if (!answer.hasAttribute("correct")) {
-              is_correct = false;
-            }
-          });
-
-          // Always show the content section after submission
-          if (section) {
-            section.classList.remove("hidden");
-          }
-
-          if (is_correct) {
-            resetFieldset(fieldset);
-            // Only mark the correct answers in green (don't highlight wrong answers)
-            const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
-            allAnswers.forEach((answer) => {
-              if (answer.hasAttribute("correct")) {
-                answer.parentElement.classList.add("correct");
-              }
-            });
-            // Show correct feedback
-            feedbackDiv.classList.remove("hidden", "incorrect");
-            feedbackDiv.classList.add("correct");
-            feedbackDiv.textContent = t("Correct answer!");
-          } else {
-            resetFieldset(fieldset);
-            // Mark wrong fields with colors
-            Array.from(selectedAnswers).forEach((answer) => {
-              if (!answer.hasAttribute("correct")) {
-                answer.parentElement.classList.add("wrong");
-              } else {
-                answer.parentElement.classList.add("correct");
-              }
-            });
-            // If show-correct is enabled, also show all correct answers
-            if (quiz.hasAttribute("data-show-correct")) {
-              correctAnswers.forEach((answer) => {
-                answer.parentElement.classList.add("correct");
-              });
-            }
-            // Show incorrect feedback
-            feedbackDiv.classList.remove("hidden", "correct");
-            feedbackDiv.classList.add("incorrect");
-            // Only show "Please try again" if the quiz is not disabled after submission
-            const canRetry = !quiz.hasAttribute("data-disable-after-submit");
-            feedbackDiv.textContent = canRetry ? t("Incorrect answer. Please try again.") : t("Incorrect answer.");
-          }
-
-          // Get selected values to save
-          selectedValues = Array.from(selectedAnswers).map((input) => input.value);
-
-          // Disable quiz after submission if option is enabled
-          if (quiz.hasAttribute("data-disable-after-submit")) {
-            const allInputs = fieldset.querySelectorAll('input[name="answer"]');
-            allInputs.forEach((input) => {
-              input.disabled = true;
-            });
-            if (submitButton) {
-              submitButton.disabled = true;
-            }
-            // Hide reset button if disable-after-submit is enabled
-            resetButton.classList.add("hidden");
-          } else {
-            // Show reset button and hide submit button
-            resetButton.classList.remove("hidden");
-            if (submitButton) {
-              submitButton.classList.add("hidden");
-            }
-          }
-        }
-
-        // Update tracker
-        if (quizId) {
-          quizTracker.markQuiz(quizId, is_correct, selectedValues);
-        }
-      };
-      addTrackedEventListener(form, "submit", submitHandler);
-    });
-  }
-
-  function resetFieldset(fieldset) {
-    Array.from(fieldset.children).forEach((child) => {
-      child.classList.remove("wrong", "correct");
-    });
-  }
-
-  // Main initialization function that sets up everything on a page
-  function initializePage() {
-    // Initialize tracker
-    quizTracker.init();
-
-    // Translate template elements
-    translateTemplateElements();
-
-    // Reposition sidebar for Material theme TOC integration
-    repositionSidebar();
-
-    // Create sidebar
-    quizTracker.createSidebar();
-
-    // Initialize results div and intro buttons
-    initializeResultsDiv();
-    initializeIntroResetButtons();
-
-    // Initialize all quiz elements
-    initializeQuizzes();
-  }
-
-  // Run initialization when DOM is ready
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initializePage);
-  } else {
-    initializePage();
-  }
-
-  // Material for MkDocs instant navigation support
-  // Cleanup and reinitialize when navigating between pages
-  if (typeof document$ !== "undefined") {
-    // Unsubscribe from any previous subscription to prevent duplicate handlers
-    // This is needed because the script re-runs on each page navigation,
-    // which would otherwise accumulate subscriptions
-    if (window._mkdocsQuizSubscription) {
-      window._mkdocsQuizSubscription.unsubscribe();
-    }
-
-    // Material theme with instant navigation is active
-    window._mkdocsQuizSubscription = document$.subscribe(() => {
-      cleanup(); // Remove old event listeners to prevent memory leaks
-      // Reinitialize everything for the new page
-      initializePage();
-    });
-  }
-})(); // End of IIFE
-</script>
+<h3 id="ricardotecprogithubio">🚀 <a href="https://ricardotecpro.github.io/">ricardotecpro.github.io</a></h3>
 
 
 
@@ -6218,7 +4383,7 @@ window.mkdocsQuizConfig = {
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="11 de agosto de 2025 05:10:03 UTC">11 de agosto de 2025 05:10:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="18 de fevereiro de 2026 16:20:52 UTC">18 de fevereiro de 2026 16:20:52</span>
   </span>
 
     
@@ -6390,6 +4555,8 @@ window.mkdocsQuizConfig = {
         <script src="../../assets/js/mermaid-init.js"></script>
       
         <script src="../../assets/js/custom_termynal.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="../../termynal.js"></script>
       

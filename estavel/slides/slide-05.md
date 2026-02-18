@@ -1,32 +1,51 @@
-# Estruturas Repetitivas
+# Roteiro de Slides - Aula 05
 
 ---
 
-## Tópicos da Aula
+## O Temido "Conflict"
 
-- Introdução ao tema
-- Conceitos fundamentais
-- Exemplos práticos
-- Exercícios de fixação
-
----
-
-## Conceito Chave
-
-> Definição importante sobre Estruturas Repetitivas.
+- Acontece nas melhores famílias (e equipes).
+- Não é um erro grave, é apenas uma **pergunta do Git**:
+  - "Ei, vocês dois mexeram na mesma linha. Qual eu devo manter?"
 
 ---
 
-## Exemplo Prático
+## Anatomia do Conflito
 
+```text
+<<<<<<< HEAD
+Eu gosto de café.
+=======
+Eu gosto de chá.
+>>>>>>> nova-branch
 ```
-// Exemplo de código ou algoritmo
-escreva("Olá mundo!")
-```
+- **HEAD (Topo)**: Onde você estava (branch atual).
+- **Separator (===)**: A fronteira.
+- **Botton (>>>)**: O que está chegando (branch vindo do merge).
 
 ---
 
-## Conclusão
+## Como Resolver?
 
-- Resumo do que aprendemos
-- Próximos passos
+1. **Mantenha a Calma**.
+2. Abra o arquivo em um editor de texto.
+3. Escolha: Cafe? Chá? Ou "Eu gosto de café e chá"?
+4. **Apague os marcadores**. O arquivo final deve ser código limpo.
+5. Salve.
+6. `git add arquivo` (Diz que está pronto).
+7. `git commit` (Finaliza).
+
+---
+
+## Como Evitar?
+
+- Commits pequenos e frequentes.
+- Puxe as mudanças dos colegas (`git pull`) com frequência.
+- Evite arquivos gigantes ("God Classes").
+- Comunique-se: "Ei, vou mexer no Header, ok?"
+
+---
+
+## Resumo
+
+Conflito não é bug. É o Git protegendo seu código de ser sobrescrito sem querer.

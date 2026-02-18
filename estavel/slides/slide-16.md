@@ -1,32 +1,47 @@
-# Linguagem Dart
+# Roteiro de Slides - Aula 16
 
 ---
 
-## Tópicos da Aula
+## Parabéns!
 
-- Introdução ao tema
-- Conceitos fundamentais
-- Exemplos práticos
-- Exercícios de fixação
-
----
-
-## Conceito Chave
-
-> Definição importante sobre Linguagem Dart.
+- Você sobreviveu a 16 aulas.
+- De "O que é Git?" a "Merge Conflict" e "CI/CD".
+- Você não é mais um iniciante.
 
 ---
 
-## Exemplo Prático
+## O Mercado de Trabalho
 
-```
-// Exemplo de código ou algoritmo
-escreva("Olá mundo!")
-```
+- Git é **obrigatório**. Não é "diferencial".
+- O que é diferencial?
+  - Saber resolver conflitos sem pânico.
+  - Escrever commits limpos.
+  - Saber trabalhar com PRs e Code Review.
 
 ---
 
-## Conclusão
+## Open Source
 
-- Resumo do que aprendemos
-- Próximos passos
+- Milhares de projetos precisam de ajuda.
+- Comece corrigindo documentação (typos).
+- Traduza READMEs.
+- Pegue `good first issues`.
+- Networking poderoso.
+
+---
+
+## Próximos Passos (Tech Tree)
+
+- **GitHub Actions**: Automatize seus testes.
+- **Git Avançado**: `rebase`, `cherry-pick`, `bisect`.
+- **Outras ferramentas**: GitLab, Bitbucket, Azure DevOps (os conceitos são os mesmos).
+
+---
+
+## Dica Final
+
+> "Code is read much more often than it is written." (Guido van Rossum)
+>
+> Escreva código (e commits) pensando em quem vai ler depois.
+
+**Sucesso na jornada!**

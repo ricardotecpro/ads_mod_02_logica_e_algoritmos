@@ -1,32 +1,51 @@
-# Estrutura Sequencial
+# Roteiro de Slides - Aula 03
 
 ---
 
-## Tópicos da Aula
+## O Fluxo de Trabalho do Git
 
-- Introdução ao tema
-- Conceitos fundamentais
-- Exemplos práticos
-- Exercícios de fixação
-
----
-
-## Conceito Chave
-
-> Definição importante sobre Estrutura Sequencial.
+- O Git não salva tudo automaticamente (como o Google Drive).
+- Você precisa ser **Intencional**.
+- Existem 3 "lugares" onde seu arquivo pode estar.
 
 ---
 
-## Exemplo Prático
+## As 3 Áreas Mágicas
 
-```
-// Exemplo de código ou algoritmo
-escreva("Olá mundo!")
-```
+1. **Working Directory**: Onde você trabalha. (Seus arquivos na pasta).
+2. **Staging Area**: Onde você prepara. (O palco antes do show).
+3. **Repository**: Onde você grava. (O álbum de fotos definitivo).
 
 ---
 
-## Conclusão
+## Comandos: init e status
 
-- Resumo do que aprendemos
-- Próximos passos
+- `git init`: "Git, comece a olhar para esta pasta agora."
+- `git status`: "Git, como estão as coisas?"
+  - Vermelho: Modificado/Novo (não preparado).
+  - Verde: Preparado (pronto para commit).
+
+---
+
+## Comandos: add e commit
+
+- `git add arquivo.txt`: "Git, põe esse arquivo no palco." (Leva para Staging).
+- `git commit -m "mensagem"`: "Git, tira a foto agora!" (Grava no Repositório).
+- **Regra de Ouro**: A mensagem deve explicar O QUE foi feito e POR QUE.
+
+---
+
+## O Histórico: git log
+
+- Uma lista cronológica de tudo o que aconteceu.
+- Contém:
+  - Hash (ID único).
+  - Autor.
+  - Data.
+  - Mensagem.
+
+---
+
+## Resumo Visual
+
+`Arquivo Novo` -> `Git Add` -> `Staging` -> `Git Commit` -> `Repositório`
