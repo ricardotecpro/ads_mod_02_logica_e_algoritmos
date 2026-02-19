@@ -87,4 +87,6 @@ class TestQuizzes:
         questions = page.locator(".quiz-question")
         
         # Deve haver pelo menos 5 perguntas
-        expect(questions).to_have_count(5)
+        # Deve haver pelo menos 5 perguntas
+        count = questions.count()
+        assert count >= 5, f"Expected at least 5 questions, found {count}"
