@@ -1,20 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#009688" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Start Node (Circle) -->
-  <circle cx="50" cy="15" r="10" stroke="#3f51b5" fill="#e8eaf6" />
-  
-  <!-- Line Down -->
-  <line x1="50" y1="25" x2="50" y2="40" />
-  
-  <!-- Process Node (Rectangle) -->
-  <rect x="30" y="40" width="40" height="20" rx="4" fill="#e0f2f1" />
-  
-  <!-- Line Down -->
-  <line x1="50" y1="60" x2="50" y2="75" />
-  
-  <!-- Decision Node (Diamond/Rhombus) -->
-  <polygon points="50,75 70,85 50,95 30,85" fill="#fff9c4" stroke="#ffc107" />
-  
-  <!-- Small details (Logic gate lines) -->
-  <line x1="70" y1="85" x2="85" y2="85" stroke-dasharray="2 2" />
-  <circle cx="90" cy="85" r="2" fill="#ffc107" stroke="none" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <g fill="none" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Decision Diamond (Flowchart) -->
+    <path d="M256 96 L416 256 L256 416 L96 256 Z" fill="#FFC107" stroke="none"/>
+    
+    <!-- Circuit Connections -->
+    <path d="M256 48 V96" />
+    <path d="M256 416 V464" />
+    <path d="M48 256 H96" />
+    <path d="M416 256 H464" />
+    
+    <!-- Binary Nodes -->
+    <circle cx="256" cy="48" r="24" fill="#FFFFFF" stroke="none"/>
+    <circle cx="256" cy="464" r="24" fill="#FFFFFF" stroke="none"/>
+    <circle cx="48" cy="256" r="24" fill="#FFFFFF" stroke="none"/>
+    <circle cx="464" cy="256" r="24" fill="#FFFFFF" stroke="none"/>
+    
+    <!-- Inner Symbol (Code Brackets) -->
+    <path d="M224 224 L192 256 L224 288" stroke="#333333" stroke-width="24"/>
+    <path d="M288 224 L320 256 L288 288" stroke="#333333" stroke-width="24"/>
+  </g>
 </svg>
