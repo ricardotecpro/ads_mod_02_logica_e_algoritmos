@@ -9693,165 +9693,621 @@ Se escolher 3, soma tudo e divide por 5.</p>
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-01-logica-de-programacao">Aula 01 - Lógica de Programação</h1>
+        </head><body><h1 id="aula-01-logica-de-programacao">Aula 01 - Lógica de Programação 🧠</h1>
 <hr>
-<h2 id="slides-slide-01-1-o-que-e-logica">1. O Que é Lógica? 🧠</h2>
+<h2 id="slides-slide-01-agenda">Agenda 📅</h2>
+<ol>
+<li>O que é Lógica?</li>
+<li>O Algoritmo</li>
+<li>Pensamento Computacional</li>
+<li>Fluxogramas</li>
+<li>Ferramentas (VisualG)</li>
+</ol>
+<hr>
+<h2 id="slides-slide-01-1-o-que-e-logica">1. O que é Lógica? 🧠</h2>
+<blockquote>
+<p>"A arte de pensar corretamente."</p>
+</blockquote>
 <ul>
-<li><strong>Definição</strong>: A arte de pensar corretamente.</li>
-<li>Na programação: É a capacidade de ensinar o computador a resolver problemas.</li>
-<li>O computador é <strong>BURRO</strong>. Ele só faz o que você manda.</li>
+<li>Organização de ideias.</li>
+<li>Maneira rigorosa de raciocinar.</li>
+<li><strong>Não</strong> é apenas para computadores!</li>
+<li>Usamos no dia a dia sem perceber.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-01-logica-no-dia-a-dia">Lógica no Dia a Dia ☀️</h2>
+<ul>
+<li>Se <strong>chover</strong>, levo guarda-chuva.</li>
+<li>Se <strong>estiver sol</strong>, vou à praia.</li>
+<li>Se o <strong>pneu furar</strong>, troco o pneu.</li>
+<li><strong>Causa</strong> -&gt; <strong>Efeito</strong>.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-01-o-computador-e-burro">O Computador é BURRO 🤖</h2>
+<ul>
+<li>Ele não "pensa".</li>
+<li>Ele apenas obedece.</li>
+<li>Se você explicar errado, ele fará errado.</li>
+<li><strong>Programar</strong> = Ensinar o computador.</li>
 </ul>
 <hr>
 <h2 id="slides-slide-01-2-o-algoritmo">2. O Algoritmo 💡</h2>
 <ul>
-<li><strong>Conceito</strong>: Sequência de passos finitos e precisos.</li>
-<li><strong>Exemplo</strong>: Receita de Bolo, Trocar Pneu, Ir ao Trabalho.</li>
-<li><strong>Ingredientes</strong>:</li>
-<li>Entrada (Insumos)</li>
-<li>Processamento (Ação)</li>
-<li>Saída (Resultado)</li>
+<li><strong>Definição</strong>: Sequência de passos finitos e precisos para resolver um problema.</li>
+<li><strong>Palavras-chave</strong>:<ul>
+<li><strong>Sequência</strong>: A ordem importa.</li>
+<li><strong>Finitos</strong>: Tem que acabar.</li>
+<li><strong>Precisos</strong>: Sem "talvez".</li>
+</ul>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-01-3-pensamento-computacional">3. Pensamento Computacional 🧩</h2>
-<p>Os 4 Superpoderes:
-1.  <strong>Decomposição</strong>: Quebrar o problema.
-2.  <strong>Reconhecimento de Padrão</strong>: Achar similaridades.
-3.  <strong>Abstração</strong>: Focar no útil.
-4.  <strong>Algoritmo</strong>: O passo a passo final.</p>
-<hr>
-<h2 id="slides-slide-01-4-fluxogramas">4. Fluxogramas 🗺️</h2>
-<p>A linguagem universal dos símbolos:
-- <strong>Ovalo</strong>: Início/Fim
-- <strong>Retângulo</strong>: Ação/Processo
-- <strong>Paralelogramo</strong>: Entrada/Saída
-- <strong>Losango</strong>: Decisão (Sim/Não)</p>
-<hr>
-<h2 id="slides-slide-01-5-visualg-e-portugol">5. VisualG e Portugol 💻</h2>
-<ul>
-<li><strong>Portugol</strong>: Português Estruturado.</li>
-<li><strong>VisualG</strong>: O programa onde vamos treinar.</li>
-<li><strong>Vantagem</strong>: Foco na lógica, sem se preocupar com inglês ou ponto-e-vírgula agora.</li>
-</ul>
-<hr>
-<h2 id="slides-slide-01-proximos-passos">Próximos Passos</h2>
-<ul>
-<li>Instalar o VisualG.</li>
-<li>Criar o primeiro "Olá Mundo".</li>
-<li>Entender Variáveis.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-02" heading-number="7.3"><html><head>
-        <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
-        })
-        </script>
-        </head><body><h1 id="aula-02-ambiente-e-ferramentas">Aula 02 - Ambiente e Ferramentas</h1>
-<hr>
-<h2 id="slides-slide-02-1-ciclo-de-vida-do-codigo">1. Ciclo de Vida do Código 🔄</h2>
+<h2 id="slides-slide-01-receita-de-bolo">Receita de Bolo 🍰</h2>
 <ol>
-<li><strong>Código Fonte</strong>: O que você escreve.</li>
-<li><strong>Compilador</strong>: O Tradutor.</li>
-<li><strong>Binário</strong>: O que a máquina roda (010101).</li>
+<li>Quebrar ovos.</li>
+<li>Misturar farinha.</li>
+<li>Assar por 40min.</li>
+<li>Comer.</li>
+</ol>
+<p><em>Se você "Comer" antes de "Assar", vai dar dor de barriga! (Ordem importa)</em></p>
+<hr>
+<h2 id="slides-slide-01-estrutura-basica">Estrutura Básica 🏗️</h2>
+<p>Todo algoritmo tem 3 fases:</p>
+<ol>
+<li><strong>Entrada</strong> (Ingredientes).</li>
+<li><strong>Processamento</strong> (Misturar/Assar).</li>
+<li><strong>Saída</strong> (Bolo pronto).</li>
 </ol>
 <hr>
-<h2 id="slides-slide-02-2-ferramentas-de-aprendizado">2. Ferramentas de Aprendizado 🧩</h2>
+<h2 id="slides-slide-01-3-pensamento-computacional">3. Pensamento Computacional 🧩</h2>
+<p>Os 4 Superpoderes para resolver problemas complexos.</p>
+<ol>
+<li><strong>Decomposição</strong></li>
+<li><strong>Reconhecimento de Padrões</strong></li>
+<li><strong>Abstração</strong></li>
+<li><strong>Algoritmo</strong></li>
+</ol>
+<hr>
+<h3 id="slides-slide-01-31-decomposicao">3.1 Decomposição 🧱</h3>
 <ul>
-<li><strong>VisualG</strong>: Portugol. Foco total em lógica.</li>
-<li><strong>Scratch</strong>: Blocos. Lógica visual.</li>
-<li><strong>Objetivo</strong>: Perder o medo da sintaxe.</li>
+<li>Quebrar um problema grande em menores.</li>
+<li>Exemplo: <strong>Construir uma Casa</strong>.<ul>
+<li>Fazer fundação.</li>
+<li>Levantar paredes.</li>
+<li>Colocar telhado.</li>
+</ul>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-02-3-vs-code-o-canivete-suico">3. VS Code: O Canivete Suíço 💻</h2>
+<h3 id="slides-slide-01-32-reconhecimento-de-padroes">3.2 Reconhecimento de Padrões 🔍</h3>
 <ul>
-<li>Editor mais usado do mundo.</li>
-<li><strong>Extensões</strong>: Transformam o editor.</li>
-<li>C/C++</li>
-<li>Python</li>
-<li>Live Server</li>
-<li>Draw.io</li>
+<li>Identificar o que já vimos antes.</li>
+<li>Exemplo:<ul>
+<li>Dirigir Carro 🚗</li>
+<li>Dirigir Caminhão 🚛</li>
+<li>Padrão: Volante, Pedais, Câmbio.</li>
+</ul>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-02-4-o-terminal-tela-preta">4. O Terminal (Tela Preta) 🖥️</h2>
+<h3 id="slides-slide-01-33-abstracao">3.3 Abstração 🌫️</h3>
 <ul>
-<li>Não tenha medo!</li>
-<li>É onde conversamos direto com o Sistema Operacional.</li>
-<li>Comandos básicos: <code>cd</code> (mudar pasta), <code>ls</code>/<code>dir</code> (listar), <code>mkdir</code> (criar pasta).</li>
+<li>Focar no essencial.</li>
+<li>Ignorar detalhes irrelevantes.</li>
+<li>Exemplo: "Trocar o pneu".<ul>
+<li>Importa: Chave de roda, Macaco.</li>
+<li>Não importa: Marca da borracha, cor do aro.</li>
+</ul>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-02-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-01-34-algoritmo-design">3.4 Algoritmo (Design) 📝</h3>
 <ul>
-<li>Instalar VisualG e VS Code.</li>
-<li>Testar o "Olá Mundo".</li>
-<li>Preparar a mente para Variáveis!</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-03" heading-number="7.4"><html><head>
-        <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
-        })
-        </script>
-        </head><body><h1 id="aula-03-estrutura-sequencial">Aula 03 - Estrutura Sequencial</h1>
-<hr>
-<h2 id="slides-slide-03-1-variaveis">1. Variáveis 📦</h2>
-<ul>
-<li><strong>Definição</strong>: Caixinhas na memória RAM.</li>
-<li><strong>Regra</strong>: Cada caixa tem um TIPO e um NOME.</li>
-<li><strong>Exemplo</strong>: <code>idade: inteiro</code>, <code>preco: real</code>.</li>
+<li>Escrever o passo a passo final.</li>
+<li>Juntar tudo o que foi planejado.</li>
+<li>O plano de execução.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-03-2-tipos-de-dados">2. Tipos de Dados 📐</h2>
+<h2 id="slides-slide-01-4-fluxogramas">4. Fluxogramas 🗺️</h2>
+<p>A linguagem universal dos programadores.</p>
+<ul>
+<li>Desenho &gt; Texto.</li>
+<li>Padronizado mundialmente.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-01-simbolos-principais">Símbolos Principais</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Tipo</th>
-<th style="text-align: left;">O que guarda?</th>
+<th style="text-align: center;">Forma</th>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>([ ... ])</code></td>
+<td style="text-align: left;"><strong>Terminador</strong></td>
+<td style="text-align: left;">Início/Fim</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>[ ... ]</code></td>
+<td style="text-align: left;"><strong>Processo</strong></td>
+<td style="text-align: left;">Ação/Cálculo</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>/ ... /</code></td>
+<td style="text-align: left;"><strong>Dados</strong></td>
+<td style="text-align: left;">Entrada/Saída</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>{ ... }</code></td>
+<td style="text-align: left;"><strong>Decisão</strong></td>
+<td style="text-align: left;">Pergunta (Sim/Não)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="slides-slide-01-exemplo-lampada">Exemplo: Lâmpada 💡</h3>
+<pre class="mermaid"><code>graph TD;
+    A([Início]) --&gt; B{Lâmpada acende?};
+    B -- Não --&gt; C{Plugada?};
+    C -- Não --&gt; D[Plugar];
+    C -- Sim --&gt; E[Trocar Bulbo];
+    B -- Sim --&gt; F([Fim]);
+    D --&gt; F;
+    E --&gt; F;</code></pre>
+<hr>
+<h2 id="slides-slide-01-5-visualg-e-portugol">5. VisualG e Portugol 💻</h2>
+<ul>
+<li><strong>Portugol</strong>: "Português Estruturado".</li>
+<li>Uma linguagem feita para <strong>aprender</strong>.</li>
+<li>Comandos em português.</li>
+<li>Foco na lógica, não na sintaxe complexa (ainda).</li>
+</ul>
+<hr>
+<h3 id="slides-slide-01-ferramenta-visualg">Ferramenta: VisualG</h3>
+<ul>
+<li>Gratuito.</li>
+<li>Leve.</li>
+<li>Roda direto no Windows.</li>
+<li>Mostra a memória do computador.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-01-primeiro-codigo-preview">Primeiro Código (Preview)</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-01-__codelineno-0-1"></a>Algoritmo "OlaMundo"
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-01-__codelineno-0-2"></a>Inicio
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-01-__codelineno-0-3"></a>   Escreval("Olá, Mundo!")
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-01-__codelineno-0-4"></a>   Escreval("Eu sou um programador!")
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-01-__codelineno-0-5"></a>FimAlgoritmo
+</span></code></pre></div>
+<blockquote>
+<p>Veremos isso na prática na próxima aula!</p>
+</blockquote>
+<hr>
+<h2 id="slides-slide-01-vamos-praticar">Vamos Praticar? 📝</h2>
+<p><strong>Desafio do Lobo/Ovelha/Alface</strong></p>
+<ul>
+<li>Um barqueiro.</li>
+<li>Lobo come Ovelha.</li>
+<li>Ovelha come Alface.</li>
+<li>Barco só leva 1 passageiro extra.</li>
+<li>Como atravessar todos?</li>
+</ul>
+<hr>
+<h2 id="slides-slide-01-solucao-algoritmo">Solução (Algoritmo)</h2>
+<ol>
+<li>Leva Ovelha. Voltou Vazio.</li>
+<li>Leva Lobo. Traz Ovelha.</li>
+<li>Deixa Ovelha. Leva Alface. Voltou Vazio.</li>
+<li>Leva Ovelha.</li>
+<li>FIM.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-01-resumo">Resumo ✅</h2>
+<ul>
+<li>Lógica = Pensar certo.</li>
+<li>Algoritmo = Sequência de passos.</li>
+<li>3 Fases: Entrada, Processamento, Saída.</li>
+<li>Fluxogramas ajudam a desenhar a solução.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-01-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>Configurar o VisualG.</li>
+<li>Entender <strong>Variáveis</strong> (As caixas da memória).</li>
+<li>Tipos de Dados (Texto, Número, Lógico).</li>
+</ul>
+<p>👉 <strong>Instalem o VisualG!</strong></p></body></html></section><section class="print-page" id="slides-slide-02" heading-number="7.3"><html><head>
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head><body><h1 id="aula-02-ambiente-e-ferramentas">Aula 02 - Ambiente e Ferramentas 🛠️</h1>
+<hr>
+<h2 id="slides-slide-02-agenda">Agenda 📅</h2>
+<ol>
+<li>O Ciclo de Vida do Código</li>
+<li>Ferramentas de Aprendizado (Low Code)</li>
+<li>Visual Studio Code (A Ferramenta Real)</li>
+<li>O Terminal (Sem Medo!)</li>
+<li>Instalação e Configuração</li>
+</ol>
+<hr>
+<h2 id="slides-slide-02-1-o-ciclo-de-vida-do-codigo">1. O Ciclo de Vida do Código 🔄</h2>
+<p>Como o computador entende o que escrevemos?</p>
+<ul>
+<li><strong>Nós</strong>: Falamos Inglês/Português (Texto).</li>
+<li><strong>Computador</strong>: Fala Energia (0 e 1).</li>
+<li><strong>O Problema</strong>: Tradução.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-as-3-etapas">As 3 Etapas 🚦</h2>
+<ol>
+<li><strong>Código Fonte</strong>: O texto que você digita.</li>
+<li><strong>Compilação/Interpretação</strong>: A tradução mágica.</li>
+<li><strong>Execução (Binário)</strong>: O programa rodando.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-02-visualizando-o-processo">Visualizando o Processo</h3>
+<pre class="mermaid"><code>graph LR;
+    A["Código Fonte\n(Humano)"] --&gt;|Compilador| B["Binário\n(Máquina)"];
+    B --&gt;|CPU| C["Execução\n(Ação)"];
+    style A fill:#f9f;
+    style B fill:#bbf;
+    style C fill:#bfb;</code></pre>
+<hr>
+<h2 id="slides-slide-02-codigo-fonte">Código Fonte 📝</h2>
+<ul>
+<li>Arquivos de texto simples (<code>.alg</code>, <code>.py</code>, <code>.c</code>, <code>.java</code>).</li>
+<li>Legível para humanos.</li>
+<li>Exemplo:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-02-__codelineno-0-1"></a>escreva("Olá Mundo")
+</span></code></pre></div></li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-compilador">Compilador ⚙️</h2>
+<ul>
+<li>O "Tradutor".</li>
+<li>Verifica se você escreveu certo (Sintaxe).</li>
+<li>Transforma em linguagem de máquina.</li>
+<li>Se tiver erro, ele GRITA (Erro de Compilação).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-binario-executavel">Binário / Executável 🚀</h2>
+<ul>
+<li>O resultado final.</li>
+<li><code>.exe</code> (Windows), App Mobile.</li>
+<li>O usuário final só vê isso.</li>
+<li>Não dá para ler (só números e símbolos estranhos).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-2-ferramentas-low-code">2. Ferramentas Low Code 🧩</h2>
+<p>Para começar <strong>sem frustração</strong>.</p>
+<ul>
+<li>Foco na <strong>Lógica</strong>.</li>
+<li>Esqueça "ponto-e-vírgula" por enquanto.</li>
+<li>VisualG e Scratch.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-02-visualg">VisualG 🟦</h3>
+<ul>
+<li><strong>Linguagem</strong>: Portugol (Português Estruturado).</li>
+<li><strong>Interface</strong>: Simples, leve.</li>
+<li><strong>Diferencial</strong>: Mostra o valor das variáveis em tempo real (Memória).</li>
+<li><strong>Uso</strong>: Exclusivo para ensino no Brasil.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-02-exemplo-visualg">Exemplo VisualG</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-02-__codelineno-1-1"></a>Algoritmo "Exemplo"
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-02-__codelineno-1-2"></a>Var
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-02-__codelineno-1-3"></a>   nome : caractere
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-02-__codelineno-1-4"></a>Inicio
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-02-__codelineno-1-5"></a>   escreva("Qual seu nome? ")
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-02-__codelineno-1-6"></a>   leia(nome)
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#slides-slide-02-__codelineno-1-7"></a>   escreva("Olá, ", nome)
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#slides-slide-02-__codelineno-1-8"></a>Fimalgoritmo
+</span></code></pre></div>
+<blockquote>
+<p>Parece português, funciona como código.</p>
+</blockquote>
+<hr>
+<h3 id="slides-slide-02-scratch">Scratch 🐱</h3>
+<ul>
+<li>Criado pelo MIT.</li>
+<li>Programação em <strong>Blocos</strong> (Lego).</li>
+<li>Impossível errar sintaxe (os blocos só encaixam se estiver certo).</li>
+<li>Ótimo para entender loops e eventos.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-3-visual-studio-code-vs-code">3. Visual Studio Code (VS Code) 💻</h2>
+<p>A ferramenta profissional.</p>
+<ul>
+<li>Gratuito (Microsoft).</li>
+<li>Leve.</li>
+<li><strong>Extensível</strong>.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-02-por-que-vs-code">Por que VS Code? 🌟</h3>
+<ol>
+<li><strong>IntelliSense</strong>: Autocomplete inteligente.</li>
+<li><strong>Multi-Linguagem</strong>: Python, Java, C++, HTML... tudo num lugar só.</li>
+<li><strong>Terminal Integrado</strong>: Não precisa abrir janelas extras.</li>
+<li><strong>Comunidade</strong>: Milhares de plugins.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-02-extensoes-essenciais">Extensões Essenciais 🧩</h3>
+<p>Sem elas, ele é apenas um bloco de notas.</p>
+<ul>
+<li><strong>Portuguese (Brazil)</strong>: Traduz o menu.</li>
+<li><strong>Material Icon Theme</strong>: Ícones bonitos para arquivos.</li>
+<li><strong>Code Runner</strong>: Roda código com um clique.</li>
+<li><strong>Live Server</strong>: Para Web (HTML).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-4-o-terminal-tela-preta">4. O Terminal (Tela Preta) 🖥️</h2>
+<p>Não tenha medo da tela preta!</p>
+<ul>
+<li>É o modo "Hacker" (mas simples).</li>
+<li>Controle total do sistema.</li>
+<li>Mais rápido que clicar com o mouse.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-02-comandos-basicos-windowslinux">Comandos Básicos (Windows/Linux)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comando</th>
+<th style="text-align: left;">Função</th>
 <th style="text-align: left;">Exemplo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Inteiro</strong></td>
-<td style="text-align: left;">Números cheios</td>
-<td style="text-align: left;">10, -5</td>
+<td style="text-align: left;"><code>cd</code></td>
+<td style="text-align: left;">Change Directory (Mudar Pasta)</td>
+<td style="text-align: left;"><code>cd projetos</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Real</strong></td>
-<td style="text-align: left;">Números com vírgula</td>
-<td style="text-align: left;">9.99, 3.14</td>
+<td style="text-align: left;"><code>ls</code> ou <code>dir</code></td>
+<td style="text-align: left;">List (Listar arquivos)</td>
+<td style="text-align: left;"><code>ls</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Caractere</strong></td>
-<td style="text-align: left;">Letras/Palavras</td>
-<td style="text-align: left;">"João", "A"</td>
+<td style="text-align: left;"><code>mkdir</code></td>
+<td style="text-align: left;">Make Directory (Criar Pasta)</td>
+<td style="text-align: left;"><code>mkdir aula01</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lógico</strong></td>
-<td style="text-align: left;">Verdade/Falso</td>
-<td style="text-align: left;">VERDADEIRO</td>
+<td style="text-align: left;"><code>clear</code> ou <code>cls</code></td>
+<td style="text-align: left;">Clear Screen (Limpar)</td>
+<td style="text-align: left;"><code>cls</code></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="slides-slide-03-3-fluxo-de-dados">3. Fluxo de Dados ⚙️</h2>
+<h2 id="slides-slide-02-5-pratica-ola-mundo">5. Prática: Olá Mundo 🌍</h2>
+<p>Vamos criar nosso primeiro programa no VisualG.</p>
 <ol>
-<li><strong>Entrada</strong>: Usuário digita (<code>leia</code>).</li>
-<li><strong>Processamento</strong>: CPU calcula (<code>soma &lt;- a + b</code>).</li>
-<li><strong>Saída</strong>: Tela mostra (<code>escreva</code>).</li>
+<li>Abra o VisualG.</li>
+<li>No bloco <code>Inicio</code>, digite:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-02-__codelineno-2-1"></a>Escreval("Olá, Mundo!")
+</span></code></pre></div></li>
+<li>Aperte <strong>F9</strong> (Executar).</li>
 </ol>
 <hr>
-<h2 id="slides-slide-03-4-operadores-aritmeticos">4. Operadores Aritméticos 🧮</h2>
+<h3 id="slides-slide-02-onde-configurar">Onde Configurar? 🛠️</h3>
+<p>Preparamos guias passo a passo para você instalar tudo.</p>
 <ul>
-<li>Soma <code>+</code></li>
-<li>Subtração <code>-</code></li>
-<li>Multiplicação <code>*</code></li>
-<li>Divisão <code>/</code></li>
-<li>Resto (Módulo) <code>%</code> (Crucial para par/ímpar!)</li>
+<li><a href="#setups-setup-01">Setup 01 - VisualG</a> (Comece aqui!)</li>
+<li><a href="#setups-setup-03">Setup 03 - VS Code</a> (Para depois)</li>
 </ul>
 <hr>
-<h2 id="slides-slide-03-proximos-passos">Próximos Passos</h2>
+<h2 id="slides-slide-02-resumo">Resumo ✅</h2>
 <ul>
-<li>Criar algoritmos que "conversam" (perguntam nome, idade).</li>
-<li>Fazer cálculos matemáticos.</li>
-<li>Se preparar para <strong>DECISÕES</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-04" heading-number="7.5"><html><head>
+<li>Código Fonte -&gt; Compilador -&gt; Binário.</li>
+<li>VisualG = Treino de Lógica.</li>
+<li>VS Code = ferramenta Profissional.</li>
+<li>Terminal = Poder e Velocidade.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-02-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>Entrar na "Mente do Computador".</li>
+<li><strong>Variáveis</strong>: Como o computador guarda informações?</li>
+<li><strong>Tipos de Dados</strong>: Texto, Número Inteiro, Número Real, Lógico.</li>
+</ul>
+<p>👉 <strong>Tarefa de Casa</strong>: Instalar VisualG e rodar o "Olá Mundo".</p></body></html></section><section class="print-page" id="slides-slide-03" heading-number="7.4"><html><head>
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head><body><h1 id="aula-03-estrutura-sequencial">Aula 03 - Estrutura Sequencial ➡️</h1>
+<hr>
+<h2 id="slides-slide-03-agenda">Agenda 📅</h2>
+<ol>
+<li>Variáveis (Revisão)</li>
+<li>Tipos de Dados</li>
+<li>Entrada e Saída</li>
+<li>Operadores Aritméticos</li>
+<li>Atribuição</li>
+</ol>
+<hr>
+<h2 id="slides-slide-03-1-variaveis-caixas-da-memoria">1. Variáveis: Caixas da Memória 📦</h2>
+<ul>
+<li>Computador tem memória (RAM).</li>
+<li><strong>Variável</strong>: Um pedaço nomeado dessa memória.</li>
+<li>Guardam <strong>um valor</strong> por vez.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-03-visualizacao">Visualização 🧪</h3>
+<pre class="mermaid"><code>graph TD;
+    Memoria[RAM] --&gt; Var1[Gaveta 'IDADE'];
+    Var1 --&gt; Val1[Valor: 25];
+    Memoria --&gt; Var2[Gaveta 'NOME'];
+    Var2 --&gt; Val2["Valor: 'Maria'"];</code></pre>
+<hr>
+<h2 id="slides-slide-03-2-tipos-de-dados">2. Tipos de Dados 📐</h2>
+<p>Nem tudo cabe na mesma caixa.</p>
+<ol>
+<li><strong>Inteiro</strong>: Números sem vírgula (10, -5).</li>
+<li><strong>Real</strong>: Números com vírgula (10.5, 3.14).</li>
+<li><strong>Caractere</strong>: Texto ("Olá", "A").</li>
+<li><strong>Lógico</strong>: Verdadeiro ou Falso.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-03-erro-comum">Erro Comum ❌</h3>
+<p>Tentar colocar texto numa caixa de número.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-03-__codelineno-0-1"></a>Var
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-03-__codelineno-0-2"></a>   idade : inteiro
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-03-__codelineno-0-3"></a>Inicio
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-03-__codelineno-0-4"></a>   idade &lt;- "Vinte" // ERRO!
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-03-3-entrada-e-saida">3. Entrada e Saída ⚙️</h2>
+<p>Como o programa fala com o usuário?</p>
+<ul>
+<li><strong>Entrada</strong>: Dados que entram (Teclado).</li>
+<li><strong>Saída</strong>: Dados que saem (Tela).</li>
+</ul>
+<hr>
+<h3 id="slides-slide-03-comando-escreva-saida">Comando: ESCREVA (Saída) 📤</h3>
+<ul>
+<li>Mostra texto na tela.</li>
+<li><code>escreva</code> (na mesma linha).</li>
+<li><code>escreval</code> (pula linha).</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-03-__codelineno-1-1"></a>escreval("Olá Mundo")
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-03-__codelineno-1-2"></a>escreva("Tudo bem?")
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-03-comando-leia-entrada">Comando: LEIA (Entrada) 📥</h3>
+<ul>
+<li>Pára o programa e espera o usuário digitar.</li>
+<li>Guarda o que foi digitado numa variável.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-03-__codelineno-2-1"></a>escreva("Qual seu nome?")
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-03-__codelineno-2-2"></a>leia(nome)
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-03-4-atribuicao-">4. Atribuição (<code>&lt;-</code>) ⬅️</h2>
+<ul>
+<li>Colocar um valor dentro da variável.</li>
+<li>Lê-se: "Recebe".</li>
+<li>A seta sempre aponta para a esquerda (para a variável).</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-03-__codelineno-3-1"></a>media &lt;- (n1 + n2) / 2
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-03-__codelineno-3-2"></a>nome &lt;- "João"
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-03-5-operadores-aritmeticos">5. Operadores Aritméticos 🧮</h2>
+<p>O computador é uma calculadora gigante.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Operador</th>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>+</code></td>
+<td style="text-align: left;">Soma</td>
+<td style="text-align: left;"><code>5 + 3</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-</code></td>
+<td style="text-align: left;">Subtração</td>
+<td style="text-align: left;"><code>10 - 2</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>*</code></td>
+<td style="text-align: left;">Multiplicação</td>
+<td style="text-align: left;"><code>4 * 3</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>/</code></td>
+<td style="text-align: left;">Divisão</td>
+<td style="text-align: left;"><code>20 / 4</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="slides-slide-03-operadores-especiais">Operadores Especiais ✨</h3>
+<ul>
+<li><strong>Módulo (<code>%</code>)</strong>: Resto da divisão.<ul>
+<li><code>5 % 2 = 1</code> (Sobrou 1).</li>
+<li>Útil para saber se é Par ou Ímpar.</li>
+</ul>
+</li>
+<li><strong>Potência (<code>^</code>)</strong>: Elevar ao quadrado/cubo.<ul>
+<li><code>2 ^ 3 = 8</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="slides-slide-03-ordem-de-precedencia">Ordem de Precedência 🥇</h2>
+<p>Matemática básica!</p>
+<ol>
+<li>Parênteses <code>( )</code></li>
+<li>Potência <code>^</code></li>
+<li>Multiplicação e Divisão <code>* /</code></li>
+<li>Soma e Subtração <code>+ -</code></li>
+</ol>
+<blockquote>
+<p><code>2 + 3 * 4</code> = 14 (Não 20!)</p>
+</blockquote>
+<hr>
+<h2 id="slides-slide-03-exemplo-completo-dobro-do-numero">Exemplo Completo: Dobro do Número 🔢</h2>
+<p>Vamos criar um programa que lê um número e mostra o dobro.</p>
+<hr>
+<h3 id="slides-slide-03-passo-1-definir-variaveis">Passo 1: Definir Variáveis</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#slides-slide-03-__codelineno-4-1"></a>Algoritmo "Dobro"
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#slides-slide-03-__codelineno-4-2"></a>Var
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#slides-slide-03-__codelineno-4-3"></a>   numero : inteiro
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#slides-slide-03-__codelineno-4-4"></a>   resultado : inteiro
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-03-passo-2-entrada">Passo 2: Entrada</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#slides-slide-03-__codelineno-5-1"></a>Inicio
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#slides-slide-03-__codelineno-5-2"></a>   escreva("Digite um número: ")
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#slides-slide-03-__codelineno-5-3"></a>   leia(numero)
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-03-passo-3-processamento">Passo 3: Processamento</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#slides-slide-03-__codelineno-6-1"></a>   resultado &lt;- numero * 2
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-03-passo-4-saida">Passo 4: Saída</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#slides-slide-03-__codelineno-7-1"></a>   escreval("O dobro é: ", resultado)
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#slides-slide-03-__codelineno-7-2"></a>Fimalgoritmo
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-03-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p>Faça no VisualG agora:
+1.  Leia dois números.
+2.  Some os dois.
+3.  Mostre o resultado.</p>
+<hr>
+<h2 id="slides-slide-03-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Variáveis</strong>: Nome, Tipo e Valor.</li>
+<li><strong>Tipos</strong>: Inteiro, Real, Caractere, Lógico.</li>
+<li><strong>Entrada</strong>: <code>leia()</code>.</li>
+<li><strong>Saída</strong>: <code>escreva()</code>.</li>
+<li><strong>Atribuição</strong>: <code>&lt;-</code>.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-03-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>E se precisarmos tomar <strong>decisões</strong>?</li>
+<li>O comando <code>SE</code>.</li>
+<li>Estruturas Condicionais.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Terminar os exercícios da lista 03!</p></body></html></section><section class="print-page" id="slides-slide-04" heading-number="7.5"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
@@ -9859,184 +10315,773 @@ Se escolher 3, soma tudo e divide por 5.</p>
         </script>
         </head><body><h1 id="aula-04-estrutura-condicional">Aula 04 - Estrutura Condicional 🔀</h1>
 <hr>
-<h2 id="slides-slide-04-1-tomando-decisoes">1. Tomando Decisões 🤔</h2>
+<h2 id="slides-slide-04-agenda">Agenda 📅</h2>
+<ol>
+<li>O Desvio Lógico ("Se...")</li>
+<li>Operadores Relacionais</li>
+<li>Estrutura Se-Entao-Senao</li>
+<li>Operadores Lógicos (E, OU, NÃO)</li>
+<li>Estrutura Escolha-Caso</li>
+</ol>
+<hr>
+<h2 id="slides-slide-04-1-o-desvio-logico">1. O Desvio Lógico 🤔</h2>
+<p>Até agora, nossos programas eram uma linha reta.
+Mas a vida é feita de escolhas.</p>
 <ul>
-<li>O código deixa de ser uma reta.</li>
-<li>Ele <strong>bifurca</strong> (vira à esquerda ou direita).</li>
-<li>Baseado em uma <strong>PERGUNTA</strong> (Condição).</li>
+<li><strong>Se</strong> chover, pego guarda-chuva.</li>
+<li><strong>Senão</strong>, vou de bicicleta.</li>
 </ul>
+<hr>
+<h3 id="slides-slide-04-visualizando-a-decisao">Visualizando a Decisão</h3>
+<pre class="mermaid"><code>graph TD;
+    Inicio([Início]) --&gt; Pergunta{Está Sol?};
+    Pergunta -- Sim --&gt; A[Praia];
+    Pergunta -- Não --&gt; B[Netflix];
+    A --&gt; Fim([Fim]);
+    B --&gt; Fim;</code></pre>
 <hr>
 <h2 id="slides-slide-04-2-operadores-relacionais">2. Operadores Relacionais 📏</h2>
+<p>Para o computador decidir, ele precisa <strong>comparar</strong>.
+A resposta é sempre <strong>Verdadeiro</strong> ou <strong>Falso</strong>.</p>
+<hr>
+<h3 id="slides-slide-04-os-comparadores">Os Comparadores</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Símbolo</th>
+<th style="text-align: left;">Significado</th>
+<th style="text-align: left;">Exemplo</th>
+<th style="text-align: left;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>&gt;</code></td>
+<td style="text-align: left;">Maior que</td>
+<td style="text-align: left;"><code>10 &gt; 5</code></td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>&lt;</code></td>
+<td style="text-align: left;">Menor que</td>
+<td style="text-align: left;"><code>3 &lt; 8</code></td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>==</code></td>
+<td style="text-align: left;">Igual a</td>
+<td style="text-align: left;"><code>5 == 5</code></td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>!=</code></td>
+<td style="text-align: left;">Diferente</td>
+<td style="text-align: left;"><code>5 != 3</code></td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>&gt;=</code></td>
+<td style="text-align: left;">Maior/Igual</td>
+<td style="text-align: left;"><code>10 &gt;= 10</code></td>
+<td style="text-align: left;">V</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-04-3-sintaxe-basica-se-entao">3. Sintaxe Básica (Se-Entao) 📝</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-04-__codelineno-0-1"></a>se (nota &gt;= 7) entao
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-04-__codelineno-0-2"></a>   escreva("Aprovado!")
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-04-__codelineno-0-3"></a>fimse
+</span></code></pre></div>
 <ul>
-<li><code>&gt;</code> Maior</li>
-<li><code>&lt;</code> Menor</li>
-<li><code>&gt;=</code> Maior ou Igual</li>
-<li><code>&lt;=</code> Menor ou Igual</li>
-<li><code>==</code> Igual (Comparação)</li>
-<li><code>!=</code> Diferente</li>
+<li>Se a condição for <strong>Verdadeira</strong>, ele executa o bloco.</li>
+<li>Se for <strong>Falsa</strong>, ele pula.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-04-3-operadores-logicos">3. Operadores Lógicos 🔗</h2>
-<ul>
-<li><strong>E (AND)</strong>: Exigente. "Preciso de Carteira E Carro". (V e V = V).</li>
-<li><strong>OU (OR)</strong>: Flexível. "Aceito Dinheiro OU Cartão". (V ou F = V).</li>
-<li><strong>NÃO (NOT)</strong>: Do Contra. (Inverte).</li>
-</ul>
-<hr>
-<h2 id="slides-slide-04-4-estrutura-se-senao">4. Estrutura Se-Senao 📝</h2>
-<div class="language-portugol highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-04-__codelineno-0-1"></a><span class="k">se</span><span class="w"> </span><span class="p">(</span><span class="n">idade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="k">entao</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-04-__codelineno-0-2"></a><span class="w">   </span><span class="k">escreva</span><span class="p">(</span><span class="s">"Pode entrar"</span><span class="p">)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-04-__codelineno-0-3"></a><span class="k">senao</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-04-__codelineno-0-4"></a><span class="w">   </span><span class="k">escreva</span><span class="p">(</span><span class="s">"Barrado"</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-04-__codelineno-0-5"></a><span class="k">fimse</span>
+<h3 id="slides-slide-04-o-senao-o-plano-b">O "Senao" (O Plano B)</h3>
+<p>E se for Falso? Usamos o <code>senao</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-04-__codelineno-1-1"></a>se (nota &gt;= 7) entao
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-04-__codelineno-1-2"></a>   escreva("Aprovado!")
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-04-__codelineno-1-3"></a>senao
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-04-__codelineno-1-4"></a>   escreva("Reprovado!")
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-04-__codelineno-1-5"></a>fimse
 </span></code></pre></div>
 <hr>
-<h2 id="slides-slide-04-5-switch-case-escolha">5. Switch-Case (Escolha) 🚦</h2>
+<h2 id="slides-slide-04-4-operadores-logicos">4. Operadores Lógicos 🔗</h2>
+<p>Às vezes, uma condição só não basta.</p>
 <ul>
-<li>Ideal para <strong>Menus</strong>.</li>
-<li>Evita "tripa" de <code>se...senao...se...senao</code>.</li>
-<li>Testa valores exatos (Caso 1, Caso 2...).</li>
+<li>Quero ir à praia <strong>SE</strong> tiver sol <strong>E</strong> for sábado.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-04-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-04-operador-e-and">Operador E (AND) 🤝</h3>
 <ul>
-<li>Criar menus interativos.</li>
-<li>Resolver problemas de lógica (Par/Ímpar, Média).</li>
-<li>Preparar para REPETIÇÃO.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-05" heading-number="7.6"><html><head>
+<li>Exige que <strong>TODAS</strong> as condições sejam verdadeiras.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">A e B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;"><strong>V</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="slides-slide-04-operador-ou-or">Operador OU (OR) 🤷</h3>
+<ul>
+<li>Exige que <strong>PELO MENOS UM</strong> seja verdadeiro.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">A ou B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;"><strong>V</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;"><strong>V</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;"><strong>V</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="slides-slide-04-operador-nao-not">Operador NÃO (NOT) 🚫</h3>
+<ul>
+<li>Inverte o resultado.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">NÃO A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">V</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-04-exemplo-pratico-media-escolar">Exemplo Prático: Média Escolar 🎓</h2>
+<p>Vamos melhorar nosso cálculo de média.</p>
+<ul>
+<li>Media &gt;= 7: Aprovado.</li>
+<li>Media &gt;= 5 E Media &lt; 7: Recuperação.</li>
+<li>Media &lt; 5: Reprovado.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-04-o-codigo-aninhado">O Código (Aninhado)</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-04-__codelineno-2-1"></a>se (media &gt;= 7) entao
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-04-__codelineno-2-2"></a>   escreval("Aprovado")
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-04-__codelineno-2-3"></a>senao
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-04-__codelineno-2-4"></a>   se (media &gt;= 5) entao
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#slides-slide-04-__codelineno-2-5"></a>      escreval("Recuperação")
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#slides-slide-04-__codelineno-2-6"></a>   senao
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#slides-slide-04-__codelineno-2-7"></a>      escreval("Reprovado")
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#slides-slide-04-__codelineno-2-8"></a>   fimse
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#slides-slide-04-__codelineno-2-9"></a>fimse
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-04-5-estrutura-escolha-caso">5. Estrutura Escolha-Caso 🚦</h2>
+<p>Quando temos muitas opções fixas (como um Menu).
+Evita aquele monte de <code>se-senao-se-senao</code>.</p>
+<hr>
+<h3 id="slides-slide-04-exemplo-menu">Exemplo: Menu</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-04-__codelineno-3-1"></a>escolha (opcao)
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-04-__codelineno-3-2"></a>   caso 1
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#slides-slide-04-__codelineno-3-3"></a>      escreva("Iniciar Jogo")
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#slides-slide-04-__codelineno-3-4"></a>   caso 2
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#slides-slide-04-__codelineno-3-5"></a>      escreva("Configurações")
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#slides-slide-04-__codelineno-3-6"></a>   caso 3
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#slides-slide-04-__codelineno-3-7"></a>      escreva("Sair")
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#slides-slide-04-__codelineno-3-8"></a>   outrocaso
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#slides-slide-04-__codelineno-3-9"></a>      escreva("Opção Inválida")
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#slides-slide-04-__codelineno-3-10"></a>fimescolha
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-04-quando-usar-qual">Quando usar qual? 🤔</h3>
+<ul>
+<li><strong>SE</strong>: Para testar intervalos (<code>idade &gt; 18</code>), condições complexas (<code>E</code>, <code>OU</code>).</li>
+<li><strong>ESCOLHA</strong>: Para valores exatos (Menus, Códigos de produto).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-04-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>Par ou Ímpar?</strong></p>
+<ol>
+<li>Leia um número.</li>
+<li>Verifique se o resto da divisão por 2 é zero.</li>
+<li>Se for, é Par.</li>
+<li>Senão, é Ímpar.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-04-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Se/Então/Senão</strong>: Tomada de decisão.</li>
+<li><strong>Relacionais</strong>: <code>&gt;</code>, <code>&lt;</code>, <code>=</code>, <code>!=</code>.</li>
+<li><strong>Lógicos</strong>: <code>E</code>, <code>OU</code>, <code>NÃO</code>.</li>
+<li><strong>Escolha</strong>: Ótimo para menus.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-04-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>E se eu quiser repetir um comando 1000 vezes?</li>
+<li><strong>Loops</strong> (Laços de Repetição).</li>
+<li><code>Enquanto</code>, <code>Para</code>, <code>Repita</code>.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Fazer o exercício do Bhaskara!</p></body></html></section><section class="print-page" id="slides-slide-05" heading-number="7.6"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-05-estruturas-repetitivas">Aula 05 - Estruturas Repetitivas 🔄</h1>
+        </head><body><h1 id="aula-05-estruturas-repetitivas">Aula 05 - Estruturas Repetitivas 🔁</h1>
 <hr>
-<h2 id="slides-slide-05-1-o-poder-da-automacao">1. O Poder da Automação 🤖</h2>
+<h2 id="slides-slide-05-agenda">Agenda 📅</h2>
+<ol>
+<li>O Poder da Repetição (Loops)</li>
+<li>Estrutura Enquanto (While)</li>
+<li>Estrutura Repita (Do-While)</li>
+<li>Estrutura Para (For)</li>
+<li>Controle de Fluxo (Interrompa)</li>
+<li>Teste de Mesa</li>
+</ol>
+<hr>
+<h2 id="slides-slide-05-1-o-poder-da-repeticao">1. O Poder da Repetição 🔄</h2>
+<p>Imagine escrever "Eu não vou jogar bolinha de papel" 100 vezes no quadro.</p>
 <ul>
-<li>E se eu precisar escrever "Olá" 1000 vezes?</li>
-<li>Copiar e Colar? <strong>NÃO!</strong></li>
-<li>Usamos <strong>Loops</strong> (Laços de Repetição).</li>
+<li><strong>Humano</strong>: Cansa, erra, demora.</li>
+<li><strong>Computador</strong>: Faz em 1 milissegundo.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-05-2-enquanto-while-vs-repita-do-while">2. Enquanto (While) vs Repita (Do-While) ⚖️</h2>
+<h3 id="slides-slide-05-o-loop-laco">O Loop (Laço) ♾️</h3>
 <ul>
-<li><strong>Enquanto</strong>: Testa <strong>ANTES</strong>. Pode nunca rodar. (Ex: "Enquanto tiver dinheiro, gaste").</li>
-<li><strong>Repita</strong>: Testa <strong>DEPOIS</strong>. Roda pelo menos 1 vez. (Ex: "Atire, depois pergunte").</li>
+<li>Executa um bloco de código <strong>enquanto</strong> uma condição for verdadeira.</li>
+<li>Automatiza tarefas repetitivas.</li>
+<li>Economiza linhas de código.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-05-3-para-for">3. Para (For) 🎯</h2>
+<h3 id="slides-slide-05-visualizando-um-loop">Visualizando um Loop</h3>
+<pre class="mermaid"><code>graph TD;
+    Inicio([Início]) --&gt; Cond{Contador &lt; 5?};
+    Cond -- Sim --&gt; Acao["Escrever 'Olá'"];
+    Acao --&gt; Inc[Contador + 1];
+    Inc --&gt; Cond;
+    Cond -- Não --&gt; Fim([Fim]);</code></pre>
+<hr>
+<h2 id="slides-slide-05-2-enquanto-while">2. Enquanto (While) ⏳</h2>
 <ul>
-<li>A estrutura mais amada.</li>
-<li>Controle total em uma linha: <strong>Início, Fim, Passo</strong>.</li>
-<li><code>Para i de 1 ate 10 faca</code></li>
+<li>O mais comum.</li>
+<li>Testa a condição <strong>ANTES</strong> de entrar.</li>
+<li>Se a condição for falsa de cara, ele nunca executa.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-05-4-variaveis-de-controle">4. Variáveis de Controle 🕹️</h2>
+<h3 id="slides-slide-05-sintaxe">Sintaxe</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-05-__codelineno-0-1"></a>enquanto (condicao) faca
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-05-__codelineno-0-2"></a>   // Comandos
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-05-__codelineno-0-3"></a>fimenquanto
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-05-exemplo-contagem">Exemplo: Contagem</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-05-__codelineno-1-1"></a>i &lt;- 0
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-05-__codelineno-1-2"></a>enquanto (i &lt; 5) faca
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-05-__codelineno-1-3"></a>   escreval("Número: ", i)
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-05-__codelineno-1-4"></a>   i &lt;- i + 1  // Importante!
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-05-__codelineno-1-5"></a>fimenquanto
+</span></code></pre></div>
+<blockquote>
+<p>Se esquecer o <code>i &lt;- i + 1</code>, vira um <strong>Loop Infinito</strong>! 😱</p>
+</blockquote>
+<hr>
+<h2 id="slides-slide-05-3-repita-ate-do-while">3. Repita-Até (Do-While) 🛡️</h2>
 <ul>
-<li><strong>Contador</strong>: <code>conta = conta + 1</code> (Passos)</li>
-<li><strong>Acumulador</strong>: <code>soma = soma + valor</code> (Cofrinho)</li>
+<li>Testa a condição no <strong>FINAL</strong>.</li>
+<li>Executa <strong>pelo menos uma vez</strong>.</li>
+<li>Ótimo para menus ou validação.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-05-5-loop-infinito-e-break">5. Loop Infinito e Break ♾️</h2>
+<h3 id="slides-slide-05-sintaxe_1">Sintaxe</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-05-__codelineno-2-1"></a>repita
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-05-__codelineno-2-2"></a>   // Comandos
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-05-__codelineno-2-3"></a>ate (condicao)
+</span></code></pre></div>
+<p><strong>Atenção</strong>: No VisualG/Portugol, ele repete <em>até</em> a condição ser verdadeira (ou seja, enquanto for falsa). Em outras linguagens (C, Java), é <em>enquanto</em> for verdadeira.</p>
+<hr>
+<h3 id="slides-slide-05-exemplo-senha-correta">Exemplo: Senha Correta 🔒</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-05-__codelineno-3-1"></a>repita
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-05-__codelineno-3-2"></a>   escreva("Digite a senha: ")
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#slides-slide-05-__codelineno-3-3"></a>   leia(senha)
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#slides-slide-05-__codelineno-3-4"></a>ate (senha == "1234")
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-05-4-para-for">4. Para (For) 🎯</h2>
 <ul>
-<li><strong>Cuidado</strong>: Se a condição nunca for falsa, o programa trava!</li>
-<li><strong>Break (Interrompa)</strong>: O botão de emergência para sair do loop.</li>
+<li>Quando sabemos <strong>exatamente</strong> quantas vezes repetir.</li>
+<li>Agrupa tudo numa linha só:<ol>
+<li><strong>Início</strong> (Onde começa)</li>
+<li><strong>Fim</strong> (Onde termina)</li>
+<li><strong>Passo</strong> (De quanto em quanto)</li>
+</ol>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-05-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-05-sintaxe_2">Sintaxe</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#slides-slide-05-__codelineno-4-1"></a>para i de 1 ate 10 passo 1 faca
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#slides-slide-05-__codelineno-4-2"></a>   escreva(i)
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#slides-slide-05-__codelineno-4-3"></a>fimpara
+</span></code></pre></div>
 <ul>
-<li>Tabuadas Automáticas.</li>
-<li>Somar vários números.</li>
-<li>Preparar para guardar muitos dados (<strong>VETORES</strong>).</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-06" heading-number="7.7"><html><head>
+<li><strong>i</strong>: Variável contadora.</li>
+<li><strong>1</strong>: Valor inicial.</li>
+<li><strong>10</strong>: Valor final.</li>
+<li><strong>1</strong>: Incremento.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-05-exemplo-contagem-regressiva">Exemplo: Contagem Regressiva 🚀</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#slides-slide-05-__codelineno-5-1"></a>para i de 10 ate 0 passo -1 faca
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#slides-slide-05-__codelineno-5-2"></a>   escreval(i)
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#slides-slide-05-__codelineno-5-3"></a>fimpara
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#slides-slide-05-__codelineno-5-4"></a>escreval("FOGO!")
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-05-5-controle-de-fluxo-interrompa">5. Controle de Fluxo (Interrompa) 🛑</h2>
+<ul>
+<li>Sai do loop imediatamente.</li>
+<li>Útil para parar buscas ou sair de menus.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#slides-slide-05-__codelineno-6-1"></a>enquanto (verdadeiro) faca
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#slides-slide-05-__codelineno-6-2"></a>   se (botao == "Sair") entao
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#slides-slide-05-__codelineno-6-3"></a>      interrompa
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#slides-slide-05-__codelineno-6-4"></a>   fimse
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#slides-slide-05-__codelineno-6-5"></a>fimenquanto
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-05-6-o-teste-de-mesa">6. O Teste de Mesa 🧠</h2>
+<p>Como debugar mentalmente?</p>
+<ol>
+<li>Crie uma tabela com as variáveis.</li>
+<li>Simule linha por linha.</li>
+<li>Anote as mudanças.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Passo</th>
+<th style="text-align: left;">i</th>
+<th style="text-align: left;">Saída</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">"0"</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">...</td>
+<td style="text-align: left;">...</td>
+<td style="text-align: left;">...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-05-comparativo">Comparativo ⚖️</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Estrutura</th>
+<th style="text-align: left;">Quando usar?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Enquanto</strong></td>
+<td style="text-align: left;">Não sei quantas vezes vai repetir.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Repita</strong></td>
+<td style="text-align: left;">Tenho que executar pelo menos 1 vez.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Para</strong></td>
+<td style="text-align: left;">Sei exatamente o número de repetições.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-05-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>Tabuada do 7</strong></p>
+<ol>
+<li>Use um <code>para</code>.</li>
+<li>De 1 até 10.</li>
+<li>Mostre <code>7 x i = resultado</code>.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-05-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Loops</strong> economizam tempo.</li>
+<li><strong>Cuidado</strong> com Loops Infinitos.</li>
+<li>Escolha a estrutura certa para o problema.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-05-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>E para guardar 50 notas de alunos?</li>
+<li>Criar 50 variáveis? <code>n1, n2, n3...</code>? 😫</li>
+<li><strong>Vetores (Arrays)</strong>: A solução elegante.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Fazer a Tabuada e o Primo!</p></body></html></section><section class="print-page" id="slides-slide-06" heading-number="7.7"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-06-vetores-arrays">Aula 06 - Vetores (Arrays) 🗄️</h1>
+        </head><body><h1 id="aula-06-estruturas-de-dados-i-vetores">Aula 06 - Estruturas de Dados I: Vetores 📊</h1>
 <hr>
-<h2 id="slides-slide-06-1-o-problema-das-variaveis-soltas">1. O Problema das Variáveis Soltas 😫</h2>
+<h2 id="slides-slide-06-agenda">Agenda 📅</h2>
+<ol>
+<li>O Problema das Muitas Variáveis</li>
+<li>O Que é um Vetor?</li>
+<li>Simulando a Memória</li>
+<li>Declarando e Acessando</li>
+<li>Percorrendo Vetores (Loop Para)</li>
+<li>Ordenação (Bubble Sort)</li>
+</ol>
+<hr>
+<h2 id="slides-slide-06-1-o-problema">1. O Problema 😫</h2>
+<p>Imagine guardar a nota de 50 alunos.</p>
 <ul>
-<li>Imagine criar: <code>nota1, nota2, nota3 ... nota50</code>.</li>
-<li>E para calcular a média? <code>(n1+n2+...)/50</code>.</li>
-<li>Inviável!</li>
+<li><code>nota1</code>, <code>nota2</code>, <code>nota3</code>... <code>nota50</code>.</li>
+<li>E para calcular a média?<ul>
+<li><code>(nota1 + nota2 + ... + nota50) / 50</code></li>
+</ul>
+</li>
+<li><strong>Caos Total!</strong> Código gigante e difícil de manter.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-06-2-a-solucao-vetores">2. A Solução: Vetores 📦</h2>
+<h2 id="slides-slide-06-2-a-solucao-vetores-arrays">2. A Solução: Vetores (Arrays) 📏</h2>
 <ul>
-<li>Uma variável, muitos valores.</li>
-<li><code>notas: vetor [1..50] de real</code>.</li>
-<li>Acesso fácil: <code>notas[1]</code>, <code>notas[10]</code>.</li>
+<li>Uma variável "comprida".</li>
+<li>Guarda <strong>muitos valores</strong> do <strong>mesmo tipo</strong>.</li>
+<li>Cada valor tem um endereço (<strong>Índice</strong>).</li>
+<li>Como uma planilha do Excel de uma linha só.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-06-3-indices-e-posicoes">3. Índices e Posições 📍</h2>
+<h3 id="slides-slide-06-visualizando-a-memoria">Visualizando a Memória</h3>
+<pre class="mermaid"><code>graph LR;
+    subgraph Vetor NOTAS
+    direction LR
+    A[Indice 0\nValor: 8.5] --- B[Indice 1\nValor: 7.0] --- C[Indice 2\nValor: 10.0] --- D[Indice 3\nValor: 5.5];
+    end
+    style A fill:#f9f;
+    style B fill:#bbf;</code></pre>
+<hr>
+<h2 id="slides-slide-06-indice-index">Índice (Index) 🔢</h2>
 <ul>
-<li>O índice é o <strong>Endereço</strong>.</li>
-<li>VisualG: Começa no 1.</li>
-<li>Java/C/Py: Começa no 0 (Cuidado!).</li>
-<li><strong>Erro Clássico</strong>: Acessar posição que não existe.</li>
+<li>É o endereço da gaveta.</li>
+<li>Começa no <strong>0</strong> (na maioria das linguagens).</li>
+<li><code>notas[0]</code> é a primeira nota.</li>
+<li><code>notas[49]</code> é a 50ª nota.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-06-4-varredura-com-loop">4. Varredura com Loop 🔄</h2>
+<h2 id="slides-slide-06-3-declarando-um-vetor">3. Declarando um Vetor 📝</h2>
+<p>No VisualG/Portugol:</p>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-06-__codelineno-0-1"></a><span class="k">Var</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-06-__codelineno-0-2"></a><span class="w">   </span><span class="c1">// Um vetor de 5 posições (0 a 4)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-06-__codelineno-0-3"></a><span class="w">   </span><span class="n">notas</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">vetor</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kt">real</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-06-__codelineno-0-4"></a><span class="w">   </span><span class="n">nomes</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">vetor</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">9</span><span class="p">]</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kt">caractere</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-06-4-acessando-dados">4. Acessando Dados 🗝️</h2>
+<p>Como ler e escrever numa posição específica?</p>
+<h3 id="slides-slide-06-escrevendo-guardando">Escrevendo (Guardando)</h3>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-06-__codelineno-1-1"></a><span class="n">notas</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mf">8.5</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-06-__codelineno-1-2"></a><span class="n">notas</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mf">7.0</span>
+</span></code></pre></div>
+<h3 id="slides-slide-06-lendo-mostrando">Lendo (Mostrando)</h3>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-06-__codelineno-2-1"></a><span class="k">escreva</span><span class="p">(</span><span class="n">notas</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// Mostra 8.5</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-06-5-a-combinacao-perfeita-vetor-para">5. A Combinação Perfeita: Vetor + Para 🤝</h2>
+<p>Se temos índices sequenciais (0, 1, 2...), usamos um <strong>Loop Para</strong> para percorrer.</p>
+<hr>
+<h3 id="slides-slide-06-preenchendo-automaticamente">Preenchendo Automaticamente</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-06-__codelineno-3-1"></a>para i de 0 ate 4 faca
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-06-__codelineno-3-2"></a>   escreva("Digite a nota ", i, ": ")
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#slides-slide-06-__codelineno-3-3"></a>   leia(notas[i])
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#slides-slide-06-__codelineno-3-4"></a>fimpara
+</span></code></pre></div>
+<blockquote>
+<p>Muito melhor do que 5 <code>leia</code> separados!</p>
+</blockquote>
+<hr>
+<h3 id="slides-slide-06-mostrando-tudo">Mostrando Tudo</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#slides-slide-06-__codelineno-4-1"></a>para i de 0 ate 4 faca
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#slides-slide-06-__codelineno-4-2"></a>   escreval("Nota ", i, ": ", notas[i])
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#slides-slide-06-__codelineno-4-3"></a>fimpara
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-06-somando-valores">Somando Valores ➕</h2>
+<p>Como somar todas as notas?
+Usamos um <strong>Acumulador</strong>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#slides-slide-06-__codelineno-5-1"></a>soma &lt;- 0
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#slides-slide-06-__codelineno-5-2"></a>para i de 0 ate 4 faca
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#slides-slide-06-__codelineno-5-3"></a>   soma &lt;- soma + notas[i]
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#slides-slide-06-__codelineno-5-4"></a>fimpara
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#slides-slide-06-__codelineno-5-5"></a>media &lt;- soma / 5
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-06-6-ordenacao-bubble-sort">6. Ordenação (Bubble Sort) 🫧</h2>
+<p>E se quisermos colocar em ordem crescente?
+Existem algoritmos famosos para isso. O mais simples é o <strong>Bolha</strong>.</p>
 <ul>
-<li>O casamento perfeito: <strong>Vetor + Para</strong>.</li>
-<li><code>Para i de 1 ate 50 faca ... processa vet[i]</code>.</li>
+<li>Ideia: O maior valor "flutua" para o final.</li>
+<li>Compara pares de vizinhos.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-06-5-algoritmos-classicos">5. Algoritmos Clássicos 📜</h2>
+<h3 id="slides-slide-06-o-algoritmo-da-troca">O Algoritmo da Troca 🔄</h3>
+<p>Se o vizinho da esquerda for maior que o da direita, <strong>TROQUE</strong>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#slides-slide-06-__codelineno-6-1"></a>se (vet[i] &gt; vet[i+1]) entao
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#slides-slide-06-__codelineno-6-2"></a>   temp    &lt;- vet[i]
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#slides-slide-06-__codelineno-6-3"></a>   vet[i]   &lt;- vet[i+1]
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#slides-slide-06-__codelineno-6-4"></a>   vet[i+1] &lt;- temp
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#slides-slide-06-__codelineno-6-5"></a>fimse
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-06-exemplo-visual">Exemplo Visual 🛁</h3>
+<p>Vetor: <code>[5, 1, 4]</code></p>
+<ol>
+<li>Compara 5 e 1. 5 &gt; 1? Sim. Troca. -&gt; <code>[1, 5, 4]</code></li>
+<li>Compara 5 e 4. 5 &gt; 4? Sim. Troca. -&gt; <code>[1, 4, 5]</code></li>
+<li>Pronto! O 5 (maior) foi pro final.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-06-7-erros-comuns">7. Erros Comuns ⚠️</h2>
+<ol>
+<li><strong>Estourar o Vetor</strong>:<ul>
+<li>Tentar acessar <code>notas[5]</code> num vetor de 0..4.</li>
+<li>O programa trava (Index Out Of Bounds).</li>
+</ul>
+</li>
+<li><strong>Confundir Índice com Valor</strong>:<ul>
+<li><code>i</code> é a posição.</li>
+<li><code>vet[i]</code> é o valor naquela posição.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="slides-slide-06-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>Invertendo a Ordem</strong></p>
+<ol>
+<li>Leia 5 nomes.</li>
+<li>Guarde num vetor.</li>
+<li>Mostre do <strong>último para o primeiro</strong>.<ul>
+<li>Dica: <code>para i de 4 ate 0 passo -1</code>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="slides-slide-06-resumo">Resumo ✅</h2>
 <ul>
-<li><strong>Maior/Menor</strong>: Quem é o recordista?</li>
-<li><strong>Busca</strong>: O valor X está aqui?</li>
-<li><strong>Ordenação</strong>: Colocar em ordem (Bubble Sort).</li>
+<li>Vetor = Variável composta.</li>
+<li>Índice começa em 0.</li>
+<li>Loop <code>Para</code> é o melhor amigo do Vetor.</li>
+<li>Ordenação organiza os dados.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-06-proximos-passos">Próximos Passos</h2>
+<h2 id="slides-slide-06-proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>E se eu precisar de linhas E colunas?</li>
-<li>Bem-vindo às <strong>MATRIZES</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-07" heading-number="7.8"><html><head>
+<li>E se precisarmos de linhas E colunas?</li>
+<li>Planilhas, Tabuleiros, Jogos.</li>
+<li><strong>Matrizes</strong> (Vetores Bidimensionais).</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Fazer o exercício "Rei da Montanha" (Achar o maior valor)!</p></body></html></section><section class="print-page" id="slides-slide-07" heading-number="7.8"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-07-matrizes">Aula 07 - Matrizes 🧱</h1>
+        </head><body><h1 id="aula-07-estruturas-de-dados-ii-matrizes">Aula 07 - Estruturas de Dados II: Matrizes 📈</h1>
+<hr>
+<h2 id="slides-slide-07-agenda">Agenda 📅</h2>
+<ol>
+<li>O Mundo em 2D</li>
+<li>O Que é uma Matriz?</li>
+<li>Coordenadas (Linha x Coluna)</li>
+<li>Percorrendo Matrizes</li>
+<li>Aplicações Práticas</li>
+</ol>
 <hr>
 <h2 id="slides-slide-07-1-o-mundo-em-2d">1. O Mundo em 2D 🗺️</h2>
+<p>Nem tudo cabe numa lista (Vetor).</p>
 <ul>
-<li>Vetores são linhas.</li>
-<li><strong>Matrizes</strong> são Tabelas (Linhas x Colunas).</li>
-<li>Exemplos: Planilha Excel, Tabuleiro de Xadrez, Cinema, Imagem.</li>
+<li>Uma sala de cinema.</li>
+<li>Um tabuleiro de xadrez.</li>
+<li>Uma planilha do Excel.</li>
+<li>Precisamos de <strong>2 Dimensões</strong>: Altura e Largura.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-07-2-coordenadas-batalha-naval">2. Coordenadas (Batalha Naval) 🎯</h2>
+<h2 id="slides-slide-07-2-o-que-e-uma-matriz">2. O Que é uma Matriz? 🏗️</h2>
 <ul>
-<li>Para achar alguém, preciso de:</li>
-<li>Qual Linha? (i)</li>
-<li>Qual Coluna? (j)</li>
-<li><code>tabuleiro[1, 5]</code> = "Navio!"</li>
+<li>É um <strong>"Vetor de Vetores"</strong>.</li>
+<li>Tem Linhas (Horizontais) e Colunas (Verticais).</li>
+<li>Cada "casinha" tem um endereço duplo.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-07-3-loop-aninhado-nested-loop">3. Loop Aninhado (Nested Loop) 🔄</h2>
+<h3 id="slides-slide-07-visualizando-uma-matriz">Visualizando uma Matriz</h3>
+<pre class="mermaid"><code>graph TD;
+    subgraph Matriz [3x3]
+    direction TB
+    L0[Linha 0] --- C00[0,0] --- C01[0,1] --- C02[0,2]
+    L1[Linha 1] --- C10[1,0] --- C11[1,1] --- C12[1,2]
+    L2[Linha 2] --- C20[2,0] --- C21[2,1] --- C22[2,2]
+    end</code></pre>
+<hr>
+<h2 id="slides-slide-07-3-coordenadas-linha-coluna">3. Coordenadas (Linha, Coluna) 📍</h2>
+<p>Assim como na Batalha Naval: <code>B4</code>, <code>A1</code>.
+Na programação, usamos índices numéricos.</p>
 <ul>
-<li>Loop dentro de Loop.</li>
-<li>Para cada LINHA, percorra todas as COLUNAS.</li>
-<li><strong>Cuidado</strong>: A complexidade aumenta (O(n²)).</li>
+<li><code>matriz[LINHA][COLUNA]</code></li>
+<li>Sempre <strong>LINHA primeiro</strong>, depois COLUNA.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-07-4-matrizes-no-mundo-real">4. Matrizes no Mundo Real 🌍</h2>
+<h3 id="slides-slide-07-sintaxe-visualg">Sintaxe VisualG</h3>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-07-__codelineno-0-1"></a><span class="k">Var</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-07-__codelineno-0-2"></a><span class="w">   </span><span class="c1">// 3 Linhas, 3 Colunas</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-07-__codelineno-0-3"></a><span class="w">   </span><span class="n">tabuleiro</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">vetor</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">2</span><span class="o">,</span><span class="w"> </span><span class="mi">0</span><span class="o">..</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kt">inteiro</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-07-__codelineno-0-4"></a><span class="k">Inicio</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-07-__codelineno-0-5"></a><span class="w">   </span><span class="c1">// Colocando valor no centro</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-07-__codelineno-0-6"></a><span class="w">   </span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">5</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#slides-slide-07-__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#slides-slide-07-__codelineno-0-8"></a><span class="w">   </span><span class="c1">// Canto superior esquerdo</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#slides-slide-07-__codelineno-0-9"></a><span class="w">   </span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">1</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-07-4-percorrendo-uma-matriz">4. Percorrendo uma Matriz 🔄🔄</h2>
+<p>Se um vetor precisa de 1 loop, a matriz precisa de <strong>2 Loops Aninhados</strong>.</p>
+<ol>
+<li>O primeiro trava a <strong>Linha</strong>.</li>
+<li>O segundo percorre todas as <strong>Colunas</strong> daquela linha.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-07-o-codigo-padrao">O Código Padrão</h3>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-07-__codelineno-1-1"></a><span class="k">para</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">ate</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="k">faca</span><span class="w">  </span><span class="c1">// Linhas</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-07-__codelineno-1-2"></a><span class="w">   </span><span class="k">para</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">ate</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="k">faca</span><span class="w">  </span><span class="c1">// Colunas</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-07-__codelineno-1-3"></a><span class="w">      </span><span class="k">escreva</span><span class="p">(</span><span class="s">"Posição ["</span><span class="o">,</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="s">","</span><span class="o">,</span><span class="w"> </span><span class="n">j</span><span class="o">,</span><span class="w"> </span><span class="s">"]: "</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-07-__codelineno-1-4"></a><span class="w">      </span><span class="k">leia</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-07-__codelineno-1-5"></a><span class="w">   </span><span class="k">fimpara</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-07-__codelineno-1-6"></a><span class="k">fimpara</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-07-visualizando-a-execucao">Visualizando a Execução</h3>
+<ol>
+<li><code>i=0, j=0</code> -&gt; [0,0]</li>
+<li><code>i=0, j=1</code> -&gt; [0,1]</li>
+<li><code>i=0, j=2</code> -&gt; [0,2] -&gt; Fim das Colunas.</li>
+<li><code>i=1, j=0</code> -&gt; [1,0] -&gt; Nova Linha!</li>
+</ol>
+<hr>
+<h2 id="slides-slide-07-5-matriz-identidade">5. Matriz Identidade 🆔</h2>
+<p>Um clássico da matemática.
+Diagonal Principal = 1. Resto = 0.</p>
 <ul>
-<li><strong>Imagens</strong>: Matriz de Pixels.</li>
-<li><strong>Mapas</strong>: Matriz de Terreno.</li>
-<li><strong>Jogos</strong>: Grid de movimentação.</li>
+<li>A Diagonal Principal acontece quando <code>i == j</code> (0,0; 1,1; 2,2).</li>
+</ul>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-07-__codelineno-2-1"></a><span class="k">se</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="k">entao</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-07-__codelineno-2-2"></a><span class="w">   </span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-07-__codelineno-2-3"></a><span class="k">senao</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-07-__codelineno-2-4"></a><span class="w">   </span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#slides-slide-07-__codelineno-2-5"></a><span class="k">fimse</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-07-6-aplicacoes-reais">6. Aplicações Reais 🌍</h2>
+<p>Onde usamos isso?</p>
+<ol>
+<li><strong>Imagens</strong>: Cada pixel é uma célula com cor (RGB).</li>
+<li><strong>Jogos</strong>: O mapa do jogo (Tilemap).</li>
+<li><strong>Gráficos 3D</strong>: Matrizes de transformação.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-07-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>Soma Total</strong></p>
+<ol>
+<li>Crie uma matriz 2x2.</li>
+<li>Preencha com números.</li>
+<li>Use dois loops para somar TUDO.</li>
+<li>Mostre o total.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-07-resumo">Resumo ✅</h2>
+<ul>
+<li>Matriz = Linhas x Colunas.</li>
+<li>Declaração: <code>vetor [L..L, C..C]</code>.</li>
+<li>Acesso: <code>mat[linha][coluna]</code>.</li>
+<li>Percorrer: 2 loops <code>Para</code>.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-07-proximos-passos">Próximos Passos</h2>
+<h2 id="slides-slide-07-proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>O código está ficando grande... 😰</li>
-<li>Vamos organizar a bagunça com <strong>MODULARIZAÇÃO</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-08" heading-number="7.9"><html><head>
+<li>Nossos códigos estão ficando grandes...</li>
+<li>Como organizar?</li>
+<li><strong>Modularização</strong>: Dividir para Conquistar.</li>
+<li>Funções e Procedimentos.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Jogue Batalha Naval (no papel ou no código)!</p></body></html></section><section class="print-page" id="slides-slide-08" heading-number="7.9"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
@@ -10044,44 +11089,130 @@ Se escolher 3, soma tudo e divide por 5.</p>
         </script>
         </head><body><h1 id="aula-08-modularizacao">Aula 08 - Modularização 🧩</h1>
 <hr>
+<h2 id="slides-slide-08-agenda">Agenda 📅</h2>
+<ol>
+<li>Conceito de Módulos (Divide &amp; Conquer)</li>
+<li>Procedimentos vs Funções</li>
+<li>Escopo de Variáveis (Locais x Globais)</li>
+<li>Parâmetros (Valor x Referência)</li>
+<li>Exemplos Práticos</li>
+</ol>
+<hr>
 <h2 id="slides-slide-08-1-dividir-para-conquistar">1. Dividir para Conquistar ⚔️</h2>
+<p>Imagine construir um carro inteiro num bloco só. Impossível!
+Nós montamos:
+- Motor 🔧
+- Rodas 🚗
+- Vidros 🪟
+E depois <strong>juntamos</strong>.</p>
+<hr>
+<h3 id="slides-slide-08-na-programacao">Na Programação</h3>
 <ul>
-<li>Programas grandes viram um caos.</li>
-<li>Solução: Quebrar em blocos menores.</li>
-<li><strong>Módulos</strong>, Sub-rotinas, Métodos.</li>
+<li>Não escreva 1000 linhas no <code>Inicio</code>.</li>
+<li>Quebre em pequenos blocos (<strong>Módulos</strong>).</li>
+<li>Cada módulo resolve <strong>um problema específico</strong>.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-08-2-procedimento-vs-funcao">2. Procedimento vs Função 🔄</h2>
+<h3 id="slides-slide-08-visualizando-mermaid">Visualizando (Mermaid)</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Principal
+    participant Soma
+
+    Principal-&gt;&gt;Soma: Envia (5, 3)
+    Note right of Soma: Calcula 5+3
+    Soma--&gt;&gt;Principal: Retorna 8
+    Principal-&gt;&gt;Principal: Mostra 8</code></pre>
+<hr>
+<h2 id="slides-slide-08-2-tipos-de-modulos">2. Tipos de Módulos 🛠️</h2>
+<p>Em Portugol, temos dois tipos principais.</p>
+<ol>
+<li><strong>Procedimentos</strong>: Fazem uma ação, mas não devolvem valor matemático.</li>
+<li><strong>Funções</strong>: Calculam e <strong>RETORNAM</strong> um valor.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-08-procedimento-acao">Procedimento (Ação)</h3>
+<p>Ex: <code>LimparTela()</code>, <code>MostrarMenu()</code>, <code>TocarSom()</code>.</p>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-08-__codelineno-0-1"></a><span class="k">procedimento</span><span class="w"> </span><span class="nf">saudacao</span><span class="p">(</span><span class="n">nome</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">caractere</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-08-__codelineno-0-2"></a><span class="k">inicio</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-08-__codelineno-0-3"></a><span class="w">   </span><span class="k">escreval</span><span class="p">(</span><span class="s">"Olá, "</span><span class="o">,</span><span class="w"> </span><span class="n">nome</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-08-__codelineno-0-4"></a><span class="k">fimprocedimento</span>
+</span></code></pre></div>
+<blockquote>
+<p>Chamada: <code>saudacao("João")</code></p>
+</blockquote>
+<hr>
+<h3 id="slides-slide-08-funcao-calculo">Função (Cálculo)</h3>
+<p>Ex: <code>Raiz(x)</code>, <code>Soma(a,b)</code>, <code>Media(n1,n2)</code>.
+Tem a palavra mágica <strong>RETORNE</strong>.</p>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-08-__codelineno-1-1"></a><span class="k">funcao</span><span class="w"> </span><span class="nf">somar</span><span class="p">(</span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">inteiro</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">inteiro</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-08-__codelineno-1-2"></a><span class="k">inicio</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-08-__codelineno-1-3"></a><span class="w">   </span><span class="k">retorne</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-08-__codelineno-1-4"></a><span class="k">fimfuncao</span>
+</span></code></pre></div>
+<blockquote>
+<p>Chamada: <code>res &lt;- somar(2, 3)</code></p>
+</blockquote>
+<hr>
+<h2 id="slides-slide-08-3-escopo-de-variaveis">3. Escopo de Variáveis 🏠</h2>
+<p>Onde minha variável vive?</p>
 <ul>
-<li><strong>Procedimento</strong>: Faz uma tarefa e pronto. (Ex: <code>LimparTela()</code>). Sem retorno.</li>
-<li><strong>Função</strong>: Faz uma tarefa e <strong>DEVOLVE</strong> um valor. (Ex: <code>Somar(2, 2)</code> -&gt; Retorna 4).</li>
+<li><strong>Global</strong>: Criada fora de tudo. Todo mundo vê. (Perigoso!).</li>
+<li><strong>Local</strong>: Criada dentro da função. Só a função vê. (Seguro!).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-08-3-parametros-e-retorno">3. Parâmetros e Retorno 📥 📤</h2>
+<h3 id="slides-slide-08-o-muro-das-funcoes">O Muro das Funções 🧱</h3>
+<p>Se eu crio <code>x</code> dentro de <code>somar</code>, o <code>Principal</code> <strong>não sabe</strong> quem é <code>x</code>.
+Isso evita confusão!</p>
+<hr>
+<h2 id="slides-slide-08-4-parametros">4. Parâmetros 🚚</h2>
+<p>Como passar dados para a função?</p>
+<ol>
+<li><strong>Por Valor</strong> (O padrão): Envia uma <strong>CÓPIA</strong>. Se a função mudar, o original não muda.</li>
+<li><strong>Por Referência</strong> (<code>var</code>): Envia o <strong>ENDEREÇO</strong>. Se a função mudar, o original MUDA!</li>
+</ol>
+<hr>
+<h3 id="slides-slide-08-exemplo-troca-de-valores">Exemplo: Troca de Valores</h3>
+<p>Precisa ser por Referência!</p>
+<div class="language-portugol highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-08-__codelineno-2-1"></a><span class="k">procedimento</span><span class="w"> </span><span class="nf">troca</span><span class="p">(</span><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">inteiro</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-08-__codelineno-2-2"></a><span class="k">inicio</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-08-__codelineno-2-3"></a><span class="w">   </span><span class="n">temp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">a</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-08-__codelineno-2-4"></a><span class="w">   </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">b</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#slides-slide-08-__codelineno-2-5"></a><span class="w">   </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">temp</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#slides-slide-08-__codelineno-2-6"></a><span class="k">fimprocedimento</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-08-5-vantagens-da-modularizacao">5. Vantagens da Modularização ✅</h2>
+<ol>
+<li><strong>Reutilização</strong>: Escreve uma vez, usa 1000 vezes.</li>
+<li><strong>Organização</strong>: Código limpo.</li>
+<li><strong>Facilidade de Manutenção</strong>: Se o cálculo mudar, corrijo num lugar só.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-08-projeto-final-modulo-1">Projeto Final Módulo 1 🏆</h2>
+<p><strong>Sistema de Notas Completo</strong></p>
 <ul>
-<li><strong>Parâmetros</strong>: Ingredientes que entram na máquina.</li>
-<li><strong>Retorno</strong>: O produto final que sai.</li>
-<li><code>Funcao FazerBolo(farinha, ovo)</code> -&gt; Retorna <code>Bolo</code>.</li>
+<li>Use Vetores.</li>
+<li>Use Matrizes (se quiser).</li>
+<li>Use Funções para calcular média.</li>
+<li>Use Procedimentos para mostrar boletim.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-08-4-escopo-de-variaveis">4. Escopo de Variáveis 🔭</h2>
+<h2 id="slides-slide-08-resumo">Resumo ✅</h2>
 <ul>
-<li><strong>Local</strong>: Nasce e morre dentro da função. (O segredo de Vegas).</li>
-<li><strong>Global</strong>: Visível para todos (Cuidado com efeitos colaterais!).</li>
+<li>Modularizar = Organizar.</li>
+<li><strong>Função</strong> retorna valor. <strong>Procedimento</strong> faz ação.</li>
+<li>Variáveis <strong>Locais</strong> são protegidas.</li>
+<li>Use parâmetros para comunicar.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-08-5-valor-vs-referencia">5. Valor vs Referência 🏷️</h2>
+<h2 id="slides-slide-08-proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li><strong>Valor</strong>: Tira xerox. Se riscar a xerox, original não muda.</li>
-<li><strong>Referência</strong>: Entrega a chave do cofre. Se mexer, muda o original.</li>
+<li>Fim da "Lógica Pura"!</li>
+<li>Vamos conhecer linguagens reais.</li>
+<li><strong>C e C++</strong>: Os pais da programação moderna.</li>
+<li>Gerenciamento de Memória na unha!</li>
 </ul>
-<hr>
-<h2 id="slides-slide-08-proximos-passos">Próximos Passos</h2>
-<ul>
-<li>Fim dos Fundamentos de Lógica! 🎓</li>
-<li>Agora vamos aplicar isso em <strong>LINGUAGENS REAIS</strong>.</li>
-<li>Próxima parada: <strong>C e C++</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-09" heading-number="7.10"><html><head>
+<p>👉 <strong>Tarefa</strong>: Refatore seus códigos antigos usando Funções!</p></body></html></section><section class="print-page" id="slides-slide-09" heading-number="7.10"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
@@ -10089,90 +11220,332 @@ Se escolher 3, soma tudo e divide por 5.</p>
         </script>
         </head><body><h1 id="aula-09-c-e-c-baixo-nivel">Aula 09 - C e C++: Baixo Nível 🧱</h1>
 <hr>
+<h2 id="slides-slide-09-agenda">Agenda 📅</h2>
+<ol>
+<li>História e Importância</li>
+<li>Anatomia de um Programa C</li>
+<li>Compilação</li>
+<li>Gerenciamento de Memória (Stack vs Heap)</li>
+<li>Ponteiros</li>
+<li>Introdução ao C++ (OOP)</li>
+</ol>
+<hr>
 <h2 id="slides-slide-09-1-o-pai-das-linguagens">1. O Pai das Linguagens 👴</h2>
 <ul>
-<li><strong>C (1972)</strong>: Criou Windows, Linux, Mac, Android.</li>
-<li><strong>Compilada</strong>: Código Fonte -&gt; Binário -&gt; Máquina.</li>
-<li><strong>Controle Total</strong>: Você manda na memória (para o bem e para o mal).</li>
+<li><strong>C (1972)</strong>: Dennis Ritchie (Bell Labs).</li>
+<li><strong>Base de Tudo</strong>: Windows, Linux, Mac, Android, iOS.</li>
+<li><strong>Filosofia</strong>: "Confie no programador" (mesmo se ele fizer besteira).</li>
+</ul>
+<hr>
+<h3 id="slides-slide-09-por-que-aprender-c-hoje">Por que aprender C hoje? 🧐</h3>
+<ul>
+<li>Entender como a máquina funciona de verdade.</li>
+<li>Gerenciar memória manualmente.</li>
+<li>Performance extrema (Jogos, Sistemas Embarcados).</li>
 </ul>
 <hr>
 <h2 id="slides-slide-09-2-anatomia-basica">2. Anatomia Básica 🦴</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-09-__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-09-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-09-__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-09-__codelineno-0-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Olá, Mundo C!"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-09-__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-09-__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-09-desmontando-o-codigo">Desmontando o Código 🔧</h3>
+<ol>
+<li><code>#include &lt;stdio.h&gt;</code>: Importa biblioteca de IO (Entrada/Saída).</li>
+<li><code>int main()</code>: A função principal. Todo programa começa aqui.</li>
+<li><code>printf(...)</code>: Imprime formatado.</li>
+<li><code>return 0;</code>: Retorna "Sucesso" para o Sistema Operacional.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-09-o-ponto-e-virgula">O Ponto e Vírgula <code>;</code></h3>
 <ul>
-<li><code>#include</code>: Pega ferramentas.</li>
-<li><code>int main()</code>: Onde tudo começa.</li>
-<li><code>;</code>: Não esqueça, senão não compila!</li>
+<li>Em C/C++, ele é <strong>OBRIGATÓRIO</strong>.</li>
+<li>O compilador não adivinha onde a linha termina.</li>
+<li>Esquecer <code>;</code> é o erro nº 1 de iniciantes.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-09-3-stack-vs-heap">3. Stack vs Heap 🧠</h2>
+<h2 id="slides-slide-09-3-o-processo-de-compilacao">3. O Processo de Compilação ⚙️</h2>
+<p>C é uma linguagem <strong>Compilada</strong>.</p>
+<ol>
+<li><strong>Código Fonte</strong> (<code>.c</code>): Texto legível.</li>
+<li><strong>Compilador</strong> (<code>gcc</code>): Traduz para Assembly/Machine Code.</li>
+<li><strong>Linker</strong>: Junta com bibliotecas.</li>
+<li><strong>Executável</strong> (<code>.exe</code>): Programa final.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-09-4-memoria-stack-vs-heap">4. Memória: Stack vs Heap 🧠</h2>
+<p>Onde seus dados moram?</p>
+<hr>
+<h3 id="slides-slide-09-visualizando-a-memoria">Visualizando a Memória</h3>
+<pre class="mermaid"><code>graph TD;
+    subgraph RAM
+    Stack["Stack (Pilha)"] --- V["Locais\nAutomáticas\nRápidas"];
+    Heap["Heap (Monte)"] --- D["Dinâmicas\nManuais\nLentas"];
+    end
+    style Stack fill:#f9f;
+    style Heap fill:#bbf;</code></pre>
+<hr>
+<h3 id="slides-slide-09-stack-pilha">Stack (Pilha) 🥞</h3>
 <ul>
-<li><strong>Stack (Pilha)</strong>: Rápida, organizada, automática. (Variáveis locais).</li>
-<li><strong>Heap (Monte)</strong>: Gigante, bagunçada, manual. (Dados dinâmicos).</li>
+<li>Variáveis normais: <code>int idade = 20;</code></li>
+<li>Criada e destruída automaticamente.</li>
+<li>Tamanho fixo e pequeno.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-09-4-ponteiros-o-superpoder">4. Ponteiros: O Superpoder ⚡</h2>
+<h3 id="slides-slide-09-heap-monte">Heap (Monte) 🏔️</h3>
 <ul>
-<li>Variável normal: <code>int a = 10</code>.</li>
-<li>Ponteiro: <code>int *p = &amp;a</code>.</li>
-<li>Guarda o <strong>ENDEREÇO</strong> (Onde o 10 mora).</li>
-<li>Perigo: <em>Segmentation Fault</em>.</li>
+<li>Memória dinâmica: <code>malloc()</code> ou <code>new</code>.</li>
+<li>Você pede memória ao sistema.</li>
+<li><strong>Cuidado</strong>: Você precisa devolver (<code>free</code> ou <code>delete</code>), senão vaza memória (Memory Leak)!</li>
 </ul>
 <hr>
-<h2 id="slides-slide-09-5-c-e-objetos">5. C++ e Objetos 🚀</h2>
+<h2 id="slides-slide-09-5-ponteiros-o-superpoder">5. Ponteiros: O Superpoder ⚡</h2>
+<p>Um ponteiro não guarda o valor. Guarda o <strong>ENDEREÇO</strong>.</p>
 <ul>
-<li>C com Classes.</li>
-<li>Base de quase todos os jogos modernos (Unreal Engine).</li>
+<li><code>int x = 10;</code> (Valor 10)</li>
+<li><code>int *p = &amp;x;</code> (Endereço onde o 10 mora, ex: <code>0x7ffee4</code>)</li>
 </ul>
 <hr>
-<h2 id="slides-slide-09-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-09-para-que-serve">Para que serve? 🤷</h3>
+<ol>
+<li>Modificar variáveis originais dentro de funções.</li>
+<li>Alocar memória dinâmica.</li>
+<li>Criar estruturas complexas (Listas, Árvores).</li>
+</ol>
+<blockquote>
+<p>"Com grandes poderes vêm grandes responsabilidades." (E Segmentation Faults).</p>
+</blockquote>
+<hr>
+<h2 id="slides-slide-09-6-introducao-ao-c">6. Introdução ao C++ 🚀</h2>
+<p>C++ = C + Classes (OOP).</p>
 <ul>
-<li>Chega de tela preta!</li>
-<li>Vamos para a WEB.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-10" heading-number="7.11"><html><head>
+<li>Mantém a performance do C.</li>
+<li>Adiciona organização de objetos.</li>
+<li>Base para Jogos (Unreal) e Softwares Pesados (Chrome, Photoshop).</li>
+</ul>
+<hr>
+<h3 id="slides-slide-09-exemplo-c">Exemplo C++ 🚗</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-09-__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-09-__codelineno-1-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-09-__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-09-__codelineno-1-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">Carro</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-09-__codelineno-1-5"></a><span class="k">public</span><span class="o">:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-09-__codelineno-1-6"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">buzinar</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#slides-slide-09-__codelineno-1-7"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Bi Bi!"</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#slides-slide-09-__codelineno-1-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#slides-slide-09-__codelineno-1-9"></a><span class="p">};</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#slides-slide-09-__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#slides-slide-09-__codelineno-1-11"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#slides-slide-09-__codelineno-1-12"></a><span class="w">    </span><span class="n">Carro</span><span class="w"> </span><span class="n">meuCarro</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#slides-slide-09-__codelineno-1-13"></a><span class="w">    </span><span class="n">meuCarro</span><span class="p">.</span><span class="n">buzinar</span><span class="p">();</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#slides-slide-09-__codelineno-1-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#slides-slide-09-__codelineno-1-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-09-diferencas-c-vs-c">Diferenças C vs C++</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">C</th>
+<th style="text-align: left;">C++</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Paradigma</strong></td>
+<td style="text-align: left;">Estruturado</td>
+<td style="text-align: left;">Orientado a Objetos (Multi)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Output</strong></td>
+<td style="text-align: left;"><code>printf()</code></td>
+<td style="text-align: left;"><code>cout &lt;&lt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Input</strong></td>
+<td style="text-align: left;"><code>scanf()</code></td>
+<td style="text-align: left;"><code>cin &gt;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Extensão</strong></td>
+<td style="text-align: left;"><code>.c</code></td>
+<td style="text-align: left;"><code>.cpp</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-09-termynal-compilando">Termynal: Compilando 🖥️</h2>
+<div data-termynal class="termy">
+    <span data-ty="input">gcc programa.c -o programa</span>
+    <span data-ty="progress">Compilando...</span>
+    <span data-ty="input">./programa</span>
+    <span data-ty>Olá Mundo C!</span>
+</div>
+
+<hr>
+<h2 id="slides-slide-09-resumo">Resumo ✅</h2>
+<ul>
+<li>C é a mãe de todas.</li>
+<li><strong>Compilador</strong> traduz para binário.</li>
+<li><strong>Ponteiros</strong> acessam memória direta.</li>
+<li><strong>C++</strong> adiciona Classes ao poder do C.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-09-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>Sair do "Baixo Nível".</li>
+<li>Ir para o mundo corporativo e robusto.</li>
+<li><strong>Java</strong>: "Escreva uma vez, rode em qualquer lugar".</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Instalar o Code::Blocks ou configurar GCC no VS Code!</p></body></html></section><section class="print-page" id="slides-slide-10" heading-number="7.11"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-10-web-moderna-jsts">Aula 10 - Web Moderna (JS/TS) 🌐</h1>
+        </head><body><h1 id="aula-10-web-moderna-js-e-ts">Aula 10 - Web Moderna: JS e TS 🌐</h1>
 <hr>
-<h2 id="slides-slide-10-1-o-navegador-e-o-so">1. O Navegador é o SO 🖥️</h2>
+<h2 id="slides-slide-10-agenda">Agenda 📅</h2>
+<ol>
+<li>O Navegador como SO</li>
+<li>O DOM (Document Object Model)</li>
+<li>JavaScript (Dinamismo)</li>
+<li>Node.js (Backend)</li>
+<li>TypeScript (Segurança)</li>
+</ol>
+<hr>
+<h2 id="slides-slide-10-1-o-navegador-e-o-sistema-operacional">1. O Navegador é o Sistema Operacional 🖥️</h2>
 <ul>
-<li>Chrome/Firefox são plataformas.</li>
-<li><strong>JavaScript</strong>: A única linguagem que eles entendem.</li>
-<li><strong>DOM</strong>: O JS manipula o HTML (Muda cor, texto, esconde coisas).</li>
+<li>Antigamente: Navegador só mostrava texto.</li>
+<li>Hoje: Roda aplicativos completos (Google Docs, Figma, Spotify).</li>
+<li><strong>Engine</strong>: V8 (Chrome), SpiderMonkey (Firefox).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-10-2-eventos-e-interatividade">2. Eventos e Interatividade ⚡</h2>
+<h2 id="slides-slide-10-2-o-dom">2. O DOM 🌳</h2>
+<p><strong>Document Object Model</strong></p>
 <ul>
-<li><code>onClick</code>, <code>onHover</code>, <code>onKey</code>.</li>
-<li>O site deixa de ser um "PDF" e vira um <strong>App</strong>.</li>
+<li>É a árvore de elementos da página.</li>
+<li>O HTML é estático. O DOM é vivo.</li>
+<li>O JavaScript muda o DOM em tempo real.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-10-3-nodejs-js-no-servidor">3. Node.js: JS no Servidor 🔙</h2>
+<h3 id="slides-slide-10-visualizando-o-dom">Visualizando o DOM</h3>
+<pre class="mermaid"><code>graph TD;
+    Doc[Document] --&gt; HTML;
+    HTML --&gt; Head;
+    HTML --&gt; Body;
+    Head --&gt; Meta;
+    Body --&gt; H1[Título];
+    Body --&gt; P[Parágrafo];
+    Body --&gt; Button[Botão];
+
+    style Doc fill:#f9f;
+    style Button fill:#bbf;</code></pre>
+<hr>
+<h2 id="slides-slide-10-3-javascript-a-linguagem-da-web">3. JavaScript: A Linguagem da Web ⚡</h2>
 <ul>
-<li>Antes: JS só no Front.</li>
-<li>Agora: JS no Back (Banco de dados, arquivos).</li>
-<li><strong>NPM</strong>: A maior loja de bibliotecas do mundo.</li>
+<li>Única linguagem que roda nativamente no navegador.</li>
+<li><strong>Interpretada</strong>: Não precisa compilar (o navegador lê e executa).</li>
+<li><strong>Fracamente Tipada</strong>: <code>var x = 10</code> depois <code>x = "oi"</code> (Pode, mas cuidado!).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-10-4-expressjs">4. Express.js 🚂</h2>
+<h3 id="slides-slide-10-interatividade-eventos">Interatividade (Eventos) 🖱️</h3>
+<p>O JS reage a <strong>Eventos</strong> (Clique, Teclado, Mouse).</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-10-__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">botao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'#meuBotao'</span><span class="p">);</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-10-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-10-__codelineno-0-3"></a><span class="nx">botao</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-10-__codelineno-0-4"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">"Você clicou!"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-10-__codelineno-0-5"></a><span class="w">    </span><span class="nx">botao</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-10-__codelineno-0-6"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-10-4-nodejs-js-fora-da-caixa">4. Node.js: JS fora da Caixa 📦</h2>
 <ul>
-<li>Framework para criar APIs.</li>
-<li>Simples, Rápido, Minimalista.</li>
+<li>Antes (2009): JS só rodava no Chrome.</li>
+<li>Ryan Dahl pegou a engine V8 e colocou no servidor.</li>
+<li>Nasceu o <strong>Node.js</strong>.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-10-5-typescript">5. TypeScript 🛡️</h2>
+<h3 id="slides-slide-10-por-que-node">Por que Node? 🚀</h3>
 <ul>
-<li>JS é caótico (Tipagem Fraca).</li>
-<li>TS traz <strong>Ordem</strong> (Tipagem Forte).</li>
-<li>TS -&gt; (Transpila) -&gt; JS.</li>
+<li>Mesmo código no Frontend e Backend.</li>
+<li>Extremamente rápido (IO Não-Bloqueante).</li>
+<li>Comunidade gigante (NPM).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-10-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-10-exemplo-de-servidor-express">Exemplo de Servidor (Express)</h3>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-10-__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">express</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">);</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-10-__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">express</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-10-__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-10-__codelineno-1-4"></a><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-10-__codelineno-1-5"></a><span class="w">    </span><span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'Olá Mundo do Backend!'</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-10-__codelineno-1-6"></a><span class="p">});</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#slides-slide-10-__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#slides-slide-10-__codelineno-1-8"></a><span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mf">3000</span><span class="p">);</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-10-5-typescript-o-javascript-com-superpoderes">5. TypeScript: O JavaScript com Superpoderes 🛡️</h2>
 <ul>
-<li>Conectar Front e Back.</li>
-<li>Aprender <strong>JAVA</strong> (O mundo corporativo).</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-11" heading-number="7.12"><html><head>
+<li>Criado pela Microsoft.</li>
+<li>Adiciona <strong>Tipagem Estática</strong> ao JS.</li>
+<li>O navegador <strong>NÃO</strong> entende TS. Ele precisa ser <strong>Transpilado</strong> para JS.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-10-por-que-usar-ts">Por que usar TS? 🤔</h3>
+<p>JS aceita tudo (o que é ruim em projetos grandes).
+TS te avisa do erro <strong>antes</strong> de rodar.</p>
+<hr>
+<h3 id="slides-slide-10-comparativo">Comparativo</h3>
+<p><strong>JavaScript (Perigoso)</strong>
+</p><div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-10-__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">soma</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-10-__codelineno-2-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-10-__codelineno-2-3"></a><span class="p">}</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-10-__codelineno-2-4"></a><span class="nx">soma</span><span class="p">(</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="s2">"10"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Retorna "510" (Texto) 😱</span>
+</span></code></pre></div><p></p>
+<p><strong>TypeScript (Seguro)</strong>
+</p><div class="language-typescript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-10-__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">soma</span><span class="p">(</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-10-__codelineno-3-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#slides-slide-10-__codelineno-3-3"></a><span class="p">}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#slides-slide-10-__codelineno-3-4"></a><span class="nx">soma</span><span class="p">(</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="s2">"10"</span><span class="p">);</span><span class="w"> </span><span class="c1">// ERRO: "String não é Number" 🚫</span>
+</span></code></pre></div><p></p>
+<hr>
+<h2 id="slides-slide-10-frameworks-modernos">Frameworks Modernos ⚛️</h2>
+<p>Ninguém escreve JS puro ("Vanilla") em apps grandes.</p>
+<ul>
+<li><strong>React</strong> (Meta/Facebook)</li>
+<li><strong>Angular</strong> (Google)</li>
+<li><strong>Vue.js</strong> (Comunidade)</li>
+<li>Todos usam Componentes e Estado.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-10-exercicio-rapido">Exercício Rápido ⚡</h2>
+<ol>
+<li>Abra o Console do Navegador (F12).</li>
+<li>Digite <code>alert("Olá")</code>.</li>
+<li>Digite <code>document.body.style.backgroundColor = "black"</code>.</li>
+<li>O que aconteceu?</li>
+</ol>
+<hr>
+<h2 id="slides-slide-10-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>DOM</strong>: A estrutura da página.</li>
+<li><strong>JavaScript</strong>: Dá vida ao DOM.</li>
+<li><strong>Node.js</strong>: JS no servidor.</li>
+<li><strong>TypeScript</strong>: JS com segurança de tipos.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-10-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>O mundo corporativo exige robustez.</li>
+<li><strong>Java</strong>: A linguagem que roda em 3 bilhões de dispositivos.</li>
+<li>Orientação a Objetos "Raiz".</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Instalar o Node.js e rodar um <code>console.log</code> no terminal!</p></body></html></section><section class="print-page" id="slides-slide-11" heading-number="7.12"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
@@ -10180,252 +11553,787 @@ Se escolher 3, soma tudo e divide por 5.</p>
         </script>
         </head><body><h1 id="aula-11-java-e-orientacao-a-objetos">Aula 11 - Java e Orientação a Objetos ☕</h1>
 <hr>
-<h2 id="slides-slide-11-1-o-gigante-corporativo">1. O Gigante Corporativo 🏢</h2>
-<ul>
-<li>Bancos, Seguradoras, Android.</li>
-<li>Robusto, Seguro, Escalável.</li>
-<li><strong>Verbozinho</strong>: O código é longo, mas legível.</li>
-</ul>
-<hr>
-<h2 id="slides-slide-11-2-jvm-a-maquina-virtual">2. JVM: A Máquina Virtual ⚙️</h2>
-<ul>
-<li>Código Java -&gt; Bytecode (.class) -&gt; JVM -&gt; Processador.</li>
-<li>Roda no Windows, Linux, Mac igualzinho.</li>
-</ul>
-<hr>
-<h2 id="slides-slide-11-3-pilares-da-oo">3. Pilares da OO 🏛️</h2>
+<h2 id="slides-slide-11-agenda">Agenda 📅</h2>
 <ol>
-<li><strong>Encapsulamento</strong>: <code>private</code>, <code>get/set</code>. (Segurança).</li>
-<li><strong>Herança</strong>: <code>extends</code>. (Reuso).</li>
-<li><strong>Polimorfismo</strong>: <code>Animal</code> que late ou mia. (Flexibilidade).</li>
+<li>O Mundo dos Objetos</li>
+<li>Classes vs Objetos</li>
+<li>Java e a JVM</li>
+<li>Os 3 Pilares da OO</li>
+<li>Spring Boot (Java Moderno)</li>
 </ol>
 <hr>
-<h2 id="slides-slide-11-4-spring-boot">4. Spring Boot 🍃</h2>
+<h2 id="slides-slide-11-1-o-mundo-orientado-a-objetos">1. O Mundo Orientado a Objetos 🌍</h2>
+<p>Até agora, programamos <strong>Ações</strong> (Funções).
+Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <ul>
-<li>Java moderno não é chato.</li>
-<li>Servidor Web rodando em minutos.</li>
-<li><code>@RestController</code>, <code>@GetMapping</code>.</li>
+<li><strong>Estruturada</strong>: Verbo (Fazer algo).</li>
+<li><strong>OO</strong>: Substantivo (Algo que faz).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-11-5-ecossistema">5. Ecossistema</h2>
+<h2 id="slides-slide-11-2-classe-vs-objeto">2. Classe vs Objeto 🏗️</h2>
+<p>A distinção mais importante.</p>
 <ul>
-<li><strong>Maven/Gradle</strong>: Gerenciam as bibliotecas.</li>
-<li><strong>IntelliJ / Eclipse</strong>: IDEs poderosas.</li>
+<li><strong>Classe</strong>: O Molde. A Planta. A Ideia. (Abstrato).</li>
+<li><strong>Objeto</strong>: A Instância. A Casa. A Coisa Real. (Concreto).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-11-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-11-visualizando-mermaid">Visualizando (Mermaid)</h3>
+<pre class="mermaid"><code>classDiagram
+    class Carro {
+        +String cor
+        +acelerar()
+    }
+    Ferrari --|&gt; Carro : É um
+    Fusca --|&gt; Carro : É um</code></pre>
+<hr>
+<h2 id="slides-slide-11-3-java-e-a-jvm">3. Java e a JVM ♻️</h2>
+<p>"Write Once, Run Anywhere" (Escreva uma vez, rode em qualquer lugar).</p>
 <ul>
-<li>Vamos ver o concorrente direto do Java?</li>
-<li><strong>C# e Microsoft .NET</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-12" heading-number="7.13"><html><head>
+<li>O Java não compila para Binário direto.</li>
+<li>Ele compila para <strong>Bytecode</strong> (<code>.class</code>).</li>
+<li>A <strong>JVM</strong> (Máquina Virtual Java) roda esse Bytecode em qualquer sistema (Windows, Linux, Android, Geladeira).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-11-4-os-3-pilares-da-oo">4. Os 3 Pilares da OO 🏛️</h2>
+<ol>
+<li>Encapsulamento</li>
+<li>Herança</li>
+<li>Polimorfismo</li>
+</ol>
+<hr>
+<h3 id="slides-slide-11-encapsulamento">Encapsulamento 🛡️</h3>
+<p>Proteger os dados. Ninguém mexe no cofre do banco direto.</p>
+<ul>
+<li><strong>Private</strong>: Só a classe vê.</li>
+<li><strong>Public</strong>: Todo mundo vê.</li>
+<li><strong>Getters/Setters</strong>: Porteiros que controlam o acesso.</li>
+</ul>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-11-__codelineno-0-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">saldo</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-11-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-11-__codelineno-0-3"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">depositar</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">valor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-11-__codelineno-0-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">valor</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valor</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-11-__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-11-heranca">Herança 🧬</h3>
+<p>Reaproveitar código.</p>
+<ul>
+<li><code>Cachorro</code> <strong>é um</strong> <code>Animal</code>.</li>
+<li><code>Gato</code> <strong>é um</strong> <code>Animal</code>.</li>
+<li>Tudo que <code>Animal</code> tem, eles herdam (nome, idade).</li>
+</ul>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-11-__codelineno-1-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Cachorro</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-11-polimorfismo">Polimorfismo 🎭</h3>
+<p>Muitas formas.</p>
+<ul>
+<li>O método <code>fazerSom()</code> existe em Animal.</li>
+<li>No Cachorro, ele faz "Au Au".</li>
+<li>No Gato, ele faz "Miau".</li>
+<li>O mesmo método se comporta diferente.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-11-5-spring-boot">5. Spring Boot 🍃</h2>
+<p>Java não é só "tela preta".
+É a linguagem nº 1 em Bancos e Grandes Empresas.</p>
+<ul>
+<li><strong>Spring Boot</strong>: Framework para criar APIs Web.</li>
+<li>Tira toda a configuração chata.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-11-exemplo-de-api">Exemplo de API</h3>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-11-__codelineno-2-1"></a><span class="nd">@RestController</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-11-__codelineno-2-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">OlaController</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-11-__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-11-__codelineno-2-4"></a><span class="w">    </span><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">"/ola"</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#slides-slide-11-__codelineno-2-5"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">dizerOla</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#slides-slide-11-__codelineno-2-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">"Olá, Mundo Java Web!"</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#slides-slide-11-__codelineno-2-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#slides-slide-11-__codelineno-2-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-11-exercicio-mental">Exercício Mental 🧠</h2>
+<p>Modele um sistema de <strong>Venda</strong>.</p>
+<ul>
+<li>Classes: <code>Produto</code>, <code>Cliente</code>, <code>Venda</code>.</li>
+<li>Atributos: <code>Preco</code>, <code>Nome</code>.</li>
+<li>Métodos: <code>CalcularTotal()</code>, <code>Pagar()</code>.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-11-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Classe</strong> é molde, <strong>Objeto</strong> é real.</li>
+<li><strong>JVM</strong> garante portabilidade.</li>
+<li><strong>Encapsulamento</strong> protege.</li>
+<li><strong>Herança</strong> reutiliza.</li>
+<li><strong>Polimorfismo</strong> flexibiliza.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-11-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>O concorrente direto do Java.</li>
+<li>Criado pela Microsoft.</li>
+<li><strong>C# e plataforma .NET</strong>.</li>
+<li>Foco em produtividade.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Instalar o JDK (Java Development Kit) e o VS Code Extension Pack for Java!</p></body></html></section><section class="print-page" id="slides-slide-12" heading-number="7.13"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-12-c-e-net">Aula 12 - C# e .NET 🔷</h1>
+        </head><body><h1 id="aula-12-ecossistema-c-e-net">Aula 12 - Ecossistema C# e .NET 🔷</h1>
 <hr>
-<h2 id="slides-slide-12-1-o-ecossistema-microsoft">1. O Ecossistema Microsoft 🏗️</h2>
+<h2 id="slides-slide-12-agenda">Agenda 📅</h2>
+<ol>
+<li>O Que é .NET?</li>
+<li>Ferramentas (VS vs VS Code)</li>
+<li>C# Básico</li>
+<li>LINQ (A Mágica)</li>
+<li>F# (O Lado Funcional)</li>
+</ol>
+<hr>
+<h2 id="slides-slide-12-1-o-que-e-net">1. O Que é .NET? 🏗️</h2>
 <ul>
-<li>Não é mais só Windows!</li>
-<li><strong>.NET</strong>: Roda no Linux, Mac, Cloud, Android.</li>
-<li><strong>C#</strong>: A linguagem principal. Elegante e poderosa.</li>
+<li><strong>C#</strong>: A Linguagem.</li>
+<li><strong>.NET</strong>: A Plataforma (Runtime, Bibliotecas).</li>
+<li>Criado pela Microsoft para bater de frente com o Java.</li>
+<li>Hoje é <strong>Open Source</strong> e roda no Linux/Mac.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-12-2-linq-a-magica">2. LINQ: A Mágica 🪄</h2>
+<h2 id="slides-slide-12-2-ferramentas">2. Ferramentas 🛠️</h2>
+<p>Onde programar?</p>
 <ul>
-<li>Tratar listas como Banco de Dados.</li>
-<li><code>lista.Where(x =&gt; x &gt; 10).OrderBy(x =&gt; x)</code></li>
-<li>Adeus loops <code>for</code> complexos!</li>
+<li><strong>Visual Studio (Roxo)</strong>: A IDE completa. Pesada. Faz tudo (Arrastar botões, Banco de Dados).</li>
+<li><strong>VS Code (Azul)</strong>: Editor leve. Rápido. Exige instalar extensões.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-12-3-ferramentas">3. Ferramentas 🛠️</h2>
+<h3 id="slides-slide-12-criando-um-projeto">Criando um Projeto 💻</h3>
+<p>No terminal:</p>
+<ol>
+<li><code>dotnet new console -o MeuApp</code></li>
+<li><code>cd MeuApp</code></li>
+<li><code>code .</code></li>
+<li><code>dotnet run</code></li>
+</ol>
+<hr>
+<h2 id="slides-slide-12-3-c-basico">3. C# Básico 📝</h2>
+<p>Muito parecido com Java.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-12-__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-12-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-12-__codelineno-0-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-12-__codelineno-0-4"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-12-__codelineno-0-5"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Olá, C#!"</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-12-__codelineno-0-6"></a><span class="w">        </span><span class="c1">// Em Java seria System.out.println</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#slides-slide-12-__codelineno-0-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#slides-slide-12-__codelineno-0-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-12-4-linq-a-joia-da-coroa">4. LINQ: A Joia da Coroa 💎</h2>
+<p><strong>L</strong>anguage <strong>In</strong>tegrated <strong>Q</strong>uery.</p>
 <ul>
-<li><strong>Visual Studio</strong>: A "Nave Espacial". Faz tudo.</li>
-<li><strong>VS Code</strong>: O "Jato Leve". Rápido e flexível.</li>
-<li><strong>CLI (dotnet)</strong>: <code>dotnet new console</code>, <code>dotnet run</code>.</li>
+<li>Tratar listas como se fossem SQL.</li>
+<li>Filtrar, Ordenar, Transformar dados em <strong>uma linha</strong>.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-12-4-f-bonus">4. F# (Bônus) 🟣</h2>
+<h3 id="slides-slide-12-sem-linq-jeito-velho">Sem LINQ (Jeito Velho) 👴</h3>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-12-__codelineno-1-1"></a><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pares</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-12-__codelineno-1-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-12-__codelineno-1-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-12-__codelineno-1-4"></a><span class="w">        </span><span class="n">pares</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-12-__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-12-__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-12-com-linq-jeito-novo">Com LINQ (Jeito Novo) ✨</h3>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-12-__codelineno-2-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">pares</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numeros</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span>
+</span></code></pre></div>
+<blockquote>
+<p>Muito mais limpo e legível!</p>
+</blockquote>
+<hr>
+<h3 id="slides-slide-12-visualizando-linq-mermaid">Visualizando LINQ (Mermaid)</h3>
+<pre class="mermaid"><code>graph LR;
+    Input[Lista: 1, 2, 3, 4] --&gt;|Where| Filtro[Pares: 2, 4];
+    Filtro --&gt;|Select| Transf[Quadrado: 4, 16];
+    Transf --&gt; Output[Resultado];</code></pre>
+<hr>
+<h2 id="slides-slide-12-tipos-de-dados-poderosos">Tipos de Dados Poderosos 💪</h2>
 <ul>
-<li>O primo matemático.</li>
-<li>Foco em funções, imutabilidade.</li>
-<li>Influenciou muito o C# moderno.</li>
+<li><strong>var</strong>: O compilador adivinha o tipo.<ul>
+<li><code>var x = 10;</code> (Vira int).</li>
+</ul>
+</li>
+<li><strong>Nullable Types</strong>:<ul>
+<li><code>int? idade = null;</code> (Pode ser nulo).</li>
+<li>Evita erros de memória.</li>
+</ul>
+</li>
 </ul>
 <hr>
-<h2 id="slides-slide-12-5-c-vs-java">5. C# vs Java 🥊</h2>
+<h2 id="slides-slide-12-5-f-bonus">5. F# (Bônus) 🟣</h2>
 <ul>
-<li>Irmãos separados no nascimento.</li>
-<li>Se sabe um, aprende o outro em 1 semana.</li>
+<li>Linguagem <strong>Funcional</strong> do .NET.</li>
+<li>Focada em Matemática e Dados.</li>
+<li>Influenciou o LINQ e as Lambdas do C#.</li>
+<li>Código muito conciso.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-12-proximos-passos">Próximos Passos</h2>
+<h2 id="slides-slide-12-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>LINQ na Prática</strong></p>
+<p>Dada uma lista de preços: <code>[10.5, 20.0, 5.0, 100.0]</code></p>
+<ol>
+<li>Filtre os preços maiores que 15.0.</li>
+<li>Ordene do maior para o menor.</li>
+<li>Mostre o resultado.</li>
+</ol>
+<hr>
+<h2 id="slides-slide-12-resumo">Resumo ✅</h2>
 <ul>
-<li>Sair do mundo corporativo "estrito".</li>
-<li>Ir para a agilidade do <strong>PYTHON</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-13" heading-number="7.14"><html><head>
+<li>C# é moderno, forte e produtivo.</li>
+<li><strong>.NET</strong> roda em tudo.</li>
+<li><strong>LINQ</strong> salva vidas (e linhas de código).</li>
+<li>Visual Studio é a casa do C#.</li>
+</ul>
+<hr>
+<h2 id="slides-slide-12-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>Vamos sair das linguagens compiladas.</li>
+<li>Vamos para a linguagem mais popular da Ciência de Dados.</li>
+<li><strong>Python</strong>: Simples, poderoso e lento (mas ninguém liga).</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Instalar o .NET SDK!</p></body></html></section><section class="print-page" id="slides-slide-13" heading-number="7.14"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-13-python-e-dados">Aula 13 - Python e Dados 🐍</h1>
+        </head><body><h1 id="aula-13-python-e-ciencia-de-dados">Aula 13 - Python e Ciência de Dados 🐍</h1>
 <hr>
-<h2 id="slides-slide-13-1-simples-e-poderoso">1. Simples e Poderoso 🚀</h2>
+<h2 id="slides-slide-13-agenda">Agenda 📅</h2>
+<ol>
+<li>Por que Python?</li>
+<li>Sintaxe Limpa</li>
+<li>Estruturas de Dados Poderosas</li>
+<li>Modo Interativo (REPL) vs Scripts</li>
+<li>O Ecossistema de Data Science</li>
+</ol>
+<hr>
+<h2 id="slides-slide-13-1-por-que-python">1. Por que Python? 🚀</h2>
 <ul>
-<li>Lê-se como inglês.</li>
-<li>Sem <code>;</code>, sem <code>{}</code>.</li>
-<li><strong>Indentação</strong> define o bloco. (Organização forçada!).</li>
+<li><strong>Legibilidade</strong>: Parece inglês.</li>
+<li><strong>Produtividade</strong>: Menos linhas, mais resultado.</li>
+<li><strong>Ecossistema</strong>: IA, Data Science, Web, Automação.</li>
+<li>Não é o mais rápido (em CPU), mas é o mais rápido para <strong>desenvolver</strong>.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-13-2-estruturas-de-dados">2. Estruturas de Dados 🧱</h2>
+<h2 id="slides-slide-13-2-sintaxe-limpa">2. Sintaxe Limpa ✨</h2>
+<p>Esqueça <code>{}</code> e <code>;</code>.</p>
 <ul>
-<li><strong>Listas</strong>: <code>frutas = ["Maçã", "Uva"]</code>. (Arrays turbinados).</li>
-<li><strong>Dicionários</strong>: <code>carro = {"marca": "Fiat", "ano": 2020}</code>. (Chave-Valor).</li>
+<li><strong>Indentação</strong> (espaços) define os blocos.</li>
+<li>Força o código a ser organizado.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-13-__codelineno-0-1"></a><span class="k">if</span> <span class="n">idade</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-13-__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Maior"</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-13-__codelineno-0-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-13-__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Menor"</span><span class="p">)</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-13-3-estruturas-de-dados">3. Estruturas de Dados 🧱</h2>
+<p>Em vez de Arrays e Matrizes chatos de declarar, temos <strong>Listas</strong> e <strong>Dicionários</strong>.</p>
+<hr>
+<h3 id="slides-slide-13-listas-arrays-turbinados">Listas (Arrays Turbinados)</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-13-__codelineno-1-1"></a><span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Maçã"</span><span class="p">,</span> <span class="s2">"Banana"</span><span class="p">,</span> <span class="s2">"Uva"</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-13-__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># Maçã</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-13-__codelineno-1-3"></a><span class="n">frutas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Pera"</span><span class="p">)</span> <span class="c1"># Adiciona no fim</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-13-dicionarios-chave-valor">Dicionários (Chave-Valor) 🔑</h3>
+<p>Como um JSON ou um Objeto.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#slides-slide-13-__codelineno-2-1"></a><span class="n">pessoa</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#slides-slide-13-__codelineno-2-2"></a>    <span class="s2">"nome"</span><span class="p">:</span> <span class="s2">"Ana"</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#slides-slide-13-__codelineno-2-3"></a>    <span class="s2">"idade"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#slides-slide-13-__codelineno-2-4"></a>    <span class="s2">"tech"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"SQL"</span><span class="p">]</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#slides-slide-13-__codelineno-2-5"></a><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#slides-slide-13-__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">pessoa</span><span class="p">[</span><span class="s2">"nome"</span><span class="p">])</span>
+</span></code></pre></div>
+<hr>
+<h3 id="slides-slide-13-visualizando-mermaid">Visualizando (Mermaid)</h3>
+<pre class="mermaid"><code>graph LR;
+    subgraph Lista [Lista: Compras]
+    L0[0: Maçã] --- L1[1: Banana] --- L2[2: Uva]
+    end
+
+    subgraph Dicionario [Dicionário: Pessoa]
+    D1[Chave: 'Nome'\nValor: 'Ana'] --- D2[Chave: 'Idade'\nValor: 25]
+    end
+
+    style Lista fill:#bbf;
+    style Dicionario fill:#f9f;</code></pre>
+<hr>
+<h2 id="slides-slide-13-4-modos-de-execucao">4. Modos de Execução ⚙️</h2>
+<ol>
+<li>
+<p><strong>REPL (Interativo)</strong>:</p>
+<ul>
+<li>Digite <code>python</code> no terminal.</li>
+<li>Teste comandos na hora. <code>2 + 2</code>.</li>
+<li>Ótimo para aprender.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scripts (<code>.py</code>)</strong>:</p>
+<ul>
+<li>Arquivos de texto com código.</li>
+<li><code>python meu_script.py</code>.</li>
+<li>Para programas reais.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="slides-slide-13-5-o-ecossistema-de-dados">5. O Ecossistema de Dados 📊</h2>
+<p>Por que Data Science ama Python? <strong>Bibliotecas</strong>.</p>
+<ol>
+<li><strong>Pandas</strong>: O "Excel" do programador. Manipula milhões de linhas.</li>
+<li><strong>Matplotlib</strong>: Cria gráficos (Barras, Linhas, Pizza).</li>
+<li><strong>TensorFlow/PyTorch</strong>: Inteligência Artificial.</li>
+</ol>
+<hr>
+<h3 id="slides-slide-13-exemplo-pandas">Exemplo Pandas 🐼</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#slides-slide-13-__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#slides-slide-13-__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#slides-slide-13-__codelineno-3-3"></a><span class="c1"># Ler uma planilha inteira</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#slides-slide-13-__codelineno-3-4"></a><span class="n">tabela</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"vendas.csv"</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#slides-slide-13-__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#slides-slide-13-__codelineno-3-6"></a><span class="c1"># Calcular totais</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#slides-slide-13-__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tabela</span><span class="p">[</span><span class="s2">"valor"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-13-exercicio-rapido">Exercício Rápido ⚡</h2>
+<p><strong>Análise de Notas</strong></p>
+<ol>
+<li>Crie uma lista com 4 notas: <code>[6.0, 7.5, 9.0, 5.5]</code>.</li>
+<li>Use <code>sum(lista)</code> e <code>len(lista)</code> para calcular a média.</li>
+<li>Se média &gt; 6, imprima "Aprovado".</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#slides-slide-13-__codelineno-4-1"></a><span class="n">notas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#slides-slide-13-__codelineno-4-2"></a><span class="n">media</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#slides-slide-13-__codelineno-4-3"></a><span class="c1"># Complete...</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-13-resumo">Resumo ✅</h2>
+<ul>
+<li>Python é a linguagem da prototipagem e dos dados.</li>
+<li><strong>Indentação</strong> é regra.</li>
+<li><strong>Bibliotecas</strong> fazem o trabalho pesado.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-13-3-scripts-e-automacao">3. Scripts e Automação 🤖</h2>
+<h2 id="slides-slide-13-proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>Automatizar tarefas chatas (renomear arquivos, enviar email).</li>
-<li><code>python script.py</code>.</li>
+<li>E quando performance é tudo?</li>
+<li>Sistemas que não podem travar.</li>
+<li><strong>Rust e Go</strong>: As linguagens da Cloud e Sistemas.</li>
 </ul>
-<hr>
-<h2 id="slides-slide-13-4-o-rei-dos-dados">4. O Rei dos Dados 📊</h2>
-<ul>
-<li><strong>Pandas</strong>: Manipula tabelas gigantes.</li>
-<li><strong>Matplotlib</strong>: Cria gráficos.</li>
-<li><strong>IA</strong>: PyTorch, TensorFlow.</li>
-</ul>
-<hr>
-<h2 id="slides-slide-13-proximos-passos">Próximos Passos</h2>
-<ul>
-<li>Já vimos o "Fácil e Lento" (Python).</li>
-<li>Vamos ver o "Novo e Rápido" (Rust/Go).</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-14" heading-number="7.15"><html><head>
+<p>👉 <strong>Tarefa</strong>: Instalar Python e fazer o exercício da média!</p></body></html></section><section class="print-page" id="slides-slide-14" heading-number="7.15"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-14-sistemas-modernos-rustgo">Aula 14 - Sistemas Modernos (Rust/Go) 🦀🐹</h1>
+        </head><body><h1 id="aula-14-sistemas-modernos-rust-e-go">Aula 14 - Sistemas Modernos: Rust e Go 🦀🐹</h1>
 <hr>
-<h2 id="slides-slide-14-1-o-desafio-do-cc">1. O Desafio do C/C++ 🚧</h2>
+<h2 id="slides-slide-14-agenda">Agenda 📅</h2>
+<ol>
+<li>O Problema do C/C++</li>
+<li>Rust: Segurança de Memória</li>
+<li>Go: Concorrência Simples</li>
+<li>Comparativo</li>
+<li>Quando usar?</li>
+</ol>
+<hr>
+<h2 id="slides-slide-14-1-o-problema-do-cc">1. O Problema do C/C++ 💥</h2>
 <ul>
-<li>C/C++ são rápidos, mas perigosos (Memory Leaks, SegFault).</li>
-<li>O mundo precisava de algo novo.</li>
+<li>C/C++ são rápidos, mas perigosos.</li>
+<li><strong>70% das vulnerabilidades</strong> de segurança são erros de memória (Microsoft).</li>
+<li>Buffer Overflow, Use-After-Free.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-14-2-rust-o-guardiao">2. Rust: O Guardião 🦀</h2>
+<h2 id="slides-slide-14-2-rust">2. Rust 🦀</h2>
 <ul>
-<li><strong>Ownership</strong>: Cada dado tem um dono.</li>
-<li>Sem Garbage Collector, mas sem gerenciamento manual.</li>
-<li><strong>Segurança</strong>: O compilador não deixa passar erro de memória.</li>
-<li>Curva de aprendizado íngreme.</li>
+<li>Criada pela Mozilla.</li>
+<li>Promessa: <strong>Performance de C++ com Segurança de Memória</strong>.</li>
+<li>Sem Garbage Collector (GC).</li>
+<li>Sem Tela Azul.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-14-3-go-a-simplicidade">3. Go: A Simplicidade 🐹</h2>
+<h3 id="slides-slide-14-o-segredo-ownership-posse">O Segredo: Ownership (Posse) 🔑</h3>
 <ul>
-<li>Criada pelo Google. </li>
-<li>Sintaxe limpa. Compilação instantânea.</li>
-<li><strong>Goroutines</strong>: Rode 100 mil tarefas ao mesmo tempo.</li>
-<li>Perfeita para Servidores e Cloud (Docker é feito em Go).</li>
+<li>Cada dado tem <strong>um único dono</strong>.</li>
+<li>Quando o dono muda, o antigo perde o acesso.</li>
+<li>O compilador verifica isso <strong>antes</strong> de rodar.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-14-4-ferramentas">4. Ferramentas 🛠️</h2>
+<h3 id="slides-slide-14-visualizando-ownership">Visualizando Ownership</h3>
+<pre class="mermaid"><code>graph LR;
+    A["Variável A\n(Dona do Dado)"] -- "Move" --&gt; B["Variável B\n(Nova Dona)"];
+    style A fill:#f9f;
+    style B fill:#bbf;
+
+    NoteA["A morre.\nNão pode mais acessar!"] --- A</code></pre>
+<hr>
+<h3 id="slides-slide-14-codigo-rust">Código Rust</h3>
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-14-__codelineno-0-1"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-14-__codelineno-0-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">::</span><span class="n">from</span><span class="p">(</span><span class="s">"Olá"</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-14-__codelineno-0-3"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// MOVEU para b</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-14-__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-14-__codelineno-0-5"></a><span class="w">    </span><span class="c1">// println!("{}", a); // ERRO DE COMPILAÇÃO!</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-14-__codelineno-0-6"></a><span class="w">    </span><span class="c1">// O compilador te salva de usar memória inválida.</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#slides-slide-14-__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-14-3-go-golang">3. Go (Golang) 🐹</h2>
 <ul>
-<li><strong>Cargo (Rust)</strong>: O melhor gerenciador de pacotes existente.</li>
-<li><strong>Go CLI</strong>: Simplicidade (<code>go run</code>, <code>go fmt</code>).</li>
+<li>Criada pelo Google (Rob Pike, Ken Thompson).</li>
+<li>Foco: <strong>Simplicidade</strong> e <strong>Google Scale</strong>.</li>
+<li>Compila ultra-rápido.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-14-proximos-passos">Próximos Passos</h2>
+<h3 id="slides-slide-14-concorrencia-facil-goroutines">Concorrência Fácil (Goroutines) 🧵</h3>
 <ul>
-<li>Vimos Backend e Sistemas.</li>
-<li>E o celular no seu bolso?</li>
-<li><strong>Desenvolvimento Mobile</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-15" heading-number="7.16"><html><head>
+<li>Threads são pesadas.</li>
+<li>Goroutines são leves (milhares em poucos MBs).</li>
+<li><strong>Channels</strong>: Forma segura de conversar entre processos.</li>
+</ul>
+<hr>
+<h3 id="slides-slide-14-visualizando-channels">Visualizando Channels</h3>
+<pre class="mermaid"><code>graph LR;
+    T1[Goroutine A] --&gt;|Envia 'Ping'| Canal((Channel));
+    Canal --&gt;|Recebe 'Ping'| T2[Goroutine B];
+
+    style Canal fill:#ff9;</code></pre>
+<hr>
+<h3 id="slides-slide-14-codigo-go">Código Go</h3>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-14-__codelineno-1-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-14-__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="s">"fmt"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-14-__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-14-__codelineno-1-4"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#slides-slide-14-__codelineno-1-5"></a><span class="w">    </span><span class="nx">mensagens</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#slides-slide-14-__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#slides-slide-14-__codelineno-1-7"></a><span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mensagens</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"Ping"</span><span class="w"> </span><span class="p">}()</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#slides-slide-14-__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#slides-slide-14-__codelineno-1-9"></a><span class="w">    </span><span class="nx">msg</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="o">&lt;-</span><span class="nx">mensagens</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#slides-slide-14-__codelineno-1-10"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#slides-slide-14-__codelineno-1-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-14-4-comparativo">4. Comparativo ⚖️</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Rust 🦀</th>
+<th style="text-align: left;">Go 🐹</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Foco</strong></td>
+<td style="text-align: left;">Controle, Segurança Absoluta</td>
+<td style="text-align: left;">Simplicidade, Web Services</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Aprendizado</strong></td>
+<td style="text-align: left;">Curva Íngreme (Dificil)</td>
+<td style="text-align: left;">Muito Fácil</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Performance</strong></td>
+<td style="text-align: left;">Extrema (Zero-Cost)</td>
+<td style="text-align: left;">Muito Boa (Com GC)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Uso</strong></td>
+<td style="text-align: left;">Drivers, Engines, Crypto</td>
+<td style="text-align: left;">Microservices, Cloud, APIs</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="slides-slide-14-termynal-execucao">Termynal: Execução 🖥️</h2>
+<div data-termynal class="termy">
+    <span data-ty="input">cargo run</span>
+    <span data-ty="progress">Compiling...</span>
+    <span data-ty>Hello Rust! (Safe)</span>
+    <span data-ty="input">go run main.go</span>
+    <span data-ty>Hello Go! (Fast Build)</span>
+</div>
+
+<hr>
+<h2 id="slides-slide-14-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Rust</strong>: Substitui C++ onde segurança é crítica.</li>
+<li><strong>Go</strong>: Substitui Java/Node onde concorrência é crítica.</li>
+<li>Ambas são o futuro da Infraestrutura (Docker, Kubernetes).</li>
+</ul>
+<hr>
+<h2 id="slides-slide-14-proxima-aula">Próxima Aula 🚀</h2>
+<ul>
+<li>Sair do Servidor.</li>
+<li>Ir para o dispositivo que está na sua mão.</li>
+<li><strong>Desenvolvimento Mobile</strong>: Flutter (Dart) e Nativo.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Instalar o Go e rodar um "Olá Mundo"!</p></body></html></section><section class="print-page" id="slides-slide-15" heading-number="7.16"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-15-mobile-flutterkotlin">Aula 15 - Mobile (Flutter/Kotlin) 📱</h1>
+        </head><body><h1 id="aula-15-desenvolvimento-mobile">Aula 15 - Desenvolvimento Mobile 📱</h1>
 <hr>
-<h2 id="slides-slide-15-1-o-dilema-mobile">1. O Dilema Mobile ⚖️</h2>
+<h2 id="slides-slide-15-agenda">Agenda 📅</h2>
+<ol>
+<li>O Ecossistema Mobile</li>
+<li>Nativo vs Multiplataforma</li>
+<li>Dart e Flutter (Google)</li>
+<li>Árvore de Widgets</li>
+<li>Kotlin (Android Nativo)</li>
+</ol>
+<hr>
+<h2 id="slides-slide-15-1-o-mundo-mobile">1. O Mundo Mobile 🌍</h2>
+<p>Dois gigantes dominam o mercado.</p>
 <ul>
-<li><strong>Nativo (Kotlin/Swift)</strong>: Performance máxima. Acesso total ao hardware. (Caro, 2 times).</li>
-<li><strong>Multiplataforma (Flutter/React Native)</strong>: 1 Código, 2 Sistemas. Performance ótima (quase nativa). (Rápido).</li>
+<li><strong>Android (Google)</strong>: ~70% do mercado mundial. Aberto. Baseado em Linux/Java.</li>
+<li><strong>iOS (Apple)</strong>: ~29% do mercado. Fechado. Hardware Premium.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-15-2-flutter-e-dart">2. Flutter e Dart 💙</h2>
+<h2 id="slides-slide-15-2-abordagens-de-desenvolvimento">2. Abordagens de Desenvolvimento 🛠️</h2>
+<p>Como criar apps para eles?</p>
+<ol>
+<li>
+<p><strong>Nativo</strong>:</p>
 <ul>
-<li><strong>Widgets</strong>: Lego digital. Tudo é um widget (Botão, Texto, Layout).</li>
-<li><strong>Hot Reload</strong>: Mudou código -&gt; Mudou tela (em ms).</li>
-<li>Desenha a própria tela (skia engine).</li>
+<li>Performance Máxima.</li>
+<li>Acesso total ao hardware (GPS, Bluetooth).</li>
+<li><strong>Problema</strong>: Precisa fazer 2 vezes (Kotlin para Android, Swift para iOS).</li>
+</ul>
+</li>
+<li>
+<p><strong>Multiplataforma</strong>:</p>
+<ul>
+<li>Escreve uma vez, roda nos dois.</li>
+<li>Flutter (Dart) ou React Native (JS).</li>
+<li><strong>Vantagem</strong>: Velocidade de entrega.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="slides-slide-15-3-flutter-e-dart">3. Flutter e Dart 💙</h2>
+<ul>
+<li><strong>Dart</strong>: A linguagem (parece Java + JS).</li>
+<li><strong>Flutter</strong>: O Kit de Ferramentas (UI Toolkit).</li>
+<li>Renderiza pixels direto na tela (como um jogo).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-15-3-gerenciamento-de-estado">3. Gerenciamento de Estado ⚡</h2>
+<h3 id="slides-slide-15-tudo-e-um-widget">Tudo é um Widget 🧱</h3>
+<p>Botão é widget. Texto é widget. Layout é widget.</p>
+<pre class="mermaid"><code>graph TD;
+    App[MaterialApp] --&gt; Home["Tela Principal"];
+    Home --&gt; AppBar[Barra Superior];
+    Home --&gt; Body[Corpo];
+    Body --&gt; Center;
+    Center --&gt; Button["Botão Clique"];
+
+    style App fill:#f9f;</code></pre>
+<hr>
+<h3 id="slides-slide-15-codigo-flutter-basico">Código Flutter Básico</h3>
+<div class="language-dart highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-15-__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">'package:flutter/material.dart'</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-15-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-15-__codelineno-0-3"></a><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-15-__codelineno-0-4"></a><span class="w">  </span><span class="n">runApp</span><span class="p">(</span><span class="n">MaterialApp</span><span class="p">(</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-15-__codelineno-0-5"></a><span class="w">    </span><span class="nl">home:</span><span class="w"> </span><span class="n">Scaffold</span><span class="p">(</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-15-__codelineno-0-6"></a><span class="w">      </span><span class="nl">appBar:</span><span class="w"> </span><span class="n">AppBar</span><span class="p">(</span><span class="nl">title:</span><span class="w"> </span><span class="n">Text</span><span class="p">(</span><span class="s2">"Meu App"</span><span class="p">)),</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#slides-slide-15-__codelineno-0-7"></a><span class="w">      </span><span class="nl">body:</span><span class="w"> </span><span class="n">Center</span><span class="p">(</span><span class="nl">child:</span><span class="w"> </span><span class="n">Text</span><span class="p">(</span><span class="s2">"Olá Mundo!"</span><span class="p">)),</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#slides-slide-15-__codelineno-0-8"></a><span class="w">    </span><span class="p">),</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#slides-slide-15-__codelineno-0-9"></a><span class="w">  </span><span class="p">));</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#slides-slide-15-__codelineno-0-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-15-4-o-estado-state">4. O Estado (State) ⚡</h2>
+<p>Apps são interativos.
+Se o usuário clica, a tela muda.</p>
 <ul>
-<li>O App reage ao usuário.</li>
-<li><code>setState()</code>: Avisa o App que algo mudou.</li>
-<li>Tela redesenha para mostrar o novo dado.</li>
+<li><strong>StatelessWidget</strong>: Estático (Ícone, Texto).</li>
+<li><strong>StatefulWidget</strong>: Dinâmico (Checkbox, Contador).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-15-4-kotlin-android-nativo">4. Kotlin (Android Nativo) 🤖</h2>
+<h3 id="slides-slide-15-ciclo-de-vida-do-estado">Ciclo de Vida do Estado</h3>
+<pre class="mermaid"><code>graph LR;
+    User["Usuário Clica"] --&gt; Acao[setState];
+    Acao --&gt; Build[Reconstruir Tela];
+    Build --&gt; UI[Nova UI];</code></pre>
+<hr>
+<h2 id="slides-slide-15-5-kotlin-android-nativo">5. Kotlin (Android Nativo) 🤖</h2>
+<p>Para quando você precisa de poder bruto.</p>
 <ul>
-<li>Moderno, conciso.</li>
-<li>Interoperável com Java (usa bibliotecas antigas).</li>
-<li>Google recomenda.</li>
+<li>Oficial do Google.</li>
+<li>100% Compatível com Java.</li>
+<li>Conciso e seguro (sem NullPointerException).</li>
+</ul>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-15-__codelineno-1-1"></a><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-15-__codelineno-1-2"></a><span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">nome</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Android"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-15-__codelineno-1-3"></a><span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">"Olá, </span><span class="si">$</span><span class="n">nome</span><span class="s">!"</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-15-__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-15-termynal-criando-app">Termynal: Criando App 📱</h2>
+<div data-termynal class="termy">
+    <span data-ty="input">flutter create meu_app</span>
+    <span data-ty="progress">Criando arquivos...</span>
+    <span data-ty="input">flutter run</span>
+    <span data-ty="progress">Compilando APK...</span>
+    <span data-ty>App rodando no Emulador!</span>
+</div>
+
+<hr>
+<h2 id="slides-slide-15-resumo">Resumo ✅</h2>
+<ul>
+<li><strong>Nativo</strong>: Melhor performance, mais trabalho.</li>
+<li><strong>Multiplataforma</strong>: Menor custo, velocidade.</li>
+<li><strong>Flutter</strong>: Desenha a tela do zero.</li>
+<li><strong>Widgets</strong>: Blocos de construção.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-15-proximos-passos">Próximos Passos</h2>
+<h2 id="slides-slide-15-proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>Última parada.</li>
-<li>Onde a maioria dos sites vive.</li>
-<li><strong>PHP e o Legado</strong>.</li>
-</ul></body></html></section><section class="print-page" id="slides-slide-16" heading-number="7.17"><html><head>
+<li>Sair do Cliente (Celular).</li>
+<li>Voltar para o Servidor (Backend).</li>
+<li>A tecnologia que roda 77% da Web.</li>
+<li><strong>PHP e Arquitetura MVC</strong>.</li>
+</ul>
+<p>👉 <strong>Tarefa</strong>: Rodar o "Counter App" do Flutter!</p></body></html></section><section class="print-page" id="slides-slide-16" heading-number="7.17"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
         })
         </script>
-        </head><body><h1 id="aula-16-php-e-o-legado">Aula 16 - PHP e o Legado 🐘</h1>
+        </head><body><h1 id="aula-16-php-e-o-lado-do-servidor">Aula 16 - PHP e o Lado do Servidor 🐘</h1>
 <hr>
-<h2 id="slides-slide-16-1-o-motor-da-web-dinamica">1. O Motor da Web Dinâmica ⚙️</h2>
+<h2 id="slides-slide-16-agenda">Agenda 📅</h2>
+<ol>
+<li>Como a Web Funciona?</li>
+<li>PHP: O Motor da Internet</li>
+<li>Arquitetura MVC</li>
+<li>Laravel (Framework)</li>
+<li>Projeto Final</li>
+</ol>
+<hr>
+<h2 id="slides-slide-16-1-o-ciclo-da-web">1. O Ciclo da Web 🌍</h2>
+<p>Client vs Server.</p>
 <ul>
-<li>HTML é estático (sempre igual).</li>
-<li>PHP cria HTML na hora (dinâmico).</li>
-<li><strong>Request/Response</strong>: O garçom (Servidor) traz o prato (HTML) que você pediu.</li>
+<li><strong>Cliente (Browser)</strong>: Pede coisas (Request).</li>
+<li><strong>Servidor</strong>: Processa e Devolve (Response).</li>
+<li><strong>Banco de Dados</strong>: Guarda as informações.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-16-2-sintaxe-basica">2. Sintaxe Básica 🐘</h2>
+<h3 id="slides-slide-16-requisicao-e-resposta-sequence">Requisição e Resposta (Sequence)</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Browser
+    participant Servidor
+    participant Banco
+
+    Browser-&gt;&gt;Servidor: 1. GET /perfil
+    Servidor-&gt;&gt;Banco: 2. SELECT * FROM users
+    Banco--&gt;&gt;Servidor: 3. Dados (João, 25)
+    Servidor--&gt;&gt;Browser: 4. HTML Pronto</code></pre>
+<hr>
+<h2 id="slides-slide-16-2-o-que-e-php">2. O Que é PHP? 🐘</h2>
+<p><strong>P</strong>HP: <strong>H</strong>ypertext <strong>P</strong>reprocessor.</p>
 <ul>
-<li><code>&lt;?php ... ?&gt;</code>.</li>
-<li><code>$variavel</code>.</li>
-<li>Integração nativa com HTML.</li>
-<li>Fácil de implantar (Qualquer hospedagem barata tem PHP).</li>
+<li>Roda no Servidor (Back-end).</li>
+<li>Gera HTML dinâmico.</li>
+<li>Fácil de hospedar (qualquer servidor barato tem).</li>
+<li>Poderoso (Facebook, Wikipedia, WordPress).</li>
 </ul>
 <hr>
-<h2 id="slides-slide-16-3-laravel-o-moderno">3. Laravel: O Moderno 🚀</h2>
+<h3 id="slides-slide-16-codigo-php">Código PHP</h3>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#slides-slide-16-__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#slides-slide-16-__codelineno-0-2"></a>    <span class="nv">$nome</span> <span class="o">=</span> <span class="s2">"Maria"</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#slides-slide-16-__codelineno-0-3"></a>    <span class="nv">$saldo</span> <span class="o">=</span> <span class="mf">100.50</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#slides-slide-16-__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#slides-slide-16-__codelineno-0-5"></a>    <span class="k">echo</span> <span class="s2">"&lt;h1&gt;Olá, </span><span class="si">$nome</span><span class="s2">!&lt;/h1&gt;"</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#slides-slide-16-__codelineno-0-6"></a>    <span class="k">echo</span> <span class="s2">"&lt;p&gt;Saldo: </span><span class="si">$saldo</span><span class="s2">&lt;/p&gt;"</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#slides-slide-16-__codelineno-0-7"></a><span class="cp">?&gt;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-16-3-arquitetura-mvc">3. Arquitetura MVC 🏗️</h2>
+<p>Para organizar sites grandes, não misturamos código.</p>
 <ul>
-<li>Esqueça o "código espaguete" antigo.</li>
-<li>Framework elegante, seguro e robusto.</li>
-<li><strong>MVC</strong>: Organização profissional.</li>
+<li><strong>M</strong>odel (Modelo): Dados e Banco.</li>
+<li><strong>V</strong>iew (Visão): HTML e Telas.</li>
+<li><strong>C</strong>ontroller (Controlador): A Lógica.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-16-4-o-legado">4. O Legado 🏛️</h2>
+<h3 id="slides-slide-16-fluxo-mvc">Fluxo MVC</h3>
+<pre class="mermaid"><code>graph LR;
+    User --&gt;|Rota| Controller;
+    Controller --&gt;|Pede| Model;
+    Model --&gt;|Devolve| Controller;
+    Controller --&gt;|Envia| View;
+    View --&gt;|HTML| User;</code></pre>
+<hr>
+<h2 id="slides-slide-16-4-laravel">4. Laravel 🚀</h2>
+<p>O Framework PHP mais popular.</p>
 <ul>
-<li>WordPress (40% da web).</li>
-<li>Wikipedia.</li>
-<li>Facebook (hack/hhvm).</li>
-<li>O PHP não vai morrer tão cedo.</li>
+<li>Sintaxe elegante.</li>
+<li>Ferramentas prontas (Login, Email, Banco).</li>
+<li>"O PHP Moderno".</li>
+</ul>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#slides-slide-16-__codelineno-1-1"></a><span class="x">// Rota simples em Laravel</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#slides-slide-16-__codelineno-1-2"></a><span class="x">Route::get('/', function () {</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#slides-slide-16-__codelineno-1-3"></a><span class="x">    return view('welcome');</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#slides-slide-16-__codelineno-1-4"></a><span class="x">});</span>
+</span></code></pre></div>
+<hr>
+<h2 id="slides-slide-16-projeto-final-do-curso">Projeto Final do Curso 🏆</h2>
+<p><strong>Mural de Recados Fullstack</strong></p>
+<ul>
+<li><strong>Banco</strong>: MySQL (<code>recados</code>: id, mensagem).</li>
+<li><strong>Back</strong>: PHP (Busca recados).</li>
+<li><strong>Front</strong>: HTML/CSS (Mostra recados).</li>
+<li>Use tudo que aprendeu: Lógica, Loops, Vetores (Dados do banco), HTML.</li>
 </ul>
 <hr>
-<h2 id="slides-slide-16-conclusao-do-curso">Conclusão do Curso 🎓</h2>
-<ul>
-<li>Vimos de <strong>Lógica</strong> a <strong>Mobile</strong>.</li>
-<li>De <strong>Baixo Nível</strong> a <strong>Web</strong>.</li>
-<li>Agora é com você: <strong>PROJETOS FINAIS!</strong></li>
-</ul></body></html></section></section>
+<h2 id="slides-slide-16-termynal-servidor-php">Termynal: Servidor PHP 🖥️</h2>
+<div data-termynal class="termy">
+    <span data-ty="input">php -S localhost:8000</span>
+    <span data-ty="progress">Listening on localhost:8000...</span>
+    <span data-ty>Requisição recebida: /index.php</span>
+    <span data-ty>200 OK</span>
+</div>
+
+<hr>
+<h2 id="slides-slide-16-resumo-do-modulo">Resumo do Módulo ✅</h2>
+<ol>
+<li><strong>Lógica</strong>: Algoritmos, Fluxogramas.</li>
+<li><strong>Dados</strong>: Variáveis, Vetores, Matrizes.</li>
+<li><strong>Tecnologias</strong>:<ul>
+<li>Baixo nível (C/C++).</li>
+<li>Web (JS, PHP).</li>
+<li>Mobile (Flutter).</li>
+<li>Corporativo (Java, C#).</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="slides-slide-16-parabens">Parabéns! 🎓</h2>
+<p>Você completou a jornada de Lógica e Algoritmos.
+Você agora tem a <strong>base</strong> para aprender qualquer linguagem.</p>
+<p><strong>Próximos Passos?</strong>
+- Escolha uma área (Front, Back, Mobile, Dados).
+- Aprofunde-se na linguagem escolhida.
+- <strong>PRATIQUE!</strong></p>
+<p>👉 <strong>Projeto Final</strong>: Entregar o Mural de Recados!</p></body></html></section></section>
                     <section class='print-page md-section' id='section-8' heading-number='8'>
                         <h1>Configuração<a class='headerlink' href='#section-8' title='Permanent link'></a>
                         </h1>
