@@ -1,7 +1,7 @@
 [project]
 name = "ads_mod_02_logica_e_algoritmos"
 version = "1.0.0"
-description = "Curso Completo de Python - Backend"
+description = "ads_mod_02_logica_e_algoritmos"
 authors = [
     {name = "Ricardo", email = "ricardo@example.com"}
 ]
