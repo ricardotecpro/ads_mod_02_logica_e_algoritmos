@@ -27,7 +27,7 @@ def test_homepage_structure(page: Page, base_url):
     page.goto(base_url)
     
     # Check title
-    expect(page).to_have_title("Lógica e Algoritmos - Curso Completo")
+    expect(page).to_have_title("Lógica e Algoritmos - Curso")
     
     # Check main heading
     heading = page.locator("h1")
@@ -45,7 +45,7 @@ def test_lesson_01_page(page: Page, base_url):
     page.goto(f"{base_url}/aulas/aula-01/")
     
     # Check title (flexible match)
-    # The actual title in HTML is "Aula 01 - Lógica e Algoritmos - Curso Completo"
+    # The actual title in HTML is "Aula 01 - Lógica e Algoritmos - Curso"
     expect(page).to_have_title(re.compile(r"Aula 01 - Lógica e Algoritmos"))
     
     # Check main heading
@@ -98,7 +98,7 @@ def test_lesson_16_page(page: Page, base_url):
     page.goto(f"{base_url}/aulas/aula-16/")
     
     # Check title
-    # Actual: "Aula 16 (PHP) - Lógica e Algoritmos - Curso Completo"
+    # Actual: "Aula 16 (PHP) - Lógica e Algoritmos - Curso"
     expect(page).to_have_title(re.compile(r"Aula 16 \(PHP\)"))
     
     # Check quiz containers
