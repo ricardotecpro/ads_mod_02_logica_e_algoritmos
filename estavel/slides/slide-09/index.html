@@ -4550,26 +4550,26 @@
 <hr>
 <h2 id="agenda">Agenda 📅</h2>
 <ol>
-<li>História e Importância</li>
-<li>Anatomia de um Programa C</li>
-<li>Compilação</li>
-<li>Gerenciamento de Memória (Stack vs Heap)</li>
-<li>Ponteiros</li>
-<li>Introdução ao C++ (OOP)</li>
+<li>História e Importância { .fragment }</li>
+<li>Anatomia de um Programa C { .fragment }</li>
+<li>Compilação { .fragment }</li>
+<li>Gerenciamento de Memória (Stack vs Heap) { .fragment }</li>
+<li>Ponteiros { .fragment }</li>
+<li>Introdução ao C++ (OOP) { .fragment }</li>
 </ol>
 <hr>
 <h2 id="1-o-pai-das-linguagens">1. O Pai das Linguagens 👴</h2>
 <ul>
-<li><strong>C (1972)</strong>: Dennis Ritchie (Bell Labs).</li>
-<li><strong>Base de Tudo</strong>: Windows, Linux, Mac, Android, iOS.</li>
-<li><strong>Filosofia</strong>: "Confie no programador" (mesmo se ele fizer besteira).</li>
+<li><strong>C (1972)</strong>: Dennis Ritchie (Bell Labs). { .fragment }</li>
+<li><strong>Base de Tudo</strong>: Windows, Linux, Mac, Android, iOS. { .fragment }</li>
+<li><strong>Filosofia</strong>: "Confie no programador" (mesmo se ele fizer besteira). { .fragment }</li>
 </ul>
 <hr>
 <h3 id="por-que-aprender-c-hoje">Por que aprender C hoje? 🧐</h3>
 <ul>
-<li>Entender como a máquina funciona de verdade.</li>
-<li>Gerenciar memória manualmente.</li>
-<li>Performance extrema (Jogos, Sistemas Embarcados).</li>
+<li>Entender como a máquina funciona de verdade. { .fragment }</li>
+<li>Gerenciar memória manualmente. { .fragment }</li>
+<li>Performance extrema (Jogos, Sistemas Embarcados). { .fragment }</li>
 </ul>
 <hr>
 <h2 id="2-anatomia-basica">2. Anatomia Básica 🦴</h2>
@@ -4583,26 +4583,26 @@
 <hr>
 <h3 id="desmontando-o-codigo">Desmontando o Código 🔧</h3>
 <ol>
-<li><code>#include &lt;stdio.h&gt;</code>: Importa biblioteca de IO (Entrada/Saída).</li>
-<li><code>int main()</code>: A função principal. Todo programa começa aqui.</li>
-<li><code>printf(...)</code>: Imprime formatado.</li>
-<li><code>return 0;</code>: Retorna "Sucesso" para o Sistema Operacional.</li>
+<li><code>#include &lt;stdio.h&gt;</code>: Importa biblioteca de IO (Entrada/Saída). { .fragment }</li>
+<li><code>int main()</code>: A função principal. Todo programa começa aqui. { .fragment }</li>
+<li><code>printf(...)</code>: Imprime formatado. { .fragment }</li>
+<li><code>return 0;</code>: Retorna "Sucesso" para o Sistema Operacional. { .fragment }</li>
 </ol>
 <hr>
 <h3 id="o-ponto-e-virgula">O Ponto e Vírgula <code>;</code></h3>
 <ul>
-<li>Em C/C++, ele é <strong>OBRIGATÓRIO</strong>.</li>
-<li>O compilador não adivinha onde a linha termina.</li>
-<li>Esquecer <code>;</code> é o erro nº 1 de iniciantes.</li>
+<li>Em C/C++, ele é <strong>OBRIGATÓRIO</strong>. { .fragment }</li>
+<li>O compilador não adivinha onde a linha termina. { .fragment }</li>
+<li>Esquecer <code>;</code> é o erro nº 1 de iniciantes. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="3-o-processo-de-compilacao">3. O Processo de Compilação ⚙️</h2>
 <p>C é uma linguagem <strong>Compilada</strong>.</p>
 <ol>
-<li><strong>Código Fonte</strong> (<code>.c</code>): Texto legível.</li>
-<li><strong>Compilador</strong> (<code>gcc</code>): Traduz para Assembly/Machine Code.</li>
-<li><strong>Linker</strong>: Junta com bibliotecas.</li>
-<li><strong>Executável</strong> (<code>.exe</code>): Programa final.</li>
+<li><strong>Código Fonte</strong> (<code>.c</code>): Texto legível. { .fragment }</li>
+<li><strong>Compilador</strong> (<code>gcc</code>): Traduz para Assembly/Machine Code. { .fragment }</li>
+<li><strong>Linker</strong>: Junta com bibliotecas. { .fragment }</li>
+<li><strong>Executável</strong> (<code>.exe</code>): Programa final. { .fragment }</li>
 </ol>
 <hr>
 <h2 id="4-memoria-stack-vs-heap">4. Memória: Stack vs Heap 🧠</h2>
@@ -4619,30 +4619,30 @@
 <hr>
 <h3 id="stack-pilha">Stack (Pilha) 🥞</h3>
 <ul>
-<li>Variáveis normais: <code>int idade = 20;</code></li>
-<li>Criada e destruída automaticamente.</li>
-<li>Tamanho fixo e pequeno.</li>
+<li>Variáveis normais: <code>int idade = 20;</code> { .fragment }</li>
+<li>Criada e destruída automaticamente. { .fragment }</li>
+<li>Tamanho fixo e pequeno. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="heap-monte">Heap (Monte) 🏔️</h3>
 <ul>
-<li>Memória dinâmica: <code>malloc()</code> ou <code>new</code>.</li>
-<li>Você pede memória ao sistema.</li>
-<li><strong>Cuidado</strong>: Você precisa devolver (<code>free</code> ou <code>delete</code>), senão vaza memória (Memory Leak)!</li>
+<li>Memória dinâmica: <code>malloc()</code> ou <code>new</code>. { .fragment }</li>
+<li>Você pede memória ao sistema. { .fragment }</li>
+<li><strong>Cuidado</strong>: Você precisa devolver (<code>free</code> ou <code>delete</code>), senão vaza memória (Memory Leak)! { .fragment }</li>
 </ul>
 <hr>
 <h2 id="5-ponteiros-o-superpoder">5. Ponteiros: O Superpoder ⚡</h2>
 <p>Um ponteiro não guarda o valor. Guarda o <strong>ENDEREÇO</strong>.</p>
 <ul>
-<li><code>int x = 10;</code> (Valor 10)</li>
-<li><code>int *p = &amp;x;</code> (Endereço onde o 10 mora, ex: <code>0x7ffee4</code>)</li>
+<li><code>int x = 10;</code> (Valor 10) { .fragment }</li>
+<li><code>int *p = &amp;x;</code> (Endereço onde o 10 mora, ex: <code>0x7ffee4</code>) { .fragment }</li>
 </ul>
 <hr>
 <h3 id="para-que-serve">Para que serve? 🤷</h3>
 <ol>
-<li>Modificar variáveis originais dentro de funções.</li>
-<li>Alocar memória dinâmica.</li>
-<li>Criar estruturas complexas (Listas, Árvores).</li>
+<li>Modificar variáveis originais dentro de funções. { .fragment }</li>
+<li>Alocar memória dinâmica. { .fragment }</li>
+<li>Criar estruturas complexas (Listas, Árvores). { .fragment }</li>
 </ol>
 <blockquote>
 <p>"Com grandes poderes vêm grandes responsabilidades." (E Segmentation Faults).</p>
@@ -4651,9 +4651,9 @@
 <h2 id="6-introducao-ao-c">6. Introdução ao C++ 🚀</h2>
 <p>C++ = C + Classes (OOP).</p>
 <ul>
-<li>Mantém a performance do C.</li>
-<li>Adiciona organização de objetos.</li>
-<li>Base para Jogos (Unreal) e Softwares Pesados (Chrome, Photoshop).</li>
+<li>Mantém a performance do C. { .fragment }</li>
+<li>Adiciona organização de objetos. { .fragment }</li>
+<li>Base para Jogos (Unreal) e Softwares Pesados (Chrome, Photoshop). { .fragment }</li>
 </ul>
 <hr>
 <h3 id="exemplo-c">Exemplo C++ 🚗</h3>
@@ -4718,17 +4718,17 @@
 <hr>
 <h2 id="resumo">Resumo ✅</h2>
 <ul>
-<li>C é a mãe de todas.</li>
-<li><strong>Compilador</strong> traduz para binário.</li>
-<li><strong>Ponteiros</strong> acessam memória direta.</li>
-<li><strong>C++</strong> adiciona Classes ao poder do C.</li>
+<li>C é a mãe de todas. { .fragment }</li>
+<li><strong>Compilador</strong> traduz para binário. { .fragment }</li>
+<li><strong>Ponteiros</strong> acessam memória direta. { .fragment }</li>
+<li><strong>C++</strong> adiciona Classes ao poder do C. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>Sair do "Baixo Nível".</li>
-<li>Ir para o mundo corporativo e robusto.</li>
-<li><strong>Java</strong>: "Escreva uma vez, rode em qualquer lugar".</li>
+<li>Sair do "Baixo Nível". { .fragment }</li>
+<li>Ir para o mundo corporativo e robusto. { .fragment }</li>
+<li><strong>Java</strong>: "Escreva uma vez, rode em qualquer lugar". { .fragment }</li>
 </ul>
 <p>👉 <strong>Tarefa</strong>: Instalar o Code::Blocks ou configurar GCC no VS Code!</p>
 

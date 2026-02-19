@@ -4,36 +4,36 @@
 
 ## Agenda 📅
 
-1.  O Problema do C/C++
-2.  Rust: Segurança de Memória
-3.  Go: Concorrência Simples
-4.  Comparativo
-5.  Quando usar?
+1.  O Problema do C/C++ { .fragment }
+2.  Rust: Segurança de Memória { .fragment }
+3.  Go: Concorrência Simples { .fragment }
+4.  Comparativo { .fragment }
+5.  Quando usar? { .fragment }
 
 ---
 
 ## 1. O Problema do C/C++ 💥
 
-- C/C++ são rápidos, mas perigosos.
-- **70% das vulnerabilidades** de segurança são erros de memória (Microsoft).
-- Buffer Overflow, Use-After-Free.
+- C/C++ são rápidos, mas perigosos. { .fragment }
+- **70% das vulnerabilidades** de segurança são erros de memória (Microsoft). { .fragment }
+- Buffer Overflow, Use-After-Free. { .fragment }
 
 ---
 
 ## 2. Rust 🦀
 
-- Criada pela Mozilla.
-- Promessa: **Performance de C++ com Segurança de Memória**.
-- Sem Garbage Collector (GC).
-- Sem Tela Azul.
+- Criada pela Mozilla. { .fragment }
+- Promessa: **Performance de C++ com Segurança de Memória**. { .fragment }
+- Sem Garbage Collector (GC). { .fragment }
+- Sem Tela Azul. { .fragment }
 
 ---
 
 ### O Segredo: Ownership (Posse) 🔑
 
-- Cada dado tem **um único dono**.
-- Quando o dono muda, o antigo perde o acesso.
-- O compilador verifica isso **antes** de rodar.
+- Cada dado tem **um único dono**. { .fragment }
+- Quando o dono muda, o antigo perde o acesso. { .fragment }
+- O compilador verifica isso **antes** de rodar. { .fragment }
 
 ---
 
@@ -66,17 +66,17 @@ fn main() {
 
 ## 3. Go (Golang) 🐹
 
-- Criada pelo Google (Rob Pike, Ken Thompson).
-- Foco: **Simplicidade** e **Google Scale**.
-- Compila ultra-rápido.
+- Criada pelo Google (Rob Pike, Ken Thompson). { .fragment }
+- Foco: **Simplicidade** e **Google Scale**. { .fragment }
+- Compila ultra-rápido. { .fragment }
 
 ---
 
 ### Concorrência Fácil (Goroutines) 🧵
 
-- Threads são pesadas.
-- Goroutines são leves (milhares em poucos MBs).
-- **Channels**: Forma segura de conversar entre processos.
+- Threads são pesadas. { .fragment }
+- Goroutines são leves (milhares em poucos MBs). { .fragment }
+- **Channels**: Forma segura de conversar entre processos. { .fragment }
 
 ---
 
@@ -135,16 +135,16 @@ func main() {
 
 ## Resumo ✅
 
-- **Rust**: Substitui C++ onde segurança é crítica.
-- **Go**: Substitui Java/Node onde concorrência é crítica.
-- Ambas são o futuro da Infraestrutura (Docker, Kubernetes).
+- **Rust**: Substitui C++ onde segurança é crítica. { .fragment }
+- **Go**: Substitui Java/Node onde concorrência é crítica. { .fragment }
+- Ambas são o futuro da Infraestrutura (Docker, Kubernetes). { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Sair do Servidor.
-- Ir para o dispositivo que está na sua mão.
-- **Desenvolvimento Mobile**: Flutter (Dart) e Nativo.
+- Sair do Servidor. { .fragment }
+- Ir para o dispositivo que está na sua mão. { .fragment }
+- **Desenvolvimento Mobile**: Flutter (Dart) e Nativo. { .fragment }
 
 👉 **Tarefa**: Instalar o Go e rodar um "Olá Mundo"!

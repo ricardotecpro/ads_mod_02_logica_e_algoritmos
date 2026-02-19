@@ -4560,31 +4560,31 @@
 <hr>
 <h2 id="agenda">Agenda 📅</h2>
 <ol>
-<li>O Problema das Muitas Variáveis</li>
-<li>O Que é um Vetor?</li>
-<li>Simulando a Memória</li>
-<li>Declarando e Acessando</li>
-<li>Percorrendo Vetores (Loop Para)</li>
-<li>Ordenação (Bubble Sort)</li>
+<li>O Problema das Muitas Variáveis { .fragment }</li>
+<li>O Que é um Vetor? { .fragment }</li>
+<li>Simulando a Memória { .fragment }</li>
+<li>Declarando e Acessando { .fragment }</li>
+<li>Percorrendo Vetores (Loop Para) { .fragment }</li>
+<li>Ordenação (Bubble Sort) { .fragment }</li>
 </ol>
 <hr>
 <h2 id="1-o-problema">1. O Problema 😫</h2>
 <p>Imagine guardar a nota de 50 alunos.</p>
 <ul>
-<li><code>nota1</code>, <code>nota2</code>, <code>nota3</code>... <code>nota50</code>.</li>
-<li>E para calcular a média?<ul>
-<li><code>(nota1 + nota2 + ... + nota50) / 50</code></li>
+<li><code>nota1</code>, <code>nota2</code>, <code>nota3</code>... <code>nota50</code>. { .fragment }</li>
+<li>E para calcular a média? { .fragment }<ul>
+<li><code>(nota1 + nota2 + ... + nota50) / 50</code> { .fragment }</li>
 </ul>
 </li>
-<li><strong>Caos Total!</strong> Código gigante e difícil de manter.</li>
+<li><strong>Caos Total!</strong> Código gigante e difícil de manter. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="2-a-solucao-vetores-arrays">2. A Solução: Vetores (Arrays) 📏</h2>
 <ul>
-<li>Uma variável "comprida".</li>
-<li>Guarda <strong>muitos valores</strong> do <strong>mesmo tipo</strong>.</li>
-<li>Cada valor tem um endereço (<strong>Índice</strong>).</li>
-<li>Como uma planilha do Excel de uma linha só.</li>
+<li>Uma variável "comprida". { .fragment }</li>
+<li>Guarda <strong>muitos valores</strong> do <strong>mesmo tipo</strong>. { .fragment }</li>
+<li>Cada valor tem um endereço (<strong>Índice</strong>). { .fragment }</li>
+<li>Como uma planilha do Excel de uma linha só. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="visualizando-a-memoria">Visualizando a Memória</h3>
@@ -4598,10 +4598,10 @@
 <hr>
 <h2 id="indice-index">Índice (Index) 🔢</h2>
 <ul>
-<li>É o endereço da gaveta.</li>
-<li>Começa no <strong>0</strong> (na maioria das linguagens).</li>
-<li><code>notas[0]</code> é a primeira nota.</li>
-<li><code>notas[49]</code> é a 50ª nota.</li>
+<li>É o endereço da gaveta. { .fragment }</li>
+<li>Começa no <strong>0</strong> (na maioria das linguagens). { .fragment }</li>
+<li><code>notas[0]</code> é a primeira nota. { .fragment }</li>
+<li><code>notas[49]</code> é a 50ª nota. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="3-declarando-um-vetor">3. Declarando um Vetor 📝</h2>
@@ -4655,8 +4655,8 @@ Usamos um <strong>Acumulador</strong>.</p>
 <p>E se quisermos colocar em ordem crescente?
 Existem algoritmos famosos para isso. O mais simples é o <strong>Bolha</strong>.</p>
 <ul>
-<li>Ideia: O maior valor "flutua" para o final.</li>
-<li>Compara pares de vizinhos.</li>
+<li>Ideia: O maior valor "flutua" para o final. { .fragment }</li>
+<li>Compara pares de vizinhos. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="o-algoritmo-da-troca">O Algoritmo da Troca 🔄</h3>
@@ -4671,21 +4671,21 @@ Existem algoritmos famosos para isso. O mais simples é o <strong>Bolha</strong>
 <h3 id="exemplo-visual">Exemplo Visual 🛁</h3>
 <p>Vetor: <code>[5, 1, 4]</code></p>
 <ol>
-<li>Compara 5 e 1. 5 &gt; 1? Sim. Troca. -&gt; <code>[1, 5, 4]</code></li>
-<li>Compara 5 e 4. 5 &gt; 4? Sim. Troca. -&gt; <code>[1, 4, 5]</code></li>
-<li>Pronto! O 5 (maior) foi pro final.</li>
+<li>Compara 5 e 1. 5 &gt; 1? Sim. Troca. -&gt; <code>[1, 5, 4]</code> { .fragment }</li>
+<li>Compara 5 e 4. 5 &gt; 4? Sim. Troca. -&gt; <code>[1, 4, 5]</code> { .fragment }</li>
+<li>Pronto! O 5 (maior) foi pro final. { .fragment }</li>
 </ol>
 <hr>
 <h2 id="7-erros-comuns">7. Erros Comuns ⚠️</h2>
 <ol>
-<li><strong>Estourar o Vetor</strong>:<ul>
-<li>Tentar acessar <code>notas[5]</code> num vetor de 0..4.</li>
-<li>O programa trava (Index Out Of Bounds).</li>
+<li><strong>Estourar o Vetor</strong>: { .fragment }<ul>
+<li>Tentar acessar <code>notas[5]</code> num vetor de 0..4. { .fragment }</li>
+<li>O programa trava (Index Out Of Bounds). { .fragment }</li>
 </ul>
 </li>
-<li><strong>Confundir Índice com Valor</strong>:<ul>
-<li><code>i</code> é a posição.</li>
-<li><code>vet[i]</code> é o valor naquela posição.</li>
+<li><strong>Confundir Índice com Valor</strong>: { .fragment }<ul>
+<li><code>i</code> é a posição. { .fragment }</li>
+<li><code>vet[i]</code> é o valor naquela posição. { .fragment }</li>
 </ul>
 </li>
 </ol>
@@ -4693,27 +4693,27 @@ Existem algoritmos famosos para isso. O mais simples é o <strong>Bolha</strong>
 <h2 id="exercicio-rapido">Exercício Rápido ⚡</h2>
 <p><strong>Invertendo a Ordem</strong></p>
 <ol>
-<li>Leia 5 nomes.</li>
-<li>Guarde num vetor.</li>
-<li>Mostre do <strong>último para o primeiro</strong>.<ul>
-<li>Dica: <code>para i de 4 ate 0 passo -1</code>.</li>
+<li>Leia 5 nomes. { .fragment }</li>
+<li>Guarde num vetor. { .fragment }</li>
+<li>Mostre do <strong>último para o primeiro</strong>. { .fragment }<ul>
+<li>Dica: <code>para i de 4 ate 0 passo -1</code>. { .fragment }</li>
 </ul>
 </li>
 </ol>
 <hr>
 <h2 id="resumo">Resumo ✅</h2>
 <ul>
-<li>Vetor = Variável composta.</li>
-<li>Índice começa em 0.</li>
-<li>Loop <code>Para</code> é o melhor amigo do Vetor.</li>
-<li>Ordenação organiza os dados.</li>
+<li>Vetor = Variável composta. { .fragment }</li>
+<li>Índice começa em 0. { .fragment }</li>
+<li>Loop <code>Para</code> é o melhor amigo do Vetor. { .fragment }</li>
+<li>Ordenação organiza os dados. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>E se precisarmos de linhas E colunas?</li>
-<li>Planilhas, Tabuleiros, Jogos.</li>
-<li><strong>Matrizes</strong> (Vetores Bidimensionais).</li>
+<li>E se precisarmos de linhas E colunas? { .fragment }</li>
+<li>Planilhas, Tabuleiros, Jogos. { .fragment }</li>
+<li><strong>Matrizes</strong> (Vetores Bidimensionais). { .fragment }</li>
 </ul>
 <p>👉 <strong>Tarefa</strong>: Fazer o exercício "Rei da Montanha" (Achar o maior valor)!</p>
 

@@ -4416,27 +4416,27 @@
 <hr>
 <h2 id="agenda">Agenda 📅</h2>
 <ol>
-<li>O Mundo em 2D</li>
-<li>O Que é uma Matriz?</li>
-<li>Coordenadas (Linha x Coluna)</li>
-<li>Percorrendo Matrizes</li>
-<li>Aplicações Práticas</li>
+<li>O Mundo em 2D { .fragment }</li>
+<li>O Que é uma Matriz? { .fragment }</li>
+<li>Coordenadas (Linha x Coluna) { .fragment }</li>
+<li>Percorrendo Matrizes { .fragment }</li>
+<li>Aplicações Práticas { .fragment }</li>
 </ol>
 <hr>
 <h2 id="1-o-mundo-em-2d">1. O Mundo em 2D 🗺️</h2>
 <p>Nem tudo cabe numa lista (Vetor).</p>
 <ul>
-<li>Uma sala de cinema.</li>
-<li>Um tabuleiro de xadrez.</li>
-<li>Uma planilha do Excel.</li>
-<li>Precisamos de <strong>2 Dimensões</strong>: Altura e Largura.</li>
+<li>Uma sala de cinema. { .fragment }</li>
+<li>Um tabuleiro de xadrez. { .fragment }</li>
+<li>Uma planilha do Excel. { .fragment }</li>
+<li>Precisamos de <strong>2 Dimensões</strong>: Altura e Largura. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="2-o-que-e-uma-matriz">2. O Que é uma Matriz? 🏗️</h2>
 <ul>
-<li>É um <strong>"Vetor de Vetores"</strong>.</li>
-<li>Tem Linhas (Horizontais) e Colunas (Verticais).</li>
-<li>Cada "casinha" tem um endereço duplo.</li>
+<li>É um <strong>"Vetor de Vetores"</strong>. { .fragment }</li>
+<li>Tem Linhas (Horizontais) e Colunas (Verticais). { .fragment }</li>
+<li>Cada "casinha" tem um endereço duplo. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="visualizando-uma-matriz">Visualizando uma Matriz</h3>
@@ -4452,8 +4452,8 @@
 <p>Assim como na Batalha Naval: <code>B4</code>, <code>A1</code>.
 Na programação, usamos índices numéricos.</p>
 <ul>
-<li><code>matriz[LINHA][COLUNA]</code></li>
-<li>Sempre <strong>LINHA primeiro</strong>, depois COLUNA.</li>
+<li><code>matriz[LINHA][COLUNA]</code> { .fragment }</li>
+<li>Sempre <strong>LINHA primeiro</strong>, depois COLUNA. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="sintaxe-visualg">Sintaxe VisualG</h3>
@@ -4471,8 +4471,8 @@ Na programação, usamos índices numéricos.</p>
 <h2 id="4-percorrendo-uma-matriz">4. Percorrendo uma Matriz 🔄🔄</h2>
 <p>Se um vetor precisa de 1 loop, a matriz precisa de <strong>2 Loops Aninhados</strong>.</p>
 <ol>
-<li>O primeiro trava a <strong>Linha</strong>.</li>
-<li>O segundo percorre todas as <strong>Colunas</strong> daquela linha.</li>
+<li>O primeiro trava a <strong>Linha</strong>. { .fragment }</li>
+<li>O segundo percorre todas as <strong>Colunas</strong> daquela linha. { .fragment }</li>
 </ol>
 <hr>
 <h3 id="o-codigo-padrao">O Código Padrão</h3>
@@ -4486,17 +4486,17 @@ Na programação, usamos índices numéricos.</p>
 <hr>
 <h3 id="visualizando-a-execucao">Visualizando a Execução</h3>
 <ol>
-<li><code>i=0, j=0</code> -&gt; [0,0]</li>
-<li><code>i=0, j=1</code> -&gt; [0,1]</li>
-<li><code>i=0, j=2</code> -&gt; [0,2] -&gt; Fim das Colunas.</li>
-<li><code>i=1, j=0</code> -&gt; [1,0] -&gt; Nova Linha!</li>
+<li><code>i=0, j=0</code> -&gt; [0,0] { .fragment }</li>
+<li><code>i=0, j=1</code> -&gt; [0,1] { .fragment }</li>
+<li><code>i=0, j=2</code> -&gt; [0,2] -&gt; Fim das Colunas. { .fragment }</li>
+<li><code>i=1, j=0</code> -&gt; [1,0] -&gt; Nova Linha! { .fragment }</li>
 </ol>
 <hr>
 <h2 id="5-matriz-identidade">5. Matriz Identidade 🆔</h2>
 <p>Um clássico da matemática.
 Diagonal Principal = 1. Resto = 0.</p>
 <ul>
-<li>A Diagonal Principal acontece quando <code>i == j</code> (0,0; 1,1; 2,2).</li>
+<li>A Diagonal Principal acontece quando <code>i == j</code> (0,0; 1,1; 2,2). { .fragment }</li>
 </ul>
 <div class="language-portugol highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">se</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="k">entao</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">   </span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">1</span>
@@ -4508,34 +4508,34 @@ Diagonal Principal = 1. Resto = 0.</p>
 <h2 id="6-aplicacoes-reais">6. Aplicações Reais 🌍</h2>
 <p>Onde usamos isso?</p>
 <ol>
-<li><strong>Imagens</strong>: Cada pixel é uma célula com cor (RGB).</li>
-<li><strong>Jogos</strong>: O mapa do jogo (Tilemap).</li>
-<li><strong>Gráficos 3D</strong>: Matrizes de transformação.</li>
+<li><strong>Imagens</strong>: Cada pixel é uma célula com cor (RGB). { .fragment }</li>
+<li><strong>Jogos</strong>: O mapa do jogo (Tilemap). { .fragment }</li>
+<li><strong>Gráficos 3D</strong>: Matrizes de transformação. { .fragment }</li>
 </ol>
 <hr>
 <h2 id="exercicio-rapido">Exercício Rápido ⚡</h2>
 <p><strong>Soma Total</strong></p>
 <ol>
-<li>Crie uma matriz 2x2.</li>
-<li>Preencha com números.</li>
-<li>Use dois loops para somar TUDO.</li>
-<li>Mostre o total.</li>
+<li>Crie uma matriz 2x2. { .fragment }</li>
+<li>Preencha com números. { .fragment }</li>
+<li>Use dois loops para somar TUDO. { .fragment }</li>
+<li>Mostre o total. { .fragment }</li>
 </ol>
 <hr>
 <h2 id="resumo">Resumo ✅</h2>
 <ul>
-<li>Matriz = Linhas x Colunas.</li>
-<li>Declaração: <code>vetor [L..L, C..C]</code>.</li>
-<li>Acesso: <code>mat[linha][coluna]</code>.</li>
-<li>Percorrer: 2 loops <code>Para</code>.</li>
+<li>Matriz = Linhas x Colunas. { .fragment }</li>
+<li>Declaração: <code>vetor [L..L, C..C]</code>. { .fragment }</li>
+<li>Acesso: <code>mat[linha][coluna]</code>. { .fragment }</li>
+<li>Percorrer: 2 loops <code>Para</code>. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>Nossos códigos estão ficando grandes...</li>
-<li>Como organizar?</li>
-<li><strong>Modularização</strong>: Dividir para Conquistar.</li>
-<li>Funções e Procedimentos.</li>
+<li>Nossos códigos estão ficando grandes... { .fragment }</li>
+<li>Como organizar? { .fragment }</li>
+<li><strong>Modularização</strong>: Dividir para Conquistar. { .fragment }</li>
+<li>Funções e Procedimentos. { .fragment }</li>
 </ul>
 <p>👉 <strong>Tarefa</strong>: Jogue Batalha Naval (no papel ou no código)!</p>
 

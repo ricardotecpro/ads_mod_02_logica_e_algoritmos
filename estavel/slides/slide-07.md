@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  O Mundo em 2D
-2.  O Que é uma Matriz?
-3.  Coordenadas (Linha x Coluna)
-4.  Percorrendo Matrizes
-5.  Aplicações Práticas
+1.  O Mundo em 2D { .fragment }
+2.  O Que é uma Matriz? { .fragment }
+3.  Coordenadas (Linha x Coluna) { .fragment }
+4.  Percorrendo Matrizes { .fragment }
+5.  Aplicações Práticas { .fragment }
 
 ---
 
@@ -16,18 +16,18 @@
 
 Nem tudo cabe numa lista (Vetor).
 
-- Uma sala de cinema.
-- Um tabuleiro de xadrez.
-- Uma planilha do Excel.
-- Precisamos de **2 Dimensões**: Altura e Largura.
+- Uma sala de cinema. { .fragment }
+- Um tabuleiro de xadrez. { .fragment }
+- Uma planilha do Excel. { .fragment }
+- Precisamos de **2 Dimensões**: Altura e Largura. { .fragment }
 
 ---
 
 ## 2. O Que é uma Matriz? 🏗️
 
-- É um **"Vetor de Vetores"**.
-- Tem Linhas (Horizontais) e Colunas (Verticais).
-- Cada "casinha" tem um endereço duplo.
+- É um **"Vetor de Vetores"**. { .fragment }
+- Tem Linhas (Horizontais) e Colunas (Verticais). { .fragment }
+- Cada "casinha" tem um endereço duplo. { .fragment }
 
 ---
 
@@ -50,8 +50,8 @@ graph TD;
 Assim como na Batalha Naval: `B4`, `A1`.
 Na programação, usamos índices numéricos.
 
-- `matriz[LINHA][COLUNA]`
-- Sempre **LINHA primeiro**, depois COLUNA.
+- `matriz[LINHA][COLUNA]` { .fragment }
+- Sempre **LINHA primeiro**, depois COLUNA. { .fragment }
 
 ---
 
@@ -75,8 +75,8 @@ Inicio
 
 Se um vetor precisa de 1 loop, a matriz precisa de **2 Loops Aninhados**.
 
-1.  O primeiro trava a **Linha**.
-2.  O segundo percorre todas as **Colunas** daquela linha.
+1.  O primeiro trava a **Linha**. { .fragment }
+2.  O segundo percorre todas as **Colunas** daquela linha. { .fragment }
 
 ---
 
@@ -95,10 +95,10 @@ fimpara
 
 ### Visualizando a Execução
 
-1.  `i=0, j=0` -> [0,0]
-2.  `i=0, j=1` -> [0,1]
-3.  `i=0, j=2` -> [0,2] -> Fim das Colunas.
-4.  `i=1, j=0` -> [1,0] -> Nova Linha!
+1.  `i=0, j=0` -> [0,0] { .fragment }
+2.  `i=0, j=1` -> [0,1] { .fragment }
+3.  `i=0, j=2` -> [0,2] -> Fim das Colunas. { .fragment }
+4.  `i=1, j=0` -> [1,0] -> Nova Linha! { .fragment }
 
 ---
 
@@ -107,7 +107,7 @@ fimpara
 Um clássico da matemática.
 Diagonal Principal = 1. Resto = 0.
 
-- A Diagonal Principal acontece quando `i == j` (0,0; 1,1; 2,2).
+- A Diagonal Principal acontece quando `i == j` (0,0; 1,1; 2,2). { .fragment }
 
 ```portugol
 se (i == j) entao
@@ -123,9 +123,9 @@ fimse
 
 Onde usamos isso?
 
-1.  **Imagens**: Cada pixel é uma célula com cor (RGB).
-2.  **Jogos**: O mapa do jogo (Tilemap).
-3.  **Gráficos 3D**: Matrizes de transformação.
+1.  **Imagens**: Cada pixel é uma célula com cor (RGB). { .fragment }
+2.  **Jogos**: O mapa do jogo (Tilemap). { .fragment }
+3.  **Gráficos 3D**: Matrizes de transformação. { .fragment }
 
 ---
 
@@ -133,27 +133,27 @@ Onde usamos isso?
 
 **Soma Total**
 
-1.  Crie uma matriz 2x2.
-2.  Preencha com números.
-3.  Use dois loops para somar TUDO.
-4.  Mostre o total.
+1.  Crie uma matriz 2x2. { .fragment }
+2.  Preencha com números. { .fragment }
+3.  Use dois loops para somar TUDO. { .fragment }
+4.  Mostre o total. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- Matriz = Linhas x Colunas.
-- Declaração: `vetor [L..L, C..C]`.
-- Acesso: `mat[linha][coluna]`.
-- Percorrer: 2 loops `Para`.
+- Matriz = Linhas x Colunas. { .fragment }
+- Declaração: `vetor [L..L, C..C]`. { .fragment }
+- Acesso: `mat[linha][coluna]`. { .fragment }
+- Percorrer: 2 loops `Para`. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Nossos códigos estão ficando grandes...
-- Como organizar?
-- **Modularização**: Dividir para Conquistar.
-- Funções e Procedimentos.
+- Nossos códigos estão ficando grandes... { .fragment }
+- Como organizar? { .fragment }
+- **Modularização**: Dividir para Conquistar. { .fragment }
+- Funções e Procedimentos. { .fragment }
 
 👉 **Tarefa**: Jogue Batalha Naval (no papel ou no código)!

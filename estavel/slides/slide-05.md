@@ -4,12 +4,12 @@
 
 ## Agenda 📅
 
-1.  O Poder da Repetição (Loops)
-2.  Estrutura Enquanto (While)
-3.  Estrutura Repita (Do-While)
-4.  Estrutura Para (For)
-5.  Controle de Fluxo (Interrompa)
-6.  Teste de Mesa
+1.  O Poder da Repetição (Loops) { .fragment }
+2.  Estrutura Enquanto (While) { .fragment }
+3.  Estrutura Repita (Do-While) { .fragment }
+4.  Estrutura Para (For) { .fragment }
+5.  Controle de Fluxo (Interrompa) { .fragment }
+6.  Teste de Mesa { .fragment }
 
 ---
 
@@ -17,16 +17,16 @@
 
 Imagine escrever "Eu não vou jogar bolinha de papel" 100 vezes no quadro.
 
-- **Humano**: Cansa, erra, demora.
-- **Computador**: Faz em 1 milissegundo.
+- **Humano**: Cansa, erra, demora. { .fragment }
+- **Computador**: Faz em 1 milissegundo. { .fragment }
 
 ---
 
 ### O Loop (Laço) ♾️
 
-- Executa um bloco de código **enquanto** uma condição for verdadeira.
-- Automatiza tarefas repetitivas.
-- Economiza linhas de código.
+- Executa um bloco de código **enquanto** uma condição for verdadeira. { .fragment }
+- Automatiza tarefas repetitivas. { .fragment }
+- Economiza linhas de código. { .fragment }
 
 ---
 
@@ -45,9 +45,9 @@ graph TD;
 
 ## 2. Enquanto (While) ⏳
 
-- O mais comum.
-- Testa a condição **ANTES** de entrar.
-- Se a condição for falsa de cara, ele nunca executa.
+- O mais comum. { .fragment }
+- Testa a condição **ANTES** de entrar. { .fragment }
+- Se a condição for falsa de cara, ele nunca executa. { .fragment }
 
 ---
 
@@ -77,9 +77,9 @@ fimenquanto
 
 ## 3. Repita-Até (Do-While) 🛡️
 
-- Testa a condição no **FINAL**.
-- Executa **pelo menos uma vez**.
-- Ótimo para menus ou validação.
+- Testa a condição no **FINAL**. { .fragment }
+- Executa **pelo menos uma vez**. { .fragment }
+- Ótimo para menus ou validação. { .fragment }
 
 ---
 
@@ -108,11 +108,11 @@ ate (senha == "1234")
 
 ## 4. Para (For) 🎯
 
-- Quando sabemos **exatamente** quantas vezes repetir.
-- Agrupa tudo numa linha só:
-    1.  **Início** (Onde começa)
-    2.  **Fim** (Onde termina)
-    3.  **Passo** (De quanto em quanto)
+- Quando sabemos **exatamente** quantas vezes repetir. { .fragment }
+- Agrupa tudo numa linha só: { .fragment }
+    1.  **Início** (Onde começa) { .fragment }
+    2.  **Fim** (Onde termina) { .fragment }
+    3.  **Passo** (De quanto em quanto) { .fragment }
 
 ---
 
@@ -124,10 +124,10 @@ para i de 1 ate 10 passo 1 faca
 fimpara
 ```
 
-- **i**: Variável contadora.
-- **1**: Valor inicial.
-- **10**: Valor final.
-- **1**: Incremento.
+- **i**: Variável contadora. { .fragment }
+- **1**: Valor inicial. { .fragment }
+- **10**: Valor final. { .fragment }
+- **1**: Incremento. { .fragment }
 
 ---
 
@@ -144,8 +144,8 @@ escreval("FOGO!")
 
 ## 5. Controle de Fluxo (Interrompa) 🛑
 
-- Sai do loop imediatamente.
-- Útil para parar buscas ou sair de menus.
+- Sai do loop imediatamente. { .fragment }
+- Útil para parar buscas ou sair de menus. { .fragment }
 
 ```visualg
 enquanto (verdadeiro) faca
@@ -161,9 +161,9 @@ fimenquanto
 
 Como debugar mentalmente?
 
-1.  Crie uma tabela com as variáveis.
-2.  Simule linha por linha.
-3.  Anote as mudanças.
+1.  Crie uma tabela com as variáveis. { .fragment }
+2.  Simule linha por linha. { .fragment }
+3.  Anote as mudanças. { .fragment }
 
 | Passo | i | Saída |
 | :--- | :--- | :--- |
@@ -188,24 +188,24 @@ Como debugar mentalmente?
 
 **Tabuada do 7**
 
-1.  Use um `para`.
-2.  De 1 até 10.
-3.  Mostre `7 x i = resultado`.
+1.  Use um `para`. { .fragment }
+2.  De 1 até 10. { .fragment }
+3.  Mostre `7 x i = resultado`. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- **Loops** economizam tempo.
-- **Cuidado** com Loops Infinitos.
-- Escolha a estrutura certa para o problema.
+- **Loops** economizam tempo. { .fragment }
+- **Cuidado** com Loops Infinitos. { .fragment }
+- Escolha a estrutura certa para o problema. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- E para guardar 50 notas de alunos?
-- Criar 50 variáveis? `n1, n2, n3...`? 😫
-- **Vetores (Arrays)**: A solução elegante.
+- E para guardar 50 notas de alunos? { .fragment }
+- Criar 50 variáveis? `n1, n2, n3...`? 😫 { .fragment }
+- **Vetores (Arrays)**: A solução elegante. { .fragment }
 
 👉 **Tarefa**: Fazer a Tabuada e o Primo!

@@ -4416,26 +4416,26 @@
 <hr>
 <h2 id="agenda">Agenda 📅</h2>
 <ol>
-<li>O Mundo dos Objetos</li>
-<li>Classes vs Objetos</li>
-<li>Java e a JVM</li>
-<li>Os 3 Pilares da OO</li>
-<li>Spring Boot (Java Moderno)</li>
+<li>O Mundo dos Objetos { .fragment }</li>
+<li>Classes vs Objetos { .fragment }</li>
+<li>Java e a JVM { .fragment }</li>
+<li>Os 3 Pilares da OO { .fragment }</li>
+<li>Spring Boot (Java Moderno) { .fragment }</li>
 </ol>
 <hr>
 <h2 id="1-o-mundo-orientado-a-objetos">1. O Mundo Orientado a Objetos 🌍</h2>
 <p>Até agora, programamos <strong>Ações</strong> (Funções).
 Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <ul>
-<li><strong>Estruturada</strong>: Verbo (Fazer algo).</li>
-<li><strong>OO</strong>: Substantivo (Algo que faz).</li>
+<li><strong>Estruturada</strong>: Verbo (Fazer algo). { .fragment }</li>
+<li><strong>OO</strong>: Substantivo (Algo que faz). { .fragment }</li>
 </ul>
 <hr>
 <h2 id="2-classe-vs-objeto">2. Classe vs Objeto 🏗️</h2>
 <p>A distinção mais importante.</p>
 <ul>
-<li><strong>Classe</strong>: O Molde. A Planta. A Ideia. (Abstrato).</li>
-<li><strong>Objeto</strong>: A Instância. A Casa. A Coisa Real. (Concreto).</li>
+<li><strong>Classe</strong>: O Molde. A Planta. A Ideia. (Abstrato). { .fragment }</li>
+<li><strong>Objeto</strong>: A Instância. A Casa. A Coisa Real. (Concreto). { .fragment }</li>
 </ul>
 <hr>
 <h3 id="visualizando-mermaid">Visualizando (Mermaid)</h3>
@@ -4450,24 +4450,24 @@ Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <h2 id="3-java-e-a-jvm">3. Java e a JVM ♻️</h2>
 <p>"Write Once, Run Anywhere" (Escreva uma vez, rode em qualquer lugar).</p>
 <ul>
-<li>O Java não compila para Binário direto.</li>
-<li>Ele compila para <strong>Bytecode</strong> (<code>.class</code>).</li>
-<li>A <strong>JVM</strong> (Máquina Virtual Java) roda esse Bytecode em qualquer sistema (Windows, Linux, Android, Geladeira).</li>
+<li>O Java não compila para Binário direto. { .fragment }</li>
+<li>Ele compila para <strong>Bytecode</strong> (<code>.class</code>). { .fragment }</li>
+<li>A <strong>JVM</strong> (Máquina Virtual Java) roda esse Bytecode em qualquer sistema (Windows, Linux, Android, Geladeira). { .fragment }</li>
 </ul>
 <hr>
 <h2 id="4-os-3-pilares-da-oo">4. Os 3 Pilares da OO 🏛️</h2>
 <ol>
-<li>Encapsulamento</li>
-<li>Herança</li>
-<li>Polimorfismo</li>
+<li>Encapsulamento { .fragment }</li>
+<li>Herança { .fragment }</li>
+<li>Polimorfismo { .fragment }</li>
 </ol>
 <hr>
 <h3 id="encapsulamento">Encapsulamento 🛡️</h3>
 <p>Proteger os dados. Ninguém mexe no cofre do banco direto.</p>
 <ul>
-<li><strong>Private</strong>: Só a classe vê.</li>
-<li><strong>Public</strong>: Todo mundo vê.</li>
-<li><strong>Getters/Setters</strong>: Porteiros que controlam o acesso.</li>
+<li><strong>Private</strong>: Só a classe vê. { .fragment }</li>
+<li><strong>Public</strong>: Todo mundo vê. { .fragment }</li>
+<li><strong>Getters/Setters</strong>: Porteiros que controlam o acesso. { .fragment }</li>
 </ul>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">saldo</span><span class="p">;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
@@ -4479,9 +4479,9 @@ Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <h3 id="heranca">Herança 🧬</h3>
 <p>Reaproveitar código.</p>
 <ul>
-<li><code>Cachorro</code> <strong>é um</strong> <code>Animal</code>.</li>
-<li><code>Gato</code> <strong>é um</strong> <code>Animal</code>.</li>
-<li>Tudo que <code>Animal</code> tem, eles herdam (nome, idade).</li>
+<li><code>Cachorro</code> <strong>é um</strong> <code>Animal</code>. { .fragment }</li>
+<li><code>Gato</code> <strong>é um</strong> <code>Animal</code>. { .fragment }</li>
+<li>Tudo que <code>Animal</code> tem, eles herdam (nome, idade). { .fragment }</li>
 </ul>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Cachorro</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
@@ -4489,18 +4489,18 @@ Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <h3 id="polimorfismo">Polimorfismo 🎭</h3>
 <p>Muitas formas.</p>
 <ul>
-<li>O método <code>fazerSom()</code> existe em Animal.</li>
-<li>No Cachorro, ele faz "Au Au".</li>
-<li>No Gato, ele faz "Miau".</li>
-<li>O mesmo método se comporta diferente.</li>
+<li>O método <code>fazerSom()</code> existe em Animal. { .fragment }</li>
+<li>No Cachorro, ele faz "Au Au". { .fragment }</li>
+<li>No Gato, ele faz "Miau". { .fragment }</li>
+<li>O mesmo método se comporta diferente. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="5-spring-boot">5. Spring Boot 🍃</h2>
 <p>Java não é só "tela preta".
 É a linguagem nº 1 em Bancos e Grandes Empresas.</p>
 <ul>
-<li><strong>Spring Boot</strong>: Framework para criar APIs Web.</li>
-<li>Tira toda a configuração chata.</li>
+<li><strong>Spring Boot</strong>: Framework para criar APIs Web. { .fragment }</li>
+<li>Tira toda a configuração chata. { .fragment }</li>
 </ul>
 <hr>
 <h3 id="exemplo-de-api">Exemplo de API</h3>
@@ -4517,26 +4517,26 @@ Mas o mundo é feito de <strong>Coisas</strong> (Objetos).</p>
 <h2 id="exercicio-mental">Exercício Mental 🧠</h2>
 <p>Modele um sistema de <strong>Venda</strong>.</p>
 <ul>
-<li>Classes: <code>Produto</code>, <code>Cliente</code>, <code>Venda</code>.</li>
-<li>Atributos: <code>Preco</code>, <code>Nome</code>.</li>
-<li>Métodos: <code>CalcularTotal()</code>, <code>Pagar()</code>.</li>
+<li>Classes: <code>Produto</code>, <code>Cliente</code>, <code>Venda</code>. { .fragment }</li>
+<li>Atributos: <code>Preco</code>, <code>Nome</code>. { .fragment }</li>
+<li>Métodos: <code>CalcularTotal()</code>, <code>Pagar()</code>. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="resumo">Resumo ✅</h2>
 <ul>
-<li><strong>Classe</strong> é molde, <strong>Objeto</strong> é real.</li>
-<li><strong>JVM</strong> garante portabilidade.</li>
-<li><strong>Encapsulamento</strong> protege.</li>
-<li><strong>Herança</strong> reutiliza.</li>
-<li><strong>Polimorfismo</strong> flexibiliza.</li>
+<li><strong>Classe</strong> é molde, <strong>Objeto</strong> é real. { .fragment }</li>
+<li><strong>JVM</strong> garante portabilidade. { .fragment }</li>
+<li><strong>Encapsulamento</strong> protege. { .fragment }</li>
+<li><strong>Herança</strong> reutiliza. { .fragment }</li>
+<li><strong>Polimorfismo</strong> flexibiliza. { .fragment }</li>
 </ul>
 <hr>
 <h2 id="proxima-aula">Próxima Aula 🚀</h2>
 <ul>
-<li>O concorrente direto do Java.</li>
-<li>Criado pela Microsoft.</li>
-<li><strong>C# e plataforma .NET</strong>.</li>
-<li>Foco em produtividade.</li>
+<li>O concorrente direto do Java. { .fragment }</li>
+<li>Criado pela Microsoft. { .fragment }</li>
+<li><strong>C# e plataforma .NET</strong>. { .fragment }</li>
+<li>Foco em produtividade. { .fragment }</li>
 </ul>
 <p>👉 <strong>Tarefa</strong>: Instalar o JDK (Java Development Kit) e o VS Code Extension Pack for Java!</p>
 

@@ -4,19 +4,19 @@
 
 ## Agenda 📅
 
-1.  Variáveis (Revisão)
-2.  Tipos de Dados
-3.  Entrada e Saída
-4.  Operadores Aritméticos
-5.  Atribuição
+1.  Variáveis (Revisão) { .fragment }
+2.  Tipos de Dados { .fragment }
+3.  Entrada e Saída { .fragment }
+4.  Operadores Aritméticos { .fragment }
+5.  Atribuição { .fragment }
 
 ---
 
 ## 1. Variáveis: Caixas da Memória 📦
 
-- Computador tem memória (RAM).
-- **Variável**: Um pedaço nomeado dessa memória.
-- Guardam **um valor** por vez.
+- Computador tem memória (RAM). { .fragment }
+- **Variável**: Um pedaço nomeado dessa memória. { .fragment }
+- Guardam **um valor** por vez. { .fragment }
 
 ---
 
@@ -36,10 +36,10 @@ graph TD;
 
 Nem tudo cabe na mesma caixa.
 
-1.  **Inteiro**: Números sem vírgula (10, -5).
-2.  **Real**: Números com vírgula (10.5, 3.14).
-3.  **Caractere**: Texto ("Olá", "A").
-4.  **Lógico**: Verdadeiro ou Falso.
+1.  **Inteiro**: Números sem vírgula (10, -5). { .fragment }
+2.  **Real**: Números com vírgula (10.5, 3.14). { .fragment }
+3.  **Caractere**: Texto ("Olá", "A"). { .fragment }
+4.  **Lógico**: Verdadeiro ou Falso. { .fragment }
 
 ---
 
@@ -60,16 +60,16 @@ Inicio
 
 Como o programa fala com o usuário?
 
-- **Entrada**: Dados que entram (Teclado).
-- **Saída**: Dados que saem (Tela).
+- **Entrada**: Dados que entram (Teclado). { .fragment }
+- **Saída**: Dados que saem (Tela). { .fragment }
 
 ---
 
 ### Comando: ESCREVA (Saída) 📤
 
-- Mostra texto na tela.
-- `escreva` (na mesma linha).
-- `escreval` (pula linha).
+- Mostra texto na tela. { .fragment }
+- `escreva` (na mesma linha). { .fragment }
+- `escreval` (pula linha). { .fragment }
 
 ```visualg
 escreval("Olá Mundo")
@@ -80,8 +80,8 @@ escreva("Tudo bem?")
 
 ### Comando: LEIA (Entrada) 📥
 
-- Pára o programa e espera o usuário digitar.
-- Guarda o que foi digitado numa variável.
+- Pára o programa e espera o usuário digitar. { .fragment }
+- Guarda o que foi digitado numa variável. { .fragment }
 
 ```visualg
 escreva("Qual seu nome?")
@@ -92,9 +92,9 @@ leia(nome)
 
 ## 4. Atribuição (`<-`) ⬅️
 
-- Colocar um valor dentro da variável.
-- Lê-se: "Recebe".
-- A seta sempre aponta para a esquerda (para a variável).
+- Colocar um valor dentro da variável. { .fragment }
+- Lê-se: "Recebe". { .fragment }
+- A seta sempre aponta para a esquerda (para a variável). { .fragment }
 
 ```visualg
 media <- (n1 + n2) / 2
@@ -118,11 +118,11 @@ O computador é uma calculadora gigante.
 
 ### Operadores Especiais ✨
 
-- **Módulo (`%`)**: Resto da divisão.
-    - `5 % 2 = 1` (Sobrou 1).
-    - Útil para saber se é Par ou Ímpar.
-- **Potência (`^`)**: Elevar ao quadrado/cubo.
-    - `2 ^ 3 = 8`.
+- **Módulo (`%`)**: Resto da divisão. { .fragment }
+    - `5 % 2 = 1` (Sobrou 1). { .fragment }
+    - Útil para saber se é Par ou Ímpar. { .fragment }
+- **Potência (`^`)**: Elevar ao quadrado/cubo. { .fragment }
+    - `2 ^ 3 = 8`. { .fragment }
 
 ---
 
@@ -130,10 +130,10 @@ O computador é uma calculadora gigante.
 
 Matemática básica!
 
-1.  Parênteses `( )`
-2.  Potência `^`
-3.  Multiplicação e Divisão `* /`
-4.  Soma e Subtração `+ -`
+1.  Parênteses `( )` { .fragment }
+2.  Potência `^` { .fragment }
+3.  Multiplicação e Divisão `* /` { .fragment }
+4.  Soma e Subtração `+ -` { .fragment }
 
 > `2 + 3 * 4` = 14 (Não 20!)
 
@@ -186,26 +186,26 @@ Fimalgoritmo
 ## Exercício Rápido ⚡
 
 Faça no VisualG agora:
-1.  Leia dois números.
-2.  Some os dois.
-3.  Mostre o resultado.
+1.  Leia dois números. { .fragment }
+2.  Some os dois. { .fragment }
+3.  Mostre o resultado. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- **Variáveis**: Nome, Tipo e Valor.
-- **Tipos**: Inteiro, Real, Caractere, Lógico.
-- **Entrada**: `leia()`.
-- **Saída**: `escreva()`.
-- **Atribuição**: `<-`.
+- **Variáveis**: Nome, Tipo e Valor. { .fragment }
+- **Tipos**: Inteiro, Real, Caractere, Lógico. { .fragment }
+- **Entrada**: `leia()`. { .fragment }
+- **Saída**: `escreva()`. { .fragment }
+- **Atribuição**: `<-`. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- E se precisarmos tomar **decisões**?
-- O comando `SE`.
-- Estruturas Condicionais.
+- E se precisarmos tomar **decisões**? { .fragment }
+- O comando `SE`. { .fragment }
+- Estruturas Condicionais. { .fragment }
 
 👉 **Tarefa**: Terminar os exercícios da lista 03!

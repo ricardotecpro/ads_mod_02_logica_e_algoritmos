@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  O que é Lógica?
-2.  O Algoritmo
-3.  Pensamento Computacional
-4.  Fluxogramas
-5.  Ferramentas (VisualG)
+1.  O que é Lógica? { .fragment }
+2.  O Algoritmo { .fragment }
+3.  Pensamento Computacional { .fragment }
+4.  Fluxogramas { .fragment }
+5.  Ferramentas (VisualG) { .fragment }
 
 ---
 
@@ -16,47 +16,47 @@
 
 > "A arte de pensar corretamente."
 
-- Organização de ideias.
-- Maneira rigorosa de raciocinar.
-- **Não** é apenas para computadores!
-- Usamos no dia a dia sem perceber.
+- Organização de ideias. { .fragment }
+- Maneira rigorosa de raciocinar. { .fragment }
+- **Não** é apenas para computadores! { .fragment }
+- Usamos no dia a dia sem perceber. { .fragment }
 
 ---
 
 ## Lógica no Dia a Dia ☀️
 
-- Se **chover**, levo guarda-chuva.
-- Se **estiver sol**, vou à praia.
-- Se o **pneu furar**, troco o pneu.
-- **Causa** -> **Efeito**.
+- Se **chover**, levo guarda-chuva. { .fragment }
+- Se **estiver sol**, vou à praia. { .fragment }
+- Se o **pneu furar**, troco o pneu. { .fragment }
+- **Causa** -> **Efeito**. { .fragment }
 
 ---
 
 ## O Computador é BURRO 🤖
 
-- Ele não "pensa".
-- Ele apenas obedece.
-- Se você explicar errado, ele fará errado.
-- **Programar** = Ensinar o computador.
+- Ele não "pensa". { .fragment }
+- Ele apenas obedece. { .fragment }
+- Se você explicar errado, ele fará errado. { .fragment }
+- **Programar** = Ensinar o computador. { .fragment }
 
 ---
 
 ## 2. O Algoritmo 💡
 
-- **Definição**: Sequência de passos finitos e precisos para resolver um problema.
-- **Palavras-chave**:
-    - **Sequência**: A ordem importa.
-    - **Finitos**: Tem que acabar.
-    - **Precisos**: Sem "talvez".
+- **Definição**: Sequência de passos finitos e precisos para resolver um problema. { .fragment }
+- **Palavras-chave**: { .fragment }
+    - **Sequência**: A ordem importa. { .fragment }
+    - **Finitos**: Tem que acabar. { .fragment }
+    - **Precisos**: Sem "talvez". { .fragment }
 
 ---
 
 ## Receita de Bolo 🍰
 
-1.  Quebrar ovos.
-2.  Misturar farinha.
-3.  Assar por 40min.
-4.  Comer.
+1.  Quebrar ovos. { .fragment }
+2.  Misturar farinha. { .fragment }
+3.  Assar por 40min. { .fragment }
+4.  Comer. { .fragment }
 
 *Se você "Comer" antes de "Assar", vai dar dor de barriga! (Ordem importa)*
 
@@ -66,9 +66,9 @@
 
 Todo algoritmo tem 3 fases:
 
-1.  **Entrada** (Ingredientes).
-2.  **Processamento** (Misturar/Assar).
-3.  **Saída** (Bolo pronto).
+1.  **Entrada** (Ingredientes). { .fragment }
+2.  **Processamento** (Misturar/Assar). { .fragment }
+3.  **Saída** (Bolo pronto). { .fragment }
 
 ---
 
@@ -76,48 +76,48 @@ Todo algoritmo tem 3 fases:
 
 Os 4 Superpoderes para resolver problemas complexos.
 
-1.  **Decomposição**
-2.  **Reconhecimento de Padrões**
-3.  **Abstração**
-4.  **Algoritmo**
+1.  **Decomposição** { .fragment }
+2.  **Reconhecimento de Padrões** { .fragment }
+3.  **Abstração** { .fragment }
+4.  **Algoritmo** { .fragment }
 
 ---
 
 ### 3.1 Decomposição 🧱
 
-- Quebrar um problema grande em menores.
-- Exemplo: **Construir uma Casa**.
-    - Fazer fundação.
-    - Levantar paredes.
-    - Colocar telhado.
+- Quebrar um problema grande em menores. { .fragment }
+- Exemplo: **Construir uma Casa**. { .fragment }
+    - Fazer fundação. { .fragment }
+    - Levantar paredes. { .fragment }
+    - Colocar telhado. { .fragment }
 
 ---
 
 ### 3.2 Reconhecimento de Padrões 🔍
 
-- Identificar o que já vimos antes.
-- Exemplo:
-    - Dirigir Carro 🚗
-    - Dirigir Caminhão 🚛
-    - Padrão: Volante, Pedais, Câmbio.
+- Identificar o que já vimos antes. { .fragment }
+- Exemplo: { .fragment }
+    - Dirigir Carro 🚗 { .fragment }
+    - Dirigir Caminhão 🚛 { .fragment }
+    - Padrão: Volante, Pedais, Câmbio. { .fragment }
 
 ---
 
 ### 3.3 Abstração 🌫️
 
-- Focar no essencial.
-- Ignorar detalhes irrelevantes.
-- Exemplo: "Trocar o pneu".
-    - Importa: Chave de roda, Macaco.
-    - Não importa: Marca da borracha, cor do aro.
+- Focar no essencial. { .fragment }
+- Ignorar detalhes irrelevantes. { .fragment }
+- Exemplo: "Trocar o pneu". { .fragment }
+    - Importa: Chave de roda, Macaco. { .fragment }
+    - Não importa: Marca da borracha, cor do aro. { .fragment }
 
 ---
 
 ### 3.4 Algoritmo (Design) 📝
 
-- Escrever o passo a passo final.
-- Juntar tudo o que foi planejado.
-- O plano de execução.
+- Escrever o passo a passo final. { .fragment }
+- Juntar tudo o que foi planejado. { .fragment }
+- O plano de execução. { .fragment }
 
 ---
 
@@ -125,8 +125,8 @@ Os 4 Superpoderes para resolver problemas complexos.
 
 A linguagem universal dos programadores.
 
-- Desenho > Texto.
-- Padronizado mundialmente.
+- Desenho > Texto. { .fragment }
+- Padronizado mundialmente. { .fragment }
 
 ---
 
@@ -158,19 +158,19 @@ graph TD;
 
 ## 5. VisualG e Portugol 💻
 
-- **Portugol**: "Português Estruturado".
-- Uma linguagem feita para **aprender**.
-- Comandos em português.
-- Foco na lógica, não na sintaxe complexa (ainda).
+- **Portugol**: "Português Estruturado". { .fragment }
+- Uma linguagem feita para **aprender**. { .fragment }
+- Comandos em português. { .fragment }
+- Foco na lógica, não na sintaxe complexa (ainda). { .fragment }
 
 ---
 
 ### Ferramenta: VisualG
 
-- Gratuito.
-- Leve.
-- Roda direto no Windows.
-- Mostra a memória do computador.
+- Gratuito. { .fragment }
+- Leve. { .fragment }
+- Roda direto no Windows. { .fragment }
+- Mostra a memória do computador. { .fragment }
 
 ---
 
@@ -192,37 +192,37 @@ FimAlgoritmo
 
 **Desafio do Lobo/Ovelha/Alface**
 
-- Um barqueiro.
-- Lobo come Ovelha.
-- Ovelha come Alface.
-- Barco só leva 1 passageiro extra.
-- Como atravessar todos?
+- Um barqueiro. { .fragment }
+- Lobo come Ovelha. { .fragment }
+- Ovelha come Alface. { .fragment }
+- Barco só leva 1 passageiro extra. { .fragment }
+- Como atravessar todos? { .fragment }
 
 ---
 
 ## Solução (Algoritmo)
 
-1.  Leva Ovelha. Voltou Vazio.
-2.  Leva Lobo. Traz Ovelha.
-3.  Deixa Ovelha. Leva Alface. Voltou Vazio.
-4.  Leva Ovelha.
-5.  FIM.
+1.  Leva Ovelha. Voltou Vazio. { .fragment }
+2.  Leva Lobo. Traz Ovelha. { .fragment }
+3.  Deixa Ovelha. Leva Alface. Voltou Vazio. { .fragment }
+4.  Leva Ovelha. { .fragment }
+5.  FIM. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- Lógica = Pensar certo.
-- Algoritmo = Sequência de passos.
-- 3 Fases: Entrada, Processamento, Saída.
-- Fluxogramas ajudam a desenhar a solução.
+- Lógica = Pensar certo. { .fragment }
+- Algoritmo = Sequência de passos. { .fragment }
+- 3 Fases: Entrada, Processamento, Saída. { .fragment }
+- Fluxogramas ajudam a desenhar a solução. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Configurar o VisualG.
-- Entender **Variáveis** (As caixas da memória).
-- Tipos de Dados (Texto, Número, Lógico).
+- Configurar o VisualG. { .fragment }
+- Entender **Variáveis** (As caixas da memória). { .fragment }
+- Tipos de Dados (Texto, Número, Lógico). { .fragment }
 
 👉 **Instalem o VisualG!**

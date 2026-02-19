@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  O Ecossistema Mobile
-2.  Nativo vs Multiplataforma
-3.  Dart e Flutter (Google)
-4.  Árvore de Widgets
-5.  Kotlin (Android Nativo)
+1.  O Ecossistema Mobile { .fragment }
+2.  Nativo vs Multiplataforma { .fragment }
+3.  Dart e Flutter (Google) { .fragment }
+4.  Árvore de Widgets { .fragment }
+5.  Kotlin (Android Nativo) { .fragment }
 
 ---
 
@@ -16,8 +16,8 @@
 
 Dois gigantes dominam o mercado.
 
-- **Android (Google)**: ~70% do mercado mundial. Aberto. Baseado em Linux/Java.
-- **iOS (Apple)**: ~29% do mercado. Fechado. Hardware Premium.
+- **Android (Google)**: ~70% do mercado mundial. Aberto. Baseado em Linux/Java. { .fragment }
+- **iOS (Apple)**: ~29% do mercado. Fechado. Hardware Premium. { .fragment }
 
 ---
 
@@ -25,23 +25,23 @@ Dois gigantes dominam o mercado.
 
 Como criar apps para eles?
 
-1.  **Nativo**:
-    - Performance Máxima.
-    - Acesso total ao hardware (GPS, Bluetooth).
-    - **Problema**: Precisa fazer 2 vezes (Kotlin para Android, Swift para iOS).
+1.  **Nativo**: { .fragment }
+    - Performance Máxima. { .fragment }
+    - Acesso total ao hardware (GPS, Bluetooth). { .fragment }
+    - **Problema**: Precisa fazer 2 vezes (Kotlin para Android, Swift para iOS). { .fragment }
 
-2.  **Multiplataforma**:
-    - Escreve uma vez, roda nos dois.
-    - Flutter (Dart) ou React Native (JS).
-    - **Vantagem**: Velocidade de entrega.
+2.  **Multiplataforma**: { .fragment }
+    - Escreve uma vez, roda nos dois. { .fragment }
+    - Flutter (Dart) ou React Native (JS). { .fragment }
+    - **Vantagem**: Velocidade de entrega. { .fragment }
 
 ---
 
 ## 3. Flutter e Dart 💙
 
-- **Dart**: A linguagem (parece Java + JS).
-- **Flutter**: O Kit de Ferramentas (UI Toolkit).
-- Renderiza pixels direto na tela (como um jogo).
+- **Dart**: A linguagem (parece Java + JS). { .fragment }
+- **Flutter**: O Kit de Ferramentas (UI Toolkit). { .fragment }
+- Renderiza pixels direto na tela (como um jogo). { .fragment }
 
 ---
 
@@ -84,8 +84,8 @@ void main() {
 Apps são interativos.
 Se o usuário clica, a tela muda.
 
-- **StatelessWidget**: Estático (Ícone, Texto).
-- **StatefulWidget**: Dinâmico (Checkbox, Contador).
+- **StatelessWidget**: Estático (Ícone, Texto). { .fragment }
+- **StatefulWidget**: Dinâmico (Checkbox, Contador). { .fragment }
 
 ---
 
@@ -104,9 +104,9 @@ graph LR;
 
 Para quando você precisa de poder bruto.
 
-- Oficial do Google.
-- 100% Compatível com Java.
-- Conciso e seguro (sem NullPointerException).
+- Oficial do Google. { .fragment }
+- 100% Compatível com Java. { .fragment }
+- Conciso e seguro (sem NullPointerException). { .fragment }
 
 ```kotlin
 fun main() {
@@ -131,18 +131,18 @@ fun main() {
 
 ## Resumo ✅
 
-- **Nativo**: Melhor performance, mais trabalho.
-- **Multiplataforma**: Menor custo, velocidade.
-- **Flutter**: Desenha a tela do zero.
-- **Widgets**: Blocos de construção.
+- **Nativo**: Melhor performance, mais trabalho. { .fragment }
+- **Multiplataforma**: Menor custo, velocidade. { .fragment }
+- **Flutter**: Desenha a tela do zero. { .fragment }
+- **Widgets**: Blocos de construção. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Sair do Cliente (Celular).
-- Voltar para o Servidor (Backend).
-- A tecnologia que roda 77% da Web.
-- **PHP e Arquitetura MVC**.
+- Sair do Cliente (Celular). { .fragment }
+- Voltar para o Servidor (Backend). { .fragment }
+- A tecnologia que roda 77% da Web. { .fragment }
+- **PHP e Arquitetura MVC**. { .fragment }
 
 👉 **Tarefa**: Rodar o "Counter App" do Flutter!
