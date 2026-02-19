@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  Como a Web Funciona?
-2.  PHP: O Motor da Internet
-3.  Arquitetura MVC
-4.  Laravel (Framework)
-5.  Projeto Final
+1.  Como a Web Funciona? { .fragment }
+2.  PHP: O Motor da Internet { .fragment }
+3.  Arquitetura MVC { .fragment }
+4.  Laravel (Framework) { .fragment }
+5.  Projeto Final { .fragment }
 
 ---
 
@@ -16,9 +16,9 @@
 
 Client vs Server.
 
-- **Cliente (Browser)**: Pede coisas (Request).
-- **Servidor**: Processa e Devolve (Response).
-- **Banco de Dados**: Guarda as informações.
+- **Cliente (Browser)**: Pede coisas (Request). { .fragment }
+- **Servidor**: Processa e Devolve (Response). { .fragment }
+- **Banco de Dados**: Guarda as informações. { .fragment }
 
 ---
 
@@ -42,10 +42,10 @@ sequenceDiagram
 
 **P**HP: **H**ypertext **P**reprocessor.
 
-- Roda no Servidor (Back-end).
-- Gera HTML dinâmico.
-- Fácil de hospedar (qualquer servidor barato tem).
-- Poderoso (Facebook, Wikipedia, WordPress).
+- Roda no Servidor (Back-end). { .fragment }
+- Gera HTML dinâmico. { .fragment }
+- Fácil de hospedar (qualquer servidor barato tem). { .fragment }
+- Poderoso (Facebook, Wikipedia, WordPress). { .fragment }
 
 ---
 
@@ -67,9 +67,9 @@ sequenceDiagram
 
 Para organizar sites grandes, não misturamos código.
 
-- **M**odel (Modelo): Dados e Banco.
-- **V**iew (Visão): HTML e Telas.
-- **C**ontroller (Controlador): A Lógica.
+- **M**odel (Modelo): Dados e Banco. { .fragment }
+- **V**iew (Visão): HTML e Telas. { .fragment }
+- **C**ontroller (Controlador): A Lógica. { .fragment }
 
 ---
 
@@ -90,9 +90,9 @@ graph LR;
 
 O Framework PHP mais popular.
 
-- Sintaxe elegante.
-- Ferramentas prontas (Login, Email, Banco).
-- "O PHP Moderno".
+- Sintaxe elegante. { .fragment }
+- Ferramentas prontas (Login, Email, Banco). { .fragment }
+- "O PHP Moderno". { .fragment }
 
 ```php
 // Rota simples em Laravel
@@ -107,10 +107,10 @@ Route::get('/', function () {
 
 **Mural de Recados Fullstack**
 
-- **Banco**: MySQL (`recados`: id, mensagem).
-- **Back**: PHP (Busca recados).
-- **Front**: HTML/CSS (Mostra recados).
-- Use tudo que aprendeu: Lógica, Loops, Vetores (Dados do banco), HTML.
+- **Banco**: MySQL (`recados`: id, mensagem). { .fragment }
+- **Back**: PHP (Busca recados). { .fragment }
+- **Front**: HTML/CSS (Mostra recados). { .fragment }
+- Use tudo que aprendeu: Lógica, Loops, Vetores (Dados do banco), HTML. { .fragment }
 
 ---
 
@@ -127,13 +127,13 @@ Route::get('/', function () {
 
 ## Resumo do Módulo ✅
 
-1.  **Lógica**: Algoritmos, Fluxogramas.
-2.  **Dados**: Variáveis, Vetores, Matrizes.
-3.  **Tecnologias**:
-    - Baixo nível (C/C++).
-    - Web (JS, PHP).
-    - Mobile (Flutter).
-    - Corporativo (Java, C#).
+1.  **Lógica**: Algoritmos, Fluxogramas. { .fragment }
+2.  **Dados**: Variáveis, Vetores, Matrizes. { .fragment }
+3.  **Tecnologias**: { .fragment }
+    - Baixo nível (C/C++). { .fragment }
+    - Web (JS, PHP). { .fragment }
+    - Mobile (Flutter). { .fragment }
+    - Corporativo (Java, C#). { .fragment }
 
 ---
 
@@ -143,8 +143,8 @@ Você completou a jornada de Lógica e Algoritmos.
 Você agora tem a **base** para aprender qualquer linguagem.
 
 **Próximos Passos?**
-- Escolha uma área (Front, Back, Mobile, Dados).
-- Aprofunde-se na linguagem escolhida.
-- **PRATIQUE!**
+- Escolha uma área (Front, Back, Mobile, Dados). { .fragment }
+- Aprofunde-se na linguagem escolhida. { .fragment }
+- **PRATIQUE!** { .fragment }
 
 👉 **Projeto Final**: Entregar o Mural de Recados!

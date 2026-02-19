@@ -4,19 +4,19 @@
 
 ## Agenda 📅
 
-1.  O Navegador como SO
-2.  O DOM (Document Object Model)
-3.  JavaScript (Dinamismo)
-4.  Node.js (Backend)
-5.  TypeScript (Segurança)
+1.  O Navegador como SO { .fragment }
+2.  O DOM (Document Object Model) { .fragment }
+3.  JavaScript (Dinamismo) { .fragment }
+4.  Node.js (Backend) { .fragment }
+5.  TypeScript (Segurança) { .fragment }
 
 ---
 
 ## 1. O Navegador é o Sistema Operacional 🖥️
 
-- Antigamente: Navegador só mostrava texto.
-- Hoje: Roda aplicativos completos (Google Docs, Figma, Spotify).
-- **Engine**: V8 (Chrome), SpiderMonkey (Firefox).
+- Antigamente: Navegador só mostrava texto. { .fragment }
+- Hoje: Roda aplicativos completos (Google Docs, Figma, Spotify). { .fragment }
+- **Engine**: V8 (Chrome), SpiderMonkey (Firefox). { .fragment }
 
 ---
 
@@ -24,9 +24,9 @@
 
 **Document Object Model**
 
-- É a árvore de elementos da página.
-- O HTML é estático. O DOM é vivo.
-- O JavaScript muda o DOM em tempo real.
+- É a árvore de elementos da página. { .fragment }
+- O HTML é estático. O DOM é vivo. { .fragment }
+- O JavaScript muda o DOM em tempo real. { .fragment }
 
 ---
 
@@ -50,9 +50,9 @@ graph TD;
 
 ## 3. JavaScript: A Linguagem da Web ⚡
 
-- Única linguagem que roda nativamente no navegador.
-- **Interpretada**: Não precisa compilar (o navegador lê e executa).
-- **Fracamente Tipada**: `var x = 10` depois `x = "oi"` (Pode, mas cuidado!).
+- Única linguagem que roda nativamente no navegador. { .fragment }
+- **Interpretada**: Não precisa compilar (o navegador lê e executa). { .fragment }
+- **Fracamente Tipada**: `var x = 10` depois `x = "oi"` (Pode, mas cuidado!). { .fragment }
 
 ---
 
@@ -73,17 +73,17 @@ botao.addEventListener('click', () => {
 
 ## 4. Node.js: JS fora da Caixa 📦
 
-- Antes (2009): JS só rodava no Chrome.
-- Ryan Dahl pegou a engine V8 e colocou no servidor.
-- Nasceu o **Node.js**.
+- Antes (2009): JS só rodava no Chrome. { .fragment }
+- Ryan Dahl pegou a engine V8 e colocou no servidor. { .fragment }
+- Nasceu o **Node.js**. { .fragment }
 
 ---
 
 ### Por que Node? 🚀
 
-- Mesmo código no Frontend e Backend.
-- Extremamente rápido (IO Não-Bloqueante).
-- Comunidade gigante (NPM).
+- Mesmo código no Frontend e Backend. { .fragment }
+- Extremamente rápido (IO Não-Bloqueante). { .fragment }
+- Comunidade gigante (NPM). { .fragment }
 
 ---
 
@@ -104,9 +104,9 @@ app.listen(3000);
 
 ## 5. TypeScript: O JavaScript com Superpoderes 🛡️
 
-- Criado pela Microsoft.
-- Adiciona **Tipagem Estática** ao JS.
-- O navegador **NÃO** entende TS. Ele precisa ser **Transpilado** para JS.
+- Criado pela Microsoft. { .fragment }
+- Adiciona **Tipagem Estática** ao JS. { .fragment }
+- O navegador **NÃO** entende TS. Ele precisa ser **Transpilado** para JS. { .fragment }
 
 ---
 
@@ -141,35 +141,35 @@ soma(5, "10"); // ERRO: "String não é Number" 🚫
 
 Ninguém escreve JS puro ("Vanilla") em apps grandes.
 
-- **React** (Meta/Facebook)
-- **Angular** (Google)
-- **Vue.js** (Comunidade)
-- Todos usam Componentes e Estado.
+- **React** (Meta/Facebook) { .fragment }
+- **Angular** (Google) { .fragment }
+- **Vue.js** (Comunidade) { .fragment }
+- Todos usam Componentes e Estado. { .fragment }
 
 ---
 
 ## Exercício Rápido ⚡
 
-1.  Abra o Console do Navegador (F12).
-2.  Digite `alert("Olá")`.
-3.  Digite `document.body.style.backgroundColor = "black"`.
-4.  O que aconteceu?
+1.  Abra o Console do Navegador (F12). { .fragment }
+2.  Digite `alert("Olá")`. { .fragment }
+3.  Digite `document.body.style.backgroundColor = "black"`. { .fragment }
+4.  O que aconteceu? { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- **DOM**: A estrutura da página.
-- **JavaScript**: Dá vida ao DOM.
-- **Node.js**: JS no servidor.
-- **TypeScript**: JS com segurança de tipos.
+- **DOM**: A estrutura da página. { .fragment }
+- **JavaScript**: Dá vida ao DOM. { .fragment }
+- **Node.js**: JS no servidor. { .fragment }
+- **TypeScript**: JS com segurança de tipos. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- O mundo corporativo exige robustez.
-- **Java**: A linguagem que roda em 3 bilhões de dispositivos.
-- Orientação a Objetos "Raiz".
+- O mundo corporativo exige robustez. { .fragment }
+- **Java**: A linguagem que roda em 3 bilhões de dispositivos. { .fragment }
+- Orientação a Objetos "Raiz". { .fragment }
 
 👉 **Tarefa**: Instalar o Node.js e rodar um `console.log` no terminal!

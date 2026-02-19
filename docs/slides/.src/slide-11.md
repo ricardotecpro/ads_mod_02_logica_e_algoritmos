@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  O Mundo dos Objetos
-2.  Classes vs Objetos
-3.  Java e a JVM
-4.  Os 3 Pilares da OO
-5.  Spring Boot (Java Moderno)
+1.  O Mundo dos Objetos { .fragment }
+2.  Classes vs Objetos { .fragment }
+3.  Java e a JVM { .fragment }
+4.  Os 3 Pilares da OO { .fragment }
+5.  Spring Boot (Java Moderno) { .fragment }
 
 ---
 
@@ -17,8 +17,8 @@
 Até agora, programamos **Ações** (Funções).
 Mas o mundo é feito de **Coisas** (Objetos).
 
-- **Estruturada**: Verbo (Fazer algo).
-- **OO**: Substantivo (Algo que faz).
+- **Estruturada**: Verbo (Fazer algo). { .fragment }
+- **OO**: Substantivo (Algo que faz). { .fragment }
 
 ---
 
@@ -26,8 +26,8 @@ Mas o mundo é feito de **Coisas** (Objetos).
 
 A distinção mais importante.
 
-- **Classe**: O Molde. A Planta. A Ideia. (Abstrato).
-- **Objeto**: A Instância. A Casa. A Coisa Real. (Concreto).
+- **Classe**: O Molde. A Planta. A Ideia. (Abstrato). { .fragment }
+- **Objeto**: A Instância. A Casa. A Coisa Real. (Concreto). { .fragment }
 
 ---
 
@@ -49,17 +49,17 @@ classDiagram
 
 "Write Once, Run Anywhere" (Escreva uma vez, rode em qualquer lugar).
 
-- O Java não compila para Binário direto.
-- Ele compila para **Bytecode** (`.class`).
-- A **JVM** (Máquina Virtual Java) roda esse Bytecode em qualquer sistema (Windows, Linux, Android, Geladeira).
+- O Java não compila para Binário direto. { .fragment }
+- Ele compila para **Bytecode** (`.class`). { .fragment }
+- A **JVM** (Máquina Virtual Java) roda esse Bytecode em qualquer sistema (Windows, Linux, Android, Geladeira). { .fragment }
 
 ---
 
 ## 4. Os 3 Pilares da OO 🏛️
 
-1.  Encapsulamento
-2.  Herança
-3.  Polimorfismo
+1.  Encapsulamento { .fragment }
+2.  Herança { .fragment }
+3.  Polimorfismo { .fragment }
 
 ---
 
@@ -67,9 +67,9 @@ classDiagram
 
 Proteger os dados. Ninguém mexe no cofre do banco direto.
 
-- **Private**: Só a classe vê.
-- **Public**: Todo mundo vê.
-- **Getters/Setters**: Porteiros que controlam o acesso.
+- **Private**: Só a classe vê. { .fragment }
+- **Public**: Todo mundo vê. { .fragment }
+- **Getters/Setters**: Porteiros que controlam o acesso. { .fragment }
 
 ```java
 private double saldo;
@@ -85,9 +85,9 @@ public void depositar(double valor) {
 
 Reaproveitar código.
 
-- `Cachorro` **é um** `Animal`.
-- `Gato` **é um** `Animal`.
-- Tudo que `Animal` tem, eles herdam (nome, idade).
+- `Cachorro` **é um** `Animal`. { .fragment }
+- `Gato` **é um** `Animal`. { .fragment }
+- Tudo que `Animal` tem, eles herdam (nome, idade). { .fragment }
 
 ```java
 public class Cachorro extends Animal { ... }
@@ -99,10 +99,10 @@ public class Cachorro extends Animal { ... }
 
 Muitas formas.
 
-- O método `fazerSom()` existe em Animal.
-- No Cachorro, ele faz "Au Au".
-- No Gato, ele faz "Miau".
-- O mesmo método se comporta diferente.
+- O método `fazerSom()` existe em Animal. { .fragment }
+- No Cachorro, ele faz "Au Au". { .fragment }
+- No Gato, ele faz "Miau". { .fragment }
+- O mesmo método se comporta diferente. { .fragment }
 
 ---
 
@@ -111,8 +111,8 @@ Muitas formas.
 Java não é só "tela preta".
 É a linguagem nº 1 em Bancos e Grandes Empresas.
 
-- **Spring Boot**: Framework para criar APIs Web.
-- Tira toda a configuração chata.
+- **Spring Boot**: Framework para criar APIs Web. { .fragment }
+- Tira toda a configuração chata. { .fragment }
 
 ---
 
@@ -135,27 +135,27 @@ public class OlaController {
 
 Modele um sistema de **Venda**.
 
-- Classes: `Produto`, `Cliente`, `Venda`.
-- Atributos: `Preco`, `Nome`.
-- Métodos: `CalcularTotal()`, `Pagar()`.
+- Classes: `Produto`, `Cliente`, `Venda`. { .fragment }
+- Atributos: `Preco`, `Nome`. { .fragment }
+- Métodos: `CalcularTotal()`, `Pagar()`. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- **Classe** é molde, **Objeto** é real.
-- **JVM** garante portabilidade.
-- **Encapsulamento** protege.
-- **Herança** reutiliza.
-- **Polimorfismo** flexibiliza.
+- **Classe** é molde, **Objeto** é real. { .fragment }
+- **JVM** garante portabilidade. { .fragment }
+- **Encapsulamento** protege. { .fragment }
+- **Herança** reutiliza. { .fragment }
+- **Polimorfismo** flexibiliza. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- O concorrente direto do Java.
-- Criado pela Microsoft.
-- **C# e plataforma .NET**.
-- Foco em produtividade.
+- O concorrente direto do Java. { .fragment }
+- Criado pela Microsoft. { .fragment }
+- **C# e plataforma .NET**. { .fragment }
+- Foco em produtividade. { .fragment }
 
 👉 **Tarefa**: Instalar o JDK (Java Development Kit) e o VS Code Extension Pack for Java!

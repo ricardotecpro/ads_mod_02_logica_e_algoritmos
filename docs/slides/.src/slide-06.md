@@ -4,12 +4,12 @@
 
 ## Agenda 📅
 
-1.  O Problema das Muitas Variáveis
-2.  O Que é um Vetor?
-3.  Simulando a Memória
-4.  Declarando e Acessando
-5.  Percorrendo Vetores (Loop Para)
-6.  Ordenação (Bubble Sort)
+1.  O Problema das Muitas Variáveis { .fragment }
+2.  O Que é um Vetor? { .fragment }
+3.  Simulando a Memória { .fragment }
+4.  Declarando e Acessando { .fragment }
+5.  Percorrendo Vetores (Loop Para) { .fragment }
+6.  Ordenação (Bubble Sort) { .fragment }
 
 ---
 
@@ -17,19 +17,19 @@
 
 Imagine guardar a nota de 50 alunos.
 
-- `nota1`, `nota2`, `nota3`... `nota50`.
-- E para calcular a média?
-    - `(nota1 + nota2 + ... + nota50) / 50`
-- **Caos Total!** Código gigante e difícil de manter.
+- `nota1`, `nota2`, `nota3`... `nota50`. { .fragment }
+- E para calcular a média? { .fragment }
+    - `(nota1 + nota2 + ... + nota50) / 50` { .fragment }
+- **Caos Total!** Código gigante e difícil de manter. { .fragment }
 
 ---
 
 ## 2. A Solução: Vetores (Arrays) 📏
 
-- Uma variável "comprida".
-- Guarda **muitos valores** do **mesmo tipo**.
-- Cada valor tem um endereço (**Índice**).
-- Como uma planilha do Excel de uma linha só.
+- Uma variável "comprida". { .fragment }
+- Guarda **muitos valores** do **mesmo tipo**. { .fragment }
+- Cada valor tem um endereço (**Índice**). { .fragment }
+- Como uma planilha do Excel de uma linha só. { .fragment }
 
 ---
 
@@ -49,10 +49,10 @@ graph LR;
 
 ## Índice (Index) 🔢
 
-- É o endereço da gaveta.
-- Começa no **0** (na maioria das linguagens).
-- `notas[0]` é a primeira nota.
-- `notas[49]` é a 50ª nota.
+- É o endereço da gaveta. { .fragment }
+- Começa no **0** (na maioria das linguagens). { .fragment }
+- `notas[0]` é a primeira nota. { .fragment }
+- `notas[49]` é a 50ª nota. { .fragment }
 
 ---
 
@@ -137,8 +137,8 @@ media <- soma / 5
 E se quisermos colocar em ordem crescente?
 Existem algoritmos famosos para isso. O mais simples é o **Bolha**.
 
-- Ideia: O maior valor "flutua" para o final.
-- Compara pares de vizinhos.
+- Ideia: O maior valor "flutua" para o final. { .fragment }
+- Compara pares de vizinhos. { .fragment }
 
 ---
 
@@ -160,20 +160,20 @@ fimse
 
 Vetor: `[5, 1, 4]`
 
-1.  Compara 5 e 1. 5 > 1? Sim. Troca. -> `[1, 5, 4]`
-2.  Compara 5 e 4. 5 > 4? Sim. Troca. -> `[1, 4, 5]`
-3.  Pronto! O 5 (maior) foi pro final.
+1.  Compara 5 e 1. 5 > 1? Sim. Troca. -> `[1, 5, 4]` { .fragment }
+2.  Compara 5 e 4. 5 > 4? Sim. Troca. -> `[1, 4, 5]` { .fragment }
+3.  Pronto! O 5 (maior) foi pro final. { .fragment }
 
 ---
 
 ## 7. Erros Comuns ⚠️
 
-1.  **Estourar o Vetor**:
-    - Tentar acessar `notas[5]` num vetor de 0..4.
-    - O programa trava (Index Out Of Bounds).
-2.  **Confundir Índice com Valor**:
-    - `i` é a posição.
-    - `vet[i]` é o valor naquela posição.
+1.  **Estourar o Vetor**: { .fragment }
+    - Tentar acessar `notas[5]` num vetor de 0..4. { .fragment }
+    - O programa trava (Index Out Of Bounds). { .fragment }
+2.  **Confundir Índice com Valor**: { .fragment }
+    - `i` é a posição. { .fragment }
+    - `vet[i]` é o valor naquela posição. { .fragment }
 
 ---
 
@@ -181,26 +181,26 @@ Vetor: `[5, 1, 4]`
 
 **Invertendo a Ordem**
 
-1.  Leia 5 nomes.
-2.  Guarde num vetor.
-3.  Mostre do **último para o primeiro**.
-    - Dica: `para i de 4 ate 0 passo -1`.
+1.  Leia 5 nomes. { .fragment }
+2.  Guarde num vetor. { .fragment }
+3.  Mostre do **último para o primeiro**. { .fragment }
+    - Dica: `para i de 4 ate 0 passo -1`. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- Vetor = Variável composta.
-- Índice começa em 0.
-- Loop `Para` é o melhor amigo do Vetor.
-- Ordenação organiza os dados.
+- Vetor = Variável composta. { .fragment }
+- Índice começa em 0. { .fragment }
+- Loop `Para` é o melhor amigo do Vetor. { .fragment }
+- Ordenação organiza os dados. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- E se precisarmos de linhas E colunas?
-- Planilhas, Tabuleiros, Jogos.
-- **Matrizes** (Vetores Bidimensionais).
+- E se precisarmos de linhas E colunas? { .fragment }
+- Planilhas, Tabuleiros, Jogos. { .fragment }
+- **Matrizes** (Vetores Bidimensionais). { .fragment }
 
 👉 **Tarefa**: Fazer o exercício "Rei da Montanha" (Achar o maior valor)!

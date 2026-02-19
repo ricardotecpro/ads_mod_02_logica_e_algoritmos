@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  O Ciclo de Vida do Código
-2.  Ferramentas de Aprendizado (Low Code)
-3.  Visual Studio Code (A Ferramenta Real)
-4.  O Terminal (Sem Medo!)
-5.  Instalação e Configuração
+1.  O Ciclo de Vida do Código { .fragment }
+2.  Ferramentas de Aprendizado (Low Code) { .fragment }
+3.  Visual Studio Code (A Ferramenta Real) { .fragment }
+4.  O Terminal (Sem Medo!) { .fragment }
+5.  Instalação e Configuração { .fragment }
 
 ---
 
@@ -16,17 +16,17 @@
 
 Como o computador entende o que escrevemos?
 
-- **Nós**: Falamos Inglês/Português (Texto).
-- **Computador**: Fala Energia (0 e 1).
-- **O Problema**: Tradução.
+- **Nós**: Falamos Inglês/Português (Texto). { .fragment }
+- **Computador**: Fala Energia (0 e 1). { .fragment }
+- **O Problema**: Tradução. { .fragment }
 
 ---
 
 ## As 3 Etapas 🚦
 
-1.  **Código Fonte**: O texto que você digita.
-2.  **Compilação/Interpretação**: A tradução mágica.
-3.  **Execução (Binário)**: O programa rodando.
+1.  **Código Fonte**: O texto que você digita. { .fragment }
+2.  **Compilação/Interpretação**: A tradução mágica. { .fragment }
+3.  **Execução (Binário)**: O programa rodando. { .fragment }
 
 ---
 
@@ -45,9 +45,9 @@ graph LR;
 
 ## Código Fonte 📝
 
-- Arquivos de texto simples (`.alg`, `.py`, `.c`, `.java`).
-- Legível para humanos.
-- Exemplo:
+- Arquivos de texto simples (`.alg`, `.py`, `.c`, `.java`). { .fragment }
+- Legível para humanos. { .fragment }
+- Exemplo: { .fragment }
     ```visualg
     escreva("Olá Mundo")
     ```
@@ -56,19 +56,19 @@ graph LR;
 
 ## Compilador ⚙️
 
-- O "Tradutor".
-- Verifica se você escreveu certo (Sintaxe).
-- Transforma em linguagem de máquina.
-- Se tiver erro, ele GRITA (Erro de Compilação).
+- O "Tradutor". { .fragment }
+- Verifica se você escreveu certo (Sintaxe). { .fragment }
+- Transforma em linguagem de máquina. { .fragment }
+- Se tiver erro, ele GRITA (Erro de Compilação). { .fragment }
 
 ---
 
 ## Binário / Executável 🚀
 
-- O resultado final.
-- `.exe` (Windows), App Mobile.
-- O usuário final só vê isso.
-- Não dá para ler (só números e símbolos estranhos).
+- O resultado final. { .fragment }
+- `.exe` (Windows), App Mobile. { .fragment }
+- O usuário final só vê isso. { .fragment }
+- Não dá para ler (só números e símbolos estranhos). { .fragment }
 
 ---
 
@@ -76,18 +76,18 @@ graph LR;
 
 Para começar **sem frustração**.
 
-- Foco na **Lógica**.
-- Esqueça "ponto-e-vírgula" por enquanto.
-- VisualG e Scratch.
+- Foco na **Lógica**. { .fragment }
+- Esqueça "ponto-e-vírgula" por enquanto. { .fragment }
+- VisualG e Scratch. { .fragment }
 
 ---
 
 ### VisualG 🟦
 
-- **Linguagem**: Portugol (Português Estruturado).
-- **Interface**: Simples, leve.
-- **Diferencial**: Mostra o valor das variáveis em tempo real (Memória).
-- **Uso**: Exclusivo para ensino no Brasil.
+- **Linguagem**: Portugol (Português Estruturado). { .fragment }
+- **Interface**: Simples, leve. { .fragment }
+- **Diferencial**: Mostra o valor das variáveis em tempo real (Memória). { .fragment }
+- **Uso**: Exclusivo para ensino no Brasil. { .fragment }
 
 ---
 
@@ -109,10 +109,10 @@ Fimalgoritmo
 
 ### Scratch 🐱
 
-- Criado pelo MIT.
-- Programação em **Blocos** (Lego).
-- Impossível errar sintaxe (os blocos só encaixam se estiver certo).
-- Ótimo para entender loops e eventos.
+- Criado pelo MIT. { .fragment }
+- Programação em **Blocos** (Lego). { .fragment }
+- Impossível errar sintaxe (os blocos só encaixam se estiver certo). { .fragment }
+- Ótimo para entender loops e eventos. { .fragment }
 
 ---
 
@@ -120,18 +120,18 @@ Fimalgoritmo
 
 A ferramenta profissional.
 
-- Gratuito (Microsoft).
-- Leve.
-- **Extensível**.
+- Gratuito (Microsoft). { .fragment }
+- Leve. { .fragment }
+- **Extensível**. { .fragment }
 
 ---
 
 ### Por que VS Code? 🌟
 
-1.  **IntelliSense**: Autocomplete inteligente.
-2.  **Multi-Linguagem**: Python, Java, C++, HTML... tudo num lugar só.
-3.  **Terminal Integrado**: Não precisa abrir janelas extras.
-4.  **Comunidade**: Milhares de plugins.
+1.  **IntelliSense**: Autocomplete inteligente. { .fragment }
+2.  **Multi-Linguagem**: Python, Java, C++, HTML... tudo num lugar só. { .fragment }
+3.  **Terminal Integrado**: Não precisa abrir janelas extras. { .fragment }
+4.  **Comunidade**: Milhares de plugins. { .fragment }
 
 ---
 
@@ -139,10 +139,10 @@ A ferramenta profissional.
 
 Sem elas, ele é apenas um bloco de notas.
 
-- **Portuguese (Brazil)**: Traduz o menu.
-- **Material Icon Theme**: Ícones bonitos para arquivos.
-- **Code Runner**: Roda código com um clique.
-- **Live Server**: Para Web (HTML).
+- **Portuguese (Brazil)**: Traduz o menu. { .fragment }
+- **Material Icon Theme**: Ícones bonitos para arquivos. { .fragment }
+- **Code Runner**: Roda código com um clique. { .fragment }
+- **Live Server**: Para Web (HTML). { .fragment }
 
 ---
 
@@ -150,9 +150,9 @@ Sem elas, ele é apenas um bloco de notas.
 
 Não tenha medo da tela preta!
 
-- É o modo "Hacker" (mas simples).
-- Controle total do sistema.
-- Mais rápido que clicar com o mouse.
+- É o modo "Hacker" (mas simples). { .fragment }
+- Controle total do sistema. { .fragment }
+- Mais rápido que clicar com o mouse. { .fragment }
 
 ---
 
@@ -171,12 +171,12 @@ Não tenha medo da tela preta!
 
 Vamos criar nosso primeiro programa no VisualG.
 
-1.  Abra o VisualG.
-2.  No bloco `Inicio`, digite:
+1.  Abra o VisualG. { .fragment }
+2.  No bloco `Inicio`, digite: { .fragment }
     ```visualg
     Escreval("Olá, Mundo!")
     ```
-3.  Aperte **F9** (Executar).
+3.  Aperte **F9** (Executar). { .fragment }
 
 ---
 
@@ -184,24 +184,24 @@ Vamos criar nosso primeiro programa no VisualG.
 
 Preparamos guias passo a passo para você instalar tudo.
 
-- [Setup 01 - VisualG](../setups/setup-01.md) (Comece aqui!)
-- [Setup 03 - VS Code](../setups/setup-03.md) (Para depois)
+- [Setup 01 - VisualG](../setups/setup-01.md) (Comece aqui!) { .fragment }
+- [Setup 03 - VS Code](../setups/setup-03.md) (Para depois) { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- Código Fonte -> Compilador -> Binário.
-- VisualG = Treino de Lógica.
-- VS Code = ferramenta Profissional.
-- Terminal = Poder e Velocidade.
+- Código Fonte -> Compilador -> Binário. { .fragment }
+- VisualG = Treino de Lógica. { .fragment }
+- VS Code = ferramenta Profissional. { .fragment }
+- Terminal = Poder e Velocidade. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Entrar na "Mente do Computador".
-- **Variáveis**: Como o computador guarda informações?
-- **Tipos de Dados**: Texto, Número Inteiro, Número Real, Lógico.
+- Entrar na "Mente do Computador". { .fragment }
+- **Variáveis**: Como o computador guarda informações? { .fragment }
+- **Tipos de Dados**: Texto, Número Inteiro, Número Real, Lógico. { .fragment }
 
 👉 **Tarefa de Casa**: Instalar VisualG e rodar o "Olá Mundo".

@@ -4,28 +4,28 @@
 
 ## Agenda 📅
 
-1.  História e Importância
-2.  Anatomia de um Programa C
-3.  Compilação
-4.  Gerenciamento de Memória (Stack vs Heap)
-5.  Ponteiros
-6.  Introdução ao C++ (OOP)
+1.  História e Importância { .fragment }
+2.  Anatomia de um Programa C { .fragment }
+3.  Compilação { .fragment }
+4.  Gerenciamento de Memória (Stack vs Heap) { .fragment }
+5.  Ponteiros { .fragment }
+6.  Introdução ao C++ (OOP) { .fragment }
 
 ---
 
 ## 1. O Pai das Linguagens 👴
 
-- **C (1972)**: Dennis Ritchie (Bell Labs).
-- **Base de Tudo**: Windows, Linux, Mac, Android, iOS.
-- **Filosofia**: "Confie no programador" (mesmo se ele fizer besteira).
+- **C (1972)**: Dennis Ritchie (Bell Labs). { .fragment }
+- **Base de Tudo**: Windows, Linux, Mac, Android, iOS. { .fragment }
+- **Filosofia**: "Confie no programador" (mesmo se ele fizer besteira). { .fragment }
 
 ---
 
 ### Por que aprender C hoje? 🧐
 
-- Entender como a máquina funciona de verdade.
-- Gerenciar memória manualmente.
-- Performance extrema (Jogos, Sistemas Embarcados).
+- Entender como a máquina funciona de verdade. { .fragment }
+- Gerenciar memória manualmente. { .fragment }
+- Performance extrema (Jogos, Sistemas Embarcados). { .fragment }
 
 ---
 
@@ -44,18 +44,18 @@ int main() {
 
 ### Desmontando o Código 🔧
 
-1.  `#include <stdio.h>`: Importa biblioteca de IO (Entrada/Saída).
-2.  `int main()`: A função principal. Todo programa começa aqui.
-3.  `printf(...)`: Imprime formatado.
-4.  `return 0;`: Retorna "Sucesso" para o Sistema Operacional.
+1.  `#include <stdio.h>`: Importa biblioteca de IO (Entrada/Saída). { .fragment }
+2.  `int main()`: A função principal. Todo programa começa aqui. { .fragment }
+3.  `printf(...)`: Imprime formatado. { .fragment }
+4.  `return 0;`: Retorna "Sucesso" para o Sistema Operacional. { .fragment }
 
 ---
 
 ### O Ponto e Vírgula `;`
 
-- Em C/C++, ele é **OBRIGATÓRIO**.
-- O compilador não adivinha onde a linha termina.
-- Esquecer `;` é o erro nº 1 de iniciantes.
+- Em C/C++, ele é **OBRIGATÓRIO**. { .fragment }
+- O compilador não adivinha onde a linha termina. { .fragment }
+- Esquecer `;` é o erro nº 1 de iniciantes. { .fragment }
 
 ---
 
@@ -63,10 +63,10 @@ int main() {
 
 C é uma linguagem **Compilada**.
 
-1.  **Código Fonte** (`.c`): Texto legível.
-2.  **Compilador** (`gcc`): Traduz para Assembly/Machine Code.
-3.  **Linker**: Junta com bibliotecas.
-4.  **Executável** (`.exe`): Programa final.
+1.  **Código Fonte** (`.c`): Texto legível. { .fragment }
+2.  **Compilador** (`gcc`): Traduz para Assembly/Machine Code. { .fragment }
+3.  **Linker**: Junta com bibliotecas. { .fragment }
+4.  **Executável** (`.exe`): Programa final. { .fragment }
 
 ---
 
@@ -92,17 +92,17 @@ graph TD;
 
 ### Stack (Pilha) 🥞
 
-- Variáveis normais: `int idade = 20;`
-- Criada e destruída automaticamente.
-- Tamanho fixo e pequeno.
+- Variáveis normais: `int idade = 20;` { .fragment }
+- Criada e destruída automaticamente. { .fragment }
+- Tamanho fixo e pequeno. { .fragment }
 
 ---
 
 ### Heap (Monte) 🏔️
 
-- Memória dinâmica: `malloc()` ou `new`.
-- Você pede memória ao sistema.
-- **Cuidado**: Você precisa devolver (`free` ou `delete`), senão vaza memória (Memory Leak)!
+- Memória dinâmica: `malloc()` ou `new`. { .fragment }
+- Você pede memória ao sistema. { .fragment }
+- **Cuidado**: Você precisa devolver (`free` ou `delete`), senão vaza memória (Memory Leak)! { .fragment }
 
 ---
 
@@ -110,16 +110,16 @@ graph TD;
 
 Um ponteiro não guarda o valor. Guarda o **ENDEREÇO**.
 
-- `int x = 10;` (Valor 10)
-- `int *p = &x;` (Endereço onde o 10 mora, ex: `0x7ffee4`)
+- `int x = 10;` (Valor 10) { .fragment }
+- `int *p = &x;` (Endereço onde o 10 mora, ex: `0x7ffee4`) { .fragment }
 
 ---
 
 ### Para que serve? 🤷
 
-1.  Modificar variáveis originais dentro de funções.
-2.  Alocar memória dinâmica.
-3.  Criar estruturas complexas (Listas, Árvores).
+1.  Modificar variáveis originais dentro de funções. { .fragment }
+2.  Alocar memória dinâmica. { .fragment }
+3.  Criar estruturas complexas (Listas, Árvores). { .fragment }
 
 > "Com grandes poderes vêm grandes responsabilidades." (E Segmentation Faults).
 
@@ -129,9 +129,9 @@ Um ponteiro não guarda o valor. Guarda o **ENDEREÇO**.
 
 C++ = C + Classes (OOP).
 
-- Mantém a performance do C.
-- Adiciona organização de objetos.
-- Base para Jogos (Unreal) e Softwares Pesados (Chrome, Photoshop).
+- Mantém a performance do C. { .fragment }
+- Adiciona organização de objetos. { .fragment }
+- Base para Jogos (Unreal) e Softwares Pesados (Chrome, Photoshop). { .fragment }
 
 ---
 
@@ -181,17 +181,17 @@ int main() {
 
 ## Resumo ✅
 
-- C é a mãe de todas.
-- **Compilador** traduz para binário.
-- **Ponteiros** acessam memória direta.
-- **C++** adiciona Classes ao poder do C.
+- C é a mãe de todas. { .fragment }
+- **Compilador** traduz para binário. { .fragment }
+- **Ponteiros** acessam memória direta. { .fragment }
+- **C++** adiciona Classes ao poder do C. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Sair do "Baixo Nível".
-- Ir para o mundo corporativo e robusto.
-- **Java**: "Escreva uma vez, rode em qualquer lugar".
+- Sair do "Baixo Nível". { .fragment }
+- Ir para o mundo corporativo e robusto. { .fragment }
+- **Java**: "Escreva uma vez, rode em qualquer lugar". { .fragment }
 
 👉 **Tarefa**: Instalar o Code::Blocks ou configurar GCC no VS Code!

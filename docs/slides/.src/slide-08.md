@@ -4,11 +4,11 @@
 
 ## Agenda 📅
 
-1.  Conceito de Módulos (Divide & Conquer)
-2.  Procedimentos vs Funções
-3.  Escopo de Variáveis (Locais x Globais)
-4.  Parâmetros (Valor x Referência)
-5.  Exemplos Práticos
+1.  Conceito de Módulos (Divide & Conquer) { .fragment }
+2.  Procedimentos vs Funções { .fragment }
+3.  Escopo de Variáveis (Locais x Globais) { .fragment }
+4.  Parâmetros (Valor x Referência) { .fragment }
+5.  Exemplos Práticos { .fragment }
 
 ---
 
@@ -16,18 +16,18 @@
 
 Imagine construir um carro inteiro num bloco só. Impossível!
 Nós montamos:
-- Motor 🔧
-- Rodas 🚗
-- Vidros 🪟
+- Motor 🔧 { .fragment }
+- Rodas 🚗 { .fragment }
+- Vidros 🪟 { .fragment }
 E depois **juntamos**.
 
 ---
 
 ### Na Programação
 
-- Não escreva 1000 linhas no `Inicio`.
-- Quebre em pequenos blocos (**Módulos**).
-- Cada módulo resolve **um problema específico**.
+- Não escreva 1000 linhas no `Inicio`. { .fragment }
+- Quebre em pequenos blocos (**Módulos**). { .fragment }
+- Cada módulo resolve **um problema específico**. { .fragment }
 
 ---
 
@@ -50,8 +50,8 @@ sequenceDiagram
 
 Em Portugol, temos dois tipos principais.
 
-1.  **Procedimentos**: Fazem uma ação, mas não devolvem valor matemático.
-2.  **Funções**: Calculam e **RETORNAM** um valor.
+1.  **Procedimentos**: Fazem uma ação, mas não devolvem valor matemático. { .fragment }
+2.  **Funções**: Calculam e **RETORNAM** um valor. { .fragment }
 
 ---
 
@@ -88,8 +88,8 @@ fimfuncao
 
 Onde minha variável vive?
 
-- **Global**: Criada fora de tudo. Todo mundo vê. (Perigoso!).
-- **Local**: Criada dentro da função. Só a função vê. (Seguro!).
+- **Global**: Criada fora de tudo. Todo mundo vê. (Perigoso!). { .fragment }
+- **Local**: Criada dentro da função. Só a função vê. (Seguro!). { .fragment }
 
 ---
 
@@ -104,8 +104,8 @@ Isso evita confusão!
 
 Como passar dados para a função?
 
-1.  **Por Valor** (O padrão): Envia uma **CÓPIA**. Se a função mudar, o original não muda.
-2.  **Por Referência** (`var`): Envia o **ENDEREÇO**. Se a função mudar, o original MUDA!
+1.  **Por Valor** (O padrão): Envia uma **CÓPIA**. Se a função mudar, o original não muda. { .fragment }
+2.  **Por Referência** (`var`): Envia o **ENDEREÇO**. Se a função mudar, o original MUDA! { .fragment }
 
 ---
 
@@ -126,9 +126,9 @@ fimprocedimento
 
 ## 5. Vantagens da Modularização ✅
 
-1.  **Reutilização**: Escreve uma vez, usa 1000 vezes.
-2.  **Organização**: Código limpo.
-3.  **Facilidade de Manutenção**: Se o cálculo mudar, corrijo num lugar só.
+1.  **Reutilização**: Escreve uma vez, usa 1000 vezes. { .fragment }
+2.  **Organização**: Código limpo. { .fragment }
+3.  **Facilidade de Manutenção**: Se o cálculo mudar, corrijo num lugar só. { .fragment }
 
 ---
 
@@ -136,27 +136,27 @@ fimprocedimento
 
 **Sistema de Notas Completo**
 
-- Use Vetores.
-- Use Matrizes (se quiser).
-- Use Funções para calcular média.
-- Use Procedimentos para mostrar boletim.
+- Use Vetores. { .fragment }
+- Use Matrizes (se quiser). { .fragment }
+- Use Funções para calcular média. { .fragment }
+- Use Procedimentos para mostrar boletim. { .fragment }
 
 ---
 
 ## Resumo ✅
 
-- Modularizar = Organizar.
-- **Função** retorna valor. **Procedimento** faz ação.
-- Variáveis **Locais** são protegidas.
-- Use parâmetros para comunicar.
+- Modularizar = Organizar. { .fragment }
+- **Função** retorna valor. **Procedimento** faz ação. { .fragment }
+- Variáveis **Locais** são protegidas. { .fragment }
+- Use parâmetros para comunicar. { .fragment }
 
 ---
 
 ## Próxima Aula 🚀
 
-- Fim da "Lógica Pura"!
-- Vamos conhecer linguagens reais.
-- **C e C++**: Os pais da programação moderna.
-- Gerenciamento de Memória na unha!
+- Fim da "Lógica Pura"! { .fragment }
+- Vamos conhecer linguagens reais. { .fragment }
+- **C e C++**: Os pais da programação moderna. { .fragment }
+- Gerenciamento de Memória na unha! { .fragment }
 
 👉 **Tarefa**: Refatore seus códigos antigos usando Funções!

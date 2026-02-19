@@ -70,7 +70,12 @@ markdown_extensions:
 
 
 plugins:
-  - mkdocs-revealjs
+  - mkdocs-revealjs:
+      revealjs_config:
+        transition: slide
+        backgroundTransition: fade
+        slideNumber: true
+
   - search:
       lang: pt
   - mkdocs-jupyter
