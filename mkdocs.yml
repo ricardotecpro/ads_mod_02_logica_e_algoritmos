@@ -1,4 +1,4 @@
-site_name: Lógica e Algoritmos - Curso Completo
+site_name: Lógica e Algoritmos
 site_url: https://ricardotecpro.github.io/ads_mod_02_logica_e_algoritmos
 repo_url: https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos
 repo_name: ricardotecpro/ads_mod_02_logica_e_algoritmos
@@ -23,15 +23,15 @@ theme:
   palette:
     # Light Mode (Default)
     - scheme: default
-      primary: orange
-      accent: amber
+      primary: teal
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: Mudar para modo escuro
     # Dark Mode
     - scheme: slate
-      primary: orange
-      accent: amber
+      primary: teal
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Mudar para modo claro
