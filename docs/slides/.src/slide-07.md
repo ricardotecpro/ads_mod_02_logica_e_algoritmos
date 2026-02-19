@@ -1,41 +1,159 @@
-# Aula 07 - Matrizes 🧱
+# Aula 07 - Estruturas de Dados II: Matrizes 📈
+
+---
+
+## Agenda 📅
+
+1.  O Mundo em 2D
+2.  O Que é uma Matriz?
+3.  Coordenadas (Linha x Coluna)
+4.  Percorrendo Matrizes
+5.  Aplicações Práticas
 
 ---
 
 ## 1. O Mundo em 2D 🗺️
 
-- Vetores são linhas.
-- **Matrizes** são Tabelas (Linhas x Colunas).
-- Exemplos: Planilha Excel, Tabuleiro de Xadrez, Cinema, Imagem.
+Nem tudo cabe numa lista (Vetor).
+
+- Uma sala de cinema.
+- Um tabuleiro de xadrez.
+- Uma planilha do Excel.
+- Precisamos de **2 Dimensões**: Altura e Largura.
 
 ---
 
-## 2. Coordenadas (Batalha Naval) 🎯
+## 2. O Que é uma Matriz? 🏗️
 
-- Para achar alguém, preciso de:
-  - Qual Linha? (i)
-  - Qual Coluna? (j)
-- `tabuleiro[1, 5]` = "Navio!"
-
----
-
-## 3. Loop Aninhado (Nested Loop) 🔄
-
-- Loop dentro de Loop.
-- Para cada LINHA, percorra todas as COLUNAS.
-- **Cuidado**: A complexidade aumenta (O(n²)).
+- É um **"Vetor de Vetores"**.
+- Tem Linhas (Horizontais) e Colunas (Verticais).
+- Cada "casinha" tem um endereço duplo.
 
 ---
 
-## 4. Matrizes no Mundo Real 🌍
+### Visualizando uma Matriz
 
-- **Imagens**: Matriz de Pixels.
-- **Mapas**: Matriz de Terreno.
-- **Jogos**: Grid de movimentação.
+```mermaid
+graph TD;
+    subgraph Matriz [3x3]
+    direction TB
+    L0[Linha 0] --- C00[0,0] --- C01[0,1] --- C02[0,2]
+    L1[Linha 1] --- C10[1,0] --- C11[1,1] --- C12[1,2]
+    L2[Linha 2] --- C20[2,0] --- C21[2,1] --- C22[2,2]
+    end
+```
 
 ---
 
-## Próximos Passos
+## 3. Coordenadas (Linha, Coluna) 📍
 
-- O código está ficando grande... 😰
-- Vamos organizar a bagunça com **MODULARIZAÇÃO**.
+Assim como na Batalha Naval: `B4`, `A1`.
+Na programação, usamos índices numéricos.
+
+- `matriz[LINHA][COLUNA]`
+- Sempre **LINHA primeiro**, depois COLUNA.
+
+---
+
+### Sintaxe VisualG
+
+```portugol
+Var
+   // 3 Linhas, 3 Colunas
+   tabuleiro : vetor [0..2, 0..2] de inteiro
+Inicio
+   // Colocando valor no centro
+   tabuleiro[1][1] <- 5
+   
+   // Canto superior esquerdo
+   tabuleiro[0][0] <- 1
+```
+
+---
+
+## 4. Percorrendo uma Matriz 🔄🔄
+
+Se um vetor precisa de 1 loop, a matriz precisa de **2 Loops Aninhados**.
+
+1.  O primeiro trava a **Linha**.
+2.  O segundo percorre todas as **Colunas** daquela linha.
+
+---
+
+### O Código Padrão
+
+```portugol
+para i de 0 ate 2 faca  // Linhas
+   para j de 0 ate 2 faca  // Colunas
+      escreva("Posição [", i, ",", j, "]: ")
+      leia(matriz[i][j])
+   fimpara
+fimpara
+```
+
+---
+
+### Visualizando a Execução
+
+1.  `i=0, j=0` -> [0,0]
+2.  `i=0, j=1` -> [0,1]
+3.  `i=0, j=2` -> [0,2] -> Fim das Colunas.
+4.  `i=1, j=0` -> [1,0] -> Nova Linha!
+
+---
+
+## 5. Matriz Identidade 🆔
+
+Um clássico da matemática.
+Diagonal Principal = 1. Resto = 0.
+
+- A Diagonal Principal acontece quando `i == j` (0,0; 1,1; 2,2).
+
+```portugol
+se (i == j) entao
+   matriz[i][j] <- 1
+senao
+   matriz[i][j] <- 0
+fimse
+```
+
+---
+
+## 6. Aplicações Reais 🌍
+
+Onde usamos isso?
+
+1.  **Imagens**: Cada pixel é uma célula com cor (RGB).
+2.  **Jogos**: O mapa do jogo (Tilemap).
+3.  **Gráficos 3D**: Matrizes de transformação.
+
+---
+
+## Exercício Rápido ⚡
+
+**Soma Total**
+
+1.  Crie uma matriz 2x2.
+2.  Preencha com números.
+3.  Use dois loops para somar TUDO.
+4.  Mostre o total.
+
+---
+
+## Resumo ✅
+
+- Matriz = Linhas x Colunas.
+- Declaração: `vetor [L..L, C..C]`.
+- Acesso: `mat[linha][coluna]`.
+- Percorrer: 2 loops `Para`.
+
+---
+
+## Próxima Aula 🚀
+
+- Nossos códigos estão ficando grandes...
+- Como organizar?
+- **Modularização**: Dividir para Conquistar.
+- Funções e Procedimentos.
+
+👉 **Tarefa**: Jogue Batalha Naval (no papel ou no código)!
