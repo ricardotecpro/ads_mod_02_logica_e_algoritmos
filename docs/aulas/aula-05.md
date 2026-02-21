@@ -96,9 +96,12 @@ fimenquanto
 
 ---
 
-## 6. O Teste de Mesa (Debug Mental) 🧠
+## 6. Depuração: O Teste de Mesa e Breakpoints 🧠
 
-Como saber se o loop está certo? Fazemos uma tabela simulando as variáveis passo a passo.
+Como saber se o loop está certo? 
+
+### A. Teste de Mesa (Manual)
+Fazemos uma tabela simulando as variáveis passo a passo.
 Exemplo: Contador de 1 a 3.
 
 | Passo | Variável `i` | Condição `i <= 3`? | Ação |
@@ -107,6 +110,12 @@ Exemplo: Contador de 1 a 3.
 | 2 | 2 | Sim (Verdadeiro) | Escreve "2" |
 | 3 | 3 | Sim (Verdadeiro) | Escreve "3" |
 | 4 | 4 | **Não (Falso)** | **Para!** |
+
+### B. Depuração na IDE (Automático)
+Ferramentas modernas oferecem recursos poderosos:
+*   **Breakpoint (Ponto de Interrupção)**: Marcar uma linha para o programa "congelar" ali.
+*   **Watch (Vigilância)**: Uma janela que mostra o valor das variáveis mudando conforme você avança linha por linha.
+*   **Controle de Passos**: "Entrar" em funções ou "Pular" laços inteiros.
 
 ---
 
