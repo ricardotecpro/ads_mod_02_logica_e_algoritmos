@@ -19,15 +19,8 @@ graph LR;
 ```
 
 1.  **Código Fonte**: O que você escreve (ex: `escreva("Olá")`).
-2.  **Compilador/Interpretador**: O tradutor que gera o código objeto ou executa diretamente.
-3.  **Binário/Executável**: O resultado final que o computador entende.
-
-### SDKs, Bibliotecas e Frameworks 📚
-
-Para não "reinventar a roda", usamos ferramentas prontas:
-*   **SDK (Software Development Kit)**: Um kit completo (ferramentas + compilador) para criar software para uma plataforma (ex: Android SDK).
-*   **Biblioteca (Library)**: Coleção de códigos prontos que você "chama" para resolver tarefas comuns (ex: gerar um PDF).
-*   **Framework**: Uma estrutura que "dita as regras" de como o sistema deve ser construído, oferecendo uma base pronta (ex: React, Spring).
+2.  **Compilador**: O tradutor.
+3.  **Binário**: O executável (`.exe`).
 
 ---
 
@@ -49,11 +42,6 @@ Inicio
    escreva("Olá, ", nome)
 Fimalgoritmo
 ```
-
-### 3. Depuração: O Trabalho de Detetive 🔍
-Programar envolve cometer erros. A **Depuração (Debug)** é o processo de encontrar e corrigir esses erros.
-*   **Execução Passo a Passo (Step Over)**: Rodar o programa linha por linha para ver onde ele se perde.
-*   **Visualização de Variáveis (Watch)**: Observar o valor das "gavetas" mudando em tempo real.
 
 ### Scratch
 Lógica em blocos. Perfeito para entender estruturas sem erro de sintaxe.

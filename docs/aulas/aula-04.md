@@ -66,28 +66,11 @@ Para fazer a pergunta dentro do `se`, usamos comparadores:
 | `OU` | OU (Or) | `dia == "Sábado" OU dia == "Domingo"` | Verdadeiro se **PELO MENOS UM** for verdadeiro. |
 | `NÃO` | NÃO (Not) | `NÃO (x > 0)` | Inverte o resultado (Vira Falso). |
 
-!!! info "Tabela Verdade (Completa)"
-    | A | B | A **E** B | A **OU** B | **NÃO** A |
-    | :---: | :---: | :---: | :---: | :---: |
-    | V | V | **V** | **V** | F |
-    | V | F | **F** | **V** | F |
-    | F | V | **F** | **V** | V |
-    | F | F | **F** | **F** | V |
-
-### 3.5 Tratamento de Erros e Exceções 🛡️
-
-Programas podem falhar por dados inválidos (ex: dividir por zero).
-*   **Erro de Sintaxe**: Escrita errada do código.
-*   **Exceção (Erro de Execução)**: O código está certo, mas algo impossível aconteceu na hora de rodar.
-*   **Validação**: Sempre verifique os dados antes de processar.
-
-```portugol
-se (divisor == 0) entao
-   escreva("Erro: Não é possível dividir por zero!")
-senao
-   resultado <- dividendo / divisor
-fimse
-```
+!!! info "Tabela Verdade (Resumida)"
+    *   **V e V = V**
+    *   **V e F = F**
+    *   **V ou F = V**
+    *   **F ou F = F**
 
 ---
 

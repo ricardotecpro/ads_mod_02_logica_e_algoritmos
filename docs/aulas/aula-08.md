@@ -78,38 +78,6 @@ fimprocedimento
 
 ---
 
-## 4. Recursividade: A Função que se Chama 🔄
-
-Uma função é **recursiva** quando ela chama a si mesma para resolver um problema menor.
-Imagine uma boneca russa (Matrioshka): para abrir a maior, você precisa abrir a que está dentro, até chegar na última.
-
-### Exemplo: Fatorial de um Número
-$5! = 5 \times 4 \times 3 \times 2 \times 1$
-
-```portugol
-funcao fatorial(n : inteiro) : inteiro
-Inicio
-   // Condição de Parada (Base)
-   se (n == 0) entao
-      retorne 1
-   senao
-      // Chamada Recursiva
-      retorne n * fatorial(n - 1)
-   fimse
-fimfuncao
-```
-
-### 4.5 A Pilha de Chamadas (Call Stack) 📚
-Quando uma função chama outra (ou a si mesma), o computador empilha essas chamadas.
-1. `fatorial(3)` chama...
-2. `fatorial(2)` que chama...
-3. `fatorial(1)` que chama...
-4. `fatorial(0)` -> Retorna 1!
-Agora a pilha começa a "desempilhar" multiplicando os resultados.
-
-!!! danger "Estouro de Pilha (Stack Overflow)"
-    Se você esquecer a **Condição de Parada**, a função se chamará infinitamente até travar a memória do computador!
-
 ## 4. Simulando (Termynal)
 
 <div data-termynal class="termy">
