@@ -1,5 +1,8 @@
 # Projeto 12 - API Climática (Milestone 3) 🌦️
 
+!!! tip "Objetivo"
+    **Objetivo**: Praticar a manipulação de coleções de dados modernos usando C# e a poderosa linguagem de consulta LINQ.
+
 ## O Desafio 🎯
 Você trabalha em uma StartUp de Agricultura. Os fazendeiros precisam saber a previsão do tempo para planejar a colheita.
 

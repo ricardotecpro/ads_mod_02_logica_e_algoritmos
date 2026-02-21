@@ -1,11 +1,31 @@
-# Projeto 09 - Gerenciador de Memória (C/C++) 🧱
+# Projeto 09 - Gerenciador de Memória 🧱
 
-**Objetivo**: Entender manipulação direta de memória.
+!!! tip "Objetivo"
+    **Objetivo**: Compreender o gerenciamento manual de memória, o uso de ponteiros e a alocação dinâmica (Heap), pilares fundamentais de linguagens de baixo nível como C e C++.
 
-## O Desafio
-1.  Crie um programa em C.
-2.  Aloque dinamicamente (`malloc`) um vetor de inteiros com tamanho definido pelo usuário.
-3.  Preencha esse vetor com números aleatórios.
-4.  Crie uma função que receba o ponteiro desse vetor e inverta a ordem dos elementos **sem criar um segundo vetor**.
-5.  Libere a memória (`free`) no final.
-6.  **Extra (C++)**: Faça o mesmo usando uma Classe `VetorDinamico` e Destrutores.
+---
+
+## O Desafio 🎯
+Você deve criar um programa capaz de manipular dados diretamente na memória RAM. O desafio é gerenciar um vetor cujo tamanho só é conhecido quando o programa está rodando.
+
+## Requisitos Técnicos (C)
+1.  **Entrada**: Pergunte ao usuário quantos números ele deseja armazenar.
+2.  **Alocação**: Use `malloc` para reservar exatamente o espaço necessário no Heap.
+3.  **Processamento**:
+    *   Preencha o vetor com valores.
+    *   Implemente uma função que inverta o vetor **in-place** (trocando os elementos de posição sem criar um vetor reserva).
+4.  **Liberação**: Use `free` para devolver a memória ao sistema antes de encerrar.
+
+## Desafio Extra (C++) ⭐
+Implemente o mesmo sistema usando uma `Class VetorDinamico`. 
+- Utilize o construtor para alocar memória (`new`).
+- Utilize o **destrutor** para garantir a liberação automática (`delete[]`).
+
+## Exemplo de Saída
+```text
+Quantos elementos? 3
+Digite os valores: 10, 20, 30
+--- Invertendo ---
+Resultado: 30, 20, 10
+Memória liberada com sucesso.
+```

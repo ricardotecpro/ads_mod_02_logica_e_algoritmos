@@ -95,7 +95,21 @@ Vamos fechar o curso conectando tudo.
 
 ---
 
-## 5. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Validador de Acesso PHP 🚀
+
+Entender como dados viajam entre o cliente e o servidor é fundamental.
+
+!!! info "Desafio do Projeto"
+    Crie um script PHP que simule um sistema de login simples.
+    1. Defina uma variável `$usuarioCorreto = "admin"` e `$senhaCorreta = "1234"`.
+    2. Simule o recebimento de dados de um formulário.
+    3. Use `if` para verificar se os dados conferem e mostre a mensagem "Acesso Autorizado" ou "Senha Incorreta".
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um script PHP que mostre a data e hora atual.
 2.  **Médio**: Crie um formulário HTML que envie nome e idade para um script PHP, que deve responder "Pode entrar" ou "Barrado".

@@ -72,7 +72,21 @@ let resultado = dobrar 5 // 10
 
 ---
 
-## 5. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Dashboard de Vendas com LINQ 🚀
+
+O C# é extremamente poderoso para processar coleções de dados de forma expressiva.
+
+!!! info "Desafio do Projeto"
+    Crie uma lista de objetos `Venda` (Produto, Valor, Data).
+    1. Use LINQ para calcular o valor total das vendas.
+    2. Liste apenas as vendas acima de R$ 100,00 ordenadas por valor.
+    3. Mostre o resultado no console de forma organizada.
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um programa C# "Olá Mundo" no Console.
 2.  **Médio (LINQ)**: Dada uma lista de nomes `["Ana", "Bruno", "Carlos", "Amanda"]`, use LINQ para filtrar apenas os que começam com "A".

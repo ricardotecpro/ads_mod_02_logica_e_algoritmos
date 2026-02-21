@@ -110,7 +110,20 @@ Exemplo: Contador de 1 a 3.
 
 ---
 
-## 7. Exercícios de Fixação 📝
+---
+
+## 7. Mini-Projeto: O Gerador de Tabuada 🚀
+
+Automatizar cálculos repetitivos é a alma da programação.
+
+!!! info "Desafio do Projeto"
+    Crie um algoritmo que pergunte ao usuário qual número ele deseja ver a tabuada. 
+    Use um laço `para` ou `enquanto` para mostrar o resultado do 1 ao 10 na tela.
+    Extra: Tente fazer o programa perguntar se o usuário deseja ver outra tabuada antes de encerrar (usando `repita`).
+
+---
+
+## 8. Exercícios de Fixação 📝
 
 1.  **Fácil (Contagem Regressiva)**: Faça um algoritmo que conte de 10 até 0 e escreva "FOGO!".
 2.  **Médio (Tabuada)**: Leia um número (ex: 7) e mostre sua tabuada do 1 ao 10.

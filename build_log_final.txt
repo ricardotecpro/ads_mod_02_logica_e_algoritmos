@@ -1,0 +1,7 @@
+HERE= C:\Python\Python313\Lib\site-packages\mkdocs_revealjs
+DIRNAME= docs/revealjs
+WARNING -  Config value 'plugins': Plugin 'mkdocs-revealjs' option 'transition': Unrecognised configuration name: transition
+WARNING -  Config value 'plugins': Plugin 'mkdocs-revealjs' option 'slide_number': Unrecognised configuration name: slide_number
+WARNING -  Config value 'plugins': Plugin 'mkdocs-revealjs' option 'background_transition': Unrecognised configuration name: background_transition
+
+Aborted with 3 configuration warnings in 'strict' mode!

@@ -2,7 +2,24 @@
 
 ---
 
-## 1. O Navegador é o Sistema Operacional 🖥️
+!!! tip "Objetivo"
+    **Objetivo**: Entender o papel do JavaScript na web e como o TypeScript ajuda a escrever códigos mais robustos e seguros.
+
+---
+
+## 4. Mini-Projeto: To-Do Console 🚀
+
+JS é excelente para manipular listas e objetos.
+
+!!! info "Desafio do Projeto"
+    Crie um array (vetor) de objetos chamado `tarefas`. Cada objeto deve ter `descricao` e `concluida` (booleano).
+    1. Adicione 3 tarefas iniciais.
+    2. Crie uma função que liste apenas as tarefas que NÃO foram concluídas.
+    3. Use o Node.js para rodar seu script no terminal.
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 O JavaScript (JS) é a única linguagem que roda nativamente em todos os navegadores.
 Ele manipula o **DOM** (Document Object Model), que é a estrutura da página HTML.

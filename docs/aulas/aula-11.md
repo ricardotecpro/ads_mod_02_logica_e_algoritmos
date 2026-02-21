@@ -90,7 +90,22 @@ public class OlaController {
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 4. Mini-Projeto: Mini Petshop OO 🚀
+
+A Orientação a Objetos brilha quando temos diferentes categorias de coisas que compartilham comportamentos.
+
+!!! info "Desafio do Projeto"
+    Crie uma estrutura em Java que represente um Petshop.
+    1. Crie uma classe base `Animal` (nome, especie).
+    2. Crie subclasses `Cachorro` e `Gato`.
+    3. Implemente um método `emitirSom()` que seja diferente para cada um.
+    4. No seu programa principal, crie uma lista (ArrayList) de animais e mande todos emitirem seus sons.
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie uma classe `Pessoa` com `nome` e `idade`. Crie um método `apresentar()`.
 2.  **Médio**: Crie uma classe `ContaBancaria` com `saldo` privado. Crie métodos `depositar(valor)` e `sacar(valor)`. Não deixe o saldo ficar negativo!

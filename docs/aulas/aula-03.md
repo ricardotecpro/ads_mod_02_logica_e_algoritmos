@@ -97,7 +97,32 @@ O computador é uma calculadora gigante.
 
 ---
 
-## 5. Exercícios de Fixação 📝
+## 5. Matemática Computacional (MathJax) 📐
+
+Os computadores são EXCELENTES em resolver fórmulas complexas. Um exemplo famoso na Engenharia de Software é o **Modelo COCOMO**, usado para estimar o esforço de um projeto:
+
+!!! info "Fórmula de Es esforço"
+    A fórmula básica para estimar o esforço em meses/pessoa é:
+    $$ E = a \cdot (KLOC)^b $$
+    Onde:
+    
+    *   $E$: Esforço (meses/pessoa)
+    *   $KLOC$: Milhares de linhas de código
+    *   $a, b$: Constantes do projeto
+
+---
+
+## 6. Mini-Projeto: O Conversor Universal 🚀
+
+Agora que você sabe usar variáveis e operadores, vamos criar uma ferramenta útil.
+
+!!! info "Desafio do Projeto"
+    Crie um algoritmo (Pseudocódigo) que receba um valor em **Reais (R$)** e mostre quanto esse valor vale em **Dólares (US$)** e **Euros (€)**. 
+    Considere cotações fixas para o teste (ex: US$ 1.00 = R$ 5.00).
+
+---
+
+## 7. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um algoritmo que leia o **Nome** e **Idade** de, pessoa e mostre: "Olá [Nome], você tem [Idade] anos".
 2.  **Médio**: Leia dois números (A e B) e troque seus valores (A vira B, B vira A).

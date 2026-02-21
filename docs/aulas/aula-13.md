@@ -98,7 +98,19 @@ import pandas as pd
 
 ---
 
-## 5. Exercícios de Fixação 📝
+## 5. Mini-Projeto: Analisador de Texto em Python 🚀
+
+Python brilha no processamento de informações e automação de tarefas simples.
+
+!!! info "Desafio do Projeto"
+    Crie um script que receba um pequeno texto ou frase.
+    1. Conte quantas palavras o texto possui (dica: use `.split()`).
+    2. Liste as palavras que aparecem mais de uma vez (reconhecimento de padrões).
+    3. Mostre o texto em letras MAIÚSCULAS.
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie uma lista com 5 frutas e imprima a terceira.
 2.  **Médio**: Crie um dicionário para um `Carro` (marca, modelo, ano). Imprima "Meu carro é um [Modelo] de [Ano]".

@@ -92,7 +92,21 @@ fun main() {
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Contador Interativo (Dart) 🚀
+
+O coração de um app mobile é a interação com o usuário.
+
+!!! info "Desafio do Projeto"
+    Crie uma lógica em Dart que simule um contador de curtidas.
+    1. Declare uma variável `inteira` chamada `curtidas` iniciando em 0.
+    2. Crie uma função `clicarCurti()` que aumente o valor em 1.
+    3. Crie uma função `mostrarStatus()` que diga se o post é "Popular" (mais de 10 curtidas) ou "Novo".
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil (Dart)**: Crie uma função em Dart que receba uma lista de preços e retorne o total.
 2.  **Médio (Flutter Conceitual)**: Desenhe a árvore de widgets da tela de login do Instagram (Logo, Campo Email, Campo Senha, Botão Entrar).

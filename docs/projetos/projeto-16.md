@@ -1,5 +1,8 @@
 # Projeto 16 - Mural Fullstack (Milestone Final) 🏆
 
+!!! tip "Objetivo"
+    **Objetivo**: Integrar todo o conhecimento do curso (Lógica, Banco de Dados, Backend e Frontend) em uma aplicação web completa e funcional.
+
 ## O Desafio 🎯
 Você chegou ao topo. É hora de conectar tudo. O projeto final é um "Mural de Recados Anônimos" (estilo Twitter antigo/Orkut).
 

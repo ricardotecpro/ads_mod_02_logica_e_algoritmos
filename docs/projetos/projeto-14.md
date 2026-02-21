@@ -1,13 +1,24 @@
-# Projeto 14 - Chat via Terminal (Go/Rust) 🦀🐹
+# Projeto 14 - Sistema de Mensageria 🦀🐹
 
-**Objetivo**: Concorrência e Canais.
+!!! tip "Objetivo"
+    **Objetivo**: Explorar conceitos de programação concorrente e paralela, utilizando Canais (Go) ou Threads com Mutex (Rust).
 
-## O Desafio (Go)
-1.  Crie uma função `servidor(canal)` que recebe mensagens e imprime "Servidor recebeu: X".
-2.  Crie 3 Goroutines `clientes`, cada uma enviando 5 mensagens para o canal.
-3.  Faça o servidor processar todas concorrentemente.
+---
 
-## O Desafio (Rust - Alternativo)
-1.  Crie um programa que use Threads para contar até 10 milhões.
-2.  Divida o trabalho em 4 threads.
-3.  Use um `Mutex` ou canais para somar o total final com segurança.
+## O Desafio 🎯
+Implemente um sistema onde múltiplos produtores (Clientes) enviam dados para um único processador central (Servidor).
+
+## Opção A: Go (Goroutines e Channels)
+1.  Crie uma função `Servidor` que fica em um loop infinito esperando mensagens de um canal.
+2.  Lance 3 `Goroutines` de Clientes.
+3.  Cada cliente deve enviar 5 mensagens numeradas (Ex: "Msg 1 do Cliente A").
+4.  O servidor deve imprimir as mensagens conforme elas chegam.
+
+## Opção B: Rust (Safety e Concorrência)
+1.  Crie um programa que faça uma soma pesada (ex: de 1 a 1.000.000).
+2.  Divida o intervalo em 4 partes.
+3.  Dispare uma `Thread` para cada parte.
+4.  Use `Arc` e `Mutex` (ou MPSC Channels) para consolidar o resultado final com segurança de memória.
+
+## O que você vai aprender? 🧠
+Você verá que a ordem de execução das mensagens/contagens é imprevisível, entendendo como o sistema operacional lida com multitarefa.

@@ -81,7 +81,19 @@ Podemos perguntar ao terminal "Quem é você?":
 
 ---
 
-## 4. Guia de Instalação Rápida ⚡
+---
+
+## 5. Mini-Projeto: Dashboard de Compilação 🚀
+
+Seu desafio hoje é documentar seu ambiente.
+
+!!! info "Desafio do Projeto"
+    Abra seu Editor de Código (pode ser o VS Code ou VisualG), escreva o código "Olá Mundo", tire um print da tela com o código e o resultado da execução (terminal ou console) e salve como `projeto-02-setup.png`. 
+    O objetivo é garantir que seu "foguete" (ambiente) está pronto para o lançamento!
+
+---
+
+## 6. Exercícios de Configuração 📝
 
 Preparamos guias detalhados para cada ferramenta. Salve estes links:
 

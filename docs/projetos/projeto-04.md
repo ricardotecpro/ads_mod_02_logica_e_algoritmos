@@ -1,5 +1,8 @@
 # Projeto 04 - Calculadora IMC (Milestone 1 Final) ⚖️
 
+!!! tip "Objetivo"
+    **Objetivo**: Consolidar o uso de Variáveis, Operadores Matemáticos e Estruturas Condicionais em uma ferramenta prática de saúde.
+
 ## O Desafio 🎯
 O Ministério da Saúde precisa de um sistema rápido para triagem de pacientes baseada no IMC (Índice de Massa Corporal).
 

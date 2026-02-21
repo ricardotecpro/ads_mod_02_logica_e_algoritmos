@@ -93,7 +93,21 @@ fimse
 
 ---
 
-## 5. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Dashboard de Notas 🚀
+
+Vetores são perfeitos para organizar dados de uma turma.
+
+!!! info "Desafio do Projeto"
+    Crie um algoritmo que peça a nota de **5 alunos** e guarde em um vetor.
+    1. Calcule a média da turma.
+    2. Conte quantos alunos ficaram acima dessa média.
+    3. Mostre o resultado no final.
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um vetor de 5 números inteiros. Preencha-o e depois mostre a soma de todos eles.
 2.  **Médio (Inverso)**: Leia 10 números e mostre-os na ordem inversa (do último para o primeiro).

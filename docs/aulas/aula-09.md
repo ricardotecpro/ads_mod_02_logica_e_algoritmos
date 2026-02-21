@@ -105,7 +105,21 @@ int main() {
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 4. Mini-Projeto: Gerenciador de Registros em C 🚀
+
+C te permite ver como os dados são organizados no nível mais baixo.
+
+!!! info "Desafio do Projeto"
+    Crie um programa em C que use uma `struct` (estrutura) chamada `Aluno` com os campos `id` (inteiro) e `media` (float).
+    1. Peça para o usuário digitar os dados de um aluno.
+    2. Mostre os dados na tela.
+    3. Use um ponteiro para alterar a média do aluno através de uma função `atualizarMedia()`.
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil**: Escreva um programa em C que leia a idade e mostre se é maior de idade.
 2.  **Médio (C++)**: Crie uma classe `Retangulo` com atributos `largura` e `altura` e um método `calcularArea()`.

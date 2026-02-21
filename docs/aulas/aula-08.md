@@ -93,7 +93,20 @@ fimprocedimento
 
 ---
 
-## 5. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Fábrica de Áreas 🚀
+
+Funções permitem que você crie sua própria linguagem de comandos.
+
+!!! info "Desafio do Projeto"
+    Crie uma função chamada `AreaRetangulo(base, altura)` que retorne o cálculo da área.
+    No seu programa principal, peça para o usuário os dados e chame a função para mostrar o resultado. 
+    Lembre-se: O programa principal não deve saber *como* a área é calculada, apenas pedir o resultado para a função!
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Crie um procedimento `DesenharLinha()` que escreva "----------" na tela. Use-o para separar títulos.
 2.  **Médio**: Crie uma função `ConverterParaFahrenheit(celsius)` que recebe o valor em C e retorna em F.

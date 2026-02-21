@@ -67,7 +67,19 @@ fmt.Println(msg)
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 4. Mini-Projeto: O Mensageiro Concorrente (Go) 🚀
+
+Go é a linguagem ideal para sistemas que precisam lidar com muitas tarefas ao mesmo tempo.
+
+!!! info "Desafio do Projeto"
+    Crie um pequeno programa em Go que use uma Goroutine para enviar 3 mensagens diferentes para um Canal (ex: "Processando...", "Validando...", "Concluído!").
+    No programa principal, use um loop para receber essas 3 mensagens do canal e mostrá-las na tela.
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil (Go)**: Faça um "Olá Mundo" em Go.
 2.  **Médio (Rust)**: Crie uma função que receba uma String, calcule o tamanho e retorne os dois (tupla). (Entenda como Rust lida com retorno).

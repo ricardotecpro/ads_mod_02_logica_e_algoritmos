@@ -1,5 +1,8 @@
 # Projeto 08 - Sistema de Gestão de Notas (Milestone 1 Completo) 🎓
 
+!!! tip "Objetivo"
+    **Objetivo**: Desenvolver um sistema complexo com Menu Interativo, consolidando os conceitos de Manipulação de Vetores e Modularização (Funções e Procedimentos).
+
 ## O Desafio 🎯
 Uma escola precisa abandonar as planilhas de papel. Você deve criar o **SGN (Sistema de Gestão de Notas)** v1.0.
 

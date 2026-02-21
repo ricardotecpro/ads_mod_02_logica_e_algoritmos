@@ -1,5 +1,8 @@
 # Projeto 01 - Fluxograma da Vida (Milestone 1) 🧬
 
+!!! tip "Objetivo"
+    **Objetivo**: Exercitar a decomposição de problemas e o raciocínio lógico através da criação de fluxogramas que representam processos do cotidiano.
+
 ## O Desafio 🎯
 Você foi contratado para mapear processos de uma empresa. Antes de mexer com sistemas complexos, você precisa treinar com sua própria rotina.
 

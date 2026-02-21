@@ -104,7 +104,24 @@ fimescolha
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 5. Mini-Projeto: Calculadora de IMC 🚀
+
+Vamos aplicar as condicionais em algo prático e saudável.
+
+!!! info "Desafio do Projeto"
+    Crie um algoritmo que receba o **Peso** e a **Altura** de uma pessoa.
+    1. Calcule o IMC: $IMC = Peso / (Altura \cdot Altura)$.
+    2. Mostre a classificação:
+        *   Menor que 18.5: Abaixo do peso
+        *   Entre 18.5 e 24.9: Peso normal
+        *   A partir de 25: Sobrepeso
+    Use `se...entao...senao` para decidir.
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil (Par ou Ímpar)**: Leia um número inteiro. Se o resto da divisão por 2 for 0 (`num % 2 == 0`), escreva PAR, senão, ÍMPAR.
 2.  **Médio (Média)**: Leia 2 notas. Calcule a média.

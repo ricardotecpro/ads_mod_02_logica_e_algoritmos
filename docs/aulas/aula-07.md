@@ -74,7 +74,22 @@ fimpara
 
 ---
 
-## 4. Exercícios de Fixação 📝
+---
+
+## 4. Mini-Projeto: Jogo da Velha (Esqueleto) 🚀
+
+As matrizes são a base de quase todos os jogos de tabuleiro digitais.
+
+!!! info "Desafio do Projeto"
+    Crie um algoritmo que declare uma matriz 3x3 de caracteres (para guardar "X" ou "O").
+    1. Preencha todas as posições com um traço `-`.
+    2. Peça para o usuário digitar uma linha e uma coluna.
+    3. Coloque um "X" na posição escolhida.
+    4. Mostre a matriz resultante na tela.
+
+---
+
+## 5. Exercícios de Fixação 📝
 
 1.  **Fácil (Identidade)**: Crie uma matriz 3x3 onde a diagonal principal (0,0 | 1,1 | 2,2) seja preenchida com 1 e o resto com 0.
 2.  **Médio (Soma)**: Leia uma matriz 2x2 e mostre a soma de todos os seus elementos.

@@ -2,6 +2,11 @@ site_name: Lógica e Algoritmos - Curso
 site_url: https://ricardotecpro.github.io/ads_mod_02_logica_e_algoritmos
 repo_url: https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos
 repo_name: ricardotecpro/ads_mod_02_logica_e_algoritmos
+
+validation:
+  omitted_files: ignore
+  absolute_links: warn
+  unrecognized_links: warn
 theme:
   name: material
   language: pt-BR
@@ -11,7 +16,8 @@ theme:
   features:
     - navigation.tracking
     - navigation.tabs
-    - navigation.expand
+    - navigation.sections
+    - navigation.path
     - navigation.top
     - navigation.footer
     - navigation.indexes
@@ -19,6 +25,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - search.suggest
+    - search.share
     - search.highlight
   palette:
     # Light Mode (Default)
@@ -72,11 +79,7 @@ markdown_extensions:
 
 
 plugins:
-  - mkdocs-revealjs:
-      revealjs_config:
-        transition: slide
-        backgroundTransition: fade
-        slideNumber: true
+  - mkdocs-revealjs
 
   - search:
       lang: pt
@@ -125,7 +128,7 @@ extra_css:
 
 extra_javascript:
   - assets/js/quiz.js
-  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@11.12.3/dist/mermaid.min.js
   - assets/js/mermaid-init.js
   - assets/js/custom_termynal.js
   - assets/js/mathjax.js
@@ -149,6 +152,7 @@ nav:
   - Início: index.md
   - Plano de Ensino: plano-ensino.md
   - Aulas:
+      - 'Índice': aulas/index.md
       - 'Módulo 1: Fundamentos':
           - 'Aula 01': aulas/aula-01.md
           - 'Aula 02': aulas/aula-02.md

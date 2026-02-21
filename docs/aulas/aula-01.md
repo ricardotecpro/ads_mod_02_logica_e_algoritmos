@@ -103,7 +103,31 @@ Para sair do papel e ver o algoritmo "rodar", usaremos o **VisualG**. Ele é um 
 
 ---
 
-## 5. Exercícios de Fixação 📝
+### Mão na Massa: O Pensamento Computacional 💻
+
+Antes de programar, simulamos no terminal mental:
+
+<div class="termy" data-termynal markdown="1">
+    <span data-ty="input">pensar como programador</span>
+    <span data-ty>Analisando problema...</span>
+    <span data-ty>Decompondo em passos...</span>
+    <span data-ty>Abstraindo detalhes...</span>
+    <span data-ty>PADRÃO ENCONTRADO! 🚀</span>
+</div>
+
+---
+
+## 5. Mini-Projeto: O Algoritmo da Vida 🚀
+
+Nesta aula, seu mini-projeto é criar um **Fluxograma Digital**. 
+
+!!! info "Desafio do Projeto"
+    Escolha um hábito diário (ex: fazer academia, estudar inglês, cozinhar) e transforme em um fluxograma usando as formas geométricas que aprendemos. 
+    Você deve apresentar pelo menos **2 decisões** (losangos) e **4 processos** (retângulos).
+
+---
+
+## 6. Exercícios de Fixação 📝
 
 1.  **Fácil**: Escreva um algoritmo (em português) para fazer um café. Lembre-se de verificar se tem pó e água!
 2.  **Médio**: Desenhe (no papel ou mentalmente) um fluxograma para atravessar a rua com segurança.
