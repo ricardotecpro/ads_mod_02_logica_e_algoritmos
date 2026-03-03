@@ -60,3 +60,7 @@ poetry.lock
 
 # Antigravity
 .antigravity
+
+# Padrão Ouro
+_legado/
+logs/

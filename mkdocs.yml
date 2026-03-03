@@ -10,8 +10,8 @@ validation:
 theme:
   name: material
   language: pt-BR
-  favicon: assets/images/logic_logo.svg
-  logo: assets/images/logic_logo.svg
+  favicon: assets/images/logo.svg
+  logo: assets/images/logo.svg
   custom_dir: overrides
   features:
     - navigation.tracking
@@ -47,6 +47,12 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+exclude_docs: |
+  quizzes/src/*
+  slides/src/*
+  slides/slide-*.md
+  **/.src/*
+
 markdown_extensions:
   - pymdownx.critic
   - pymdownx.highlight:
@@ -70,6 +76,8 @@ markdown_extensions:
   - footnotes
   - admonition
   - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - md_in_html
   - tables
   - pymdownx.snippets:
@@ -144,9 +152,6 @@ extra:
       link: https://linkedin.com/in/ricardotecpro
     - icon: fontawesome/solid/globe
       link: https://ricardotecpro.github.io/
-  version:
-    provider: mike
-    default: estavel
 
 nav:
   - Início: index.md
@@ -258,4 +263,4 @@ nav:
       - 'O Curso': sobre.md
       - 'Roadmap': project_roadmap.md
       - 'Materiais Extras': materiais.md
-  - Impressão: print_page.md
+  - Impresso: print_page.md
