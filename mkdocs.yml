@@ -2,6 +2,7 @@ site_name: Lógica e Algoritmos - Curso
 site_url: https://ricardotecpro.github.io/ads_mod_02_logica_e_algoritmos
 repo_url: https://github.com/ricardotecpro/ads_mod_02_logica_e_algoritmos
 repo_name: ricardotecpro/ads_mod_02_logica_e_algoritmos
+use_directory_urls: false
 
 validation:
   omitted_files: ignore
@@ -31,16 +32,16 @@ theme:
     # Light Mode (Default)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: green
-      accent: light green
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Mudar para modo escuro
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: green
-      accent: light green
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Mudar para modo claro

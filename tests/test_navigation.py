@@ -75,6 +75,6 @@ class TestNavigation:
         page.get_by_role("link", name="Aula 01", exact=True).first.click()
         
         # Verifica se chegou na página correta
-        expect(page).to_have_url(re.compile(r".*/aulas/aula-01/?$"))
+        expect(page).to_have_url(re.compile(r".*/aulas/aula-01\.html$"))
         # H1 is "Aula 01 - Introdução à Lógica..."
         expect(page.locator("h1")).to_contain_text("Introdução à Lógica")

@@ -1,2 +1,0 @@
-HERE= C:\Python\Python313\Lib\site-packages\mkdocs_revealjs
-DIRNAME= docs/revealjs

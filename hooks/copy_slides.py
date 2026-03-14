@@ -21,29 +21,31 @@ def copy_slides(config, **kwargs):
     
     # Diretório fonte dos slides
     slides_source = pathlib.Path('docs/slides')
+    slides_src_source = slides_source / 'src'
+    
     if not slides_source.exists():
         print("[yellow]WARN: Pasta docs/slides/ não encontrada[/yellow]")
         return
     
-    # Copiar todos os slides HTML e Markdown
+    # Copiar todos os slides HTML
     html_copied = 0
-    md_copied = 0
-    
-    # Copiar HTML
     print("[cyan]Copiando slides HTML...[/cyan]")
     for slide in slides_source.glob('slide-*.html'):
         dest_file = slides_dest / slide.name
         shutil.copy(slide.resolve(), dest_file.resolve())
-        print(f"  [blue]-> {slide.name}[/blue]")
         html_copied += 1
     
-    # Copiar Markdown
-    print("[cyan]Copiando slides Markdown...[/cyan]")
-    for slide in slides_source.glob('slide-*.md'):
-        dest_file = slides_dest / slide.name
-        shutil.copy(slide.resolve(), dest_file.resolve())
-        print(f"  [blue]-> {slide.name}[/blue]")
-        md_copied += 1
+    # Copiar Markdown da pasta src
+    md_copied = 0
+    if slides_src_source.exists():
+        print("[cyan]Copiando slides Markdown de src...[/cyan]")
+        slides_src_dest = slides_dest / 'src'
+        slides_src_dest.mkdir(exist_ok=True)
+        
+        for slide in slides_src_source.glob('slide-*.md'):
+            dest_file = slides_src_dest / slide.name
+            shutil.copy(slide.resolve(), dest_file.resolve())
+            md_copied += 1
     
     if html_copied > 0:
         print(f"[green]OK: {html_copied} slide(s) HTML copiados[/green]")

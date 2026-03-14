@@ -43,7 +43,7 @@ jobs:
       - name: Install Playwright Browsers
         run: poetry run playwright install --with-deps chromium
 
-      - name: Deploy with Mike
+      - name: Build and Deploy
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -66,4 +66,4 @@ jobs:
           kill $PID
           
           # Deploy direto para gh-pages (sem Mike)
-          poetry run mkdocs gh-deploy --force
+          poetry run mkdocs gh-deploy --force --ignore-version
