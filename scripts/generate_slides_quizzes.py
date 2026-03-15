@@ -20,7 +20,6 @@ def generate_slide_html(lesson_number: int) -> str:
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/theme/black.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/plugin/highlight/monokai.css">
-    <link rel="stylesheet" href="../assets/css/reveal-custom.css">
 </head>
 <body>
     <div class="reveal">
@@ -124,21 +123,7 @@ def generate_all_slides():
 
 
 def convert_quiz_to_html(quiz_number: int) -> str:
-    """Lê quiz markdown e retorna versão HTML (placeholder - precisa ser implementado)"""
-    # Por enquanto retorna template básico
-    # Você precisará implementar a conversão real baseado no conteúdo
-    return f'''# Quiz {quiz_number:02d}
-
---8<-- "assets/quiz.html"
-
-<!-- Adicione as perguntas aqui no formato HTML -->
-<div class="quiz-container">
-  <div class="quiz-question">Pergunta de exemplo</div>
-  <div class="quiz-option" data-correct="true" data-feedback="Correto!">Opção correta</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">Opção incorreta</div>
-  <div class="quiz-feedback"></div>
-</div>
-'''
+    return f"""# Quiz {quiz_number:02d}"""
 
 
 def main():
