@@ -78,51 +78,19 @@ def generate_slide_html(i, title):
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/theme/black.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/plugin/highlight/monokai.css">
-    <link rel="stylesheet" href="../assets/css/reveal-custom.css">
-</head>
-<body>
-    <div class="reveal">
-        <div class="slides">
-            <section data-markdown="slide-{i:02d}.md"
-                     data-separator="^\\n---\\n$"
-                     data-separator-vertical="^\\n--\\n$">
-            </section>
-        </div>
-    </div>
-    
-    <div class="reveal-shortcuts">
-        Atalhos: F (Tela Cheia) | S (Speaker View)
-    </div>
-
     <script src="https://unpkg.com/reveal.js@4.5.0/dist/reveal.js"></script>
     <script src="https://unpkg.com/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://unpkg.com/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
     <script src="https://unpkg.com/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script>
-        Reveal.initialize({{
+        Reveal.initialize({
             hash: true,
             slideNumber: 'c/t',
             showSlideNumber: 'all',
             controls: true,
             progress: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-        }});
-
-        function updateShortcutsVisibility() {{
-            const isFullscreen = document.fullscreenElement || 
-                                 document.webkitFullscreenElement || 
-                                 document.mozFullScreenElement || 
-                                 document.msFullscreenElement;
-            const shortcuts = document.querySelector('.reveal-shortcuts');
-            if (shortcuts) {{
-                shortcuts.style.display = isFullscreen ? 'none' : 'block';
-            }}
-        }}
-
-        document.addEventListener('fullscreenchange', updateShortcutsVisibility);
-        document.addEventListener('webkitfullscreenchange', updateShortcutsVisibility);
-        document.addEventListener('mozfullscreenchange', updateShortcutsVisibility);
-        document.addEventListener('MSFullscreenChange', updateShortcutsVisibility);
+        });
     </script>
 </body>
 </html>
