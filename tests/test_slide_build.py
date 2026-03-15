@@ -7,15 +7,15 @@ from pathlib import Path
 
 def test_slide_markdown_copied_to_site():
     """Verifica se todos os arquivos markdown foram copiados para site/slides/"""
-    site_slides = Path("site/slides")
+    site_slides_src = Path("site/slides/src")
     
-    if not site_slides.exists():
-        pytest.skip("Diretório site/slides/ não existe. Execute 'mkdocs build' primeiro.")
+    if not site_slides_src.exists():
+        pytest.skip("Diretório site/slides/src/ não existe. Execute 'mkdocs build' primeiro.")
     
     for i in range(1, 17):
-        slide_md = site_slides / f"slide-{i:02d}.md"
+        slide_md = site_slides_src / f"slide-{i:02d}.md"
         assert slide_md.exists(), (
-            f"Slide markdown {slide_md.name} não foi copiado para {site_slides}. "
+            f"Slide markdown {slide_md.name} não foi copiado para {site_slides_src}. "
             f"Verifique o hook copy_slides.py"
         )
 
@@ -37,12 +37,12 @@ def test_slide_html_copied_to_site():
 
 def test_slide_markdown_content_valid_in_site():
     """Verifica se o markdown copiado tem conteúdo válido"""
-    site_slides = Path("site/slides")
+    site_slides_src = Path("site/slides/src")
     
-    if not site_slides.exists():
-        pytest.skip("Diretório site/slides/ não existe. Execute 'mkdocs build' primeiro.")
+    if not site_slides_src.exists():
+        pytest.skip("Diretório site/slides/src/ não existe. Execute 'mkdocs build' primeiro.")
     
-    slide_md = site_slides / "slide-01.md"
+    slide_md = site_slides_src / "slide-01.md"
     if not slide_md.exists():
         pytest.fail(f"Arquivo {slide_md} não existe no build")
     
@@ -60,7 +60,7 @@ def test_all_slides_present_in_site():
     
     # Contar arquivos
     html_files = list(site_slides.glob("slide-*.html"))
-    md_files = list(site_slides.glob("slide-*.md"))
+    md_files = list((site_slides / "src").glob("slide-*.md"))
     
     assert len(html_files) == 16, (
         f"Esperado 16 arquivos HTML, encontrado {len(html_files)}"

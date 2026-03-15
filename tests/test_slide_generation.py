@@ -7,7 +7,7 @@ from pathlib import Path
 
 def test_slide_markdown_files_exist():
     """Verifica se todos os arquivos markdown dos slides existem em docs/slides/"""
-    slides_dir = Path("docs/slides")
+    slides_dir = Path("docs/slides/src")
     
     for i in range(1, 17):
         slide_md = slides_dir / f"slide-{i:02d}.md"
@@ -30,7 +30,7 @@ def test_slide_html_references_correct_markdown():
     for i in range(1, 17):
         slide_html = slides_dir / f"slide-{i:02d}.html"
         content = slide_html.read_text(encoding='utf-8')
-        expected_ref = f'data-markdown="slide-{i:02d}.md"'
+        expected_ref = f'data-markdown="src/slide-{i:02d}.md"'
         assert expected_ref in content, (
             f"HTML {slide_html.name} não referencia markdown correto. "
             f"Esperado: {expected_ref}"
