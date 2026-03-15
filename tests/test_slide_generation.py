@@ -39,7 +39,7 @@ def test_slide_html_references_correct_markdown():
 
 def test_slide_markdown_has_content():
     """Verifica se os arquivos markdown têm conteúdo válido"""
-    slides_dir = Path("docs/slides")
+    slides_dir = Path("docs/slides/src")
     
     for i in range(1, 17):
         slide_md = slides_dir / f"slide-{i:02d}.md"
