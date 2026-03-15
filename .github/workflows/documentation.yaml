@@ -55,12 +55,13 @@ jobs:
           poetry run mkdocs build
           
           # Start MkDocs server in background for tests
-          poetry run mkdocs serve &
+          poetry run mkdocs serve --dev-addr localhost:8766 &
           PID=$!
-          sleep 10  # Wait for server to start
+          sleep 15  # Wait for server to start
           
           # Run tests to ensure quality
-          poetry run task test
+          # Use pytest directly to avoid taskipy alias issues in CI
+          poetry run pytest tests/ -v
           
           # Kill server
           kill $PID
